@@ -69,7 +69,7 @@ PRODUCTHUNT_TOKEN=xxxxx
 `GITHUB_TOKEN` 由 GitHub Actions 自动提供，不用你手动加。
 
 6. 给你的电脑加一个每日 Codex 自动化任务，时间晚于 GitHub daily workflow。
-7. 让本地 Codex 自动化按 [docs/codex-local-publish.md](./docs/codex-local-publish.md) 直接生成 `ai-radar.md` 并推回 `main`。
+7. 让本地 Codex 自动化调用本机 skill `seeless-local-radar-publish`，按 [docs/codex-local-publish.md](./docs/codex-local-publish.md) 直接生成 `ai-radar.md` 并推回 `main`。
 
 站点地址会是：
 
@@ -88,6 +88,8 @@ PRODUCTHUNT_TOKEN=xxxxx
 - 然后自动提交并推回仓库
 
 具体规则见 [docs/codex-local-publish.md](./docs/codex-local-publish.md)。
+
+本机 skill 名称建议固定为：`seeless-local-radar-publish`
 
 ## 可选模式：自己接 LLM Provider
 

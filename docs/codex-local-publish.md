@@ -74,6 +74,8 @@ Inside `ai-radar.md`, link back to same-day source pages with hash routes:
 - `./#YYYY-MM-DD/ai-cli`
 - `./#YYYY-MM-DD/ai-agents`
 
+If same-day source pages do not exist yet, link to the external source URLs or the day's `raw-data.json` instead of leaving dead in-site links.
+
 ## Publish steps
 
 After writing the daily radar:
@@ -87,5 +89,6 @@ After writing the daily radar:
 
 - If `raw-data.json` is missing, do not invent a report.
 - If there is no meaningful new signal, still write a short radar page with a conservative summary.
+- If `webResults` contains many pages from a source with `isFirstRun: true`, treat that as first-time backfill, not as proof that all those pages were published today.
 - Do not overwrite unrelated files.
 - Do not commit local code changes unrelated to the daily digest.

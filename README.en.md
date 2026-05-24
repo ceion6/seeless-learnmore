@@ -68,7 +68,7 @@ PRODUCTHUNT_TOKEN=xxxxx
 `GITHUB_TOKEN` is provided automatically by GitHub Actions.
 
 6. Add a daily local Codex automation that runs after the GitHub daily collector.
-7. Have that automation follow [docs/codex-local-publish.md](./docs/codex-local-publish.md) and push the generated `ai-radar.md` back to `main`.
+7. Have that automation call the local skill `seeless-local-radar-publish`, follow [docs/codex-local-publish.md](./docs/codex-local-publish.md), and push the generated `ai-radar.md` back to `main`.
 
 Your site URL will be:
 
@@ -87,6 +87,8 @@ The recommended flow is:
 - then commits and pushes back to the repo
 
 See [docs/codex-local-publish.md](./docs/codex-local-publish.md) for the exact publishing rules.
+
+Recommended local skill name: `seeless-local-radar-publish`
 
 ## Optional mode: bring your own LLM provider
 
