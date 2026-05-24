@@ -9,13 +9,12 @@ The default output is not a generic dashboard feed. The main page is `ai-radar.m
 The recommended operating mode is:
 
 - GitHub Actions collect the raw daily snapshot first
-- a local Codex automation uses your local LLM setup to render reports and push them back
+- a local Codex automation reads `raw-data.json` and uses Codex's local capability to write the page directly
 - GitHub Pages serves the static site
 
 ## What it does
 
 - fetches AI signals from GitHub, Hacker News, ArXiv, Hugging Face, Product Hunt, Dev.to, Lobste.rs, and official company sites
-- generates daily source reports in Chinese and English
 - generates a Chinese `ai-radar` page for high-signal daily reading
 - publishes everything through GitHub Pages
 - optionally sends Telegram and Feishu notifications
@@ -58,8 +57,7 @@ GitHub Pages renders these files as a static site. `manifest.json` drives naviga
 4. Set:
    `Branch = main`
    `Folder = / (root)`
-5. Copy `.env.example` to your local `.env` and fill in your LLM key.
-6. In `Settings -> Secrets and variables -> Actions`, add only the collection-side values you actually want on GitHub.
+5. In `Settings -> Secrets and variables -> Actions`, add only the collection-side values you actually want on GitHub.
 
 In most cases that is just:
 
@@ -69,22 +67,30 @@ PRODUCTHUNT_TOKEN=xxxxx
 
 `GITHUB_TOKEN` is provided automatically by GitHub Actions.
 
-7. Run once locally:
-
-   ```bash
-   pnpm install
-   pnpm publish:local
-   ```
-
-8. Add a daily local Codex automation that runs after the GitHub daily collector.
+6. Add a daily local Codex automation that runs after the GitHub daily collector.
+7. Have that automation follow [docs/codex-local-publish.md](./docs/codex-local-publish.md) and push the generated `ai-radar.md` back to `main`.
 
 Your site URL will be:
 
 `https://<your-github-name>.github.io/<your-repo-name>/`
 
-## Local environment variables
+## Recommended mode: no API key
 
-At minimum, configure one local LLM provider and its API key in `.env`.
+If you use the recommended mode, you do not need a local `.env` with model keys.
+
+The recommended flow is:
+
+- GitHub Actions creates `digests/YYYY-MM-DD/raw-data.json`
+- local Codex automation reads that file
+- Codex writes `digests/YYYY-MM-DD/ai-radar.md` directly
+- then updates `manifest.json` and `feed.xml`
+- then commits and pushes back to the repo
+
+See [docs/codex-local-publish.md](./docs/codex-local-publish.md) for the exact publishing rules.
+
+## Optional mode: bring your own LLM provider
+
+If you still want the repository scripts themselves to call an external model, then configure a local `.env`.
 
 | Variable | Required | Purpose |
 | --- | --- | --- |
@@ -136,7 +142,7 @@ pnpm install
 pnpm start
 ```
 
-For the full local publishing flow, use:
+If you still want the repository scripts themselves to call an external model, the one-shot command is:
 
 ```bash
 pnpm publish:local
@@ -154,7 +160,7 @@ This script will:
 
 To avoid sweeping in unrelated local edits, the script exits early when tracked files already have uncommitted changes.
 
-If you want to require the snapshot and forbid live fallback, run:
+If you want to require the snapshot and forbid live fallback in script mode, run:
 
 ```bash
 PUBLISH_REQUIRE_SNAPSHOT=1 pnpm publish:local

@@ -9,13 +9,12 @@
 默认推荐的运行方式是：
 
 - GitHub Actions 先收集当天原始快照
-- 本地 Codex 自动化再用你本机的 LLM 配置做整理、生成页面并推回仓库
+- 本地 Codex 自动化直接读取 `raw-data.json`，用 Codex 本地能力整理并生成页面
 - GitHub Pages 负责展示静态站点
 
 ## 它会做什么
 
 - 抓取 GitHub、Hacker News、ArXiv、Hugging Face、Product Hunt、Dev.to、Lobste.rs 和 AI 公司官网动态
-- 生成中英文源报告
 - 生成中文主页面 `ai-radar.md`
 - 通过 GitHub Pages 发布静态站点
 - 可选发送 Telegram / 飞书通知
@@ -59,8 +58,7 @@ GitHub Pages 负责把这些 Markdown 渲染成站点。`manifest.json` 用来�
 4. 设置：
    `Branch = main`
    `Folder = / (root)`
-5. 复制 `.env.example` 为你本地的 `.env`，填入 LLM key。
-6. 在仓库的 `Settings -> Secrets and variables -> Actions` 里只配置你愿意放在 GitHub 上的抓取类值。
+5. 在仓库的 `Settings -> Secrets and variables -> Actions` 里只配置你愿意放在 GitHub 上的抓取类值。
 
 最少通常只需要：
 
@@ -70,22 +68,30 @@ PRODUCTHUNT_TOKEN=xxxxx
 
 `GITHUB_TOKEN` 由 GitHub Actions 自动提供，不用你手动加。
 
-7. 在本地先运行一次：
-
-   ```bash
-   pnpm install
-   pnpm publish:local
-   ```
-
-8. 给你的电脑加一个每日 Codex 自动化任务，时间晚于 GitHub daily workflow。
+6. 给你的电脑加一个每日 Codex 自动化任务，时间晚于 GitHub daily workflow。
+7. 让本地 Codex 自动化按 [docs/codex-local-publish.md](./docs/codex-local-publish.md) 直接生成 `ai-radar.md` 并推回 `main`。
 
 站点地址会是：
 
 `https://<你的 GitHub 用户名>.github.io/<你的仓库名>/`
 
-## 本地环境变量
+## 推荐模式：不用 API Key
 
-最少只要在本地 `.env` 里配一个 LLM provider 和对应的 key。
+如果你走推荐模式，不需要在本地 `.env` 里配置模型 key。
+
+推荐链路是：
+
+- GitHub Actions 生成 `digests/YYYY-MM-DD/raw-data.json`
+- 本地 Codex 自动化读取这个文件
+- Codex 直接写 `digests/YYYY-MM-DD/ai-radar.md`
+- 再更新 `manifest.json` / `feed.xml`
+- 然后自动提交并推回仓库
+
+具体规则见 [docs/codex-local-publish.md](./docs/codex-local-publish.md)。
+
+## 可选模式：自己接 LLM Provider
+
+如果你仍然想让仓库脚本自己调用外部模型，再去配置本地 `.env`。
 
 | 变量 | 必填 | 用途 |
 | --- | --- | --- |
@@ -137,7 +143,7 @@ pnpm install
 pnpm start
 ```
 
-如果你想一键完成“拉最新 -> 使用当天快照生成日报 -> 需要时生成周报/月报 -> 更新站点 -> 推送回仓库”，用：
+如果你想继续走“仓库脚本自己调用外部模型”的方式，一键命令还是：
 
 ```bash
 pnpm publish:local
@@ -155,7 +161,7 @@ pnpm publish:local
 
 为了避免把你正在改的代码顺手提交掉，脚本在检测到已跟踪文件有未提交改动时会直接退出。
 
-如果你想强制要求“先有 GitHub 收集快照，再允许本地整理”，可以在自动化里用：
+如果你想强制要求“先有 GitHub 收集快照，再允许本地整理”，可以在脚本模式里用：
 
 ```bash
 PUBLISH_REQUIRE_SNAPSHOT=1 pnpm publish:local
