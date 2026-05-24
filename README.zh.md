@@ -1,6 +1,6 @@
 # seeless-learnmore
 
-[English](./README.md) | 中文
+中文 | [English](./README.en.md)
 
 `seeless-learnmore` 是一个中文 AI 雷达。它每天抓取 AI 生态里的多路信号，先生成源报告，再做一轮中文二次筛选，最后产出一页真正适合日常阅读的“少看点 AI 雷达”。
 
