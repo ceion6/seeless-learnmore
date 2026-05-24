@@ -157,6 +157,7 @@ export async function fetchRecentReleases(repo: string, since: Date): Promise<Gi
 
 export async function ensureLabel(name: string, color: string): Promise<void> {
   const digestRepo = process.env["DIGEST_REPO"] ?? "";
+  if (!digestRepo || !process.env["GITHUB_TOKEN"]) return;
   const resp = await fetch(`https://api.github.com/repos/${digestRepo}/labels`, {
     method: "POST",
     headers: { ...headers(), "Content-Type": "application/json" },
@@ -269,6 +270,7 @@ export async function closeStaleIssues(days: number): Promise<number> {
 
 export async function createGitHubIssue(title: string, body: string, label: string): Promise<string> {
   const digestRepo = process.env["DIGEST_REPO"] ?? "";
+  if (!digestRepo || !process.env["GITHUB_TOKEN"]) return "";
   body = neutralizeGitHubRefs(body);
   if (body.length > GITHUB_ISSUE_BODY_LIMIT) {
     body = body.slice(0, GITHUB_ISSUE_BODY_LIMIT - TRUNCATION_NOTICE.length) + TRUNCATION_NOTICE;

@@ -2,9 +2,15 @@
 
 [English](./README.md) | 中文
 
-`seeless-learnmore` 是一个用 GitHub Actions 自动运行的中文 AI 雷达。它每天抓取 AI 生态里的多路信号，先生成源报告，再做一轮中文二次筛选，最后产出一页真正适合日常阅读的“少看点 AI 雷达”。
+`seeless-learnmore` 是一个中文 AI 雷达。它每天抓取 AI 生态里的多路信号，先生成源报告，再做一轮中文二次筛选，最后产出一页真正适合日常阅读的“少看点 AI 雷达”。
 
 默认目标不是做一个信息流面板，而是做一个更像编辑部的每日判断页。主产物是 `ai-radar.md`，它会从当天的 GitHub、研究、社区和官方动态里筛出真正值得看的内容。
+
+默认推荐的运行方式是：
+
+- GitHub Actions 先收集当天原始快照
+- 本地 Codex 自动化再用你本机的 LLM 配置做整理、生成页面并推回仓库
+- GitHub Pages 负责展示静态站点
 
 ## 它会做什么
 
@@ -47,25 +53,41 @@ GitHub Pages 负责把这些 Markdown 渲染成站点。`manifest.json` 用来�
 ## 怎么部署
 
 1. 把这份代码推到你自己的 GitHub 仓库。
-2. 打开 `Actions` 标签页，确认工作流已启用。
-3. 打开 `Settings -> Pages`。
-4. 设置：
+2. 打开 `Settings -> Pages`。
+3. 设置：
    `Source = Deploy from a branch`
-5. 设置：
+4. 设置：
    `Branch = main`
    `Folder = / (root)`
-6. 在 `Settings -> Secrets and variables -> Actions` 里添加密钥。
-7. 在 Actions 页手动运行一次 `Daily Seeless Learnmore`。
+5. 复制 `.env.example` 为你本地的 `.env`，填入 LLM key。
+6. 在仓库的 `Settings -> Secrets and variables -> Actions` 里只配置你愿意放在 GitHub 上的抓取类值。
+
+最少通常只需要：
+
+```bash
+PRODUCTHUNT_TOKEN=xxxxx
+```
+
+`GITHUB_TOKEN` 由 GitHub Actions 自动提供，不用你手动加。
+
+7. 在本地先运行一次：
+
+   ```bash
+   pnpm install
+   pnpm publish:local
+   ```
+
+8. 给你的电脑加一个每日 Codex 自动化任务，时间晚于 GitHub daily workflow。
 
 站点地址会是：
 
 `https://<你的 GitHub 用户名>.github.io/<你的仓库名>/`
 
-## 必填和常用 Secrets
+## 本地环境变量
 
-最少只要配一个 LLM provider 和对应的 key。
+最少只要在本地 `.env` 里配一个 LLM provider 和对应的 key。
 
-| Secret | 必填 | 用途 |
+| 变量 | 必填 | 用途 |
 | --- | --- | --- |
 | `LLM_PROVIDER` | 推荐 | `anthropic`、`openai`、`deepseek`、`github-copilot`、`openrouter` |
 | `ANTHROPIC_API_KEY` | `anthropic` 时 | Anthropic API key |
@@ -87,8 +109,10 @@ GitHub Pages 负责把这些 Markdown 渲染成站点。`manifest.json` 用来�
 | `TELEGRAM_BOT_TOKEN` | 可选 | 开启 Telegram 推送 |
 | `TELEGRAM_CHAT_ID` | 可选 | Telegram 目标频道 / 群 / 用户 ID |
 | `FEISHU_WEBHOOK_URLS` | 可选 | 多个飞书 webhook，逗号分隔 |
+| `GITHUB_TOKEN` | 可选 | 提高 GitHub API 额度；本地已登录 `gh` 时可自动读取 |
+| `DIGEST_REPO` | 可选 | 页脚和 GitHub Issue 目标仓库；本地脚本会自动推断 |
 
-`GITHUB_TOKEN` 由 GitHub Actions 自动提供，不用手动加。
+如果你只是想把模型 key 留在本地，不需要把这些值放进 GitHub 仓库。
 
 ## 阿里云百炼怎么配
 
@@ -113,16 +137,37 @@ pnpm install
 pnpm start
 ```
 
-本地环境变量和 GitHub Secrets 用同一套命名。
+如果你想一键完成“拉最新 -> 使用当天快照生成日报 -> 需要时生成周报/月报 -> 更新站点 -> 推送回仓库”，用：
 
-## 运行频率
+```bash
+pnpm publish:local
+```
 
-- 日报：
-  `00:00 UTC` / `08:00 中国标准时间`
-- 周报：
-  每周一 `01:00 UTC`
-- 月报：
-  每月 1 日 `02:00 UTC`
+这个脚本会：
+
+- 先 `git pull --rebase`
+- 优先读取 `digests/YYYY-MM-DD/raw-data.json`
+- 跑日报
+- 在周一额外跑周报
+- 在每月 1 日额外跑月报
+- 更新 `manifest.json` 和 `feed.xml`
+- 自动提交并推回 `main`
+
+为了避免把你正在改的代码顺手提交掉，脚本在检测到已跟踪文件有未提交改动时会直接退出。
+
+如果你想强制要求“先有 GitHub 收集快照，再允许本地整理”，可以在自动化里用：
+
+```bash
+PUBLISH_REQUIRE_SNAPSHOT=1 pnpm publish:local
+```
+
+缺少当天快照时，它会直接退出，不会回退到本地现抓。
+
+## GitHub Actions 分工
+
+仓库里的 `Daily Seeless Learnmore` 现在恢复为定时任务，但它只做一件事：收集当天原始快照并提交 `raw-data.json`。
+
+`Weekly Seeless Learnmore` 和 `Monthly Seeless Learnmore` 保持手动触发备用。
 
 ## 说明
 

@@ -15,9 +15,6 @@ import path from "node:path";
 import {
   type GitHubItem,
   type RepoFetch,
-  fetchRecentItems,
-  fetchRecentReleases,
-  fetchSkillsData,
   createGitHubIssue,
 } from "./github.ts";
 import {
@@ -45,14 +42,9 @@ import {
   saveHfReport,
   saveCommunityReport,
 } from "./report-savers.ts";
-import { loadWebState, fetchSiteContent, SITE_IDS, type SiteId, type WebFetchResult, type WebState } from "./web.ts";
-import { fetchTrendingData, type TrendingData } from "./trending.ts";
-import { fetchHnData, type HnData } from "./hn.ts";
-import { fetchPhData, type PhData } from "./ph.ts";
-import { fetchArxivData, type ArxivData } from "./arxiv.ts";
-import { fetchHfData, type HfData } from "./hf.ts";
-import { fetchDevtoData, type DevtoData } from "./devto.ts";
-import { fetchLobstersData, type LobstersData } from "./lobsters.ts";
+import { fetchAllData, loadCollectedSnapshot } from "./collect.ts";
+import { loadWebState } from "./web.ts";
+import { type TrendingData } from "./trending.ts";
 import { loadConfig } from "./config.ts";
 import { toCstDateStr, toUtcStr } from "./date.ts";
 import { type Lang, MSG, ISSUE_LABELS, CLI_ISSUE_TITLE, OPENCLAW_ISSUE_TITLE } from "./i18n.ts";
@@ -71,114 +63,6 @@ const {
 // ---------------------------------------------------------------------------
 // Helpers
 // ---------------------------------------------------------------------------
-
-// ---------------------------------------------------------------------------
-// Phase 1: Fetch
-// ---------------------------------------------------------------------------
-
-async function fetchAllData(
-  since: Date,
-  webState: WebState,
-): Promise<{
-  fetched: RepoFetch[];
-  skillsData: { prs: GitHubItem[]; issues: GitHubItem[] };
-  webResults: WebFetchResult[];
-  trendingData: TrendingData;
-  hnData: HnData;
-  phData: PhData;
-  arxivData: ArxivData;
-  hfData: HfData;
-  devtoData: DevtoData;
-  lobstersData: LobstersData;
-}> {
-  const allConfigs = [...CLI_REPOS, OPENCLAW, ...OPENCLAW_PEERS];
-  console.log(
-    `  Tracking: ${allConfigs.map((r) => r.id).join(", ")}, claude-code-skills, web, hn, ph, arxiv, hf, devto, lobsters`,
-  );
-
-  const [
-    fetched,
-    skillsData,
-    webResults,
-    trendingData,
-    hnData,
-    phData,
-    arxivData,
-    hfData,
-    devtoData,
-    lobstersData,
-  ] = await Promise.all([
-    Promise.all(
-      allConfigs.map(async (cfg) => {
-        try {
-          const [issuesRaw, prs, releases] = await Promise.all([
-            fetchRecentItems(cfg, "issues", since),
-            fetchRecentItems(cfg, "pulls", since),
-            fetchRecentReleases(cfg.repo, since),
-          ]);
-          const issues = issuesRaw.filter((i) => !i.pull_request);
-          console.log(
-            `  [${cfg.id}] issues: ${issues.length}, prs: ${prs.length}, releases: ${releases.length}`,
-          );
-          return { cfg, issues, prs, releases };
-        } catch (err) {
-          console.error(`  [${cfg.id}] fetch failed: ${err}`);
-          return { cfg, issues: [], prs: [], releases: [] };
-        }
-      }),
-    ),
-    fetchSkillsData(CLAUDE_SKILLS_REPO)
-      .then((d) => {
-        console.log(`  [claude-code-skills] prs: ${d.prs.length}, issues: ${d.issues.length}`);
-        return d;
-      })
-      .catch((err) => {
-        console.error(`  [claude-code-skills] fetch failed: ${err}`);
-        return { prs: [] as GitHubItem[], issues: [] as GitHubItem[] };
-      }),
-    Promise.all(
-      SITE_IDS.map((site: SiteId) =>
-        fetchSiteContent(site, webState).catch((err): WebFetchResult => {
-          console.error(`  [web/${site}] fetch failed: ${err}`);
-          return {
-            site,
-            siteName: site,
-            isFirstRun: false,
-            newItems: [],
-            totalDiscovered: 0,
-          };
-        }),
-      ),
-    ),
-    fetchTrendingData().catch(
-      (): TrendingData => ({
-        trendingRepos: [],
-        searchRepos: [],
-        starSurgeRepos: [],
-        trendingFetchSuccess: false,
-      }),
-    ),
-    fetchHnData().catch((): HnData => ({ stories: [], fetchSuccess: false })),
-    fetchPhData().catch((): PhData => ({ products: [], fetchSuccess: false })),
-    fetchArxivData().catch((): ArxivData => ({ papers: [], fetchSuccess: false })),
-    fetchHfData().catch((): HfData => ({ models: [], fetchSuccess: false })),
-    fetchDevtoData().catch((): DevtoData => ({ articles: [], fetchSuccess: false })),
-    fetchLobstersData().catch((): LobstersData => ({ stories: [], fetchSuccess: false })),
-  ]);
-
-  return {
-    fetched,
-    skillsData,
-    webResults,
-    trendingData,
-    hnData,
-    phData,
-    arxivData,
-    hfData,
-    devtoData,
-    lobstersData,
-  };
-}
 
 // ---------------------------------------------------------------------------
 // Phase 2: LLM summaries
@@ -290,8 +174,8 @@ async function generateSummaries(
 
 async function main(): Promise<void> {
   const now = new Date();
-  const since = new Date(now.getTime() - 24 * 60 * 60 * 1000);
-  const dateStr = toCstDateStr(now);
+  const rawSnapshotFile = process.env["RAW_SNAPSHOT_PATH"] ?? "";
+  let dateStr = toCstDateStr(now);
   const utcStr = toUtcStr(now);
   const digestRepo = process.env["DIGEST_REPO"] ?? "";
 
@@ -301,20 +185,47 @@ async function main(): Promise<void> {
     console.log("[github] GITHUB_TOKEN not set — using unauthenticated public API requests.");
   }
 
-  // 1. Fetch all data in parallel
-  const webState = loadWebState();
-  const {
-    fetched,
-    skillsData,
-    webResults,
-    trendingData,
-    hnData,
-    phData,
-    arxivData,
-    hfData,
-    devtoData,
-    lobstersData,
-  } = await fetchAllData(since, webState);
+  // 1. Fetch all data in parallel or load a pre-collected snapshot
+  const loadData = async (): Promise<{
+    dateStr: string;
+    data: Awaited<ReturnType<typeof fetchAllData>>;
+    webState: ReturnType<typeof loadWebState>;
+  }> => {
+    if (rawSnapshotFile) {
+      console.log(`  Loading collected snapshot: ${rawSnapshotFile}`);
+      const snapshot = loadCollectedSnapshot(rawSnapshotFile);
+      return {
+        dateStr: snapshot.dateStr,
+        webState: loadWebState(),
+        data: {
+          fetched: snapshot.fetched,
+          skillsData: snapshot.skillsData,
+          webResults: snapshot.webResults,
+          trendingData: snapshot.trendingData,
+          hnData: snapshot.hnData,
+          phData: snapshot.phData,
+          arxivData: snapshot.arxivData,
+          hfData: snapshot.hfData,
+          devtoData: snapshot.devtoData,
+          lobstersData: snapshot.lobstersData,
+        },
+      };
+    }
+
+    const since = new Date(now.getTime() - 24 * 60 * 60 * 1000);
+    const webState = loadWebState();
+    return {
+      dateStr,
+      webState,
+      data: await fetchAllData(since, webState),
+    };
+  };
+
+  const loaded = await loadData();
+  dateStr = loaded.dateStr;
+  const webState = loaded.webState;
+  const { fetched, skillsData, webResults, trendingData, hnData, phData, arxivData, hfData, devtoData, lobstersData } =
+    loaded.data;
 
   const peerIds = new Set(OPENCLAW_PEERS.map((p) => p.id));
   const fetchedCli = fetched.filter((f) => f.cfg.id !== OPENCLAW.id && !peerIds.has(f.cfg.id));

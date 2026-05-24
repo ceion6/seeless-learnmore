@@ -2,9 +2,15 @@
 
 English | [中文](./README.zh.md)
 
-`seeless-learnmore` is a GitHub Actions powered AI radar. It collects AI ecosystem signals every day, writes source reports, and then produces one Chinese editor-style page that filters for what is actually worth reading.
+`seeless-learnmore` is an AI radar focused on Chinese daily synthesis. It collects AI ecosystem signals every day, writes source reports, and then produces one Chinese editor-style page that filters for what is actually worth reading.
 
 The default output is not a generic dashboard feed. The main page is `ai-radar.md`, which is a second-pass selection over the day's GitHub, research, community, and official-source reports.
+
+The recommended operating mode is:
+
+- GitHub Actions collect the raw daily snapshot first
+- a local Codex automation uses your local LLM setup to render reports and push them back
+- GitHub Pages serves the static site
 
 ## What it does
 
@@ -46,26 +52,41 @@ GitHub Pages renders these files as a static site. `manifest.json` drives naviga
 ## Deploy
 
 1. Push this repo to your GitHub repository.
-2. Open the `Actions` tab and make sure workflows are enabled.
-3. Open `Settings -> Pages`.
-4. Set:
+2. Open `Settings -> Pages`.
+3. Set:
    `Source = Deploy from a branch`
-5. Set:
+4. Set:
    `Branch = main`
    `Folder = / (root)`
-6. Add repository secrets in:
-   `Settings -> Secrets and variables -> Actions`
-7. Run `Daily Seeless Learnmore` once manually.
+5. Copy `.env.example` to your local `.env` and fill in your LLM key.
+6. In `Settings -> Secrets and variables -> Actions`, add only the collection-side values you actually want on GitHub.
+
+In most cases that is just:
+
+```bash
+PRODUCTHUNT_TOKEN=xxxxx
+```
+
+`GITHUB_TOKEN` is provided automatically by GitHub Actions.
+
+7. Run once locally:
+
+   ```bash
+   pnpm install
+   pnpm publish:local
+   ```
+
+8. Add a daily local Codex automation that runs after the GitHub daily collector.
 
 Your site URL will be:
 
 `https://<your-github-name>.github.io/<your-repo-name>/`
 
-## Required secrets
+## Local environment variables
 
-At minimum, configure one LLM provider and its API key.
+At minimum, configure one local LLM provider and its API key in `.env`.
 
-| Secret | Required | Purpose |
+| Variable | Required | Purpose |
 | --- | --- | --- |
 | `LLM_PROVIDER` | recommended | `anthropic`, `openai`, `deepseek`, `github-copilot`, `openrouter` |
 | `ANTHROPIC_API_KEY` | if `anthropic` | Anthropic API key |
@@ -87,8 +108,10 @@ At minimum, configure one LLM provider and its API key.
 | `TELEGRAM_BOT_TOKEN` | optional | enables Telegram notifications |
 | `TELEGRAM_CHAT_ID` | optional | Telegram target chat/channel ID |
 | `FEISHU_WEBHOOK_URLS` | optional | comma-separated Feishu webhooks |
+| `GITHUB_TOKEN` | optional | raises GitHub API limits; auto-derived when `gh` is logged in locally |
+| `DIGEST_REPO` | optional | footer and GitHub issue target; the local publish script auto-detects it |
 
-`GITHUB_TOKEN` is provided automatically by GitHub Actions.
+If your goal is to keep model keys local, you do not need to store these in GitHub repository secrets.
 
 ## Alibaba Cloud Model Studio
 
@@ -113,16 +136,35 @@ pnpm install
 pnpm start
 ```
 
-Use the same environment variables locally as you use in repository secrets.
+For the full local publishing flow, use:
 
-## Schedule
+```bash
+pnpm publish:local
+```
 
-- Daily:
-  `00:00 UTC` / `08:00 China Standard Time`
-- Weekly:
-  `01:00 UTC` every Monday
-- Monthly:
-  `02:00 UTC` on the first day of each month
+This script will:
+
+- pull the latest `main`
+- prefer `digests/YYYY-MM-DD/raw-data.json` when today's GitHub collection snapshot exists
+- run the daily digest
+- run the weekly rollup on Mondays
+- run the monthly rollup on the first day of the month
+- update `manifest.json` and `feed.xml`
+- commit and push new digest output back to `main`
+
+To avoid sweeping in unrelated local edits, the script exits early when tracked files already have uncommitted changes.
+
+If you want to require the snapshot and forbid live fallback, run:
+
+```bash
+PUBLISH_REQUIRE_SNAPSHOT=1 pnpm publish:local
+```
+
+## GitHub Actions split
+
+`Daily Seeless Learnmore` is scheduled again, but it only collects and commits the raw daily snapshot.
+
+`Weekly Seeless Learnmore` and `Monthly Seeless Learnmore` remain manual fallback workflows.
 
 ## Notes
 
