@@ -12,11 +12,7 @@
 import "dotenv/config";
 import fs from "node:fs";
 import path from "node:path";
-import {
-  type GitHubItem,
-  type RepoFetch,
-  createGitHubIssue,
-} from "./github.ts";
+import { type GitHubItem, type RepoFetch, createGitHubIssue } from "./github.ts";
 import {
   type RepoDigest,
   buildCliPrompt,
@@ -53,12 +49,7 @@ import { type Lang, MSG, ISSUE_LABELS, CLI_ISSUE_TITLE, OPENCLAW_ISSUE_TITLE } f
 // Repo config — loaded from config.yml, falls back to built-in defaults
 // ---------------------------------------------------------------------------
 
-const {
-  cliRepos: CLI_REPOS,
-  skillsRepo: CLAUDE_SKILLS_REPO,
-  openclaw: OPENCLAW,
-  openclawPeers: OPENCLAW_PEERS,
-} = loadConfig();
+const { skillsRepo: CLAUDE_SKILLS_REPO, openclaw: OPENCLAW, openclawPeers: OPENCLAW_PEERS } = loadConfig();
 
 // ---------------------------------------------------------------------------
 // Helpers
@@ -224,8 +215,18 @@ async function main(): Promise<void> {
   const loaded = await loadData();
   dateStr = loaded.dateStr;
   const webState = loaded.webState;
-  const { fetched, skillsData, webResults, trendingData, hnData, phData, arxivData, hfData, devtoData, lobstersData } =
-    loaded.data;
+  const {
+    fetched,
+    skillsData,
+    webResults,
+    trendingData,
+    hnData,
+    phData,
+    arxivData,
+    hfData,
+    devtoData,
+    lobstersData,
+  } = loaded.data;
 
   const peerIds = new Set(OPENCLAW_PEERS.map((p) => p.id));
   const fetchedCli = fetched.filter((f) => f.cfg.id !== OPENCLAW.id && !peerIds.has(f.cfg.id));

@@ -284,10 +284,7 @@ export function saveWebState(state: WebState): void {
 // Main export
 // ---------------------------------------------------------------------------
 
-export async function fetchSiteContent(
-  site: SiteId,
-  state: WebState,
-): Promise<WebFetchResult> {
+export async function fetchSiteContent(site: SiteId, state: WebState): Promise<WebFetchResult> {
   const cfg = SITE_CONFIGS[site];
   const siteState = state[site];
   const isFirstRun = Object.keys(siteState.seenUrls).length === 0;

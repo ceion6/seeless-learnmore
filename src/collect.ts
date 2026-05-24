@@ -9,7 +9,14 @@ import {
 } from "./github.ts";
 import { loadConfig } from "./config.ts";
 import { toCstDateStr, toUtcStr } from "./date.ts";
-import { fetchSiteContent, loadWebState, type SiteId, SITE_IDS, type WebFetchResult, type WebState } from "./web.ts";
+import {
+  fetchSiteContent,
+  loadWebState,
+  type SiteId,
+  SITE_IDS,
+  type WebFetchResult,
+  type WebState,
+} from "./web.ts";
 import { fetchTrendingData, type TrendingData } from "./trending.ts";
 import { fetchHnData, type HnData } from "./hn.ts";
 import { fetchPhData, type PhData } from "./ph.ts";
@@ -97,7 +104,9 @@ export async function fetchAllData(
             fetchRecentReleases(cfg.repo, since),
           ]);
           const issues = issuesRaw.filter((i) => !i.pull_request);
-          console.log(`  [${cfg.id}] issues: ${issues.length}, prs: ${prs.length}, releases: ${releases.length}`);
+          console.log(
+            `  [${cfg.id}] issues: ${issues.length}, prs: ${prs.length}, releases: ${releases.length}`,
+          );
           return { cfg, issues, prs, releases };
         } catch (err) {
           console.error(`  [${cfg.id}] fetch failed: ${err}`);
@@ -158,7 +167,9 @@ export async function fetchAllData(
   };
 }
 
-export async function collectDailySnapshot(now = new Date()): Promise<{ snapshot: CollectedSnapshot; webState: WebState }> {
+export async function collectDailySnapshot(
+  now = new Date(),
+): Promise<{ snapshot: CollectedSnapshot; webState: WebState }> {
   const since = new Date(now.getTime() - 24 * 60 * 60 * 1000);
   const dateStr = toCstDateStr(now);
   const utcStr = toUtcStr(now);
