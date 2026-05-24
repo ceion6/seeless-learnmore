@@ -9,6 +9,7 @@
  * Provider-specific env vars — see src/providers/ for full list.
  */
 
+import "dotenv/config";
 import fs from "node:fs";
 import path from "node:path";
 import {
@@ -27,7 +28,12 @@ import {
   buildPeersComparisonPrompt,
   buildSkillsPrompt,
 } from "./prompts.ts";
-import { buildTrendingPrompt, buildHighlightsPrompt, type ReportHighlights } from "./prompts-data.ts";
+import {
+  buildTrendingPrompt,
+  buildHighlightsPrompt,
+  buildShaokandianRadarPrompt,
+  type ReportHighlights,
+} from "./prompts-data.ts";
 import { callLlm, saveFile, autoGenFooter, LLM_TOKENS_TRENDING } from "./report.ts";
 import { buildCliReportContent, buildOpenclawReportContent } from "./report-builders.ts";
 import {
@@ -39,7 +45,7 @@ import {
   saveHfReport,
   saveCommunityReport,
 } from "./report-savers.ts";
-import { loadWebState, fetchSiteContent, type WebFetchResult, type WebState } from "./web.ts";
+import { loadWebState, fetchSiteContent, SITE_IDS, type SiteId, type WebFetchResult, type WebState } from "./web.ts";
 import { fetchTrendingData, type TrendingData } from "./trending.ts";
 import { fetchHnData, type HnData } from "./hn.ts";
 import { fetchPhData, type PhData } from "./ph.ts";
@@ -65,12 +71,6 @@ const {
 // ---------------------------------------------------------------------------
 // Helpers
 // ---------------------------------------------------------------------------
-
-function requireEnv(name: string): string {
-  const value = process.env[name];
-  if (!value) throw new Error(`Missing required environment variable: ${name}`);
-  return value;
-}
 
 // ---------------------------------------------------------------------------
 // Phase 1: Fetch
@@ -136,26 +136,25 @@ async function fetchAllData(
         console.error(`  [claude-code-skills] fetch failed: ${err}`);
         return { prs: [] as GitHubItem[], issues: [] as GitHubItem[] };
       }),
-    Promise.all([
-      fetchSiteContent("anthropic", webState).catch((err): WebFetchResult => {
-        console.error(`  [web/anthropic] fetch failed: ${err}`);
-        return {
-          site: "anthropic",
-          siteName: "Anthropic (Claude)",
-          isFirstRun: false,
-          newItems: [],
-          totalDiscovered: 0,
-        };
-      }),
-      fetchSiteContent("openai", webState).catch((err): WebFetchResult => {
-        console.error(`  [web/openai] fetch failed: ${err}`);
-        return { site: "openai", siteName: "OpenAI", isFirstRun: false, newItems: [], totalDiscovered: 0 };
-      }),
-    ]),
+    Promise.all(
+      SITE_IDS.map((site: SiteId) =>
+        fetchSiteContent(site, webState).catch((err): WebFetchResult => {
+          console.error(`  [web/${site}] fetch failed: ${err}`);
+          return {
+            site,
+            siteName: site,
+            isFirstRun: false,
+            newItems: [],
+            totalDiscovered: 0,
+          };
+        }),
+      ),
+    ),
     fetchTrendingData().catch(
       (): TrendingData => ({
         trendingRepos: [],
         searchRepos: [],
+        starSurgeRepos: [],
         trendingFetchSuccess: false,
       }),
     ),
@@ -266,7 +265,10 @@ async function generateSummaries(
       ),
     ),
     (async () => {
-      const hasData = trendingData.trendingRepos.length > 0 || trendingData.searchRepos.length > 0;
+      const hasData =
+        trendingData.trendingRepos.length > 0 ||
+        trendingData.searchRepos.length > 0 ||
+        trendingData.starSurgeRepos.length > 0;
       if (!hasData) {
         return MSG.trendingNoData[lang];
       }
@@ -287,8 +289,6 @@ async function generateSummaries(
 // ---------------------------------------------------------------------------
 
 async function main(): Promise<void> {
-  requireEnv("GITHUB_TOKEN");
-
   const now = new Date();
   const since = new Date(now.getTime() - 24 * 60 * 60 * 1000);
   const dateStr = toCstDateStr(now);
@@ -297,6 +297,9 @@ async function main(): Promise<void> {
 
   const providerName = process.env["LLM_PROVIDER"] ?? "anthropic";
   console.log(`[${now.toISOString()}] Starting digest | provider: ${providerName}`);
+  if (!process.env["GITHUB_TOKEN"]) {
+    console.log("[github] GITHUB_TOKEN not set — using unauthenticated public API requests.");
+  }
 
   // 1. Fetch all data in parallel
   const webState = loadWebState();
@@ -440,6 +443,20 @@ async function main(): Promise<void> {
     const en = readReport(enFile);
     if (zh) zhReports[id] = zh;
     if (en) enReports[id] = en;
+  }
+
+  console.log("  Generating 少看点 AI 雷达...");
+  try {
+    const radarSummary = await callLlm(buildShaokandianRadarPrompt(zhReports, dateStr), 4096);
+    const radarContent =
+      radarSummary.trim() +
+      "\n\n---\n\n" +
+      `> 本页由今日中文报告二次筛选生成，保留原始来源入口。生成时间: ${utcStr} UTC` +
+      autoGenFooter("zh");
+    console.log(`  Saved ${saveFile(radarContent, dateStr, "ai-radar.md")}`);
+    zhReports["ai-radar"] = radarContent;
+  } catch (err) {
+    console.error(`  [ai-radar] Generation failed: ${err}`);
   }
 
   console.log("  Generating highlights for Telegram...");

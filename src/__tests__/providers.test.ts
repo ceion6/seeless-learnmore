@@ -4,6 +4,7 @@ import {
   OpenAIProvider,
   GitHubCopilotProvider,
   OpenRouterProvider,
+  DeepSeekProvider,
   createProvider,
   VALID_PROVIDER_NAMES,
   type LlmProvider,
@@ -100,12 +101,18 @@ describe("LlmProvider interface", () => {
     expect(p.name).toBe("openrouter");
   });
 
+  it("DeepSeekProvider has correct name", () => {
+    const p = new DeepSeekProvider({ apiKey: "test" });
+    expect(p.name).toBe("deepseek");
+  });
+
   it("all providers implement LlmProvider with call()", () => {
     const providers: LlmProvider[] = [
       new AnthropicProvider(),
       new OpenAIProvider({ apiKey: "k" }),
       new GitHubCopilotProvider({ apiKey: "k" }),
       new OpenRouterProvider({ apiKey: "k" }),
+      new DeepSeekProvider({ apiKey: "k" }),
     ];
     for (const p of providers) {
       expect(typeof p.name).toBe("string");
@@ -119,8 +126,8 @@ describe("LlmProvider interface", () => {
 // ---------------------------------------------------------------------------
 
 describe("VALID_PROVIDER_NAMES", () => {
-  it("contains all four supported providers", () => {
-    expect(VALID_PROVIDER_NAMES).toEqual(["anthropic", "openai", "github-copilot", "openrouter"]);
+  it("contains all supported providers", () => {
+    expect(VALID_PROVIDER_NAMES).toEqual(["anthropic", "openai", "github-copilot", "openrouter", "deepseek"]);
   });
 });
 
@@ -234,6 +241,47 @@ describe("OpenAIProvider", () => {
 
     const p = new OpenAIProvider({ apiKey: "k" });
     await expect(p.call("prompt", 100)).rejects.toThrow("Unexpected empty response from openai");
+  });
+
+  it("falls back to the next model on quota-like errors", async () => {
+    const mockCreate = await getOpenAIMockCreate();
+    const err429 = Object.assign(new Error("quota exceeded"), { status: 429, code: "insufficient_quota" });
+    mockCreate
+      .mockRejectedValueOnce(err429)
+      .mockResolvedValueOnce({ choices: [{ message: { content: "Hello from fallback model" } }] });
+
+    const p = new OpenAIProvider({
+      apiKey: "k",
+      model: "qwen-plus",
+      fallbackModels: ["qwen-turbo", "qwen-max"],
+    });
+    const result = await p.call("prompt", 100);
+
+    expect(result).toBe("Hello from fallback model");
+    expect(mockCreate).toHaveBeenNthCalledWith(1, {
+      model: "qwen-plus",
+      max_completion_tokens: 100,
+      messages: [{ role: "user", content: "prompt" }],
+    });
+    expect(mockCreate).toHaveBeenNthCalledWith(2, {
+      model: "qwen-turbo",
+      max_completion_tokens: 100,
+      messages: [{ role: "user", content: "prompt" }],
+    });
+  });
+
+  it("does not try fallback models on unrelated errors", async () => {
+    const mockCreate = await getOpenAIMockCreate();
+    mockCreate.mockRejectedValueOnce(new Error("server error"));
+
+    const p = new OpenAIProvider({
+      apiKey: "k",
+      model: "qwen-plus",
+      fallbackModels: ["qwen-turbo"],
+    });
+
+    await expect(p.call("prompt", 100)).rejects.toThrow("server error");
+    expect(mockCreate).toHaveBeenCalledTimes(1);
   });
 });
 
@@ -355,6 +403,11 @@ describe("createProvider", () => {
     expect(p).toBeInstanceOf(OpenRouterProvider);
   });
 
+  it("creates deepseek provider", () => {
+    const p = createProvider("deepseek");
+    expect(p).toBeInstanceOf(DeepSeekProvider);
+  });
+
   it(
     "reads LLM_PROVIDER from env",
     withEnv({ LLM_PROVIDER: "openai" }, () => {
@@ -365,7 +418,7 @@ describe("createProvider", () => {
 
   it("throws descriptive error for unknown provider", () => {
     expect(() => createProvider("bogus" as never)).toThrow(
-      /Invalid LLM provider: "bogus".*Valid providers are: anthropic, openai, github-copilot, openrouter/,
+      /Invalid LLM provider: "bogus".*Valid providers are: anthropic, openai, github-copilot, openrouter, deepseek/,
     );
   });
 

@@ -64,7 +64,10 @@ export const WEB_REPORT = {
 
 export const TRENDING_REPORT = {
   title: t("AI 开源趋势日报", "AI Open Source Trends"),
-  sources: t("数据来源: GitHub Trending + GitHub Search API", "Sources: GitHub Trending + GitHub Search API"),
+  sources: t(
+    "数据来源: GitHub Trending + GitHub Search API + 飞速涨星仓库扫描",
+    "Sources: GitHub Trending + GitHub Search API + fast-rising repo scan",
+  ),
   issueTitle: (dateStr: string, lang: Lang) =>
     lang === "en" ? `📈 AI Open Source Trends ${dateStr}` : `📈 AI 开源趋势日报 ${dateStr}`,
 } as const;
@@ -145,6 +148,7 @@ export const FOOTER = {
 // ---------------------------------------------------------------------------
 
 export const REPORT_LABELS: Record<string, string> = {
+  "ai-radar": "少看点 AI 雷达",
   "ai-cli": "AI CLI 工具社区动态日报",
   "ai-cli-en": "AI CLI Tools Digest",
   "ai-agents": "AI Agents 生态日报",
@@ -170,6 +174,7 @@ export const REPORT_LABELS: Record<string, string> = {
 };
 
 export const NOTIFY_LABELS: Record<string, Record<Lang, string>> = {
+  "ai-radar": t("少看点 AI 雷达", "Shaokandian AI Radar"),
   "ai-cli": t("AI CLI 工具", "AI CLI Tools"),
   "ai-agents": t("AI Agents 生态", "AI Agents Ecosystem"),
   "ai-web": t("官网动态", "Official Updates"),

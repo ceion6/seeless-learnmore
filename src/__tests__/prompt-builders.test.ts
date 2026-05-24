@@ -12,6 +12,7 @@ import {
   buildWeeklyPrompt,
   buildMonthlyPrompt,
   buildHnPrompt,
+  buildShaokandianRadarPrompt,
 } from "../prompts-data.ts";
 import type { RepoConfig, GitHubItem, GitHubRelease } from "../github.ts";
 import type { RepoDigest } from "../prompts.ts";
@@ -188,6 +189,7 @@ describe("buildTrendingPrompt", () => {
         },
       ],
       searchRepos: [],
+      starSurgeRepos: [],
       trendingFetchSuccess: true,
     };
     const result = buildTrendingPrompt(data, "2026-03-09");
@@ -198,7 +200,7 @@ describe("buildTrendingPrompt", () => {
   });
 
   it("shows fetch failure message when trending fails", () => {
-    const data: TrendingData = { trendingRepos: [], searchRepos: [], trendingFetchSuccess: false };
+    const data: TrendingData = { trendingRepos: [], searchRepos: [], starSurgeRepos: [], trendingFetchSuccess: false };
     const result = buildTrendingPrompt(data, "2026-03-09");
     expect(result).toContain("未能抓取");
   });
@@ -217,11 +219,58 @@ describe("buildTrendingPrompt", () => {
           searchQuery: "ai-agent",
         },
       ],
+      starSurgeRepos: [],
       trendingFetchSuccess: false,
     };
     const result = buildTrendingPrompt(data, "2026-03-09");
     expect(result).toContain("[topic:ai-agent]");
     expect(result).toContain("1,000");
+  });
+
+  it("includes fast-rising repositories", () => {
+    const data: TrendingData = {
+      trendingRepos: [],
+      searchRepos: [],
+      starSurgeRepos: [
+        {
+          fullName: "fast/riser",
+          description: "new hot repo",
+          language: "Python",
+          stargazersCount: 2400,
+          createdAt: "2026-03-01T00:00:00Z",
+          starsPerDay: 300.5,
+          url: "https://github.com/fast/riser",
+          searchQuery: "llm",
+        },
+      ],
+      trendingFetchSuccess: false,
+    };
+    const result = buildTrendingPrompt(data, "2026-03-09");
+    expect(result).toContain("fast/riser");
+    expect(result).toContain("300.5");
+    expect(result).toContain("飞速涨星仓库");
+  });
+});
+
+// ---------------------------------------------------------------------------
+// buildShaokandianRadarPrompt
+// ---------------------------------------------------------------------------
+
+describe("buildShaokandianRadarPrompt", () => {
+  it("builds a Chinese decision-oriented radar prompt", () => {
+    const result = buildShaokandianRadarPrompt(
+      {
+        "ai-trending": "# AI 开源趋势日报\n\nGitHub 今日有新项目升温。",
+        "ai-arxiv": "# ArXiv AI 研究日报\n\n一篇论文提出新训练方法。",
+      },
+      "2026-05-22",
+    );
+
+    expect(result).toContain("少看点 AI 雷达");
+    expect(result).toContain("2026-05-22");
+    expect(result).toContain("今天必看");
+    expect(result).toContain("可以暂缓");
+    expect(result).toContain("[ai-trending]");
   });
 });
 

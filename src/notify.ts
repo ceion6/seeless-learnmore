@@ -6,7 +6,7 @@
  *   TELEGRAM_BOT_TOKEN  — bot token from @BotFather
  *   TELEGRAM_CHAT_ID    — channel/group/user chat ID
  * Optional:
- *   PAGES_URL           — GitHub Pages base URL (defaults to the public deployment)
+ *   PAGES_URL           — GitHub Pages base URL
  */
 
 import fs from "node:fs";
@@ -19,7 +19,7 @@ export interface Highlights {
   en: ReportHighlights;
 }
 
-const PAGES_URL_DEFAULT = "https://duanyytop.github.io/agents-radar";
+const PAGES_URL_DEFAULT = "http://127.0.0.1:4173";
 
 function escapeHtml(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
@@ -27,7 +27,7 @@ function escapeHtml(s: string): string {
 
 async function sendTelegram(text: string): Promise<void> {
   const BOT_TOKEN = process.env["TELEGRAM_BOT_TOKEN"] ?? "";
-  const CHAT_ID = process.env["TELEGRAM_CHAT_ID"] || "@agents_radar";
+  const CHAT_ID = process.env["TELEGRAM_CHAT_ID"] ?? "";
   const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
   const res = await fetch(url, {
     method: "POST",
@@ -58,7 +58,7 @@ export function buildMessage(
 
   const icon = isMonthly ? "📆" : isWeekly ? "📅" : "📡";
   const suffix = isMonthly ? " 月报" : isWeekly ? " 周报" : "";
-  const lines: string[] = [`${icon} <b>agents-radar${suffix} · ${date}</b>`];
+  const lines: string[] = [`${icon} <b>少看点 AI 雷达${suffix} · ${date}</b>`];
 
   // Daily reports first, then rollups
   const ordered = [
@@ -99,6 +99,10 @@ async function main(): Promise<void> {
   const BOT_TOKEN = process.env["TELEGRAM_BOT_TOKEN"] ?? "";
   if (!BOT_TOKEN) {
     console.log("[notify] TELEGRAM_BOT_TOKEN not set — skipping.");
+    return;
+  }
+  if (!process.env["TELEGRAM_CHAT_ID"]) {
+    console.log("[notify] TELEGRAM_CHAT_ID not set — skipping.");
     return;
   }
 

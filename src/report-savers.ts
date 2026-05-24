@@ -55,24 +55,21 @@ export async function saveWebReport(
       const isFirstRun = webResults.some((r) => r.isFirstRun);
       const totalNew = webResults.reduce((sum, r) => sum + r.newItems.length, 0);
 
-      const anthropicNew = webResults.find((r) => r.site === "anthropic")?.newItems.length ?? 0;
-      const anthropicTotal = webResults.find((r) => r.site === "anthropic")?.totalDiscovered ?? 0;
-      const openaiNew = webResults.find((r) => r.site === "openai")?.newItems.length ?? 0;
-      const openaiTotal = webResults.find((r) => r.site === "openai")?.totalDiscovered ?? 0;
-
       const fileName = lang === "en" ? "ai-web-en.md" : "ai-web.md";
       const mode = isFirstRun ? WEB_REPORT.firstCrawl[lang] : WEB_REPORT.todayUpdate[lang];
 
       const webTitle = `# ${WEB_REPORT.title[lang]} ${dateStr}\n\n`;
       const webMeta = `> ${mode} | ${WEB_REPORT.newContent(totalNew, lang)} | ${WEB_REPORT.generated(utcStr, lang)}\n\n`;
       const webSources =
-        lang === "en"
-          ? `${WEB_REPORT.sourcesHeader[lang]}\n` +
-            `- Anthropic: [anthropic.com](https://www.anthropic.com) — ${anthropicNew} new articles (sitemap total: ${anthropicTotal})\n` +
-            `- OpenAI: [openai.com](https://openai.com) — ${openaiNew} new articles (sitemap total: ${openaiTotal})\n\n`
-          : `${WEB_REPORT.sourcesHeader[lang]}\n` +
-            `- Anthropic: [anthropic.com](https://www.anthropic.com) — 新增 ${anthropicNew} 篇（sitemap 共 ${anthropicTotal} 条）\n` +
-            `- OpenAI: [openai.com](https://openai.com) — 新增 ${openaiNew} 篇（sitemap 共 ${openaiTotal} 条）\n\n`;
+        `${WEB_REPORT.sourcesHeader[lang]}\n` +
+        webResults
+          .map((r) =>
+            lang === "en"
+              ? `- ${r.siteName} — ${r.newItems.length} new articles (sitemap total: ${r.totalDiscovered})`
+              : `- ${r.siteName} — 新增 ${r.newItems.length} 篇（sitemap 共 ${r.totalDiscovered} 条）`,
+          )
+          .join("\n") +
+        "\n\n";
 
       const webContent = webTitle + webMeta + webSources + `---\n\n` + webSummary + footer;
 
@@ -110,7 +107,10 @@ export async function saveTrendingReport(
   footer: string,
   lang: Lang = "zh",
 ): Promise<void> {
-  const hasData = trendingData.trendingRepos.length > 0 || trendingData.searchRepos.length > 0;
+  const hasData =
+    trendingData.trendingRepos.length > 0 ||
+    trendingData.searchRepos.length > 0 ||
+    trendingData.starSurgeRepos.length > 0;
   if (!hasData) {
     console.log(`  [trending/${lang}] No data available, skipping report.`);
     return;

@@ -7,6 +7,7 @@ import {
   urlCategory,
   titleFromUrl,
   emptyState,
+  SITE_IDS,
 } from "../web.ts";
 
 // ---------------------------------------------------------------------------
@@ -188,10 +189,10 @@ describe("titleFromUrl", () => {
 describe("emptyState", () => {
   it("returns valid empty state structure", () => {
     const state = emptyState();
-    expect(state).toEqual({
-      anthropic: { lastChecked: "", seenUrls: {} },
-      openai: { lastChecked: "", seenUrls: {} },
-    });
+    expect(Object.keys(state)).toEqual([...SITE_IDS]);
+    for (const site of SITE_IDS) {
+      expect(state[site]).toEqual({ lastChecked: "", seenUrls: {} });
+    }
   });
 
   it("returns a new object each time", () => {

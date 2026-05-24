@@ -26,9 +26,21 @@ export interface SearchRepo {
   searchQuery: string;
 }
 
+export interface StarSurgeRepo {
+  fullName: string;
+  description: string | null;
+  language: string | null;
+  stargazersCount: number;
+  createdAt: string;
+  starsPerDay: number;
+  url: string;
+  searchQuery: string;
+}
+
 export interface TrendingData {
   trendingRepos: TrendingRepo[];
   searchRepos: SearchRepo[];
+  starSurgeRepos: StarSurgeRepo[];
   trendingFetchSuccess: boolean;
 }
 
@@ -133,12 +145,20 @@ interface SearchApiItem {
   description: string | null;
   language: string | null;
   stargazers_count: number;
+  created_at: string;
   pushed_at: string;
   html_url: string;
 }
 
 interface SearchApiResponse {
   items: SearchApiItem[];
+}
+
+function starsPerDay(stars: number, createdAt: string): number {
+  const createdMs = Date.parse(createdAt);
+  if (Number.isNaN(createdMs)) return stars;
+  const ageDays = Math.max((Date.now() - createdMs) / (24 * 60 * 60 * 1000), 1);
+  return stars / ageDays;
 }
 
 async function searchAiRepos(sevenDaysAgo: string): Promise<SearchRepo[]> {
@@ -189,17 +209,73 @@ async function searchAiRepos(sevenDaysAgo: string): Promise<SearchRepo[]> {
   return all;
 }
 
+async function searchStarSurgeRepos(thirtyDaysAgo: string): Promise<StarSurgeRepo[]> {
+  const token = process.env["GITHUB_TOKEN"] ?? "";
+  const headers: Record<string, string> = {
+    Accept: "application/vnd.github+json",
+    "X-GitHub-Api-Version": "2022-11-28",
+  };
+  if (token) headers["Authorization"] = `Bearer ${token}`;
+
+  const seen = new Set<string>();
+  const all: StarSurgeRepo[] = [];
+
+  await Promise.all(
+    SEARCH_QUERIES.map(async ({ q, label }) => {
+      try {
+        const query = `${q}+created:>${thirtyDaysAgo}&sort=stars&order=desc`;
+        const url = `https://api.github.com/search/repositories?q=${query}&per_page=15`;
+        const resp = await fetch(url, { headers });
+        if (!resp.ok) {
+          console.error(`  [trending/surge] "${label}": HTTP ${resp.status}`);
+          return;
+        }
+        const data = (await resp.json()) as SearchApiResponse;
+        let added = 0;
+        for (const item of data.items ?? []) {
+          if (!seen.has(item.full_name)) {
+            seen.add(item.full_name);
+            all.push({
+              fullName: item.full_name,
+              description: item.description,
+              language: item.language,
+              stargazersCount: item.stargazers_count,
+              createdAt: item.created_at,
+              starsPerDay: starsPerDay(item.stargazers_count, item.created_at),
+              url: item.html_url,
+              searchQuery: label,
+            });
+            added++;
+          }
+        }
+        console.log(`  [trending/surge] "${label}": ${added} new repos`);
+      } catch (err) {
+        console.error(`  [trending/surge] "${label}": ${err}`);
+      }
+    }),
+  );
+
+  return all
+    .sort((a, b) => {
+      if (b.starsPerDay !== a.starsPerDay) return b.starsPerDay - a.starsPerDay;
+      return b.stargazersCount - a.stargazersCount;
+    })
+    .slice(0, 20);
+}
+
 // ---------------------------------------------------------------------------
 // Export
 // ---------------------------------------------------------------------------
 
 export async function fetchTrendingData(): Promise<TrendingData> {
   const sevenDaysAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
+  const thirtyDaysAgo = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
 
-  const [{ repos: trendingRepos, success }, searchRepos] = await Promise.all([
+  const [{ repos: trendingRepos, success }, searchRepos, starSurgeRepos] = await Promise.all([
     fetchGitHubTrending(),
     searchAiRepos(sevenDaysAgo),
+    searchStarSurgeRepos(thirtyDaysAgo),
   ]);
 
-  return { trendingRepos, searchRepos, trendingFetchSuccess: success };
+  return { trendingRepos, searchRepos, starSurgeRepos, trendingFetchSuccess: success };
 }

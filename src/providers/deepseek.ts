@@ -1,13 +1,15 @@
-import { OpenAICompatibleProvider } from "./openai-compatible.ts";
+import { OpenAICompatibleProvider, parseModelFallbacks } from "./openai-compatible.ts";
 
 export class DeepSeekProvider extends OpenAICompatibleProvider {
   readonly name = "deepseek";
 
-  constructor(apiKey: string, model?: string) {
+  constructor(opts?: { apiKey?: string; model?: string; fallbackModels?: string[] }) {
+    const model = opts?.model ?? process.env["DEEPSEEK_MODEL"] ?? "deepseek-chat";
     super({
-      apiKey,
+      apiKey: opts?.apiKey ?? process.env["DEEPSEEK_API_KEY"],
       baseURL: "https://api.deepseek.com",
-      model: model ?? "deepseek-chat",
+      model,
+      fallbackModels: opts?.fallbackModels ?? parseModelFallbacks(process.env["DEEPSEEK_MODEL_FALLBACKS"]),
     });
   }
 }

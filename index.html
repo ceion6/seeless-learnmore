@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📡 agents-radar</title>
+  <title>少看点 AI 雷达</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
-  <link rel="alternate" type="application/rss+xml" title="agents-radar RSS" href="./feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="少看点 AI 雷达 RSS" href="./feed.xml">
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js"></script>
   <style>
@@ -256,18 +256,15 @@
 <div id="app">
   <div id="hdr">
     <div class="brand">
-      <span class="brand-icon">📡</span>
-      <span>agents-<em>radar</em></span>
+      <span>少看点</span>
     </div>
     <div class="hdr-right">
       <div class="signal"></div>
-      <a class="hdr-btn icon-only" href="https://github.com/duanyytop/agents-radar" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub">
+      <a class="hdr-btn icon-only" href="https://github.com/duanyytop/agents-radar" target="_blank" rel="noopener noreferrer" title="框架来源" aria-label="GitHub">
         <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
           <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
         </svg>
       </a>
-      <a class="hdr-btn" href="https://t.me/agents_radar" target="_blank" rel="noopener noreferrer" title="Join Telegram"><span class="hdr-icon">✈</span><span class="hdr-join">Join</span>Telegram</a>
-      <a class="hdr-btn" href="https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=478g7865-04a8-4fab-a7f8-23af85ba927b" target="_blank" rel="noopener noreferrer" title="Join Feishu Group"><span class="hdr-icon">◈</span><span class="hdr-join">Join</span>Feishu<span class="hdr-join">Group</span></a>
       <a id="rssLink" class="hdr-btn" href="./feed.xml" title="RSS Feed"><span class="hdr-icon">⊕</span>RSS</a>
       <button id="themeBtn" class="hdr-btn"><span class="hdr-icon">◐</span><span class="hdr-label">LIGHT</span></button>
     </div>
@@ -276,11 +273,11 @@
   <div id="body">
     <div id="sidebar">
       <div id="mob-toggle" onclick="document.getElementById('sidebar').classList.toggle('open')">
-        ☰ &nbsp;选择报告
+        ☰ &nbsp;选择日期/报告
       </div>
-      <div class="side-label">REPORTS</div>
+      <div class="side-label">日期</div>
       <div class="search-wrap">
-        <input id="searchInput" type="search" placeholder="搜索全文，如 Claude">
+        <input id="searchInput" type="search" placeholder="搜索全文，如 模型 / agent / 论文">
         <div id="searchStatus"></div>
       </div>
       <div id="nav"></div>
@@ -288,7 +285,7 @@
 
     <div id="cwrap">
       <div id="content">
-        <div class="msg"><div class="msg-icon">📡</div><div>正在加载…</div></div>
+        <div class="msg"><div class="msg-icon">AI</div><div>正在加载…</div></div>
       </div>
     </div>
   </div>
@@ -313,6 +310,7 @@ function renderMarkdown(raw) {
 }
 
 const LABELS = {
+  'ai-radar':        '少看点 AI 雷达',
   'ai-cli':          'AI CLI 工具',
   'ai-cli-en':       'AI CLI Tools',
   'ai-agents':       'AI Agents 生态',
@@ -332,6 +330,7 @@ const LABELS = {
   'ai-community':    '技术社区 AI',
   'ai-community-en': 'Tech Community AI',
 };
+const PRIMARY_REPORT = 'ai-radar';
 
 // ── Theme ──
 const htmlEl = document.documentElement;
@@ -455,12 +454,13 @@ async function loadReport(date, report, push = true) {
   document.querySelectorAll('.date-hdr').forEach(h => {
     const grp = h.closest('.date-group');
     const hasActive = grp.querySelector('.rpt-btn.active') || grp.querySelector('.lang-btn.active');
-    h.classList.toggle('lit', !!hasActive);
+    h.classList.toggle('lit', !!hasActive || grp.dataset.date === date);
   });
   document.querySelectorAll('.month-hdr').forEach(h => {
     const mGrp = h.closest('.month-group');
     const hasActive = mGrp.querySelector('.lang-btn.active') || mGrp.querySelector('.rpt-btn.active');
-    h.classList.toggle('lit', !!hasActive);
+    const hasDate = !!mGrp.querySelector(`.date-group[data-date="${date}"]`);
+    h.classList.toggle('lit', !!hasActive || hasDate);
   });
   document.querySelectorAll('.date-group').forEach(g => {
     if (g.dataset.date === date) {
@@ -475,7 +475,7 @@ async function loadReport(date, report, push = true) {
   document.getElementById('sidebar').classList.remove('open');
 
   const cwrap = document.getElementById('cwrap');
-  setContent('<div class="msg"><div class="msg-icon">⏳</div><div>Loading…</div></div>');
+  setContent('<div class="msg"><div class="msg-icon">⏳</div><div>正在加载…</div></div>');
   cwrap.scrollTop = 0;
 
   try {
@@ -556,6 +556,16 @@ function buildDateGroup(date, reports, isFirst) {
   return grp;
 }
 
+function getPrimaryDates(dates) {
+  const primaryDates = dates
+    .filter(({ reports }) => reports.includes(PRIMARY_REPORT))
+    .map(({ date }) => ({ date, reports: [PRIMARY_REPORT] }));
+
+  if (primaryDates.length) return primaryDates;
+
+  return dates.map(({ date, reports }) => ({ date, reports: reports.slice(0, 1) }));
+}
+
 function buildNav(dates) {
   const nav = document.getElementById('nav');
 
@@ -602,6 +612,11 @@ window.addEventListener('popstate', () => {
   if (h) loadReport(h.date, h.report, false);
 });
 
+window.addEventListener('hashchange', () => {
+  const h = getHash();
+  if (h) loadReport(h.date, h.report, false);
+});
+
 // ── Init ──
 (async () => {
   try {
@@ -610,22 +625,23 @@ window.addEventListener('popstate', () => {
     const { dates } = await res.json();
     if (!dates?.length) throw new Error('manifest is empty');
 
-    buildNav(dates);
-    initSearch(dates);
+    const navDates = getPrimaryDates(dates);
+    buildNav(navDates);
+    initSearch(navDates);
 
     const hash = getHash();
-    const first = dates[0];
+    const first = navDates[0];
     if (hash && dates.find(d => d.date === hash.date && d.reports.includes(hash.report))) {
       loadReport(hash.date, hash.report, false);
     } else if (first?.reports?.length) {
-      const r0 = first.reports[0];
+      const r0 = first.reports.includes(PRIMARY_REPORT) ? PRIMARY_REPORT : first.reports[0];
       history.replaceState(null, '', `#${first.date}/${r0}`);
       loadReport(first.date, r0, false);
     }
   } catch (e) {
     document.getElementById('nav').innerHTML =
       '<div class="msg" style="height:80px;font-size:10px">⚠️ ' + e.message + '</div>';
-    setContent('<div class="msg"><div class="msg-icon">📡</div><div>无法加载 manifest.json</div></div>');
+    setContent('<div class="msg"><div class="msg-icon">AI</div><div>无法加载 manifest.json</div></div>');
   }
 })();
 </script>

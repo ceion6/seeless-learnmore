@@ -23,7 +23,7 @@ export interface WebPageItem {
   title: string;
   lastmod: string;
   content: string;
-  site: "anthropic" | "openai";
+  site: SiteId;
   category: string;
 }
 
@@ -33,13 +33,14 @@ interface SiteState {
   seenUrls: Record<string, string>;
 }
 
-export interface WebState {
-  anthropic: SiteState;
-  openai: SiteState;
-}
+export type SiteId = "anthropic" | "openai" | "deepmind" | "qwen" | "deepseek";
+
+export const SITE_IDS = ["anthropic", "openai", "deepmind", "qwen", "deepseek"] as const;
+
+export type WebState = Record<SiteId, SiteState>;
 
 export interface WebFetchResult {
-  site: "anthropic" | "openai";
+  site: SiteId;
   siteName: string;
   isFirstRun: boolean;
   newItems: WebPageItem[];
@@ -66,7 +67,7 @@ interface SiteConfig {
   metadataOnly?: boolean;
 }
 
-const SITE_CONFIGS: Record<"anthropic" | "openai", SiteConfig> = {
+const SITE_CONFIGS: Record<SiteId, SiteConfig> = {
   anthropic: {
     name: "Anthropic (Claude)",
     sitemapUrl: "https://www.anthropic.com/sitemap.xml",
@@ -91,6 +92,23 @@ const SITE_CONFIGS: Record<"anthropic" | "openai", SiteConfig> = {
     // Article pages return 403 from datacenter IPs (Cloudflare WAF);
     // sitemaps are accessible, so use metadata-only mode.
     metadataOnly: true,
+  },
+  deepmind: {
+    name: "Google DeepMind",
+    sitemapUrl: "https://deepmind.google/sitemap.xml",
+    prefixes: ["/blog/", "/models/"],
+  },
+  qwen: {
+    name: "Qwen",
+    sitemapUrl: "https://qwenlm.github.io/sitemap.xml",
+    subSitemapNames: ["zh"],
+    subSitemapTemplate: "https://qwenlm.github.io/{name}/sitemap.xml",
+    prefixes: ["/zh/blog/"],
+  },
+  deepseek: {
+    name: "DeepSeek API Docs",
+    sitemapUrl: "https://api-docs.deepseek.com/sitemap.xml",
+    prefixes: ["/news/", "/updates"],
   },
 };
 
@@ -203,7 +221,7 @@ export function titleFromUrl(url: string): string {
 // URL discovery
 // ---------------------------------------------------------------------------
 
-async function discoverUrls(site: "anthropic" | "openai"): Promise<Array<{ loc: string; lastmod?: string }>> {
+async function discoverUrls(site: SiteId): Promise<Array<{ loc: string; lastmod?: string }>> {
   const cfg = SITE_CONFIGS[site];
   const results: Array<{ loc: string; lastmod?: string }> = [];
 
@@ -222,23 +240,20 @@ async function discoverUrls(site: "anthropic" | "openai"): Promise<Array<{ loc: 
   } else {
     // Single sitemap
     const xml = await httpGet(cfg.sitemapUrl);
-    const all = isSitemapIndex(xml)
-      ? [] // unexpected; skip rather than recurse
-      : parseSitemapUrls(xml);
-
-    const prefixes = cfg.prefixes ?? [];
-    results.push(
-      ...all.filter(({ loc }) => {
-        try {
-          return prefixes.some((p) => new URL(loc).pathname.startsWith(p));
-        } catch {
-          return false;
-        }
-      }),
-    );
+    const all = isSitemapIndex(xml) ? [] : parseSitemapUrls(xml);
+    results.push(...all);
   }
 
-  return results;
+  const prefixes = cfg.prefixes ?? [];
+  if (!prefixes.length) return results;
+
+  return results.filter(({ loc }) => {
+    try {
+      return prefixes.some((p) => new URL(loc).pathname.startsWith(p));
+    } catch {
+      return false;
+    }
+  });
 }
 
 // ---------------------------------------------------------------------------
@@ -248,15 +263,13 @@ async function discoverUrls(site: "anthropic" | "openai"): Promise<Array<{ loc: 
 const STATE_FILE = path.join("digests", "web-state.json");
 
 export function emptyState(): WebState {
-  return {
-    anthropic: { lastChecked: "", seenUrls: {} },
-    openai: { lastChecked: "", seenUrls: {} },
-  };
+  return Object.fromEntries(SITE_IDS.map((site) => [site, { lastChecked: "", seenUrls: {} }])) as WebState;
 }
 
 export function loadWebState(): WebState {
   try {
-    return JSON.parse(fs.readFileSync(STATE_FILE, "utf-8")) as WebState;
+    const existing = JSON.parse(fs.readFileSync(STATE_FILE, "utf-8")) as Partial<WebState>;
+    return { ...emptyState(), ...existing };
   } catch {
     return emptyState();
   }
@@ -272,7 +285,7 @@ export function saveWebState(state: WebState): void {
 // ---------------------------------------------------------------------------
 
 export async function fetchSiteContent(
-  site: "anthropic" | "openai",
+  site: SiteId,
   state: WebState,
 ): Promise<WebFetchResult> {
   const cfg = SITE_CONFIGS[site];

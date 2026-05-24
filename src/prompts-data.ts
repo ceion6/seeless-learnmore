@@ -48,12 +48,31 @@ export function buildTrendingPrompt(data: TrendingData, dateStr: string, lang: L
         ? "(No search results)"
         : "（无搜索结果）";
 
+  const starSurgeSection =
+    data.starSurgeRepos.length > 0
+      ? data.starSurgeRepos
+          .map(
+            (r) =>
+              `- [${r.fullName}](${r.url})` +
+              (r.language ? ` [${r.language}]` : "") +
+              ` ⭐${r.stargazersCount.toLocaleString()}` +
+              ` (~${r.starsPerDay.toFixed(1)} stars/day)` +
+              ` [topic:${r.searchQuery}]` +
+              ` [created:${r.createdAt.slice(0, 10)}]` +
+              (r.description ? `\n  ${r.description}` : ""),
+          )
+          .join("\n")
+      : lang === "en"
+        ? "(No fast-rising repositories detected)"
+        : "（暂无明显飞速涨星仓库）";
+
   if (lang === "en") {
     return `You are a technical analyst focused on the AI open-source ecosystem. The following is ${dateStr} GitHub AI-related trending repository data. Please filter for AI relevance, categorize, and analyze trends.
 
 ## Data Sources
 - **Trending List** (github.com/trending, today's stars most reliable): Real-time hot list with today's new stars
 - **Topic Search** (GitHub Search API, topic tags): AI-related projects active in last 7 days, grouped by topic
+- **Fast-Rising Repos** (GitHub Search API, recently created): newer AI repos from the last 30 days ranked by total stars and approximate stars/day
 
 ---
 
@@ -64,6 +83,11 @@ ${trendingSection}
 
 ## AI Topic Search Results (${data.searchRepos.length} repositories, deduplicated)
 ${searchSection}
+
+---
+
+## Fast-Rising AI Repositories (${data.starSurgeRepos.length} repositories)
+${starSurgeSection}
 
 ---
 
@@ -87,12 +111,17 @@ Generate a structured AI Open Source Trends Report in English:
    - Stars data (total + today's new, if available)
    - One sentence: what it is and why it's worth attention today
 
-3. **Trend Signal Analysis** — 200-300 words, distill from today's hot list:
+3. **Fast-Rising Repositories** — List 3-6 newly emerging repositories worth watching, each with:
+   - Project name (with link)
+   - Total stars, approximate stars/day, and created date
+   - One sentence: why this growth curve matters
+
+4. **Trend Signal Analysis** — 200-300 words, distill from today's hot list:
    - Which type of AI tool is getting explosive community attention?
    - Any new tech stacks or directions appearing for the first time?
    - Connection to recent LLM releases / industry events
 
-4. **Community Hot Spots** — Bullet list of 3-5 specific projects or directions worth developer focus, with brief reasoning
+5. **Community Hot Spots** — Bullet list of 3-5 specific projects or directions worth developer focus, with brief reasoning
 
 Style: English, professional and concise, must include GitHub links for every project.
 `;
@@ -103,6 +132,7 @@ Style: English, professional and concise, must include GitHub links for every pr
 ## 数据说明
 - **Trending 榜单**（github.com/trending，今日 stars 数最可信）：今日实时热榜，含今日新增 stars
 - **主题搜索**（GitHub Search API，topic 标签）：7天内活跃的 AI 相关项目，按主题分类
+- **飞速涨星仓库**（GitHub Search API，最近创建项目）：近 30 天新仓库，按总 stars 与近似日均涨星速度筛出
 
 ---
 
@@ -113,6 +143,11 @@ ${trendingSection}
 
 ## AI 主题搜索结果（共 ${data.searchRepos.length} 个仓库，已去重）
 ${searchSection}
+
+---
+
+## GitHub 飞速涨星仓库（共 ${data.starSurgeRepos.length} 个仓库）
+${starSurgeSection}
 
 ---
 
@@ -136,12 +171,17 @@ ${searchSection}
    - stars 数据（总量 + 今日新增，如有）
    - 一句话说明：这个项目是什么，为什么今天值得关注
 
-3. **趋势信号分析** — 200~300 字，从今日热榜中提炼：
+3. **飞速涨星仓库** — 列出 3~6 个值得关注的新仓库，每项包含：
+   - 项目名（附链接）
+   - 总 stars、近似日均涨星、创建日期
+   - 一句话说明：为什么这个增长曲线值得注意
+
+4. **趋势信号分析** — 200~300 字，从今日热榜中提炼：
    - 哪类 AI 工具正在获得社区爆发性关注？
    - 有无新兴技术栈或方向首次登榜？
    - 与近期大模型发布/行业事件的关联
 
-4. **社区关注热点** — 以 bullet 形式列出 3~5 个值得开发者重点关注的具体项目或方向，给出简短理由
+5. **社区关注热点** — 以 bullet 形式列出 3~5 个值得开发者重点关注的具体项目或方向，给出简短理由
 
 语言要求：中文，专业简洁，每个项目必须附 GitHub 链接。
 `;
@@ -206,9 +246,9 @@ export function buildWebReportPrompt(results: WebFetchResult[], dateStr: string,
         : "本次为增量更新，请聚焦今日新增内容，并结合上下文判断其战略意义。";
 
   if (lang === "en") {
-    return `You are a deep content analyst focused on AI, skilled at extracting strategic signals from official announcements, technical blogs, research papers, and product documentation.
+    return `You are a deep content analyst focused on AI, skilled at extracting strategic signals from official announcements, technical blogs, research papers, model pages, and product documentation.
 
-The following content was crawled on ${dateStr} from Anthropic (claude.com / anthropic.com) and OpenAI (openai.com). ${firstRunNote}
+The following official AI-company content was crawled on ${dateStr}. It may include Anthropic, OpenAI, Google DeepMind, Qwen, DeepSeek, and other first-party sources. ${firstRunNote}
 
 ${siteSections}
 
@@ -218,16 +258,15 @@ Generate a detailed AI Official Content Tracking Report in English with these se
 
 1. **Today's Highlights** — 3-5 sentences on the most important new releases or developments, calling out key highlights
 
-2. **Anthropic / Claude Content Highlights** — Organize important content by category (news / research / engineering / learn, etc.):
+2. **Official Source Highlights** — Organize important content by source and category (news / research / engineering / models / docs / product, etc.):
    - For each piece, 2-4 sentences extracting core insights, technical details, or business significance
-   - Note publication date and original link
-   - If first full crawl, trace important milestones chronologically
+   - Note publication/update date and original link
+   - If a source is metadata-only, do not speculate beyond URL/title/category; state the limitation clearly
 
-3. **OpenAI Content Highlights** — Same structure, organized by research / release / company / safety categories
-   - ⚠️ Note: OpenAI data is metadata-only (titles derived from URL slugs, no article text). Only list URLs and categories objectively. Do NOT speculate on title meanings or fabricate content summaries. If information is insufficient for analysis, state the data limitation clearly.
+3. **Model and Product Signals** — Summarize model releases, model pages, API/docs updates, safety updates, and product announcements that may change developer behavior.
 
-4. **Strategic Signal Analysis** — Based on both companies' release cadence and content focus, analyze:
-   - Each company's recent technical priorities (model capabilities / safety / productization / ecosystem)
+4. **Strategic Signal Analysis** — Based on release cadence and content focus across sources, analyze:
+   - Recent technical priorities (model capabilities / safety / productization / ecosystem)
    - Competitive dynamics: who is setting the agenda, who is following
    - Potential impact on developers and enterprise users
 
@@ -236,13 +275,13 @@ Generate a detailed AI Official Content Tracking Report in English with these se
    - Dense releases in a category (may signal a product milestone)
    - Policy, compliance, and safety developments
 
-${isAnyFirstRun ? "6. **Content Landscape Overview** — First full crawl only: summarize the content category distribution for both companies and describe their content strategy style (academic-oriented vs product-oriented vs user stories, etc.)\n\n" : ""}Style: English, professional and detailed, suited for AI researchers, product managers, and technical decision-makers. Every item must include official links.
+${isAnyFirstRun ? "6. **Content Landscape Overview** — First full crawl only: summarize the content category distribution across sources and describe each source's content strategy style (research-oriented vs product-oriented vs docs-oriented, etc.)\n\n" : ""}Style: English, professional and detailed, suited for AI researchers, product managers, and technical decision-makers. Every item must include official links.
 `;
   }
 
-  return `你是一位专注于 AI 领域的深度内容分析师，擅长从官方公告、技术博客、研究论文和产品文档中提炼战略信号。
+  return `你是一位专注于 AI 领域的深度内容分析师，擅长从官方公告、技术博客、研究论文、模型页面和产品文档中提炼战略信号。
 
-以下是 ${dateStr} 从 Anthropic（claude.com / anthropic.com）和 OpenAI（openai.com）官网抓取的内容，${firstRunNote}
+以下是 ${dateStr} 从 AI 公司一手来源抓取的内容，可能包括 Anthropic、OpenAI、Google DeepMind、Qwen、DeepSeek 等官方站点。${firstRunNote}
 
 ${siteSections}
 
@@ -252,16 +291,15 @@ ${siteSections}
 
 1. **今日速览** — 3~5 句话概括最重要的新发布或动向，点出核心亮点
 
-2. **Anthropic / Claude 内容精选** — 按分类（news / research / engineering / learn 等）逐条整理重要内容：
+2. **官方来源精选** — 按来源和分类（news / research / engineering / models / docs / product 等）逐条整理重要内容：
    - 每篇用 2~4 句话提炼核心观点、技术细节或业务意义
    - 标注发布日期和原文链接
-   - 如首次全量，按时间线梳理重要里程碑
+   - 如某来源只有元数据，不要根据 URL 或标题过度推断；信息不足时直接说明限制
 
-3. **OpenAI 内容精选** — 同上，按 research / release / company / safety 等分类整理
-   - ⚠️ 注意：OpenAI 数据为仅元数据模式（标题由 URL 路径推断，无正文）。请仅基于 URL 和分类进行客观列举，不要对标题含义进行推测性解读或编造内容摘要。如果信息不足以分析，直接说明数据受限即可。
+3. **模型与产品信号** — 总结可能改变开发者行为的模型发布、模型页面、API/文档更新、安全更新和产品公告。
 
-4. **战略信号解读** — 基于两家公司的发布节奏和内容重点，分析：
-   - 各自近期的技术优先级（模型能力 / 安全 / 产品化 / 生态）
+4. **战略信号解读** — 基于各来源的发布节奏和内容重点，分析：
+   - 近期技术优先级（模型能力 / 安全 / 产品化 / 生态）
    - 竞争态势：谁在引领议题，谁在跟进
    - 对开发者和企业用户的潜在影响
 
@@ -270,7 +308,7 @@ ${siteSections}
    - 某类主题的密集发布（可能预示产品节点）
    - 政策、合规、安全方面的动向
 
-${isAnyFirstRun ? "6. **内容格局总览** — 首次全量独有：汇总两家公司各内容类别的数量分布，并说明各自的内容运营风格（学术导向 vs 产品导向 vs 用户故事等）\n\n" : ""}语言要求：中文，专业深入，内容详实，适合 AI 领域研究者、产品经理和技术决策者阅读。每个条目必须附上 GitHub/官网链接。
+${isAnyFirstRun ? "6. **内容格局总览** — 首次全量独有：汇总各来源的内容类别分布，并说明各自的内容运营风格（研究导向 / 产品导向 / 文档导向等）\n\n" : ""}语言要求：中文，专业深入，内容详实，适合 AI 领域研究者、产品经理和技术决策者阅读。每个条目必须附上 GitHub/官网链接。
 `;
 }
 
@@ -297,7 +335,7 @@ Generate an AI Tools Ecosystem Weekly Report with these sections:
 3. **AI Agent Ecosystem** - Key developments from OpenClaw and peer projects this week
 4. **Open Source Trends** - Most notable technical directions from GitHub Trending and AI community this week
 5. **HN Community Highlights** - Core AI discussion topics and community sentiment on Hacker News this week
-6. **Official Announcements** - Important content published by Anthropic and OpenAI this week (if any)
+6. **Official Announcements** - Important content published by official AI company sources this week (if any)
 7. **Next Week's Signals** - Based on this week's data, predict trends and upcoming events worth watching
 
 Style: English, concise and professional, helping technical developers quickly grasp the week's developments.
@@ -317,7 +355,7 @@ ${digestEntries}
 3. **AI Agent 生态** - OpenClaw 及同赛道项目的本周重要进展
 4. **开源趋势** - 本周 GitHub Trending 和 AI 社区最关注的技术方向
 5. **HN 社区热议** - 本周 Hacker News AI 讨论的核心话题与社区情绪
-6. **官方动态** - Anthropic 和 OpenAI 本周发布的重要内容（若有）
+6. **官方动态** - AI 公司官方来源本周发布的重要内容（若有）
 7. **下周信号** - 基于本周数据，预判值得关注的趋势或即将到来的事件
 
 语言要求：中文，简洁专业，适合技术开发者快速掌握一周动态。
@@ -347,7 +385,7 @@ Generate an AI Tools Ecosystem Monthly Report with these sections:
 3. **AI Agent Ecosystem Monthly Review** - Ecosystem landscape shifts, emerging projects, notable signals this month
 4. **Technical Trend Summary** - Most significant technical directions and paradigm shifts in AI open-source this month
 5. **Community Health Assessment** - Monthly activity comparison across major projects, developer engagement evaluation
-6. **Official Announcements Review** - Strategic analysis of Anthropic and OpenAI content published this month
+6. **Official Announcements Review** - Strategic analysis of official AI company content published this month
 7. **Next Month's Outlook** - Based on this month's trends, predict key directions and potential events to watch
 
 Style: English, in-depth analysis, data-driven, suited for monthly retrospectives and strategic decision-making.
@@ -367,7 +405,7 @@ ${digestEntries}
 3. **AI Agent 生态月报** - 本月生态格局变化、新兴项目、值得关注的信号
 4. **技术趋势总结** - 本月 AI 开源领域最显著的技术方向与范式变化
 5. **社区生态健康度** - 各主要项目月度活跃度对比、开发者参与度评估
-6. **官方动态回顾** - Anthropic 和 OpenAI 本月发布内容的战略意义分析
+6. **官方动态回顾** - AI 公司官方来源本月发布内容的战略意义分析
 7. **下月展望** - 基于本月趋势，预判值得重点关注的方向和潜在事件
 
 语言要求：中文，深度分析，数据驱动，适合月度复盘和战略决策参考。
@@ -381,6 +419,59 @@ ${digestEntries}
 
 export interface ReportHighlights {
   [reportId: string]: string[];
+}
+
+export function buildShaokandianRadarPrompt(reportContents: Record<string, string>, dateStr: string): string {
+  const sections = Object.entries(reportContents)
+    .map(([id, content]) => `## [${id}]\n\n${content.slice(0, 4500)}`)
+    .join("\n\n---\n\n");
+
+  return `你是“少看点 AI 雷达”的中文主编。你的任务不是摘要所有信息，而是替一个中文读者过滤今日 AI 领域真正值得看的知识、趋势和最新进展。
+
+以下是 ${dateStr} 的多来源 AI 报告，包含 GitHub 趋势、Hacker News、Product Hunt、ArXiv、Hugging Face、技术社区和官方动态等。内容可能来自英文来源；请输出中文判断，同时保留项目名、论文名、公司名和必要的原文链接。
+
+${sections}
+
+---
+
+请生成一份中文“少看点 AI 雷达”，只保留高信号内容。输出 Markdown，不要代码块，不要解释你的工作过程。
+
+固定结构如下：
+
+# 少看点 AI 雷达 ${dateStr}
+
+> 用一句话概括今天 AI 圈最值得注意的变化。不要超过 60 个中文字符。
+
+## 今天必看
+最多 5 条。只放真正值得读原文或深入看的内容。每条用这个格式：
+### 中文标题
+- 结论：一句话讲清楚发生了什么。
+- 为什么重要：说明它可能改变技术路线、产品格局、开发方式或研究判断。
+- 来源：列出来源报告 ID 或原始链接。
+- 建议：看原文 / 扫一眼 / 等复盘。
+
+## 正在升温
+最多 5 条。放趋势词、方向或连续出现的信号，而不是单条新闻堆砌。
+
+## 新模型 / 新产品
+最多 4 条。只放有明确能力、热度或可信来源的新模型和产品。
+
+## 论文里可能有用的东西
+最多 4 条。重点回答“这篇是否可能改变做法”，不要写普通论文摘要。
+
+## 可以暂缓
+最多 5 条。放噪声、重复营销、证据不足、短期只适合围观的内容。只有在报告中有依据时才写；不要为了凑数编造。
+
+## 原始入口
+列出今日最值得回看的 3-6 个源报告，格式为：
+- [报告名](#) — 为什么值得回看
+
+风格要求：
+- 中文输出，英文信息要中文化，不要机器直译。
+- 不要长摘要，不要信息流列表。
+- 每条都要有明确判断，避免“值得关注”这种空话。
+- 如果证据不足，明确说“等复盘”或“暂缓”。
+- 不要把融资、营销话术和重复包装的新工具放进“今天必看”。`;
 }
 
 export function buildHighlightsPrompt(

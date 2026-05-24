@@ -6,7 +6,7 @@
  *   FEISHU_WEBHOOK_URLS — comma-separated list of custom bot webhook URLs
  *                         (also accepts legacy FEISHU_WEBHOOK_URL for one URL)
  * Optional:
- *   PAGES_URL           — GitHub Pages base URL (defaults to the public deployment)
+ *   PAGES_URL           — GitHub Pages base URL
  */
 
 import fs from "node:fs";
@@ -14,7 +14,7 @@ import path from "node:path";
 import { NOTIFY_LABELS } from "./i18n.ts";
 import type { Highlights } from "./notify.ts";
 
-const PAGES_URL_DEFAULT = "https://duanyytop.github.io/agents-radar";
+const PAGES_URL_DEFAULT = "http://127.0.0.1:4173";
 
 function getWebhookUrls(): string[] {
   const raw = process.env["FEISHU_WEBHOOK_URLS"] ?? process.env["FEISHU_WEBHOOK_URL"] ?? "";
@@ -69,7 +69,7 @@ export function buildFeishuMessage(
 
   const icon = isMonthly ? "📆" : isWeekly ? "📅" : "📡";
   const suffix = isMonthly ? " 月报" : isWeekly ? " 周报" : "";
-  const lines: string[] = [`${icon} **agents-radar${suffix} · ${date}**`];
+  const lines: string[] = [`${icon} **少看点 AI 雷达${suffix} · ${date}**`];
 
   const ordered = [
     ...baseReports.filter((r) => !r.includes("weekly") && !r.includes("monthly")),
@@ -141,7 +141,7 @@ async function main(): Promise<void> {
   const isWeekly = reports.some((r) => r === "ai-weekly");
   const icon = isMonthly ? "📆" : isWeekly ? "📅" : "📡";
   const suffix = isMonthly ? " 月报" : isWeekly ? " 周报" : "";
-  const title = `${icon} agents-radar${suffix} · ${date}`;
+  const title = `${icon} 少看点 AI 雷达${suffix} · ${date}`;
 
   const content = buildFeishuMessage(date, reports, undefined, highlights);
 
