@@ -6,7 +6,126 @@
     <description>中文 AI 趋势筛选面板 · High-signal AI radar in Chinese</description>
     <language>zh-CN</language>
     <atom:link href="http://127.0.0.1:4173/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sun, 24 May 2026 10:45:08 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2026 02:07:50 +0000</lastBuildDate>
+    <item>
+      <title>少看点 AI 雷达 2026-05-25</title>
+      <link>http://127.0.0.1:4173/#2026-05-25/ai-radar</link>
+      <guid isPermaLink="true">http://127.0.0.1:4173/#2026-05-25/ai-radar</guid>
+      <pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate>
+      <description>少看点 AI 雷达 2026-05-25 今天的主线是：coding agent 的注意力还在往“插件目录、技能包、知识图谱、托管平台”聚集，但社区同时在更大声地提醒一件事: agent 很脆弱，别把它误当成架构师。 覆盖提醒：今天官网源没有新增；ArXiv 和 Product Hunt 依然抓取失败，所以今天更像是生态信号面，而不是新品发布面。 今天必看 插件目录、知识图谱、技能包，已经从周边配件变成主战场 结论：Understand-Anything、codegraph、claude-plugins-official、knowledge-work-plugins、andrej-karpathy-skills 今天继续一起涨。 为什么重要：这说明 coding agent 的差异点正在从“模型本体”外移到“能接什么插件、怎么理解代码库、能复用什么技能”。 来源：Understand-Anything、CodeGraph、Claude Plugins Official、Knowledge Work Plugins、andrej-karpathy-skills 建议：看原文 社区在公开提...</description>
+      <content:encoded><![CDATA[<h1>少看点 AI 雷达 2026-05-25</h1>
+<blockquote>
+<p>今天的主线是：coding agent 的注意力还在往“插件目录、技能包、知识图谱、托管平台”聚集，但社区同时在更大声地提醒一件事: agent 很脆弱，别把它误当成架构师。</p>
+<p>覆盖提醒：今天官网源没有新增；ArXiv 和 Product Hunt 依然抓取失败，所以今天更像是生态信号面，而不是新品发布面。</p>
+</blockquote>
+<h2>今天必看</h2>
+<h3>插件目录、知识图谱、技能包，已经从周边配件变成主战场</h3>
+<ul>
+<li>结论：<code>Understand-Anything</code>、<code>codegraph</code>、<code>claude-plugins-official</code>、<code>knowledge-work-plugins</code>、<code>andrej-karpathy-skills</code> 今天继续一起涨。</li>
+<li>为什么重要：这说明 coding agent 的差异点正在从“模型本体”外移到“能接什么插件、怎么理解代码库、能复用什么技能”。</li>
+<li>来源：<a href="https://github.com/Lum1104/Understand-Anything">Understand-Anything</a>、<a href="https://github.com/colbymchenry/codegraph">CodeGraph</a>、<a href="https://github.com/anthropics/claude-plugins-official">Claude Plugins Official</a>、<a href="https://github.com/anthropics/knowledge-work-plugins">Knowledge Work Plugins</a>、<a href="https://github.com/multica-ai/andrej-karpathy-skills">andrej-karpathy-skills</a></li>
+<li>建议：看原文</li>
+</ul>
+<h3>社区在公开提醒：不要把 Claude / agent 当架构师</h3>
+<ul>
+<li>结论：HN 今天最强的讨论不是“哪个模型又变强”，而是“Claude is not your architect”和“LLM agent 在后端代码生成里很脆弱”。</li>
+<li>为什么重要：这比单个 bug 更关键。大家开始把 agent 从“神奇搭档”重新拉回到“需要强约束的工具”。</li>
+<li>来源：<a href="https://www.hollandtech.net/claude-is-not-your-architect/">Claude is not your architect. Stop letting it pretend</a>、<a href="https://arxiv.org/abs/2605.06445">Constraint Decay: The Fragility of LLM Agents in Back End Code Generation</a></li>
+<li>建议：看原文</li>
+</ul>
+<h3>托管 agent 平台开始成形</h3>
+<ul>
+<li>结论：<code>multica</code>、<code>pi</code> 这类项目继续抬头，方向都是“把 coding agent 变成可分配、可跟踪、可复用的团队成员”。</li>
+<li>为什么重要：这说明下一步不是再做一个聊天入口，而是把 agent 塞进团队工作流。</li>
+<li>来源：<a href="https://github.com/multica-ai/multica">multica</a>、<a href="https://github.com/earendil-works/pi">pi</a></li>
+<li>建议：扫一眼</li>
+</ul>
+<h3>运行时和权限问题仍然压着整条赛道</h3>
+<ul>
+<li>结论：今天看到的问题集中在会话挂死、技能 / agent 列表异常、插件目录能力、认证与 hook 权限边界。</li>
+<li>为什么重要：这说明生产可用性的上限，仍然由工程细节决定，而不是由模型 demo 决定。</li>
+<li>来源：<a href="https://github.com/openai/codex/issues/24389">Codex close_agent can hang</a>、<a href="https://github.com/openai/codex/issues/24361">Codex skills/app listing issue</a>、<a href="https://github.com/anthropics/claude-code/issues/62108">Claude active_skill hook field request</a>、<a href="https://github.com/openclaw/openclaw/issues/84337">OpenClaw hook ingress token bug</a></li>
+<li>建议：看原文</li>
+</ul>
+<h2>正在升温</h2>
+<h3>更省 token、更省上下文，正在成为独立卖点</h3>
+<ul>
+<li>结论：<code>OpenSquilla</code>、<code>TokenSpeed</code>、<code>codegraph</code> 这类项目都在直接卖“更高智能密度”“更少工具调用”“更快推理”。</li>
+<li>为什么重要：这说明模型能力逐渐商品化后，成本效率会变成新的竞争点。</li>
+<li>来源：<a href="https://github.com/opensquilla/opensquilla">OpenSquilla</a>、<a href="https://github.com/lightseekorg/tokenspeed">TokenSpeed</a>、<a href="https://github.com/colbymchenry/codegraph">CodeGraph</a></li>
+</ul>
+<h3>本地和私有知识层还是硬需求</h3>
+<ul>
+<li>结论：搜索面板里仍然是 <code>AnythingLLM</code>、<code>Milvus</code>、<code>Qdrant</code>、<code>Weaviate</code> 这类项目稳居高位。</li>
+<li>为什么重要：企业和个人用户都还在找“如何把上下文留在自己手里”的方案。</li>
+<li>来源：<a href="https://github.com/Mintplex-Labs/anything-llm">AnythingLLM</a>、<a href="https://github.com/milvus-io/milvus">Milvus</a>、<a href="https://github.com/qdrant/qdrant">Qdrant</a>、<a href="https://github.com/weaviate/weaviate">Weaviate</a></li>
+</ul>
+<h3>会话沉淀和自动化 teammate 化继续发酵</h3>
+<ul>
+<li>结论：Dev.to 今天讨论度更高的不是新模型，而是 skill file、Claude Code hooks、本地 Hermes agent 管线。</li>
+<li>为什么重要：大家在试图把 agent 从“即时问答”变成“有流程、有记忆、有触发器的队友”。</li>
+<li>来源：<a href="https://dev.to/sreejit_/everyones-talking-about-gemini-35-flash-the-real-story-at-google-io-2026-was-a-skill-file-4f3c">Everyone&#39;s Talking About Gemini 3.5 Flash. The Real Story at Google I/O 2026 Was a Skill File.</a>、<a href="https://dev.to/shrsv/claude-code-hooks-101-turning-your-ai-coding-assistant-into-an-automated-teammate-4lee">Claude Code Hooks 101</a>、<a href="https://dev.to/pinaksh_patel_7c884a18b06/automating-my-content-and-dev-pipeline-with-local-hermes-agents-qwen-35b-bc0">Automating My Content and Dev Pipeline with Local Hermes Agents &amp; Qwen 35B</a></li>
+</ul>
+<h2>新模型 / 新产品</h2>
+<h3>Hugging Face 还是多模态和中文模型最有存在感</h3>
+<ul>
+<li>结论：今天值得盯的还是 <code>Lance</code>、<code>Hy-MT2</code>、<code>MiniCPM-V-4.6</code>、<code>Sulphur-2-base</code> 这一批。</li>
+<li>为什么重要：真正有持续热度的，依然是可部署的多模态和中文能力，不只是闭源 API 的新口号。</li>
+<li>来源：<a href="https://huggingface.co/bytedance-research/Lance">Lance</a>、<a href="https://huggingface.co/tencent/Hy-MT2-1.8B">Hy-MT2-1.8B</a>、<a href="https://huggingface.co/openbmb/MiniCPM-V-4.6">MiniCPM-V-4.6</a>、<a href="https://huggingface.co/SulphurAI/Sulphur-2-base">Sulphur-2-base</a></li>
+<li>建议：扫一眼</li>
+</ul>
+<h3>开源 agent 工具仍在高频发版</h3>
+<ul>
+<li>结论：<code>OpenClaw 2026.5.24-beta.2</code>、<code>Qwen Code nightly</code>、<code>CodeWhale v0.8.44</code>、<code>Copilot CLI 1.0.54</code> 都在继续快速出版本。</li>
+<li>为什么重要：这说明赛道还在抢交互形态和运行时控制权，版本节奏不会很快降下来。</li>
+<li>来源：<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.5.24-beta.2">OpenClaw 2026.5.24-beta.2</a>、<a href="https://github.com/QwenLM/qwen-code/releases/tag/v0.16.1-nightly.20260525.84f408017">Qwen Code nightly</a>、<a href="https://github.com/Hmbown/CodeWhale/releases/tag/v0.8.44">CodeWhale v0.8.44</a>、<a href="https://github.com/github/copilot-cli/releases/tag/1.0.54">Copilot CLI 1.0.54</a></li>
+<li>建议：扫一眼</li>
+</ul>
+<h2>论文里可能有用的东西</h2>
+<h3>今天论文面只保留一个判断</h3>
+<ul>
+<li>结论：虽然 ArXiv 抓取失败，但 HN 上真正被讨论起来的，是“LLM agent 在后端代码生成里会发生 constraint decay”。</li>
+<li>为什么重要：这和今天社区对 agent 脆弱性的讨论是同一条主线，至少值得记住问题名字。</li>
+<li>来源：<a href="https://arxiv.org/abs/2605.06445">Constraint Decay: The Fragility of LLM Agents in Back End Code Generation</a></li>
+<li>建议：等后续正式补抓</li>
+</ul>
+<h3>不要把今天写成完整论文日报</h3>
+<ul>
+<li>结论：ArXiv 今天缺样本，不适合继续往下展开成“研究趋势全景”。</li>
+<li>为什么重要：样本不完整时，最容易把噪音写成判断。</li>
+<li>来源：<a href="https://github.com/ceion6/seeless-learnmore/blob/main/digests/2026-05-25/raw-data.json">今日原始快照</a></li>
+</ul>
+<h2>可以暂缓</h2>
+<h3>今天没有新增的官网源</h3>
+<ul>
+<li>判断：Anthropic、OpenAI、DeepMind、Qwen、DeepSeek 今天都没有新增页面，不需要硬凑“官方动态”。</li>
+<li>来源：<a href="https://github.com/ceion6/seeless-learnmore/blob/main/digests/2026-05-25/raw-data.json">今日原始快照</a></li>
+</ul>
+<h3>纯宏观 AI 资本和领导力叙事</h3>
+<ul>
+<li>判断：比如 AI 领导权、IPO、Karpathy 去向这类话题值得知道，但对你这个 daily radar 的可操作价值不高。</li>
+<li>来源：<a href="https://www.anthropic.com/research/2028-ai-leadership">2028: Two scenarios for global AI leadership</a>、<a href="https://www.axios.com/2026/05/19/anthropic-openai-karpathy-andrej-claude">OpenAI co-founder Andrej Karpathy joins Anthropic</a>、<a href="https://www.ft.com/content/ae9bb47d-bd1d-473c-b4c5-abae0420cc12">SpaceX, OpenAI and Anthropic IPOs set to test limits of AI boom</a></li>
+</ul>
+<h3>今天缺失的数据源先不要补脑</h3>
+<ul>
+<li>判断：Product Hunt 和 ArXiv 继续没抓到，就先接受这件事，不要用别的源假装替代。</li>
+<li>来源：<a href="https://github.com/ceion6/seeless-learnmore/blob/main/digests/2026-05-25/raw-data.json">今日原始快照</a></li>
+</ul>
+<h2>原始入口</h2>
+<ul>
+<li><a href="https://github.com/ceion6/seeless-learnmore/blob/main/digests/2026-05-25/raw-data.json">今日原始快照 raw-data.json</a></li>
+<li><a href="https://github.com/Lum1104/Understand-Anything">Understand-Anything</a>、<a href="https://github.com/colbymchenry/codegraph">CodeGraph</a>、<a href="https://github.com/anthropics/claude-plugins-official">Claude Plugins Official</a>、<a href="https://github.com/anthropics/knowledge-work-plugins">Knowledge Work Plugins</a></li>
+<li><a href="https://www.hollandtech.net/claude-is-not-your-architect/">Claude is not your architect</a>、<a href="https://arxiv.org/abs/2605.06445">Constraint Decay</a></li>
+<li><a href="https://github.com/multica-ai/multica">multica</a>、<a href="https://github.com/earendil-works/pi">pi</a>、<a href="https://github.com/opensquilla/opensquilla">OpenSquilla</a></li>
+<li><a href="https://huggingface.co/bytedance-research/Lance">Lance</a>、<a href="https://huggingface.co/tencent/Hy-MT2-1.8B">Hy-MT2-1.8B</a>、<a href="https://huggingface.co/openbmb/MiniCPM-V-4.6">MiniCPM-V-4.6</a>、<a href="https://huggingface.co/SulphurAI/Sulphur-2-base">Sulphur-2-base</a></li>
+<li><a href="https://github.com/openclaw/openclaw/releases/tag/v2026.5.24-beta.2">OpenClaw 2026.5.24-beta.2</a>、<a href="https://github.com/QwenLM/qwen-code/releases/tag/v0.16.1-nightly.20260525.84f408017">Qwen Code nightly</a>、<a href="https://github.com/Hmbown/CodeWhale/releases/tag/v0.8.44">CodeWhale v0.8.44</a>、<a href="https://github.com/github/copilot-cli/releases/tag/1.0.54">Copilot CLI 1.0.54</a></li>
+</ul>
+<hr>
+<blockquote>
+<p>本页由 Codex 直接基于当天 <code>raw-data.json</code> 整理生成，不依赖仓库内的外部模型 API 配置。</p>
+</blockquote>
+]]></content:encoded>
+    </item>
     <item>
       <title>少看点 AI 雷达 2026-05-24</title>
       <link>http://127.0.0.1:4173/#2026-05-24/ai-radar</link>
@@ -27794,137 +27913,6 @@ Preview of Intern&#39;s updated vision-language model; a contender in the open m
 <hr>
 <hr>
 <p><em>本日报由 <a href="https://github.com/duanyytop/agents-radar">agents-radar</a> 自动生成。</em></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Product Hunt AI Products Digest 2026-05-21</title>
-      <link>http://127.0.0.1:4173/#2026-05-21/ai-ph-en</link>
-      <guid isPermaLink="true">http://127.0.0.1:4173/#2026-05-21/ai-ph-en</guid>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <description>Product Hunt AI Products Digest 2026-05-21 Source: Product Hunt | 16 products | Generated: 2026-05-21 00:26 UTC Product Hunt AI Products Digest — May 21, 2026 1. Today&amp;#39;s Highlights Today&amp;#39;s Product Hunt launches reveal a decisive shift toward actionable AI agents that operate beyond chat interfaces. Voice and messaging agents dominated the leaderboard, with PollyReach (530 votes) leading by giving AI agents real phone numbers for outbound calls—a clear signal that autonomous communication...</description>
-      <content:encoded><![CDATA[<h1>Product Hunt AI Products Digest 2026-05-21</h1>
-<blockquote>
-<p>Source: <a href="https://www.producthunt.com/">Product Hunt</a> | 16 products | Generated: 2026-05-21 00:26 UTC</p>
-</blockquote>
-<hr>
-<h1>Product Hunt AI Products Digest — May 21, 2026</h1>
-<hr>
-<h2>1. Today&#39;s Highlights</h2>
-<p>Today&#39;s Product Hunt launches reveal a decisive shift toward <strong>actionable AI agents</strong> that operate beyond chat interfaces. Voice and messaging agents dominated the leaderboard, with <strong>PollyReach</strong> (530 votes) leading by giving AI agents real phone numbers for outbound calls—a clear signal that autonomous communication tools are maturing. The developer tooling space remains fiercely competitive, with <strong>Drizz</strong> (self-healing mobile tests), <strong>Cursor&#39;s Composer 2.5</strong>, and <strong>CtrlOps</strong> (AI-powered Linux server management) all vying for engineering mindshare. Notably, <strong>iMessage-native agents</strong> emerged as a novel distribution channel through <strong>Chert</strong>, while <strong>Starchild-1</strong> introduced the first real-time multimodal world model for robotics. Open-source alternatives like <strong>ShioriCode</strong> are gaining traction as developers seek vendor-independent coding companions.</p>
-<hr>
-<h2>2. Top Products by Category</h2>
-<h3>🤖 AI Agents &amp; Assistants</h3>
-<p><strong><a href="https://www.producthunt.com/products/pollyreach?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">PollyReach</a></strong> — Give your agent a real number and voice to make calls.</p>
-<ul>
-<li><a href="https://www.producthunt.com/r/YNJ3R3XJ5FEEBJ?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">Website</a></li>
-<li><strong>530 votes</strong> | <strong>151 comments</strong></li>
-<li>Bridges the last mile of AI automation by enabling agents to make real phone calls with natural voices, solving the gap between digital workflows and human communication channels.</li>
-</ul>
-<p><strong><a href="https://www.producthunt.com/products/chert?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">Chert</a></strong> — Build AI agents that text customers in iMessage</p>
-<ul>
-<li><a href="https://www.producthunt.com/r/5QIYZNUVRIKFZD?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">Website</a></li>
-<li><strong>179 votes</strong> | <strong>78 comments</strong></li>
-<li>Leverages iMessage&#39;s ubiquity and high open rates to deliver AI customer support through a channel customers already trust, bypassing app fatigue.</li>
-</ul>
-<p><strong><a href="https://www.producthunt.com/products/thinnest-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">Thinnest AI</a></strong> — Build Voice AI Agents in 100+ languages for ₹1.5/min</p>
-<ul>
-<li><a href="https://www.producthunt.com/r/3JNDFHJE6E52SF?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">Website</a></li>
-<li><strong>93 votes</strong> | <strong>14 comments</strong></li>
-<li>Democratizes voice AI with aggressive emerging-market pricing and massive language coverage, making global deployment economically viable.</li>
-</ul>
-<hr>
-<h3>🛠️ Developer Tools</h3>
-<p><strong><a href="https://www.producthunt.com/products/drizz-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">Drizz</a></strong> — Mobile tests that write, run, and fix themselves</p>
-<ul>
-<li><a href="https://www.producthunt.com/r/7JHDW73XTTPZ3A?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">Website</a></li>
-<li><strong>395 votes</strong> | <strong>62 comments</strong></li>
-<li>Eliminates the brittleness of mobile UI testing by using AI to autonomously generate, execute, and repair test suites as apps evolve.</li>
-</ul>
-<p><strong><a href="https://www.producthunt.com/products/cursor?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">Cursor — Composer 2.5</a></strong> — Cursor&#39;s most powerful model yet</p>
-<ul>
-<li><a href="https://www.producthunt.com/r/ZEXWSSPQZYCABO?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">Website</a></li>
-<li><strong>393 votes</strong> | <strong>12 comments</strong></li>
-<li>Pushes the frontier of AI-native code editors with its most capable model yet, reinforcing Cursor&#39;s dominance in the AI-assisted development space.</li>
-</ul>
-<p><strong><a href="https://www.producthunt.com/products/ctrlops?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">CtrlOps</a></strong> — Deploy, Debug &amp; Manage Linux Servers with AI.</p>
-<ul>
-<li><a href="https://www.producthunt.com/r/H64HE7ZK3MVBJN?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">Website</a></li>
-<li><strong>237 votes</strong> | <strong>59 comments</strong></li>
-<li>Transforms server operations from command-line expertise into conversational AI interactions, dramatically lowering the DevOps skill barrier.</li>
-</ul>
-<p><strong><a href="https://www.producthunt.com/products/shioricode?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">ShioriCode</a></strong> — Open-source alternative to Codex &amp; Claude Code</p>
-<ul>
-<li><a href="https://www.producthunt.com/r/YFMR7SBBFOPFGA?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">Website</a></li>
-<li><strong>120 votes</strong> | <strong>9 comments</strong></li>
-<li>Offers self-hosted, transparent coding assistance for privacy-conscious teams and those avoiding vendor lock-in to closed AI ecosystems.</li>
-</ul>
-<hr>
-<h3>📊 AI Applications</h3>
-<p><strong><a href="https://www.producthunt.com/products/voker?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">Voker</a></strong> — The Agent Analytics Platform for AI Product Teams</p>
-<ul>
-<li><a href="https://www.producthunt.com/r/KEW2UCNMPEMFRD?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">Website</a></li>
-<li><strong>154 votes</strong> | <strong>42 comments</strong></li>
-<li>Addresses the observability gap in AI agent deployments by providing specialized analytics for tracking agent performance, reliability, and user outcomes.</li>
-</ul>
-<p><strong><a href="https://www.producthunt.com/products/omnia-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">Insights by Omnia</a></strong> — Step-by-step action plans to improve your AI visibility.</p>
-<ul>
-<li><a href="https://www.producthunt.com/r/GB2EXL52Q43ZUS?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">Website</a></li>
-<li><strong>148 votes</strong> | <strong>25 comments</strong></li>
-<li>Tackles the emerging discipline of AI SEO—optimizing how brands appear in AI-generated answers and recommendations—with concrete implementation roadmaps.</li>
-</ul>
-<hr>
-<h3>🎨 Creative &amp; Content</h3>
-<p><strong><a href="https://www.producthunt.com/products/motion-8?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">Motion</a></strong> — A video agent for tasteful motion design</p>
-<ul>
-<li><a href="https://www.producthunt.com/r/G3NKNLOKUXJ6ZY?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">Website</a></li>
-<li><strong>194 votes</strong> | <strong>40 comments</strong></li>
-<li>Distinguishes itself in AI video by focusing on refined, design-conscious motion graphics rather than generic video generation, targeting professional creatives.</li>
-</ul>
-<hr>
-<h3>🔧 Infrastructure &amp; Models</h3>
-<p><strong><a href="https://www.producthunt.com/products/odysseyml-starchild-1-model?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">Starchild-1 by Odyssey</a></strong> — The first real-time multimodal world model</p>
-<ul>
-<li><a href="https://www.producthunt.com/r/S4INU5TXEPCTYH?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">Website</a></li>
-<li><strong>105 votes</strong> | <strong>1 comment</strong></li>
-<li>Breaks new ground as the first real-time multimodal world model, enabling robots and embodied AI to perceive and reason about physical environments dynamically.</li>
-</ul>
-<p><strong><a href="https://www.producthunt.com/products/papr-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">Papr Graph</a></strong> — Upgrade to graph-native vector embeddings</p>
-<ul>
-<li><a href="https://www.producthunt.com/r/SYHOJPFGU7435U?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">Website</a></li>
-<li><strong>97 votes</strong> | <strong>4 comments</strong></li>
-<li>Advances RAG infrastructure by replacing flat vector embeddings with graph-native representations that capture relational semantics for more accurate retrieval.</li>
-</ul>
-<hr>
-<h2>3. Market Signal</h2>
-<p><strong>Developer tools remain the most crowded category</strong>, claiming nearly half of today&#39;s launches—yet this saturation is driving genuine innovation in specificity. Rather than generic &quot;AI for coding,&quot; we&#39;re seeing surgical tools: Drizz for mobile testing, CtrlOps for Linux servers, Haystack for PR triage. This fragmentation suggests the market is maturing beyond all-in-one platforms toward <strong>domain-expert AI tools</strong>.</p>
-<p>The most striking pattern is the <strong>agent-to-channel expansion</strong>: PollyReach (voice calls), Chert (iMessage), and Thinnest AI (multilingual voice) all represent AI breaking out of chatbot UIs into established communication infrastructure. This &quot;invisible AI&quot; trend—where agents operate through channels users already inhabit—may prove more disruptive than new interfaces.</p>
-<p><strong>Open-source is asserting itself strategically</strong> but not overwhelmingly. ShioriCode explicitly positions against Codex/Claude Code; LearnHouse and imgproxy v4 offer open alternatives in education and image processing. However, the top-voted products remain predominantly closed-source, suggesting open models are gaining traction as <em>options</em> rather than defaults. The real open-source battleground appears to be <strong>coding companions</strong>, where vendor lock-in concerns run highest.</p>
-<p>A novel undercurrent: <strong>geographic pricing arbitrage</strong>. Thinnest AI&#39;s ₹1.5/min pricing targets cost-sensitive markets, potentially pressuring Western voice AI pricing and expanding total addressable market for agent deployments.</p>
-<hr>
-<h2>4. Worth Trying</h2>
-<table>
-<thead>
-<tr>
-<th>Product</th>
-<th>Why Developers Should Try</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong><a href="https://www.producthunt.com/products/drizz-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">Drizz</a></strong></td>
-<td>Mobile testing is universally painful; Drizz&#39;s self-healing approach could eliminate the maintenance tax that makes E2E testing unsustainable for most teams. The 395 votes with 62 comments suggests genuine engineering interest, not just hype.</td>
-</tr>
-<tr>
-<td><strong><a href="https://www.producthunt.com/products/ctrlops?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">CtrlOps</a></strong></td>
-<td>Server management through natural language represents a genuine interface shift—worth evaluating whether it accelerates workflows or creates dangerous abstraction gaps. The 59 comments indicate substantive debate.</td>
-</tr>
-<tr>
-<td><strong><a href="https://www.producthunt.com/products/shioricode?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">ShioriCode</a></strong></td>
-<td>For teams already concerned about sending proprietary code to OpenAI/Anthropic, this offers immediate relief. Evaluate whether its capabilities match closed alternatives for your specific codebase and language stack.</td>
-</tr>
-</tbody></table>
-<hr>
-<hr>
-<p><em>This digest is auto-generated by <a href="https://github.com/duanyytop/agents-radar">agents-radar</a>.</em></p>
 ]]></content:encoded>
     </item>
   </channel>
