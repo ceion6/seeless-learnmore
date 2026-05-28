@@ -6,7 +6,124 @@
     <description>中文 AI 趋势筛选面板 · High-signal AI radar in Chinese</description>
     <language>zh-CN</language>
     <atom:link href="http://127.0.0.1:4173/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Tue, 26 May 2026 05:30:35 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 02:10:38 +0000</lastBuildDate>
+    <item>
+      <title>少看点 AI 雷达 2026-05-28</title>
+      <link>http://127.0.0.1:4173/#2026-05-28/ai-radar</link>
+      <guid isPermaLink="true">http://127.0.0.1:4173/#2026-05-28/ai-radar</guid>
+      <pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
+      <description>少看点 AI 雷达 2026-05-28 今天的主线是：AI agent 的讨论开始从“能不能做事”转向“在哪些垂直场景真能落地，以及哪些技能、记忆、检索配置能复用”。官网、社区和论文三条线，今天都在往这个方向收敛。 覆盖提醒：Product Hunt 今天抓取失败；官网面有旧文更新时间变动，这页只把明确新增或明确有新判断价值的条目算进去。 今天必看 OpenAI 开始把 Codex 往高价值垂直代理推进 结论：今天最值得盯的官方信号，是 OpenAI 新增了 Building Self Improving Tax Agents With Codex。 为什么重要：这不是又一个通用 coding demo，而是把 agent 往税务这类高价值、强流程、强验证场景推进。说明竞争重点在从“会写代码”转向“能不能进业务链路”。 来源：Building Self Improving Tax Agents With Codex 建议：看原文 Anthropic 给出了一个更有分量的 adoption 信号 结论：Anthropic 今天新增的研究不是新模型，而是 Coding agents in...</description>
+      <content:encoded><![CDATA[<h1>少看点 AI 雷达 2026-05-28</h1>
+<blockquote>
+<p>今天的主线是：AI agent 的讨论开始从“能不能做事”转向“在哪些垂直场景真能落地，以及哪些技能、记忆、检索配置能复用”。官网、社区和论文三条线，今天都在往这个方向收敛。</p>
+<p>覆盖提醒：Product Hunt 今天抓取失败；官网面有旧文更新时间变动，这页只把明确新增或明确有新判断价值的条目算进去。</p>
+</blockquote>
+<h2>今天必看</h2>
+<h3>OpenAI 开始把 Codex 往高价值垂直代理推进</h3>
+<ul>
+<li>结论：今天最值得盯的官方信号，是 OpenAI 新增了 <code>Building Self Improving Tax Agents With Codex</code>。</li>
+<li>为什么重要：这不是又一个通用 coding demo，而是把 agent 往税务这类高价值、强流程、强验证场景推进。说明竞争重点在从“会写代码”转向“能不能进业务链路”。</li>
+<li>来源：<a href="https://openai.com/index/building-self-improving-tax-agents-with-codex/">Building Self Improving Tax Agents With Codex</a></li>
+<li>建议：看原文</li>
+</ul>
+<h3>Anthropic 给出了一个更有分量的 adoption 信号</h3>
+<ul>
+<li>结论：Anthropic 今天新增的研究不是新模型，而是 <code>Coding agents in the social sciences</code>。它给出的核心判断很直接：聊天式 AI 已经很普及，但真正把 coding agent 纳入工作流的人还远少得多。</li>
+<li>为什么重要：这说明“agent adoption gap”已经可以被明确描述。接下来比的不是谁再做一个 demo，而是谁能把权限、验证、技能复用和工作流可靠性做扎实。</li>
+<li>来源：<a href="https://www.anthropic.com/research/coding-agents-social-sciences">Coding agents in the social sciences</a></li>
+<li>建议：看原文</li>
+</ul>
+<h3>GitHub 热度继续指向技能层、知识层和 eval 层</h3>
+<ul>
+<li>结论：今天最强的一批仓库，仍然不是单一大而全应用，而是 <code>adhd</code>、<code>Understand-Anything</code>、<code>knowledge-work-plugins</code>、<code>ECC</code>、<code>Arkon</code>、<code>workshop</code> 这一类技能、知识图谱、运行面和评测层资产。</li>
+<li>为什么重要：这说明 agent 的差异化越来越不在模型本体，而在“怎么复用技能、怎么组织上下文、怎么持续验证输出”。</li>
+<li>来源：<a href="https://github.com/UditAkhourii/adhd">adhd</a>、<a href="https://github.com/Lum1104/Understand-Anything">Understand-Anything</a>、<a href="https://github.com/anthropics/knowledge-work-plugins">knowledge-work-plugins</a>、<a href="https://github.com/affaan-m/ECC">ECC</a>、<a href="https://github.com/nduckmink/arkon">Arkon</a>、<a href="https://github.com/raindrop-ai/workshop">workshop</a></li>
+<li>建议：看原文</li>
+</ul>
+<h2>正在升温</h2>
+<h3>“更高智能密度 / 更低 token 成本”已经是独立战场</h3>
+<ul>
+<li>结论：<code>OpenSquilla</code>、<code>TokenSpeed</code>、<code>MiniCPM5-1B</code> 这几条线都在强调效率、轻量化和单位成本产出。</li>
+<li>为什么重要：如果 agent 真要进入业务流程，token 成本、推理效率和本地可部署性会比单次 benchmark 更重要。</li>
+<li>来源：<a href="https://github.com/opensquilla/opensquilla">OpenSquilla</a>、<a href="https://github.com/lightseekorg/tokenspeed">TokenSpeed</a>、<a href="https://huggingface.co/openbmb/MiniCPM5-1B">MiniCPM5-1B</a></li>
+</ul>
+<h3>平台壳层和记忆层还在快速生长</h3>
+<ul>
+<li>结论：<code>elephant-agent</code>、<code>Photo-agents</code>、<code>AZMX</code>、<code>hermes-agent-cn-desktop</code> 继续上涨，卖点都围绕记忆、自进化、桌面壳层和平台治理。</li>
+<li>为什么重要：这说明大家默认单个 CLI 还不够，真正要补的是长期记忆、运行管理和多任务协作那一层。</li>
+<li>来源：<a href="https://github.com/agentic-in/elephant-agent">elephant-agent</a>、<a href="https://github.com/jmerelnyc/Photo-agents">Photo-agents</a>、<a href="https://github.com/AzmxAI/azmx">AZMX</a>、<a href="https://github.com/Eynzof/hermes-agent-cn-desktop">Hermes Agent CN Desktop</a></li>
+</ul>
+<h3>社区注意力开始从“模型谁更强”转向“是不是已经有 PMF”</h3>
+<ul>
+<li>结论：今天 HN 上最强信号不是某个新 benchmark，而是 Simon Willison 那篇 <code>I think Anthropic and OpenAI have found product-market fit</code>。</li>
+<li>为什么重要：这和 OpenAI 的行业代理叙事、Anthropic 的 adoption 研究正好拼在一起。讨论中心已经从“会不会替代人”慢慢转成“哪些场景已经开始稳定付费使用”。</li>
+<li>来源：<a href="https://simonwillison.net/2026/May/27/product-market-fit/">I think Anthropic and OpenAI have found product-market fit</a>、<a href="https://news.ycombinator.com/item?id=48296794">HN 讨论</a></li>
+</ul>
+<h2>新模型 / 新产品</h2>
+<h3>今天值得记住的是“场景化产品”和“多模态开源模型”</h3>
+<ul>
+<li>结论：官方面今天更值得看的是 OpenAI 的 tax agents 和 DeepMind 的 robotics accelerator，而开源模型面更值得扫的是 <code>Lance</code>、<code>MiniCPM5-1B</code>、<code>LongCat-Video-Avatar-1.5</code>。</li>
+<li>为什么重要：一个指向垂直代理和 physical AI 生态，一个指向 any-to-any、多模态、端侧与长上下文，这两条线都比泛泛的“新模型来了”更有实际判断价值。</li>
+<li>来源：<a href="https://openai.com/index/building-self-improving-tax-agents-with-codex/">Building Self Improving Tax Agents With Codex</a>、<a href="https://deepmind.google/models/gemini-robotics/accelerator/">Google DeepMind Accelerator</a>、<a href="https://huggingface.co/bytedance-research/Lance">Lance</a>、<a href="https://huggingface.co/openbmb/MiniCPM5-1B">MiniCPM5-1B</a>、<a href="https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.5">LongCat-Video-Avatar-1.5</a></li>
+<li>建议：扫一眼</li>
+</ul>
+<h3>不要把旧文更新时间误判成今天的新发布</h3>
+<ul>
+<li>结论：Anthropic 的 <code>Claude Code auto mode</code> 今天出现在快照里，但它本身是更早的文章，今天更像是页面更新时间被重新捕捉到了。</li>
+<li>为什么重要：官网 sitemap 抖动本身不等于新品发布。这个过滤要做，不然雷达会失真。</li>
+<li>来源：<a href="https://www.anthropic.com/engineering/claude-code-auto-mode">How we built Claude Code auto mode: a safer way to skip permissions</a>、<a href="https://github.com/ceion6/seeless-learnmore/blob/main/digests/2026-05-28/raw-data.json">今日原始快照</a></li>
+</ul>
+<h2>论文里可能有用的东西</h2>
+<h3><code>MUSE-Autoskill</code> 值得看</h3>
+<ul>
+<li>结论：今天最贴近当前 agent 工程现实的论文，是 <code>MUSE-Autoskill: Self-Evolving Agents via Skill Creation, Memory, Management, and Evaluation</code>。</li>
+<li>为什么重要：它讨论的不是单次任务成功率，而是技能怎么创建、记忆、管理、评估和持续改进。这和今天 GitHub 热门仓库的方向基本一致。</li>
+<li>来源：<a href="http://arxiv.org/abs/2605.27366v1">MUSE-Autoskill</a></li>
+<li>建议：看原文</li>
+</ul>
+<h3>Retrieval agent 的“参数配置”开始被当成单独问题</h3>
+<ul>
+<li>结论：<code>Natural Language Query to Configuration for Retrieval Agents</code> 值得记一个点：检索代理真正麻烦的地方，不只是选模型，而是怎么把检索器、文档数、跳数和综合策略配对。</li>
+<li>为什么重要：这类问题一旦被标准化，RAG 和企业知识助手才更有可能从“靠经验调参”变成更稳定的系统工程。</li>
+<li>来源：<a href="http://arxiv.org/abs/2605.27361v1">Natural Language Query to Configuration for Retrieval Agents</a></li>
+</ul>
+<h3>对齐和偏置问题今天也有一篇该记名</h3>
+<ul>
+<li>结论：<code>Alignment Tampering</code> 和 <code>Algorithmic Monocultures in Hiring</code> 都值得留档，但前者更贴近模型训练安全，后者更贴近 AI 落地的制度风险。</li>
+<li>为什么重要：如果 agent 继续往招聘、税务、研究这些严肃场景推进，这类“不是功能 bug、但会造成系统性后果”的问题会越来越重要。</li>
+<li>来源：<a href="http://arxiv.org/abs/2605.27355v1">Alignment Tampering</a>、<a href="http://arxiv.org/abs/2605.27371v1">Algorithmic Monocultures in Hiring</a></li>
+</ul>
+<h2>可以暂缓</h2>
+<h3>Product Hunt 今天没有样本</h3>
+<ul>
+<li>判断：今天 <code>Product Hunt</code> 抓取失败，不要把这页当成完整新品视图。</li>
+<li>来源：<a href="https://github.com/ceion6/seeless-learnmore/blob/main/digests/2026-05-28/raw-data.json">今日原始快照</a></li>
+</ul>
+<h3>“AI 工作会不会末日化”这类媒体争论先少看</h3>
+<ul>
+<li>判断：今天 HN 里围绕 jobs apocalypse 的媒体讨论有热度，但对产品和工程判断的直接帮助不大。</li>
+<li>来源：<a href="https://www.axios.com/2026/05/27/ai-hype-doom-openai-anthropic">Axios 讨论</a>、<a href="https://www.reuters.com/world/asia-pacific/openais-altman-says-ai-unlikely-lead-jobs-apocalypse-2026-05-26/">Reuters 讨论</a>、<a href="https://fortune.com/2026/05/26/sam-altman-dario-amodei-walking-back-ai-jobs-apocalypse-prophecies-ipo/">Fortune 讨论</a></li>
+</ul>
+<h3>今天不必把所有“skill 仓库”都加入日常关注清单</h3>
+<ul>
+<li>判断：今天很多涨星仓库都围绕 skill / memory / harness，但其中不少更像实验性模式库。先把它们当发现信号，不要直接当成熟方案。</li>
+<li>来源：<a href="https://github.com/ceion6/seeless-learnmore/blob/main/digests/2026-05-28/raw-data.json">今日原始快照</a></li>
+</ul>
+<h2>原始入口</h2>
+<ul>
+<li><a href="https://github.com/ceion6/seeless-learnmore/blob/main/digests/2026-05-28/raw-data.json">今日原始快照 raw-data.json</a></li>
+<li><a href="https://openai.com/index/building-self-improving-tax-agents-with-codex/">Building Self Improving Tax Agents With Codex</a>、<a href="https://www.anthropic.com/research/coding-agents-social-sciences">Coding agents in the social sciences</a>、<a href="https://deepmind.google/models/gemini-robotics/accelerator/">Google DeepMind Accelerator</a></li>
+<li><a href="https://github.com/UditAkhourii/adhd">adhd</a>、<a href="https://github.com/Lum1104/Understand-Anything">Understand-Anything</a>、<a href="https://github.com/anthropics/knowledge-work-plugins">knowledge-work-plugins</a>、<a href="https://github.com/affaan-m/ECC">ECC</a>、<a href="https://github.com/nduckmink/arkon">Arkon</a></li>
+<li><a href="https://simonwillison.net/2026/May/27/product-market-fit/">I think Anthropic and OpenAI have found product-market fit</a>、<a href="https://news.ycombinator.com/item?id=48296794">HN 讨论</a></li>
+<li><a href="http://arxiv.org/abs/2605.27366v1">MUSE-Autoskill</a>、<a href="http://arxiv.org/abs/2605.27361v1">Natural Language Query to Configuration for Retrieval Agents</a>、<a href="http://arxiv.org/abs/2605.27355v1">Alignment Tampering</a></li>
+<li><a href="https://huggingface.co/bytedance-research/Lance">Lance</a>、<a href="https://huggingface.co/openbmb/MiniCPM5-1B">MiniCPM5-1B</a>、<a href="https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.5">LongCat-Video-Avatar-1.5</a></li>
+</ul>
+<hr>
+<blockquote>
+<p>本页由 Codex 直接基于当天 <code>raw-data.json</code> 整理生成，不依赖仓库内的外部模型 API 配置。</p>
+</blockquote>
+]]></content:encoded>
+    </item>
     <item>
       <title>少看点 AI 雷达 2026-05-26</title>
       <link>http://127.0.0.1:4173/#2026-05-26/ai-radar</link>
@@ -27691,186 +27808,6 @@ Preview of Intern&#39;s updated vision-language model; a contender in the open m
 <p><em>日报基于 2026-05-21 Hacker News 抓取数据生成 | 共 30 条 AI 相关帖子</em></p>
 <hr>
 <p><em>本日报由 <a href="https://github.com/duanyytop/agents-radar">agents-radar</a> 自动生成。</em></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Hacker News AI Community Digest 2026-05-21</title>
-      <link>http://127.0.0.1:4173/#2026-05-21/ai-hn-en</link>
-      <guid isPermaLink="true">http://127.0.0.1:4173/#2026-05-21/ai-hn-en</guid>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <description>Hacker News AI Community Digest 2026-05-21 Source: Hacker News | 30 stories | Generated: 2026-05-21 00:26 UTC Hacker News AI Community Digest — May 21, 2026 1. Today&amp;#39;s Highlights The Hacker News AI community is buzzing over OpenAI&amp;#39;s mathematical breakthrough, with a model disproving a long-standing conjecture in discrete geometry dominating discussion (656 points, 464 comments). Simultaneously, news of OpenAI&amp;#39;s imminent IPO filing—reported across multiple outlets—has sparked intense ...</description>
-      <content:encoded><![CDATA[<h1>Hacker News AI Community Digest 2026-05-21</h1>
-<blockquote>
-<p>Source: <a href="https://news.ycombinator.com/">Hacker News</a> | 30 stories | Generated: 2026-05-21 00:26 UTC</p>
-</blockquote>
-<hr>
-<h1>Hacker News AI Community Digest — May 21, 2026</h1>
-<hr>
-<h2>1. Today&#39;s Highlights</h2>
-<p>The Hacker News AI community is buzzing over OpenAI&#39;s mathematical breakthrough, with a model disproving a long-standing conjecture in discrete geometry dominating discussion (656 points, 464 comments). Simultaneously, news of OpenAI&#39;s imminent IPO filing—reported across multiple outlets—has sparked intense speculation about valuation, governance, and market timing. The community shows deep skepticism toward AI hype cycles, with high engagement on critical pieces about public sentiment turning against AI and Cloudflare&#39;s controversial AI-driven layoffs. Anthropic continues to gain momentum with Karpathy&#39;s hiring and near-profitability news, while engineering-focused posts on Rust-with-AI workflows and GPU memory optimization reflect persistent practitioner interest in building efficiently.</p>
-<hr>
-<h2>2. Top News &amp; Discussions</h2>
-<h3>🔬 Models &amp; Research</h3>
-<table>
-<thead>
-<tr>
-<th>Title</th>
-<th>Score</th>
-<th>Comments</th>
-<th>Why It Matters / Community Reaction</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://openai.com/index/model-disproves-discrete-geometry-conjecture/"><strong>An OpenAI model has disproved a central conjecture in discrete geometry</strong></a> — <a href="https://news.ycombinator.com/item?id=48212493">Discussion</a></td>
-<td>656</td>
-<td>464</td>
-<td>Historic moment for AI-assisted mathematics; community debates whether this represents genuine model reasoning or sophisticated search, with many demanding transparency on methodology</td>
-</tr>
-<tr>
-<td><a href="https://vmax.ai/team/populora-co-evolving-llm-populations-for-reasoning-self-play"><strong>PopuLoRA: Co-Evolving LLM Populations for Reasoning Self-Play</strong></a> — <a href="https://news.ycombinator.com/item?id=48214188">Discussion</a></td>
-<td>31</td>
-<td>6</td>
-<td>Novel evolutionary approach to LLM training; niche but appreciated by researchers for moving beyond single-model scaling</td>
-</tr>
-<tr>
-<td><a href="https://www.reuters.com/business/fears-unfettered-hacking-spurred-by-anthropics-mythos-ai-model-overstated-2026-05-20/"><strong>Fears of unfettered hacking spurred by Anthropic&#39;s Mythos AI model overstated</strong></a> — <a href="https://news.ycombinator.com/item?id=48210142">Discussion</a></td>
-<td>5</td>
-<td>0</td>
-<td>Reflects ongoing tension between AI safety research and security concerns; community generally skeptical of cybersecurity fear-mongering</td>
-</tr>
-</tbody></table>
-<h3>🛠️ Tools &amp; Engineering</h3>
-<table>
-<thead>
-<tr>
-<th>Title</th>
-<th>Score</th>
-<th>Comments</th>
-<th>Why It Matters / Community Reaction</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://zfhuang99.github.io/rust/claude%20code/codex/contracts/spec-driven%20development/2025/12/01/rust-with-ai.html"><strong>Learnings from 100K lines of Rust with AI (2025)</strong></a> — <a href="https://news.ycombinator.com/item?id=48205415">Discussion</a></td>
-<td>126</td>
-<td>131</td>
-<td>Highly practical retrospective on spec-driven development with AI; community values concrete engineering experience over marketing claims</td>
-</tr>
-<tr>
-<td><a href="https://theahmadosman.substack.com/p/gpu-memory-math-for-llms-2026-edition"><strong>GPU Memory Math for LLMs: Formula That Tells You What Fits on Your GPU</strong></a> — <a href="https://news.ycombinator.com/item?id=48214084">Discussion</a></td>
-<td>8</td>
-<td>2</td>
-<td>Essential infrastructure knowledge; typical HN appreciation for back-of-envelope calculations made rigorous</td>
-</tr>
-<tr>
-<td><a href="https://github.com/mupt-ai/dari-docs"><strong>Show HN: Dari-docs – Optimize your docs using parallel coding agents</strong></a> — <a href="https://news.ycombinator.com/item?id=48210615">Discussion</a></td>
-<td>14</td>
-<td>4</td>
-<td>Representative of ongoing &quot;AI agents for X&quot; experimentation; moderate interest, with standard Show HN skepticism about production readiness</td>
-</tr>
-</tbody></table>
-<h3>🏢 Industry News</h3>
-<table>
-<thead>
-<tr>
-<th>Title</th>
-<th>Score</th>
-<th>Comments</th>
-<th>Why It Matters / Community Reaction</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://www.wsj.com/tech/ai/openai-is-preparing-to-file-for-an-ipo-very-soon-0ec95af5"><strong>OpenAI Is Preparing to File for an IPO Soon</strong></a> — <a href="https://news.ycombinator.com/item?id=48210226">Discussion</a></td>
-<td>66</td>
-<td>65</td>
-<td>Dominant business story; community deeply divided on whether OpenAI&#39;s capped-profit structure can survive public markets, with many predicting governance drama</td>
-</tr>
-<tr>
-<td><a href="https://www.wsj.com/tech/ai/mind-blowing-growth-is-about-to-propel-anthropic-into-its-first-profitable-quarter-7edbf2f4"><strong>Mind-Blowing Growth Is About to Propel Anthropic into First Profitable Quarter</strong></a> — <a href="https://news.ycombinator.com/item?id=48214843">Discussion</a></td>
-<td>16</td>
-<td>4</td>
-<td>Seen as validation of Anthropic&#39;s more measured approach; contrast with OpenAI&#39;s burn rate fuels &quot;David vs. Goliath&quot; narrative</td>
-</tr>
-<tr>
-<td><a href="https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/"><strong>OpenAI co-founder Andrej Karpathy joins Anthropic</strong></a> — <a href="https://news.ycombinator.com/item?id=48213052">Discussion</a></td>
-<td>5</td>
-<td>0</td>
-<td>Symbolic talent migration; noted quietly but adds to perception of Anthropic&#39;s rising technical credibility</td>
-</tr>
-<tr>
-<td><a href="https://www.semafor.com/article/05/20/2026/nvidia-commits-90-billion-to-ai-deals"><strong>Nvidia commits $90B to AI deals</strong></a> — <a href="https://news.ycombinator.com/item?id=48214739">Discussion</a></td>
-<td>6</td>
-<td>1</td>
-<td>Massive capital deployment raises antitrust eyebrows; community concerns about vertical integration and market concentration</td>
-</tr>
-</tbody></table>
-<h3>💬 Opinions &amp; Debates</h3>
-<table>
-<thead>
-<tr>
-<th>Title</th>
-<th>Score</th>
-<th>Comments</th>
-<th>Why It Matters / Community Reaction</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://www.wsj.com/opinion/how-i-choose-which-cloudflare-employees-to-replace-with-ai-40a197e5"><strong>Cloudflare CEO on how he chooses which employees to replace with AI</strong></a> — <a href="https://news.ycombinator.com/item?id=48214617">Discussion</a></td>
-<td>29</td>
-<td>18</td>
-<td>Provoked sharp backlash; community largely hostile to framing of AI replacement as optimization, with many calling for worker solidarity</td>
-</tr>
-<tr>
-<td><a href="https://www.thealgorithmicbridge.com/p/how-america-turned-against-ai-according"><strong>America Turned Against AI According to the Poll Data: A Very Big Compilation</strong></a> — <a href="https://news.ycombinator.com/item?id=48214348">Discussion</a></td>
-<td>18</td>
-<td>0</td>
-<td>Resonates with HN&#39;s own skepticism; zero comments suggests uncomfortable confirmation rather than debate</td>
-</tr>
-<tr>
-<td><a href="https://www.404media.co/township-leader-resigns-in-tears-over-openai-data-center-death-threats/"><strong>Township Leader Resigns in Tears over OpenAI Data Center Death Threats</strong></a> — <a href="https://news.ycombinator.com/item?id=48210645">Discussion</a></td>
-<td>6</td>
-<td>0</td>
-<td>Dark undercurrent of AI backlash turning violent; notably under-discussed given severity, perhaps due to discomfort</td>
-</tr>
-<tr>
-<td><a href="https://news.ycombinator.com/item?id=48202774"><strong>Ask HN: What are Stainless users doing now that Anthropic has killed it?</strong></a> — <a href="https://news.ycombinator.com/item?id=48202774">Discussion</a></td>
-<td>5</td>
-<td>3</td>
-<td>Typical HN infrastructure anxiety; small but representative of dependency risks on AI vendor tooling</td>
-</tr>
-</tbody></table>
-<hr>
-<h2>3. Community Sentiment Signal</h2>
-<p>Today&#39;s HN AI discourse reveals a community at an inflection point—simultaneously impressed by genuine technical progress and exhausted by hype. The geometry proof post generated exceptional engagement (656/464) not despite but <em>because of</em> skepticism; commenters demanded proof verification details, reflecting HN&#39;s empiricist culture. The IPO cluster (items 3, 4, 18, 30) shows fragmented attention across outlets, with lower per-post engagement suggesting information fatigue rather than excitement.</p>
-<p>Compared to prior cycles, there&#39;s a marked shift from &quot;AI can do X&quot; enthusiasm to &quot;who controls AI and at what cost&quot; scrutiny. The Cloudflare replacement piece and China jobs article (item 20) signal labor concerns moving mainstream. Anthropic benefits from contrast effects—Karpathy&#39;s move and near-profitability land as relief from OpenAI drama. Notably absent: breathless product launches or benchmark celebrations. The community&#39;s hottest threads involve mathematics verification and corporate governance, suggesting maturation toward institutional critique. Sentiment: <strong>cautiously impressed, increasingly wary, fatigued by spectacle</strong>.</p>
-<hr>
-<h2>4. Worth Deep Reading</h2>
-<table>
-<thead>
-<tr>
-<th>#</th>
-<th>Piece</th>
-<th>Reasoning</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1</td>
-<td><a href="https://zfhuang99.github.io/rust/claude%20code/codex/contracts/spec-driven%20development/2025/12/01/rust-with-ai.html"><strong>Learnings from 100K lines of Rust with AI (2025)</strong></a> — <a href="https://news.ycombinator.com/item?id=48205415">Discussion</a></td>
-<td>Rare longitudinal study at meaningful scale; the spec-driven development methodology and contract-based verification approach offer transferable patterns beyond Rust. Essential for teams integrating AI coding tools without quality degradation.</td>
-</tr>
-<tr>
-<td>2</td>
-<td><a href="https://openai.com/index/model-disproves-discrete-geometry-conjecture/"><strong>An OpenAI model has disproved a central conjecture in discrete geometry</strong></a> — <a href="https://news.ycombinator.com/item?id=48212493">Discussion</a></td>
-<td>Potentially landmark in AI-assisted science; regardless of methodological debates, the proof techniques and human-AI collaboration model deserve study. Follow the HN discussion for critical vetting of claims.</td>
-</tr>
-<tr>
-<td>3</td>
-<td><a href="https://www.thealgorithmicbridge.com/p/how-america-turned-against-ai-according"><strong>America Turned Against AI According to the Poll Data: A Very Big Compilation</strong></a> — <a href="https://news.ycombinator.com/item?id=48214348">Discussion</a></td>
-<td>Critical market intelligence for anyone building AI products; the compilation of polling trends helps distinguish HN&#39;s early-adopter skepticism from broader public opinion shifts that will shape regulation and adoption curves.</td>
-</tr>
-</tbody></table>
-<hr>
-<hr>
-<p><em>This digest is auto-generated by <a href="https://github.com/duanyytop/agents-radar">agents-radar</a>.</em></p>
 ]]></content:encoded>
     </item>
   </channel>
