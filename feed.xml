@@ -6,7 +6,129 @@
     <description>中文 AI 趋势筛选面板 · High-signal AI radar in Chinese</description>
     <language>zh-CN</language>
     <atom:link href="http://127.0.0.1:4173/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 28 May 2026 02:10:38 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 02:12:16 +0000</lastBuildDate>
+    <item>
+      <title>少看点 AI 雷达 2026-05-29</title>
+      <link>http://127.0.0.1:4173/#2026-05-29/ai-radar</link>
+      <guid isPermaLink="true">http://127.0.0.1:4173/#2026-05-29/ai-radar</guid>
+      <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
+      <description>少看点 AI 雷达 2026-05-29 今天的主线是：Anthropic 在同一天把“模型升级、产品扩展、agent 工作流、风险控制、资本背书”几条线一起推了出来，说明大厂竞争已经不只是拼模型分数，而是在拼完整的 agent 操作系统。 覆盖提醒：Product Hunt 今天抓取失败；官网面有少量旧文更新时间变动，这页只把明确新增或能代表方向变化的条目算进去。 今天必看 Anthropic 今天是整包推进，不是单点发版 结论：今天最强信号不是单独的 Claude Opus 4.8，而是 Anthropic 同时放出了 Claude Opus 4.8、Claude Design、Dynamic Workflows in Claude Code、How we contain Claude across products 和新一轮融资消息。 为什么重要：这说明 Anthropic 在把 agent 能力从“更强模型”往“更大任务编排、更丰富工作流、更强安全边界、更明确商业承载”整体推进。竞争重点已经不只是模型本身，而是整套运行面。 来源：Introducing Claude Opus ...</description>
+      <content:encoded><![CDATA[<h1>少看点 AI 雷达 2026-05-29</h1>
+<blockquote>
+<p>今天的主线是：Anthropic 在同一天把“模型升级、产品扩展、agent 工作流、风险控制、资本背书”几条线一起推了出来，说明大厂竞争已经不只是拼模型分数，而是在拼完整的 agent 操作系统。</p>
+<p>覆盖提醒：Product Hunt 今天抓取失败；官网面有少量旧文更新时间变动，这页只把明确新增或能代表方向变化的条目算进去。</p>
+</blockquote>
+<h2>今天必看</h2>
+<h3>Anthropic 今天是整包推进，不是单点发版</h3>
+<ul>
+<li>结论：今天最强信号不是单独的 <code>Claude Opus 4.8</code>，而是 Anthropic 同时放出了 <code>Claude Opus 4.8</code>、<code>Claude Design</code>、<code>Dynamic Workflows in Claude Code</code>、<code>How we contain Claude across products</code> 和新一轮融资消息。</li>
+<li>为什么重要：这说明 Anthropic 在把 agent 能力从“更强模型”往“更大任务编排、更丰富工作流、更强安全边界、更明确商业承载”整体推进。竞争重点已经不只是模型本身，而是整套运行面。</li>
+<li>来源：<a href="https://www.anthropic.com/news/claude-opus-4-8">Introducing Claude Opus 4.8</a>、<a href="https://www.anthropic.com/news/claude-design-anthropic-labs">Introducing Claude Design by Anthropic Labs</a>、<a href="https://claude.com/blog/introducing-dynamic-workflows-in-claude-code">Dynamic Workflows in Claude Code</a>、<a href="https://www.anthropic.com/engineering/how-we-contain-claude">How we contain Claude across products</a>、<a href="https://www.anthropic.com/news/series-h">Anthropic raises $65B in Series H funding at $965B post-money valuation</a></li>
+<li>建议：看原文</li>
+</ul>
+<h3>今天 HN 的主讨论也在验证这条主线</h3>
+<ul>
+<li>结论：HN 今天最高热度的几条 AI 话题，基本都围着 Anthropic 展开：<code>Claude Opus 4.8</code>、融资、<code>Dynamic Workflows</code>，外加一篇 <code>Various LLM Smells</code>。</li>
+<li>为什么重要：这说明社区注意力已经不只是“模型更强了没”，而是在同时盯产品体验、工程味道和规模化部署后的副作用。</li>
+<li>来源：<a href="https://news.ycombinator.com/item?id=48311647">Claude Opus 4.8 on HN</a>、<a href="https://news.ycombinator.com/item?id=48313048">Anthropic Series H on HN</a>、<a href="https://news.ycombinator.com/item?id=48311705">Dynamic Workflows in Claude Code on HN</a>、<a href="https://shvbsle.in/various-llm-smells/">Various LLM Smells</a></li>
+</ul>
+<h3>GitHub 热度还在继续堆向 skill / harness / memory 层</h3>
+<ul>
+<li>结论：今天飞涨最快的仓库仍然集中在技能和上下文治理层：<code>guizang-social-card-skill</code>、<code>vibecode-pro-max-kit</code>、<code>adhd</code>、<code>ECC</code>、<code>superpowers</code>、<code>harness</code>、<code>Arkon</code>。</li>
+<li>为什么重要：这说明真实用户已经默认“模型本体不够用”，开始把更多价值放在技能包、规范、记忆和编排框架上。</li>
+<li>来源：<a href="https://github.com/op7418/guizang-social-card-skill">guizang-social-card-skill</a>、<a href="https://github.com/withkynam/vibecode-pro-max-kit">vibecode-pro-max-kit</a>、<a href="https://github.com/UditAkhourii/adhd">adhd</a>、<a href="https://github.com/affaan-m/ECC">ECC</a>、<a href="https://github.com/obra/superpowers">superpowers</a>、<a href="https://github.com/revfactory/harness">harness</a>、<a href="https://github.com/nduckmink/arkon">Arkon</a></li>
+<li>建议：扫一眼</li>
+</ul>
+<h2>正在升温</h2>
+<h3>“AI 代码要不要信”这件事，反对声在变强</h3>
+<ul>
+<li>结论：社区层面今天很明显在积累一种反作用力：<code>Various LLM Smells</code>、<code>I Spent 10x Longer Debugging AI Code Than Writing It</code>、<code>The Other 20% Is Why We Still Need Seniors</code> 都在指向同一个问题。</li>
+<li>为什么重要：agent 可以做掉大量 80% 的工作，但最后决定能不能上生产的，还是错误成本、调试成本和 senior review 这一层。</li>
+<li>来源：<a href="https://shvbsle.in/various-llm-smells/">Various LLM Smells</a>、<a href="https://dev.to/harsh2644/i-spent-10x-longer-debugging-ai-code-than-writing-it-15h4">I Spent 10x Longer Debugging AI Code Than Writing It</a>、<a href="https://dev.to/mickyarun/ai-agents-are-great-at-80-of-our-code-the-other-20-is-why-we-still-need-seniors-3lh5">AI Agents Are Great at 80% of Our Code. The Other 20% Is Why We Still Need Seniors.</a></li>
+</ul>
+<h3>Embedding 和检索基础设施继续往多模态升级</h3>
+<ul>
+<li>结论：Google DeepMind 今天新增的是 <code>Gemini Embedding 2</code>，卖点不是聊天，而是把文本、图像、视频、音频、文档放进统一 embedding 空间。</li>
+<li>为什么重要：这对 RAG、检索、聚类、推荐和多模态 agent 都是底层能力升级。相比又一个聊天模型，这类基础设施更可能悄悄进入主流程。</li>
+<li>来源：<a href="https://deepmind.google/models/gemini/embedding/">Gemini Embedding 2</a></li>
+</ul>
+<h3>端侧、小模型和高密度推理还在稳步走强</h3>
+<ul>
+<li>结论：<code>MiniCPM5-1B</code>、<code>OpenSquilla</code>、<code>TokenSpeed</code> 今天继续同时有热度。</li>
+<li>为什么重要：这说明一条明确分支已经成型了：不是所有人都要更大的闭源模型，很多真实工作流更在意本地可用、推理效率和单位 token 产出。</li>
+<li>来源：<a href="https://huggingface.co/openbmb/MiniCPM5-1B">MiniCPM5-1B</a>、<a href="https://github.com/opensquilla/opensquilla">OpenSquilla</a>、<a href="https://github.com/lightseekorg/tokenspeed">TokenSpeed</a></li>
+</ul>
+<h2>新模型 / 新产品</h2>
+<h3><code>Claude Opus 4.8</code> 不是孤立升级，而是配套工作流一起上</h3>
+<ul>
+<li>结论：今天最值得记住的新产品，不只是 <code>Opus 4.8</code> 本身，还包括和它一起出现的 <code>Claude Design</code>、<code>Dynamic Workflows</code> 以及更明确的 containment 叙事。</li>
+<li>为什么重要：这意味着 Anthropic 想卖的不是单个模型 API，而是一整套“能做设计、能跑大任务、能控风险”的 agent 套件。</li>
+<li>来源：<a href="https://www.anthropic.com/news/claude-opus-4-8">Introducing Claude Opus 4.8</a>、<a href="https://www.anthropic.com/news/claude-design-anthropic-labs">Introducing Claude Design by Anthropic Labs</a>、<a href="https://claude.com/blog/introducing-dynamic-workflows-in-claude-code">Dynamic Workflows in Claude Code</a></li>
+<li>建议：看原文</li>
+</ul>
+<h3>OpenAI 今天更像是在补治理框架，不是在抢产品节奏</h3>
+<ul>
+<li>结论：OpenAI 今天在官网面新增的是 <code>OpenAI Frontier Governance Framework</code>，不是模型或 agent 工具发版。</li>
+<li>为什么重要：这说明今天官方产品节奏明显偏向 Anthropic，OpenAI 这边更像在补制度和治理层叙事。</li>
+<li>来源：<a href="https://openai.com/index/openai-frontier-governance-framework/">OpenAI Frontier Governance Framework</a></li>
+</ul>
+<h3>今天值得顺手记住的开源模型是这几类</h3>
+<ul>
+<li>结论：<code>Lance</code> 代表 any-to-any 多模态生成，<code>MiniCPM5-1B</code> 代表端侧长上下文小模型，<code>LocateAnything-3B</code> 代表视觉 grounding。</li>
+<li>为什么重要：今天真正有判断价值的，不是“又多了一个模型名”，而是哪条技术路径在变实用。</li>
+<li>来源：<a href="https://huggingface.co/bytedance-research/Lance">Lance</a>、<a href="https://huggingface.co/openbmb/MiniCPM5-1B">MiniCPM5-1B</a>、<a href="https://huggingface.co/nvidia/LocateAnything-3B">LocateAnything-3B</a></li>
+</ul>
+<h2>论文里可能有用的东西</h2>
+<h3><code>Self-Improving Language Models with Bidirectional Evolutionary Search</code> 值得看</h3>
+<ul>
+<li>结论：今天最接近 agent 自改进主线的论文，是 <code>Self-Improving Language Models with Bidirectional Evolutionary Search</code>。</li>
+<li>为什么重要：它试图解决的不是一次答题准不准，而是怎样通过搜索、分解和重组让模型持续生成更好的候选路径。</li>
+<li>来源：<a href="http://arxiv.org/abs/2605.28814v1">Self-Improving Language Models with Bidirectional Evolutionary Search</a></li>
+<li>建议：看原文</li>
+</ul>
+<h3><code>Calibrating Conservatism for Scalable Oversight</code> 也值得留档</h3>
+<ul>
+<li>结论：如果你更关心 agent 安全和人类监督，这篇 <code>Calibrating Conservatism for Scalable Oversight</code> 比很多泛泛对齐论文更实用。</li>
+<li>为什么重要：它直接碰的是“能力越来越强时，人还能怎么维持有效监督”这个核心问题，和今天 Anthropic 的 containment 叙事是同一条线。</li>
+<li>来源：<a href="http://arxiv.org/abs/2605.28807v1">Calibrating Conservatism for Scalable Oversight</a></li>
+</ul>
+<h3>长期记忆开始从文本走向视觉</h3>
+<ul>
+<li>结论：<code>Personal Visual Memory from Explicit and Implicit Evidence</code> 值得记一个点：agent 的长期记忆开始不满足于只存文本。</li>
+<li>为什么重要：如果未来个人 agent 真要长期陪跑，它迟早要记住界面、图片、视觉线索和用户上下文，而不是只会堆对话摘要。</li>
+<li>来源：<a href="http://arxiv.org/abs/2605.28806v1">Personal Visual Memory from Explicit and Implicit Evidence</a></li>
+</ul>
+<h2>可以暂缓</h2>
+<h3>Product Hunt 今天没有样本</h3>
+<ul>
+<li>判断：今天 <code>Product Hunt</code> 抓取失败，不要把这页当成完整新品视图。</li>
+<li>来源：<a href="https://github.com/ceion6/seeless-learnmore/blob/main/digests/2026-05-29/raw-data.json">今日原始快照</a></li>
+</ul>
+<h3>纯概念性的“AI 工程师是什么”讨论先少看</h3>
+<ul>
+<li>判断：这类话题会继续热，但今天更值得看的还是已经落到产品、工作流和风险控制上的具体变化。</li>
+<li>来源：<a href="https://news.ycombinator.com/item?id=48312377">Ask HN: What Is an &quot;AI Engineer&quot;?</a></li>
+</ul>
+<h3>不是每个涨星 skill 仓库都值得立刻装进工作流</h3>
+<ul>
+<li>判断：今天很多 skill / harness 仓库涨得很快，但其中相当一部分更像模式库和演示层。先把它们当发现信号，不要直接当成熟生产方案。</li>
+<li>来源：<a href="https://github.com/ceion6/seeless-learnmore/blob/main/digests/2026-05-29/raw-data.json">今日原始快照</a></li>
+</ul>
+<h2>原始入口</h2>
+<ul>
+<li><a href="https://github.com/ceion6/seeless-learnmore/blob/main/digests/2026-05-29/raw-data.json">今日原始快照 raw-data.json</a></li>
+<li><a href="https://www.anthropic.com/news/claude-opus-4-8">Introducing Claude Opus 4.8</a>、<a href="https://www.anthropic.com/news/claude-design-anthropic-labs">Introducing Claude Design by Anthropic Labs</a>、<a href="https://claude.com/blog/introducing-dynamic-workflows-in-claude-code">Dynamic Workflows in Claude Code</a>、<a href="https://www.anthropic.com/engineering/how-we-contain-claude">How we contain Claude across products</a></li>
+<li><a href="https://www.anthropic.com/news/series-h">Anthropic raises $65B in Series H funding at $965B post-money valuation</a>、<a href="https://deepmind.google/models/gemini/embedding/">Gemini Embedding 2</a>、<a href="https://openai.com/index/openai-frontier-governance-framework/">OpenAI Frontier Governance Framework</a></li>
+<li><a href="https://shvbsle.in/various-llm-smells/">Various LLM Smells</a>、<a href="https://dev.to/harsh2644/i-spent-10x-longer-debugging-ai-code-than-writing-it-15h4">I Spent 10x Longer Debugging AI Code Than Writing It</a>、<a href="https://dev.to/mickyarun/ai-agents-are-great-at-80-of-our-code-the-other-20-is-why-we-still-need-seniors-3lh5">AI Agents Are Great at 80% of Our Code. The Other 20% Is Why We Still Need Seniors.</a></li>
+<li><a href="https://github.com/op7418/guizang-social-card-skill">guizang-social-card-skill</a>、<a href="https://github.com/withkynam/vibecode-pro-max-kit">vibecode-pro-max-kit</a>、<a href="https://github.com/UditAkhourii/adhd">adhd</a>、<a href="https://github.com/affaan-m/ECC">ECC</a>、<a href="https://github.com/nduckmink/arkon">Arkon</a></li>
+<li><a href="http://arxiv.org/abs/2605.28814v1">Self-Improving Language Models with Bidirectional Evolutionary Search</a>、<a href="http://arxiv.org/abs/2605.28807v1">Calibrating Conservatism for Scalable Oversight</a>、<a href="http://arxiv.org/abs/2605.28806v1">Personal Visual Memory from Explicit and Implicit Evidence</a></li>
+</ul>
+<hr>
+<blockquote>
+<p>本页由 Codex 直接基于当天 <code>raw-data.json</code> 整理生成，不依赖仓库内的外部模型 API 配置。</p>
+</blockquote>
+]]></content:encoded>
+    </item>
     <item>
       <title>少看点 AI 雷达 2026-05-28</title>
       <link>http://127.0.0.1:4173/#2026-05-28/ai-radar</link>
@@ -27604,210 +27726,6 @@ Preview of Intern&#39;s updated vision-language model; a contender in the open m
 <hr>
 <hr>
 <p><em>This digest is auto-generated by <a href="https://github.com/duanyytop/agents-radar">agents-radar</a>.</em></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Hacker News AI 社区动态日报 2026-05-21</title>
-      <link>http://127.0.0.1:4173/#2026-05-21/ai-hn</link>
-      <guid isPermaLink="true">http://127.0.0.1:4173/#2026-05-21/ai-hn</guid>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <description>Hacker News AI 社区动态日报 2026-05-21 数据来源: Hacker News | 共 30 条 | 生成时间: 2026-05-21 00:26 UTC Hacker News AI 社区动态日报 | 2026-05-21 一、今日速览 今日 HN 社区最重磅的话题是 OpenAI 模型在离散几何领域取得突破性数学成果，以 656 分、464 条评论的压倒性热度登顶，引发关于 AI 数学推理能力的激烈辩论。与此同时，OpenAI IPO 传闻密集发酵，华尔街日报、纽约时报、CNBC 等多家媒体跟进报道，但社区反应冷淡甚至质疑。Anthropic 方面则传来扩容 Colossus2 和 Andrej Karpathy 加盟的利好消息，形成&amp;quot;OpenAI vs Anthropic&amp;quot;的双雄叙事张力。整体情绪呈现 &amp;quot;技术兴奋与商业审慎并存&amp;quot; 的特征。 二、热门新闻与讨论 🔬 模型与研究 # 内容 数据 一句话解读 1 An OpenAI model has disproved a central conjecture in di...</description>
-      <content:encoded><![CDATA[<h1>Hacker News AI 社区动态日报 2026-05-21</h1>
-<blockquote>
-<p>数据来源: <a href="https://news.ycombinator.com/">Hacker News</a> | 共 30 条 | 生成时间: 2026-05-21 00:26 UTC</p>
-</blockquote>
-<hr>
-<h1>Hacker News AI 社区动态日报 | 2026-05-21</h1>
-<hr>
-<h2>一、今日速览</h2>
-<p>今日 HN 社区最重磅的话题是 <strong>OpenAI 模型在离散几何领域取得突破性数学成果</strong>，以 656 分、464 条评论的压倒性热度登顶，引发关于 AI 数学推理能力的激烈辩论。与此同时，<strong>OpenAI IPO 传闻密集发酵</strong>，华尔街日报、纽约时报、CNBC 等多家媒体跟进报道，但社区反应冷淡甚至质疑。Anthropic 方面则传来扩容 Colossus2 和 Andrej Karpathy 加盟的利好消息，形成&quot;OpenAI vs Anthropic&quot;的双雄叙事张力。整体情绪呈现 <strong>&quot;技术兴奋与商业审慎并存&quot;</strong> 的特征。</p>
-<hr>
-<h2>二、热门新闻与讨论</h2>
-<h3>🔬 模型与研究</h3>
-<table>
-<thead>
-<tr>
-<th>#</th>
-<th>内容</th>
-<th>数据</th>
-<th>一句话解读</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1</td>
-<td><strong><a href="https://openai.com/index/model-disproves-discrete-geometry-conjecture/">An OpenAI model has disproved a central conjecture in discrete geometry</a></strong><br><a href="https://news.ycombinator.com/item?id=48212493">HN 讨论</a></td>
-<td><strong>656 分 / 464 评论</strong></td>
-<td>社区核心争议：这是&quot;真正的数学突破&quot;还是&quot;暴力搜索+人类包装&quot;？高评论数反映深度分歧，部分评论质疑可解释性与学术诚信</td>
-</tr>
-<tr>
-<td>2</td>
-<td><strong><a href="https://vmax.ai/team/populora-co-evolving-llm-populations-for-reasoning-self-play">PopuLoRA: Co-Evolving LLM Populations for Reasoning Self-Play</a></strong><br><a href="https://news.ycombinator.com/item?id=48214188">HN 讨论</a></td>
-<td>31 分 / 6 评论</td>
-<td>群体进化+自博弈的 LoRA 训练新范式，社区关注其实际训练成本与可复现性</td>
-</tr>
-<tr>
-<td>3</td>
-<td><strong><a href="https://www.reuters.com/business/fears-unfettered-hacking-spurred-by-anthropics-mythos-ai-model-overstated-2026-05-20/">Fears of unfettered hacking spurred by Anthropic&#39;s Mythos AI model overstated</a></strong><br><a href="https://news.ycombinator.com/item?id=48210142">HN 讨论</a></td>
-<td>5 分 / 0 评论</td>
-<td>路透社为 Anthropic 的 Mythos 模型&quot;降温&quot;，但零评论显示社区对此话题已疲劳或持保留态度</td>
-</tr>
-</tbody></table>
-<h3>🛠️ 工具与工程</h3>
-<table>
-<thead>
-<tr>
-<th>#</th>
-<th>内容</th>
-<th>数据</th>
-<th>一句话解读</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1</td>
-<td><strong><a href="https://zfhuang99.github.io/rust/claude%20code/codex/contracts/spec-driven%20development/2025/12/01/rust-with-ai.html">Learnings from 100K lines of Rust with AI (2025)</a></strong><br><a href="https://news.ycombinator.com/item?id=48205415">HN 讨论</a></td>
-<td><strong>126 分 / 131 评论</strong></td>
-<td>高分高评论的实战长文，社区热议&quot;规约驱动开发&quot;（spec-driven development）在 Rust 中的落地，典型评论聚焦 AI 生成代码的维护成本与类型系统的协同</td>
-</tr>
-<tr>
-<td>2</td>
-<td><strong><a href="https://github.com/ueberdosis/hocuspocus">Show HN: Hocuspocus 4 – self-hosted Yjs collaboration backend</a></strong><br><a href="https://news.ycombinator.com/item?id=48208834">HN 讨论</a></td>
-<td>32 分 / 3 评论</td>
-<td>自托管协作后端升级，低评论反映技术导向明确但社区对 CRDT 基础设施关注度有限</td>
-</tr>
-<tr>
-<td>3</td>
-<td><strong><a href="https://github.com/mupt-ai/dari-docs">Show HN: Dari-docs – Optimize your docs using parallel coding agents</a></strong><br><a href="https://news.ycombinator.com/item?id=48210615">HN 讨论</a></td>
-<td>14 分 / 4 评论</td>
-<td>并行 Agent 优化文档的实验性工具，社区关注其是否优于传统文档生成方案</td>
-</tr>
-<tr>
-<td>4</td>
-<td><strong><a href="https://theahmadosman.substack.com/p/gpu-memory-math-for-llms-2026-edition">GPU Memory Math for LLMs: Formula That Tells You What Fits on Your GPU</a></strong><br><a href="https://news.ycombinator.com/item?id=48214084">HN 讨论</a></td>
-<td>8 分 / 2 评论</td>
-<td>2026 版显存计算公式，实用但社区反馈稀疏，可能因同类工具已泛滥</td>
-</tr>
-<tr>
-<td>5</td>
-<td><strong><a href="https://github.com/receptron/mulmoclaude">Show HN: MulmoClaude – open-source platform where Claude composes tools and GUIs</a></strong><br><a href="https://news.ycombinator.com/item?id=48208997">HN 讨论</a></td>
-<td>4 分 / 0 评论</td>
-<td>Claude 动态组合工具与 GUI 的开源尝试，零评论暗示&quot;AI 生成 UI&quot;赛道同质化严重</td>
-</tr>
-</tbody></table>
-<h3>🏢 产业动态</h3>
-<table>
-<thead>
-<tr>
-<th>#</th>
-<th>内容</th>
-<th>数据</th>
-<th>一句话解读</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1</td>
-<td><strong><a href="https://www.wsj.com/tech/ai/openai-is-preparing-to-file-for-an-ipo-very-soon-0ec95af5">OpenAI Is Preparing to File for an IPO Soon</a></strong><br><a href="https://news.ycombinator.com/item?id=48210226">HN 讨论</a></td>
-<td><strong>66 分 / 65 评论</strong></td>
-<td>社区情绪偏负面：质疑 Sam Altman 的治理结构、非营利转营利合法性，以及&quot;非常 soon&quot;的模糊表述</td>
-</tr>
-<tr>
-<td>2</td>
-<td><strong><a href="https://xcancel.com/nottombrown/status/2057194829986300375">Anthropic is expanding to Colossus2. Will use GB200</a></strong><br><a href="https://news.ycombinator.com/item?id=48214017">HN 讨论</a></td>
-<td>30 分 / 14 评论</td>
-<td>对比 OpenAI 的&quot;叙事透支&quot;，Anthropic 的硬件扩容获相对正面评价，GB200 选型引发对 Nvidia 供应链的讨论</td>
-</tr>
-<tr>
-<td>3</td>
-<td><strong><a href="https://www.wsj.com/tech/ai/mind-blowing-growth-is-about-to-propel-anthropic-into-its-first-profitable-quarter-7edbf2f4">Mind-Blowing Growth Is About to Propel Anthropic into First Profitable Quarter</a></strong><br><a href="https://news.ycombinator.com/item?id=48214843">HN 讨论</a></td>
-<td>16 分 / 4 评论</td>
-<td>&quot;Mind-blowing&quot;标题遭社区调侃，低评论数显示对 AI 公司盈利叙事已脱敏</td>
-</tr>
-<tr>
-<td>4</td>
-<td><strong><a href="https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/">OpenAI co-founder Andrej Karpathy joins Anthropic</a></strong><br><a href="https://news.ycombinator.com/item?id=48213052">HN 讨论</a></td>
-<td>5 分 / 0 评论</td>
-<td>重磅人事变动却零评论，可能因发布时间或社区对&quot;明星工程师跳槽&quot;话题疲劳</td>
-</tr>
-<tr>
-<td>5</td>
-<td><strong><a href="https://www.semafor.com/article/05/20/2026/nvidia-commits-90-billion-to-ai-deals">Nvidia commits $90B to AI deals</a></strong><br><a href="https://news.ycombinator.com/item?id=48214739">HN 讨论</a></td>
-<td>6 分 / 1 评论</td>
-<td>巨额资本承诺仅获冷淡反响，单条评论质疑其反垄断风险</td>
-</tr>
-</tbody></table>
-<h3>💬 观点与争议</h3>
-<table>
-<thead>
-<tr>
-<th>#</th>
-<th>内容</th>
-<th>数据</th>
-<th>一句话解读</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1</td>
-<td><strong><a href="https://www.wsj.com/opinion/how-i-choose-which-cloudflare-employees-to-replace-with-ai-40a197e5">Cloudflare CEO on how he chooses which employees to replace with AI</a></strong><br><a href="https://news.ycombinator.com/item?id=48214617">HN 讨论</a></td>
-<td>29 分 / 18 评论</td>
-<td>CEO 亲述&quot;AI 替代决策&quot;引发强烈反弹，典型评论批评其将人工具化、忽视组织知识流失</td>
-</tr>
-<tr>
-<td>2</td>
-<td><strong><a href="https://www.thealgorithmicbridge.com/p/how-america-turned-against-ai-according">America Turned Against AI According to the Poll Data: A Very Big Compilation</a></strong><br><a href="https://news.ycombinator.com/item?id=48214348">HN 讨论</a></td>
-<td>18 分 / 0 评论</td>
-<td>民调数据汇编显示公众 AI 态度转负，零评论或反映社区对&quot;反 AI 叙事&quot;的回避或认同疲劳</td>
-</tr>
-<tr>
-<td>3</td>
-<td><strong><a href="https://www.404media.co/township-leader-resigns-in-tears-over-openai-data-center-death-threats/">Township Leader Resigns in Tears over OpenAI Data Center Death Threats</a></strong><br><a href="https://news.ycombinator.com/item?id=48210645">HN 讨论</a></td>
-<td>6 分 / 0 评论</td>
-<td>AI 基础设施建设的社区冲突极端化，零评论显示此类社会代价易被技术讨论边缘化</td>
-</tr>
-<tr>
-<td>4</td>
-<td><strong><a href="https://www.nytimes.com/2026/05/19/business/china-ai-unemployment.html">China Wants A.I. To Flourish, but Not at the Expense of Jobs</a></strong><br><a href="https://news.ycombinator.com/item?id=48215391">HN 讨论</a></td>
-<td>5 分 / 4 评论</td>
-<td>中美 AI 就业政策对比，社区评论分化于&quot;效率优先&quot;与&quot;社会契约&quot;立场</td>
-</tr>
-<tr>
-<td>5</td>
-<td><strong><a href="https://news.ycombinator.com/item?id=48202774">Ask HN: What are Stainless users doing now that Anthropic has killed it?</a></strong><br><a href="https://news.ycombinator.com/item?id=48202774">HN 讨论</a></td>
-<td>5 分 / 3 评论</td>
-<td>典型 HN 式实用焦虑：Anthropic 产品策略突变后的迁移困境，评论提供替代方案</td>
-</tr>
-</tbody></table>
-<hr>
-<h2>三、社区情绪信号</h2>
-<p>今日 HN AI 讨论的 <strong>情绪光谱显著分化</strong>：技术突破类话题（OpenAI 几何猜想）呈现 <strong>&quot;高热度高争议&quot;</strong> 特征，464 条评论中充斥着对&quot;AI 是否真正理解数学&quot;的哲学辩论与方法论质疑，这与上周期的&quot;基准测试刷榜&quot;叙事形成对比——社区更关注<strong>成果的可解释性与人类角色</strong>。产业新闻方面，OpenAI IPO 的多源报道遭遇 <strong>&quot;叙事疲劳&quot;</strong>：尽管 4 条相关帖子合计超 100 分，但评论普遍质疑时机与动机，甚至出现 <a href="https://www.youtube.com/watch?v=CkDKmSMvfmk">讽刺视频</a>（#9）调侃其数据中心争议。值得注意的是，<strong>Anthropic 正成为&quot;反 OpenAI&quot;的情绪锚点</strong>，从 Karpathy 加盟到 Colossus2 扩容，社区对其技术路线的信任度明显高于商业化叙事。整体关注方向从&quot;模型能力展示&quot;转向 <strong>&quot;AI 的社会成本与治理结构&quot;</strong>，Cloudflare CEO 的裁员言论和中国就业政策均触及这一脉络。</p>
-<hr>
-<h2>四、值得深读</h2>
-<table>
-<thead>
-<tr>
-<th align="center">优先级</th>
-<th>内容</th>
-<th>推荐理由</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">⭐⭐⭐</td>
-<td><strong><a href="https://zfhuang99.github.io/rust/claude%20code/codex/contracts/spec-driven%20development/2025/12/01/rust-with-ai.html">Learnings from 100K lines of Rust with AI</a></strong></td>
-<td><strong>工程实践稀缺样本</strong>：10 万行代码量级的 AI 辅助 Rust 开发复盘，&quot;规约驱动开发&quot;方法论对正在探索 AI 编码工作流的团队有直接参考价值。131 条评论中的质量讨论（如类型系统与 LLM 的协同、测试策略）构成社区智慧补充</td>
-</tr>
-<tr>
-<td align="center">⭐⭐⭐</td>
-<td><strong><a href="https://openai.com/index/model-disproves-discrete-geometry-conjecture/">An OpenAI model has disproved a central conjecture in discrete geometry</a></strong></td>
-<td><strong>范式争议的风暴眼</strong>：无论最终评价如何，这是 AI 数学研究的标志性事件。464 条评论中混杂着领域专家的技术质疑、哲学层面的&quot;理解&quot;辩论，以及 OpenAI 公关策略的分析，是观察 HN 社区如何&quot;集体审阅&quot;突破性声明的绝佳文本</td>
-</tr>
-<tr>
-<td align="center">⭐⭐</td>
-<td><strong><a href="https://www.wsj.com/opinion/how-i-choose-which-cloudflare-employees-to-replace-with-ai-40a197e5">Cloudflare CEO on how he chooses which employees to replace with AI</a></strong></td>
-<td><strong>管理伦理的反面教材</strong>：虽非技术内容，但其引发的 18 条评论精准捕捉了技术社区对&quot;AI 替代叙事&quot;的抵触边界——关键不在于效率计算，而在于<strong>决策透明性与组织信任</strong>的崩塌风险，对 AI 产品管理者有警示意义</td>
-</tr>
-</tbody></table>
-<hr>
-<p><em>日报基于 2026-05-21 Hacker News 抓取数据生成 | 共 30 条 AI 相关帖子</em></p>
-<hr>
-<p><em>本日报由 <a href="https://github.com/duanyytop/agents-radar">agents-radar</a> 自动生成。</em></p>
 ]]></content:encoded>
     </item>
   </channel>
