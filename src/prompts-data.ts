@@ -14,6 +14,48 @@ import type { HfData } from "./hf.ts";
 import type { DevtoData } from "./devto.ts";
 import type { LobstersData } from "./lobsters.ts";
 import type { Lang } from "./i18n.ts";
+
+export function buildRadarCoverageContext(
+  webResults: WebFetchResult[],
+  phData: PhData,
+  arxivData: ArxivData,
+): string {
+  const totalWebNew = webResults.reduce((sum, result) => sum + result.newItems.length, 0);
+  const lines = [
+    totalWebNew > 0 ? `- 官网源：今日新增 ${totalWebNew} 条官网内容。` : "- 官网源：今日没有新增官网内容。",
+  ];
+
+  switch (phData.fetchStatus) {
+    case "ok":
+      lines.push(`- Product Hunt：已抓取到 ${phData.products.length} 个 AI 产品。`);
+      break;
+    case "empty":
+      lines.push("- Product Hunt：抓取请求成功，但这次没有筛出 AI 产品；这不是抓取失败。");
+      break;
+    case "disabled":
+    case "missing-token":
+      lines.push("- Product Hunt：该源今天未启用，所以没有 Product Hunt 数据；这不是抓取失败。");
+      break;
+    default:
+      lines.push("- Product Hunt：今天抓取失败。");
+      break;
+  }
+
+  switch (arxivData.fetchStatus) {
+    case "ok":
+      lines.push(`- ArXiv：已抓取到 ${arxivData.papers.length} 篇论文。`);
+      break;
+    case "empty":
+      lines.push("- ArXiv：抓取请求成功，但按最近 48 小时窗口过滤后没有命中样本；这不是抓取失败。");
+      break;
+    default:
+      lines.push("- ArXiv：今天抓取失败。");
+      break;
+  }
+
+  return lines.join("\n");
+}
+
 export function buildTrendingPrompt(data: TrendingData, dateStr: string, lang: Lang = "zh"): string {
   const trendingSection =
     data.trendingFetchSuccess && data.trendingRepos.length > 0
@@ -421,16 +463,21 @@ export interface ReportHighlights {
   [reportId: string]: string[];
 }
 
-export function buildShaokandianRadarPrompt(reportContents: Record<string, string>, dateStr: string): string {
+export function buildShaokandianRadarPrompt(
+  reportContents: Record<string, string>,
+  dateStr: string,
+  coverageContext = "",
+): string {
   const sections = Object.entries(reportContents)
     .map(([id, content]) => `## [${id}]\n\n${content.slice(0, 4500)}`)
     .join("\n\n---\n\n");
+  const coverageSection = coverageContext ? `## 数据覆盖状态\n${coverageContext}\n\n---\n\n` : "";
 
   return `你是“少看点 AI 雷达”的中文主编。你的任务不是摘要所有信息，而是替一个中文读者过滤今日 AI 领域真正值得看的知识、趋势和最新进展。
 
 以下是 ${dateStr} 的多来源 AI 报告，包含 GitHub 趋势、Hacker News、Product Hunt、ArXiv、Hugging Face、技术社区和官方动态等。内容可能来自英文来源；请输出中文判断，同时保留项目名、论文名、公司名和必要的原文链接。
 
-${sections}
+${coverageSection}${sections}
 
 ---
 
@@ -471,7 +518,85 @@ ${sections}
 - 不要长摘要，不要信息流列表。
 - 每条都要有明确判断，避免“值得关注”这种空话。
 - 如果证据不足，明确说“等复盘”或“暂缓”。
-- 不要把融资、营销话术和重复包装的新工具放进“今天必看”。`;
+- 不要把融资、营销话术和重复包装的新工具放进“今天必看”。
+- 如果要写“覆盖提醒”，必须严格以“数据覆盖状态”为准。
+- 只有“数据覆盖状态”明确写了“抓取失败”，才能使用“抓取失败”这个词。
+- 对“未配置”“没有新增”“空结果/无命中样本”要原样表达，不要改写成“抓取失败”。`;
+}
+
+export function buildOpportunityRadarPrompt(
+  reportContents: Record<string, string>,
+  dateStr: string,
+  coverageContext = "",
+): string {
+  const sections = Object.entries(reportContents)
+    .map(([id, content]) => `## [${id}]\n\n${content.slice(0, 4500)}`)
+    .join("\n\n---\n\n");
+  const coverageSection = coverageContext ? `## 数据覆盖状态\n${coverageContext}\n\n---\n\n` : "";
+
+  return `你是“少看点”的机会研究编辑。你的任务不是总结新闻，也不是给空泛赛道地图，而是基于今天已经出现的 AI 信号，替读者判断：现在具体能做什么，谁会愿意用，为什么现在值得做。
+
+以下是 ${dateStr} 的多来源 AI 报告，包含 GitHub 趋势、Hacker News、Product Hunt、ArXiv、Hugging Face、技术社区、官方动态，以及已经做过一次筛选的“少看点 AI 雷达”。内容可能来自英文来源；请输出中文判断，同时保留项目名、论文名、公司名和必要的原文链接。
+
+${coverageSection}${sections}
+
+---
+
+请生成一份中文“AI 机会雷达”。输出 Markdown，不要代码块，不要解释你的工作过程。
+
+这份报告默认面向独立开发者或 1~3 人的小团队。机会判断必须满足：
+- 不是“做通用 AI 助手”这种空方向，而是明确到某个场景、角色或工作流。
+- 优先选择 2~6 周内能做出第一版、并且可以被真实用户试用的方向。
+- 要回答“为什么现在可以做”，不能只说“未来很大”。
+- 要明确谁会愿意用，最好说明为什么他们可能愿意付费或持续使用。
+- 如果证据不足，就降级到“次优但可观察”，不要硬写成值得做。
+
+固定结构如下：
+
+# AI 机会雷达 ${dateStr}
+
+> 用一句话概括今天最值得下注的机会面。不要超过 60 个中文字符。
+
+## 先看结论
+用 3~5 句话说明今天最值得做的机会主要集中在哪些问题，不要空话。
+
+## 值得做的 3 个方向
+最多 3 条。每条都用这个格式：
+### 方向名
+- 给谁做：明确到角色、团队或人群。
+- 痛点：他们现在具体卡在哪。
+- 为什么是现在：今天的趋势或热点说明了什么窗口。
+- 最小可行解：2~6 周内能做出的第一版。
+- 付费可能：谁会为什么买单，或为什么会持续使用。
+- 证据：列出来源报告 ID 或原始链接。
+- 下一步：今天就能开始的验证动作。
+
+## 次优但可观察
+最多 3 条。放“有潜力，但证据还不够”的方向。每条用这个格式：
+### 方向名
+- 现在看到了什么信号
+- 为什么先不重注
+- 后续要继续观察什么
+
+## 今天先别做
+最多 4 条。明确指出哪些热点看起来热，但短期不适合立刻做，并说明原因。
+
+## 开工顺序
+给出 3 条按顺序执行的建议，回答：
+1. 先验证哪件事
+2. 先找谁聊或先让谁试用
+3. 什么信号出现就继续，什么信号出现就停
+
+## 原始入口
+列出今日最值得回看的 3~6 个源报告，格式为：
+- [报告名](#) — 为什么值得回看
+
+风格要求：
+- 中文输出，英文信息要中文化，不要机器直译。
+- 不要写成宏观行业报告，要像替人筛创业/产品机会。
+- 每个“值得做”的方向都必须具体到用户、问题、第一版和验证动作。
+- 不要推荐纯资讯站、纯模型榜单、纯聊天壳产品，除非报告里出现了非常强的差异化证据。
+- 如果某个方向的成立前提依赖“数据覆盖状态”里缺失的源，要明确指出这个不确定性。`;
 }
 
 export function buildHighlightsPrompt(

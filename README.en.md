@@ -2,13 +2,14 @@
 
 English | [中文](./README.md)
 
-`seeless-learnmore` is an AI radar focused on Chinese daily synthesis. It collects AI ecosystem signals every day, writes source reports, and then produces one Chinese editor-style page that filters for what is actually worth reading.
+`seeless-learnmore` is an AI radar focused on Chinese daily synthesis. It collects AI ecosystem signals every day, writes source reports, and then produces two Chinese editor-style pages: one for what is actually worth reading, and one for what could be built next.
 
-The default output is not a generic dashboard feed. The main page is `ai-radar.md`, which is a second-pass selection over the day's GitHub, research, community, and official-source reports.
+The default output is not a generic dashboard feed. The main pages are `ai-radar.md` and `ai-opportunity.md`, both derived from the day's GitHub, research, community, and official-source reports.
 
 The recommended operating mode is:
 
 - GitHub Actions collect the raw daily snapshot first
+- GitHub Actions also publish a readable fallback daily update
 - a local Codex automation reads `raw-data.json` and uses Codex's local capability to write the page directly
 - GitHub Pages serves the static site
 
@@ -16,6 +17,7 @@ The recommended operating mode is:
 
 - fetches AI signals from GitHub, Hacker News, ArXiv, Hugging Face, Product Hunt, Dev.to, Lobste.rs, and official company sites
 - generates a Chinese `ai-radar` page for high-signal daily reading
+- generates a Chinese `ai-opportunity` page for "what to build" judgment
 - publishes everything through GitHub Pages
 - optionally sends Telegram and Feishu notifications
 
@@ -40,6 +42,7 @@ The recommended operating mode is:
 Files are written to `digests/YYYY-MM-DD/`.
 
 - `ai-radar.md`: the main Chinese daily radar
+- `ai-opportunity.md`: the Chinese opportunity page
 - `ai-cli.md`: AI CLI ecosystem digest
 - `ai-agents.md`: agent / OpenClaw ecosystem digest
 - `ai-trending.md`: GitHub open-source trend report
@@ -59,16 +62,14 @@ GitHub Pages renders these files as a static site. `manifest.json` drives naviga
    `Folder = / (root)`
 5. In `Settings -> Secrets and variables -> Actions`, add only the collection-side values you actually want on GitHub.
 
-In most cases that is just:
-
-```bash
-PRODUCTHUNT_TOKEN=xxxxx
-```
-
 `GITHUB_TOKEN` is provided automatically by GitHub Actions.
 
+If you use the recommended local Codex publishing mode, you can leave this with no extra secrets at all.
+
+`PRODUCTHUNT_TOKEN` is fully optional; when absent, the Product Hunt source is treated as disabled rather than as an error.
+
 6. Add a daily local Codex automation that runs after the GitHub daily collector.
-7. Have that automation call the local skill `seeless-local-radar-publish`, follow [docs/codex-local-publish.md](./docs/codex-local-publish.md), and push the generated `ai-radar.md` back to `main`.
+7. Have that automation call the local skill `seeless-local-radar-publish`, follow [docs/codex-local-publish.md](./docs/codex-local-publish.md), and upgrade the same-day `ai-radar.md` / `ai-opportunity.md` pages on `main`.
 
 Your site URL will be:
 
@@ -81,8 +82,9 @@ If you use the recommended mode, you do not need a local `.env` with model keys.
 The recommended flow is:
 
 - GitHub Actions creates `digests/YYYY-MM-DD/raw-data.json`
+- GitHub Actions also creates same-day fallback `ai-radar.md` / `ai-opportunity.md`
 - local Codex automation reads that file
-- Codex writes `digests/YYYY-MM-DD/ai-radar.md` directly
+- Codex upgrades `digests/YYYY-MM-DD/ai-radar.md` / `ai-opportunity.md`
 - then updates `manifest.json` and `feed.xml`
 - then commits and pushes back to the repo
 
@@ -170,7 +172,7 @@ PUBLISH_REQUIRE_SNAPSHOT=1 pnpm publish:local
 
 ## GitHub Actions split
 
-`Daily Seeless Learnmore` is scheduled again, but it only collects and commits the raw daily snapshot.
+`Daily Seeless Learnmore` now collects the raw daily snapshot and publishes fallback daily pages so the site never goes blank.
 
 `Weekly Seeless Learnmore` and `Monthly Seeless Learnmore` remain manual fallback workflows.
 

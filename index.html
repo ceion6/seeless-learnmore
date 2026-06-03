@@ -533,6 +533,48 @@
       letter-spacing: 0.10em;
       text-transform: uppercase;
     }
+    .report-switcher {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .report-switch-label {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      color: var(--dim);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    .report-switch-chips {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .report-switch-chip {
+      min-height: 34px;
+      padding: 0 14px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      color: var(--muted);
+      background: rgba(255, 255, 255, 0.03);
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.06em;
+      transition: border-color 0.15s, color 0.15s, background 0.15s;
+    }
+    .report-switch-chip:hover {
+      color: var(--text);
+      border-color: var(--border-strong);
+    }
+    .report-switch-chip.active {
+      color: var(--accent);
+      border-color: var(--border-strong);
+      background: rgba(95, 227, 255, 0.12);
+    }
     .report-tags {
       display: flex;
       flex-wrap: wrap;
@@ -826,6 +868,7 @@ function renderMarkdown(raw) {
 
 const LABELS = {
   'ai-radar':        '少看点 AI 雷达',
+  'ai-opportunity':  'AI 机会雷达',
   'ai-cli':          'AI CLI 工具',
   'ai-cli-en':       'AI CLI Tools',
   'ai-agents':       'AI Agents 生态',
@@ -845,7 +888,8 @@ const LABELS = {
   'ai-community':    '技术社区 AI',
   'ai-community-en': 'Tech Community AI',
 };
-const PRIMARY_REPORT = 'ai-radar';
+const FOCUS_REPORTS = ['ai-radar', 'ai-opportunity'];
+const PRIMARY_REPORT = FOCUS_REPORTS[0];
 const WEEKDAYS = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
 const headerStatusValue = document.getElementById('headerStatusValue');
 const statsEl = document.getElementById('stats');
@@ -881,6 +925,7 @@ let searchIndex = null;
 let searchReady = false;
 let searchQuery = '';
 let searchDebounce = null;
+let manifestDatesByDate = new Map();
 
 const searchInput = document.getElementById('searchInput');
 const searchStatus = document.getElementById('searchStatus');
@@ -913,7 +958,31 @@ function getReportLocale(report) {
 }
 
 function getReportMode(report) {
-  return report === PRIMARY_REPORT ? 'Focus' : 'Source';
+  return FOCUS_REPORTS.includes(report) ? 'Focus' : 'Source';
+}
+
+function getFocusReports(reports) {
+  return FOCUS_REPORTS.filter((report) => reports.includes(report));
+}
+
+function buildReportSwitcher(date, reports, currentReport) {
+  const focusReports = getFocusReports(reports);
+  if (focusReports.length < 2) return '';
+
+  const chips = focusReports
+    .map((reportId) => {
+      const label = escapeHtml(LABELS[reportId] || reportId);
+      const active = reportId === currentReport ? ' active' : '';
+      return `<a class="report-switch-chip${active}" href="#${date}/${reportId}">${label}</a>`;
+    })
+    .join('');
+
+  return `
+    <div class="report-switcher">
+      <span class="report-switch-label">同日视角</span>
+      <div class="report-switch-chips">${chips}</div>
+    </div>
+  `;
 }
 
 function updateHeaderStatus(date, report) {
@@ -1029,11 +1098,13 @@ async function loadReport(date, report, push = true) {
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const raw = await res.text();
     const safe = renderMarkdown(raw);
+    const reports = manifestDatesByDate.get(date)?.reports || [report];
     const label = escapeHtml(LABELS[report] || report);
     const longDate = escapeHtml(formatLongDate(date));
     const weekday = escapeHtml(getWeekday(date));
     const locale = escapeHtml(getReportLocale(report));
     const mode = escapeHtml(getReportMode(report));
+    const reportSwitcher = buildReportSwitcher(date, reports, report);
     updateHeaderStatus(date, report);
     setContent(`
       <section class="report-shell fade">
@@ -1044,6 +1115,7 @@ async function loadReport(date, report, push = true) {
               <span class="report-name">${label}</span>
               <span class="report-date">${longDate} · ${weekday}</span>
             </div>
+            ${reportSwitcher}
           </div>
           <div class="report-tags">
             <span class="report-tag live">Live</span>
@@ -1200,6 +1272,7 @@ window.addEventListener('hashchange', () => {
     if (!res.ok) throw new Error('manifest.json not found');
     const { dates } = await res.json();
     if (!dates?.length) throw new Error('manifest is empty');
+    manifestDatesByDate = new Map(dates.map((entry) => [entry.date, entry]));
 
     buildStats(dates);
     const navDates = getPrimaryDates(dates);

@@ -24,6 +24,7 @@ export interface PhProduct {
 export interface PhData {
   products: PhProduct[];
   fetchSuccess: boolean;
+  fetchStatus: "ok" | "empty" | "disabled" | "missing-token" | "error";
 }
 
 // ---------------------------------------------------------------------------
@@ -107,8 +108,8 @@ interface PhResponse {
 export async function fetchPhData(): Promise<PhData> {
   const token = process.env["PRODUCTHUNT_TOKEN"] ?? "";
   if (!token) {
-    console.log("  [ph] PRODUCTHUNT_TOKEN not set — skipping.");
-    return { products: [], fetchSuccess: false };
+    console.log("  [ph] Product Hunt source disabled (PRODUCTHUNT_TOKEN not set) — skipping.");
+    return { products: [], fetchSuccess: false, fetchStatus: "disabled" };
   }
 
   // Fetch yesterday's products (they've had a full day to accumulate votes)
@@ -136,14 +137,14 @@ export async function fetchPhData(): Promise<PhData> {
 
     if (!resp.ok) {
       console.error(`  [ph] HTTP ${resp.status}`);
-      return { products: [], fetchSuccess: false };
+      return { products: [], fetchSuccess: false, fetchStatus: "error" };
     }
 
     const json = (await resp.json()) as PhResponse;
 
     if (json.errors?.length) {
       console.error(`  [ph] API errors: ${json.errors.map((e) => e.message).join("; ")}`);
-      return { products: [], fetchSuccess: false };
+      return { products: [], fetchSuccess: false, fetchStatus: "error" };
     }
 
     const allProducts: PhProduct[] = [];
@@ -172,9 +173,13 @@ export async function fetchPhData(): Promise<PhData> {
     const products = allProducts.sort((a, b) => b.votesCount - a.votesCount).slice(0, PH_TOP_PRODUCTS);
 
     console.log(`  [ph] ${products.length} AI products (from ${json.data?.posts?.edges?.length ?? 0} total)`);
-    return { products, fetchSuccess: products.length > 0 };
+    return {
+      products,
+      fetchSuccess: true,
+      fetchStatus: products.length > 0 ? "ok" : "empty",
+    };
   } catch (err) {
     console.error(`  [ph] fetch failed: ${err}`);
-    return { products: [], fetchSuccess: false };
+    return { products: [], fetchSuccess: false, fetchStatus: "error" };
   }
 }

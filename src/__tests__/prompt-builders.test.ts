@@ -7,12 +7,14 @@ import {
   buildSkillsPrompt,
 } from "../prompts.ts";
 import {
+  buildRadarCoverageContext,
   buildTrendingPrompt,
   buildWebReportPrompt,
   buildWeeklyPrompt,
   buildMonthlyPrompt,
   buildHnPrompt,
   buildShaokandianRadarPrompt,
+  buildOpportunityRadarPrompt,
 } from "../prompts-data.ts";
 import type { RepoConfig, GitHubItem, GitHubRelease } from "../github.ts";
 import type { RepoDigest } from "../prompts.ts";
@@ -276,6 +278,61 @@ describe("buildShaokandianRadarPrompt", () => {
     expect(result).toContain("今天必看");
     expect(result).toContain("可以暂缓");
     expect(result).toContain("[ai-trending]");
+  });
+
+  it("includes explicit source coverage guidance", () => {
+    const coverage = buildRadarCoverageContext(
+      [{ site: "openai", siteName: "OpenAI", isFirstRun: false, newItems: [], totalDiscovered: 10 }],
+      { products: [], fetchSuccess: false, fetchStatus: "disabled" },
+      { papers: [], fetchSuccess: true, fetchStatus: "empty" },
+    );
+    const result = buildShaokandianRadarPrompt(
+      {
+        "ai-trending": "# AI 开源趋势日报\n\nGitHub 今日有新项目升温。",
+      },
+      "2026-05-25",
+      coverage,
+    );
+
+    expect(coverage).toContain("该源今天未启用");
+    expect(coverage).toContain("最近 48 小时窗口");
+    expect(result).toContain("数据覆盖状态");
+    expect(result).toContain("不要改写成“抓取失败”");
+  });
+});
+
+// ---------------------------------------------------------------------------
+// buildOpportunityRadarPrompt
+// ---------------------------------------------------------------------------
+
+describe("buildOpportunityRadarPrompt", () => {
+  it("builds a Chinese opportunity-oriented prompt", () => {
+    const result = buildOpportunityRadarPrompt(
+      {
+        "ai-radar": "# 少看点 AI 雷达\n\n今天最重要的是 agent 运行时与插件层。",
+        "ai-trending": "# AI 开源趋势日报\n\nGitHub 今日有新项目升温。",
+      },
+      "2026-05-25",
+    );
+
+    expect(result).toContain("AI 机会雷达");
+    expect(result).toContain("值得做的 3 个方向");
+    expect(result).toContain("给谁做");
+    expect(result).toContain("付费可能");
+    expect(result).toContain("[ai-radar]");
+  });
+
+  it("keeps feasibility and anti-hype guardrails", () => {
+    const result = buildOpportunityRadarPrompt(
+      {
+        "ai-radar": "# 少看点 AI 雷达\n\n今天最重要的是 agent 运行时与插件层。",
+      },
+      "2026-05-25",
+    );
+
+    expect(result).toContain("2~6 周内能做出的第一版");
+    expect(result).toContain("不要推荐纯资讯站");
+    expect(result).toContain("不是“做通用 AI 助手”这种空方向");
   });
 });
 

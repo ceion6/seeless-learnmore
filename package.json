@@ -5,6 +5,7 @@
   "packageManager": "pnpm@9.15.9",
   "scripts": {
     "collect:daily": "tsx src/collect-daily.ts",
+    "render:daily": "tsx src/render-daily.ts",
     "start": "tsx src/index.ts",
     "publish:local": "bash scripts/publish-local.sh",
     "typecheck": "tsc --noEmit",

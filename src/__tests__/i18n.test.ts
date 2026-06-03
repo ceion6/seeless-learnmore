@@ -141,6 +141,7 @@ describe("NOTIFY_LABELS", () => {
   it("covers all report types", () => {
     const expected = [
       "ai-radar",
+      "ai-opportunity",
       "ai-cli",
       "ai-agents",
       "ai-web",

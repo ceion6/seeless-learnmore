@@ -2,13 +2,14 @@
 
 中文 | [English](./README.en.md)
 
-`seeless-learnmore` 是一个中文 AI 雷达。它每天抓取 AI 生态里的多路信号，先生成源报告，再做一轮中文二次筛选，最后产出一页真正适合日常阅读的“少看点 AI 雷达”。
+`seeless-learnmore` 是一个中文 AI 雷达。它每天抓取 AI 生态里的多路信号，先生成源报告，再做一轮中文二次筛选，最后产出“少看点 AI 雷达”和“AI 机会雷达”两页中文判断。
 
-默认目标不是做一个信息流面板，而是做一个更像编辑部的每日判断页。主产物是 `ai-radar.md`，它会从当天的 GitHub、研究、社区和官方动态里筛出真正值得看的内容。
+默认目标不是做一个信息流面板，而是做一个更像编辑部的每日判断页。主产物是 `ai-radar.md` 和 `ai-opportunity.md`：前者回答“今天什么值得看”，后者回答“现在能做什么”。
 
 默认推荐的运行方式是：
 
 - GitHub Actions 先收集当天原始快照
+- GitHub Actions 直接产出站点可读的保底日报
 - 本地 Codex 自动化直接读取 `raw-data.json`，用 Codex 本地能力整理并生成页面
 - GitHub Pages 负责展示静态站点
 
@@ -16,6 +17,7 @@
 
 - 抓取 GitHub、Hacker News、ArXiv、Hugging Face、Product Hunt、Dev.to、Lobste.rs 和 AI 公司官网动态
 - 生成中文主页面 `ai-radar.md`
+- 生成中文机会页 `ai-opportunity.md`
 - 通过 GitHub Pages 发布静态站点
 - 可选发送 Telegram / 飞书通知
 
@@ -41,6 +43,7 @@
 所有文件都写到 `digests/YYYY-MM-DD/`。
 
 - `ai-radar.md`：中文主日报，适合直接看
+- `ai-opportunity.md`：中文机会页，适合继续判断“做什么”
 - `ai-cli.md`：AI CLI 工具生态
 - `ai-agents.md`：agent / OpenClaw 生态
 - `ai-trending.md`：GitHub 开源趋势
@@ -60,16 +63,14 @@ GitHub Pages 负责把这些 Markdown 渲染成站点。`manifest.json` 用来�
    `Folder = / (root)`
 5. 在仓库的 `Settings -> Secrets and variables -> Actions` 里只配置你愿意放在 GitHub 上的抓取类值。
 
-最少通常只需要：
-
-```bash
-PRODUCTHUNT_TOKEN=xxxxx
-```
-
 `GITHUB_TOKEN` 由 GitHub Actions 自动提供，不用你手动加。
 
+如果你走推荐的本地 Codex 整理模式，这一步可以一个额外 secret 都不配。
+
+`PRODUCTHUNT_TOKEN` 完全可选；不配时，Product Hunt 源会被视为未启用，而不是报错。
+
 6. 给你的电脑加一个每日 Codex 自动化任务，时间晚于 GitHub daily workflow。
-7. 让本地 Codex 自动化调用本机 skill `seeless-local-radar-publish`，按 [docs/codex-local-publish.md](./docs/codex-local-publish.md) 直接生成 `ai-radar.md` 并推回 `main`。
+7. 让本地 Codex 自动化调用本机 skill `seeless-local-radar-publish`，按 [docs/codex-local-publish.md](./docs/codex-local-publish.md) 直接升级同一天的 `ai-radar.md` / `ai-opportunity.md` 并推回 `main`。
 
 站点地址会是：
 
@@ -82,8 +83,9 @@ PRODUCTHUNT_TOKEN=xxxxx
 推荐链路是：
 
 - GitHub Actions 生成 `digests/YYYY-MM-DD/raw-data.json`
+- GitHub Actions 直接生成同日保底版 `ai-radar.md` / `ai-opportunity.md`
 - 本地 Codex 自动化读取这个文件
-- Codex 直接写 `digests/YYYY-MM-DD/ai-radar.md`
+- Codex 直接升级 `digests/YYYY-MM-DD/ai-radar.md` / `ai-opportunity.md`
 - 再更新 `manifest.json` / `feed.xml`
 - 然后自动提交并推回仓库
 
@@ -173,13 +175,13 @@ PUBLISH_REQUIRE_SNAPSHOT=1 pnpm publish:local
 
 ## GitHub Actions 分工
 
-仓库里的 `Daily Seeless Learnmore` 现在恢复为定时任务，但它只做一件事：收集当天原始快照并提交 `raw-data.json`。
+仓库里的 `Daily Seeless Learnmore` 现在会做两件事：收集当天原始快照，并直接生成站点可读的保底日报。
 
 `Weekly Seeless Learnmore` 和 `Monthly Seeless Learnmore` 保持手动触发备用。
 
 ## 说明
 
 - 第一次运行会慢一些，因为官网 sitemap 抓取会为每个站点最多拉 25 篇近期页面。
-- 没配 `PRODUCTHUNT_TOKEN` 时，Product Hunt 部分会自动跳过。
+- 没配 `PRODUCTHUNT_TOKEN` 时，Product Hunt 源会自动跳过，并按“未启用”处理。
 - 没配 Telegram / 飞书密钥时，通知步骤会自动跳过。
 - 这个项目基于 [duanyytop/agents-radar](https://github.com/duanyytop/agents-radar) 改造。
