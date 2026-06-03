@@ -46,6 +46,13 @@ interface Manifest {
   dates: DateEntry[];
 }
 
+interface GenerateManifestOptions {
+  digestsDir?: string;
+  manifestPath?: string;
+  feedPath?: string;
+  siteUrl?: string;
+}
+
 interface ReportContent {
   summary: string;
   fullHtml: string;
@@ -66,8 +73,8 @@ export function escapeXml(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 }
 
-async function getReportContent(date: string, report: string): Promise<ReportContent> {
-  const filePath = path.join(DIGESTS_DIR, date, `${report}.md`);
+async function getReportContent(digestsDir: string, date: string, report: string): Promise<ReportContent> {
+  const filePath = path.join(digestsDir, date, `${report}.md`);
 
   try {
     const markdown = fs.readFileSync(filePath, "utf-8");
@@ -98,14 +105,19 @@ async function getReportContent(date: string, report: string): Promise<ReportCon
   }
 }
 
-async function main(): Promise<void> {
+export async function generateManifestFiles(options: GenerateManifestOptions = {}): Promise<Manifest> {
+  const digestsDir = options.digestsDir ?? DIGESTS_DIR;
+  const manifestPath = options.manifestPath ?? MANIFEST_PATH;
+  const feedPath = options.feedPath ?? FEED_PATH;
+  const siteUrl = (options.siteUrl ?? SITE_URL).replace(/\/$/, "");
+
   const entries = fs
-    .readdirSync(DIGESTS_DIR)
-    .filter((name) => DATE_RE.test(name) && fs.statSync(path.join(DIGESTS_DIR, name)).isDirectory())
+    .readdirSync(digestsDir)
+    .filter((name) => DATE_RE.test(name) && fs.statSync(path.join(digestsDir, name)).isDirectory())
     .sort()
     .reverse()
     .map((date) => {
-      const reports = REPORT_FILES.filter((r) => fs.existsSync(path.join(DIGESTS_DIR, date, `${r}.md`)));
+      const reports = REPORT_FILES.filter((r) => fs.existsSync(path.join(digestsDir, date, `${r}.md`)));
       return { date, reports };
     })
     .filter((e) => e.reports.length > 0);
@@ -115,7 +127,7 @@ async function main(): Promise<void> {
     dates: entries,
   };
 
-  fs.writeFileSync(MANIFEST_PATH, JSON.stringify(manifest, null, 2) + "\n");
+  fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2) + "\n");
   console.log(`manifest.json updated: ${entries.length} dates`);
 
   // ── RSS Feed ──────────────────────────────────────────────────────────────────
@@ -134,10 +146,10 @@ async function main(): Promise<void> {
   for (const { date, report } of feedItems) {
     const label = REPORT_LABELS[report] ?? report;
     const title = `${label} ${date}`;
-    const link = `${SITE_URL}/#${date}/${report}`;
+    const link = `${siteUrl}/#${date}/${report}`;
     const parts = date.split("-").map(Number);
     const pubDate = toRfc822(new Date(Date.UTC(parts[0]!, parts[1]! - 1, parts[2]!)));
-    const content = await getReportContent(date, report);
+    const content = await getReportContent(digestsDir, date, report);
     itemXmlChunks.push(
       [
         "    <item>",
@@ -158,17 +170,22 @@ async function main(): Promise<void> {
     `<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">\n` +
     `  <channel>\n` +
     `    <title>少看点 AI 雷达</title>\n` +
-    `    <link>${SITE_URL}</link>\n` +
+    `    <link>${siteUrl}</link>\n` +
     `    <description>中文 AI 趋势筛选面板 · High-signal AI radar in Chinese</description>\n` +
     `    <language>zh-CN</language>\n` +
-    `    <atom:link href="${SITE_URL}/feed.xml" rel="self" type="application/rss+xml"/>\n` +
+    `    <atom:link href="${siteUrl}/feed.xml" rel="self" type="application/rss+xml"/>\n` +
     `    <lastBuildDate>${buildDate}</lastBuildDate>\n` +
     itemsXml +
     `\n  </channel>\n` +
     `</rss>\n`;
 
-  fs.writeFileSync(FEED_PATH, feedXml);
+  fs.writeFileSync(feedPath, feedXml);
   console.log(`feed.xml updated: ${feedItems.length} items`);
+  return manifest;
+}
+
+async function main(): Promise<void> {
+  await generateManifestFiles();
 }
 
 // Run only when executed directly (not imported for testing)

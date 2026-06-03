@@ -218,11 +218,12 @@ describe("daily fallback reports", () => {
       const result = saveFallbackDailyReports(makeSnapshot());
       expect(result.radarPath).toBeNull();
       expect(result.opportunityPath).toBe(path.join("digests", "2026-06-03", "ai-opportunity.md"));
-      expect(fs.readFileSync(path.join("digests", "2026-06-03", "ai-radar.md"), "utf-8")).toBe("# hand written report\n");
+      expect(fs.readFileSync(path.join("digests", "2026-06-03", "ai-radar.md"), "utf-8")).toBe(
+        "# hand written report\n",
+      );
     } finally {
       process.chdir(prev);
       fs.rmSync(tmp, { recursive: true, force: true });
     }
   });
 });
-

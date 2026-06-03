@@ -363,7 +363,10 @@ async function main(): Promise<void> {
   console.log("  Generating 少看点 AI 雷达...");
   const coverageContext = buildRadarCoverageContext(webResults, phData, arxivData);
   try {
-    const radarSummary = await callLlm(buildShaokandianRadarPrompt(zhReports, dateStr, coverageContext), 4096);
+    const radarSummary = await callLlm(
+      buildShaokandianRadarPrompt(zhReports, dateStr, coverageContext),
+      4096,
+    );
     const radarContent =
       radarSummary.trim() +
       "\n\n---\n\n" +
@@ -399,7 +402,10 @@ async function main(): Promise<void> {
 
   console.log("  Generating AI 机会雷达...");
   try {
-    const opportunitySummary = await callLlm(buildOpportunityRadarPrompt(zhReports, dateStr, coverageContext), 4096);
+    const opportunitySummary = await callLlm(
+      buildOpportunityRadarPrompt(zhReports, dateStr, coverageContext),
+      4096,
+    );
     const opportunityContent =
       opportunitySummary.trim() +
       "\n\n---\n\n" +

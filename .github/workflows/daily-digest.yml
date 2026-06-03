@@ -82,3 +82,62 @@ jobs:
           FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
           PAGES_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
         run: pnpm notify:feishu
+
+      - name: Send Telegram failure notification
+        if: failure()
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          if [ -z "$TELEGRAM_BOT_TOKEN" ] || [ -z "$TELEGRAM_CHAT_ID" ]; then
+            echo "Telegram failure notification skipped"
+            exit 0
+          fi
+
+          payload=$(cat <<EOF
+          {
+            "chat_id": "$TELEGRAM_CHAT_ID",
+            "text": "⚠️ 少看点日报失败\n仓库: ${{ github.repository }}\n工作流: ${{ github.workflow }}\n运行链接: $RUN_URL",
+            "disable_web_page_preview": true
+          }
+          EOF
+          )
+
+          curl -fsSL -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            -H "Content-Type: application/json" \
+            -d "$payload"
+
+      - name: Send Feishu failure notification
+        if: failure()
+        env:
+          FEISHU_WEBHOOK_URLS: ${{ secrets.FEISHU_WEBHOOK_URLS }}
+          FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
+          RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          raw_urls="${FEISHU_WEBHOOK_URLS:-$FEISHU_WEBHOOK_URL}"
+          if [ -z "$raw_urls" ]; then
+            echo "Feishu failure notification skipped"
+            exit 0
+          fi
+
+          content="⚠️ 少看点日报失败\n仓库: ${{ github.repository }}\n工作流: ${{ github.workflow }}\n运行链接: $RUN_URL"
+          payload=$(cat <<EOF
+          {
+            "msg_type": "text",
+            "content": {
+              "text": "$content"
+            }
+          }
+          EOF
+          )
+
+          IFS=',' read -r -a urls <<< "$raw_urls"
+          for url in "${urls[@]}"; do
+            trimmed_url=$(echo "$url" | xargs)
+            if [ -n "$trimmed_url" ]; then
+              curl -fsSL -X POST "$trimmed_url" \
+                -H "Content-Type: application/json" \
+                -d "$payload"
+            fi
+          done

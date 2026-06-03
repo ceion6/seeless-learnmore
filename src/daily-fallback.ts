@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import type { CollectedSnapshot } from "./collect.ts";
-import type { RepoFetch, GitHubItem, GitHubRelease } from "./github.ts";
+import type { RepoFetch } from "./github.ts";
 import type { SearchRepo, StarSurgeRepo, TrendingRepo } from "./trending.ts";
 import type { HnStory } from "./hn.ts";
 import type { PhProduct } from "./ph.ts";
@@ -9,7 +9,7 @@ import type { ArxivPaper } from "./arxiv.ts";
 import type { HfModel } from "./hf.ts";
 import type { DevtoArticle } from "./devto.ts";
 import type { LobstersStory } from "./lobsters.ts";
-import type { WebFetchResult, WebPageItem } from "./web.ts";
+import type { WebPageItem } from "./web.ts";
 import { buildRadarCoverageContext } from "./prompts-data.ts";
 import { FOOTER } from "./i18n.ts";
 
@@ -33,12 +33,7 @@ interface ThemeMatch {
 }
 
 type ThemeTemplate = Omit<ThemeMatch, "scores" | "evidence"> & { patterns: RegExp[] };
-type ThemeKey =
-  | "code_context"
-  | "runtime_guardrails"
-  | "plugin_workflows"
-  | "team_memory"
-  | "browser_ops";
+type ThemeKey = "code_context" | "runtime_guardrails" | "plugin_workflows" | "team_memory" | "browser_ops";
 
 interface EvidenceLink {
   label: string;
@@ -207,27 +202,6 @@ function topRepoActivity(snapshot: CollectedSnapshot): RepoFetch[] {
     .map((entry) => entry.repo);
 }
 
-function topReleases(snapshot: CollectedSnapshot): Array<{ repo: RepoFetch; release: GitHubRelease }> {
-  return snapshot.fetched
-    .flatMap((repo) => repo.releases.map((release) => ({ repo, release })))
-    .sort((a, b) => Date.parse(b.release.published_at) - Date.parse(a.release.published_at))
-    .slice(0, 5);
-}
-
-function topIssues(snapshot: CollectedSnapshot): Array<{ repo: RepoFetch; item: GitHubItem; kind: "issue" | "pr" }> {
-  return snapshot.fetched
-    .flatMap((repo) => [
-      ...repo.issues.map((item) => ({ repo, item, kind: "issue" as const })),
-      ...repo.prs.map((item) => ({ repo, item, kind: "pr" as const })),
-    ])
-    .sort((a, b) => {
-      const aScore = a.item.comments + (a.item.reactions?.["+1"] ?? 0);
-      const bScore = b.item.comments + (b.item.reactions?.["+1"] ?? 0);
-      return bScore - aScore;
-    })
-    .slice(0, 8);
-}
-
 function topTrending(snapshot: CollectedSnapshot): Array<TrendingRepo | SearchRepo | StarSurgeRepo> {
   const merged: Array<TrendingRepo | SearchRepo | StarSurgeRepo> = [
     ...snapshot.trendingData.trendingRepos,
@@ -235,12 +209,14 @@ function topTrending(snapshot: CollectedSnapshot): Array<TrendingRepo | SearchRe
     ...snapshot.trendingData.starSurgeRepos,
   ];
   const seen = new Set<string>();
-  return merged.filter((item) => {
-    const fullName = item.fullName;
-    if (seen.has(fullName)) return false;
-    seen.add(fullName);
-    return true;
-  }).slice(0, 10);
+  return merged
+    .filter((item) => {
+      const fullName = item.fullName;
+      if (seen.has(fullName)) return false;
+      seen.add(fullName);
+      return true;
+    })
+    .slice(0, 10);
 }
 
 function topStories(snapshot: CollectedSnapshot): HnStory[] {
@@ -330,7 +306,10 @@ function toTextBlob(snapshot: CollectedSnapshot): Array<{ text: string; link: Ev
     entries.push({ text: story.title, link: { label: story.title, url: story.url } });
   }
   for (const page of topWebItems(snapshot)) {
-    entries.push({ text: `${page.title} ${page.category} ${page.content}`, link: { label: page.title, url: page.url } });
+    entries.push({
+      text: `${page.title} ${page.category} ${page.content}`,
+      link: { label: page.title, url: page.url },
+    });
   }
   for (const model of topModels(snapshot)) {
     entries.push({
@@ -386,9 +365,7 @@ function detectThemes(snapshot: CollectedSnapshot): ThemeMatch[] {
     }
   }
 
-  return themes
-    .sort((a, b) => b.scores - a.scores)
-    .map(({ patterns: _patterns, ...theme }) => theme);
+  return themes.sort((a, b) => b.scores - a.scores).map(({ patterns: _patterns, ...theme }) => theme);
 }
 
 function buildHeadline(snapshot: CollectedSnapshot, themes: ThemeMatch[]): string {
@@ -404,11 +381,7 @@ function buildHeadline(snapshot: CollectedSnapshot, themes: ThemeMatch[]): strin
 
 function buildCoverageNotice(snapshot: CollectedSnapshot): string {
   const coverage = buildRadarCoverageContext(snapshot.webResults, snapshot.phData, snapshot.arxivData);
-  return coverage
-    .replace(/^- /gm, "")
-    .split("\n")
-    .filter(Boolean)
-    .join("；");
+  return coverage.replace(/^- /gm, "").split("\n").filter(Boolean).join("；");
 }
 
 function bulletLine(label: string, content: string): string {
@@ -424,7 +397,10 @@ function buildRadarMustRead(snapshot: CollectedSnapshot, themes: ThemeMatch[]): 
       `### ${repo.cfg.name} 生态今天更新密度最高\n` +
         bulletLine("结论", `${repo.cfg.name} 在 24 小时内累计出现 ${count} 个 issue / PR / release 样本。`) +
         "\n" +
-        bulletLine("为什么重要", "仓库更新密度高，通常代表工具链正在快速试错，值得先看真实问题和新增能力。 ") +
+        bulletLine(
+          "为什么重要",
+          "仓库更新密度高，通常代表工具链正在快速试错，值得先看真实问题和新增能力。 ",
+        ) +
         "\n" +
         bulletLine("来源", `[${repo.cfg.name}](https://github.com/${repo.cfg.repo})`) +
         "\n" +
@@ -452,7 +428,10 @@ function buildRadarMustRead(snapshot: CollectedSnapshot, themes: ThemeMatch[]): 
       `### 官网源今天新增了 ${webItem.title}\n` +
         bulletLine("结论", `${webItem.site} 官网今天抓到新页面 ${webItem.title}。`) +
         "\n" +
-        bulletLine("为什么重要", "官网源的新增通常比社区转述更接近一手表述，适合用来确认公司到底在推什么。 ") +
+        bulletLine(
+          "为什么重要",
+          "官网源的新增通常比社区转述更接近一手表述，适合用来确认公司到底在推什么。 ",
+        ) +
         "\n" +
         bulletLine("来源", `[${webItem.title}](${webItem.url})`) +
         "\n" +
@@ -653,15 +632,15 @@ function buildRadarPause(snapshot: CollectedSnapshot, themes: ThemeMatch[]): str
 }
 
 function buildRadarSources(snapshot: CollectedSnapshot): string {
-  const lines = [
-    `- [今日原始快照 raw-data.json](./raw-data.json) — 看当天完整样本和源数据状态。`,
-  ];
+  const lines = [`- [今日原始快照 raw-data.json](./raw-data.json) — 看当天完整样本和源数据状态。`];
 
   for (const page of topWebItems(snapshot).slice(0, 2)) {
     lines.push(`- [${page.title}](${page.url}) — 今天官网源里最值得回看的新增页面。`);
   }
   for (const repo of topRepoActivity(snapshot).slice(0, 2)) {
-    lines.push(`- [${repo.cfg.name}](https://github.com/${repo.cfg.repo}) — 看今天 issue / PR / release 最密集的仓库。`);
+    lines.push(
+      `- [${repo.cfg.name}](https://github.com/${repo.cfg.repo}) — 看今天 issue / PR / release 最密集的仓库。`,
+    );
   }
   for (const story of topStories(snapshot).slice(0, 1)) {
     lines.push(`- [${story.title}](${story.url}) — 看国外开发者今天在争什么。`);
@@ -769,14 +748,14 @@ function buildSecondTierDirections(snapshot: CollectedSnapshot, chosen: ThemeMat
   if (snapshot.hfData.fetchSuccess && topModels(snapshot).length) {
     const model = topModels(snapshot)[0];
     if (model) {
-    lines.push(
-      `### 模型侧机会先保持观察\n` +
-        bulletLine("现在看到了什么信号", `${model.id} 进入模型热榜，说明模型面仍有活跃样本。`) +
-        "\n" +
-        bulletLine("为什么先不重注", "只看模型热度不够支撑产品方向，除非已经找到明确使用场景。 ") +
-        "\n" +
-        bulletLine("后续要继续观察什么", "用户到底是更在意部署成本、隐私，还是某个具体能力差异。 "),
-    );
+      lines.push(
+        `### 模型侧机会先保持观察\n` +
+          bulletLine("现在看到了什么信号", `${model.id} 进入模型热榜，说明模型面仍有活跃样本。`) +
+          "\n" +
+          bulletLine("为什么先不重注", "只看模型热度不够支撑产品方向，除非已经找到明确使用场景。 ") +
+          "\n" +
+          bulletLine("后续要继续观察什么", "用户到底是更在意部署成本、隐私，还是某个具体能力差异。 "),
+      );
     }
   }
 
@@ -797,9 +776,7 @@ function buildOpportunityPause(snapshot: CollectedSnapshot, chosen: ThemeMatch[]
 
   const top = chosen[0];
   if (top) {
-    lines.push(
-      `### 先别把 ${top.title} 做成大平台\n${bulletLine("原因", top.caution)}`,
-    );
+    lines.push(`### 先别把 ${top.title} 做成大平台\n${bulletLine("原因", top.caution)}`);
   }
 
   return lines.slice(0, 4).join("\n\n");
@@ -863,7 +840,12 @@ export function buildFallbackOpportunityReport(snapshot: CollectedSnapshot): str
   );
 }
 
-function writeFallbackFile(content: string, dateStr: string, filename: string, options: SaveFallbackOptions = {}): string | null {
+function writeFallbackFile(
+  content: string,
+  dateStr: string,
+  filename: string,
+  options: SaveFallbackOptions = {},
+): string | null {
   const filepath = path.join("digests", dateStr, filename);
   if (fs.existsSync(filepath) && !options.force) {
     const existing = fs.readFileSync(filepath, "utf-8");
@@ -876,7 +858,12 @@ export function saveFallbackDailyReports(
   snapshot: CollectedSnapshot,
   options: SaveFallbackOptions = {},
 ): { radarPath: string | null; opportunityPath: string | null } {
-  const radarPath = writeFallbackFile(buildFallbackRadarReport(snapshot), snapshot.dateStr, "ai-radar.md", options);
+  const radarPath = writeFallbackFile(
+    buildFallbackRadarReport(snapshot),
+    snapshot.dateStr,
+    "ai-radar.md",
+    options,
+  );
   const opportunityPath = writeFallbackFile(
     buildFallbackOpportunityReport(snapshot),
     snapshot.dateStr,
