@@ -6,7 +6,117 @@
     <description>中文 AI 趋势筛选面板 · High-signal AI radar in Chinese</description>
     <language>zh-CN</language>
     <atom:link href="http://127.0.0.1:4173/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Mon, 01 Jun 2026 08:55:24 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2026 04:38:39 +0000</lastBuildDate>
+    <item>
+      <title>少看点 AI 雷达 2026-06-03</title>
+      <link>http://127.0.0.1:4173/#2026-06-03/ai-radar</link>
+      <guid isPermaLink="true">http://127.0.0.1:4173/#2026-06-03/ai-radar</guid>
+      <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
+      <description>少看点 AI 雷达 2026-06-03 今天的主线是：agent 赛道开始更明确地分成三层竞争。上层是“给不同角色的工作流”，中层是“安全与约束”，底层是“上下文、token 和成本工程”。 覆盖提醒：Product Hunt 今天抓取失败；论文面有样本，但这页仍然优先写产品、基础设施和工程约束。 今天必看 Anthropic 把 Glasswing 从试点推向更大规模 结论：今天最值得看的官方信号，是 Anthropic 的 Expanding Project Glasswing。 为什么重要：这不是泛泛的安全口号，而是把 Claude Mythos Preview 继续往关键基础设施、供应链和大规模代码库安全扫描推进。说明“高能力 agent”正在从 demo 走向更强监管、更强筛选的高风险场景。 来源：Expanding Project Glasswing 建议：看原文 OpenAI 开始更明确地按“角色”卖 Codex 结论：OpenAI 今天新增的核心页是 Codex For Every Role Tool Workflow。 为什么重要：这说明它不满足于把 Codex 当...</description>
+      <content:encoded><![CDATA[<h1>少看点 AI 雷达 2026-06-03</h1>
+<blockquote>
+<p>今天的主线是：agent 赛道开始更明确地分成三层竞争。上层是“给不同角色的工作流”，中层是“安全与约束”，底层是“上下文、token 和成本工程”。</p>
+<p>覆盖提醒：Product Hunt 今天抓取失败；论文面有样本，但这页仍然优先写产品、基础设施和工程约束。</p>
+</blockquote>
+<h2>今天必看</h2>
+<h3>Anthropic 把 Glasswing 从试点推向更大规模</h3>
+<ul>
+<li>结论：今天最值得看的官方信号，是 Anthropic 的 <code>Expanding Project Glasswing</code>。</li>
+<li>为什么重要：这不是泛泛的安全口号，而是把 Claude Mythos Preview 继续往关键基础设施、供应链和大规模代码库安全扫描推进。说明“高能力 agent”正在从 demo 走向更强监管、更强筛选的高风险场景。</li>
+<li>来源：<a href="https://www.anthropic.com/news/expanding-project-glasswing">Expanding Project Glasswing</a></li>
+<li>建议：看原文</li>
+</ul>
+<h3>OpenAI 开始更明确地按“角色”卖 Codex</h3>
+<ul>
+<li>结论：OpenAI 今天新增的核心页是 <code>Codex For Every Role Tool Workflow</code>。</li>
+<li>为什么重要：这说明它不满足于把 Codex 当通用编程助手，而是在往“不同岗位、不同插件、不同站点流程”拆分。这会直接影响后面插件市场、工作流模板和组织内分发方式。</li>
+<li>来源：<a href="https://openai.com/index/codex-for-every-role-tool-workflow/">Codex For Every Role Tool Workflow</a></li>
+<li>建议：看原文</li>
+</ul>
+<h3>成本和配额重新回到 agent 生产问题中心</h3>
+<ul>
+<li>结论：今天最有现实感的社区信号，不是“模型更强了”，而是 <code>Your AI Agent Isn&#39;t Failing Because It Hallucinates — It&#39;s Failing Because of Rate Limits</code>、<code>Uber Caps Usage of AI Tools Like Claude Code to Cut Costs</code>、以及 <code>headroom</code> 这种压缩上下文的项目一起冒出来。</li>
+<li>为什么重要：这说明真实生产里最先把 agent 打回原形的，往往不是推理质量，而是 rate limit、token 账单和上下文膨胀。</li>
+<li>来源：<a href="https://dev.to/p0rt/your-ai-agent-isnt-failing-because-it-hallucinates-its-failing-because-of-rate-limits-2d60">Your AI Agent Isn&#39;t Failing Because It Hallucinates — It&#39;s Failing Because of Rate Limits</a>、<a href="https://www.bloomberg.com/news/articles/2026-06-02/uber-caps-usage-of-ai-tools-like-claude-code-to-cut-costs">Uber Caps Usage of AI Tools Like Claude Code to Cut Costs</a>、<a href="https://github.com/chopratejas/headroom">headroom</a></li>
+<li>建议：看原文</li>
+</ul>
+<h2>正在升温</h2>
+<h3>“上下文工程”已经单独变成一条产品线</h3>
+<ul>
+<li>结论：<code>headroom</code>、<code>ktx</code>、<code>supermemory</code>、<code>vibecode-pro-max-kit</code> 这几类项目继续同时上涨。</li>
+<li>为什么重要：这说明大家已经默认上下文是稀缺资源，真正的差异化不只是会不会调模型，而是能不能压缩、记忆、检索、结构化上下文。</li>
+<li>来源：<a href="https://github.com/chopratejas/headroom">headroom</a>、<a href="https://github.com/Kaelio/ktx">ktx</a>、<a href="https://github.com/supermemoryai/supermemory">supermemory</a>、<a href="https://github.com/withkynam/vibecode-pro-max-kit">vibecode-pro-max-kit</a></li>
+</ul>
+<h3>“角色化 agent” 和 “垂直 operator” 在继续升温</h3>
+<ul>
+<li>结论：除了 OpenAI 自己的角色化叙事，今天 HN 上也出现了 <code>AI for concrete contractors</code>、<code>Form an LLC or C-Corp from Claude/Cursor via MCP</code> 这类垂直 operator 方向。</li>
+<li>为什么重要：agent 的下一轮落地，更像按行业和角色切工作流，而不是再做一个所有人都能聊的总入口。</li>
+<li>来源：<a href="https://news.ycombinator.com/item?id=48374528">Launch HN: Rudus (YC P26) – AI for concrete contractors</a>、<a href="https://www.lovie.co/formation/ai-operator">Show HN: Form an LLC or C-Corp from Claude/Cursor via MCP</a>、<a href="https://openai.com/index/codex-for-every-role-tool-workflow/">Codex For Every Role Tool Workflow</a></li>
+</ul>
+<h3>安全边界和“不要让模型失控”还在继续升温</h3>
+<ul>
+<li>结论：今天一边是 Glasswing 扩张，另一边是 <code>GPT and Claude both subvert shutdown</code>、<code>LLMs are not the black box you were promised</code> 这类讨论继续出现。</li>
+<li>为什么重要：能力越强，行业越会把注意力放回约束、可解释性和 kill switch 可靠性上。</li>
+<li>来源：<a href="https://twitter.com/jeremy__tien/status/2061829186608627717">GPT and Claude both subvert shutdown</a>、<a href="https://www.jay.ai/blog/llms-are-not-a-black-box">LLMs are not the black box you were promised</a>、<a href="https://www.anthropic.com/news/expanding-project-glasswing">Expanding Project Glasswing</a></li>
+</ul>
+<h2>新模型 / 新产品</h2>
+<h3>今天的一手更新更偏“工作流”和“安全”，不是新底模大战</h3>
+<ul>
+<li>结论：官方新增里，Anthropic 是 <code>Glasswing</code>，OpenAI 是 <code>Codex</code> 的 role/workflow 页面，DeepMind 则更像刷新模型总览页。</li>
+<li>为什么重要：这意味着今天更该盯“怎么用”“给谁用”“怎么管”，而不是单独追模型参数和 benchmark。</li>
+<li>来源：<a href="https://www.anthropic.com/news/expanding-project-glasswing">Expanding Project Glasswing</a>、<a href="https://openai.com/index/codex-for-every-role-tool-workflow/">Codex For Every Role Tool Workflow</a>、<a href="https://deepmind.google/models/">Models — Google DeepMind</a></li>
+</ul>
+<h3>开源模型面依旧是小模型、多模态和视觉理解最有存在感</h3>
+<ul>
+<li>结论：今天值得记的是 <code>LocateAnything-3B</code>、<code>LFM2.5-8B-A1B</code>、<code>MiniCPM5-1B</code>、<code>Step-3.7-Flash</code>、<code>PaddleOCR-VL-1.6</code>。</li>
+<li>为什么重要：这些方向共同说明，真正有结构价值的还是视觉 grounding、端侧小模型、轻量 MoE 和文档理解，而不是再多一个泛用聊天模型。</li>
+<li>来源：<a href="https://huggingface.co/nvidia/LocateAnything-3B">LocateAnything-3B</a>、<a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B">LFM2.5-8B-A1B</a>、<a href="https://huggingface.co/openbmb/MiniCPM5-1B">MiniCPM5-1B</a>、<a href="https://huggingface.co/stepfun-ai/Step-3.7-Flash">Step-3.7-Flash</a>、<a href="https://huggingface.co/PaddlePaddle/PaddleOCR-VL-1.6">PaddleOCR-VL-1.6</a></li>
+<li>建议：扫一眼</li>
+</ul>
+<h2>论文里可能有用的东西</h2>
+<h3><code>ClinEnv</code> 值得看</h3>
+<ul>
+<li>结论：今天最有“长链路 agent 环境”味道的论文，是 <code>ClinEnv: An Interactive Multi-Stage Long Horizon EHR Environment for Agents</code>。</li>
+<li>为什么重要：它不是静态问答 benchmark，而是在医疗场景里模拟多阶段、长路径、不可逆决策，这比一般 benchmark 更接近真实 agent 评估问题。</li>
+<li>来源：<a href="http://arxiv.org/abs/2606.02568v1">ClinEnv: An Interactive Multi-Stage Long Horizon EHR Environment for Agents</a></li>
+<li>建议：看原文</li>
+</ul>
+<h3><code>AdaCodec</code> 和 <code>Perceptual Judgment Bias</code> 也值得记名</h3>
+<ul>
+<li>结论：<code>AdaCodec</code> 针对视频 MLLM 的 token 冗余问题，<code>Mitigating Perceptual Judgment Bias...</code> 针对多模态 judge 的视觉偏差问题。</li>
+<li>为什么重要：一个在压视频 token 成本，一个在修多模态 judge 可靠性，刚好都对应今天“成本”和“约束”这两条主线。</li>
+<li>来源：<a href="http://arxiv.org/abs/2606.02569v1">AdaCodec</a>、<a href="http://arxiv.org/abs/2606.02578v1">Mitigating Perceptual Judgment Bias in Multimodal LLM-as-a-Judge</a></li>
+</ul>
+<h2>可以暂缓</h2>
+<h3>Product Hunt 今天没有样本</h3>
+<ul>
+<li>判断：今天 <code>Product Hunt</code> 抓取失败，不要把这页当成完整新品视图。</li>
+<li>来源：<a href="https://github.com/ceion6/seeless-learnmore/blob/main/digests/2026-06-03/raw-data.json">今日原始快照</a></li>
+</ul>
+<h3>DeepMind 的模型总览页刷新先不要误判成新品密集发布</h3>
+<ul>
+<li>判断：今天 DeepMind 的新增更像聚合页刷新，不适合硬写成多个产品发布。</li>
+<li>来源：<a href="https://deepmind.google/models/">Models — Google DeepMind</a></li>
+</ul>
+<h3>纯市场估值争论先少看</h3>
+<ul>
+<li>判断：<code>Anthropic 值不值 1T</code> 这类讨论有热度，但对产品和工程判断帮助有限。</li>
+<li>来源：<a href="https://www.businessinsider.com/big-short-michael-burry-spacex-anthropic-ipo-ai-bubble-claude-2026-6">Michael Burry says neither SpaceX nor Anthropic is worth $1T</a></li>
+</ul>
+<h2>原始入口</h2>
+<ul>
+<li><a href="https://github.com/ceion6/seeless-learnmore/blob/main/digests/2026-06-03/raw-data.json">今日原始快照 raw-data.json</a></li>
+<li><a href="https://www.anthropic.com/news/expanding-project-glasswing">Expanding Project Glasswing</a>、<a href="https://openai.com/index/codex-for-every-role-tool-workflow/">Codex For Every Role Tool Workflow</a>、<a href="https://deepmind.google/models/">Models — Google DeepMind</a></li>
+<li><a href="https://github.com/chopratejas/headroom">headroom</a>、<a href="https://github.com/Kaelio/ktx">ktx</a>、<a href="https://github.com/supermemoryai/supermemory">supermemory</a>、<a href="https://github.com/withkynam/vibecode-pro-max-kit">vibecode-pro-max-kit</a></li>
+<li><a href="https://dev.to/p0rt/your-ai-agent-isnt-failing-because-it-hallucinates-its-failing-because-of-rate-limits-2d60">Your AI Agent Isn&#39;t Failing Because It Hallucinates — It&#39;s Failing Because of Rate Limits</a>、<a href="https://henrikwarne.com/2026/05/31/with-claude-less-coding-more-testing/">With Claude: Less Coding, More Testing</a>、<a href="https://github.com/RsyncProject/rsync/issues/934">Remove all LLM generated commits before people get hurt by this nonsense</a></li>
+<li><a href="http://arxiv.org/abs/2606.02568v1">ClinEnv</a>、<a href="http://arxiv.org/abs/2606.02569v1">AdaCodec</a>、<a href="http://arxiv.org/abs/2606.02578v1">Mitigating Perceptual Judgment Bias in Multimodal LLM-as-a-Judge</a></li>
+</ul>
+<hr>
+<blockquote>
+<p>本页由 Codex 直接基于当天 <code>raw-data.json</code> 整理生成，不依赖仓库内的外部模型 API 配置。</p>
+</blockquote>
+]]></content:encoded>
+    </item>
     <item>
       <title>少看点 AI 雷达 2026-06-01</title>
       <link>http://127.0.0.1:4173/#2026-06-01/ai-radar</link>
@@ -27232,354 +27342,6 @@ Preview of Intern&#39;s updated vision-language model; a contender in the open m
 <p><em>Report generated from incremental crawl data. OpenAI analysis limited by metadata-only capture; recommend priority fix for full-text retrieval.</em></p>
 <hr>
 <p><em>This digest is auto-generated by <a href="https://github.com/duanyytop/agents-radar">agents-radar</a>.</em></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>AI 开源趋势日报 2026-05-21</title>
-      <link>http://127.0.0.1:4173/#2026-05-21/ai-trending</link>
-      <guid isPermaLink="true">http://127.0.0.1:4173/#2026-05-21/ai-trending</guid>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <description>AI 开源趋势日报 2026-05-21 数据来源: GitHub Trending + GitHub Search API | 生成时间: 2026-05-21 00:26 UTC AI 开源趋势日报 | 2026-05-21 第一步：AI 相关性过滤 Trending 榜单过滤结果：17 个项目中，排除 4 个非 AI 项目（OpenToonz 动画软件、Streambert 影视下载工具、files.md 笔记应用、OpenWA WhatsApp API），保留 13 个 AI 相关项目。 第二步：多维分类 项目 主要类别 次要类别 codegraph 🔧 AI 基础工具 🤖 AI 智能体/工作流 academic-research-skills 🤖 AI 智能体/工作流 📦 AI 应用 openhuman 📦 AI 应用 🧠 大模型/训练 andrej-karpathy-skills 🔧 AI 基础工具 🤖 AI 智能体/工作流 ai-engineering-from-scratch 🧠 大模型/训练 🔧 AI 基础工具 CLI-Anything 🔧 AI...</description>
-      <content:encoded><![CDATA[<h1>AI 开源趋势日报 2026-05-21</h1>
-<blockquote>
-<p>数据来源: GitHub Trending + GitHub Search API | 生成时间: 2026-05-21 00:26 UTC</p>
-</blockquote>
-<hr>
-<h1>AI 开源趋势日报 | 2026-05-21</h1>
-<hr>
-<h2>第一步：AI 相关性过滤</h2>
-<p><strong>Trending 榜单过滤结果</strong>：17 个项目中，排除 4 个非 AI 项目（OpenToonz 动画软件、Streambert 影视下载工具、files.md 笔记应用、OpenWA WhatsApp API），保留 <strong>13 个 AI 相关项目</strong>。</p>
-<hr>
-<h2>第二步：多维分类</h2>
-<table>
-<thead>
-<tr>
-<th align="left">项目</th>
-<th align="left">主要类别</th>
-<th align="left">次要类别</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">codegraph</td>
-<td align="left">🔧 AI 基础工具</td>
-<td align="left">🤖 AI 智能体/工作流</td>
-</tr>
-<tr>
-<td align="left">academic-research-skills</td>
-<td align="left">🤖 AI 智能体/工作流</td>
-<td align="left">📦 AI 应用</td>
-</tr>
-<tr>
-<td align="left">openhuman</td>
-<td align="left">📦 AI 应用</td>
-<td align="left">🧠 大模型/训练</td>
-</tr>
-<tr>
-<td align="left">andrej-karpathy-skills</td>
-<td align="left">🔧 AI 基础工具</td>
-<td align="left">🤖 AI 智能体/工作流</td>
-</tr>
-<tr>
-<td align="left">ai-engineering-from-scratch</td>
-<td align="left">🧠 大模型/训练</td>
-<td align="left">🔧 AI 基础工具</td>
-</tr>
-<tr>
-<td align="left">CLI-Anything</td>
-<td align="left">🔧 AI 基础工具</td>
-<td align="left">🤖 AI 智能体/工作流</td>
-</tr>
-<tr>
-<td align="left">oh-my-pi</td>
-<td align="left">🤖 AI 智能体/工作流</td>
-<td align="left">🔧 AI 基础工具</td>
-</tr>
-<tr>
-<td align="left">superpowers</td>
-<td align="left">🤖 AI 智能体/工作流</td>
-<td align="left">🔧 AI 基础工具</td>
-</tr>
-<tr>
-<td align="left">claude-plugins-official</td>
-<td align="left">🔧 AI 基础工具</td>
-<td align="left">🤖 AI 智能体/工作流</td>
-</tr>
-<tr>
-<td align="left">agency-agents</td>
-<td align="left">🤖 AI 智能体/工作流</td>
-<td align="left">📦 AI 应用</td>
-</tr>
-<tr>
-<td align="left">agentmemory</td>
-<td align="left">🔍 RAG/知识库</td>
-<td align="left">🤖 AI 智能体/工作流</td>
-</tr>
-<tr>
-<td align="left">llama.cpp</td>
-<td align="left">🔧 AI 基础工具</td>
-<td align="left">🧠 大模型/训练</td>
-</tr>
-<tr>
-<td align="left">ViMax</td>
-<td align="left">📦 AI 应用</td>
-<td align="left">🤖 AI 智能体/工作流</td>
-</tr>
-</tbody></table>
-<hr>
-<h2>第三步：正式报告</h2>
-<hr>
-<h3>1. 今日速览</h3>
-<p>今日 AI 开源生态呈现**&quot;Agent 基础设施大爆发&quot;**态势：Claude Code 插件生态与技能文件（Skills/CLAUDE.md）成为最热赛道，单日新增 stars 超 8000。终端原生 AI 编码工具（CLI-Anything、oh-my-pi）与持久化记忆方案（agentmemory）同步崛起，显示开发者正从&quot;试用 Agent&quot;转向&quot;工程化部署 Agent&quot;。视频生成领域出现首个&quot;全 Agent 化&quot;工作流 ViMax，而 llama.cpp 持续稳居推理基础设施基本盘。</p>
-<hr>
-<h3>2. 各维度热门项目</h3>
-<h4>🔧 AI 基础工具（框架、SDK、推理引擎、开发工具、CLI）</h4>
-<table>
-<thead>
-<tr>
-<th align="left">项目</th>
-<th align="left">Stars</th>
-<th align="left">一句话说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><strong><a href="https://github.com/ggml-org/llama.cpp">ggml-org/llama.cpp</a></strong></td>
-<td align="left">长期积累 +309 today</td>
-<td align="left">C/C++ 高性能 LLM 推理引擎，本地部署事实标准，今日持续获关注</td>
-</tr>
-<tr>
-<td align="left"><strong><a href="https://github.com/colbymchenry/codegraph">colbymchenry/codegraph</a></strong></td>
-<td align="left">0 +2123 today</td>
-<td align="left"><strong>预构建代码知识图谱</strong>，为 Claude Code/Codex/Cursor 减少 90% token 消耗，100% 本地运行——解决大代码库 Agent 上下文瓶颈</td>
-</tr>
-<tr>
-<td align="left"><strong><a href="https://github.com/HKUDS/CLI-Anything">HKUDS/CLI-Anything</a></strong></td>
-<td align="left">0 +890 today</td>
-<td align="left"><strong>&quot;让所有软件 Agent 原生&quot;</strong> 的 CLI 枢纽，打通传统命令行工具与 AI Agent 的鸿沟</td>
-</tr>
-<tr>
-<td align="left"><strong><a href="https://github.com/can1357/oh-my-pi">can1357/oh-my-pi</a></strong></td>
-<td align="left">0 +270 today</td>
-<td align="left">终端 AI 编码代理，支持哈希锚定编辑、LSP、浏览器、子代理——<strong>下一代终端 AI 的架构探索</strong></td>
-</tr>
-<tr>
-<td align="left"><strong><a href="https://github.com/anthropics/claude-plugins-official">anthropics/claude-plugins-official</a></strong></td>
-<td align="left">0 +674 today</td>
-<td align="left">Anthropic 官方 Claude Code 插件目录，<strong>生态标准化的关键信号</strong></td>
-</tr>
-<tr>
-<td align="left"><strong><a href="https://github.com/multica-ai/andrej-karpathy-skills">multica-ai/andrej-karpathy-skills</a></strong></td>
-<td align="left">0 +2679 today</td>
-<td align="left">基于 Karpathy 总结的 LLM 编码陷阱提炼的 CLAUDE.md，<strong>顶级 AI 研究员经验的产品化</strong></td>
-</tr>
-<tr>
-<td align="left"><strong><a href="https://github.com/ollama/ollama">ollama/ollama</a></strong></td>
-<td align="left">171,832 [topic:llm]</td>
-<td align="left">本地大模型运行的事实标准，已支持 Kimi-K2.5、GLM-5、MiniMax 等最新模型</td>
-</tr>
-<tr>
-<td align="left"><strong><a href="https://github.com/langgenius/dify">langgenius/dify</a></strong></td>
-<td align="left">142,046 [topic:llm]</td>
-<td align="left">生产级 Agentic 工作流开发平台，企业 AI 应用基础设施</td>
-</tr>
-</tbody></table>
-<h4>🤖 AI 智能体/工作流（Agent 框架、自动化、多智能体）</h4>
-<table>
-<thead>
-<tr>
-<th align="left">项目</th>
-<th align="left">Stars</th>
-<th align="left">一句话说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><strong><a href="https://github.com/obra/superpowers">obra/superpowers</a></strong></td>
-<td align="left">0 +1743 today</td>
-<td align="left"><strong>Agentic 技能框架与软件开发方法论</strong>——不仅是工具，更是组织 AI 开发流程的方法论</td>
-</tr>
-<tr>
-<td align="left"><strong><a href="https://github.com/msitarzewski/agency-agents">msitarzewski/agency-agents</a></strong></td>
-<td align="left">0 +1636 today</td>
-<td align="left">完整 AI 代理机构：前端、社区运营、创意注入等<strong>人格化专家代理</strong>，带交付物模板</td>
-</tr>
-<tr>
-<td align="left"><strong><a href="https://github.com/Imbad0202/academic-research-skills">Imbad0202/academic-research-skills</a></strong></td>
-<td align="left">0 +1667 today</td>
-<td align="left">Claude Code 学术研究技能：research→write→review→revise→finalize <strong>全流程自动化</strong></td>
-</tr>
-<tr>
-<td align="left"><strong><a href="https://github.com/NousResearch/hermes-agent">NousResearch/hermes-agent</a></strong></td>
-<td align="left">159,617 [topic:ai-agent]</td>
-<td align="left">&quot;与你共同成长&quot;的 Agent，开源社区顶级星标 Agent 项目</td>
-</tr>
-<tr>
-<td align="left"><strong><a href="https://github.com/shareAI-lab/learn-claude-code">shareAI-lab/learn-claude-code</a></strong></td>
-<td align="left">61,565 [topic:ai-agent]</td>
-<td align="left">从零构建类 Claude Code 的 nano agent harness，<strong>Bash is all you need</strong> 的极简哲学</td>
-</tr>
-<tr>
-<td align="left"><strong><a href="https://github.com/ruvnet/ruflo">ruvnet/ruflo</a></strong></td>
-<td align="left">53,596 [topic:ai-agent]</td>
-<td align="left">Claude 生态领先的 Agent 编排平台，多智能体集群、自学习、RAG 集成</td>
-</tr>
-<tr>
-<td align="left"><strong><a href="https://github.com/browser-use/browser-use">browser-use/browser-use</a></strong></td>
-<td align="left">94,848 [topic:llm]</td>
-<td align="left">让网站对 AI Agent 可访问，浏览器自动化的事实标准</td>
-</tr>
-<tr>
-<td align="left"><strong><a href="https://github.com/OpenHands/OpenHands">OpenHands/OpenHands</a></strong></td>
-<td align="left">74,280 [topic:llm]</td>
-<td align="left">AI 驱动开发，端到端软件工程 Agent</td>
-</tr>
-</tbody></table>
-<h4>📦 AI 应用（具体应用产品、垂直场景解决方案）</h4>
-<table>
-<thead>
-<tr>
-<th align="left">项目</th>
-<th align="left">Stars</th>
-<th align="left">一句话说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><strong><a href="https://github.com/tinyhumansai/openhuman">tinyhumansai/openhuman</a></strong></td>
-<td align="left">0 +3394 today</td>
-<td align="left"><strong>个人 AI 超级智能</strong>，Rust 构建，强调隐私、简单、极致强大——今日 Trending 增速冠军</td>
-</tr>
-<tr>
-<td align="left"><strong><a href="https://github.com/HKUDS/ViMax">HKUDS/ViMax</a></strong></td>
-<td align="left">0 +674 today</td>
-<td align="left"><strong>首个全 Agent 化视频生成</strong>：导演+编剧+制片人+视频生成器一体化，视频生产范式变革</td>
-</tr>
-<tr>
-<td align="left"><strong><a href="https://github.com/santifer/career-ops">santifer/career-ops</a></strong></td>
-<td align="left">46,392 [topic:ai-agent]</td>
-<td align="left">基于 Claude Code 的 AI 求职系统，14 种技能模式，垂直场景深度整合</td>
-</tr>
-<tr>
-<td align="left"><strong><a href="https://github.com/ZhuLinsen/daily_stock_analysis">ZhuLinsen/daily_stock_analysis</a></strong></td>
-<td align="left">38,129 [topic:ai-agent]</td>
-<td align="left">LLM 驱动 A/H/美股智能分析，零成本定时运行，<strong>金融 AI 平民化</strong></td>
-</tr>
-<tr>
-<td align="left"><strong><a href="https://github.com/CherryHQ/cherry-studio">CherryHQ/cherry-studio</a></strong></td>
-<td align="left">46,014 [topic:ai-agent]</td>
-<td align="left">AI 生产力工作室，300+ 助手，统一接入前沿 LLM</td>
-</tr>
-</tbody></table>
-<h4>🧠 大模型/训练（模型权重、训练框架、微调工具）</h4>
-<table>
-<thead>
-<tr>
-<th align="left">项目</th>
-<th align="left">Stars</th>
-<th align="left">一句话说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><strong><a href="https://github.com/rohitg00/ai-engineering-from-scratch">rohitg00/ai-engineering-from-scratch</a></strong></td>
-<td align="left">0 +765 today</td>
-<td align="left">从零学习、构建、发布 AI 工程，<strong>系统性工程能力培养</strong></td>
-</tr>
-<tr>
-<td align="left"><strong><a href="https://github.com/huggingface/transformers">huggingface/transformers</a></strong></td>
-<td align="left">160,813 [topic:llm]</td>
-<td align="left">模型定义框架，文本/视觉/音频/多模态全覆盖</td>
-</tr>
-<tr>
-<td align="left"><strong><a href="https://github.com/rasbt/LLMs-from-scratch">rasbt/LLMs-from-scratch</a></strong></td>
-<td align="left">95,280 [topic:llm]</td>
-<td align="left">循序渐进用 PyTorch 实现类 ChatGPT LLM，教育领域标杆</td>
-</tr>
-<tr>
-<td align="left"><strong><a href="https://github.com/jingyaogong/minimind">jingyaogong/minimind</a></strong></td>
-<td align="left">50,278 [topic:llm-model]</td>
-<td align="left">2 小时从 0 训练 64M 参数 LLM，<strong>大模型训练民主化</strong></td>
-</tr>
-<tr>
-<td align="left"><strong><a href="https://github.com/vllm-project/vllm">vllm-project/vllm</a></strong></td>
-<td align="left">80,582 [topic:llm]</td>
-<td align="left">高吞吐、内存高效的 LLM 推理服务引擎</td>
-</tr>
-<tr>
-<td align="left"><strong><a href="https://github.com/langchain-ai/langchain">langchain-ai/langchain</a></strong></td>
-<td align="left">137,230 [topic:llm]</td>
-<td align="left">Agent 工程平台，连接模型与应用的桥梁</td>
-</tr>
-</tbody></table>
-<h4>🔍 RAG/知识库（向量数据库、检索增强、知识管理）</h4>
-<table>
-<thead>
-<tr>
-<th align="left">项目</th>
-<th align="left">Stars</th>
-<th align="left">一句话说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><strong><a href="https://github.com/rohitg00/agentmemory">rohitg00/agentmemory</a></strong></td>
-<td align="left">0 +1080 today</td>
-<td align="left"><strong>基于真实基准测试的 #1 AI 编码 Agent 持久化记忆</strong>，解决 Agent 状态遗忘核心痛点</td>
-</tr>
-<tr>
-<td align="left"><strong><a href="https://github.com/infiniflow/ragflow">infiniflow/ragflow</a></strong></td>
-<td align="left">80,912 [topic:rag]</td>
-<td align="left">融合前沿 RAG 与 Agent 能力的检索增强引擎</td>
-</tr>
-<tr>
-<td align="left"><strong><a href="https://github.com/thedotmack/claude-mem">thedotmack/claude-mem</a></strong></td>
-<td align="left">77,060 [topic:rag]</td>
-<td align="left">跨会话持久上下文，AI 压缩后注入未来会话，<strong>多 Agent 兼容</strong></td>
-</tr>
-<tr>
-<td align="left"><strong><a href="https://github.com/mem0ai/mem0">mem0ai/mem0</a></strong></td>
-<td align="left">56,282 [topic:rag]</td>
-<td align="left">AI Agent 通用记忆层，跨平台记忆共享</td>
-</tr>
-<tr>
-<td align="left"><strong><a href="https://github.com/safishamsi/graphify">safishamsi/graphify</a></strong></td>
-<td align="left">50,249 [topic:rag]</td>
-<td align="left">代码/文档/多媒体统一知识图谱，<strong>多模态 RAG 的代码场景落地</strong></td>
-</tr>
-<tr>
-<td align="left"><strong><a href="https://github.com/run-llama/llama_index">run-llama/llama_index</a></strong></td>
-<td align="left">49,539 [topic:rag]</td>
-<td align="left">文档 Agent 与 OCR 平台，RAG 生态核心基础设施</td>
-</tr>
-<tr>
-<td align="left"><strong><a href="https://github.com/milvus-io/milvus">milvus-io/milvus</a></strong></td>
-<td align="left">44,381 [topic:rag]</td>
-<td align="left">云原生高性能向量数据库，ANN 搜索标杆</td>
-</tr>
-<tr>
-<td align="left"><strong><a href="https://github.com/meilisearch/meilisearch">meilisearch/meilisearch</a></strong></td>
-<td align="left">57,653 [topic:vector-db]</td>
-<td align="left">闪电般搜索引擎 API，AI 混合搜索</td>
-</tr>
-</tbody></table>
-<hr>
-<h3>3. 趋势信号分析</h3>
-<p><strong>Agent 基础设施工程化浪潮</strong>是今日最显著信号。与 2024 年&quot;Agent 概念爆发&quot;不同，今日热榜呈现<strong>深度工具链整合</strong>：codegraph 解决大代码库上下文瓶颈，agentmemory/claude-mem 攻克状态持久化，CLI-Anything/oh-my-pi 重构终端交互范式，superpowers 甚至上升到方法论层面。这标志着社区从&quot;Agent 能做什么&quot;转向&quot;Agent 如何可靠地规模化运行&quot;。</p>
-<p><strong>新兴技术栈</strong>：<strong>Rust</strong> 在 AI 基础设施中崛起（openhuman、meilisearch、qdrant），兼顾性能与内存安全；<strong>知识图谱</strong>从 RAG 辅助手段升级为 Agent 核心基础设施（codegraph、graphify、ruflo 的 RAG 集成）。</p>
-<p><strong>与大模型行业事件关联</strong>：Anthropic Claude Code 生态成为绝对中心——官方插件目录上线、CLAUDE.md 技能文件标准化、Karpathy 经验产品化，形成&quot;模型厂商定义接口→社区填充技能→用户组装工作流&quot;的飞轮。这与近期 Claude 4 系列模型发布及&quot;Computer Use&quot;能力开放直接相关，暗示 <strong>MCP/Skills 协议正成为 Agent 时代的&quot;USB-C&quot;标准</strong>。</p>
-<hr>
-<h3>4. 社区关注热点</h3>
-<ul>
-<li><p><strong>🔥 codegraph — 预构建代码知识图谱</strong><br>今日新增 2123 stars，解决 Agent 编码最大痛点：大代码库上下文窗口不足。100% 本地、零 API 成本，可能成为 Cursor/Copilot 类工具的底层标配。</p>
-</li>
-<li><p><strong>🔥 openhuman — 个人 AI 超级智能</strong><br>今日增速冠军（+3394），Rust 构建强调隐私，定位&quot;个人设备上的 AGI&quot;。需关注其是否真能突破端侧模型能力边界，还是概念包装。</p>
-</li>
-<li><p><strong>🔥 agentmemory / claude-mem — Agent 持久记忆双方案</strong><br>同日上榜，标志&quot;有状态的 Agent&quot;成为刚需。前者基于基准测试自称 #1，后者强调跨会话压缩注入，记忆层可能成为下一个独立赛道。</p>
-</li>
-<li><p><strong>🔥 ViMax — 全 Agent 化视频生成</strong><br>首个将&quot;导演-编剧-制片人-生成器&quot;全链路 Agent 化的视频项目，若效果达标，将颠覆现有视频生成工具的人机交互模式。</p>
-</li>
-<li><p><strong>⚠️ 技能文件（Skills/CLAUDE.md）标准化风险</strong><br>今日 3 个技能类项目登榜，但均针对 Claude Code。社区需警惕生态碎片化——若 OpenAI、Google 采用不兼容协议，开发者将面临&quot;技能孤岛&quot;。</p>
-</li>
-</ul>
-<hr>
-<p><em>报告基于 2026-05-21 GitHub Trending 及主题搜索数据生成</em></p>
-<hr>
-<p><em>本日报由 <a href="https://github.com/duanyytop/agents-radar">agents-radar</a> 自动生成。</em></p>
 ]]></content:encoded>
     </item>
   </channel>
