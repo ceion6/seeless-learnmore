@@ -26,7 +26,7 @@ Agent 执行护栏与回滚审计层 是第一优先，因为 团队真正不敢
 - 为什么是现在：浏览器和命令行能力正逐步进入 agent 工具层，工作流模板开始有现实价值。
 - 最小可行解：先做网页巡检、表单回归、后台操作复盘这类模板包，而不是通用自动化平台。
 - 付费可能：只要能持续省掉人工重复操作，就适合按模板包或团队订阅收费。
-- 证据：[Claude Code v2.1.161](https://github.com/anthropics/claude-code/releases)、[Claude Code #65033](https://github.com/anthropics/claude-code/issues/65033)、[Claude Code #65032](https://github.com/anthropics/claude-code/issues/65032)、[Claude Code #37413](https://github.com/anthropics/claude-code/issues/37413)、[OpenAI Codex #26146](https://github.com/openai/codex/issues/26146)
+- 证据：[Claude Code v2.1.161](https://github.com/anthropics/claude-code/releases)、[Claude Code #65035](https://github.com/anthropics/claude-code/issues/65035)、[Claude Code #65034](https://github.com/anthropics/claude-code/issues/65034)、[Claude Code #63456](https://github.com/anthropics/claude-code/issues/63456)、[Claude Code #65033](https://github.com/anthropics/claude-code/issues/65033)
 - 下一步：先挑一个现成 SOP 最明确的场景，让真实用户拿现网流程试一次。
 
 ### Agent 会话沉淀与团队记忆层
@@ -35,7 +35,7 @@ Agent 执行护栏与回滚审计层 是第一优先，因为 团队真正不敢
 - 为什么是现在：社区已经开始把会话转成 wiki、dashboard、长期知识资产，而不只是一次性聊天记录。
 - 最小可行解：先做会话提炼和归档，把结论、文件引用和关键步骤整理成团队笔记。
 - 付费可能：只要能减少重复排查和 onboarding 时间，就有明确的效率价值。
-- 证据：[Claude Code v2.1.161](https://github.com/anthropics/claude-code/releases)、[Claude Code #65033](https://github.com/anthropics/claude-code/issues/65033)、[Claude Code #65032](https://github.com/anthropics/claude-code/issues/65032)、[Claude Code #37413](https://github.com/anthropics/claude-code/issues/37413)、[OpenAI Codex #26146](https://github.com/openai/codex/issues/26146)
+- 证据：[Claude Code v2.1.161](https://github.com/anthropics/claude-code/releases)、[Claude Code #65035](https://github.com/anthropics/claude-code/issues/65035)、[Claude Code #65034](https://github.com/anthropics/claude-code/issues/65034)、[Claude Code #63456](https://github.com/anthropics/claude-code/issues/63456)、[Claude Code #65033](https://github.com/anthropics/claude-code/issues/65033)
 - 下一步：先验证团队是否真的会回看 agent 会话，再决定要不要扩成完整知识库。
 
 ## 次优但可观察
@@ -86,4 +86,4 @@ Agent 执行护栏与回滚审计层 是第一优先，因为 团队真正不敢
 
 ---
 
-> 本页由每日保底脚本生成，用于保证站点每天都有“能继续做什么”的可读版本；后续可以被更高质量的人工 / Codex 版本覆盖。生成时间: 2026-06-03 11:30 UTC
+> 本页由每日保底脚本生成，用于保证站点每天都有“能继续做什么”的可读版本；后续可以被更高质量的人工 / Codex 版本覆盖。生成时间: 2026-06-03 11:34 UTC
