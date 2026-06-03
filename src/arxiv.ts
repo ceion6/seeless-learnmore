@@ -24,6 +24,7 @@ export interface ArxivPaper {
 export interface ArxivData {
   papers: ArxivPaper[];
   fetchSuccess: boolean;
+  fetchStatus: "ok" | "empty" | "error";
 }
 
 // ---------------------------------------------------------------------------
@@ -106,6 +107,7 @@ async function sleep(ms: number): Promise<void> {
 
 export async function fetchArxivData(): Promise<ArxivData> {
   const seen = new Map<string, ArxivPaper>();
+  let requestSucceeded = false;
 
   for (let i = 0; i < CATEGORIES.length; i++) {
     const cat = CATEGORIES[i]!;
@@ -128,6 +130,7 @@ export async function fetchArxivData(): Promise<ArxivData> {
         continue;
       }
 
+      requestSucceeded = true;
       const xml = await resp.text();
 
       // Split into entries
@@ -153,5 +156,9 @@ export async function fetchArxivData(): Promise<ArxivData> {
     .slice(0, ARXIV_MAX_RESULTS);
 
   console.log(`  [arxiv] ${papers.length} papers (from ${seen.size} unique)`);
-  return { papers, fetchSuccess: papers.length > 0 };
+  return {
+    papers,
+    fetchSuccess: requestSucceeded,
+    fetchStatus: papers.length > 0 ? "ok" : requestSucceeded ? "empty" : "error",
+  };
 }

@@ -10,6 +10,7 @@ const SITE_URL = (process.env["PAGES_URL"] ?? "http://127.0.0.1:4173").replace(/
 const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
 const REPORT_FILES = [
   "ai-radar",
+  "ai-opportunity",
   "ai-cli",
   "ai-cli-en",
   "ai-agents",

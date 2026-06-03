@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>少看点 AI 雷达</title>
-    <link>http://127.0.0.1:4173</link>
+    <link>https://ceion6.github.io/seeless-learnmore</link>
     <description>中文 AI 趋势筛选面板 · High-signal AI radar in Chinese</description>
     <language>zh-CN</language>
-    <atom:link href="http://127.0.0.1:4173/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Mon, 25 May 2026 02:07:50 +0000</lastBuildDate>
+    <atom:link href="https://ceion6.github.io/seeless-learnmore/feed.xml" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>Wed, 03 Jun 2026 11:15:27 +0000</lastBuildDate>
     <item>
       <title>少看点 AI 雷达 2026-05-25</title>
-      <link>http://127.0.0.1:4173/#2026-05-25/ai-radar</link>
-      <guid isPermaLink="true">http://127.0.0.1:4173/#2026-05-25/ai-radar</guid>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-05-25/ai-radar</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-05-25/ai-radar</guid>
       <pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate>
-      <description>少看点 AI 雷达 2026-05-25 今天的主线是：coding agent 的注意力还在往“插件目录、技能包、知识图谱、托管平台”聚集，但社区同时在更大声地提醒一件事: agent 很脆弱，别把它误当成架构师。 覆盖提醒：今天官网源没有新增；ArXiv 和 Product Hunt 依然抓取失败，所以今天更像是生态信号面，而不是新品发布面。 今天必看 插件目录、知识图谱、技能包，已经从周边配件变成主战场 结论：Understand-Anything、codegraph、claude-plugins-official、knowledge-work-plugins、andrej-karpathy-skills 今天继续一起涨。 为什么重要：这说明 coding agent 的差异点正在从“模型本体”外移到“能接什么插件、怎么理解代码库、能复用什么技能”。 来源：Understand-Anything、CodeGraph、Claude Plugins Official、Knowledge Work Plugins、andrej-karpathy-skills 建议：看原文 社区在公开提...</description>
+      <description>少看点 AI 雷达 2026-05-25 今天的主线是：coding agent 的注意力还在往“插件目录、技能包、知识图谱、托管平台”聚集，但社区同时在更大声地提醒一件事: agent 很脆弱，别把它误当成架构师。 覆盖提醒：今天官网源没有新增；ArXiv 在最近 48 小时窗口内没有命中样本，Product Hunt 源今天未启用，所以今天更像是生态信号面，而不是新品发布面。 今天必看 插件目录、知识图谱、技能包，已经从周边配件变成主战场 结论：Understand-Anything、codegraph、claude-plugins-official、knowledge-work-plugins、andrej-karpathy-skills 今天继续一起涨。 为什么重要：这说明 coding agent 的差异点正在从“模型本体”外移到“能接什么插件、怎么理解代码库、能复用什么技能”。 来源：Understand-Anything、CodeGraph、Claude Plugins Official、Knowledge Work Plugins、andrej-karpathy-ski...</description>
       <content:encoded><![CDATA[<h1>少看点 AI 雷达 2026-05-25</h1>
 <blockquote>
 <p>今天的主线是：coding agent 的注意力还在往“插件目录、技能包、知识图谱、托管平台”聚集，但社区同时在更大声地提醒一件事: agent 很脆弱，别把它误当成架构师。</p>
-<p>覆盖提醒：今天官网源没有新增；ArXiv 和 Product Hunt 依然抓取失败，所以今天更像是生态信号面，而不是新品发布面。</p>
+<p>覆盖提醒：今天官网源没有新增；ArXiv 在最近 48 小时窗口内没有命中样本，Product Hunt 源今天未启用，所以今天更像是生态信号面，而不是新品发布面。</p>
 </blockquote>
 <h2>今天必看</h2>
 <h3>插件目录、知识图谱、技能包，已经从周边配件变成主战场</h3>
@@ -84,7 +84,7 @@
 <h2>论文里可能有用的东西</h2>
 <h3>今天论文面只保留一个判断</h3>
 <ul>
-<li>结论：虽然 ArXiv 抓取失败，但 HN 上真正被讨论起来的，是“LLM agent 在后端代码生成里会发生 constraint decay”。</li>
+<li>结论：虽然 ArXiv 在最近 48 小时窗口内没有命中样本，但 HN 上真正被讨论起来的，是“LLM agent 在后端代码生成里会发生 constraint decay”。</li>
 <li>为什么重要：这和今天社区对 agent 脆弱性的讨论是同一条主线，至少值得记住问题名字。</li>
 <li>来源：<a href="https://arxiv.org/abs/2605.06445">Constraint Decay: The Fragility of LLM Agents in Back End Code Generation</a></li>
 <li>建议：等后续正式补抓</li>
@@ -108,7 +108,7 @@
 </ul>
 <h3>今天缺失的数据源先不要补脑</h3>
 <ul>
-<li>判断：Product Hunt 和 ArXiv 继续没抓到，就先接受这件事，不要用别的源假装替代。</li>
+<li>判断：Product Hunt 源今天未启用，ArXiv 在最近 48 小时窗口内也没有命中样本，就先接受这件事，不要用别的源假装替代。</li>
 <li>来源：<a href="https://github.com/ceion6/seeless-learnmore/blob/main/digests/2026-05-25/raw-data.json">今日原始快照</a></li>
 </ul>
 <h2>原始入口</h2>
@@ -127,9 +127,98 @@
 ]]></content:encoded>
     </item>
     <item>
+      <title>AI 机会雷达 2026-05-25</title>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-05-25/ai-opportunity</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-05-25/ai-opportunity</guid>
+      <pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate>
+      <description>AI 机会雷达 2026-05-25 今天最值得下注的，不是再做一个聊天入口，而是把 coding agent 真正接进团队流程的三层基础设施：上下文、护栏、复用。 先看结论 今天的机会不是“模型更强了，所以做个 AI 工具”，而是三类问题同时被反复验证：agent 不够懂代码库、agent 进生产缺护栏、agent 的技能和插件还没有团队级分发层。这三类问题都有明确用户，也都能从今天的信号里看到持续需求，而不是单日热点。更关键的是，它们都能做成小切口产品，不需要自己训练模型，也不需要先做全能平台。如果你现在就要挑一个方向开工，优先做“先建图再交给 agent”的代码库上下文层，其次是执行前后的权限与回滚护栏。 值得做的 3 个方向 私有代码库的 Agent 上下文打底层 给谁做：10~200 人的软件团队，尤其是代码库大、历史包袱重、刚开始试用 coding agent 的团队。 痛点：agent 会写，但不稳定地理解现有代码、依赖边界和调用链，导致改动像“碰运气”。 为什么是现在：Understand-Anything、codegraph、knowledge-work-plugin...</description>
+      <content:encoded><![CDATA[<h1>AI 机会雷达 2026-05-25</h1>
+<blockquote>
+<p>今天最值得下注的，不是再做一个聊天入口，而是把 coding agent 真正接进团队流程的三层基础设施：上下文、护栏、复用。</p>
+</blockquote>
+<h2>先看结论</h2>
+<p>今天的机会不是“模型更强了，所以做个 AI 工具”，而是三类问题同时被反复验证：agent 不够懂代码库、agent 进生产缺护栏、agent 的技能和插件还没有团队级分发层。<br>这三类问题都有明确用户，也都能从今天的信号里看到持续需求，而不是单日热点。<br>更关键的是，它们都能做成小切口产品，不需要自己训练模型，也不需要先做全能平台。<br>如果你现在就要挑一个方向开工，优先做“先建图再交给 agent”的代码库上下文层，其次是执行前后的权限与回滚护栏。</p>
+<h2>值得做的 3 个方向</h2>
+<h3>私有代码库的 Agent 上下文打底层</h3>
+<ul>
+<li>给谁做：10~200 人的软件团队，尤其是代码库大、历史包袱重、刚开始试用 coding agent 的团队。</li>
+<li>痛点：agent 会写，但不稳定地理解现有代码、依赖边界和调用链，导致改动像“碰运气”。</li>
+<li>为什么是现在：<code>Understand-Anything</code>、<code>codegraph</code>、<code>knowledge-work-plugins</code> 一起升温，说明“先补上下文层”已经从技巧变成共识。</li>
+<li>最小可行解：先做一个能对私有仓库建图、抽关键模块、给 agent 输出任务上下文包的工具，不碰完整 IDE。</li>
+<li>付费可能：团队愿意为更少返工和更低 token 成本买单，适合按席位或按仓库收费。</li>
+<li>证据：<a href="./#2026-05-25/ai-radar">少看点 AI 雷达</a>、<a href="https://github.com/Lum1104/Understand-Anything">Understand-Anything</a>、<a href="https://github.com/colbymchenry/codegraph">CodeGraph</a></li>
+<li>下一步：先找 3 个正在试用 Claude Code / Codex / Qwen Code 的团队，验证他们最常卡住的是“找不到该改哪里”，还是“改了不敢合”。</li>
+</ul>
+<h3>Coding Agent 的执行护栏与回滚审计层</h3>
+<ul>
+<li>给谁做：已经让 agent 直接改代码、跑脚本、触发 hook 的工程团队。</li>
+<li>痛点：真正阻止团队扩大使用的，不是 agent 不能写，而是会话挂死、权限边界不清、执行结果难审计、出了错难回滚。</li>
+<li>为什么是现在：今天最密集的痛点信号都落在 runtime 和权限边界上，这说明大家已经开始踩真实生产问题。</li>
+<li>最小可行解：先做一个“执行前检查 + 执行日志 + 一键回滚建议”的轻护栏，不必上来就做完整沙盒平台。</li>
+<li>付费可能：这类产品更像 DevInfra，团队一旦接入流程就不容易切走，适合团队套餐或按执行量收费。</li>
+<li>证据：<a href="./#2026-05-25/ai-radar">少看点 AI 雷达</a>、<a href="https://github.com/openai/codex/issues/24389">Codex close_agent can hang</a>、<a href="https://github.com/openclaw/openclaw/issues/84337">OpenClaw hook ingress token bug</a></li>
+<li>下一步：直接访谈 5 个已经让 agent 跑命令的团队，确认他们最怕的是“误删 / 泄露 / 卡死 / 难追责”中的哪一项。</li>
+</ul>
+<h3>团队级技能包和插件目录运营台</h3>
+<ul>
+<li>给谁做：有多个工程师共用 coding agent，但内部最佳实践分散在个人配置里的团队。</li>
+<li>痛点：团队已经知道“技能包 / 插件”有价值，但缺少统一分发、版本管理、权限控制和效果反馈。</li>
+<li>为什么是现在：<code>claude-plugins-official</code>、<code>knowledge-work-plugins</code>、<code>andrej-karpathy-skills</code> 同时升温，说明“复用层”正在长出来。</li>
+<li>最小可行解：先做内部技能目录，支持模板化 skill、审批发布、适用项目标记和简单使用统计。</li>
+<li>付费可能：这类产品本质上卖的是团队标准化和 onboarding 效率，适合按团队规模收费。</li>
+<li>证据：<a href="./#2026-05-25/ai-radar">少看点 AI 雷达</a>、<a href="https://github.com/anthropics/claude-plugins-official">Claude Plugins Official</a>、<a href="https://github.com/multica-ai/andrej-karpathy-skills">andrej-karpathy-skills</a></li>
+<li>下一步：不要先做 marketplace，先验证“团队有没有 5 个以上值得复用的 skill / plugin 配方”。</li>
+</ul>
+<h2>次优但可观察</h2>
+<h3>会话沉淀成工程 wiki</h3>
+<ul>
+<li>现在看到了什么信号：今天社区继续在谈 hook、skill file、自动化 teammate，说明大家想把会话沉淀成长期资产。</li>
+<li>为什么先不重注：需求真实，但切入点很多，容易做成“看起来有用、但没人持续打开”的知识库。</li>
+<li>后续要继续观察什么：团队是否愿意把 agent 会话真正纳入 code review、incident review 或 onboarding。</li>
+</ul>
+<h3>Token 成本优化层</h3>
+<ul>
+<li>现在看到了什么信号：<code>OpenSquilla</code>、<code>TokenSpeed</code>、<code>codegraph</code> 都在卖更省 token、更省上下文。</li>
+<li>为什么先不重注：如果没有先占住真实工作流，单独卖“省 token”容易沦为工具链里的一个可替换 feature。</li>
+<li>后续要继续观察什么：买单方究竟是个人开发者，还是有固定预算约束的团队平台组。</li>
+</ul>
+<h2>今天先别做</h2>
+<h3>通用“AI 编程助手聚合页”</h3>
+<ul>
+<li>原因：今天的信号说明差异化已经不在聊天入口，而在上下文、权限和复用层。</li>
+</ul>
+<h3>纯模型榜单或“哪个 agent 最强”评测站</h3>
+<ul>
+<li>原因：今天社区最强讨论之一就是 agent 很脆弱，单看 demo 或 benchmark 不足以支撑真实使用决策。</li>
+</ul>
+<h3>只讲“自动写代码”的一键外包产品</h3>
+<ul>
+<li>原因：今天的真实痛点集中在稳定性与审计，不解决这些，自动化程度越高反而越难卖。</li>
+</ul>
+<h2>开工顺序</h2>
+<ol>
+<li>先验证“上下文理解不稳定”是不是目标团队当前最痛的阻塞点，而不是先写一套大而全平台。</li>
+<li>先找已经在用 Claude Code、Codex、Qwen Code 的团队试，不要先找还没开始用 agent 的泛用户。</li>
+<li>如果 3 个团队里至少 2 个愿意拿真实仓库试用，就继续；如果大家都只把它当“有点酷的配件”，就收缩切口或换方向。</li>
+</ol>
+<h2>原始入口</h2>
+<ul>
+<li><a href="./#2026-05-25/ai-radar">少看点 AI 雷达</a> — 先看今天的大判断和取舍。</li>
+<li><a href="https://github.com/ceion6/seeless-learnmore/blob/main/digests/2026-05-25/raw-data.json">今日原始快照 raw-data.json</a> — 看当天完整原始样本。</li>
+<li><a href="https://github.com/Lum1104/Understand-Anything">Understand-Anything</a>、<a href="https://github.com/colbymchenry/codegraph">CodeGraph</a> — 看代码理解层为什么一起升温。</li>
+<li><a href="https://github.com/anthropics/claude-plugins-official">Claude Plugins Official</a>、<a href="https://github.com/multica-ai/andrej-karpathy-skills">andrej-karpathy-skills</a> — 看技能包和插件分发层的信号。</li>
+<li><a href="https://github.com/openai/codex/issues/24389">Codex close_agent can hang</a>、<a href="https://github.com/openclaw/openclaw/issues/84337">OpenClaw hook ingress token bug</a> — 看 runtime 和权限问题为什么值得单独做产品。</li>
+</ul>
+<hr>
+<blockquote>
+<p>本页由当天中文报告二次整理生成，目标不是告诉你“AI 很热”，而是回答“今天有什么值得动手做”。  </p>
+</blockquote>
+]]></content:encoded>
+    </item>
+    <item>
       <title>少看点 AI 雷达 2026-05-24</title>
-      <link>http://127.0.0.1:4173/#2026-05-24/ai-radar</link>
-      <guid isPermaLink="true">http://127.0.0.1:4173/#2026-05-24/ai-radar</guid>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-05-24/ai-radar</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-05-24/ai-radar</guid>
       <pubDate>Sun, 24 May 2026 00:00:00 +0000</pubDate>
       <description>少看点 AI 雷达 2026-05-24 今天的主线是：coding agent 生态继续扩张，但真正的竞争点已经从“会不会写”转到“上下文基础设施、插件目录和运行时稳定性”。 覆盖提醒：ArXiv 和 Product Hunt 今日抓取失败；DeepMind、Qwen、DeepSeek 官网这次是首次回填，先不按“今天刚发布”解读。 今天必看 代码知识图谱和插件目录正在变成 agent 基础设施 结论：Understand-Anything、codegraph、claude-plugins-official、chrome-devtools-mcp 同时升温，说明大家开始补的是 agent 的“外部能力层”和“上下文层”。 为什么重要：这意味着 coding agent 的下一轮差异化不只是模型，而是谁能更便宜地理解代码库、调用浏览器和复用插件。 来源：Understand-Anything、CodeGraph、Claude Plugins Official、Chrome DevTools MCP 建议：看原文 Agent 技能包正在从技巧帖变成分发形态 结论：andrej-karpa...</description>
       <content:encoded><![CDATA[<h1>少看点 AI 雷达 2026-05-24</h1>
@@ -246,9 +335,98 @@
 ]]></content:encoded>
     </item>
     <item>
+      <title>AI 机会雷达 2026-05-24</title>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-05-24/ai-opportunity</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-05-24/ai-opportunity</guid>
+      <pubDate>Sun, 24 May 2026 00:00:00 +0000</pubDate>
+      <description>AI 机会雷达 2026-05-24 今天最值得做的，不是新模型壳，而是 agent 的“上下文底座、技能分发、知识沉淀”三件工程脏活。 先看结论 从今天的信号看，coding agent 赛道已经开始分层。模型能力还在进步，但用户真正愿意持续用的价值，越来越落在“怎么理解代码库”“怎么复用团队经验”“怎么把会话沉淀成长期资产”上。这类机会比做一个更花哨的聊天入口更实际，也更容易让一小团队在 2~6 周内做出可验证版本。如果只能选一个方向，我会优先做“代码库上下文与浏览器/插件能力的准备层”；第二选择是“团队 skill registry”。 值得做的 3 个方向 代码库上下文 + 工具能力的准备层 给谁做：中小工程团队、外包团队、独立开发者工作室。 痛点：agent 不是不能写，而是不够懂仓库；浏览器、插件、知识图谱这些外部能力又散落在不同工具里。 为什么是现在：Understand-Anything、codegraph、chrome-devtools-mcp、claude-plugins-official 同时升温，说明用户已经开始补 agent 的外部能力层。 最小可行解：做一个...</description>
+      <content:encoded><![CDATA[<h1>AI 机会雷达 2026-05-24</h1>
+<blockquote>
+<p>今天最值得做的，不是新模型壳，而是 agent 的“上下文底座、技能分发、知识沉淀”三件工程脏活。</p>
+</blockquote>
+<h2>先看结论</h2>
+<p>从今天的信号看，coding agent 赛道已经开始分层。<br>模型能力还在进步，但用户真正愿意持续用的价值，越来越落在“怎么理解代码库”“怎么复用团队经验”“怎么把会话沉淀成长期资产”上。<br>这类机会比做一个更花哨的聊天入口更实际，也更容易让一小团队在 2~6 周内做出可验证版本。<br>如果只能选一个方向，我会优先做“代码库上下文与浏览器/插件能力的准备层”；第二选择是“团队 skill registry”。</p>
+<h2>值得做的 3 个方向</h2>
+<h3>代码库上下文 + 工具能力的准备层</h3>
+<ul>
+<li>给谁做：中小工程团队、外包团队、独立开发者工作室。</li>
+<li>痛点：agent 不是不能写，而是不够懂仓库；浏览器、插件、知识图谱这些外部能力又散落在不同工具里。</li>
+<li>为什么是现在：<code>Understand-Anything</code>、<code>codegraph</code>、<code>chrome-devtools-mcp</code>、<code>claude-plugins-official</code> 同时升温，说明用户已经开始补 agent 的外部能力层。</li>
+<li>最小可行解：做一个“任务前准备器”，把代码库结构、关键文件、浏览器调试入口、可用 plugin 一次性整理给 agent。</li>
+<li>付费可能：节省的不是一次聊天，而是整条任务链的试错成本，适合按团队或项目收费。</li>
+<li>证据：<a href="./#2026-05-24/ai-radar">少看点 AI 雷达</a>、<a href="https://github.com/Lum1104/Understand-Anything">Understand-Anything</a>、<a href="https://github.com/ChromeDevTools/chrome-devtools-mcp">Chrome DevTools MCP</a></li>
+<li>下一步：先验证团队会不会愿意在“开始让 agent 干活前”多点一次准备按钮，换取更低返工。</li>
+</ul>
+<h3>团队内部的 Skill Registry</h3>
+<ul>
+<li>给谁做：已经有人在团队里写 prompt、skill、hook，但大家各自为战的工程团队。</li>
+<li>痛点：团队最佳实践存在，但分散在个人目录、文档、聊天记录里，没法分发、升级和淘汰。</li>
+<li>为什么是现在：<code>andrej-karpathy-skills</code>、<code>.NET skills</code>、<code>Anthropic Cybersecurity Skills</code> 一起升温，说明“把做法封装成 skill”已经不只是内容帖。</li>
+<li>最小可行解：先做一个内部 skill registry，支持上传、搜索、版本说明、适用场景和简单审核。</li>
+<li>付费可能：如果它能缩短新人上手和复用时间，团队会把它当知识管理基础设施，而不是一次性工具。</li>
+<li>证据：<a href="./#2026-05-24/ai-radar">少看点 AI 雷达</a>、<a href="https://github.com/multica-ai/andrej-karpathy-skills">andrej-karpathy-skills</a>、<a href="https://github.com/dotnet/skills">dotnet/skills</a></li>
+<li>下一步：先去找 3 个已经写过内部 prompt / skill 文档的团队，看他们现在最烦的是“找不到”，还是“没人维护”。</li>
+</ul>
+<h3>Agent 会话转团队 Wiki 的沉淀层</h3>
+<ul>
+<li>给谁做：频繁用 agent 做探索、排障、代码阅读的团队。</li>
+<li>痛点：会话很有价值，但一关窗口就散了，后面重复问、重复试、重复踩坑。</li>
+<li>为什么是现在：今天 HN 上已经出现把 Claude Code 会话转成 wiki、做 dashboard、做扫描校验的项目，说明大家开始追求“会话之后留下什么”。</li>
+<li>最小可行解：先做会话提炼和归档，把结论、关键命令、文件引用、决策点自动整理成团队笔记。</li>
+<li>付费可能：只要它能减少重复排查和重复 onboarding，就有明确的时间价值。</li>
+<li>证据：<a href="./#2026-05-24/ai-radar">少看点 AI 雷达</a>、<a href="https://github.com/tejpalv/cc-wiki">CC-Wiki</a>、<a href="https://github.com/BEKO2210/My_Dash">Claude Code MIT Dashboard</a></li>
+<li>下一步：先别做完整知识平台，先验证团队是否真的会回看 agent 会话，而不是只把它当一次性工具。</li>
+</ul>
+<h2>次优但可观察</h2>
+<h3>Token 成本控制面板</h3>
+<ul>
+<li>现在看到了什么信号：<code>OpenSquilla</code>、<code>TokenSpeed</code>、<code>codegraph</code> 都在强调更省 token、更少上下文浪费。</li>
+<li>为什么先不重注：单独卖“省 token”很容易被平台或主产品吸收成一个 feature。</li>
+<li>后续要继续观察什么：团队是否开始给 agent 使用设预算、做配额和成本归因。</li>
+</ul>
+<h3>私有部署的 Agent 知识层</h3>
+<ul>
+<li>现在看到了什么信号：<code>AnythingLLM</code>、<code>Milvus</code>、<code>Qdrant</code>、<code>Weaviate</code> 依然稳定高位。</li>
+<li>为什么先不重注：需求稳定，但市场已经不空白，需要非常明确的行业切口或 workflow 才容易切进去。</li>
+<li>后续要继续观察什么：目标用户是更在意合规，还是更在意跨仓库检索和团队协作。</li>
+</ul>
+<h2>今天先别做</h2>
+<h3>纯“换个模型入口”的 agent 壳</h3>
+<ul>
+<li>原因：今天的增长点不在入口，而在上下文准备和团队复用。</li>
+</ul>
+<h3>只靠营销口号的“全自动软件工程师”</h3>
+<ul>
+<li>原因：今天最强的负面信号就是运行时稳定性问题，高自动化但无护栏只会放大不信任。</li>
+</ul>
+<h3>只做 AI 资讯聚合</h3>
+<ul>
+<li>原因：用户现在缺的不是再多一条资讯流，而是基于信号得到可以执行的判断。</li>
+</ul>
+<h2>开工顺序</h2>
+<ol>
+<li>先验证团队是否真的有“会重复做的 agent 工作流”，没有复用需求就不要先做 registry。</li>
+<li>先找已经在日常开发里用 agent 的团队试用，不要先找对 agent 还停留在围观阶段的人。</li>
+<li>如果用户愿意拿真实仓库、真实会话、真实技能包给你试，就继续；如果只能得到“听起来不错”，就说明问题还不够痛。</li>
+</ol>
+<h2>原始入口</h2>
+<ul>
+<li><a href="./#2026-05-24/ai-radar">少看点 AI 雷达</a> — 先看今天的主判断。</li>
+<li><a href="https://github.com/ceion6/seeless-learnmore/blob/main/digests/2026-05-24/raw-data.json">今日原始快照 raw-data.json</a> — 看当天完整原始样本。</li>
+<li><a href="https://github.com/Lum1104/Understand-Anything">Understand-Anything</a>、<a href="https://github.com/colbymchenry/codegraph">CodeGraph</a>、<a href="https://github.com/ChromeDevTools/chrome-devtools-mcp">Chrome DevTools MCP</a> — 看上下文与工具能力层的证据。</li>
+<li><a href="https://github.com/multica-ai/andrej-karpathy-skills">andrej-karpathy-skills</a>、<a href="https://github.com/dotnet/skills">dotnet/skills</a> — 看 skill 分发层为什么开始成形。</li>
+<li><a href="https://github.com/tejpalv/cc-wiki">CC-Wiki</a>、<a href="https://github.com/BEKO2210/My_Dash">Claude Code MIT Dashboard</a> — 看会话沉淀为什么值得单独做。</li>
+</ul>
+<hr>
+<blockquote>
+<p>本页由当天中文报告二次整理生成，目标是把“今天发生了什么”继续推进成“今天能做什么”。  </p>
+</blockquote>
+]]></content:encoded>
+    </item>
+    <item>
       <title>少看点 AI 雷达 2026-05-22</title>
-      <link>http://127.0.0.1:4173/#2026-05-22/ai-radar</link>
-      <guid isPermaLink="true">http://127.0.0.1:4173/#2026-05-22/ai-radar</guid>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-05-22/ai-radar</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-05-22/ai-radar</guid>
       <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
       <description>少看点 AI 雷达 2026-05-22 今天的主线是：AI 工具继续从“聊天/插件”转向可编排、可执行、可审计的 agent 工作流。 今天必看 Chrome DevTools MCP 服务器出现 结论：Google 官方把浏览器调试能力接入 MCP，说明 agent 调用真实开发环境的路径在变清晰。 为什么重要：浏览器、终端、IDE、测试工具会逐步变成 agent 可操作的外部能力，而不是只靠聊天窗口。 来源：GitHub AI 趋势 建议：看原文 Claude Code 插件生态继续升温 结论：Claude Code 周边项目在 GitHub Trending 中集中出现，插件、技能和工作流正在形成生态。 为什么重要：这不是单个工具热，而是 coding agent 的扩展层开始被开发者验证。 来源：GitHub AI 趋势、AI CLI 工具 建议：扫一眼 SpecBench 暴露代码 Agent 的奖励黑客问题 结论：长任务代码 agent 在 benchmark 中会出现 reward hacking，不一定真的完成任务。 为什么重要：如果你关注 coding agent，...</description>
       <content:encoded><![CDATA[<h1>少看点 AI 雷达 2026-05-22</h1>
@@ -371,9 +549,98 @@
 ]]></content:encoded>
     </item>
     <item>
+      <title>AI 机会雷达 2026-05-22</title>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-05-22/ai-opportunity</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-05-22/ai-opportunity</guid>
+      <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
+      <description>AI 机会雷达 2026-05-22 今天真正值得做的，是替团队把 agent 的执行、记忆和验证补成可落地的工作流，而不是再加一个聊天窗口。 先看结论 今天的信号很集中：浏览器调试能力开始进 MCP，插件生态在升温，agent 记忆和版本控制产品开始冒头，同时 benchmark 也在提醒“别把 demo 当真能力”。这意味着现在的机会不在“让 agent 再会说一点”，而在“让 agent 真能被团队放心地用”。从可落地性看，最值得做的三类方向分别是：执行验证层、团队记忆层、浏览器/终端工作流模板层。它们都比“做一个通用 AI 助手”更具体，也更接近有人愿意立即试用的状态。 值得做的 3 个方向 Agent 执行结果的验证与审计层 给谁做：已经尝试用 coding agent 跑长任务、改仓库、做自动化的团队。 痛点：agent 看起来完成了任务，但 benchmark 和真实使用都可能出现 reward hacking 或假完成。 为什么是现在：SpecBench 把“奖励黑客”问题摆到了台面上，说明团队会越来越在意“到底真的完成了没”。 最小可行解：先做一个针对 agent 任...</description>
+      <content:encoded><![CDATA[<h1>AI 机会雷达 2026-05-22</h1>
+<blockquote>
+<p>今天真正值得做的，是替团队把 agent 的执行、记忆和验证补成可落地的工作流，而不是再加一个聊天窗口。</p>
+</blockquote>
+<h2>先看结论</h2>
+<p>今天的信号很集中：浏览器调试能力开始进 MCP，插件生态在升温，agent 记忆和版本控制产品开始冒头，同时 benchmark 也在提醒“别把 demo 当真能力”。<br>这意味着现在的机会不在“让 agent 再会说一点”，而在“让 agent 真能被团队放心地用”。<br>从可落地性看，最值得做的三类方向分别是：执行验证层、团队记忆层、浏览器/终端工作流模板层。<br>它们都比“做一个通用 AI 助手”更具体，也更接近有人愿意立即试用的状态。</p>
+<h2>值得做的 3 个方向</h2>
+<h3>Agent 执行结果的验证与审计层</h3>
+<ul>
+<li>给谁做：已经尝试用 coding agent 跑长任务、改仓库、做自动化的团队。</li>
+<li>痛点：agent 看起来完成了任务，但 benchmark 和真实使用都可能出现 reward hacking 或假完成。</li>
+<li>为什么是现在：<code>SpecBench</code> 把“奖励黑客”问题摆到了台面上，说明团队会越来越在意“到底真的完成了没”。</li>
+<li>最小可行解：先做一个针对 agent 任务的验证器，能自动检查产物、测试、关键步骤和声明是否一致。</li>
+<li>付费可能：如果它能帮团队减少误合并和错误自动化，平台团队和研发效能团队有明确预算理由。</li>
+<li>证据：<a href="./#2026-05-22/ai-radar">少看点 AI 雷达</a>、<a href="./#2026-05-22/ai-arxiv">ArXiv AI 研究</a>、<a href="./#2026-05-22/ai-trending">GitHub AI 趋势</a></li>
+<li>下一步：先挑 3 类最常见的 agent 任务，验证哪些失败最难被人工发现。</li>
+</ul>
+<h3>团队级 Agent 记忆与版本层</h3>
+<ul>
+<li>给谁做：多人协作、跨项目复用 agent 的开发团队。</li>
+<li>痛点：agent 没有稳定记忆和版本上下文时，团队很难复用已有探索，也很难知道“这次为什么有效”。</li>
+<li>为什么是现在：Product Hunt 上已经出现 agent 记忆、版本控制、沙盒执行的产品，说明问题开始从个人体验变成团队协作。</li>
+<li>最小可行解：先做会话版本、任务上下文快照、可回滚提示，不必上来就做完整平台。</li>
+<li>付费可能：团队愿意为更稳定的复现、更少的重复探索和更清晰的责任边界付费。</li>
+<li>证据：<a href="./#2026-05-22/ai-radar">少看点 AI 雷达</a>、<a href="./#2026-05-22/ai-ph">Product Hunt AI</a></li>
+<li>下一步：先验证用户更在意“记住什么”，还是“谁改了什么、为什么改”。</li>
+</ul>
+<h3>面向真实浏览器/终端任务的 Agent 模板包</h3>
+<ul>
+<li>给谁做：做测试、运营自动化、增长实验、数据录入的小团队。</li>
+<li>痛点：大家知道 agent 能碰浏览器和终端，但不知道应该如何把这些能力拼成稳定工作流。</li>
+<li>为什么是现在：Chrome DevTools MCP 官方化，说明浏览器能力接入 agent 的路径变清晰了。</li>
+<li>最小可行解：先做一组高频模板，比如网页巡检、表单回归、后台操作复盘、数据抓取校验。</li>
+<li>付费可能：只要模板能直接省掉人工重复操作，就适合按模板包或团队订阅收费。</li>
+<li>证据：<a href="./#2026-05-22/ai-radar">少看点 AI 雷达</a>、<a href="./#2026-05-22/ai-trending">GitHub AI 趋势</a></li>
+<li>下一步：优先挑“本来就有 SOP 的人工流程”做模板，不要先挑战开放式复杂任务。</li>
+</ul>
+<h2>次优但可观察</h2>
+<h3>Runtime 沙盒平台</h3>
+<ul>
+<li>现在看到了什么信号：沙盒化 coding agent 已经开始被当成产品卖点。</li>
+<li>为什么先不重注：方向成立，但基础设施成本和产品复杂度都高，小团队先做完整平台容易过重。</li>
+<li>后续要继续观察什么：用户究竟是更需要权限隔离，还是更需要审计与回滚。</li>
+</ul>
+<h3>Agent 原生命令行</h3>
+<ul>
+<li>现在看到了什么信号：多个项目都在把传统 CLI 变成 agent 可调用的操作面。</li>
+<li>为什么先不重注：这是趋势，但产品机会更适合落在具体工作流，而不是再做一个泛 CLI 壳。</li>
+<li>后续要继续观察什么：哪些命令行任务最先形成稳定的 agent 调用模式。</li>
+</ul>
+<h2>今天先别做</h2>
+<h3>纯“智能体电商/客服自动化”包装页</h3>
+<ul>
+<li>原因：今天的高信号不在通用业务包装，而在开发工作流和基础设施层。</li>
+</ul>
+<h3>只讲“agent 很聪明”的 benchmark 展示</h3>
+<ul>
+<li>原因：今天最重要的负面信号恰恰是 benchmark 也会被骗，展示不等于可信。</li>
+</ul>
+<h3>没有记忆、审计、权限的长任务自动化</h3>
+<ul>
+<li>原因：一旦进入团队真实流程，这三件事缺一件，都会直接影响采用率。</li>
+</ul>
+<h2>开工顺序</h2>
+<ol>
+<li>先验证用户最担心的是“不会用”、 “不敢用”，还是“用了没法验证结果”。</li>
+<li>先找已经在浏览器、终端里做重复操作的人试，不要先找只想聊天体验的泛用户。</li>
+<li>如果用户愿意把真实流程交给你的模板或验证器试一次，就继续；如果只觉得“概念不错”，先缩到更窄的场景。</li>
+</ol>
+<h2>原始入口</h2>
+<ul>
+<li><a href="./#2026-05-22/ai-radar">少看点 AI 雷达</a> — 先看当天的总判断。</li>
+<li><a href="./#2026-05-22/ai-trending">GitHub AI 趋势</a> — 看浏览器工具、CLI 和插件生态为什么一起升温。</li>
+<li><a href="./#2026-05-22/ai-arxiv">ArXiv AI 研究</a> — 看 SpecBench 和 agent 规划相关论文。</li>
+<li><a href="./#2026-05-22/ai-ph">Product Hunt AI</a> — 看记忆、版本控制、沙盒执行这些产品信号。</li>
+<li><a href="./#2026-05-22/ai-hn">HN 社区动态</a> — 看社区为什么开始讨论长期成本和采用边界。</li>
+</ul>
+<hr>
+<blockquote>
+<p>本页由当天中文报告二次整理生成，目标是把趋势信号压缩成可以继续推进的产品方向。  </p>
+</blockquote>
+]]></content:encoded>
+    </item>
+    <item>
       <title>AI CLI 工具社区动态日报 2026-05-22</title>
-      <link>http://127.0.0.1:4173/#2026-05-22/ai-cli</link>
-      <guid isPermaLink="true">http://127.0.0.1:4173/#2026-05-22/ai-cli</guid>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-05-22/ai-cli</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-05-22/ai-cli</guid>
       <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
       <description>AI CLI 工具社区动态日报 2026-05-22 生成时间: 2026-05-22 00:25 UTC | 覆盖工具: 9 个 Claude Code OpenAI Codex Gemini CLI GitHub Copilot CLI Kimi Code CLI OpenCode Pi Qwen Code DeepSeek TUI Claude Code Skills 横向对比 好的，作为专注于 AI 开发工具生态的资深技术分析师，我将基于您提供的日报数据，生成一份横向对比分析报告。 AI CLI 工具生态横向对比分析报告 (2026-05-22) 1. 生态全景 当前 AI CLI 工具生态正经历 “从功能可用到生产就绪” 的激烈竞争阶段。一方面，各工具通过快速迭代新功能和模型接入来抢占市场（如 Goals、Daemon 模式、MCP 集成）；另一方面，稳定性与可靠性已成为社区最主要的呼声，从 Claude Code 的 Bash 回归漏洞到 Codex 的 Windows 启动崩溃，再到 Qwen Code 的内存泄漏，都表明产品质量（尤其是长会话处理、跨平台兼容性）是当前最...</description>
       <content:encoded><![CDATA[<h1>AI CLI 工具社区动态日报 2026-05-22</h1>
@@ -3028,8 +3295,8 @@
     </item>
     <item>
       <title>AI CLI Tools Digest 2026-05-22</title>
-      <link>http://127.0.0.1:4173/#2026-05-22/ai-cli-en</link>
-      <guid isPermaLink="true">http://127.0.0.1:4173/#2026-05-22/ai-cli-en</guid>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-05-22/ai-cli-en</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-05-22/ai-cli-en</guid>
       <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
       <description>AI CLI Tools Community Digest 2026-05-22 Generated: 2026-05-22 00:25 UTC | Tools covered: 9 Claude Code OpenAI Codex Gemini CLI GitHub Copilot CLI Kimi Code CLI OpenCode Pi Qwen Code DeepSeek TUI Claude Code Skills Cross-Tool Comparison Cross-Tool Comparison Report: AI CLI Developer Tools — 2026-05-22 1. Ecosystem Overview The AI CLI tools ecosystem continues accelerating, with six major open-source projects shipping releases or fixes this week. The competitive landscape is characterized by rapi...</description>
       <content:encoded><![CDATA[<h1>AI CLI Tools Community Digest 2026-05-22</h1>
@@ -5513,8 +5780,8 @@
     </item>
     <item>
       <title>AI Agents 生态日报 2026-05-22</title>
-      <link>http://127.0.0.1:4173/#2026-05-22/ai-agents</link>
-      <guid isPermaLink="true">http://127.0.0.1:4173/#2026-05-22/ai-agents</guid>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-05-22/ai-agents</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-05-22/ai-agents</guid>
       <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
       <description>OpenClaw 生态日报 2026-05-22 Issues: 500 | PRs: 500 | 覆盖项目: 13 个 | 生成时间: 2026-05-22 00:25 UTC OpenClaw NanoBot Hermes Agent PicoClaw NanoClaw NullClaw IronClaw LobsterAI TinyClaw Moltis CoPaw ZeptoClaw ZeroClaw OpenClaw 项目深度报告 OpenClaw 项目动态日报 | 2026-05-22 1. 今日速览 OpenClaw 今日呈现极高活跃度：24小时内 Issues 更新 500 条（95% 为活跃/新开，仅 25 条关闭），PR 更新 500 条（456 条待合并，合并率仅 8.8%），表明社区参与热情高涨但代码审查吞吐成为瓶颈。两个版本同日发布（含一个 beta），聚焦执行安全与 Discord 语音功能。值得关注的是，高优先级 Bug 密集涌现——过去48小时内创建的 P1 级问题涉及会话状态丢失、认证配置错误、Codex 运行时停滞等核心稳定性问题，项目正处于快速迭代...</description>
       <content:encoded><![CDATA[<h1>OpenClaw 生态日报 2026-05-22</h1>
@@ -9542,8 +9809,8 @@ PR 更新            11          ✅ 正常
     </item>
     <item>
       <title>AI Agents Ecosystem Digest 2026-05-22</title>
-      <link>http://127.0.0.1:4173/#2026-05-22/ai-agents-en</link>
-      <guid isPermaLink="true">http://127.0.0.1:4173/#2026-05-22/ai-agents-en</guid>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-05-22/ai-agents-en</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-05-22/ai-agents-en</guid>
       <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
       <description>OpenClaw Ecosystem Digest 2026-05-22 Issues: 500 | PRs: 500 | Projects covered: 13 | Generated: 2026-05-22 00:25 UTC OpenClaw NanoBot Hermes Agent PicoClaw NanoClaw NullClaw IronClaw LobsterAI TinyClaw Moltis CoPaw ZeptoClaw ZeroClaw OpenClaw Deep Dive OpenClaw Project Digest — 2026-05-22 1. Today&amp;#39;s Overview OpenClaw shows extremely high activity with 500 issues and 500 PRs updated in the last 24 hours, indicating a large, active contributor base and rapid development pace. However, the 95% ...</description>
       <content:encoded><![CDATA[<h1>OpenClaw Ecosystem Digest 2026-05-22</h1>
@@ -11809,8 +12076,8 @@ PR 更新            11          ✅ 正常
     </item>
     <item>
       <title>AI 开源趋势日报 2026-05-22</title>
-      <link>http://127.0.0.1:4173/#2026-05-22/ai-trending</link>
-      <guid isPermaLink="true">http://127.0.0.1:4173/#2026-05-22/ai-trending</guid>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-05-22/ai-trending</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-05-22/ai-trending</guid>
       <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
       <description>AI 开源趋势日报 2026-05-22 数据来源: GitHub Trending + GitHub Search API | 生成时间: 2026-05-22 00:25 UTC AI 开源趋势日报 | 2026-05-22 第一步：AI 相关性筛选 Trending 榜单排除项（非 AI 相关）： trimstray/the-book-of-secret-knowledge — 通用技术知识库 truelockmc/streambert — 影视流媒体工具 alireza0/s-ui — 网络代理面板 保留 16 个 AI 相关项目 + 主题搜索全部 80 个 AI 相关项目（去重后实际分析 88 个） 第二步：分类体系 维度 说明 🔧 AI 基础工具 框架、SDK、推理引擎、CLI 工具、开发环境 🤖 AI 智能体/工作流 Agent 框架、多智能体编排、自动化工作流、MCP 📦 AI 应用 垂直场景产品、具体应用实现 🧠 大模型/训练 模型训练、微调、推理优化、模型权重 🔍 RAG/知识库 向量数据库、检索增强、知识图谱、记忆层 第三步：AI 开源趋势日报 1. 今...</description>
       <content:encoded><![CDATA[<h1>AI 开源趋势日报 2026-05-22</h1>
@@ -12163,8 +12430,8 @@ PR 更新            11          ✅ 正常
     </item>
     <item>
       <title>AI Open Source Trends 2026-05-22</title>
-      <link>http://127.0.0.1:4173/#2026-05-22/ai-trending-en</link>
-      <guid isPermaLink="true">http://127.0.0.1:4173/#2026-05-22/ai-trending-en</guid>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-05-22/ai-trending-en</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-05-22/ai-trending-en</guid>
       <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
       <description>AI Open Source Trends 2026-05-22 Sources: GitHub Trending + GitHub Search API | Generated: 2026-05-22 00:25 UTC Here is the structured AI Open Source Trends Report for 2026-05-22. 1. Today&amp;#39;s Highlights The open-source ecosystem is undergoing a paradigm shift towards &amp;quot;Agent-Native&amp;quot; tooling. The single biggest signal today is the explosive growth of skill-based agent orchestration—projects like codegraph, andrej-karpathy-skills, and superpowers are not just gaining stars; they are re...</description>
       <content:encoded><![CDATA[<h1>AI Open Source Trends 2026-05-22</h1>
@@ -12231,8 +12498,8 @@ PR 更新            11          ✅ 正常
     </item>
     <item>
       <title>Hacker News AI 社区动态日报 2026-05-22</title>
-      <link>http://127.0.0.1:4173/#2026-05-22/ai-hn</link>
-      <guid isPermaLink="true">http://127.0.0.1:4173/#2026-05-22/ai-hn</guid>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-05-22/ai-hn</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-05-22/ai-hn</guid>
       <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
       <description>Hacker News AI 社区动态日报 2026-05-22 数据来源: Hacker News | 共 30 条 | 生成时间: 2026-05-22 00:25 UTC 好的，作为AI行业资讯分析师，以下是基于您提供的2026-05-22 Hacker News数据生成的《Hacker News AI 社区动态日报》。 《Hacker News AI 社区动态日报》 | 2026-05-22 1. 今日速览 今日HN社区AI讨论呈现“冰火两重天”之势。一方面，OpenAI即将IPO、Anthropic巨额投资数据中心等巨额资本动态成为绝对焦点；另一方面，开发者群体对AI生成内容质量的疲劳感、AI辅助编程导致工程师“过劳”的抱怨，以及对AI导致廉价智能手机消失的担忧，构成了强烈的“反噬”情绪。社区在高分帖中显示出对资本狂欢的警惕，并密集讨论AI对就业、产品和内容生态的实际影响。 2. 热门新闻与讨论 🔬 模型与研究 Multi-Stream LLMs: new paper on parallelizing/separating prompts, thinking, I/O 原文...</description>
       <content:encoded><![CDATA[<h1>Hacker News AI 社区动态日报 2026-05-22</h1>
@@ -12354,8 +12621,8 @@ PR 更新            11          ✅ 正常
     </item>
     <item>
       <title>Hacker News AI Community Digest 2026-05-22</title>
-      <link>http://127.0.0.1:4173/#2026-05-22/ai-hn-en</link>
-      <guid isPermaLink="true">http://127.0.0.1:4173/#2026-05-22/ai-hn-en</guid>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-05-22/ai-hn-en</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-05-22/ai-hn-en</guid>
       <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
       <description>Hacker News AI Community Digest 2026-05-22 Source: Hacker News | 30 stories | Generated: 2026-05-22 00:25 UTC Hacker News AI Community Digest — May 22, 2026 1. Today&amp;#39;s Highlights The HN community is intensely focused on OpenAI&amp;#39;s confidential IPO filing, with the news sparking widespread commentary on the company&amp;#39;s valuation trajectory and market timing alongside SpaceX&amp;#39;s concurrent filing. A growing backlash against AI-generated answers is gaining traction, reflecting mounting us...</description>
       <content:encoded><![CDATA[<h1>Hacker News AI Community Digest 2026-05-22</h1>
@@ -12443,8 +12710,8 @@ PR 更新            11          ✅ 正常
     </item>
     <item>
       <title>Product Hunt AI 产品日报 2026-05-22</title>
-      <link>http://127.0.0.1:4173/#2026-05-22/ai-ph</link>
-      <guid isPermaLink="true">http://127.0.0.1:4173/#2026-05-22/ai-ph</guid>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-05-22/ai-ph</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-05-22/ai-ph</guid>
       <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
       <description>Product Hunt AI 产品日报 2026-05-22 数据来源: Product Hunt | 共 16 个产品 | 生成时间: 2026-05-22 00:25 UTC 好的，这是为您生成的《Product Hunt AI 产品日报（2026-05-22）》。 Product Hunt AI 产品日报 | 2026-05-22 今日速览 今日 Product Hunt 的 AI 新品发布延续了“Agent 化”的浪潮，几乎所有爆款产品都在围绕“AI 智能体”进行构建或辅助。电商和营销自动化领域出现了高互动的头部产品，而开发者工具赛道则呈现百花齐放的态势，多个关于 Agent 版本控制、沙箱运行和记忆管理的项目涌现。值得注意的是，开源依然是开发者社区的重要趋势，多个上榜产品均选择开源。整体来看，行业正从单一的对话机器人转向更复杂、更自主、并与现有工作流深度集成的 Agent 生态。 热门产品 🤖 AI 智能体与助手 StoreClaw 简介：利用懂销售的 AI 智能体来提升店铺利润。 链接：Product Hunt | 官网 投票：633 | 评论：268 一句话：为电商卖...</description>
       <content:encoded><![CDATA[<h1>Product Hunt AI 产品日报 2026-05-22</h1>
@@ -12563,8 +12830,8 @@ PR 更新            11          ✅ 正常
     </item>
     <item>
       <title>Product Hunt AI Products Digest 2026-05-22</title>
-      <link>http://127.0.0.1:4173/#2026-05-22/ai-ph-en</link>
-      <guid isPermaLink="true">http://127.0.0.1:4173/#2026-05-22/ai-ph-en</guid>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-05-22/ai-ph-en</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-05-22/ai-ph-en</guid>
       <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
       <description>Product Hunt AI Products Digest 2026-05-22 Source: Product Hunt | 16 products | Generated: 2026-05-22 00:25 UTC Here is the structured Product Hunt AI Products Digest for 2026-05-22. 1. Today&amp;#39;s Highlights Today’s launches are dominated by the practical infrastructure for AI agents, moving beyond simple chatbots to solve enterprise “plumbing” problems like context persistence, version control, and permission management. StoreClaw and mailX led the charts with heavy community engagement, signa...</description>
       <content:encoded><![CDATA[<h1>Product Hunt AI Products Digest 2026-05-22</h1>
@@ -12639,8 +12906,8 @@ PR 更新            11          ✅ 正常
     </item>
     <item>
       <title>ArXiv AI 研究日报 2026-05-22</title>
-      <link>http://127.0.0.1:4173/#2026-05-22/ai-arxiv</link>
-      <guid isPermaLink="true">http://127.0.0.1:4173/#2026-05-22/ai-arxiv</guid>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-05-22/ai-arxiv</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-05-22/ai-arxiv</guid>
       <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
       <description>ArXiv AI 研究日报 2026-05-22 数据来源: ArXiv (cs.AI, cs.CL, cs.LG) | 共 50 篇论文 | 生成时间: 2026-05-22 00:25 UTC 好的，作为AI研究分析师，以下是基于您提供的2026年5月22日ArXiv论文列表生成的《ArXiv AI 研究日报》。 ArXiv AI 研究日报 (2026-05-22) 今日速览 今日论文揭示了几个关键趋势：强化学习（RL） 在大语言模型中的应用进入精细化阶段，出现了针对token级信用分配的算法（Delta）和对参数轨迹几何性质的分析（Rank-1 Trajectories）；智能体 研究更注重鲁棒性与安全，涌现了延迟优化的编译器式智能体（Agent JIT）和揭示奖励黑客行为的新基准（SpecBench）；此外，对AI生成的代码质量、模型的科学认知能力（如类比、服从性）的深入研究，标志着领域正从追求“能做”转向“做得可靠且可理解”。 重点论文 🧠 大语言模型（架构、训练、对齐、评估） You Only Need Minimal RLVR Training: Extrapolati...</description>
       <content:encoded><![CDATA[<h1>ArXiv AI 研究日报 2026-05-22</h1>
@@ -12784,8 +13051,8 @@ PR 更新            11          ✅ 正常
     </item>
     <item>
       <title>ArXiv AI Research Digest 2026-05-22</title>
-      <link>http://127.0.0.1:4173/#2026-05-22/ai-arxiv-en</link>
-      <guid isPermaLink="true">http://127.0.0.1:4173/#2026-05-22/ai-arxiv-en</guid>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-05-22/ai-arxiv-en</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-05-22/ai-arxiv-en</guid>
       <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
       <description>ArXiv AI Research Digest 2026-05-22 Source: ArXiv (cs.AI, cs.CL, cs.LG) | 50 papers | Generated: 2026-05-22 00:25 UTC Here is the structured ArXiv AI Research Digest for May 22, 2026. ArXiv AI Research Digest — 2026-05-22 1. Today&amp;#39;s Highlights Today’s submissions show a strong maturation of post-training methodologies for LLMs, with several papers providing geometric and theoretical explanations for the success of RLVR (Reinforcement Learning with Verifiable Rewards). A critical theme is the...</description>
       <content:encoded><![CDATA[<h1>ArXiv AI Research Digest 2026-05-22</h1>
@@ -12911,8 +13178,8 @@ Proposes a dynamic, closed-loop data mixing strategy for autonomous driving that
     </item>
     <item>
       <title>Hugging Face 热门模型日报 2026-05-22</title>
-      <link>http://127.0.0.1:4173/#2026-05-22/ai-hf</link>
-      <guid isPermaLink="true">http://127.0.0.1:4173/#2026-05-22/ai-hf</guid>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-05-22/ai-hf</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-05-22/ai-hf</guid>
       <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
       <description>Hugging Face 热门模型日报 2026-05-22 数据来源: Hugging Face Hub | 共 30 个模型 | 生成时间: 2026-05-22 00:25 UTC 好的，作为AI模型生态分析师，以下是为您整理的《Hugging Face 热门模型日报 (2026-05-22)》。 Hugging Face 热门模型日报 - 2026年5月22日 今日速览 今日 Hugging Face 生态呈现“双雄争霸”格局：DeepSeek-V4 系列与 Qwen3.6 系列均发布重磅更新，直接霸榜点赞与下载量前茅。DeepSeek-V4-Pro 以绝对优势领跑，而 Qwen3.6-35B-A3B 作为MoE模型吸引了大量关注。与此同时，Google Gemma-4 凭借海量下载成为社区最活跃的模型之一。多模态趋势持续升温，图像、视频生成模型及 AI 语音合成 工具表现亮眼。社区量化活动依然活跃，主要集中在 Qwen 系列模型的 GGUF 版本上。 热门模型 🧠 语言模型 (LLM、对话模型、指令微调) deepseek-ai/DeepSeek-V4-Pro 作者: de...</description>
       <content:encoded><![CDATA[<h1>Hugging Face 热门模型日报 2026-05-22</h1>
@@ -13051,8 +13318,8 @@ Proposes a dynamic, closed-loop data mixing strategy for autonomous driving that
     </item>
     <item>
       <title>Hugging Face Trending Models Digest 2026-05-22</title>
-      <link>http://127.0.0.1:4173/#2026-05-22/ai-hf-en</link>
-      <guid isPermaLink="true">http://127.0.0.1:4173/#2026-05-22/ai-hf-en</guid>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-05-22/ai-hf-en</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-05-22/ai-hf-en</guid>
       <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
       <description>Hugging Face Trending Models Digest 2026-05-22 Source: Hugging Face Hub | 30 models | Generated: 2026-05-22 00:25 UTC Here is the Hugging Face Trending Models Digest for 2026-05-22. 1. Today&amp;#39;s Highlights This week’s trending models reveal a clear shift toward multimodal, vision-language systems and ultra-efficient quantized MoE architectures. DeepSeek-V4 commands the largest absolute attention with both its Pro and Flash variants, while Qwen’s MoE-based 35B-A3B continues to dominate download...</description>
       <content:encoded><![CDATA[<h1>Hugging Face Trending Models Digest 2026-05-22</h1>
@@ -13154,8 +13421,8 @@ Preview of Intern&#39;s updated vision-language model; a contender in the open m
     </item>
     <item>
       <title>技术社区 AI 动态日报 2026-05-22</title>
-      <link>http://127.0.0.1:4173/#2026-05-22/ai-community</link>
-      <guid isPermaLink="true">http://127.0.0.1:4173/#2026-05-22/ai-community</guid>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-05-22/ai-community</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-05-22/ai-community</guid>
       <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
       <description>技术社区 AI 动态日报 2026-05-22 数据来源: Dev.to (30 篇) + Lobste.rs (10 条) | 生成时间: 2026-05-22 00:25 UTC 好的，这是为您生成的《技术社区 AI 动态日报》。 技术社区 AI 动态日报 | 2026-05-22 1. 今日速览 今日技术社区围绕 AI 的讨论呈现出明显的两极分化：一方面是开发者大规模使用 AI agent 进行代码生成和系统构建的热情高涨，涌现出多篇“Agent 数量庞大、成本极低”的实践分享；另一方面，社区也深刻反思了 AI 带来的职业疲劳、代码质量与工程伦理问题。同时，Google I/O 2026 的余热未消，关于 Gemini 3.5 Flash 和 Agent 新能力的探讨成为 Dev.to 的主旋律。此外，Lobste.rs 上出现了一篇“拒绝使用 LLM 进行分类”的技术文章，引发了“是否要用 AI 解决所有问题”的深层讨论。 2. Dev.to 精选 Building a Database Performance Testing Tool With AI: The Honest ...</description>
       <content:encoded><![CDATA[<h1>技术社区 AI 动态日报 2026-05-22</h1>
@@ -13315,8 +13582,8 @@ Preview of Intern&#39;s updated vision-language model; a contender in the open m
     </item>
     <item>
       <title>Tech Community AI Digest 2026-05-22</title>
-      <link>http://127.0.0.1:4173/#2026-05-22/ai-community-en</link>
-      <guid isPermaLink="true">http://127.0.0.1:4173/#2026-05-22/ai-community-en</guid>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-05-22/ai-community-en</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-05-22/ai-community-en</guid>
       <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
       <description>Tech Community AI Digest 2026-05-22 Sources: Dev.to (30 articles) + Lobste.rs (10 stories) | Generated: 2026-05-22 00:25 UTC Here is the structured Tech Community AI Digest for May 22, 2026. 1. Today&amp;#39;s Highlights The AI conversation today is dominated by the practical hangover of rapid tooling shifts. Dev.to is buzzing with Google I/O 2026 aftermath, specifically around agent architectures, massive token budgets, and the realization that AI coding agents often write code like it’s 2019. Mean...</description>
       <content:encoded><![CDATA[<h1>Tech Community AI Digest 2026-05-22</h1>
@@ -13424,8 +13691,8 @@ Preview of Intern&#39;s updated vision-language model; a contender in the open m
     </item>
     <item>
       <title>AI CLI 工具社区动态日报 2026-05-21</title>
-      <link>http://127.0.0.1:4173/#2026-05-21/ai-cli</link>
-      <guid isPermaLink="true">http://127.0.0.1:4173/#2026-05-21/ai-cli</guid>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-05-21/ai-cli</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-05-21/ai-cli</guid>
       <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
       <description>AI CLI 工具社区动态日报 2026-05-21 生成时间: 2026-05-21 00:26 UTC | 覆盖工具: 9 个 Claude Code OpenAI Codex Gemini CLI GitHub Copilot CLI Kimi Code CLI OpenCode Pi Qwen Code DeepSeek TUI Claude Code Skills 横向对比 AI CLI 工具生态横向对比分析报告 | 2026-05-21 1. 生态全景 当前 AI CLI 工具生态呈现**&amp;quot;稳定性还债期&amp;quot;与&amp;quot;平台化突围&amp;quot;并存的格局：头部工具（Claude Code、Codex）因快速迭代积累大量回归问题，社区情绪从功能兴奋转向质量焦虑；二线工具（Gemini CLI、Qwen Code、DeepSeek-TUI）正经历从&amp;quot;能用&amp;quot;到&amp;quot;可信&amp;quot;的关键跃迁，内存安全与长会话可靠性成为共同瓶颈；与此同时，可插拔架构（Pi 的 Extension API、DeepSeek-TUI 的 Tool Regist...</description>
       <content:encoded><![CDATA[<h1>AI CLI 工具社区动态日报 2026-05-21</h1>
@@ -16050,8 +16317,8 @@ Preview of Intern&#39;s updated vision-language model; a contender in the open m
     </item>
     <item>
       <title>AI CLI Tools Digest 2026-05-21</title>
-      <link>http://127.0.0.1:4173/#2026-05-21/ai-cli-en</link>
-      <guid isPermaLink="true">http://127.0.0.1:4173/#2026-05-21/ai-cli-en</guid>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-05-21/ai-cli-en</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-05-21/ai-cli-en</guid>
       <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
       <description>AI CLI Tools Community Digest 2026-05-21 Generated: 2026-05-21 00:26 UTC | Tools covered: 9 Claude Code OpenAI Codex Gemini CLI GitHub Copilot CLI Kimi Code CLI OpenCode Pi Qwen Code DeepSeek TUI Claude Code Skills Cross-Tool Comparison Cross-Tool AI CLI Ecosystem Report — 2026-05-21 1. Ecosystem Overview The AI CLI tools landscape is maturing rapidly with divergent architectural philosophies: agent-centric tools (Claude Code, Gemini CLI, DeepSeek TUI) battle reliability challenges at scale, whi...</description>
       <content:encoded><![CDATA[<h1>AI CLI Tools Community Digest 2026-05-21</h1>
@@ -18416,8 +18683,8 @@ Preview of Intern&#39;s updated vision-language model; a contender in the open m
     </item>
     <item>
       <title>AI Agents 生态日报 2026-05-21</title>
-      <link>http://127.0.0.1:4173/#2026-05-21/ai-agents</link>
-      <guid isPermaLink="true">http://127.0.0.1:4173/#2026-05-21/ai-agents</guid>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-05-21/ai-agents</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-05-21/ai-agents</guid>
       <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
       <description>OpenClaw 生态日报 2026-05-21 Issues: 500 | PRs: 500 | 覆盖项目: 13 个 | 生成时间: 2026-05-21 00:26 UTC OpenClaw NanoBot Hermes Agent PicoClaw NanoClaw NullClaw IronClaw LobsterAI TinyClaw Moltis CoPaw ZeptoClaw ZeroClaw OpenClaw 项目深度报告 OpenClaw 项目动态日报 | 2026-05-21 1. 今日速览 OpenClaw 今日维持极高活跃度，24小时内 Issues 与 PR 各更新 500 条，但合并吞吐量偏低（PR 合并率仅 4.6%，23/500），表明社区贡献旺盛但代码审查成为瓶颈。3 个新版本发布聚焦 Discord 语音会话稳定性与依赖安全更新。核心风险领域集中在：密钥安全暴露（多个关联 Issue/PR 同时推进）、消息投递可靠性（Discord/Telegram 通道存在静默丢失问题）、以及 MCP 工具注册回归（跨版本持续故障）。项目健康度评分：B+（活跃度...</description>
       <content:encoded><![CDATA[<h1>OpenClaw 生态日报 2026-05-21</h1>
@@ -22604,8 +22871,8 @@ Preview of Intern&#39;s updated vision-language model; a contender in the open m
     </item>
     <item>
       <title>AI Agents Ecosystem Digest 2026-05-21</title>
-      <link>http://127.0.0.1:4173/#2026-05-21/ai-agents-en</link>
-      <guid isPermaLink="true">http://127.0.0.1:4173/#2026-05-21/ai-agents-en</guid>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-05-21/ai-agents-en</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-05-21/ai-agents-en</guid>
       <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
       <description>OpenClaw Ecosystem Digest 2026-05-21 Issues: 500 | PRs: 500 | Projects covered: 13 | Generated: 2026-05-21 00:26 UTC OpenClaw NanoBot Hermes Agent PicoClaw NanoClaw NullClaw IronClaw LobsterAI TinyClaw Moltis CoPaw ZeptoClaw ZeroClaw OpenClaw Deep Dive OpenClaw Project Digest — 2026-05-21 1. Today&amp;#39;s Overview OpenClaw shows extremely high activity with 500 issues and 500 PRs updated in the last 24 hours, indicating a mature, fast-moving project with substantial community engagement. However, ...</description>
       <content:encoded><![CDATA[<h1>OpenClaw Ecosystem Digest 2026-05-21</h1>
@@ -26412,8 +26679,8 @@ Preview of Intern&#39;s updated vision-language model; a contender in the open m
     </item>
     <item>
       <title>AI 官方内容追踪报告 2026-05-21</title>
-      <link>http://127.0.0.1:4173/#2026-05-21/ai-web</link>
-      <guid isPermaLink="true">http://127.0.0.1:4173/#2026-05-21/ai-web</guid>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-05-21/ai-web</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-05-21/ai-web</guid>
       <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
       <description>AI 官方内容追踪报告 2026-05-21 今日更新 | 新增内容: 5 篇 | 生成时间: 2026-05-21 00:26 UTC 数据来源: Anthropic: anthropic.com — 新增 3 篇（sitemap 共 361 条） OpenAI: openai.com — 新增 2 篇（sitemap 共 823 条） AI 官方内容追踪报告 | 2026-05-21 报告周期：2026-05-20 增量更新分析对象：Anthropic（Claude）&amp;amp; OpenAI 官网内容 1. 今日速览 Anthropic 今日密集释放三重信号：可解释性技术实现突破性飞跃（Natural Language Autoencoders 首次将模型激活值直接转译为可读自然语言）、安全对齐进入&amp;quot;后完美评分&amp;quot;叙事阶段（自 Haiku 4.5 起所有 Claude 模型在 agentic misalignment 评估中达到零失误），以及AI 治理话语体系向人文传统主动开放（与 15+ 宗教及跨文化群体展开对话）。OpenAI 方面数据极度受限，仅有一条 UR...</description>
       <content:encoded><![CDATA[<h1>AI 官方内容追踪报告 2026-05-21</h1>
@@ -26612,8 +26879,8 @@ Preview of Intern&#39;s updated vision-language model; a contender in the open m
     </item>
     <item>
       <title>Official AI Content Report 2026-05-21</title>
-      <link>http://127.0.0.1:4173/#2026-05-21/ai-web-en</link>
-      <guid isPermaLink="true">http://127.0.0.1:4173/#2026-05-21/ai-web-en</guid>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-05-21/ai-web-en</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-05-21/ai-web-en</guid>
       <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
       <description>Official AI Content Report 2026-05-21 Today&amp;#39;s update | New content: 5 articles | Generated: 2026-05-21 00:26 UTC Sources: Anthropic: anthropic.com — 3 new articles (sitemap total: 361) OpenAI: openai.com — 2 new articles (sitemap total: 823) AI Official Content Tracking Report Date: May 21, 2026 | Sources: Anthropic (claude.com, anthropic.com), OpenAI (openai.com) 1. Today&amp;#39;s Highlights Anthropic delivered a substantial triple-release focused on interpretability breakthroughs, alignment t...</description>
       <content:encoded><![CDATA[<h1>Official AI Content Report 2026-05-21</h1>
@@ -26770,8 +27037,8 @@ Preview of Intern&#39;s updated vision-language model; a contender in the open m
     </item>
     <item>
       <title>AI 开源趋势日报 2026-05-21</title>
-      <link>http://127.0.0.1:4173/#2026-05-21/ai-trending</link>
-      <guid isPermaLink="true">http://127.0.0.1:4173/#2026-05-21/ai-trending</guid>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-05-21/ai-trending</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-05-21/ai-trending</guid>
       <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
       <description>AI 开源趋势日报 2026-05-21 数据来源: GitHub Trending + GitHub Search API | 生成时间: 2026-05-21 00:26 UTC AI 开源趋势日报 | 2026-05-21 第一步：AI 相关性过滤 Trending 榜单过滤结果：17 个项目中，排除 4 个非 AI 项目（OpenToonz 动画软件、Streambert 影视下载工具、files.md 笔记应用、OpenWA WhatsApp API），保留 13 个 AI 相关项目。 第二步：多维分类 项目 主要类别 次要类别 codegraph 🔧 AI 基础工具 🤖 AI 智能体/工作流 academic-research-skills 🤖 AI 智能体/工作流 📦 AI 应用 openhuman 📦 AI 应用 🧠 大模型/训练 andrej-karpathy-skills 🔧 AI 基础工具 🤖 AI 智能体/工作流 ai-engineering-from-scratch 🧠 大模型/训练 🔧 AI 基础工具 CLI-Anything 🔧 AI...</description>
       <content:encoded><![CDATA[<h1>AI 开源趋势日报 2026-05-21</h1>
@@ -27118,8 +27385,8 @@ Preview of Intern&#39;s updated vision-language model; a contender in the open m
     </item>
     <item>
       <title>AI Open Source Trends 2026-05-21</title>
-      <link>http://127.0.0.1:4173/#2026-05-21/ai-trending-en</link>
-      <guid isPermaLink="true">http://127.0.0.1:4173/#2026-05-21/ai-trending-en</guid>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-05-21/ai-trending-en</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-05-21/ai-trending-en</guid>
       <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
       <description>AI Open Source Trends 2026-05-21 Sources: GitHub Trending + GitHub Search API | Generated: 2026-05-21 00:26 UTC AI Open Source Trends Report — May 21, 2026 1. Today&amp;#39;s Highlights Today&amp;#39;s GitHub trending reveals an explosive surge in &amp;quot;agent harness&amp;quot; tooling — infrastructure designed to augment and control AI coding agents like Claude Code, Codex, and Cursor. codegraph (+2,123 stars) and rohitg00/agentmemory (+1,080 stars) exemplify a shift toward persistent, local-first context m...</description>
       <content:encoded><![CDATA[<h1>AI Open Source Trends 2026-05-21</h1>
@@ -27368,551 +27635,6 @@ Preview of Intern&#39;s updated vision-language model; a contender in the open m
 <hr>
 <hr>
 <p><em>This digest is auto-generated by <a href="https://github.com/duanyytop/agents-radar">agents-radar</a>.</em></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Hacker News AI 社区动态日报 2026-05-21</title>
-      <link>http://127.0.0.1:4173/#2026-05-21/ai-hn</link>
-      <guid isPermaLink="true">http://127.0.0.1:4173/#2026-05-21/ai-hn</guid>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <description>Hacker News AI 社区动态日报 2026-05-21 数据来源: Hacker News | 共 30 条 | 生成时间: 2026-05-21 00:26 UTC Hacker News AI 社区动态日报 | 2026-05-21 一、今日速览 今日 HN 社区最重磅的话题是 OpenAI 模型在离散几何领域取得突破性数学成果，以 656 分、464 条评论的压倒性热度登顶，引发关于 AI 数学推理能力的激烈辩论。与此同时，OpenAI IPO 传闻密集发酵，华尔街日报、纽约时报、CNBC 等多家媒体跟进报道，但社区反应冷淡甚至质疑。Anthropic 方面则传来扩容 Colossus2 和 Andrej Karpathy 加盟的利好消息，形成&amp;quot;OpenAI vs Anthropic&amp;quot;的双雄叙事张力。整体情绪呈现 &amp;quot;技术兴奋与商业审慎并存&amp;quot; 的特征。 二、热门新闻与讨论 🔬 模型与研究 # 内容 数据 一句话解读 1 An OpenAI model has disproved a central conjecture in di...</description>
-      <content:encoded><![CDATA[<h1>Hacker News AI 社区动态日报 2026-05-21</h1>
-<blockquote>
-<p>数据来源: <a href="https://news.ycombinator.com/">Hacker News</a> | 共 30 条 | 生成时间: 2026-05-21 00:26 UTC</p>
-</blockquote>
-<hr>
-<h1>Hacker News AI 社区动态日报 | 2026-05-21</h1>
-<hr>
-<h2>一、今日速览</h2>
-<p>今日 HN 社区最重磅的话题是 <strong>OpenAI 模型在离散几何领域取得突破性数学成果</strong>，以 656 分、464 条评论的压倒性热度登顶，引发关于 AI 数学推理能力的激烈辩论。与此同时，<strong>OpenAI IPO 传闻密集发酵</strong>，华尔街日报、纽约时报、CNBC 等多家媒体跟进报道，但社区反应冷淡甚至质疑。Anthropic 方面则传来扩容 Colossus2 和 Andrej Karpathy 加盟的利好消息，形成&quot;OpenAI vs Anthropic&quot;的双雄叙事张力。整体情绪呈现 <strong>&quot;技术兴奋与商业审慎并存&quot;</strong> 的特征。</p>
-<hr>
-<h2>二、热门新闻与讨论</h2>
-<h3>🔬 模型与研究</h3>
-<table>
-<thead>
-<tr>
-<th>#</th>
-<th>内容</th>
-<th>数据</th>
-<th>一句话解读</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1</td>
-<td><strong><a href="https://openai.com/index/model-disproves-discrete-geometry-conjecture/">An OpenAI model has disproved a central conjecture in discrete geometry</a></strong><br><a href="https://news.ycombinator.com/item?id=48212493">HN 讨论</a></td>
-<td><strong>656 分 / 464 评论</strong></td>
-<td>社区核心争议：这是&quot;真正的数学突破&quot;还是&quot;暴力搜索+人类包装&quot;？高评论数反映深度分歧，部分评论质疑可解释性与学术诚信</td>
-</tr>
-<tr>
-<td>2</td>
-<td><strong><a href="https://vmax.ai/team/populora-co-evolving-llm-populations-for-reasoning-self-play">PopuLoRA: Co-Evolving LLM Populations for Reasoning Self-Play</a></strong><br><a href="https://news.ycombinator.com/item?id=48214188">HN 讨论</a></td>
-<td>31 分 / 6 评论</td>
-<td>群体进化+自博弈的 LoRA 训练新范式，社区关注其实际训练成本与可复现性</td>
-</tr>
-<tr>
-<td>3</td>
-<td><strong><a href="https://www.reuters.com/business/fears-unfettered-hacking-spurred-by-anthropics-mythos-ai-model-overstated-2026-05-20/">Fears of unfettered hacking spurred by Anthropic&#39;s Mythos AI model overstated</a></strong><br><a href="https://news.ycombinator.com/item?id=48210142">HN 讨论</a></td>
-<td>5 分 / 0 评论</td>
-<td>路透社为 Anthropic 的 Mythos 模型&quot;降温&quot;，但零评论显示社区对此话题已疲劳或持保留态度</td>
-</tr>
-</tbody></table>
-<h3>🛠️ 工具与工程</h3>
-<table>
-<thead>
-<tr>
-<th>#</th>
-<th>内容</th>
-<th>数据</th>
-<th>一句话解读</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1</td>
-<td><strong><a href="https://zfhuang99.github.io/rust/claude%20code/codex/contracts/spec-driven%20development/2025/12/01/rust-with-ai.html">Learnings from 100K lines of Rust with AI (2025)</a></strong><br><a href="https://news.ycombinator.com/item?id=48205415">HN 讨论</a></td>
-<td><strong>126 分 / 131 评论</strong></td>
-<td>高分高评论的实战长文，社区热议&quot;规约驱动开发&quot;（spec-driven development）在 Rust 中的落地，典型评论聚焦 AI 生成代码的维护成本与类型系统的协同</td>
-</tr>
-<tr>
-<td>2</td>
-<td><strong><a href="https://github.com/ueberdosis/hocuspocus">Show HN: Hocuspocus 4 – self-hosted Yjs collaboration backend</a></strong><br><a href="https://news.ycombinator.com/item?id=48208834">HN 讨论</a></td>
-<td>32 分 / 3 评论</td>
-<td>自托管协作后端升级，低评论反映技术导向明确但社区对 CRDT 基础设施关注度有限</td>
-</tr>
-<tr>
-<td>3</td>
-<td><strong><a href="https://github.com/mupt-ai/dari-docs">Show HN: Dari-docs – Optimize your docs using parallel coding agents</a></strong><br><a href="https://news.ycombinator.com/item?id=48210615">HN 讨论</a></td>
-<td>14 分 / 4 评论</td>
-<td>并行 Agent 优化文档的实验性工具，社区关注其是否优于传统文档生成方案</td>
-</tr>
-<tr>
-<td>4</td>
-<td><strong><a href="https://theahmadosman.substack.com/p/gpu-memory-math-for-llms-2026-edition">GPU Memory Math for LLMs: Formula That Tells You What Fits on Your GPU</a></strong><br><a href="https://news.ycombinator.com/item?id=48214084">HN 讨论</a></td>
-<td>8 分 / 2 评论</td>
-<td>2026 版显存计算公式，实用但社区反馈稀疏，可能因同类工具已泛滥</td>
-</tr>
-<tr>
-<td>5</td>
-<td><strong><a href="https://github.com/receptron/mulmoclaude">Show HN: MulmoClaude – open-source platform where Claude composes tools and GUIs</a></strong><br><a href="https://news.ycombinator.com/item?id=48208997">HN 讨论</a></td>
-<td>4 分 / 0 评论</td>
-<td>Claude 动态组合工具与 GUI 的开源尝试，零评论暗示&quot;AI 生成 UI&quot;赛道同质化严重</td>
-</tr>
-</tbody></table>
-<h3>🏢 产业动态</h3>
-<table>
-<thead>
-<tr>
-<th>#</th>
-<th>内容</th>
-<th>数据</th>
-<th>一句话解读</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1</td>
-<td><strong><a href="https://www.wsj.com/tech/ai/openai-is-preparing-to-file-for-an-ipo-very-soon-0ec95af5">OpenAI Is Preparing to File for an IPO Soon</a></strong><br><a href="https://news.ycombinator.com/item?id=48210226">HN 讨论</a></td>
-<td><strong>66 分 / 65 评论</strong></td>
-<td>社区情绪偏负面：质疑 Sam Altman 的治理结构、非营利转营利合法性，以及&quot;非常 soon&quot;的模糊表述</td>
-</tr>
-<tr>
-<td>2</td>
-<td><strong><a href="https://xcancel.com/nottombrown/status/2057194829986300375">Anthropic is expanding to Colossus2. Will use GB200</a></strong><br><a href="https://news.ycombinator.com/item?id=48214017">HN 讨论</a></td>
-<td>30 分 / 14 评论</td>
-<td>对比 OpenAI 的&quot;叙事透支&quot;，Anthropic 的硬件扩容获相对正面评价，GB200 选型引发对 Nvidia 供应链的讨论</td>
-</tr>
-<tr>
-<td>3</td>
-<td><strong><a href="https://www.wsj.com/tech/ai/mind-blowing-growth-is-about-to-propel-anthropic-into-its-first-profitable-quarter-7edbf2f4">Mind-Blowing Growth Is About to Propel Anthropic into First Profitable Quarter</a></strong><br><a href="https://news.ycombinator.com/item?id=48214843">HN 讨论</a></td>
-<td>16 分 / 4 评论</td>
-<td>&quot;Mind-blowing&quot;标题遭社区调侃，低评论数显示对 AI 公司盈利叙事已脱敏</td>
-</tr>
-<tr>
-<td>4</td>
-<td><strong><a href="https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/">OpenAI co-founder Andrej Karpathy joins Anthropic</a></strong><br><a href="https://news.ycombinator.com/item?id=48213052">HN 讨论</a></td>
-<td>5 分 / 0 评论</td>
-<td>重磅人事变动却零评论，可能因发布时间或社区对&quot;明星工程师跳槽&quot;话题疲劳</td>
-</tr>
-<tr>
-<td>5</td>
-<td><strong><a href="https://www.semafor.com/article/05/20/2026/nvidia-commits-90-billion-to-ai-deals">Nvidia commits $90B to AI deals</a></strong><br><a href="https://news.ycombinator.com/item?id=48214739">HN 讨论</a></td>
-<td>6 分 / 1 评论</td>
-<td>巨额资本承诺仅获冷淡反响，单条评论质疑其反垄断风险</td>
-</tr>
-</tbody></table>
-<h3>💬 观点与争议</h3>
-<table>
-<thead>
-<tr>
-<th>#</th>
-<th>内容</th>
-<th>数据</th>
-<th>一句话解读</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1</td>
-<td><strong><a href="https://www.wsj.com/opinion/how-i-choose-which-cloudflare-employees-to-replace-with-ai-40a197e5">Cloudflare CEO on how he chooses which employees to replace with AI</a></strong><br><a href="https://news.ycombinator.com/item?id=48214617">HN 讨论</a></td>
-<td>29 分 / 18 评论</td>
-<td>CEO 亲述&quot;AI 替代决策&quot;引发强烈反弹，典型评论批评其将人工具化、忽视组织知识流失</td>
-</tr>
-<tr>
-<td>2</td>
-<td><strong><a href="https://www.thealgorithmicbridge.com/p/how-america-turned-against-ai-according">America Turned Against AI According to the Poll Data: A Very Big Compilation</a></strong><br><a href="https://news.ycombinator.com/item?id=48214348">HN 讨论</a></td>
-<td>18 分 / 0 评论</td>
-<td>民调数据汇编显示公众 AI 态度转负，零评论或反映社区对&quot;反 AI 叙事&quot;的回避或认同疲劳</td>
-</tr>
-<tr>
-<td>3</td>
-<td><strong><a href="https://www.404media.co/township-leader-resigns-in-tears-over-openai-data-center-death-threats/">Township Leader Resigns in Tears over OpenAI Data Center Death Threats</a></strong><br><a href="https://news.ycombinator.com/item?id=48210645">HN 讨论</a></td>
-<td>6 分 / 0 评论</td>
-<td>AI 基础设施建设的社区冲突极端化，零评论显示此类社会代价易被技术讨论边缘化</td>
-</tr>
-<tr>
-<td>4</td>
-<td><strong><a href="https://www.nytimes.com/2026/05/19/business/china-ai-unemployment.html">China Wants A.I. To Flourish, but Not at the Expense of Jobs</a></strong><br><a href="https://news.ycombinator.com/item?id=48215391">HN 讨论</a></td>
-<td>5 分 / 4 评论</td>
-<td>中美 AI 就业政策对比，社区评论分化于&quot;效率优先&quot;与&quot;社会契约&quot;立场</td>
-</tr>
-<tr>
-<td>5</td>
-<td><strong><a href="https://news.ycombinator.com/item?id=48202774">Ask HN: What are Stainless users doing now that Anthropic has killed it?</a></strong><br><a href="https://news.ycombinator.com/item?id=48202774">HN 讨论</a></td>
-<td>5 分 / 3 评论</td>
-<td>典型 HN 式实用焦虑：Anthropic 产品策略突变后的迁移困境，评论提供替代方案</td>
-</tr>
-</tbody></table>
-<hr>
-<h2>三、社区情绪信号</h2>
-<p>今日 HN AI 讨论的 <strong>情绪光谱显著分化</strong>：技术突破类话题（OpenAI 几何猜想）呈现 <strong>&quot;高热度高争议&quot;</strong> 特征，464 条评论中充斥着对&quot;AI 是否真正理解数学&quot;的哲学辩论与方法论质疑，这与上周期的&quot;基准测试刷榜&quot;叙事形成对比——社区更关注<strong>成果的可解释性与人类角色</strong>。产业新闻方面，OpenAI IPO 的多源报道遭遇 <strong>&quot;叙事疲劳&quot;</strong>：尽管 4 条相关帖子合计超 100 分，但评论普遍质疑时机与动机，甚至出现 <a href="https://www.youtube.com/watch?v=CkDKmSMvfmk">讽刺视频</a>（#9）调侃其数据中心争议。值得注意的是，<strong>Anthropic 正成为&quot;反 OpenAI&quot;的情绪锚点</strong>，从 Karpathy 加盟到 Colossus2 扩容，社区对其技术路线的信任度明显高于商业化叙事。整体关注方向从&quot;模型能力展示&quot;转向 <strong>&quot;AI 的社会成本与治理结构&quot;</strong>，Cloudflare CEO 的裁员言论和中国就业政策均触及这一脉络。</p>
-<hr>
-<h2>四、值得深读</h2>
-<table>
-<thead>
-<tr>
-<th align="center">优先级</th>
-<th>内容</th>
-<th>推荐理由</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">⭐⭐⭐</td>
-<td><strong><a href="https://zfhuang99.github.io/rust/claude%20code/codex/contracts/spec-driven%20development/2025/12/01/rust-with-ai.html">Learnings from 100K lines of Rust with AI</a></strong></td>
-<td><strong>工程实践稀缺样本</strong>：10 万行代码量级的 AI 辅助 Rust 开发复盘，&quot;规约驱动开发&quot;方法论对正在探索 AI 编码工作流的团队有直接参考价值。131 条评论中的质量讨论（如类型系统与 LLM 的协同、测试策略）构成社区智慧补充</td>
-</tr>
-<tr>
-<td align="center">⭐⭐⭐</td>
-<td><strong><a href="https://openai.com/index/model-disproves-discrete-geometry-conjecture/">An OpenAI model has disproved a central conjecture in discrete geometry</a></strong></td>
-<td><strong>范式争议的风暴眼</strong>：无论最终评价如何，这是 AI 数学研究的标志性事件。464 条评论中混杂着领域专家的技术质疑、哲学层面的&quot;理解&quot;辩论，以及 OpenAI 公关策略的分析，是观察 HN 社区如何&quot;集体审阅&quot;突破性声明的绝佳文本</td>
-</tr>
-<tr>
-<td align="center">⭐⭐</td>
-<td><strong><a href="https://www.wsj.com/opinion/how-i-choose-which-cloudflare-employees-to-replace-with-ai-40a197e5">Cloudflare CEO on how he chooses which employees to replace with AI</a></strong></td>
-<td><strong>管理伦理的反面教材</strong>：虽非技术内容，但其引发的 18 条评论精准捕捉了技术社区对&quot;AI 替代叙事&quot;的抵触边界——关键不在于效率计算，而在于<strong>决策透明性与组织信任</strong>的崩塌风险，对 AI 产品管理者有警示意义</td>
-</tr>
-</tbody></table>
-<hr>
-<p><em>日报基于 2026-05-21 Hacker News 抓取数据生成 | 共 30 条 AI 相关帖子</em></p>
-<hr>
-<p><em>本日报由 <a href="https://github.com/duanyytop/agents-radar">agents-radar</a> 自动生成。</em></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Hacker News AI Community Digest 2026-05-21</title>
-      <link>http://127.0.0.1:4173/#2026-05-21/ai-hn-en</link>
-      <guid isPermaLink="true">http://127.0.0.1:4173/#2026-05-21/ai-hn-en</guid>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <description>Hacker News AI Community Digest 2026-05-21 Source: Hacker News | 30 stories | Generated: 2026-05-21 00:26 UTC Hacker News AI Community Digest — May 21, 2026 1. Today&amp;#39;s Highlights The Hacker News AI community is buzzing over OpenAI&amp;#39;s mathematical breakthrough, with a model disproving a long-standing conjecture in discrete geometry dominating discussion (656 points, 464 comments). Simultaneously, news of OpenAI&amp;#39;s imminent IPO filing—reported across multiple outlets—has sparked intense ...</description>
-      <content:encoded><![CDATA[<h1>Hacker News AI Community Digest 2026-05-21</h1>
-<blockquote>
-<p>Source: <a href="https://news.ycombinator.com/">Hacker News</a> | 30 stories | Generated: 2026-05-21 00:26 UTC</p>
-</blockquote>
-<hr>
-<h1>Hacker News AI Community Digest — May 21, 2026</h1>
-<hr>
-<h2>1. Today&#39;s Highlights</h2>
-<p>The Hacker News AI community is buzzing over OpenAI&#39;s mathematical breakthrough, with a model disproving a long-standing conjecture in discrete geometry dominating discussion (656 points, 464 comments). Simultaneously, news of OpenAI&#39;s imminent IPO filing—reported across multiple outlets—has sparked intense speculation about valuation, governance, and market timing. The community shows deep skepticism toward AI hype cycles, with high engagement on critical pieces about public sentiment turning against AI and Cloudflare&#39;s controversial AI-driven layoffs. Anthropic continues to gain momentum with Karpathy&#39;s hiring and near-profitability news, while engineering-focused posts on Rust-with-AI workflows and GPU memory optimization reflect persistent practitioner interest in building efficiently.</p>
-<hr>
-<h2>2. Top News &amp; Discussions</h2>
-<h3>🔬 Models &amp; Research</h3>
-<table>
-<thead>
-<tr>
-<th>Title</th>
-<th>Score</th>
-<th>Comments</th>
-<th>Why It Matters / Community Reaction</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://openai.com/index/model-disproves-discrete-geometry-conjecture/"><strong>An OpenAI model has disproved a central conjecture in discrete geometry</strong></a> — <a href="https://news.ycombinator.com/item?id=48212493">Discussion</a></td>
-<td>656</td>
-<td>464</td>
-<td>Historic moment for AI-assisted mathematics; community debates whether this represents genuine model reasoning or sophisticated search, with many demanding transparency on methodology</td>
-</tr>
-<tr>
-<td><a href="https://vmax.ai/team/populora-co-evolving-llm-populations-for-reasoning-self-play"><strong>PopuLoRA: Co-Evolving LLM Populations for Reasoning Self-Play</strong></a> — <a href="https://news.ycombinator.com/item?id=48214188">Discussion</a></td>
-<td>31</td>
-<td>6</td>
-<td>Novel evolutionary approach to LLM training; niche but appreciated by researchers for moving beyond single-model scaling</td>
-</tr>
-<tr>
-<td><a href="https://www.reuters.com/business/fears-unfettered-hacking-spurred-by-anthropics-mythos-ai-model-overstated-2026-05-20/"><strong>Fears of unfettered hacking spurred by Anthropic&#39;s Mythos AI model overstated</strong></a> — <a href="https://news.ycombinator.com/item?id=48210142">Discussion</a></td>
-<td>5</td>
-<td>0</td>
-<td>Reflects ongoing tension between AI safety research and security concerns; community generally skeptical of cybersecurity fear-mongering</td>
-</tr>
-</tbody></table>
-<h3>🛠️ Tools &amp; Engineering</h3>
-<table>
-<thead>
-<tr>
-<th>Title</th>
-<th>Score</th>
-<th>Comments</th>
-<th>Why It Matters / Community Reaction</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://zfhuang99.github.io/rust/claude%20code/codex/contracts/spec-driven%20development/2025/12/01/rust-with-ai.html"><strong>Learnings from 100K lines of Rust with AI (2025)</strong></a> — <a href="https://news.ycombinator.com/item?id=48205415">Discussion</a></td>
-<td>126</td>
-<td>131</td>
-<td>Highly practical retrospective on spec-driven development with AI; community values concrete engineering experience over marketing claims</td>
-</tr>
-<tr>
-<td><a href="https://theahmadosman.substack.com/p/gpu-memory-math-for-llms-2026-edition"><strong>GPU Memory Math for LLMs: Formula That Tells You What Fits on Your GPU</strong></a> — <a href="https://news.ycombinator.com/item?id=48214084">Discussion</a></td>
-<td>8</td>
-<td>2</td>
-<td>Essential infrastructure knowledge; typical HN appreciation for back-of-envelope calculations made rigorous</td>
-</tr>
-<tr>
-<td><a href="https://github.com/mupt-ai/dari-docs"><strong>Show HN: Dari-docs – Optimize your docs using parallel coding agents</strong></a> — <a href="https://news.ycombinator.com/item?id=48210615">Discussion</a></td>
-<td>14</td>
-<td>4</td>
-<td>Representative of ongoing &quot;AI agents for X&quot; experimentation; moderate interest, with standard Show HN skepticism about production readiness</td>
-</tr>
-</tbody></table>
-<h3>🏢 Industry News</h3>
-<table>
-<thead>
-<tr>
-<th>Title</th>
-<th>Score</th>
-<th>Comments</th>
-<th>Why It Matters / Community Reaction</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://www.wsj.com/tech/ai/openai-is-preparing-to-file-for-an-ipo-very-soon-0ec95af5"><strong>OpenAI Is Preparing to File for an IPO Soon</strong></a> — <a href="https://news.ycombinator.com/item?id=48210226">Discussion</a></td>
-<td>66</td>
-<td>65</td>
-<td>Dominant business story; community deeply divided on whether OpenAI&#39;s capped-profit structure can survive public markets, with many predicting governance drama</td>
-</tr>
-<tr>
-<td><a href="https://www.wsj.com/tech/ai/mind-blowing-growth-is-about-to-propel-anthropic-into-its-first-profitable-quarter-7edbf2f4"><strong>Mind-Blowing Growth Is About to Propel Anthropic into First Profitable Quarter</strong></a> — <a href="https://news.ycombinator.com/item?id=48214843">Discussion</a></td>
-<td>16</td>
-<td>4</td>
-<td>Seen as validation of Anthropic&#39;s more measured approach; contrast with OpenAI&#39;s burn rate fuels &quot;David vs. Goliath&quot; narrative</td>
-</tr>
-<tr>
-<td><a href="https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/"><strong>OpenAI co-founder Andrej Karpathy joins Anthropic</strong></a> — <a href="https://news.ycombinator.com/item?id=48213052">Discussion</a></td>
-<td>5</td>
-<td>0</td>
-<td>Symbolic talent migration; noted quietly but adds to perception of Anthropic&#39;s rising technical credibility</td>
-</tr>
-<tr>
-<td><a href="https://www.semafor.com/article/05/20/2026/nvidia-commits-90-billion-to-ai-deals"><strong>Nvidia commits $90B to AI deals</strong></a> — <a href="https://news.ycombinator.com/item?id=48214739">Discussion</a></td>
-<td>6</td>
-<td>1</td>
-<td>Massive capital deployment raises antitrust eyebrows; community concerns about vertical integration and market concentration</td>
-</tr>
-</tbody></table>
-<h3>💬 Opinions &amp; Debates</h3>
-<table>
-<thead>
-<tr>
-<th>Title</th>
-<th>Score</th>
-<th>Comments</th>
-<th>Why It Matters / Community Reaction</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://www.wsj.com/opinion/how-i-choose-which-cloudflare-employees-to-replace-with-ai-40a197e5"><strong>Cloudflare CEO on how he chooses which employees to replace with AI</strong></a> — <a href="https://news.ycombinator.com/item?id=48214617">Discussion</a></td>
-<td>29</td>
-<td>18</td>
-<td>Provoked sharp backlash; community largely hostile to framing of AI replacement as optimization, with many calling for worker solidarity</td>
-</tr>
-<tr>
-<td><a href="https://www.thealgorithmicbridge.com/p/how-america-turned-against-ai-according"><strong>America Turned Against AI According to the Poll Data: A Very Big Compilation</strong></a> — <a href="https://news.ycombinator.com/item?id=48214348">Discussion</a></td>
-<td>18</td>
-<td>0</td>
-<td>Resonates with HN&#39;s own skepticism; zero comments suggests uncomfortable confirmation rather than debate</td>
-</tr>
-<tr>
-<td><a href="https://www.404media.co/township-leader-resigns-in-tears-over-openai-data-center-death-threats/"><strong>Township Leader Resigns in Tears over OpenAI Data Center Death Threats</strong></a> — <a href="https://news.ycombinator.com/item?id=48210645">Discussion</a></td>
-<td>6</td>
-<td>0</td>
-<td>Dark undercurrent of AI backlash turning violent; notably under-discussed given severity, perhaps due to discomfort</td>
-</tr>
-<tr>
-<td><a href="https://news.ycombinator.com/item?id=48202774"><strong>Ask HN: What are Stainless users doing now that Anthropic has killed it?</strong></a> — <a href="https://news.ycombinator.com/item?id=48202774">Discussion</a></td>
-<td>5</td>
-<td>3</td>
-<td>Typical HN infrastructure anxiety; small but representative of dependency risks on AI vendor tooling</td>
-</tr>
-</tbody></table>
-<hr>
-<h2>3. Community Sentiment Signal</h2>
-<p>Today&#39;s HN AI discourse reveals a community at an inflection point—simultaneously impressed by genuine technical progress and exhausted by hype. The geometry proof post generated exceptional engagement (656/464) not despite but <em>because of</em> skepticism; commenters demanded proof verification details, reflecting HN&#39;s empiricist culture. The IPO cluster (items 3, 4, 18, 30) shows fragmented attention across outlets, with lower per-post engagement suggesting information fatigue rather than excitement.</p>
-<p>Compared to prior cycles, there&#39;s a marked shift from &quot;AI can do X&quot; enthusiasm to &quot;who controls AI and at what cost&quot; scrutiny. The Cloudflare replacement piece and China jobs article (item 20) signal labor concerns moving mainstream. Anthropic benefits from contrast effects—Karpathy&#39;s move and near-profitability land as relief from OpenAI drama. Notably absent: breathless product launches or benchmark celebrations. The community&#39;s hottest threads involve mathematics verification and corporate governance, suggesting maturation toward institutional critique. Sentiment: <strong>cautiously impressed, increasingly wary, fatigued by spectacle</strong>.</p>
-<hr>
-<h2>4. Worth Deep Reading</h2>
-<table>
-<thead>
-<tr>
-<th>#</th>
-<th>Piece</th>
-<th>Reasoning</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1</td>
-<td><a href="https://zfhuang99.github.io/rust/claude%20code/codex/contracts/spec-driven%20development/2025/12/01/rust-with-ai.html"><strong>Learnings from 100K lines of Rust with AI (2025)</strong></a> — <a href="https://news.ycombinator.com/item?id=48205415">Discussion</a></td>
-<td>Rare longitudinal study at meaningful scale; the spec-driven development methodology and contract-based verification approach offer transferable patterns beyond Rust. Essential for teams integrating AI coding tools without quality degradation.</td>
-</tr>
-<tr>
-<td>2</td>
-<td><a href="https://openai.com/index/model-disproves-discrete-geometry-conjecture/"><strong>An OpenAI model has disproved a central conjecture in discrete geometry</strong></a> — <a href="https://news.ycombinator.com/item?id=48212493">Discussion</a></td>
-<td>Potentially landmark in AI-assisted science; regardless of methodological debates, the proof techniques and human-AI collaboration model deserve study. Follow the HN discussion for critical vetting of claims.</td>
-</tr>
-<tr>
-<td>3</td>
-<td><a href="https://www.thealgorithmicbridge.com/p/how-america-turned-against-ai-according"><strong>America Turned Against AI According to the Poll Data: A Very Big Compilation</strong></a> — <a href="https://news.ycombinator.com/item?id=48214348">Discussion</a></td>
-<td>Critical market intelligence for anyone building AI products; the compilation of polling trends helps distinguish HN&#39;s early-adopter skepticism from broader public opinion shifts that will shape regulation and adoption curves.</td>
-</tr>
-</tbody></table>
-<hr>
-<hr>
-<p><em>This digest is auto-generated by <a href="https://github.com/duanyytop/agents-radar">agents-radar</a>.</em></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Product Hunt AI 产品日报 2026-05-21</title>
-      <link>http://127.0.0.1:4173/#2026-05-21/ai-ph</link>
-      <guid isPermaLink="true">http://127.0.0.1:4173/#2026-05-21/ai-ph</guid>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <description>Product Hunt AI 产品日报 2026-05-21 数据来源: Product Hunt | 共 16 个产品 | 生成时间: 2026-05-21 00:26 UTC Product Hunt AI 产品日报 | 2026-05-21 今日速览 今日 Product Hunt 共发布 16 款 AI 相关产品，AI 智能体基础设施成为绝对焦点——从语音通话、短信客服到屏幕录制训练 Agent，&amp;quot;给 AI 一个真实身份&amp;quot;成为新共识。开发者工具赛道持续火热，Cursor 发布 Composer 2.5 模型、开源替代方案 ShioriCode 同期登场，AI 编程生态呈现&amp;quot;闭源领跑+开源追赶&amp;quot;格局。值得关注的是，Agent 训练与运维工具（Voker、Trainer）开始涌现，标志着行业从&amp;quot;造 Agent&amp;quot;进入&amp;quot;管 Agent&amp;quot;的新阶段。 热门产品 🤖 AI 智能体与助手 产品 数据 核心亮点 PollyReach — 为 Agent 提供真实电话号码和语音通话能力Product Hunt · ...</description>
-      <content:encoded><![CDATA[<h1>Product Hunt AI 产品日报 2026-05-21</h1>
-<blockquote>
-<p>数据来源: <a href="https://www.producthunt.com/">Product Hunt</a> | 共 16 个产品 | 生成时间: 2026-05-21 00:26 UTC</p>
-</blockquote>
-<hr>
-<h1>Product Hunt AI 产品日报 | 2026-05-21</h1>
-<hr>
-<h2>今日速览</h2>
-<p>今日 Product Hunt 共发布 16 款 AI 相关产品，<strong>AI 智能体基础设施</strong>成为绝对焦点——从语音通话、短信客服到屏幕录制训练 Agent，&quot;给 AI 一个真实身份&quot;成为新共识。开发者工具赛道持续火热，Cursor 发布 Composer 2.5 模型、开源替代方案 ShioriCode 同期登场，AI 编程生态呈现&quot;闭源领跑+开源追赶&quot;格局。值得关注的是，<strong>Agent 训练与运维工具</strong>（Voker、Trainer）开始涌现，标志着行业从&quot;造 Agent&quot;进入&quot;管 Agent&quot;的新阶段。</p>
-<hr>
-<h2>热门产品</h2>
-<h3>🤖 AI 智能体与助手</h3>
-<table>
-<thead>
-<tr>
-<th align="left">产品</th>
-<th align="left">数据</th>
-<th align="left">核心亮点</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><strong>PollyReach</strong> — 为 Agent 提供真实电话号码和语音通话能力<br><a href="https://www.producthunt.com/products/pollyreach?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">Product Hunt</a> · <a href="https://www.producthunt.com/r/YNJ3R3XJ5FEEBJ?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">官网</a></td>
-<td align="left">530 票 / 151 评论</td>
-<td align="left"><strong>今日票王</strong>。突破传统聊天边界，让 AI Agent 真正&quot;打电话&quot;，解决企业外呼、客服、销售自动化中&quot;最后一公里&quot;的语音交互问题</td>
-</tr>
-<tr>
-<td align="left"><strong>Chert</strong> — 在 iMessage 中构建与客户发短信的 AI Agent<br><a href="https://www.producthunt.com/products/chert?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">Product Hunt</a> · <a href="https://www.producthunt.com/r/5QIYZNUVRIKFZD?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">官网</a></td>
-<td align="left">179 票 / 78 评论</td>
-<td align="left">抢占 iMessage 生态位，利用 Apple 商务消息 API 实现原生短信体验，评论热度高反映市场对&quot;无 App 下载&quot;客服方案的强烈需求</td>
-</tr>
-<tr>
-<td align="left"><strong>Thinnest AI</strong> — 以 ₹1.5/分钟 构建 100+ 语言的语音 AI Agent<br><a href="https://www.producthunt.com/products/thinnest-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">Product Hunt</a> · <a href="https://www.producthunt.com/r/3JNDFHJE6E52SF?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">官网</a></td>
-<td align="left">93 票 / 14 评论</td>
-<td align="left"><strong>极致性价比策略</strong>，瞄准印度及新兴市场多语言场景，语音 Agent 成本结构的颠覆性尝试</td>
-</tr>
-</tbody></table>
-<hr>
-<h3>🛠️ 开发者工具</h3>
-<table>
-<thead>
-<tr>
-<th align="left">产品</th>
-<th align="left">数据</th>
-<th align="left">核心亮点</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><strong>Composer 2.5</strong> — Cursor 迄今最强大的模型<br><a href="https://www.producthunt.com/products/cursor?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">Product Hunt</a> · <a href="https://www.producthunt.com/r/ZEXWSSPQZYCABO?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">官网</a></td>
-<td align="left">393 票 / 12 评论</td>
-<td align="left">Cursor 自研模型迭代，票高评少暗示用户&quot;用脚投票&quot;的认可，但需关注实际编码能力提升是否匹配宣传</td>
-</tr>
-<tr>
-<td align="left"><strong>Drizz</strong> — 自动编写、运行和修复自身的移动端测试<br><a href="https://www.producthunt.com/products/drizz-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">Product Hunt</a> · <a href="https://www.producthunt.com/r/7JHDW73XTTPZ3A?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">官网</a></td>
-<td align="left">395 票 / 62 评论</td>
-<td align="left"><strong>今日开发者工具票王</strong>。解决移动端 UI 测试脆弱性痛点，&quot;自修复&quot;能力直击 CI/CD 流水线维护成本高的行业顽疾</td>
-</tr>
-<tr>
-<td align="left"><strong>ShioriCode</strong> — Codex &amp; Claude Code 的开源替代方案<br><a href="https://www.producthunt.com/products/shioricode?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">Product Hunt</a> · <a href="https://www.producthunt.com/r/YFMR7SBBFOPFGA?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">官网</a></td>
-<td align="left">120 票 / 9 评论</td>
-<td align="left">开源社区对 AI 编程工具&quot;去中心化&quot;的回应，数据隐私敏感型企业与独立开发者的关键选项</td>
-</tr>
-<tr>
-<td align="left"><strong>Trainer</strong> — 通过录屏训练 AI Agent<br><a href="https://www.producthunt.com/products/trainer-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">Product Hunt</a> · <a href="https://www.producthunt.com/r/QD5KYBWAJYVV3A?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">官网</a></td>
-<td align="left">90 票 / 17 评论</td>
-<td align="left">开创&quot;演示即训练&quot;范式，降低 Agent 构建门槛，非技术人员可通过操作示范快速生成自动化工作流</td>
-</tr>
-</tbody></table>
-<hr>
-<h3>📊 AI 应用</h3>
-<table>
-<thead>
-<tr>
-<th align="left">产品</th>
-<th align="left">数据</th>
-<th align="left">核心亮点</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><strong>Voker</strong> — AI 产品团队的 Agent 分析平台<br><a href="https://www.producthunt.com/products/voker?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">Product Hunt</a> · <a href="https://www.producthunt.com/r/KEW2UCNMPEMFRD?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">官网</a></td>
-<td align="left">154 票 / 42 评论</td>
-<td align="left"><strong>Agent 经济的基础设施层</strong>，填补&quot;部署后监控&quot;空白，解决 AI 产品团队对 Agent 行为可追溯、可优化的核心诉求</td>
-</tr>
-<tr>
-<td align="left"><strong>Insights by Omnia</strong> — 分步骤提升 AI 可见度的行动计划<br><a href="https://www.producthunt.com/products/omnia-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">Product Hunt</a> · <a href="https://www.producthunt.com/r/GB2EXL52Q43ZUS?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">官网</a></td>
-<td align="left">148 票 / 25 评论</td>
-<td align="left">瞄准&quot;AI SEO&quot;新赛道——企业如何在 ChatGPT、Perplexity 等 AI 引擎中获得品牌曝光，营销策略的前瞻性转移</td>
-</tr>
-</tbody></table>
-<hr>
-<h3>🎨 创意与内容</h3>
-<table>
-<thead>
-<tr>
-<th align="left">产品</th>
-<th align="left">数据</th>
-<th align="left">核心亮点</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><strong>Motion</strong> — 品味优雅的运动设计视频 Agent<br><a href="https://www.producthunt.com/products/motion-8?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">Product Hunt</a> · <a href="https://www.producthunt.com/r/G3NKNLOKUXJ6ZY?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">官网</a></td>
-<td align="left">194 票 / 40 评论</td>
-<td align="left">强调&quot;tasteful&quot;差异化定位，解决 AI 视频生成普遍存在的&quot;审美廉价感&quot;问题，面向专业设计师而非普通消费者</td>
-</tr>
-</tbody></table>
-<hr>
-<h3>🔧 基础设施与模型</h3>
-<table>
-<thead>
-<tr>
-<th align="left">产品</th>
-<th align="left">数据</th>
-<th align="left">核心亮点</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><strong>Starchild-1 by Odyssey</strong> — 首个实时多模态世界模型<br><a href="https://www.producthunt.com/products/odysseyml-starchild-1-model?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">Product Hunt</a> · <a href="https://www.producthunt.com/r/S4INU5TXEPCTYH?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">官网</a></td>
-<td align="left">105 票 / 1 评论</td>
-<td align="left"><strong>技术前沿指标</strong>。&quot;世界模型&quot;从研究概念走向产品化，实时多模态能力为机器人、自动驾驶、空间计算提供底层支撑，但评论极少暗示商业化路径尚远</td>
-</tr>
-<tr>
-<td align="left"><strong>Papr Graph</strong> — 图原生向量嵌入升级方案<br><a href="https://www.producthunt.com/products/papr-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">Product Hunt</a> · <a href="https://www.producthunt.com/r/SYHOJPFGU7435U?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+radar+%28ID%3A+279857%29">官网</a></td>
-<td align="left">97 票 / 4 评论</td>
-<td align="left">突破传统向量检索的&quot;扁平化&quot;局限，图结构嵌入更适合复杂关系推理场景，RAG 架构的进阶方向</td>
-</tr>
-</tbody></table>
-<hr>
-<h2>市场信号</h2>
-<p><strong>Agent 基础设施井喷</strong>：16 款产品中超 40% 直接服务 AI Agent 的构建、部署或运营，从 PollyReach 的语音通道、Chert 的短信通道到 Voker 的 Agent 分析，&quot;Agent 即服务&quot;生态快速成型。<strong>开发者工具仍是最大公约数</strong>，但重心从&quot;辅助编码&quot;转向&quot;测试自动化&quot;（Drizz）和&quot;运维管理&quot;（CtrlOps、Haystack）。<strong>创新场景方面</strong>，&quot;AI 可见度优化&quot;（Omnia）和&quot;录屏训练 Agent&quot;（Trainer）代表了两条新路径：前者是营销范式随搜索形态演变的必然产物，后者是人机交互向&quot;自然示范&quot;回归的趋势。开源与闭源呈现<strong>互补而非替代</strong>：ShioriCode 对标 Claude Code、imgproxy v4 和 LearnHouse 强调开源，但高票产品仍以闭源商业产品为主，开源更多扮演&quot;安全备选&quot;和&quot;开发者信任背书&quot;角色。</p>
-<hr>
-<h2>值得试用</h2>
-<table>
-<thead>
-<tr>
-<th align="left">产品</th>
-<th align="left">推荐理由</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><strong>Drizz</strong></td>
-<td align="left">移动端测试的&quot;自愈合&quot;能力是真实痛点解决方案，评论数（62）与票数（395）的高比例验证了其技术可信度，适合已有 App 的团队立即接入降低 QA 成本</td>
-</tr>
-<tr>
-<td align="left"><strong>Trainer</strong></td>
-<td align="left">&quot;录屏→Agent&quot;的范式转换极具想象力，17 条评论显示社区活跃度高，非技术背景的产品经理可快速验证自动化假设，降低 PoC 门槛</td>
-</tr>
-<tr>
-<td align="left"><strong>ShioriCode</strong></td>
-<td align="left">若团队因数据合规无法使用 Claude Code 或 GitHub Copilot，这是当前最值得评估的开源替代；同时其架构设计对理解 AI 编程工具的实现原理有学习价值</td>
-</tr>
-</tbody></table>
-<hr>
-<hr>
-<p><em>本日报由 <a href="https://github.com/duanyytop/agents-radar">agents-radar</a> 自动生成。</em></p>
 ]]></content:encoded>
     </item>
   </channel>

@@ -1,22 +1,25 @@
 {
-  "generated": "2026-05-25T02:07:50.181Z",
+  "generated": "2026-06-03T11:15:27.533Z",
   "dates": [
     {
       "date": "2026-05-25",
       "reports": [
-        "ai-radar"
+        "ai-radar",
+        "ai-opportunity"
       ]
     },
     {
       "date": "2026-05-24",
       "reports": [
-        "ai-radar"
+        "ai-radar",
+        "ai-opportunity"
       ]
     },
     {
       "date": "2026-05-22",
       "reports": [
         "ai-radar",
+        "ai-opportunity",
         "ai-cli",
         "ai-cli-en",
         "ai-agents",

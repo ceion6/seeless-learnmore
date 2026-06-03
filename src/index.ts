@@ -25,6 +25,8 @@ import {
   buildTrendingPrompt,
   buildHighlightsPrompt,
   buildShaokandianRadarPrompt,
+  buildOpportunityRadarPrompt,
+  buildRadarCoverageContext,
   type ReportHighlights,
 } from "./prompts-data.ts";
 import { callLlm, saveFile, autoGenFooter, LLM_TOKENS_TRENDING } from "./report.ts";
@@ -39,6 +41,7 @@ import {
   saveCommunityReport,
 } from "./report-savers.ts";
 import { fetchAllData, loadCollectedSnapshot } from "./collect.ts";
+import { saveFallbackDailyReports } from "./daily-fallback.ts";
 import { loadWebState } from "./web.ts";
 import { type TrendingData } from "./trending.ts";
 import { loadConfig } from "./config.ts";
@@ -358,8 +361,9 @@ async function main(): Promise<void> {
   }
 
   console.log("  Generating 少看点 AI 雷达...");
+  const coverageContext = buildRadarCoverageContext(webResults, phData, arxivData);
   try {
-    const radarSummary = await callLlm(buildShaokandianRadarPrompt(zhReports, dateStr), 4096);
+    const radarSummary = await callLlm(buildShaokandianRadarPrompt(zhReports, dateStr, coverageContext), 4096);
     const radarContent =
       radarSummary.trim() +
       "\n\n---\n\n" +
@@ -369,6 +373,64 @@ async function main(): Promise<void> {
     zhReports["ai-radar"] = radarContent;
   } catch (err) {
     console.error(`  [ai-radar] Generation failed: ${err}`);
+    const { radarPath } = saveFallbackDailyReports(
+      {
+        collectedAt: now.toISOString(),
+        dateStr,
+        utcStr,
+        fetched,
+        skillsData,
+        webResults,
+        trendingData,
+        hnData,
+        phData,
+        arxivData,
+        hfData,
+        devtoData,
+        lobstersData,
+      },
+      { force: false },
+    );
+    if (radarPath) {
+      console.log(`  Saved fallback ${radarPath}`);
+      zhReports["ai-radar"] = readReport("ai-radar.md") ?? zhReports["ai-radar"] ?? "";
+    }
+  }
+
+  console.log("  Generating AI 机会雷达...");
+  try {
+    const opportunitySummary = await callLlm(buildOpportunityRadarPrompt(zhReports, dateStr, coverageContext), 4096);
+    const opportunityContent =
+      opportunitySummary.trim() +
+      "\n\n---\n\n" +
+      `> 本页由今日中文报告二次筛选生成，优先回答“现在能做什么”。生成时间: ${utcStr} UTC` +
+      autoGenFooter("zh");
+    console.log(`  Saved ${saveFile(opportunityContent, dateStr, "ai-opportunity.md")}`);
+    zhReports["ai-opportunity"] = opportunityContent;
+  } catch (err) {
+    console.error(`  [ai-opportunity] Generation failed: ${err}`);
+    const { opportunityPath } = saveFallbackDailyReports(
+      {
+        collectedAt: now.toISOString(),
+        dateStr,
+        utcStr,
+        fetched,
+        skillsData,
+        webResults,
+        trendingData,
+        hnData,
+        phData,
+        arxivData,
+        hfData,
+        devtoData,
+        lobstersData,
+      },
+      { force: false },
+    );
+    if (opportunityPath) {
+      console.log(`  Saved fallback ${opportunityPath}`);
+      zhReports["ai-opportunity"] = readReport("ai-opportunity.md") ?? zhReports["ai-opportunity"] ?? "";
+    }
   }
 
   console.log("  Generating highlights for Telegram...");

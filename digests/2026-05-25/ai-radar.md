@@ -2,7 +2,7 @@
 
 > 今天的主线是：coding agent 的注意力还在往“插件目录、技能包、知识图谱、托管平台”聚集，但社区同时在更大声地提醒一件事: agent 很脆弱，别把它误当成架构师。
 >
-> 覆盖提醒：今天官网源没有新增；ArXiv 和 Product Hunt 依然抓取失败，所以今天更像是生态信号面，而不是新品发布面。
+> 覆盖提醒：今天官网源没有新增；ArXiv 在最近 48 小时窗口内没有命中样本，Product Hunt 源今天未启用，所以今天更像是生态信号面，而不是新品发布面。
 
 ## 今天必看
 
@@ -64,7 +64,7 @@
 ## 论文里可能有用的东西
 
 ### 今天论文面只保留一个判断
-- 结论：虽然 ArXiv 抓取失败，但 HN 上真正被讨论起来的，是“LLM agent 在后端代码生成里会发生 constraint decay”。
+- 结论：虽然 ArXiv 在最近 48 小时窗口内没有命中样本，但 HN 上真正被讨论起来的，是“LLM agent 在后端代码生成里会发生 constraint decay”。
 - 为什么重要：这和今天社区对 agent 脆弱性的讨论是同一条主线，至少值得记住问题名字。
 - 来源：[Constraint Decay: The Fragility of LLM Agents in Back End Code Generation](https://arxiv.org/abs/2605.06445)
 - 建议：等后续正式补抓
@@ -85,7 +85,7 @@
 - 来源：[2028: Two scenarios for global AI leadership](https://www.anthropic.com/research/2028-ai-leadership)、[OpenAI co-founder Andrej Karpathy joins Anthropic](https://www.axios.com/2026/05/19/anthropic-openai-karpathy-andrej-claude)、[SpaceX, OpenAI and Anthropic IPOs set to test limits of AI boom](https://www.ft.com/content/ae9bb47d-bd1d-473c-b4c5-abae0420cc12)
 
 ### 今天缺失的数据源先不要补脑
-- 判断：Product Hunt 和 ArXiv 继续没抓到，就先接受这件事，不要用别的源假装替代。
+- 判断：Product Hunt 源今天未启用，ArXiv 在最近 48 小时窗口内也没有命中样本，就先接受这件事，不要用别的源假装替代。
 - 来源：[今日原始快照](https://github.com/ceion6/seeless-learnmore/blob/main/digests/2026-05-25/raw-data.json)
 
 ## 原始入口

@@ -192,7 +192,7 @@ export async function savePhReport(
   footer: string,
   lang: Lang = "zh",
 ): Promise<void> {
-  if (!phData.fetchSuccess) {
+  if (!phData.fetchSuccess || phData.products.length === 0) {
     console.log(`  [ph/${lang}] No data available, skipping report.`);
     return;
   }
@@ -239,7 +239,7 @@ export async function saveArxivReport(
   footer: string,
   lang: Lang = "zh",
 ): Promise<void> {
-  if (!arxivData.fetchSuccess) {
+  if (!arxivData.fetchSuccess || arxivData.papers.length === 0) {
     console.log(`  [arxiv/${lang}] No data available, skipping report.`);
     return;
   }
