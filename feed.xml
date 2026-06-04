@@ -6,7 +6,248 @@
     <description>中文 AI 趋势筛选面板 · High-signal AI radar in Chinese</description>
     <language>zh-CN</language>
     <atom:link href="https://ceion6.github.io/seeless-learnmore/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Wed, 03 Jun 2026 11:37:38 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jun 2026 01:11:23 +0000</lastBuildDate>
+    <item>
+      <title>少看点 AI 雷达 2026-06-04</title>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-06-04/ai-radar</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-06-04/ai-radar</guid>
+      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
+      <description>少看点 AI 雷达 2026-06-04 当团队开始长期使用 agent，最大的浪费是每次会话都从零开始。 覆盖提醒：官网源：今日新增 9 条官网内容。；Product Hunt：该源今天未启用，所以没有 Product Hunt 数据；这不是抓取失败。；ArXiv：已抓取到 50 篇论文。 今天必看 OpenClaw 生态今天更新密度最高 结论：OpenClaw 在 24 小时内累计出现 628 个 issue / PR / release 样本。 为什么重要：仓库更新密度高，通常代表工具链正在快速试错，值得先看真实问题和新增能力。 来源：OpenClaw 建议：看原文 GitHub 热门样本里出现 chopratejas/headroom 结论：chopratejas/headroom 进入当天高热样本，说明相关方向正在被开发者集中试用。 为什么重要：开源热度不是质量证明，但很适合拿来判断今天大家到底把注意力投向哪里。 来源：chopratejas/headroom 建议：扫一眼 官网源今天新增了 Introducing New Capabilities To Gpt Rosali...</description>
+      <content:encoded><![CDATA[<h1>少看点 AI 雷达 2026-06-04</h1>
+<blockquote>
+<p>当团队开始长期使用 agent，最大的浪费是每次会话都从零开始。</p>
+<p>覆盖提醒：官网源：今日新增 9 条官网内容。；Product Hunt：该源今天未启用，所以没有 Product Hunt 数据；这不是抓取失败。；ArXiv：已抓取到 50 篇论文。</p>
+</blockquote>
+<h2>今天必看</h2>
+<h3>OpenClaw 生态今天更新密度最高</h3>
+<ul>
+<li>结论：OpenClaw 在 24 小时内累计出现 628 个 issue / PR / release 样本。</li>
+<li>为什么重要：仓库更新密度高，通常代表工具链正在快速试错，值得先看真实问题和新增能力。 </li>
+<li>来源：<a href="https://github.com/openclaw/openclaw">OpenClaw</a></li>
+<li>建议：看原文</li>
+</ul>
+<h3>GitHub 热门样本里出现 chopratejas/headroom</h3>
+<ul>
+<li>结论：chopratejas/headroom 进入当天高热样本，说明相关方向正在被开发者集中试用。</li>
+<li>为什么重要：开源热度不是质量证明，但很适合拿来判断今天大家到底把注意力投向哪里。 </li>
+<li>来源：<a href="https://github.com/chopratejas/headroom">chopratejas/headroom</a></li>
+<li>建议：扫一眼</li>
+</ul>
+<h3>官网源今天新增了 Introducing New Capabilities To Gpt Rosalind</h3>
+<ul>
+<li>结论：openai 官网今天抓到新页面 Introducing New Capabilities To Gpt Rosalind。</li>
+<li>为什么重要：官网源的新增通常比社区转述更接近一手表述，适合用来确认公司到底在推什么。 </li>
+<li>来源：<a href="https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind/">Introducing New Capabilities To Gpt Rosalind</a></li>
+<li>建议：看原文</li>
+</ul>
+<h3>HN 今天在讨论 Show HN: Nutrepedia – Nutrition info in 29 locales built with Clojure and Htmx</h3>
+<ul>
+<li>结论：Show HN: Nutrepedia – Nutrition info in 29 locales built with Clojure and Htmx 进入今天的高讨论样本，社区更关注真实采用边界而不是单条宣传。</li>
+<li>为什么重要：HN 的高分讨论适合拿来观察开发者到底在担心什么、争什么。 </li>
+<li>来源：<a href="https://nutrepedia.com/en-us/">Show HN: Nutrepedia – Nutrition info in 29 locales built with Clojure and Htmx</a></li>
+<li>建议：看原文</li>
+</ul>
+<h3>Hugging Face 热榜里有 nvidia/LocateAnything-3B</h3>
+<ul>
+<li>结论：nvidia/LocateAnything-3B 进入今日模型热榜，说明社区对这条模型路线仍有明确兴趣。</li>
+<li>为什么重要：模型热榜更适合判断可部署能力和开发者实验面，而不是只看头部闭源叙事。 </li>
+<li>来源：<a href="https://huggingface.co/nvidia/LocateAnything-3B">nvidia/LocateAnything-3B</a></li>
+<li>建议：扫一眼</li>
+</ul>
+<h2>正在升温</h2>
+<h3>Agent 会话沉淀与团队记忆层</h3>
+<ul>
+<li>结论：memory、wiki、session archive、version snapshot 这条线正在慢慢成形。</li>
+<li>来源：<a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.162</a>、<a href="https://github.com/anthropics/claude-code/issues/65232">Claude Code #65232</a>、<a href="https://github.com/anthropics/claude-code/issues/65231">Claude Code #65231</a>、<a href="https://github.com/anthropics/claude-code/issues/65169">Claude Code #65169</a>、<a href="https://github.com/openai/codex/issues/26279">OpenAI Codex #26279</a></li>
+</ul>
+<h3>Agent 执行护栏与回滚审计层</h3>
+<ul>
+<li>结论：runtime、sandbox、hook、benchmark 可信度这些问题正在反复出现。</li>
+<li>来源：<a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.162</a>、<a href="https://github.com/anthropics/claude-code/issues/64767">Claude Code #64767</a>、<a href="https://github.com/anthropics/claude-code/issues/65169">Claude Code #65169</a>、<a href="https://github.com/anthropics/claude-code/pull/62099">Claude Code #62099</a>、<a href="https://github.com/anthropics/claude-code/pull/22919">Claude Code #22919</a></li>
+</ul>
+<h3>浏览器/终端工作流模板包</h3>
+<ul>
+<li>结论：DevTools、browser、CLI 和 task automation 的结合信号在变强。</li>
+<li>来源：<a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.162</a>、<a href="https://github.com/anthropics/claude-code/issues/65232">Claude Code #65232</a>、<a href="https://github.com/anthropics/claude-code/issues/65231">Claude Code #65231</a>、<a href="https://github.com/openai/codex/issues/26279">OpenAI Codex #26279</a>、<a href="https://github.com/openai/codex/issues/26007">OpenAI Codex #26007</a></li>
+</ul>
+<h3>团队级技能包与插件目录</h3>
+<ul>
+<li>结论：skills、plugins、MCP、hooks 和 workflow 模板正在形成独立分发层。</li>
+<li>来源：<a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.162</a>、<a href="https://github.com/anthropics/claude-code/issues/65231">Claude Code #65231</a>、<a href="https://github.com/anthropics/claude-code/issues/64767">Claude Code #64767</a>、<a href="https://github.com/anthropics/claude-code/issues/65169">Claude Code #65169</a>、<a href="https://github.com/anthropics/claude-code/pull/62099">Claude Code #62099</a></li>
+</ul>
+<h2>新模型 / 新产品</h2>
+<h3>nvidia/LocateAnything-3B</h3>
+<ul>
+<li>结论：nvidia/LocateAnything-3B 进入模型热榜，pipeline=image-text-to-text。</li>
+<li>为什么重要：模型热榜可以帮助判断今天社区愿意先试哪些可部署能力。 </li>
+<li>来源：<a href="https://huggingface.co/nvidia/LocateAnything-3B">nvidia/LocateAnything-3B</a></li>
+<li>建议：扫一眼</li>
+</ul>
+<h3>LiquidAI/LFM2.5-8B-A1B</h3>
+<ul>
+<li>结论：LiquidAI/LFM2.5-8B-A1B 进入模型热榜，pipeline=text-generation。</li>
+<li>为什么重要：模型热榜可以帮助判断今天社区愿意先试哪些可部署能力。 </li>
+<li>来源：<a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B">LiquidAI/LFM2.5-8B-A1B</a></li>
+<li>建议：扫一眼</li>
+</ul>
+<h3>HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive</h3>
+<ul>
+<li>结论：HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive 进入模型热榜，pipeline=image-text-to-text。</li>
+<li>为什么重要：模型热榜可以帮助判断今天社区愿意先试哪些可部署能力。 </li>
+<li>来源：<a href="https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive">HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive</a></li>
+<li>建议：扫一眼</li>
+</ul>
+<h2>论文里可能有用的东西</h2>
+<h3>Neuron Populations Exhibit Divergent Selectivity with Scale</h3>
+<ul>
+<li>结论：这更偏多模态能力方向。</li>
+<li>为什么重要：先记住题目和方向，再决定要不要追完整原文。 </li>
+<li>来源：<a href="http://arxiv.org/abs/2606.03990v1">Neuron Populations Exhibit Divergent Selectivity with Scale</a></li>
+<li>建议：扫一眼</li>
+</ul>
+<h3>Imaginative Perception Tokens Enhance Spatial Reasoning in Multimodal Language Models</h3>
+<ul>
+<li>结论：这更偏训练、评测或可信度问题。</li>
+<li>为什么重要：先记住题目和方向，再决定要不要追完整原文。 </li>
+<li>来源：<a href="http://arxiv.org/abs/2606.03988v1">Imaginative Perception Tokens Enhance Spatial Reasoning in Multimodal Language Models</a></li>
+<li>建议：扫一眼</li>
+</ul>
+<h3>Humanoid-GPT: Scaling Data and Structure for Zero-Shot Motion Tracking</h3>
+<ul>
+<li>结论：这值得先记住题目，再等更完整样本复盘。</li>
+<li>为什么重要：先记住题目和方向，再决定要不要追完整原文。 </li>
+<li>来源：<a href="http://arxiv.org/abs/2606.03985v1">Humanoid-GPT: Scaling Data and Structure for Zero-Shot Motion Tracking</a></li>
+<li>建议：扫一眼</li>
+</ul>
+<h2>可以暂缓</h2>
+<h3>今天没有 Product Hunt 样本</h3>
+<ul>
+<li>判断：今天先不要脑补新品发布面，Product Hunt 源当前未启用。 </li>
+<li>来源：<a href="./raw-data.json">今日原始快照</a></li>
+</ul>
+<h3>纯热度样本先别当成产品结论</h3>
+<ul>
+<li>判断：如果用户从不回看 agent 会话，就不要把它误判成知识平台需求。</li>
+<li>来源：<a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.162</a>、<a href="https://github.com/anthropics/claude-code/issues/65232">Claude Code #65232</a>、<a href="https://github.com/anthropics/claude-code/issues/65231">Claude Code #65231</a>、<a href="https://github.com/anthropics/claude-code/issues/65169">Claude Code #65169</a>、<a href="https://github.com/openai/codex/issues/26279">OpenAI Codex #26279</a></li>
+</ul>
+<h2>原始入口</h2>
+<ul>
+<li><a href="./raw-data.json">今日原始快照 raw-data.json</a> — 看当天完整样本和源数据状态。</li>
+<li><a href="https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind/">Introducing New Capabilities To Gpt Rosalind</a> — 今天官网源里最值得回看的新增页面。</li>
+<li><a href="https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind/">Introducing New Capabilities To Gpt Rosalind</a> — 今天官网源里最值得回看的新增页面。</li>
+<li><a href="https://github.com/openclaw/openclaw">OpenClaw</a> — 看今天 issue / PR / release 最密集的仓库。</li>
+<li><a href="https://github.com/google-gemini/gemini-cli">Gemini CLI</a> — 看今天 issue / PR / release 最密集的仓库。</li>
+<li><a href="https://nutrepedia.com/en-us/">Show HN: Nutrepedia – Nutrition info in 29 locales built with Clojure and Htmx</a> — 看国外开发者今天在争什么。</li>
+</ul>
+<hr>
+<blockquote>
+<p>本页由每日保底脚本生成，用于保证站点每日都有可读更新；后续可以被更高质量的人工 / Codex 版本覆盖。生成时间: 2026-06-04 01:11 UTC</p>
+</blockquote>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>AI 机会雷达 2026-06-04</title>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-06-04/ai-opportunity</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-06-04/ai-opportunity</guid>
+      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
+      <description>AI 机会雷达 2026-06-04 今天更值得下注的，是 Agent 会话沉淀与团队记忆层、Agent 执行护栏与回滚审计层、浏览器/终端工作流模板包 这几类能在真实流程里立刻验证的机会。 先看结论 今天最值得做的机会，不在再做一个通用聊天入口，而在把 agent 接进真实工作流的薄层基础设施。 Agent 会话沉淀与团队记忆层 是第一优先，因为 当团队开始长期使用 agent，最大的浪费是每次会话都从零开始。 Agent 执行护栏与回滚审计层 也值得看，因为 团队真正不敢放开的，通常不是生成能力，而是权限、验证和回滚。 这些方向的共同点是：用户清晰、痛点具体，而且能在 2~6 周内做出第一版去试。 值得做的 3 个方向 Agent 会话沉淀与团队记忆层 给谁做：频繁用 agent 做排障、代码阅读、探索式开发的团队。 痛点：会话关掉就散，后续无法复用决策、命令和上下文。 为什么是现在：社区已经开始把会话转成 wiki、dashboard、长期知识资产，而不只是一次性聊天记录。 最小可行解：先做会话提炼和归档，把结论、文件引用和关键步骤整理成团队笔记。 付费可能：只要能减少重复排查和...</description>
+      <content:encoded><![CDATA[<h1>AI 机会雷达 2026-06-04</h1>
+<blockquote>
+<p>今天更值得下注的，是 Agent 会话沉淀与团队记忆层、Agent 执行护栏与回滚审计层、浏览器/终端工作流模板包 这几类能在真实流程里立刻验证的机会。</p>
+</blockquote>
+<h2>先看结论</h2>
+<p>今天最值得做的机会，不在再做一个通用聊天入口，而在把 agent 接进真实工作流的薄层基础设施。
+Agent 会话沉淀与团队记忆层 是第一优先，因为 当团队开始长期使用 agent，最大的浪费是每次会话都从零开始。
+Agent 执行护栏与回滚审计层 也值得看，因为 团队真正不敢放开的，通常不是生成能力，而是权限、验证和回滚。
+这些方向的共同点是：用户清晰、痛点具体，而且能在 2~6 周内做出第一版去试。</p>
+<h2>值得做的 3 个方向</h2>
+<h3>Agent 会话沉淀与团队记忆层</h3>
+<ul>
+<li>给谁做：频繁用 agent 做排障、代码阅读、探索式开发的团队。</li>
+<li>痛点：会话关掉就散，后续无法复用决策、命令和上下文。</li>
+<li>为什么是现在：社区已经开始把会话转成 wiki、dashboard、长期知识资产，而不只是一次性聊天记录。</li>
+<li>最小可行解：先做会话提炼和归档，把结论、文件引用和关键步骤整理成团队笔记。</li>
+<li>付费可能：只要能减少重复排查和 onboarding 时间，就有明确的效率价值。</li>
+<li>证据：<a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.162</a>、<a href="https://github.com/anthropics/claude-code/issues/65232">Claude Code #65232</a>、<a href="https://github.com/anthropics/claude-code/issues/65231">Claude Code #65231</a>、<a href="https://github.com/anthropics/claude-code/issues/65169">Claude Code #65169</a>、<a href="https://github.com/openai/codex/issues/26279">OpenAI Codex #26279</a></li>
+<li>下一步：先验证团队是否真的会回看 agent 会话，再决定要不要扩成完整知识库。</li>
+</ul>
+<h3>Agent 执行护栏与回滚审计层</h3>
+<ul>
+<li>给谁做：已经让 agent 改代码、跑命令、触发 hook 的工程团队。</li>
+<li>痛点：会话挂死、权限边界不清、结果难审计，出了错又很难回滚。</li>
+<li>为什么是现在：今天的 GitHub issue、HN 讨论和论文信号都在提醒：agent 真实生产问题已经暴露出来了。</li>
+<li>最小可行解：先做执行前检查、操作日志、产物校验和回滚建议，不必先做完整沙盒。</li>
+<li>付费可能：这类产品贴近 DevInfra，接入流程后不容易切走，适合团队套餐或按执行量收费。</li>
+<li>证据：<a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.162</a>、<a href="https://github.com/anthropics/claude-code/issues/64767">Claude Code #64767</a>、<a href="https://github.com/anthropics/claude-code/issues/65169">Claude Code #65169</a>、<a href="https://github.com/anthropics/claude-code/pull/62099">Claude Code #62099</a>、<a href="https://github.com/anthropics/claude-code/pull/22919">Claude Code #22919</a></li>
+<li>下一步：先访谈 5 个已经让 agent 跑命令的团队，确认他们最怕的失败类型。</li>
+</ul>
+<h3>浏览器/终端工作流模板包</h3>
+<ul>
+<li>给谁做：做测试、后台运营、增长实验、数据录入的小团队。</li>
+<li>痛点：大家知道 agent 能碰浏览器和终端，但不知道怎么把它拼成稳定流程。</li>
+<li>为什么是现在：浏览器和命令行能力正逐步进入 agent 工具层，工作流模板开始有现实价值。</li>
+<li>最小可行解：先做网页巡检、表单回归、后台操作复盘这类模板包，而不是通用自动化平台。</li>
+<li>付费可能：只要能持续省掉人工重复操作，就适合按模板包或团队订阅收费。</li>
+<li>证据：<a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.162</a>、<a href="https://github.com/anthropics/claude-code/issues/65232">Claude Code #65232</a>、<a href="https://github.com/anthropics/claude-code/issues/65231">Claude Code #65231</a>、<a href="https://github.com/openai/codex/issues/26279">OpenAI Codex #26279</a>、<a href="https://github.com/openai/codex/issues/26007">OpenAI Codex #26007</a></li>
+<li>下一步：先挑一个现成 SOP 最明确的场景，让真实用户拿现网流程试一次。</li>
+</ul>
+<h2>次优但可观察</h2>
+<h3>团队级技能包与插件目录</h3>
+<ul>
+<li>现在看到了什么信号：skills、plugins、MCP、hooks 和 workflow 模板正在形成独立分发层。</li>
+<li>为什么先不重注：不要先做开放 marketplace，先验证团队内部有没有值得复用的 skill 配方。</li>
+<li>后续要继续观察什么：先验证目标团队是否已经沉淀出 5 个以上会重复使用的 agent 配方。</li>
+</ul>
+<h3>代码库上下文打底层</h3>
+<ul>
+<li>现在看到了什么信号：代码知识图谱、私有搜索和 repo understanding 还在持续升温。</li>
+<li>为什么先不重注：不要把“能索引代码”直接当成壁垒，关键是能不能接进真实任务前置环节。</li>
+<li>后续要继续观察什么：先找 3 个已经在用 coding agent 的团队，验证他们最常卡住的是“找不到该改哪里”。</li>
+</ul>
+<h3>模型侧机会先保持观察</h3>
+<ul>
+<li>现在看到了什么信号：nvidia/LocateAnything-3B 进入模型热榜，说明模型面仍有活跃样本。</li>
+<li>为什么先不重注：只看模型热度不够支撑产品方向，除非已经找到明确使用场景。 </li>
+<li>后续要继续观察什么：用户到底是更在意部署成本、隐私，还是某个具体能力差异。</li>
+</ul>
+<h2>今天先别做</h2>
+<h3>通用“再做一个 AI 助手”</h3>
+<ul>
+<li>原因：今天的信号更支持做上下文、护栏、复用层，而不是再做一个聊天壳。</li>
+</ul>
+<h3>纯资讯聚合或榜单站</h3>
+<ul>
+<li>原因：用户更缺的是可执行判断，不是再多一条信息流。</li>
+</ul>
+<h3>纯靠新品发布包装的方向</h3>
+<ul>
+<li>原因：今天 Product Hunt 样本不足，没必要用缺失数据硬凑产品热度。</li>
+</ul>
+<h3>先别把 Agent 会话沉淀与团队记忆层 做成大平台</h3>
+<ul>
+<li>原因：如果用户从不回看 agent 会话，就不要把它误判成知识平台需求。</li>
+</ul>
+<h2>开工顺序</h2>
+<ol>
+<li>先验证 Agent 会话沉淀与团队记忆层 对目标用户是不是当前最痛的阻塞点，而不是先搭完整平台。</li>
+<li>先找已经在日常流程里用 agent 的团队试 Agent 执行护栏与回滚审计层 或 Agent 会话沉淀与团队记忆层，不要先找纯围观用户。</li>
+<li>如果 3 个用户里至少 2 个愿意拿真实仓库或真实流程试用，就继续；如果只有“听起来不错”，就收窄切口。</li>
+</ol>
+<h2>原始入口</h2>
+<ul>
+<li><a href="./#2026-06-04/ai-radar">少看点 AI 雷达</a> — 先看当天的总判断。</li>
+<li><a href="./raw-data.json">今日原始快照 raw-data.json</a> — 看完整原始样本。</li>
+<li><a href="https://github.com/openclaw/openclaw">OpenClaw 活跃仓库</a> — 这是今天判断机会方向的直接证据。</li>
+<li><a href="https://github.com/google-gemini/gemini-cli">Gemini CLI 活跃仓库</a> — 这是今天判断机会方向的直接证据。</li>
+<li><a href="https://github.com/chopratejas/headroom">chopratejas/headroom</a> — 这是今天判断机会方向的直接证据。</li>
+<li><a href="https://github.com/affaan-m/ECC">affaan-m/ECC</a> — 这是今天判断机会方向的直接证据。</li>
+</ul>
+<hr>
+<blockquote>
+<p>本页由每日保底脚本生成，用于保证站点每天都有“能继续做什么”的可读版本；后续可以被更高质量的人工 / Codex 版本覆盖。生成时间: 2026-06-04 01:11 UTC</p>
+</blockquote>
+]]></content:encoded>
+    </item>
     <item>
       <title>少看点 AI 雷达 2026-06-03</title>
       <link>https://ceion6.github.io/seeless-learnmore/#2026-06-03/ai-radar</link>
@@ -14263,249 +14504,6 @@ Proposes a dynamic, closed-loop data mixing strategy for autonomous driving that
 <em>Why:</em> As coding agents become more common, the ability to measure reward hacking is critical. This paper provides the necessary evaluation framework, which will likely become a standard safety benchmark.</p>
 </li>
 </ol>
-<hr>
-<p><em>This digest is auto-generated by <a href="https://github.com/duanyytop/agents-radar">agents-radar</a>.</em></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Hugging Face 热门模型日报 2026-05-22</title>
-      <link>https://ceion6.github.io/seeless-learnmore/#2026-05-22/ai-hf</link>
-      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-05-22/ai-hf</guid>
-      <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
-      <description>Hugging Face 热门模型日报 2026-05-22 数据来源: Hugging Face Hub | 共 30 个模型 | 生成时间: 2026-05-22 00:25 UTC 好的，作为AI模型生态分析师，以下是为您整理的《Hugging Face 热门模型日报 (2026-05-22)》。 Hugging Face 热门模型日报 - 2026年5月22日 今日速览 今日 Hugging Face 生态呈现“双雄争霸”格局：DeepSeek-V4 系列与 Qwen3.6 系列均发布重磅更新，直接霸榜点赞与下载量前茅。DeepSeek-V4-Pro 以绝对优势领跑，而 Qwen3.6-35B-A3B 作为MoE模型吸引了大量关注。与此同时，Google Gemma-4 凭借海量下载成为社区最活跃的模型之一。多模态趋势持续升温，图像、视频生成模型及 AI 语音合成 工具表现亮眼。社区量化活动依然活跃，主要集中在 Qwen 系列模型的 GGUF 版本上。 热门模型 🧠 语言模型 (LLM、对话模型、指令微调) deepseek-ai/DeepSeek-V4-Pro 作者: de...</description>
-      <content:encoded><![CDATA[<h1>Hugging Face 热门模型日报 2026-05-22</h1>
-<blockquote>
-<p>数据来源: <a href="https://huggingface.co/">Hugging Face Hub</a> | 共 30 个模型 | 生成时间: 2026-05-22 00:25 UTC</p>
-</blockquote>
-<hr>
-<p>好的，作为AI模型生态分析师，以下是为您整理的《Hugging Face 热门模型日报 (2026-05-22)》。</p>
-<hr>
-<h3>Hugging Face 热门模型日报 - 2026年5月22日</h3>
-<h4><strong>今日速览</strong></h4>
-<p>今日 Hugging Face 生态呈现“双雄争霸”格局：<strong>DeepSeek-V4</strong> 系列与 <strong>Qwen3.6</strong> 系列均发布重磅更新，直接霸榜点赞与下载量前茅。DeepSeek-V4-Pro 以绝对优势领跑，而 Qwen3.6-35B-A3B 作为MoE模型吸引了大量关注。与此同时，<strong>Google Gemma-4</strong> 凭借海量下载成为社区最活跃的模型之一。多模态趋势持续升温，图像、视频生成模型及 <strong>AI 语音合成</strong> 工具表现亮眼。社区量化活动依然活跃，主要集中在 Qwen 系列模型的 GGUF 版本上。</p>
-<hr>
-<h4><strong>热门模型</strong></h4>
-<h5>🧠 语言模型 (LLM、对话模型、指令微调)</h5>
-<ul>
-<li><p><strong><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro">deepseek-ai/DeepSeek-V4-Pro</a></strong></p>
-<ul>
-<li>作者: deepseek-ai | 点赞: 4,111 | 下载: 4,041,458</li>
-<li>一句话说明：DeepSeek 最新旗舰模型，号称“V4 Pro”版本，以绝对优势的点赞数成为本周社区焦点，代表了开源大模型的最前沿水平。</li>
-</ul>
-</li>
-<li><p><strong><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash">deepseek-ai/DeepSeek-V4-Flash</a></strong></p>
-<ul>
-<li>作者: deepseek-ai | 点赞: 1,174 | 下载: 2,425,002</li>
-<li>一句话说明：DeepSeek-V4 的快速推理版本，在保持强大能力的同时优化了推理速度，是Pro版的轻量级互补选择。</li>
-</ul>
-</li>
-<li><p><strong><a href="https://huggingface.co/inclusionAI/Ring-2.6-1T">inclusionAI/Ring-2.6-1T</a></strong></p>
-<ul>
-<li>作者: inclusionAI | 点赞: 90 | 下载: 3,752</li>
-<li>一句话说明：一款参数规模达1万亿的混合专家（MoE）模型，展示了超大规模开源模型的探索趋势。</li>
-</ul>
-</li>
-<li><p><strong><a href="https://huggingface.co/sapientinc/HRM-Text-1B">sapientinc/HRM-Text-1B</a></strong></p>
-<ul>
-<li>作者: sapientinc | 点赞: 213 | 下载: 58,922</li>
-<li>一句话说明：专注于人力资源领域的文本生成模型，体现了AI在垂直行业应用的深化。</li>
-</ul>
-</li>
-</ul>
-<h5>🎨 多模态与生成 (图像、视频、音频、文本到X)</h5>
-<ul>
-<li><p><strong><a href="https://huggingface.co/Qwen/Qwen3.6-35B-A3B">Qwen/Qwen3.6-35B-A3B</a></strong></p>
-<ul>
-<li>作者: Qwen | 点赞: 1,850 | 下载: 5,895,569</li>
-<li>一句话说明：Qwen 3.6系列的MoE版本，凭借“总参35B、激活3B”的极高性价比，成为本周下载量最高的模型之一，社区关注度极高。</li>
-</ul>
-</li>
-<li><p><strong><a href="https://huggingface.co/Qwen/Qwen3.6-27B">Qwen/Qwen3.6-27B</a></strong></p>
-<ul>
-<li>作者: Qwen | 点赞: 1,370 | 下载: 3,928,039</li>
-<li>一句话说明：Qwen 3.6系列的满血版，与前代相比在多模态理解与生成任务上性能显著提升，是Qwen家族的中坚力量。</li>
-</ul>
-</li>
-<li><p><strong><a href="https://huggingface.co/google/gemma-4-31B-it">google/gemma-4-31B-it</a></strong></p>
-<ul>
-<li>作者: google | 点赞: 2,716 | 下载: 10,230,129</li>
-<li>一句话说明：Google 开源的最新指令微调模型，下载量突破千万，凭借谷歌品牌效应及均衡的性能，成为社区应用和微调的热门选择。</li>
-</ul>
-</li>
-<li><p><strong><a href="https://huggingface.co/SulphurAI/Sulphur-2-base">SulphurAI/Sulphur-2-base</a></strong></p>
-<ul>
-<li>作者: SulphurAI | 点赞: 1,232 | 下载: 1,198,471</li>
-<li>一句话说明：热门的开源文本生成视频模型，下载量超百万，证明了社区对高质量视频生成模型的旺盛需求。</li>
-</ul>
-</li>
-<li><p><strong><a href="https://huggingface.co/circlestone-labs/Anima">circlestone-labs/Anima</a></strong></p>
-<ul>
-<li>作者: circlestone-labs | 点赞: 1,465 | 下载: 591,834</li>
-<li>一句话说明：一个 Art 风格的扩散模型单文件，在 ComfyUI 等工具中非常流行，代表了社区对“即下即用”的生成式艺术模型的喜爱。</li>
-</ul>
-</li>
-<li><p><strong><a href="https://huggingface.co/HiDream-ai/HiDream-O1-Image">HiDream-ai/HiDream-O1-Image</a></strong></p>
-<ul>
-<li>作者: HiDream-ai | 点赞: 417 | 下载: 21,558</li>
-<li>一句话说明：一款新颖的“图像版o1”模型，能够根据文本指令对图像进行思考、推理并编辑或生成，探索了多模态模型的新范式。</li>
-</ul>
-</li>
-<li><p><strong><a href="https://huggingface.co/Supertone/supertonic-3">Supertone/supertonic-3</a></strong></p>
-<ul>
-<li>作者: Supertone | 点赞: 535 | 下载: 34,965</li>
-<li>一句话说明：顶尖的文本转语音（TTS）模型，支持ONNX部署，在语音合成质量上表现突出。</li>
-</ul>
-</li>
-</ul>
-<h5>🔧 专用模型 (代码、数学、医疗、嵌入)</h5>
-<ul>
-<li><p><strong><a href="https://huggingface.co/TencentARC/Pixal3D">TencentARC/Pixal3D</a></strong></p>
-<ul>
-<li>作者: TencentARC | 点赞: 180 | 下载: 0</li>
-<li>一句话说明：腾讯ARC实验室发布的图像生成3D模型，代表了从2D视觉内容高效生成3D资产的前沿研究方向。</li>
-</ul>
-</li>
-<li><p><strong><a href="https://huggingface.co/Cactus-Compute/needle">Cactus-Compute/needle</a></strong></p>
-<ul>
-<li>作者: Cactus-Compute | 点赞: 113 | 下载: 319</li>
-<li>一句话说明：一个专注于函数调用和工具使用的特殊模型，体现了AI Agent生态对专用模型的精细化需求。</li>
-</ul>
-</li>
-</ul>
-<h5>📦 微调与量化 (社区微调、GGUF、AWQ)</h5>
-<ul>
-<li><p><strong><a href="https://huggingface.co/unsloth/Qwen3.6-27B-MTP-GGUF">unsloth/Qwen3.6-27B-MTP-GGUF</a></strong></p>
-<ul>
-<li>作者: unsloth | 点赞: 373 | 下载: 478,488</li>
-<li>一句话说明：Unsloth 对 Qwen3.6 的量化版本，支持本地部署，下载量巨大，是社区量化活动的典范。</li>
-</ul>
-</li>
-<li><p><strong><a href="https://huggingface.co/unsloth/Qwen3.6-35B-A3B-MTP-GGUF">unsloth/Qwen3.6-35B-A3B-MTP-GGUF</a></strong></p>
-<ul>
-<li>作者: unsloth | 点赞: 312 | 下载: 421,542</li>
-<li>一句话说明：MoE版Qwen3.6的GGUF版本，使得超大模型也能在消费级硬件上高效运行，进一步推动了MoE模型的普及。</li>
-</ul>
-</li>
-<li><p><strong><a href="https://huggingface.co/froggeric/Qwen-Fixed-Chat-Templates">froggeric/Qwen-Fixed-Chat-Templates</a></strong></p>
-<ul>
-<li>作者: froggeric | 点赞: 353 | 下载: 0</li>
-<li>一句话说明：修复并优化了Qwen模型的对话模板，虽然功能单一，但反映出社区对于正确使用模型的基础设施需求。</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h4><strong>生态信号</strong></h4>
-<p>本周生态信号明显：<strong>“巨量模型”与“高效推理”</strong> 成为两大并行主线。<strong>DeepSeek</strong> 和 <strong>Qwen</strong> 两大“模型家族”势头最旺，通过推出满血版（Pro/27B）与轻量版（Flash/MoE-A3B）组合拳，覆盖对性能和效率的不同需求。开源权重模型在推理和对话任务上已具备与闭源模型竞争的实力，<strong>Google</strong> 的 <strong>Gemma-4</strong> 和 <strong>DeepSeek-V4</strong> 即是明证。量化活动（<strong>GGUF</strong>）主要围绕 <strong>Qwen3.6</strong> 展开，表明社区正努力让这些新晋强模型能在更广泛的硬件上运行。此外，从 <strong>HiDream-O1-Image</strong> 和 <strong>Sulphur-2</strong> 中可以看出，<strong>“推理能力”正在向多模态和生成模型渗透</strong>，而不仅仅是传统LLM的专利。</p>
-<hr>
-<h4><strong>值得探索</strong></h4>
-<ol>
-<li><strong>Qwen/Qwen3.6-35B-A3B</strong>：它几乎完美地平衡了性能与计算成本。强烈推荐所有希望在有限算力下体验前沿多模态能力的开发者试水。它的成功预示着未来模型将更普遍地采用MoE架构。</li>
-<li><strong>HiDream-ai/HiDream-O1-Image</strong>：这款模型代表了AI生成领域的一个重要方向——从“生成”走向“理解与修改”。它不再是一键生成，而是可以像与设计师对话一样进行迭代创作，值得深入研究其底层逻辑。</li>
-<li><strong>CohereLabs/command-a-plus-05-2026-w4a4</strong>：作为Cohere的最新模型，它支持4-bit权重的量化版本（w4a4），代表了在保持模型质量的同时，通过在更低比特位上进行量化的新探索，对于边缘部署和成本优化有重要意义。</li>
-</ol>
-<hr>
-<p><em>本日报由 <a href="https://github.com/duanyytop/agents-radar">agents-radar</a> 自动生成。</em></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Hugging Face Trending Models Digest 2026-05-22</title>
-      <link>https://ceion6.github.io/seeless-learnmore/#2026-05-22/ai-hf-en</link>
-      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-05-22/ai-hf-en</guid>
-      <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
-      <description>Hugging Face Trending Models Digest 2026-05-22 Source: Hugging Face Hub | 30 models | Generated: 2026-05-22 00:25 UTC Here is the Hugging Face Trending Models Digest for 2026-05-22. 1. Today&amp;#39;s Highlights This week’s trending models reveal a clear shift toward multimodal, vision-language systems and ultra-efficient quantized MoE architectures. DeepSeek-V4 commands the largest absolute attention with both its Pro and Flash variants, while Qwen’s MoE-based 35B-A3B continues to dominate download...</description>
-      <content:encoded><![CDATA[<h1>Hugging Face Trending Models Digest 2026-05-22</h1>
-<blockquote>
-<p>Source: <a href="https://huggingface.co/">Hugging Face Hub</a> | 30 models | Generated: 2026-05-22 00:25 UTC</p>
-</blockquote>
-<hr>
-<p>Here is the <strong>Hugging Face Trending Models Digest</strong> for <strong>2026-05-22</strong>.</p>
-<hr>
-<h2>1. Today&#39;s Highlights</h2>
-<p>This week’s trending models reveal a clear shift toward <strong>multimodal, vision-language systems</strong> and <strong>ultra-efficient quantized MoE architectures</strong>. DeepSeek-V4 commands the largest absolute attention with both its Pro and Flash variants, while Qwen’s MoE-based 35B-A3B continues to dominate downloads among vision-language models. On the generation side, the rise of compact text-to-video models like <strong>Sulphur-2-base</strong> and a surge in community <strong>GGUF quants</strong> for the Qwen3.6 family indicate strong grassroots demand for deployable, high-performance multimodal inference. Notably, new entrants from <strong>Cohere</strong>, <strong>Microsoft</strong>, and <strong>Tencent</strong> are expanding the competitive landscape for on-device and vision-enabled LLMs.</p>
-<hr>
-<h2>2. Trending Models by Category</h2>
-<h3>🧠 Language Models (LLMs, chat models, instruction-tuned)</h3>
-<ul>
-<li><strong>deepseek-ai/DeepSeek-V4-Pro</strong> – deepseek-ai | 4,111 likes, 4M+ downloads
-The latest flagship from DeepSeek, a dense conversational model setting new benchmarks for open-weight general intelligence.</li>
-<li><strong>deepseek-ai/DeepSeek-V4-Flash</strong> – deepseek-ai | 1,174 likes, 2.4M downloads
-A faster, lighter sibling of V4-Pro optimized for low-latency text generation without significant quality loss.</li>
-<li><strong>inclusionAI/Ring-2.6-1T</strong> – inclusionAI | 90 likes, 3.7K downloads
-A massive 1T-parameter hybrid model (Bailing architecture) targeting enterprise-grade conversational AI.</li>
-<li><strong>sapientinc/HRM-Text-1B</strong> – sapientinc | 213 likes, 59K downloads
-Specialized text-generation model for human resources management tasks.</li>
-<li><strong>FrontiersMind/Nandi-Mini-600M-Early-Checkpoint</strong> – FrontiersMind | 108 likes, 18.8K downloads
-Early checkpoint of a small, custom-code LLM; popular for research and fine-tuning experimentation.</li>
-</ul>
-<h3>🎨 Multimodal &amp; Generation (image, video, audio, text-to-X)</h3>
-<ul>
-<li><strong>Qwen/Qwen3.6-35B-A3B</strong> – Qwen | 1,850 likes, 5.9M downloads
-A Mixture-of-Experts vision-language model with 35B total parameters (3B active); the most downloaded model this week.</li>
-<li><strong>Qwen/Qwen3.6-27B</strong> – Qwen | 1,370 likes, 3.9M downloads
-Dense companion to the 35B-A3B; strong image-text-to-text performance for multimodal conversational AI.</li>
-<li><strong>google/gemma-4-31B-it</strong> – google | 2,716 likes, 10.2M downloads
-Google&#39;s latest open-weight vision-language instruction model; massive community adoption for multimodal chat.</li>
-<li><strong>microsoft/Fara-7B</strong> – microsoft | 592 likes, 15K downloads
-A 7B multimodal model built on Qwen2.5-VL architecture, optimized for vision-language reasoning.</li>
-<li><strong>SulphurAI/Sulphur-2-base</strong> – SulphurAI | 1,232 likes, 1.2M downloads
-A diffusion-based text-to-video base model; widely used with diffusers and GGUF for video generation.</li>
-<li><strong>bytedance-research/Lance</strong> – bytedance-research | 567 likes, 739 downloads
-An any-to-any multimodal model covering both image and video generation from diverse inputs.</li>
-<li><strong>TencentARC/Pixal3D</strong> – TencentARC | 180 likes, 0 downloads
-Academic image-to-3D pipeline (arXiv:2605.10922), for volumetric and mesh reconstruction.</li>
-<li><strong>HiDream-ai/HiDream-O1-Image</strong> – HiDream-ai | 417 likes, 21.5K downloads
-Chain-of-thought-style reasoning for image generation; image-text-to-image with Qwen3-VL backbone.</li>
-<li><strong>Efficient-Large-Model/SANA-WM_bidirectional</strong> – Efficient-Large-Model | 75 likes, 0 downloads
-Bidirectional image-to-video generation with camera control.</li>
-<li><strong>SeeSee21/Z-Anime</strong> – SeeSee21 | 432 likes, 16.3K downloads
-Style-specific text-to-image model for anime generation, available in diffusers and GGUF formats.</li>
-<li><strong>Supertone/supertonic-3</strong> – Supertone | 535 likes, 34.9K downloads
-Text-to-speech model with ONNX support; trending for high-quality voice synthesis.</li>
-<li><strong>ResembleAI/Dramabox</strong> – ResembleAI | 214 likes, 1.2K downloads
-TTS and voice-cloning model specialized in dramatic, expressive audio generation.</li>
-<li><strong>ScenemaAI/scenema-audio</strong> – ScenemaAI | 117 likes, 418 downloads
-Diffusion-based text-to-audio with voice-cloning capabilities.</li>
-<li><strong>NemoStation/Marlin-2B</strong> – NemoStation | 215 likes, 2.3K downloads
-Video-text-to-text model; combines Qwen3.5 backbone with video understanding.</li>
-</ul>
-<h3>🔧 Specialized Models (code, math, medical, embeddings, tools)</h3>
-<ul>
-<li><strong>Cactus-Compute/needle</strong> – Cactus-Compute | 113 likes, 319 downloads
-A JAX-based encoder-decoder model optimized for function-calling and tool-use agents.</li>
-<li><strong>froggeric/Qwen-Fixed-Chat-Templates</strong> – froggeric | 353 likes, 0 downloads
-MLX-compatible chat template fix for Qwen3.5 family; a niche but popular utility model.</li>
-<li><strong>facebook/VGGT-Omega</strong> – facebook | 81 likes, 0 downloads
-Meta&#39;s PyTorch research model (CC-BY-NC); likely a vision transformer for 3D or video tasks.</li>
-</ul>
-<h3>📦 Fine-tunes &amp; Quantizations (community fine-tunes, GGUF, AWQ)</h3>
-<ul>
-<li><strong>unsloth/Qwen3.6-27B-MTP-GGUF</strong> – unsloth | 373 likes, 478K downloads
-Multi-Token Prediction variant of Qwen3.6-27B in GGUF format; key for efficient local deployment.</li>
-<li><strong>unsloth/Qwen3.6-35B-A3B-MTP-GGUF</strong> – unsloth | 312 likes, 421K downloads
-Quantized GGUF version of Qwen3.6 MoE with MTP; enables near-native inference on consumer hardware.</li>
-<li><strong>Jackrong/Qwopus3.5-9B-Coder-GGUF</strong> – Jackrong | 148 likes, 24.4K downloads
-Community GGUF quantization of a code-specialized Qwen3.5 variant.</li>
-<li><strong>CohereLabs/command-a-plus-05-2026-w4a4</strong> – CohereLabs | 149 likes, 575 downloads
-A 4-bit quantized Cohere Command-A+ vision-language model, optimized for deployment.</li>
-<li><strong>CohereLabs/command-a-plus-05-2026-bf16</strong> – CohereLabs | 97 likes, 10K downloads
-BF16 full-precision version of the same Cohere model, suitable for cloud and research.</li>
-<li><strong>circlestone-labs/Anima</strong> – circlestone-labs | 1,465 likes, 591K downloads
-A diffusion single-file model for ComfyUI; trending heavily in the stable-diffusion community.</li>
-<li><strong>internlm/Intern-S2-Preview</strong> – internlm | 92 likes, 2.2K downloads
-Preview of Intern&#39;s updated vision-language model; a contender in the open multimodal space.</li>
-</ul>
-<hr>
-<h2>3. Ecosystem Signal</h2>
-<p>The dominant trend is the <strong>rapid commoditization of vision-language models</strong>. Qwen3.6 (both dense and MoE), Google’s Gemma-4, and Cohere’s Command-A+ all compete in the same image-text-to-text space, pushing open-weight multimodal performance downward in size and cost. <strong>MoE architectures</strong> (Qwen3.6-35B-A3B) are particularly hot—users download them at rates 50% higher than similarly-sized dense models, likely due to their favorable quality-per-active-parameter ratio for local inference.</p>
-<p><strong>Quantization via GGUF</strong> remains the primary vehicle for democratizing these large models. Unsloth’s Qwen3.6 quantizations accumulated over 900K combined downloads, signaling a user base that prioritizes local, private, and low-latency inference over cloud reliance. Meanwhile, <strong>DeepSeek-V4</strong> (Pro and Flash) remains the top “pure” LLM, with the Flash variant indicating demand for tiered performance/ latency offerings.</p>
-<p>On the generation side, <strong>text-to-video</strong> is accelerating: Sulphur-2-base (1.2M downloads) and SANA-WM show that lightweight diffusion models for video are gaining traction. <strong>Voice and audio models</strong> (Supertonic, Dramabox, Scenema) are seeing a renaissance as TTS quality improves dramatically and voice cloning becomes accessible to smaller developers.</p>
-<hr>
-<h2>4. Worth Exploring</h2>
-<ul>
-<li><strong>Qwen/Qwen3.6-35B-A3B</strong> – The best ratio of quality to compute cost in multimodal today. Its MoE architecture makes it uniquely suited for both cloud and edge deployment. If you’re building a vision-enabled chat agent, start here.</li>
-<li><strong>SulphurAI/Sulphur-2-base</strong> – With over 1.2M downloads, this is the go-to open text-to-video foundation model. Explore its diffusers integration and GGUF options to see how far video generation has come on consumer GPUs.</li>
-<li><strong>unsloth/Qwen3.6-35B-A3B-MTP-GGUF</strong> – For those interested in quantized deployment, this is the most capable MoE vision-language model in a deployable format. Investigate the Multi-Token Prediction approach—it offers a glimpse of the next frontier in efficient causal generation.</li>
-</ul>
 <hr>
 <p><em>This digest is auto-generated by <a href="https://github.com/duanyytop/agents-radar">agents-radar</a>.</em></p>
 ]]></content:encoded>
