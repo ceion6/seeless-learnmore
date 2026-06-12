@@ -57,6 +57,16 @@ describe("fetchSocialSignals", () => {
               content: "<p>Book launch: subscribe now for a limited offer</p>",
               account: { acct: "promo", display_name: "Promo" },
             },
+            {
+              id: "mastodon-offtopic",
+              url: "https://mastodon.social/@offtopic/1",
+              created_at: createdAt,
+              replies_count: 100,
+              reblogs_count: 100,
+              favourites_count: 100,
+              content: "<p>New car audio system released today</p>",
+              account: { acct: "offtopic", display_name: "Offtopic" },
+            },
           ]),
         );
       }),
@@ -69,6 +79,7 @@ describe("fetchSocialSignals", () => {
     expect(result.posts[0]?.source).toBe("mastodon");
     expect(result.posts.some((post) => post.source === "bluesky")).toBe(true);
     expect(result.posts.some((post) => post.id === "mastodon-promo")).toBe(false);
+    expect(result.posts.some((post) => post.id === "mastodon-offtopic")).toBe(false);
   });
 
   it("writes a standalone social source report", () => {

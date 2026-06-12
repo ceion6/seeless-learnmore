@@ -42,6 +42,8 @@ const NOISE_PATTERNS = [
   /\blimited offer\b/i,
   /\binvest in ai companies\b/i,
 ];
+const RELEVANCE_PATTERN =
+  /\b(ai|artificial intelligence|llm|language model|machine learning|agentic|agents?|openai|anthropic|claude|gemini|mistral|local model|neural|transformer|inference|rag)\b/i;
 
 interface BlueskyPost {
   uri: string;
@@ -96,7 +98,11 @@ function dedupeKey(text: string): string {
 }
 
 function isUsefulSignal(post: SocialSignal): boolean {
-  return post.score >= 5 && !NOISE_PATTERNS.some((pattern) => pattern.test(post.text));
+  return (
+    post.score >= 7 &&
+    RELEVANCE_PATTERN.test(post.text) &&
+    !NOISE_PATTERNS.some((pattern) => pattern.test(post.text))
+  );
 }
 
 async function fetchBlueskySignals(): Promise<{ posts: SocialSignal[]; success: boolean }> {
@@ -188,13 +194,16 @@ async function fetchMastodonSignals(): Promise<{ posts: SocialSignal[]; success:
 export async function fetchSocialSignals(): Promise<SocialSignalsData> {
   const [bluesky, mastodon] = await Promise.all([fetchBlueskySignals(), fetchMastodonSignals()]);
   const seen = new Set<string>();
+  const authorCounts = new Map<string, number>();
   const posts = [...bluesky.posts, ...mastodon.posts]
     .filter(isUsefulSignal)
     .sort((a, b) => b.score - a.score)
     .filter((post) => {
       const key = dedupeKey(post.text);
-      if (!key || seen.has(key)) return false;
+      const authorCount = authorCounts.get(post.author) ?? 0;
+      if (!key || seen.has(key) || authorCount >= 2) return false;
       seen.add(key);
+      authorCounts.set(post.author, authorCount + 1);
       return true;
     })
     .slice(0, MAX_POSTS);
