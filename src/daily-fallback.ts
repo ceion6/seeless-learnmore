@@ -9,6 +9,7 @@ import type { ArxivPaper } from "./arxiv.ts";
 import type { HfModel } from "./hf.ts";
 import type { DevtoArticle } from "./devto.ts";
 import type { LobstersStory } from "./lobsters.ts";
+import type { SocialSignal } from "./social-signals.ts";
 import type { WebPageItem } from "./web.ts";
 import { buildRadarCoverageContext } from "./prompts-data.ts";
 import { FOOTER } from "./i18n.ts";
@@ -241,6 +242,10 @@ function topCommunity(snapshot: CollectedSnapshot): Array<DevtoArticle | Lobster
   return [...devto, ...lobsters];
 }
 
+function topSocialSignals(snapshot: CollectedSnapshot): SocialSignal[] {
+  return (snapshot.socialSignals?.posts ?? []).slice(0, 6);
+}
+
 function topWebItems(snapshot: CollectedSnapshot): WebPageItem[] {
   return snapshot.webResults
     .flatMap((result) => result.newItems)
@@ -264,6 +269,10 @@ function collectEvidence(snapshot: CollectedSnapshot): EvidenceLink[] {
 
   for (const item of topStories(snapshot).slice(0, 1)) {
     links.push({ label: item.title, url: item.url });
+  }
+
+  for (const item of topSocialSignals(snapshot).slice(0, 1)) {
+    links.push({ label: `${item.source}: ${item.text.slice(0, 50)}`, url: item.url });
   }
 
   for (const item of topModels(snapshot).slice(0, 1)) {
@@ -342,6 +351,12 @@ function toTextBlob(snapshot: CollectedSnapshot): Array<{ text: string; link: Ev
       });
     }
   }
+  for (const post of topSocialSignals(snapshot)) {
+    entries.push({
+      text: `${post.source} ${post.community ?? ""} ${post.text}`,
+      link: { label: `${post.source}: ${post.text.slice(0, 50)}`, url: post.url },
+    });
+  }
 
   return entries;
 }
@@ -369,6 +384,11 @@ function detectThemes(snapshot: CollectedSnapshot): ThemeMatch[] {
 }
 
 function buildHeadline(snapshot: CollectedSnapshot, themes: ThemeMatch[]): string {
+  const social = topSocialSignals(snapshot)[0];
+  if (social && social.score >= 20) {
+    return `今天社交讨论的焦点是：${social.text.slice(0, 54)}。`;
+  }
+
   const topTheme = themes.find((theme) => theme.scores > 0);
   if (topTheme) return topTheme.summary;
 
@@ -377,6 +397,42 @@ function buildHeadline(snapshot: CollectedSnapshot, themes: ThemeMatch[]): strin
   }
 
   return "今天的有效信号不算密集，适合保守记录样本，而不是硬下大结论。";
+}
+
+function buildRadarSocial(snapshot: CollectedSnapshot): string {
+  const posts = topSocialSignals(snapshot).slice(0, 4);
+  if (!posts.length) {
+    const social = snapshot.socialSignals;
+    const reason = !social
+      ? "今日快照尚未包含社交媒体采集结果。"
+      : !social.blueskyFetchSuccess && !social.redditFetchSuccess
+        ? "Bluesky 和 Reddit 今日均未成功获取，暂时不能判断社交热度。"
+        : "Bluesky 和 Reddit 没有返回足够强的高互动样本，今天先不脑补社交热度。";
+    return (
+      `### 今天没有拿到足够强的社交媒体信号\n` +
+      bulletLine("判断", reason) +
+      "\n" +
+      bulletLine("来源", `[今日原始快照](./raw-data.json)`)
+    );
+  }
+
+  return posts
+    .map((post) => {
+      const source = post.community ?? (post.source === "bluesky" ? "Bluesky" : "Reddit");
+      const title = post.text.length > 70 ? `${post.text.slice(0, 70)}…` : post.text;
+      return (
+        `### ${title}\n` +
+        bulletLine("判断", `${source} 上出现高互动讨论，互动分 ${post.score}，回复 ${post.replies}。`) +
+        "\n" +
+        bulletLine(
+          "为什么值得看",
+          "社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。",
+        ) +
+        "\n" +
+        bulletLine("来源", `[${source}](${post.url})`)
+      );
+    })
+    .join("\n\n");
 }
 
 function buildCoverageNotice(snapshot: CollectedSnapshot): string {
@@ -645,6 +701,9 @@ function buildRadarSources(snapshot: CollectedSnapshot): string {
   for (const story of topStories(snapshot).slice(0, 1)) {
     lines.push(`- [${story.title}](${story.url}) — 看国外开发者今天在争什么。`);
   }
+  for (const post of topSocialSignals(snapshot).slice(0, 2)) {
+    lines.push(`- [${post.community ?? post.source}](${post.url}) — 看社交平台上的真实反馈和争议。`);
+  }
 
   return lines.slice(0, 6).join("\n");
 }
@@ -659,6 +718,7 @@ export function buildFallbackRadarReport(snapshot: CollectedSnapshot): string {
     `> ${lead}\n` +
     (coverageNotice ? `>\n> 覆盖提醒：${coverageNotice}\n` : "") +
     `\n## 今天必看\n\n${buildRadarMustRead(snapshot, themes)}\n\n` +
+    `## 社交媒体在聊什么\n\n${buildRadarSocial(snapshot)}\n\n` +
     `## 正在升温\n\n${buildRadarWarming(themes)}\n\n` +
     `## 新模型 / 新产品\n\n${buildRadarModels(snapshot)}\n\n` +
     `## 论文里可能有用的东西\n\n${buildRadarPapers(snapshot)}\n\n` +

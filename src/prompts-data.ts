@@ -475,7 +475,7 @@ export function buildShaokandianRadarPrompt(
 
   return `你是“少看点 AI 雷达”的中文主编。你的任务不是摘要所有信息，而是替一个中文读者过滤今日 AI 领域真正值得看的知识、趋势和最新进展。
 
-以下是 ${dateStr} 的多来源 AI 报告，包含 GitHub 趋势、Hacker News、Product Hunt、ArXiv、Hugging Face、技术社区和官方动态等。内容可能来自英文来源；请输出中文判断，同时保留项目名、论文名、公司名和必要的原文链接。
+以下是 ${dateStr} 的多来源 AI 报告，包含 GitHub 趋势、Hacker News、Product Hunt、ArXiv、Hugging Face、技术社区、社交媒体信号和官方动态等。内容可能来自英文来源；请输出中文判断，同时保留项目名、论文名、公司名和必要的原文链接。
 
 ${coverageSection}${sections}
 
@@ -496,6 +496,9 @@ ${coverageSection}${sections}
 - 为什么重要：说明它可能改变技术路线、产品格局、开发方式或研究判断。
 - 来源：列出来源报告 ID 或原始链接。
 - 建议：看原文 / 扫一眼 / 等复盘。
+
+## 社交媒体在聊什么
+最多 4 条。优先提炼真实试用反馈、用户情绪和争议点；不要把社交热度直接当作事实。
 
 ## 正在升温
 最多 5 条。放趋势词、方向或连续出现的信号，而不是单条新闻堆砌。

@@ -24,6 +24,7 @@ import { fetchArxivData, type ArxivData } from "./arxiv.ts";
 import { fetchHfData, type HfData } from "./hf.ts";
 import { fetchDevtoData, type DevtoData } from "./devto.ts";
 import { fetchLobstersData, type LobstersData } from "./lobsters.ts";
+import { fetchSocialSignals, type SocialSignalsData } from "./social-signals.ts";
 
 const {
   cliRepos: CLI_REPOS,
@@ -46,6 +47,7 @@ export interface CollectedSnapshot {
   hfData: HfData;
   devtoData: DevtoData;
   lobstersData: LobstersData;
+  socialSignals?: SocialSignalsData;
 }
 
 export function rawSnapshotPath(dateStr: string): string {
@@ -77,10 +79,11 @@ export async function fetchAllData(
   hfData: HfData;
   devtoData: DevtoData;
   lobstersData: LobstersData;
+  socialSignals: SocialSignalsData;
 }> {
   const allConfigs = [...CLI_REPOS, OPENCLAW, ...OPENCLAW_PEERS];
   console.log(
-    `  Tracking: ${allConfigs.map((r) => r.id).join(", ")}, claude-code-skills, web, hn, ph, arxiv, hf, devto, lobsters`,
+    `  Tracking: ${allConfigs.map((r) => r.id).join(", ")}, claude-code-skills, web, hn, ph, arxiv, hf, devto, lobsters, bluesky, reddit`,
   );
 
   const [
@@ -94,6 +97,7 @@ export async function fetchAllData(
     hfData,
     devtoData,
     lobstersData,
+    socialSignals,
   ] = await Promise.all([
     Promise.all(
       allConfigs.map(async (cfg) => {
@@ -151,6 +155,13 @@ export async function fetchAllData(
     fetchHfData().catch((): HfData => ({ models: [], fetchSuccess: false })),
     fetchDevtoData().catch((): DevtoData => ({ articles: [], fetchSuccess: false })),
     fetchLobstersData().catch((): LobstersData => ({ stories: [], fetchSuccess: false })),
+    fetchSocialSignals().catch(
+      (): SocialSignalsData => ({
+        posts: [],
+        blueskyFetchSuccess: false,
+        redditFetchSuccess: false,
+      }),
+    ),
   ]);
 
   return {
@@ -164,6 +175,7 @@ export async function fetchAllData(
     hfData,
     devtoData,
     lobstersData,
+    socialSignals,
   };
 }
 
