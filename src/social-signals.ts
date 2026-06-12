@@ -3,7 +3,7 @@
  */
 
 export interface SocialSignal {
-  source: "bluesky" | "reddit";
+  source: "bluesky" | "mastodon";
   id: string;
   text: string;
   url: string;
@@ -17,11 +17,16 @@ export interface SocialSignal {
 export interface SocialSignalsData {
   posts: SocialSignal[];
   blueskyFetchSuccess: boolean;
-  redditFetchSuccess: boolean;
+  mastodonFetchSuccess: boolean;
 }
 
-const BLUESKY_QUERIES = ["artificial intelligence", "LLM", "Claude AI", "OpenAI", "AI agents"];
-const REDDIT_COMMUNITIES = ["LocalLLaMA", "MachineLearning", "ClaudeAI", "OpenAI"];
+const BLUESKY_ACTORS = ["openai.com", "anthropic.com", "huggingface.co", "simonwillison.net", "karpathy.ai"];
+const MASTODON_TAG_URLS = [
+  "https://mastodon.social/api/v1/timelines/tag/ai?limit=30",
+  "https://mastodon.social/api/v1/timelines/tag/llm?limit=30",
+  "https://fosstodon.org/api/v1/timelines/tag/ai?limit=30",
+  "https://fosstodon.org/api/v1/timelines/tag/machinelearning?limit=30",
+];
 const MAX_POSTS = 30;
 const RECENT_WINDOW_MS = 36 * 60 * 60 * 1000;
 
@@ -37,25 +42,18 @@ interface BlueskyPost {
 }
 
 interface BlueskyResponse {
-  posts?: BlueskyPost[];
+  feed?: Array<{ post: BlueskyPost }>;
 }
 
-interface RedditPost {
+interface MastodonStatus {
   id: string;
-  title: string;
-  selftext?: string;
-  author: string;
-  subreddit: string;
-  permalink: string;
-  created_utc: number;
-  score?: number;
-  num_comments?: number;
-  stickied?: boolean;
-  over_18?: boolean;
-}
-
-interface RedditResponse {
-  data?: { children?: Array<{ data: RedditPost }> };
+  url?: string;
+  created_at: string;
+  replies_count?: number;
+  reblogs_count?: number;
+  favourites_count?: number;
+  content: string;
+  account: { acct: string; display_name?: string };
 }
 
 function isRecent(createdAt: string): boolean {
@@ -63,7 +61,16 @@ function isRecent(createdAt: string): boolean {
 }
 
 function cleanText(text: string): string {
-  return text.replace(/\s+/g, " ").trim().slice(0, 600);
+  return text
+    .replace(/<[^>]*>/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&#39;/g, "'")
+    .replace(/&quot;/g, '"')
+    .replace(/\s+/g, " ")
+    .trim()
+    .slice(0, 600);
 }
 
 async function fetchBlueskySignals(): Promise<{ posts: SocialSignal[]; success: boolean }> {
@@ -71,19 +78,18 @@ async function fetchBlueskySignals(): Promise<{ posts: SocialSignal[]; success: 
   let success = false;
 
   await Promise.all(
-    BLUESKY_QUERIES.map(async (query) => {
+    BLUESKY_ACTORS.map(async (actor) => {
       try {
-        const params = new URLSearchParams({ q: query, limit: "25", sort: "top" });
-        const resp = await fetch(`https://public.api.bsky.app/xrpc/app.bsky.feed.searchPosts?${params}`, {
-          headers: { "User-Agent": "seeless-learnmore/1.0" },
-        });
+        const params = new URLSearchParams({ actor, limit: "20", filter: "posts_no_replies" });
+        const resp = await fetch(`https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?${params}`);
         if (!resp.ok) {
-          console.error(`  [bluesky] "${query}": HTTP ${resp.status}`);
+          console.error(`  [bluesky/${actor}] HTTP ${resp.status}`);
           return;
         }
         success = true;
         const data = (await resp.json()) as BlueskyResponse;
-        for (const post of data.posts ?? []) {
+        for (const entry of data.feed ?? []) {
+          const post = entry.post;
           const createdAt = post.record.createdAt ?? post.indexedAt;
           const text = cleanText(post.record.text ?? "");
           if (!text || !isRecent(createdAt)) continue;
@@ -105,7 +111,7 @@ async function fetchBlueskySignals(): Promise<{ posts: SocialSignal[]; success: 
           });
         }
       } catch (err) {
-        console.error(`  [bluesky] "${query}": ${err}`);
+        console.error(`  [bluesky/${actor}] ${err}`);
       }
     }),
   );
@@ -113,42 +119,39 @@ async function fetchBlueskySignals(): Promise<{ posts: SocialSignal[]; success: 
   return { posts: [...seen.values()], success };
 }
 
-async function fetchRedditSignals(): Promise<{ posts: SocialSignal[]; success: boolean }> {
+async function fetchMastodonSignals(): Promise<{ posts: SocialSignal[]; success: boolean }> {
   const seen = new Map<string, SocialSignal>();
   let success = false;
 
   await Promise.all(
-    REDDIT_COMMUNITIES.map(async (community) => {
+    MASTODON_TAG_URLS.map(async (url) => {
       try {
-        const url = `https://www.reddit.com/r/${community}/top.json?t=day&limit=25&raw_json=1`;
-        const resp = await fetch(url, {
-          headers: { "User-Agent": "seeless-learnmore/1.0 (public daily radar)" },
-        });
+        const resp = await fetch(url);
         if (!resp.ok) {
-          console.error(`  [reddit/${community}] HTTP ${resp.status}`);
+          console.error(`  [mastodon] ${url}: HTTP ${resp.status}`);
           return;
         }
         success = true;
-        const data = (await resp.json()) as RedditResponse;
-        for (const child of data.data?.children ?? []) {
-          const post = child.data;
-          const createdAt = new Date(post.created_utc * 1000).toISOString();
-          if (post.stickied || post.over_18 || !isRecent(createdAt)) continue;
-          const text = cleanText(`${post.title} ${post.selftext ?? ""}`);
-          seen.set(post.id, {
-            source: "reddit",
-            id: post.id,
+        const statuses = (await resp.json()) as MastodonStatus[];
+        for (const status of statuses) {
+          if (!status.url || !isRecent(status.created_at)) continue;
+          const text = cleanText(status.content);
+          if (!text) continue;
+          seen.set(status.url, {
+            source: "mastodon",
+            id: status.id,
             text,
-            url: `https://www.reddit.com${post.permalink}`,
-            author: post.author,
-            community: `r/${post.subreddit}`,
-            createdAt,
-            score: (post.score ?? 0) + (post.num_comments ?? 0) * 2,
-            replies: post.num_comments ?? 0,
+            url: status.url,
+            author: status.account.display_name || status.account.acct,
+            community: "Mastodon",
+            createdAt: status.created_at,
+            score:
+              (status.favourites_count ?? 0) + (status.reblogs_count ?? 0) * 2 + (status.replies_count ?? 0),
+            replies: status.replies_count ?? 0,
           });
         }
       } catch (err) {
-        console.error(`  [reddit/${community}] ${err}`);
+        console.error(`  [mastodon] ${url}: ${err}`);
       }
     }),
   );
@@ -157,18 +160,18 @@ async function fetchRedditSignals(): Promise<{ posts: SocialSignal[]; success: b
 }
 
 export async function fetchSocialSignals(): Promise<SocialSignalsData> {
-  const [bluesky, reddit] = await Promise.all([fetchBlueskySignals(), fetchRedditSignals()]);
-  const posts = [...bluesky.posts, ...reddit.posts]
-    .filter((post) => post.score >= 5)
+  const [bluesky, mastodon] = await Promise.all([fetchBlueskySignals(), fetchMastodonSignals()]);
+  const posts = [...bluesky.posts, ...mastodon.posts]
+    .filter((post) => post.score >= 3)
     .sort((a, b) => b.score - a.score)
     .slice(0, MAX_POSTS);
 
   console.log(
-    `  [social-signals] ${posts.length} posts (Bluesky: ${bluesky.posts.length}, Reddit: ${reddit.posts.length})`,
+    `  [social-signals] ${posts.length} posts (Bluesky: ${bluesky.posts.length}, Mastodon: ${mastodon.posts.length})`,
   );
   return {
     posts,
     blueskyFetchSuccess: bluesky.success,
-    redditFetchSuccess: reddit.success,
+    mastodonFetchSuccess: mastodon.success,
   };
 }

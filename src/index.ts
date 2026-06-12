@@ -206,7 +206,7 @@ async function main(): Promise<void> {
           socialSignals: snapshot.socialSignals ?? {
             posts: [],
             blueskyFetchSuccess: false,
-            redditFetchSuccess: false,
+            mastodonFetchSuccess: false,
           },
         },
       };

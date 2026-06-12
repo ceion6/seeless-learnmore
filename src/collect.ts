@@ -83,7 +83,7 @@ export async function fetchAllData(
 }> {
   const allConfigs = [...CLI_REPOS, OPENCLAW, ...OPENCLAW_PEERS];
   console.log(
-    `  Tracking: ${allConfigs.map((r) => r.id).join(", ")}, claude-code-skills, web, hn, ph, arxiv, hf, devto, lobsters, bluesky, reddit`,
+    `  Tracking: ${allConfigs.map((r) => r.id).join(", ")}, claude-code-skills, web, hn, ph, arxiv, hf, devto, lobsters, bluesky, mastodon`,
   );
 
   const [
@@ -159,7 +159,7 @@ export async function fetchAllData(
       (): SocialSignalsData => ({
         posts: [],
         blueskyFetchSuccess: false,
-        redditFetchSuccess: false,
+        mastodonFetchSuccess: false,
       }),
     ),
   ]);

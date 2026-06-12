@@ -372,12 +372,12 @@ export async function saveCommunityReport(
 }
 
 // ---------------------------------------------------------------------------
-// Social signals report (Bluesky + Reddit, no LLM required)
+// Social signals report (Bluesky + Mastodon, no LLM required)
 // ---------------------------------------------------------------------------
 
 function socialPostSection(post: SocialSignal, lang: Lang): string {
   const title = post.text.length > 90 ? `${post.text.slice(0, 90)}…` : post.text;
-  const source = post.community ?? (post.source === "bluesky" ? "Bluesky" : "Reddit");
+  const source = post.community ?? (post.source === "bluesky" ? "Bluesky" : "Mastodon");
   return lang === "en"
     ? `### ${title}\n- Source: ${source}\n- Engagement score: ${post.score}; replies: ${post.replies}\n- Author: ${post.author}\n- [Open discussion](${post.url})`
     : `### ${title}\n- 来源平台：${source}\n- 互动分：${post.score}；回复：${post.replies}\n- 作者：${post.author}\n- [查看讨论](${post.url})`;
@@ -394,8 +394,8 @@ export async function saveSocialSignalsReport(
   const title = lang === "en" ? "AI Social Signals" : "AI 社交媒体信号";
   const status =
     lang === "en"
-      ? `Bluesky fetch: ${data.blueskyFetchSuccess ? "ok" : "unavailable"}; Reddit fetch: ${data.redditFetchSuccess ? "ok" : "unavailable"}`
-      : `Bluesky：${data.blueskyFetchSuccess ? "正常" : "不可用"}；Reddit：${data.redditFetchSuccess ? "正常" : "不可用"}`;
+      ? `Bluesky fetch: ${data.blueskyFetchSuccess ? "ok" : "unavailable"}; Mastodon fetch: ${data.mastodonFetchSuccess ? "ok" : "unavailable"}`
+      : `Bluesky：${data.blueskyFetchSuccess ? "正常" : "不可用"}；Mastodon：${data.mastodonFetchSuccess ? "正常" : "不可用"}`;
   const body = data.posts.length
     ? data.posts
         .slice(0, 20)
