@@ -84,7 +84,7 @@ Each item should stay short and decision-oriented:
 - Do not restate every raw item.
 - Focus on what changed, what matters, and what can be skipped.
 - Compare with the previous day's radar and avoid repeating the same themes unless there is meaningful new evidence.
-- Use Bluesky and Reddit as early user-feedback and controversy signals, not as proof of facts.
+- Use Bluesky and Mastodon as early user-feedback and controversy signals, not as proof of facts.
 - Prefer concrete product, research, infrastructure, and ecosystem signals.
 - Treat GitHub star spikes as discovery signals, not proof of technical quality.
 - When a source is noisy, compress it into one judgment instead of listing everything.

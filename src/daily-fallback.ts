@@ -405,9 +405,9 @@ function buildRadarSocial(snapshot: CollectedSnapshot): string {
     const social = snapshot.socialSignals;
     const reason = !social
       ? "今日快照尚未包含社交媒体采集结果。"
-      : !social.blueskyFetchSuccess && !social.redditFetchSuccess
-        ? "Bluesky 和 Reddit 今日均未成功获取，暂时不能判断社交热度。"
-        : "Bluesky 和 Reddit 没有返回足够强的高互动样本，今天先不脑补社交热度。";
+      : !social.blueskyFetchSuccess && !social.mastodonFetchSuccess
+        ? "Bluesky 和 Mastodon 今日均未成功获取，暂时不能判断社交热度。"
+        : "Bluesky 和 Mastodon 没有返回足够强的高互动样本，今天先不脑补社交热度。";
     return (
       `### 今天没有拿到足够强的社交媒体信号\n` +
       bulletLine("判断", reason) +
@@ -418,7 +418,7 @@ function buildRadarSocial(snapshot: CollectedSnapshot): string {
 
   return posts
     .map((post) => {
-      const source = post.community ?? (post.source === "bluesky" ? "Bluesky" : "Reddit");
+      const source = post.community ?? (post.source === "bluesky" ? "Bluesky" : "Mastodon");
       const title = post.text.length > 70 ? `${post.text.slice(0, 70)}…` : post.text;
       return (
         `### ${title}\n` +

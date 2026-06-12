@@ -186,7 +186,7 @@ function makeSnapshot(): CollectedSnapshot {
     },
     socialSignals: {
       blueskyFetchSuccess: true,
-      redditFetchSuccess: true,
+      mastodonFetchSuccess: true,
       posts: [
         {
           source: "bluesky",
