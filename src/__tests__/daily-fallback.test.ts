@@ -184,6 +184,22 @@ function makeSnapshot(): CollectedSnapshot {
         },
       ],
     },
+    socialSignals: {
+      blueskyFetchSuccess: true,
+      redditFetchSuccess: true,
+      posts: [
+        {
+          source: "bluesky",
+          id: "at://did:plc:test/app.bsky.feed.post/1",
+          text: "Developers are debating whether agent benchmarks reflect real work",
+          url: "https://bsky.app/profile/test/post/1",
+          author: "test",
+          createdAt: "2026-06-03T00:00:00Z",
+          score: 80,
+          replies: 20,
+        },
+      ],
+    },
   };
 }
 
@@ -193,6 +209,8 @@ describe("daily fallback reports", () => {
     expect(result).toContain("# 少看点 AI 雷达 2026-06-03");
     expect(result).toContain("## 今天必看");
     expect(result).toContain("## 正在升温");
+    expect(result).toContain("## 社交媒体在聊什么");
+    expect(result).toContain("agent benchmarks reflect real work");
     expect(result).toContain("## 原始入口");
     expect(result).toContain("本页由每日保底脚本生成");
   });
@@ -225,4 +243,3 @@ describe("daily fallback reports", () => {
     }
   });
 });
-
