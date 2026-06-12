@@ -3,6 +3,7 @@ import fs from "node:fs";
 import { loadCollectedSnapshot, rawSnapshotPath } from "./collect.ts";
 import { saveFallbackDailyReports } from "./daily-fallback.ts";
 import { toCstDateStr } from "./date.ts";
+import { saveSocialSignalsReport } from "./social-signals.ts";
 
 function resolveSnapshotPath(): string {
   if (process.env["RAW_SNAPSHOT_PATH"]) return process.env["RAW_SNAPSHOT_PATH"];
@@ -18,6 +19,10 @@ async function main(): Promise<void> {
 
   const snapshot = loadCollectedSnapshot(snapshotPath);
   const { radarPath, opportunityPath } = saveFallbackDailyReports(snapshot);
+  if (snapshot.socialSignals) {
+    saveSocialSignalsReport(snapshot.socialSignals, snapshot.utcStr, snapshot.dateStr, "", "zh");
+    saveSocialSignalsReport(snapshot.socialSignals, snapshot.utcStr, snapshot.dateStr, "", "en");
+  }
 
   if (radarPath) {
     console.log(`  Saved ${radarPath}`);
