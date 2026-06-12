@@ -1,6 +1,6 @@
 {
   "anthropic": {
-    "lastChecked": "2026-06-12T13:11:55.526Z",
+    "lastChecked": "2026-06-12T13:18:21.443Z",
     "seenUrls": {
       "https://www.anthropic.com/news/responsible-scaling-policy-v3": "2026-02-25T23:57:06.000Z",
       "https://www.anthropic.com/research/deprecation-updates-opus-3": "2026-02-25T20:58:11.000Z",
@@ -385,7 +385,7 @@
     }
   },
   "openai": {
-    "lastChecked": "2026-06-12T13:11:51.179Z",
+    "lastChecked": "2026-06-12T13:18:22.747Z",
     "seenUrls": {
       "https://openai.com/index/arvind-kc-chief-people-officer/": "2026-05-29T00:25:33.242Z",
       "https://openai.com/index/put-ai-to-work-for-your-product-team/": "2026-06-12T04:05:36.713Z",
@@ -694,7 +694,7 @@
       "https://openai.com/index/retro-contest/": "2026-06-03T04:00:46.051Z",
       "https://openai.com/index/block-sparse-gpu-kernels/": "2026-06-12T12:03:06.521Z",
       "https://openai.com/index/robust-adversarial-inputs/": "2026-06-03T03:59:53.398Z",
-      "https://openai.com/index/new-embedding-models-and-api-updates/": "2026-05-15T16:34:45.434Z",
+      "https://openai.com/index/new-embedding-models-and-api-updates/": "2026-06-12T13:17:04.501Z",
       "https://openai.com/index/how-openai-is-approaching-2024-worldwide-elections/": "2026-06-10T12:27:36.647Z",
       "https://openai.com/index/democratic-inputs-to-ai-grant-program-update/": "2026-06-10T12:34:57.833Z",
       "https://openai.com/index/dall-e-introducing-outpainting/": "2026-06-03T18:57:35.305Z",
@@ -1094,12 +1094,12 @@
       "https://openai.com/index/openai-submits-confidential-s-1/": "2026-06-12T11:52:37.652Z",
       "https://openai.com/index/built-to-benefit-everyone-our-plan/": "2026-06-12T11:17:59.057Z",
       "https://openai.com/index/economic-research-exchange/": "2026-06-12T12:38:18.012Z",
-      "https://openai.com/index/openai-on-oracle-cloud/": "2026-06-12T12:21:40.274Z",
+      "https://openai.com/index/openai-on-oracle-cloud/": "2026-06-12T13:15:44.375Z",
       "https://openai.com/index/openai-to-acquire-ona/": "2026-06-12T12:51:53.285Z"
     }
   },
   "deepmind": {
-    "lastChecked": "2026-06-12T13:11:48.541Z",
+    "lastChecked": "2026-06-12T13:18:20.318Z",
     "seenUrls": {
       "https://deepmind.google/models/model-cards/gemini-3-1-flash-image/": "2026-05-23",
       "https://deepmind.google/models/model-cards/": "2026-06-10",
@@ -1524,7 +1524,7 @@
     }
   },
   "qwen": {
-    "lastChecked": "2026-06-12T13:11:48.534Z",
+    "lastChecked": "2026-06-12T13:18:20.398Z",
     "seenUrls": {
       "https://qwenlm.github.io/zh/blog/qwen3guard/": "2025-09-23T04:00:00+08:00",
       "https://qwenlm.github.io/zh/blog/": "2025-09-23T04:00:00+08:00",
@@ -1574,7 +1574,7 @@
     }
   },
   "deepseek": {
-    "lastChecked": "2026-06-12T13:11:49.566Z",
+    "lastChecked": "2026-06-12T13:18:21.499Z",
     "seenUrls": {
       "https://api-docs.deepseek.com/news/news0725": "seen",
       "https://api-docs.deepseek.com/news/news0802": "seen",
