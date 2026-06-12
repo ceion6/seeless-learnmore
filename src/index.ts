@@ -39,6 +39,7 @@ import {
   saveArxivReport,
   saveHfReport,
   saveCommunityReport,
+  saveSocialSignalsReport,
 } from "./report-savers.ts";
 import { fetchAllData, loadCollectedSnapshot } from "./collect.ts";
 import { saveFallbackDailyReports } from "./daily-fallback.ts";
@@ -202,6 +203,11 @@ async function main(): Promise<void> {
           hfData: snapshot.hfData,
           devtoData: snapshot.devtoData,
           lobstersData: snapshot.lobstersData,
+          socialSignals: snapshot.socialSignals ?? {
+            posts: [],
+            blueskyFetchSuccess: false,
+            redditFetchSuccess: false,
+          },
         },
       };
     }
@@ -229,6 +235,7 @@ async function main(): Promise<void> {
     hfData,
     devtoData,
     lobstersData,
+    socialSignals,
   } = loaded.data;
 
   const peerIds = new Set(OPENCLAW_PEERS.map((p) => p.id));
@@ -335,6 +342,8 @@ async function main(): Promise<void> {
     saveHfReport(hfData, utcStr, dateStr, digestRepo, autoGenFooter("en"), "en"),
     saveCommunityReport(devtoData, lobstersData, utcStr, dateStr, digestRepo, autoGenFooter("zh"), "zh"),
     saveCommunityReport(devtoData, lobstersData, utcStr, dateStr, digestRepo, autoGenFooter("en"), "en"),
+    saveSocialSignalsReport(socialSignals, utcStr, dateStr, autoGenFooter("zh"), "zh"),
+    saveSocialSignalsReport(socialSignals, utcStr, dateStr, autoGenFooter("en"), "en"),
   ]);
 
   // 5. Generate highlights for Telegram notification
@@ -353,6 +362,7 @@ async function main(): Promise<void> {
     ["ai-arxiv", "ai-arxiv.md", "ai-arxiv-en.md"],
     ["ai-hf", "ai-hf.md", "ai-hf-en.md"],
     ["ai-community", "ai-community.md", "ai-community-en.md"],
+    ["ai-social", "ai-social.md", "ai-social-en.md"],
   ] as const) {
     const zh = readReport(zhFile);
     const en = readReport(enFile);
@@ -391,6 +401,7 @@ async function main(): Promise<void> {
         hfData,
         devtoData,
         lobstersData,
+        socialSignals,
       },
       { force: false },
     );
@@ -430,6 +441,7 @@ async function main(): Promise<void> {
         hfData,
         devtoData,
         lobstersData,
+        socialSignals,
       },
       { force: false },
     );

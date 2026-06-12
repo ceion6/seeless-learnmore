@@ -15,7 +15,7 @@ The recommended operating mode is:
 
 ## What it does
 
-- fetches AI signals from GitHub, Hacker News, ArXiv, Hugging Face, Product Hunt, Dev.to, Lobste.rs, and official company sites
+- fetches AI signals from GitHub, Hacker News, ArXiv, Hugging Face, Product Hunt, Dev.to, Lobste.rs, Bluesky, Reddit, and official company sites
 - generates a Chinese `ai-radar` page for high-signal daily reading
 - generates a Chinese `ai-opportunity` page for "what to build" judgment
 - publishes everything through GitHub Pages
@@ -34,6 +34,8 @@ The recommended operating mode is:
 - Hugging Face
 - Dev.to
 - Lobste.rs
+- High-engagement Bluesky discussions for AI keywords
+- Reddit: LocalLLaMA, MachineLearning, ClaudeAI, OpenAI
 - Official web sources via sitemap:
   Anthropic, OpenAI, Google DeepMind, Qwen, DeepSeek API Docs
 
@@ -42,6 +44,7 @@ The recommended operating mode is:
 Files are written to `digests/YYYY-MM-DD/`.
 
 - `ai-radar.md`: the main Chinese daily radar
+- `ai-social.md`: high-engagement Bluesky and Reddit discussions
 - `ai-opportunity.md`: the Chinese opportunity page
 - `ai-cli.md`: AI CLI ecosystem digest
 - `ai-agents.md`: agent / OpenClaw ecosystem digest

@@ -15,7 +15,7 @@
 
 ## 它会做什么
 
-- 抓取 GitHub、Hacker News、ArXiv、Hugging Face、Product Hunt、Dev.to、Lobste.rs 和 AI 公司官网动态
+- 抓取 GitHub、Hacker News、ArXiv、Hugging Face、Product Hunt、Dev.to、Lobste.rs、Bluesky、Reddit 和 AI 公司官网动态
 - 生成中文主页面 `ai-radar.md`
 - 生成中文机会页 `ai-opportunity.md`
 - 通过 GitHub Pages 发布静态站点
@@ -35,6 +35,8 @@
 - Hugging Face
 - Dev.to
 - Lobste.rs
+- Bluesky AI 关键词高互动讨论
+- Reddit：LocalLLaMA、MachineLearning、ClaudeAI、OpenAI
 - 官网 sitemap：
   Anthropic、OpenAI、Google DeepMind、Qwen、DeepSeek API Docs
 
@@ -43,6 +45,7 @@
 所有文件都写到 `digests/YYYY-MM-DD/`。
 
 - `ai-radar.md`：中文主日报，适合直接看
+- `ai-social.md`：Bluesky 与 Reddit 高互动讨论
 - `ai-opportunity.md`：中文机会页，适合继续判断“做什么”
 - `ai-cli.md`：AI CLI 工具生态
 - `ai-agents.md`：agent / OpenClaw 生态
