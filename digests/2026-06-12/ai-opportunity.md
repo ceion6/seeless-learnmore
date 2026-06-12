@@ -1,89 +1,76 @@
 # AI 机会雷达 2026-06-12
 
-> 今天更值得下注的，是 Agent 执行护栏与回滚审计层、Agent 会话沉淀与团队记忆层、浏览器/终端工作流模板包 这几类能在真实流程里立刻验证的机会。
+> 今天最值得下注的机会面，是为“会主动行动的 Agent”补上控制、评测和流量治理层。
 
 ## 先看结论
 
-今天最值得做的机会，不在再做一个通用聊天入口，而在把 agent 接进真实工作流的薄层基础设施。
-Agent 执行护栏与回滚审计层 是第一优先，因为 团队真正不敢放开的，通常不是生成能力，而是权限、验证和回滚。
-Agent 会话沉淀与团队记忆层 也值得看，因为 当团队开始长期使用 agent，最大的浪费是每次会话都从零开始。
-这些方向的共同点是：用户清晰、痛点具体，而且能在 2~6 周内做出第一版去试。
+昨天的机会仍集中在 Agent 执行护栏，但今天出现了更具体的新切口：主动 Agent 如何在不打断效率的前提下让用户保持掌控；团队如何判断一份技能说明真的变好了；内容站如何管理越来越复杂的 AI Bot 流量。
+
+这三个方向都不需要训练模型，能在 2–6 周内用真实用户验证，也比再做一个通用 Agent 更容易形成明确付费理由。
 
 ## 值得做的 3 个方向
 
-### Agent 执行护栏与回滚审计层
-- 给谁做：已经让 agent 改代码、跑命令、触发 hook 的工程团队。
-- 痛点：会话挂死、权限边界不清、结果难审计，出了错又很难回滚。
-- 为什么是现在：今天的 GitHub issue、HN 讨论和论文信号都在提醒：agent 真实生产问题已经暴露出来了。
-- 最小可行解：先做执行前检查、操作日志、产物校验和回滚建议，不必先做完整沙盒。
-- 付费可能：这类产品贴近 DevInfra，接入流程后不容易切走，适合团队套餐或按执行量收费。
-- 证据：[Claude Code #67917](https://github.com/anthropics/claude-code/issues/67917)、[Claude Code #67915](https://github.com/anthropics/claude-code/issues/67915)、[Claude Code #67753](https://github.com/anthropics/claude-code/pull/67753)、[OpenAI Codex #25376](https://github.com/openai/codex/issues/25376)、[OpenAI Codex #27848](https://github.com/openai/codex/issues/27848)
-- 下一步：先访谈 5 个已经让 agent 跑命令的团队，确认他们最怕的失败类型。
+### 主动 Agent 的行动控制层
+- 给谁做：已经让 Coding Agent、浏览器 Agent 或运营 Agent 自动推进多步任务的团队。
+- 痛点：Agent 太保守没有价值，太主动又会越界；用户通常只能在“每步确认”和“完全放开”之间二选一。
+- 为什么是现在：Claude Fable 的高互动试用讨论把主动性体验推到台前，说明用户已经开始真实感受到这个问题。
+- 最小可行解：提供行动预览、风险分级、任务预算、敏感步骤确认和一键撤销记录，先接一个现成 Agent。
+- 付费可能：它直接降低误操作和审计成本，适合按团队或受控任务量收费。
+- 证据：[Claude Fable 试用原文](https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/)、[Bluesky 讨论](https://bsky.app/profile/simonwillison.net/post/3mo2ffgezqs2f)
+- 下一步：找 5 个已经允许 Agent 连续执行多步操作的用户，记录他们最近一次主动性越界或过度打断。
 
-### Agent 会话沉淀与团队记忆层
-- 给谁做：频繁用 agent 做排障、代码阅读、探索式开发的团队。
-- 痛点：会话关掉就散，后续无法复用决策、命令和上下文。
-- 为什么是现在：社区已经开始把会话转成 wiki、dashboard、长期知识资产，而不只是一次性聊天记录。
-- 最小可行解：先做会话提炼和归档，把结论、文件引用和关键步骤整理成团队笔记。
-- 付费可能：只要能减少重复排查和 onboarding 时间，就有明确的效率价值。
-- 证据：[Claude Code v2.1.174](https://github.com/anthropics/claude-code/releases)、[Claude Code #67917](https://github.com/anthropics/claude-code/issues/67917)、[Claude Code #67916](https://github.com/anthropics/claude-code/issues/67916)、[Claude Code #67915](https://github.com/anthropics/claude-code/issues/67915)、[Claude Code #67893](https://github.com/anthropics/claude-code/issues/67893)
-- 下一步：先验证团队是否真的会回看 agent 会话，再决定要不要扩成完整知识库。
+### Agent 技能回放评测器
+- 给谁做：维护内部 Skills、System Prompt、MCP 工作流或 Agent SOP 的团队。
+- 痛点：技能说明改了一版后，只能靠人工感觉判断是否更好；某类任务提升时，另一类任务可能悄悄退化。
+- 为什么是现在：`agent-skills` 的热度说明技能正在成为可分发资产，SkillOpt 相关讨论则说明优化开始工具化。
+- 最小可行解：保存 20–50 个真实任务回放，对技能版本做结果、成本、耗时和人工介入次数对比。
+- 付费可能：团队愿意为可重复发布和减少回归事故付费，尤其适合已有大量内部技能的公司。
+- 证据：[addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)、[SkillOpt 讨论](https://mastodon.social/@theblazetrends/116732735452241478)
+- 下一步：先用一个团队现有技能做前后版本盲测，确认回放评分与人工偏好是否一致。
 
-### 浏览器/终端工作流模板包
-- 给谁做：做测试、后台运营、增长实验、数据录入的小团队。
-- 痛点：大家知道 agent 能碰浏览器和终端，但不知道怎么把它拼成稳定流程。
-- 为什么是现在：浏览器和命令行能力正逐步进入 agent 工具层，工作流模板开始有现实价值。
-- 最小可行解：先做网页巡检、表单回归、后台操作复盘这类模板包，而不是通用自动化平台。
-- 付费可能：只要能持续省掉人工重复操作，就适合按模板包或团队订阅收费。
-- 证据：[Claude Code #67917](https://github.com/anthropics/claude-code/issues/67917)、[Claude Code #67916](https://github.com/anthropics/claude-code/issues/67916)、[Claude Code #67915](https://github.com/anthropics/claude-code/issues/67915)、[OpenAI Codex #25376](https://github.com/openai/codex/issues/25376)、[OpenAI Codex #27848](https://github.com/openai/codex/issues/27848)
-- 下一步：先挑一个现成 SOP 最明确的场景，让真实用户拿现网流程试一次。
+### 面向内容站的 AI Bot 流量控制台
+- 给谁做：文档站、媒体、独立出版者和拥有大量公开内容的 SaaS。
+- 痛点：站点方看不清哪些 AI Bot 在抓取、带来多少成本、是否遵守规则，也难以针对不同用途设置策略。
+- 为什么是现在：社区已经开始整理 LLM Bot User-Agent，说明这个问题从抽象版权争议进入日常运维。
+- 最小可行解：从 CDN / 反向代理日志识别 AI Bot，给出流量、成本、robots 策略和阻断建议，不先做代理网络。
+- 付费可能：对有明显抓取成本或内容授权诉求的站点，可按流量或站点订阅收费。
+- 证据：[LLM Bot User-Agent 讨论](https://chaos.social/@schenklklopfer/116736851668376777)
+- 下一步：找 3 个内容站导入一周日志，确认 AI Bot 流量是否足以形成可量化成本。
 
 ## 次优但可观察
 
-### 团队级技能包与插件目录
-- 现在看到了什么信号：skills、plugins、MCP、hooks 和 workflow 模板正在形成独立分发层。
-- 为什么先不重注：不要先做开放 marketplace，先验证团队内部有没有值得复用的 skill 配方。
-- 后续要继续观察什么：先验证目标团队是否已经沉淀出 5 个以上会重复使用的 agent 配方。
+### 多模态 Agent 的视觉定位组件
+- 现在看到了什么信号：`LocateAnything-3B` 等视觉模型进入模型热榜。
+- 为什么先不重注：模型热度不等于可靠性，必须先证明在具体界面或质检任务上优于现有方案。
+- 后续观察：真实任务成功率、延迟和部署成本，而不是榜单排名。
 
-### 代码库上下文打底层
-- 现在看到了什么信号：代码知识图谱、私有搜索和 repo understanding 还在持续升温。
-- 为什么先不重注：不要把“能索引代码”直接当成壁垒，关键是能不能接进真实任务前置环节。
-- 后续要继续观察什么：先找 3 个已经在用 coding agent 的团队，验证他们最常卡住的是“找不到该改哪里”。
-
-### 模型侧机会先保持观察
-- 现在看到了什么信号：google/diffusiongemma-26B-A4B-it 进入模型热榜，说明模型面仍有活跃样本。
-- 为什么先不重注：只看模型热度不够支撑产品方向，除非已经找到明确使用场景。 
-- 后续要继续观察什么：用户到底是更在意部署成本、隐私，还是某个具体能力差异。 
+### 动态 Agent 记忆评测
+- 现在看到了什么信号：EvoArena 开始讨论动态环境里的记忆演化。
+- 为什么先不重注：研究问题明确，但商业用户是否愿意单独购买记忆评测仍需验证。
+- 后续观察：主流 Agent 平台是否开始公开记忆更新与遗忘机制。
 
 ## 今天先别做
 
-### 通用“再做一个 AI 助手”
-- 原因：今天的信号更支持做上下文、护栏、复用层，而不是再做一个聊天壳。
+### 再做一个通用 Agent 壳
+- 原因：今天的真实信号集中在控制和评测，而不是缺少一个新的对话入口。
 
-### 纯资讯聚合或榜单站
-- 原因：用户更缺的是可执行判断，不是再多一条信息流。
+### 只靠 GitHub 星数做技能市场
+- 原因：分发有需求，但没有回放评测和质量信号的市场会很快被重复与低质量内容淹没。
 
-### 纯靠新品发布包装的方向
-- 原因：今天 Product Hunt 样本不足，没必要用缺失数据硬凑产品热度。
-
-### 先别把 Agent 执行护栏与回滚审计层 做成大平台
-- 原因：不要一上来做完整平台，先验证团队最怕的是权限、泄露、卡死还是难追责。
+### 用一条社交帖子直接做大规模 AI Bot 安全平台
+- 原因：方向具体但证据仍少，先验证内容站的真实流量和成本，再决定产品边界。
 
 ## 开工顺序
 
-1. 先验证 Agent 执行护栏与回滚审计层 对目标用户是不是当前最痛的阻塞点，而不是先搭完整平台。
-2. 先找已经在日常流程里用 agent 的团队试 Agent 会话沉淀与团队记忆层 或 Agent 执行护栏与回滚审计层，不要先找纯围观用户。
-3. 如果 3 个用户里至少 2 个愿意拿真实仓库或真实流程试用，就继续；如果只有“听起来不错”，就收窄切口。
+1. 优先验证“主动 Agent 的行动控制层”：它有最强的用户讨论和最直接的风险价值。
+2. 同时用一个真实技能做回放评测原型，验证团队是否愿意用结果替代主观判断。
+3. AI Bot 控制台先做日志分析服务；只有当 3 个站点都能量化成本时，再产品化。
 
 ## 原始入口
 
-- [少看点 AI 雷达](./#2026-06-12/ai-radar) — 先看当天的总判断。
-- [今日原始快照 raw-data.json](./raw-data.json) — 看完整原始样本。
-- [OpenClaw 活跃仓库](https://github.com/openclaw/openclaw) — 这是今天判断机会方向的直接证据。
-- [OpenAI Codex 活跃仓库](https://github.com/openai/codex) — 这是今天判断机会方向的直接证据。
-- [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) — 这是今天判断机会方向的直接证据。
-- [music-assistant/server](https://github.com/music-assistant/server) — 这是今天判断机会方向的直接证据。
+- [少看点 AI 雷达](./#2026-06-12/ai-radar)
+- [今日社交媒体信号](./#2026-06-12/ai-social)
+- [Claude Fable 试用原文](https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/)
+- [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)
+- [今日原始快照](./raw-data.json)
 
----
-
-> 本页由每日保底脚本生成，用于保证站点每天都有“能继续做什么”的可读版本；后续可以被更高质量的人工 / Codex 版本覆盖。生成时间: 2026-06-12 13:34 UTC
