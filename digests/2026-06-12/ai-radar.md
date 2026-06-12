@@ -7,7 +7,7 @@
 ## 今天必看
 
 ### OpenClaw 生态今天更新密度最高
-- 结论：OpenClaw 在 24 小时内累计出现 775 个 issue / PR / release 样本。
+- 结论：OpenClaw 在 24 小时内累计出现 765 个 issue / PR / release 样本。
 - 为什么重要：仓库更新密度高，通常代表工具链正在快速试错，值得先看真实问题和新增能力。 
 - 来源：[OpenClaw](https://github.com/openclaw/openclaw)
 - 建议：看原文
@@ -38,7 +38,7 @@
 - 来源：[Bluesky](https://bsky.app/profile/simonwillison.net/post/3mo2ffgezqs2f)
 
 ### McSweeneys on # Ai #economics "Benjamin owns a farm. He employs 100 wo…
-- 判断：Mastodon 上出现高互动讨论，互动分 50，回复 0。
+- 判断：Mastodon 上出现高互动讨论，互动分 61，回复 0。
 - 为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。
 - 来源：[Mastodon](https://hachyderm.io/@cyberlyra/116737269337040623)
 
@@ -47,28 +47,28 @@
 - 为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。
 - 来源：[Bluesky](https://bsky.app/profile/simonwillison.net/post/3mnzspi2kxs25)
 
-### The ultimate outfit for the AI apocalypse! Hand embroidered tee: https…
+### From the Leanpub Blog: Leanpub Book LAUNCH 🚀 The Agentic AI book: Fro…
 - 判断：Mastodon 上出现高互动讨论，互动分 10，回复 0。
 - 为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。
-- 来源：[Mastodon](https://mastodon.social/@rebordacao/116737213605281464)
+- 来源：[Mastodon](https://mastodon.social/@leanpub/116733660730240217)
 
 ## 正在升温
 
 ### Agent 执行护栏与回滚审计层
 - 结论：runtime、sandbox、hook、benchmark 可信度这些问题正在反复出现。
-- 来源：[Claude Code #67911](https://github.com/anthropics/claude-code/issues/67911)、[Claude Code #67909](https://github.com/anthropics/claude-code/issues/67909)、[Claude Code #67753](https://github.com/anthropics/claude-code/pull/67753)、[OpenAI Codex #25376](https://github.com/openai/codex/issues/25376)、[OpenAI Codex #25737](https://github.com/openai/codex/issues/25737)
+- 来源：[Claude Code #67909](https://github.com/anthropics/claude-code/issues/67909)、[Claude Code #67914](https://github.com/anthropics/claude-code/issues/67914)、[Claude Code #67911](https://github.com/anthropics/claude-code/issues/67911)、[Claude Code #67753](https://github.com/anthropics/claude-code/pull/67753)、[OpenAI Codex #27848](https://github.com/openai/codex/issues/27848)
 
 ### Agent 会话沉淀与团队记忆层
 - 结论：memory、wiki、session archive、version snapshot 这条线正在慢慢成形。
-- 来源：[Claude Code v2.1.174](https://github.com/anthropics/claude-code/releases)、[Claude Code #67911](https://github.com/anthropics/claude-code/issues/67911)、[Claude Code #67909](https://github.com/anthropics/claude-code/issues/67909)、[Claude Code #67910](https://github.com/anthropics/claude-code/issues/67910)、[OpenAI Codex #25376](https://github.com/openai/codex/issues/25376)
+- 来源：[Claude Code v2.1.174](https://github.com/anthropics/claude-code/releases)、[Claude Code #67909](https://github.com/anthropics/claude-code/issues/67909)、[Claude Code #67914](https://github.com/anthropics/claude-code/issues/67914)、[Claude Code #67912](https://github.com/anthropics/claude-code/issues/67912)、[Claude Code #67911](https://github.com/anthropics/claude-code/issues/67911)
 
 ### 浏览器/终端工作流模板包
 - 结论：DevTools、browser、CLI 和 task automation 的结合信号在变强。
-- 来源：[Claude Code #56092](https://github.com/anthropics/claude-code/issues/56092)、[Claude Code #67909](https://github.com/anthropics/claude-code/issues/67909)、[Claude Code #67910](https://github.com/anthropics/claude-code/issues/67910)、[OpenAI Codex #25376](https://github.com/openai/codex/issues/25376)、[OpenAI Codex #25737](https://github.com/openai/codex/issues/25737)
+- 来源：[Claude Code #67909](https://github.com/anthropics/claude-code/issues/67909)、[Claude Code #67914](https://github.com/anthropics/claude-code/issues/67914)、[Claude Code #67912](https://github.com/anthropics/claude-code/issues/67912)、[OpenAI Codex #27848](https://github.com/openai/codex/issues/27848)、[OpenAI Codex #25376](https://github.com/openai/codex/issues/25376)
 
 ### 团队级技能包与插件目录
 - 结论：skills、plugins、MCP、hooks 和 workflow 模板正在形成独立分发层。
-- 来源：[Claude Code v2.1.174](https://github.com/anthropics/claude-code/releases)、[Claude Code #67909](https://github.com/anthropics/claude-code/issues/67909)、[Claude Code #67753](https://github.com/anthropics/claude-code/pull/67753)、[OpenAI Codex #25737](https://github.com/openai/codex/issues/25737)、[OpenAI Codex #27870](https://github.com/openai/codex/pull/27870)
+- 来源：[Claude Code v2.1.174](https://github.com/anthropics/claude-code/releases)、[Claude Code #67909](https://github.com/anthropics/claude-code/issues/67909)、[Claude Code #67914](https://github.com/anthropics/claude-code/issues/67914)、[Claude Code #67753](https://github.com/anthropics/claude-code/pull/67753)、[OpenAI Codex #27848](https://github.com/openai/codex/issues/27848)
 
 ## 新模型 / 新产品
 
@@ -118,7 +118,7 @@
 
 ### 纯热度样本先别当成产品结论
 - 判断：不要一上来做完整平台，先验证团队最怕的是权限、泄露、卡死还是难追责。
-- 来源：[Claude Code #67911](https://github.com/anthropics/claude-code/issues/67911)、[Claude Code #67909](https://github.com/anthropics/claude-code/issues/67909)、[Claude Code #67753](https://github.com/anthropics/claude-code/pull/67753)、[OpenAI Codex #25376](https://github.com/openai/codex/issues/25376)、[OpenAI Codex #25737](https://github.com/openai/codex/issues/25737)
+- 来源：[Claude Code #67909](https://github.com/anthropics/claude-code/issues/67909)、[Claude Code #67914](https://github.com/anthropics/claude-code/issues/67914)、[Claude Code #67911](https://github.com/anthropics/claude-code/issues/67911)、[Claude Code #67753](https://github.com/anthropics/claude-code/pull/67753)、[OpenAI Codex #27848](https://github.com/openai/codex/issues/27848)
 
 ## 原始入口
 
@@ -131,4 +131,4 @@
 
 ---
 
-> 本页由每日保底脚本生成，用于保证站点每日都有可读更新；后续可以被更高质量的人工 / Codex 版本覆盖。生成时间: 2026-06-12 13:18 UTC
+> 本页由每日保底脚本生成，用于保证站点每日都有可读更新；后续可以被更高质量的人工 / Codex 版本覆盖。生成时间: 2026-06-12 13:25 UTC
