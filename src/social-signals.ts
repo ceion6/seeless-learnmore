@@ -2,6 +2,10 @@
  * Public social-media signals that do not require API keys.
  */
 
+import fs from "node:fs";
+import path from "node:path";
+import type { Lang } from "./i18n.ts";
+
 export interface SocialSignal {
   source: "bluesky" | "mastodon";
   id: string;
@@ -174,4 +178,46 @@ export async function fetchSocialSignals(): Promise<SocialSignalsData> {
     blueskyFetchSuccess: bluesky.success,
     mastodonFetchSuccess: mastodon.success,
   };
+}
+
+function socialPostSection(post: SocialSignal, lang: Lang): string {
+  const title = post.text.length > 90 ? `${post.text.slice(0, 90)}…` : post.text;
+  const source = post.community ?? (post.source === "bluesky" ? "Bluesky" : "Mastodon");
+  return lang === "en"
+    ? `### ${title}\n- Source: ${source}\n- Engagement score: ${post.score}; replies: ${post.replies}\n- Author: ${post.author}\n- [Open discussion](${post.url})`
+    : `### ${title}\n- 来源平台：${source}\n- 互动分：${post.score}；回复：${post.replies}\n- 作者：${post.author}\n- [查看讨论](${post.url})`;
+}
+
+export function saveSocialSignalsReport(
+  data: SocialSignalsData,
+  utcStr: string,
+  dateStr: string,
+  footer: string,
+  lang: Lang = "zh",
+): string {
+  const fileName = lang === "en" ? "ai-social-en.md" : "ai-social.md";
+  const title = lang === "en" ? "AI Social Signals" : "AI 社交媒体信号";
+  const status =
+    lang === "en"
+      ? `Bluesky fetch: ${data.blueskyFetchSuccess ? "ok" : "unavailable"}; Mastodon fetch: ${data.mastodonFetchSuccess ? "ok" : "unavailable"}`
+      : `Bluesky：${data.blueskyFetchSuccess ? "正常" : "不可用"}；Mastodon：${data.mastodonFetchSuccess ? "正常" : "不可用"}`;
+  const body = data.posts.length
+    ? data.posts
+        .slice(0, 20)
+        .map((post) => socialPostSection(post, lang))
+        .join("\n\n")
+    : lang === "en"
+      ? "No sufficiently strong social-media signals were collected today."
+      : "今天没有收集到足够强的社交媒体信号。";
+  const content =
+    `# ${title} ${dateStr}\n\n` +
+    `> ${status} | ${data.posts.length} ${lang === "en" ? "posts" : "条讨论"} | ${utcStr} UTC\n\n` +
+    `---\n\n` +
+    `## ${lang === "en" ? "High-engagement discussions" : "今日高互动讨论"}\n\n${body}` +
+    footer;
+  const filepath = path.join("digests", dateStr, fileName);
+  fs.mkdirSync(path.dirname(filepath), { recursive: true });
+  fs.writeFileSync(filepath, content, "utf-8");
+  console.log(`  Saved ${filepath}`);
+  return filepath;
 }

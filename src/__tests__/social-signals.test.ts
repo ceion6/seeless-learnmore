@@ -1,5 +1,8 @@
+import fs from "node:fs";
+import os from "node:os";
+import path from "node:path";
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { fetchSocialSignals } from "../social-signals.ts";
+import { fetchSocialSignals, saveSocialSignalsReport } from "../social-signals.ts";
 
 afterEach(() => {
   vi.unstubAllGlobals();
@@ -55,5 +58,40 @@ describe("fetchSocialSignals", () => {
     expect(result.mastodonFetchSuccess).toBe(true);
     expect(result.posts[0]?.source).toBe("mastodon");
     expect(result.posts.some((post) => post.source === "bluesky")).toBe(true);
+  });
+
+  it("writes a standalone social source report", () => {
+    const tmp = fs.mkdtempSync(path.join(os.tmpdir(), "social-signals-"));
+    const previous = process.cwd();
+    try {
+      process.chdir(tmp);
+      const filepath = saveSocialSignalsReport(
+        {
+          blueskyFetchSuccess: true,
+          mastodonFetchSuccess: true,
+          posts: [
+            {
+              source: "mastodon",
+              id: "1",
+              text: "Developers discuss a new local model",
+              url: "https://mastodon.social/@test/1",
+              author: "test",
+              community: "Mastodon",
+              createdAt: "2026-06-12T00:00:00Z",
+              score: 20,
+              replies: 4,
+            },
+          ],
+        },
+        "2026-06-12 00:00:00",
+        "2026-06-12",
+        "",
+      );
+      expect(filepath).toBe(path.join("digests", "2026-06-12", "ai-social.md"));
+      expect(fs.readFileSync(filepath, "utf-8")).toContain("Developers discuss a new local model");
+    } finally {
+      process.chdir(previous);
+      fs.rmSync(tmp, { recursive: true, force: true });
+    }
   });
 });

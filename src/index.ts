@@ -39,8 +39,8 @@ import {
   saveArxivReport,
   saveHfReport,
   saveCommunityReport,
-  saveSocialSignalsReport,
 } from "./report-savers.ts";
+import { saveSocialSignalsReport } from "./social-signals.ts";
 import { fetchAllData, loadCollectedSnapshot } from "./collect.ts";
 import { saveFallbackDailyReports } from "./daily-fallback.ts";
 import { loadWebState } from "./web.ts";
