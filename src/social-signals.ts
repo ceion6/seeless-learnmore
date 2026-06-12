@@ -24,7 +24,7 @@ export interface SocialSignalsData {
   mastodonFetchSuccess: boolean;
 }
 
-const BLUESKY_ACTORS = ["openai.com", "anthropic.com", "huggingface.co", "simonwillison.net", "karpathy.ai"];
+const BLUESKY_ACTORS = ["anthropic.com", "simonwillison.net"];
 const MASTODON_TAG_URLS = [
   "https://mastodon.social/api/v1/timelines/tag/ai?limit=30",
   "https://mastodon.social/api/v1/timelines/tag/llm?limit=30",
@@ -33,6 +33,15 @@ const MASTODON_TAG_URLS = [
 ];
 const MAX_POSTS = 30;
 const RECENT_WINDOW_MS = 36 * 60 * 60 * 1000;
+const NOISE_PATTERNS = [
+  /\bbook launch\b/i,
+  /\bwebinar\b/i,
+  /\bonline course\b/i,
+  /\bsubscribe\b/i,
+  /\bdiscount\b/i,
+  /\blimited offer\b/i,
+  /\binvest in ai companies\b/i,
+];
 
 interface BlueskyPost {
   uri: string;
@@ -75,6 +84,19 @@ function cleanText(text: string): string {
     .replace(/\s+/g, " ")
     .trim()
     .slice(0, 600);
+}
+
+function dedupeKey(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/https?:\/\/\S+/g, "")
+    .replace(/[^\p{L}\p{N}]+/gu, " ")
+    .trim()
+    .slice(0, 160);
+}
+
+function isUsefulSignal(post: SocialSignal): boolean {
+  return post.score >= 5 && !NOISE_PATTERNS.some((pattern) => pattern.test(post.text));
 }
 
 async function fetchBlueskySignals(): Promise<{ posts: SocialSignal[]; success: boolean }> {
@@ -165,9 +187,16 @@ async function fetchMastodonSignals(): Promise<{ posts: SocialSignal[]; success:
 
 export async function fetchSocialSignals(): Promise<SocialSignalsData> {
   const [bluesky, mastodon] = await Promise.all([fetchBlueskySignals(), fetchMastodonSignals()]);
+  const seen = new Set<string>();
   const posts = [...bluesky.posts, ...mastodon.posts]
-    .filter((post) => post.score >= 3)
+    .filter(isUsefulSignal)
     .sort((a, b) => b.score - a.score)
+    .filter((post) => {
+      const key = dedupeKey(post.text);
+      if (!key || seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    })
     .slice(0, MAX_POSTS);
 
   console.log(

@@ -47,6 +47,16 @@ describe("fetchSocialSignals", () => {
               content: "<p>Local model release discussion with real user feedback</p>",
               account: { acct: "bob", display_name: "Bob" },
             },
+            {
+              id: "mastodon-promo",
+              url: "https://mastodon.social/@promo/1",
+              created_at: createdAt,
+              replies_count: 100,
+              reblogs_count: 100,
+              favourites_count: 100,
+              content: "<p>Book launch: subscribe now for a limited offer</p>",
+              account: { acct: "promo", display_name: "Promo" },
+            },
           ]),
         );
       }),
@@ -58,6 +68,7 @@ describe("fetchSocialSignals", () => {
     expect(result.mastodonFetchSuccess).toBe(true);
     expect(result.posts[0]?.source).toBe("mastodon");
     expect(result.posts.some((post) => post.source === "bluesky")).toBe(true);
+    expect(result.posts.some((post) => post.id === "mastodon-promo")).toBe(false);
   });
 
   it("writes a standalone social source report", () => {
