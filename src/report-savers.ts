@@ -397,7 +397,10 @@ export async function saveSocialSignalsReport(
       ? `Bluesky fetch: ${data.blueskyFetchSuccess ? "ok" : "unavailable"}; Reddit fetch: ${data.redditFetchSuccess ? "ok" : "unavailable"}`
       : `Bluesky：${data.blueskyFetchSuccess ? "正常" : "不可用"}；Reddit：${data.redditFetchSuccess ? "正常" : "不可用"}`;
   const body = data.posts.length
-    ? data.posts.slice(0, 20).map((post) => socialPostSection(post, lang)).join("\n\n")
+    ? data.posts
+        .slice(0, 20)
+        .map((post) => socialPostSection(post, lang))
+        .join("\n\n")
     : lang === "en"
       ? "No sufficiently strong social-media signals were collected today."
       : "今天没有收集到足够强的社交媒体信号。";

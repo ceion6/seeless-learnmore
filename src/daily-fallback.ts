@@ -424,7 +424,10 @@ function buildRadarSocial(snapshot: CollectedSnapshot): string {
         `### ${title}\n` +
         bulletLine("判断", `${source} 上出现高互动讨论，互动分 ${post.score}，回复 ${post.replies}。`) +
         "\n" +
-        bulletLine("为什么值得看", "社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。") +
+        bulletLine(
+          "为什么值得看",
+          "社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。",
+        ) +
         "\n" +
         bulletLine("来源", `[${source}](${post.url})`)
       );
