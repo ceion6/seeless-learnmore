@@ -2,12 +2,12 @@
 
 > 团队真正不敢放开的，通常不是生成能力，而是权限、验证和回滚。
 >
-> 覆盖提醒：官网源：今日新增 5 条官网内容。；Product Hunt：该源今天未启用，所以没有 Product Hunt 数据；这不是抓取失败。；ArXiv：已抓取到 50 篇论文。
+> 覆盖提醒：官网源：今日没有新增官网内容。；Product Hunt：该源今天未启用，所以没有 Product Hunt 数据；这不是抓取失败。；ArXiv：已抓取到 50 篇论文。
 
 ## 今天必看
 
 ### OpenClaw 生态今天更新密度最高
-- 结论：OpenClaw 在 24 小时内累计出现 768 个 issue / PR / release 样本。
+- 结论：OpenClaw 在 24 小时内累计出现 772 个 issue / PR / release 样本。
 - 为什么重要：仓库更新密度高，通常代表工具链正在快速试错，值得先看真实问题和新增能力。 
 - 来源：[OpenClaw](https://github.com/openclaw/openclaw)
 - 建议：看原文
@@ -18,54 +18,54 @@
 - 来源：[apple/container](https://github.com/apple/container)
 - 建议：扫一眼
 
-### 官网源今天新增了 Openai To Acquire Ona
-- 结论：openai 官网今天抓到新页面 Openai To Acquire Ona。
-- 为什么重要：官网源的新增通常比社区转述更接近一手表述，适合用来确认公司到底在推什么。 
-- 来源：[Openai To Acquire Ona](https://openai.com/index/openai-to-acquire-ona/)
-- 建议：看原文
-
-### HN 今天在讨论 Anthropic apologizes for invisible Claude Fable guardrails
-- 结论：Anthropic apologizes for invisible Claude Fable guardrails 进入今天的高讨论样本，社区更关注真实采用边界而不是单条宣传。
+### HN 今天在讨论 Claude Fable is relentlessly proactive
+- 结论：Claude Fable is relentlessly proactive 进入今天的高讨论样本，社区更关注真实采用边界而不是单条宣传。
 - 为什么重要：HN 的高分讨论适合拿来观察开发者到底在担心什么、争什么。 
-- 来源：[Anthropic apologizes for invisible Claude Fable guardrails](https://www.theverge.com/ai-artificial-intelligence/948280/anthropic-claude-fable-invisible-distillation-guardrail)
+- 来源：[Claude Fable is relentlessly proactive](https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/)
 - 建议：看原文
 
-### Hugging Face 热榜里有 nvidia/LocateAnything-3B
-- 结论：nvidia/LocateAnything-3B 进入今日模型热榜，说明社区对这条模型路线仍有明确兴趣。
+### Hugging Face 热榜里有 google/diffusiongemma-26B-A4B-it
+- 结论：google/diffusiongemma-26B-A4B-it 进入今日模型热榜，说明社区对这条模型路线仍有明确兴趣。
 - 为什么重要：模型热榜更适合判断可部署能力和开发者实验面，而不是只看头部闭源叙事。 
-- 来源：[nvidia/LocateAnything-3B](https://huggingface.co/nvidia/LocateAnything-3B)
+- 来源：[google/diffusiongemma-26B-A4B-it](https://huggingface.co/google/diffusiongemma-26B-A4B-it)
 - 建议：扫一眼
+
+## 社交媒体在聊什么
+
+### 今天没有拿到足够强的社交媒体信号
+- 判断：Bluesky 和 Reddit 今日均未成功获取，暂时不能判断社交热度。
+- 来源：[今日原始快照](./raw-data.json)
 
 ## 正在升温
 
 ### Agent 执行护栏与回滚审计层
 - 结论：runtime、sandbox、hook、benchmark 可信度这些问题正在反复出现。
-- 来源：[Claude Code v2.1.173](https://github.com/anthropics/claude-code/releases)、[Claude Code #67717](https://github.com/anthropics/claude-code/issues/67717)、[Claude Code #67599](https://github.com/anthropics/claude-code/pull/67599)、[Claude Code #61956](https://github.com/anthropics/claude-code/pull/61956)、[OpenAI Codex #27367](https://github.com/openai/codex/issues/27367)
+- 来源：[Claude Code #64227](https://github.com/anthropics/claude-code/issues/64227)、[Claude Code #38335](https://github.com/anthropics/claude-code/issues/38335)、[Claude Code #67907](https://github.com/anthropics/claude-code/issues/67907)、[Claude Code #67753](https://github.com/anthropics/claude-code/pull/67753)、[OpenAI Codex #27865](https://github.com/openai/codex/issues/27865)
 
 ### Agent 会话沉淀与团队记忆层
 - 结论：memory、wiki、session archive、version snapshot 这条线正在慢慢成形。
-- 来源：[Claude Code #67718](https://github.com/anthropics/claude-code/issues/67718)、[Claude Code #67667](https://github.com/anthropics/claude-code/issues/67667)、[Claude Code #67717](https://github.com/anthropics/claude-code/issues/67717)、[Claude Code #67530](https://github.com/anthropics/claude-code/issues/67530)、[OpenAI Codex #27367](https://github.com/openai/codex/issues/27367)
+- 来源：[Claude Code v2.1.174](https://github.com/anthropics/claude-code/releases)、[Claude Code #67908](https://github.com/anthropics/claude-code/issues/67908)、[Claude Code #64227](https://github.com/anthropics/claude-code/issues/64227)、[Claude Code #38335](https://github.com/anthropics/claude-code/issues/38335)、[Claude Code #67907](https://github.com/anthropics/claude-code/issues/67907)
 
 ### 浏览器/终端工作流模板包
 - 结论：DevTools、browser、CLI 和 task automation 的结合信号在变强。
-- 来源：[Claude Code #67718](https://github.com/anthropics/claude-code/issues/67718)、[Claude Code #67667](https://github.com/anthropics/claude-code/issues/67667)、[Claude Code #67530](https://github.com/anthropics/claude-code/issues/67530)、[OpenAI Codex #27728](https://github.com/openai/codex/issues/27728)、[OpenAI Codex #27367](https://github.com/openai/codex/issues/27367)
+- 来源：[Claude Code #67908](https://github.com/anthropics/claude-code/issues/67908)、[Claude Code #64227](https://github.com/anthropics/claude-code/issues/64227)、[Claude Code #38335](https://github.com/anthropics/claude-code/issues/38335)、[Claude Code #67907](https://github.com/anthropics/claude-code/issues/67907)、[OpenAI Codex #27866](https://github.com/openai/codex/issues/27866)
 
 ### 团队级技能包与插件目录
 - 结论：skills、plugins、MCP、hooks 和 workflow 模板正在形成独立分发层。
-- 来源：[Claude Code #67718](https://github.com/anthropics/claude-code/issues/67718)、[Claude Code #67599](https://github.com/anthropics/claude-code/pull/67599)、[Claude Code #61956](https://github.com/anthropics/claude-code/pull/61956)、[Gemini CLI #26525](https://github.com/google-gemini/gemini-cli/issues/26525)、[Gemini CLI #26523](https://github.com/google-gemini/gemini-cli/issues/26523)
+- 来源：[Claude Code v2.1.174](https://github.com/anthropics/claude-code/releases)、[Claude Code #67753](https://github.com/anthropics/claude-code/pull/67753)、[OpenAI Codex #27866](https://github.com/openai/codex/issues/27866)、[OpenAI Codex #27865](https://github.com/openai/codex/issues/27865)、[OpenAI Codex #27863](https://github.com/openai/codex/pull/27863)
 
 ## 新模型 / 新产品
-
-### nvidia/LocateAnything-3B
-- 结论：nvidia/LocateAnything-3B 进入模型热榜，pipeline=image-text-to-text。
-- 为什么重要：模型热榜可以帮助判断今天社区愿意先试哪些可部署能力。 
-- 来源：[nvidia/LocateAnything-3B](https://huggingface.co/nvidia/LocateAnything-3B)
-- 建议：扫一眼
 
 ### google/diffusiongemma-26B-A4B-it
 - 结论：google/diffusiongemma-26B-A4B-it 进入模型热榜，pipeline=image-text-to-text。
 - 为什么重要：模型热榜可以帮助判断今天社区愿意先试哪些可部署能力。 
 - 来源：[google/diffusiongemma-26B-A4B-it](https://huggingface.co/google/diffusiongemma-26B-A4B-it)
+- 建议：扫一眼
+
+### nvidia/LocateAnything-3B
+- 结论：nvidia/LocateAnything-3B 进入模型热榜，pipeline=image-text-to-text。
+- 为什么重要：模型热榜可以帮助判断今天社区愿意先试哪些可部署能力。 
+- 来源：[nvidia/LocateAnything-3B](https://huggingface.co/nvidia/LocateAnything-3B)
 - 建议：扫一眼
 
 ### google/gemma-4-12B-it
@@ -76,22 +76,22 @@
 
 ## 论文里可能有用的东西
 
-### Reroute, Don't Remove: Recoverable Visual Token Routing for Vision-Language Models
-- 结论：这更偏多模态能力方向。
-- 为什么重要：先记住题目和方向，再决定要不要追完整原文。 
-- 来源：[Reroute, Don't Remove: Recoverable Visual Token Routing for Vision-Language Models](http://arxiv.org/abs/2606.12412v1)
-- 建议：扫一眼
-
-### Context-Driven Incremental Compression for Multi-Turn Dialogue Generation
+### EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments
 - 结论：这更偏 agent 执行与工作流问题。
 - 为什么重要：先记住题目和方向，再决定要不要追完整原文。 
-- 来源：[Context-Driven Incremental Compression for Multi-Turn Dialogue Generation](http://arxiv.org/abs/2606.12411v1)
+- 来源：[EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments](http://arxiv.org/abs/2606.13681v1)
 - 建议：扫一眼
 
-### FACTR 2: Learning External Force Sensing for Commodity Robot Arms Improves Policy Learning
+### Learning to Reason by Analogy via Retrieval-Augmented Reinforcement Fine-Tuning
 - 结论：这更偏训练、评测或可信度问题。
 - 为什么重要：先记住题目和方向，再决定要不要追完整原文。 
-- 来源：[FACTR 2: Learning External Force Sensing for Commodity Robot Arms Improves Policy Learning](http://arxiv.org/abs/2606.12406v1)
+- 来源：[Learning to Reason by Analogy via Retrieval-Augmented Reinforcement Fine-Tuning](http://arxiv.org/abs/2606.13680v1)
+- 建议：扫一眼
+
+### Mana: Dexterous Manipulation of Articulated Tools
+- 结论：这更偏 agent 执行与工作流问题。
+- 为什么重要：先记住题目和方向，再决定要不要追完整原文。 
+- 来源：[Mana: Dexterous Manipulation of Articulated Tools](http://arxiv.org/abs/2606.13677v1)
 - 建议：扫一眼
 
 ## 可以暂缓
@@ -102,17 +102,15 @@
 
 ### 纯热度样本先别当成产品结论
 - 判断：不要一上来做完整平台，先验证团队最怕的是权限、泄露、卡死还是难追责。
-- 来源：[Claude Code v2.1.173](https://github.com/anthropics/claude-code/releases)、[Claude Code #67717](https://github.com/anthropics/claude-code/issues/67717)、[Claude Code #67599](https://github.com/anthropics/claude-code/pull/67599)、[Claude Code #61956](https://github.com/anthropics/claude-code/pull/61956)、[OpenAI Codex #27367](https://github.com/openai/codex/issues/27367)
+- 来源：[Claude Code #64227](https://github.com/anthropics/claude-code/issues/64227)、[Claude Code #38335](https://github.com/anthropics/claude-code/issues/38335)、[Claude Code #67907](https://github.com/anthropics/claude-code/issues/67907)、[Claude Code #67753](https://github.com/anthropics/claude-code/pull/67753)、[OpenAI Codex #27865](https://github.com/openai/codex/issues/27865)
 
 ## 原始入口
 
 - [今日原始快照 raw-data.json](./raw-data.json) — 看当天完整样本和源数据状态。
-- [Openai To Acquire Ona](https://openai.com/index/openai-to-acquire-ona/) — 今天官网源里最值得回看的新增页面。
-- [DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on](https://www.anthropic.com/news/dxc-anthropic-alliance) — 今天官网源里最值得回看的新增页面。
 - [OpenClaw](https://github.com/openclaw/openclaw) — 看今天 issue / PR / release 最密集的仓库。
 - [OpenAI Codex](https://github.com/openai/codex) — 看今天 issue / PR / release 最密集的仓库。
-- [Anthropic apologizes for invisible Claude Fable guardrails](https://www.theverge.com/ai-artificial-intelligence/948280/anthropic-claude-fable-invisible-distillation-guardrail) — 看国外开发者今天在争什么。
+- [Claude Fable is relentlessly proactive](https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/) — 看国外开发者今天在争什么。
 
 ---
 
-> 本页由每日保底脚本生成，用于保证站点每日都有可读更新；后续可以被更高质量的人工 / Codex 版本覆盖。生成时间: 2026-06-12 01:07 UTC
+> 本页由每日保底脚本生成，用于保证站点每日都有可读更新；后续可以被更高质量的人工 / Codex 版本覆盖。生成时间: 2026-06-12 13:11 UTC
