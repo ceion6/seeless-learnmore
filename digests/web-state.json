@@ -1,6 +1,6 @@
 {
   "anthropic": {
-    "lastChecked": "2026-06-14T01:07:02.399Z",
+    "lastChecked": "2026-06-14T04:50:00.532Z",
     "seenUrls": {
       "https://www.anthropic.com/news/responsible-scaling-policy-v3": "2026-02-25T23:57:06.000Z",
       "https://www.anthropic.com/research/deprecation-updates-opus-3": "2026-02-25T20:58:11.000Z",
@@ -388,7 +388,7 @@
     }
   },
   "openai": {
-    "lastChecked": "2026-06-14T01:07:02.172Z",
+    "lastChecked": "2026-06-14T04:50:04.075Z",
     "seenUrls": {
       "https://openai.com/index/arvind-kc-chief-people-officer/": "2026-05-29T00:25:33.242Z",
       "https://openai.com/index/put-ai-to-work-for-your-product-team/": "2026-06-12T04:05:36.713Z",
@@ -594,7 +594,7 @@
       "https://openai.com/index/testing-ads-in-chatgpt/": "2026-06-04T18:10:38.171Z",
       "https://openai.com/index/introducing-gpt-5-3-codex/": "2026-06-10T17:59:40.343Z",
       "https://openai.com/index/our-approach-to-advertising-and-expanding-access/": "2026-06-04T18:57:56.045Z",
-      "https://openai.com/index/introducing-chatgpt-health/": "2026-06-06T15:39:54.197Z",
+      "https://openai.com/index/introducing-chatgpt-health/": "2026-06-14T04:37:40.082Z",
       "https://openai.com/index/introducing-our-next-generation-audio-models/": "2026-06-05T21:57:34.527Z",
       "https://openai.com/index/introducing-the-teen-safety-blueprint/": "2026-06-12T04:50:54.721Z",
       "https://openai.com/index/openai-api/": "2026-06-03T18:58:55.238Z",
@@ -623,7 +623,7 @@
       "https://openai.com/index/hello-gpt-4o/": "2026-06-04T23:19:29.439Z",
       "https://openai.com/index/chatgpt-study-mode/": "2026-06-12T04:51:02.737Z",
       "https://openai.com/index/optimizing-chatgpt/": "2026-06-12T04:50:41.985Z",
-      "https://openai.com/index/helping-people-when-they-need-it-most/": "2026-06-12T04:52:24.839Z",
+      "https://openai.com/index/helping-people-when-they-need-it-most/": "2026-06-14T04:39:52.803Z",
       "https://openai.com/index/building-more-helpful-chatgpt-experiences-for-everyone/": "2026-06-12T04:52:06.179Z",
       "https://openai.com/index/building-towards-age-prediction/": "2026-06-12T04:51:23.840Z",
       "https://openai.com/index/teen-safety-freedom-and-privacy/": "2026-06-13T21:06:27.727Z",
@@ -659,7 +659,7 @@
       "https://openai.com/index/moving-ai-governance-forward/": "2026-05-31T20:06:18.989Z",
       "https://openai.com/index/teaching-with-ai/": "2026-05-29T00:25:37.335Z",
       "https://openai.com/index/march-20-chatgpt-outage/": "2026-05-29T00:25:29.508Z",
-      "https://openai.com/index/introducing-gpts/": "2026-05-22T19:07:30.328Z",
+      "https://openai.com/index/introducing-gpts/": "2026-06-14T04:15:06.011Z",
       "https://openai.com/index/how-should-ai-systems-behave/": "2026-05-31T20:06:12.339Z",
       "https://openai.com/index/introducing-the-chatgpt-app-for-ios/": "2026-05-22T19:05:08.884Z",
       "https://openai.com/index/planning-for-agi-and-beyond/": "2026-05-31T20:06:18.910Z",
@@ -960,13 +960,13 @@
       "https://openai.com/index/safety-gym/": "2026-06-13T13:09:12.513Z",
       "https://openai.com/index/competitive-self-play/": "2026-06-03T04:01:21.129Z",
       "https://openai.com/index/statement-on-openai-nonprofit-and-pbc/": "2026-06-05T04:06:54.142Z",
-      "https://openai.com/index/computer-using-agent/": "2026-05-18T16:57:38.714Z",
+      "https://openai.com/index/computer-using-agent/": "2026-06-14T04:34:44.366Z",
       "https://openai.com/index/joint-statement-from-openai-and-microsoft/": "2026-06-09T14:06:04.266Z",
       "https://openai.com/index/openai-and-broadcom-announce-strategic-collaboration/": "2026-05-22T19:26:54.511Z",
       "https://openai.com/index/browsecomp/": "2026-05-22T19:21:17.228Z",
       "https://openai.com/index/ai-as-the-greatest-source-of-empowerment-for-all/": "2026-06-10T23:04:18.558Z",
       "https://openai.com/index/openai-o3-mini/": "2026-04-30T06:51:18.090Z",
-      "https://openai.com/index/introducing-operator/": "2026-05-18T16:57:35.931Z",
+      "https://openai.com/index/introducing-operator/": "2026-06-14T04:34:13.954Z",
       "https://openai.com/index/roboschool/": "2026-06-13T13:09:34.078Z",
       "https://openai.com/index/openai-nvidia-systems-partnership/": "2026-06-10T09:36:37.181Z",
       "https://openai.com/index/new-tools-for-building-agents/": "2026-04-27T08:32:30.402Z",
@@ -1102,7 +1102,7 @@
     }
   },
   "deepmind": {
-    "lastChecked": "2026-06-14T01:06:59.828Z",
+    "lastChecked": "2026-06-14T04:50:00.538Z",
     "seenUrls": {
       "https://deepmind.google/models/model-cards/gemini-3-1-flash-image/": "2026-05-23",
       "https://deepmind.google/models/model-cards/": "2026-06-10",
@@ -1527,7 +1527,7 @@
     }
   },
   "qwen": {
-    "lastChecked": "2026-06-14T01:06:59.724Z",
+    "lastChecked": "2026-06-14T04:50:00.538Z",
     "seenUrls": {
       "https://qwenlm.github.io/zh/blog/qwen3guard/": "2025-09-23T04:00:00+08:00",
       "https://qwenlm.github.io/zh/blog/": "2025-09-23T04:00:00+08:00",
@@ -1577,7 +1577,7 @@
     }
   },
   "deepseek": {
-    "lastChecked": "2026-06-14T01:07:00.536Z",
+    "lastChecked": "2026-06-14T04:50:01.854Z",
     "seenUrls": {
       "https://api-docs.deepseek.com/news/news0725": "seen",
       "https://api-docs.deepseek.com/news/news0802": "seen",
