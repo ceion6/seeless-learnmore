@@ -6,7 +6,376 @@
     <description>中文 AI 趋势筛选面板 · High-signal AI radar in Chinese</description>
     <language>zh-CN</language>
     <atom:link href="https://ceion6.github.io/seeless-learnmore/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sat, 13 Jun 2026 01:06:09 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jun 2026 01:07:07 +0000</lastBuildDate>
+    <item>
+      <title>少看点 AI 雷达 2026-06-14</title>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-06-14/ai-radar</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-06-14/ai-radar</guid>
+      <pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
+      <description>少看点 AI 雷达 2026-06-14 今天社交讨论的焦点是：I got fed up of waiting for OpenAI to bring their much。 覆盖提醒：官网源：今日新增 2 条官网内容。；Product Hunt：该源今天未启用，所以没有 Product Hunt 数据；这不是抓取失败。；ArXiv：抓取请求成功，但按最近 48 小时窗口过滤后没有命中样本；这不是抓取失败。 今天必看 OpenClaw 生态今天更新密度最高 结论：OpenClaw 在 24 小时内累计出现 746 个 issue / PR / release 样本。 为什么重要：仓库更新密度高，通常代表工具链正在快速试错，值得先看真实问题和新增能力。 来源：OpenClaw 建议：看原文 GitHub 热门样本里出现 iptv-org/iptv 结论：iptv-org/iptv 进入当天高热样本，说明相关方向正在被开发者集中试用。 为什么重要：开源热度不是质量证明，但很适合拿来判断今天大家到底把注意力投向哪里。 来源：iptv-org/iptv 建议：扫一眼 官网源今天新增了 Clau...</description>
+      <content:encoded><![CDATA[<h1>少看点 AI 雷达 2026-06-14</h1>
+<blockquote>
+<p>今天社交讨论的焦点是：I got fed up of waiting for OpenAI to bring their much。</p>
+<p>覆盖提醒：官网源：今日新增 2 条官网内容。；Product Hunt：该源今天未启用，所以没有 Product Hunt 数据；这不是抓取失败。；ArXiv：抓取请求成功，但按最近 48 小时窗口过滤后没有命中样本；这不是抓取失败。</p>
+</blockquote>
+<h2>今天必看</h2>
+<h3>OpenClaw 生态今天更新密度最高</h3>
+<ul>
+<li>结论：OpenClaw 在 24 小时内累计出现 746 个 issue / PR / release 样本。</li>
+<li>为什么重要：仓库更新密度高，通常代表工具链正在快速试错，值得先看真实问题和新增能力。 </li>
+<li>来源：<a href="https://github.com/openclaw/openclaw">OpenClaw</a></li>
+<li>建议：看原文</li>
+</ul>
+<h3>GitHub 热门样本里出现 iptv-org/iptv</h3>
+<ul>
+<li>结论：iptv-org/iptv 进入当天高热样本，说明相关方向正在被开发者集中试用。</li>
+<li>为什么重要：开源热度不是质量证明，但很适合拿来判断今天大家到底把注意力投向哪里。 </li>
+<li>来源：<a href="https://github.com/iptv-org/iptv">iptv-org/iptv</a></li>
+<li>建议：扫一眼</li>
+</ul>
+<h3>官网源今天新增了 Claude Fable 5 and Claude Mythos 5</h3>
+<ul>
+<li>结论：anthropic 官网今天抓到新页面 Claude Fable 5 and Claude Mythos 5。</li>
+<li>为什么重要：官网源的新增通常比社区转述更接近一手表述，适合用来确认公司到底在推什么。 </li>
+<li>来源：<a href="https://www.anthropic.com/news/claude-fable-5-mythos-5">Claude Fable 5 and Claude Mythos 5</a></li>
+<li>建议：看原文</li>
+</ul>
+<h3>HN 今天在讨论 Amazon CEO&#39;s talks with U.S. officials triggered crackdown on Anthropic models</h3>
+<ul>
+<li>结论：Amazon CEO&#39;s talks with U.S. officials triggered crackdown on Anthropic models 进入今天的高讨论样本，社区更关注真实采用边界而不是单条宣传。</li>
+<li>为什么重要：HN 的高分讨论适合拿来观察开发者到底在担心什么、争什么。 </li>
+<li>来源：<a href="https://www.wsj.com/tech/ai/amazon-ceos-talks-with-u-s-officials-triggered-crackdown-on-anthropic-models-dcc90578?st=Yct6gx&reflink=desktopwebshare_permalink">Amazon CEO&#39;s talks with U.S. officials triggered crackdown on Anthropic models</a></li>
+<li>建议：看原文</li>
+</ul>
+<h3>Hugging Face 热榜里有 google/diffusiongemma-26B-A4B-it</h3>
+<ul>
+<li>结论：google/diffusiongemma-26B-A4B-it 进入今日模型热榜，说明社区对这条模型路线仍有明确兴趣。</li>
+<li>为什么重要：模型热榜更适合判断可部署能力和开发者实验面，而不是只看头部闭源叙事。 </li>
+<li>来源：<a href="https://huggingface.co/google/diffusiongemma-26B-A4B-it">google/diffusiongemma-26B-A4B-it</a></li>
+<li>建议：扫一眼</li>
+</ul>
+<h2>社交媒体在聊什么</h2>
+<h3>I got fed up of waiting for OpenAI to bring their much improved gpt-re…</h3>
+<ul>
+<li>判断：Bluesky 上出现高互动讨论，互动分 56，回复 4。</li>
+<li>为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。</li>
+<li>来源：<a href="https://bsky.app/profile/simonwillison.net/post/3mo4xhvjp3s2o">Bluesky</a></li>
+</ul>
+<h3>20 years from now Stranger things have happened... Haha shameless #llm…</h3>
+<ul>
+<li>判断：Mastodon 上出现高互动讨论，互动分 17，回复 0。</li>
+<li>为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。</li>
+<li>来源：<a href="https://proe.whimm.ing/20-years-from-now/">Mastodon</a></li>
+</ul>
+<h3>A small LLM experiment about niche 8-bit knowledge and accuracy: I ask…</h3>
+<ul>
+<li>判断：Mastodon 上出现高互动讨论，互动分 10，回复 4。</li>
+<li>为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。</li>
+<li>来源：<a href="https://chaos.social/@root42/116744687682749112">Mastodon</a></li>
+</ul>
+<h3>You know why it is fair that CEOs are paid 10000 times more than worke…</h3>
+<ul>
+<li>判断：Mastodon 上出现高互动讨论，互动分 10，回复 1。</li>
+<li>为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。</li>
+<li>来源：<a href="https://lgbtqia.space/@m/116744518059138604">Mastodon</a></li>
+</ul>
+<h2>正在升温</h2>
+<h3>Agent 执行护栏与回滚审计层</h3>
+<ul>
+<li>结论：runtime、sandbox、hook、benchmark 可信度这些问题正在反复出现。</li>
+<li>来源：<a href="https://github.com/anthropics/claude-code/issues/68329">Claude Code #68329</a>、<a href="https://github.com/anthropics/claude-code/issues/64048">Claude Code #64048</a>、<a href="https://github.com/anthropics/claude-code/pull/68239">Claude Code #68239</a>、<a href="https://github.com/anthropics/claude-code/pull/26360">Claude Code #26360</a>、<a href="https://github.com/openai/codex/issues/28091">OpenAI Codex #28091</a></li>
+</ul>
+<h3>Agent 会话沉淀与团队记忆层</h3>
+<ul>
+<li>结论：memory、wiki、session archive、version snapshot 这条线正在慢慢成形。</li>
+<li>来源：<a href="https://github.com/anthropics/claude-code/issues/24726">Claude Code #24726</a>、<a href="https://github.com/anthropics/claude-code/issues/68328">Claude Code #68328</a>、<a href="https://github.com/anthropics/claude-code/issues/64048">Claude Code #64048</a>、<a href="https://github.com/anthropics/claude-code/pull/68239">Claude Code #68239</a>、<a href="https://github.com/openai/codex/issues/28142">OpenAI Codex #28142</a></li>
+</ul>
+<h3>浏览器/终端工作流模板包</h3>
+<ul>
+<li>结论：DevTools、browser、CLI 和 task automation 的结合信号在变强。</li>
+<li>来源：<a href="https://github.com/anthropics/claude-code/issues/24726">Claude Code #24726</a>、<a href="https://github.com/anthropics/claude-code/issues/68328">Claude Code #68328</a>、<a href="https://github.com/openai/codex/issues/28141">OpenAI Codex #28141</a>、<a href="https://github.com/openai/codex/pull/28118">OpenAI Codex #28118</a>、<a href="https://github.com/google-gemini/gemini-cli">Gemini CLI</a></li>
+</ul>
+<h3>团队级技能包与插件目录</h3>
+<ul>
+<li>结论：skills、plugins、MCP、hooks 和 workflow 模板正在形成独立分发层。</li>
+<li>来源：<a href="https://github.com/anthropics/claude-code/pull/68239">Claude Code #68239</a>、<a href="https://github.com/anthropics/claude-code/pull/26360">Claude Code #26360</a>、<a href="https://github.com/openai/codex/pull/27607">OpenAI Codex #27607</a>、<a href="https://github.com/openai/codex/pull/27602">OpenAI Codex #27602</a>、<a href="https://github.com/google-gemini/gemini-cli/issues/27891">Gemini CLI #27891</a></li>
+</ul>
+<h2>新模型 / 新产品</h2>
+<h3>google/diffusiongemma-26B-A4B-it</h3>
+<ul>
+<li>结论：google/diffusiongemma-26B-A4B-it 进入模型热榜，pipeline=image-text-to-text。</li>
+<li>为什么重要：模型热榜可以帮助判断今天社区愿意先试哪些可部署能力。 </li>
+<li>来源：<a href="https://huggingface.co/google/diffusiongemma-26B-A4B-it">google/diffusiongemma-26B-A4B-it</a></li>
+<li>建议：扫一眼</li>
+</ul>
+<h3>moonshotai/Kimi-K2.7-Code</h3>
+<ul>
+<li>结论：moonshotai/Kimi-K2.7-Code 进入模型热榜，pipeline=image-text-to-text。</li>
+<li>为什么重要：模型热榜可以帮助判断今天社区愿意先试哪些可部署能力。 </li>
+<li>来源：<a href="https://huggingface.co/moonshotai/Kimi-K2.7-Code">moonshotai/Kimi-K2.7-Code</a></li>
+<li>建议：扫一眼</li>
+</ul>
+<h3>nvidia/LocateAnything-3B</h3>
+<ul>
+<li>结论：nvidia/LocateAnything-3B 进入模型热榜，pipeline=image-text-to-text。</li>
+<li>为什么重要：模型热榜可以帮助判断今天社区愿意先试哪些可部署能力。 </li>
+<li>来源：<a href="https://huggingface.co/nvidia/LocateAnything-3B">nvidia/LocateAnything-3B</a></li>
+<li>建议：扫一眼</li>
+</ul>
+<h2>论文里可能有用的东西</h2>
+<h3>今天先不要硬写论文判断</h3>
+<ul>
+<li>结论：ArXiv 最近 48 小时窗口内没有命中样本。</li>
+<li>为什么重要：论文样本不完整时，最容易把噪音写成趋势。 </li>
+<li>来源：<a href="./raw-data.json">今日原始快照</a></li>
+<li>建议：等复盘</li>
+</ul>
+<h2>可以暂缓</h2>
+<h3>今天没有 Product Hunt 样本</h3>
+<ul>
+<li>判断：今天先不要脑补新品发布面，Product Hunt 源当前未启用。 </li>
+<li>来源：<a href="./raw-data.json">今日原始快照</a></li>
+</ul>
+<h3>今天先别硬下研究趋势判断</h3>
+<ul>
+<li>判断：ArXiv 最近 48 小时窗口内没有命中样本，更适合保守处理。 </li>
+<li>来源：<a href="./raw-data.json">今日原始快照</a></li>
+</ul>
+<h3>纯热度样本先别当成产品结论</h3>
+<ul>
+<li>判断：不要一上来做完整平台，先验证团队最怕的是权限、泄露、卡死还是难追责。</li>
+<li>来源：<a href="https://github.com/anthropics/claude-code/issues/68329">Claude Code #68329</a>、<a href="https://github.com/anthropics/claude-code/issues/64048">Claude Code #64048</a>、<a href="https://github.com/anthropics/claude-code/pull/68239">Claude Code #68239</a>、<a href="https://github.com/anthropics/claude-code/pull/26360">Claude Code #26360</a>、<a href="https://github.com/openai/codex/issues/28091">OpenAI Codex #28091</a></li>
+</ul>
+<h2>原始入口</h2>
+<ul>
+<li><a href="./raw-data.json">今日原始快照 raw-data.json</a> — 看当天完整样本和源数据状态。</li>
+<li><a href="https://www.anthropic.com/news/claude-fable-5-mythos-5">Claude Fable 5 and Claude Mythos 5</a> — 今天官网源里最值得回看的新增页面。</li>
+<li><a href="https://www.anthropic.com/news/fable-mythos-access">Statement on the US government directive to suspend access to Fable 5 and Mythos 5</a> — 今天官网源里最值得回看的新增页面。</li>
+<li><a href="https://github.com/openclaw/openclaw">OpenClaw</a> — 看今天 issue / PR / release 最密集的仓库。</li>
+<li><a href="https://github.com/openai/codex">OpenAI Codex</a> — 看今天 issue / PR / release 最密集的仓库。</li>
+<li><a href="https://www.wsj.com/tech/ai/amazon-ceos-talks-with-u-s-officials-triggered-crackdown-on-anthropic-models-dcc90578?st=Yct6gx&reflink=desktopwebshare_permalink">Amazon CEO&#39;s talks with U.S. officials triggered crackdown on Anthropic models</a> — 看国外开发者今天在争什么。</li>
+</ul>
+<hr>
+<blockquote>
+<p>本页由每日保底脚本生成，用于保证站点每日都有可读更新；后续可以被更高质量的人工 / Codex 版本覆盖。生成时间: 2026-06-14 01:06 UTC</p>
+</blockquote>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>AI 机会雷达 2026-06-14</title>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-06-14/ai-opportunity</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-06-14/ai-opportunity</guid>
+      <pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
+      <description>AI 机会雷达 2026-06-14 今天更值得下注的，是 Agent 执行护栏与回滚审计层、Agent 会话沉淀与团队记忆层、浏览器/终端工作流模板包 这几类能在真实流程里立刻验证的机会。 先看结论 今天最值得做的机会，不在再做一个通用聊天入口，而在把 agent 接进真实工作流的薄层基础设施。 Agent 执行护栏与回滚审计层 是第一优先，因为 团队真正不敢放开的，通常不是生成能力，而是权限、验证和回滚。 Agent 会话沉淀与团队记忆层 也值得看，因为 当团队开始长期使用 agent，最大的浪费是每次会话都从零开始。 这些方向的共同点是：用户清晰、痛点具体，而且能在 2~6 周内做出第一版去试。 值得做的 3 个方向 Agent 执行护栏与回滚审计层 给谁做：已经让 agent 改代码、跑命令、触发 hook 的工程团队。 痛点：会话挂死、权限边界不清、结果难审计，出了错又很难回滚。 为什么是现在：今天的 GitHub issue、HN 讨论和论文信号都在提醒：agent 真实生产问题已经暴露出来了。 最小可行解：先做执行前检查、操作日志、产物校验和回滚建议，不必先做完整沙盒。 ...</description>
+      <content:encoded><![CDATA[<h1>AI 机会雷达 2026-06-14</h1>
+<blockquote>
+<p>今天更值得下注的，是 Agent 执行护栏与回滚审计层、Agent 会话沉淀与团队记忆层、浏览器/终端工作流模板包 这几类能在真实流程里立刻验证的机会。</p>
+</blockquote>
+<h2>先看结论</h2>
+<p>今天最值得做的机会，不在再做一个通用聊天入口，而在把 agent 接进真实工作流的薄层基础设施。
+Agent 执行护栏与回滚审计层 是第一优先，因为 团队真正不敢放开的，通常不是生成能力，而是权限、验证和回滚。
+Agent 会话沉淀与团队记忆层 也值得看，因为 当团队开始长期使用 agent，最大的浪费是每次会话都从零开始。
+这些方向的共同点是：用户清晰、痛点具体，而且能在 2~6 周内做出第一版去试。</p>
+<h2>值得做的 3 个方向</h2>
+<h3>Agent 执行护栏与回滚审计层</h3>
+<ul>
+<li>给谁做：已经让 agent 改代码、跑命令、触发 hook 的工程团队。</li>
+<li>痛点：会话挂死、权限边界不清、结果难审计，出了错又很难回滚。</li>
+<li>为什么是现在：今天的 GitHub issue、HN 讨论和论文信号都在提醒：agent 真实生产问题已经暴露出来了。</li>
+<li>最小可行解：先做执行前检查、操作日志、产物校验和回滚建议，不必先做完整沙盒。</li>
+<li>付费可能：这类产品贴近 DevInfra，接入流程后不容易切走，适合团队套餐或按执行量收费。</li>
+<li>证据：<a href="https://github.com/anthropics/claude-code/issues/68329">Claude Code #68329</a>、<a href="https://github.com/anthropics/claude-code/issues/64048">Claude Code #64048</a>、<a href="https://github.com/anthropics/claude-code/pull/68239">Claude Code #68239</a>、<a href="https://github.com/anthropics/claude-code/pull/26360">Claude Code #26360</a>、<a href="https://github.com/openai/codex/issues/28091">OpenAI Codex #28091</a></li>
+<li>下一步：先访谈 5 个已经让 agent 跑命令的团队，确认他们最怕的失败类型。</li>
+</ul>
+<h3>Agent 会话沉淀与团队记忆层</h3>
+<ul>
+<li>给谁做：频繁用 agent 做排障、代码阅读、探索式开发的团队。</li>
+<li>痛点：会话关掉就散，后续无法复用决策、命令和上下文。</li>
+<li>为什么是现在：社区已经开始把会话转成 wiki、dashboard、长期知识资产，而不只是一次性聊天记录。</li>
+<li>最小可行解：先做会话提炼和归档，把结论、文件引用和关键步骤整理成团队笔记。</li>
+<li>付费可能：只要能减少重复排查和 onboarding 时间，就有明确的效率价值。</li>
+<li>证据：<a href="https://github.com/anthropics/claude-code/issues/24726">Claude Code #24726</a>、<a href="https://github.com/anthropics/claude-code/issues/68328">Claude Code #68328</a>、<a href="https://github.com/anthropics/claude-code/issues/64048">Claude Code #64048</a>、<a href="https://github.com/anthropics/claude-code/pull/68239">Claude Code #68239</a>、<a href="https://github.com/openai/codex/issues/28142">OpenAI Codex #28142</a></li>
+<li>下一步：先验证团队是否真的会回看 agent 会话，再决定要不要扩成完整知识库。</li>
+</ul>
+<h3>浏览器/终端工作流模板包</h3>
+<ul>
+<li>给谁做：做测试、后台运营、增长实验、数据录入的小团队。</li>
+<li>痛点：大家知道 agent 能碰浏览器和终端，但不知道怎么把它拼成稳定流程。</li>
+<li>为什么是现在：浏览器和命令行能力正逐步进入 agent 工具层，工作流模板开始有现实价值。</li>
+<li>最小可行解：先做网页巡检、表单回归、后台操作复盘这类模板包，而不是通用自动化平台。</li>
+<li>付费可能：只要能持续省掉人工重复操作，就适合按模板包或团队订阅收费。</li>
+<li>证据：<a href="https://github.com/anthropics/claude-code/issues/24726">Claude Code #24726</a>、<a href="https://github.com/anthropics/claude-code/issues/68328">Claude Code #68328</a>、<a href="https://github.com/openai/codex/issues/28141">OpenAI Codex #28141</a>、<a href="https://github.com/openai/codex/pull/28118">OpenAI Codex #28118</a>、<a href="https://github.com/google-gemini/gemini-cli">Gemini CLI</a></li>
+<li>下一步：先挑一个现成 SOP 最明确的场景，让真实用户拿现网流程试一次。</li>
+</ul>
+<h2>次优但可观察</h2>
+<h3>团队级技能包与插件目录</h3>
+<ul>
+<li>现在看到了什么信号：skills、plugins、MCP、hooks 和 workflow 模板正在形成独立分发层。</li>
+<li>为什么先不重注：不要先做开放 marketplace，先验证团队内部有没有值得复用的 skill 配方。</li>
+<li>后续要继续观察什么：先验证目标团队是否已经沉淀出 5 个以上会重复使用的 agent 配方。</li>
+</ul>
+<h3>代码库上下文打底层</h3>
+<ul>
+<li>现在看到了什么信号：代码知识图谱、私有搜索和 repo understanding 还在持续升温。</li>
+<li>为什么先不重注：不要把“能索引代码”直接当成壁垒，关键是能不能接进真实任务前置环节。</li>
+<li>后续要继续观察什么：先找 3 个已经在用 coding agent 的团队，验证他们最常卡住的是“找不到该改哪里”。</li>
+</ul>
+<h3>模型侧机会先保持观察</h3>
+<ul>
+<li>现在看到了什么信号：google/diffusiongemma-26B-A4B-it 进入模型热榜，说明模型面仍有活跃样本。</li>
+<li>为什么先不重注：只看模型热度不够支撑产品方向，除非已经找到明确使用场景。 </li>
+<li>后续要继续观察什么：用户到底是更在意部署成本、隐私，还是某个具体能力差异。</li>
+</ul>
+<h2>今天先别做</h2>
+<h3>通用“再做一个 AI 助手”</h3>
+<ul>
+<li>原因：今天的信号更支持做上下文、护栏、复用层，而不是再做一个聊天壳。</li>
+</ul>
+<h3>纯资讯聚合或榜单站</h3>
+<ul>
+<li>原因：用户更缺的是可执行判断，不是再多一条信息流。</li>
+</ul>
+<h3>纯靠新品发布包装的方向</h3>
+<ul>
+<li>原因：今天 Product Hunt 样本不足，没必要用缺失数据硬凑产品热度。</li>
+</ul>
+<h3>先别把 Agent 执行护栏与回滚审计层 做成大平台</h3>
+<ul>
+<li>原因：不要一上来做完整平台，先验证团队最怕的是权限、泄露、卡死还是难追责。</li>
+</ul>
+<h2>开工顺序</h2>
+<ol>
+<li>先验证 Agent 执行护栏与回滚审计层 对目标用户是不是当前最痛的阻塞点，而不是先搭完整平台。</li>
+<li>先找已经在日常流程里用 agent 的团队试 Agent 会话沉淀与团队记忆层 或 Agent 执行护栏与回滚审计层，不要先找纯围观用户。</li>
+<li>如果 3 个用户里至少 2 个愿意拿真实仓库或真实流程试用，就继续；如果只有“听起来不错”，就收窄切口。</li>
+</ol>
+<h2>原始入口</h2>
+<ul>
+<li><a href="./#2026-06-14/ai-radar">少看点 AI 雷达</a> — 先看当天的总判断。</li>
+<li><a href="./raw-data.json">今日原始快照 raw-data.json</a> — 看完整原始样本。</li>
+<li><a href="https://github.com/openclaw/openclaw">OpenClaw 活跃仓库</a> — 这是今天判断机会方向的直接证据。</li>
+<li><a href="https://github.com/openai/codex">OpenAI Codex 活跃仓库</a> — 这是今天判断机会方向的直接证据。</li>
+<li><a href="https://github.com/iptv-org/iptv">iptv-org/iptv</a> — 这是今天判断机会方向的直接证据。</li>
+<li><a href="https://github.com/addyosmani/agent-skills">addyosmani/agent-skills</a> — 这是今天判断机会方向的直接证据。</li>
+</ul>
+<hr>
+<blockquote>
+<p>本页由每日保底脚本生成，用于保证站点每天都有“能继续做什么”的可读版本；后续可以被更高质量的人工 / Codex 版本覆盖。生成时间: 2026-06-14 01:06 UTC</p>
+</blockquote>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>AI 社交媒体信号 2026-06-14</title>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-06-14/ai-social</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-06-14/ai-social</guid>
+      <pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
+      <description>AI 社交媒体信号 2026-06-14 Bluesky：正常；Mastodon：正常 | 6 条讨论 | 2026-06-14 01:06 UTC 今日高互动讨论 I got fed up of waiting for OpenAI to bring their much improved gpt-realtime-2 voice conve… 来源平台：Bluesky 互动分：56；回复：4 作者：Simon Willison 查看讨论 20 years from now Stranger things have happened... Haha shameless #llm use. I could have m… 来源平台：Mastodon 互动分：17；回复：0 作者：PRoe 查看讨论 A small LLM experiment about niche 8-bit knowledge and accuracy: I asked Gemini if BASIC v… 来源平台：Mastodon 互动分：10；回复：4 作者：root42 查看讨论 You know why ...</description>
+      <content:encoded><![CDATA[<h1>AI 社交媒体信号 2026-06-14</h1>
+<blockquote>
+<p>Bluesky：正常；Mastodon：正常 | 6 条讨论 | 2026-06-14 01:06 UTC</p>
+</blockquote>
+<hr>
+<h2>今日高互动讨论</h2>
+<h3>I got fed up of waiting for OpenAI to bring their much improved gpt-realtime-2 voice conve…</h3>
+<ul>
+<li>来源平台：Bluesky</li>
+<li>互动分：56；回复：4</li>
+<li>作者：Simon Willison</li>
+<li><a href="https://bsky.app/profile/simonwillison.net/post/3mo4xhvjp3s2o">查看讨论</a></li>
+</ul>
+<h3>20 years from now Stranger things have happened... Haha shameless #llm use. I could have m…</h3>
+<ul>
+<li>来源平台：Mastodon</li>
+<li>互动分：17；回复：0</li>
+<li>作者：PRoe</li>
+<li><a href="https://proe.whimm.ing/20-years-from-now/">查看讨论</a></li>
+</ul>
+<h3>A small LLM experiment about niche 8-bit knowledge and accuracy: I asked Gemini if BASIC v…</h3>
+<ul>
+<li>来源平台：Mastodon</li>
+<li>互动分：10；回复：4</li>
+<li>作者：root42</li>
+<li><a href="https://chaos.social/@root42/116744687682749112">查看讨论</a></li>
+</ul>
+<h3>You know why it is fair that CEOs are paid 10000 times more than workers? Because they lif…</h3>
+<ul>
+<li>来源平台：Mastodon</li>
+<li>互动分：10；回复：1</li>
+<li>作者：✨ Mia’s Simulacrum 🏳️‍⚧️✨</li>
+<li><a href="https://lgbtqia.space/@m/116744518059138604">查看讨论</a></li>
+</ul>
+<h3>🤖 # AI as a # muse 🎨for # science 🔬? A lecture by # MarioKrenn on # creativity , # phys…</h3>
+<ul>
+<li>来源平台：Mastodon</li>
+<li>互动分：10；回复：0</li>
+<li>作者：Philo Sophies</li>
+<li><a href="https://techtoots.com/@philosophies/116743418417018212">查看讨论</a></li>
+</ul>
+<h3>ははっ、英ですか 日英首相が会談へ スターマー政権混乱でも関係性強調 <a href="https://www">https://www</a>. nikkei.com/article/DGXZQOUA12C BC0S6A610C2…</h3>
+<ul>
+<li>来源平台：Mastodon</li>
+<li>互动分：8；回复：0</li>
+<li>作者：ハンス</li>
+<li><a href="https://mastodon.crazynewworld.net/@hans/116745260988803950">查看讨论</a></li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>AI Social Signals 2026-06-14</title>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-06-14/ai-social-en</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-06-14/ai-social-en</guid>
+      <pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
+      <description>AI Social Signals 2026-06-14 Bluesky fetch: ok; Mastodon fetch: ok | 6 posts | 2026-06-14 01:06 UTC High-engagement discussions I got fed up of waiting for OpenAI to bring their much improved gpt-realtime-2 voice conve… Source: Bluesky Engagement score: 56; replies: 4 Author: Simon Willison Open discussion 20 years from now Stranger things have happened... Haha shameless #llm use. I could have m… Source: Mastodon Engagement score: 17; replies: 0 Author: PRoe Open discussion A small LLM experimen...</description>
+      <content:encoded><![CDATA[<h1>AI Social Signals 2026-06-14</h1>
+<blockquote>
+<p>Bluesky fetch: ok; Mastodon fetch: ok | 6 posts | 2026-06-14 01:06 UTC</p>
+</blockquote>
+<hr>
+<h2>High-engagement discussions</h2>
+<h3>I got fed up of waiting for OpenAI to bring their much improved gpt-realtime-2 voice conve…</h3>
+<ul>
+<li>Source: Bluesky</li>
+<li>Engagement score: 56; replies: 4</li>
+<li>Author: Simon Willison</li>
+<li><a href="https://bsky.app/profile/simonwillison.net/post/3mo4xhvjp3s2o">Open discussion</a></li>
+</ul>
+<h3>20 years from now Stranger things have happened... Haha shameless #llm use. I could have m…</h3>
+<ul>
+<li>Source: Mastodon</li>
+<li>Engagement score: 17; replies: 0</li>
+<li>Author: PRoe</li>
+<li><a href="https://proe.whimm.ing/20-years-from-now/">Open discussion</a></li>
+</ul>
+<h3>A small LLM experiment about niche 8-bit knowledge and accuracy: I asked Gemini if BASIC v…</h3>
+<ul>
+<li>Source: Mastodon</li>
+<li>Engagement score: 10; replies: 4</li>
+<li>Author: root42</li>
+<li><a href="https://chaos.social/@root42/116744687682749112">Open discussion</a></li>
+</ul>
+<h3>You know why it is fair that CEOs are paid 10000 times more than workers? Because they lif…</h3>
+<ul>
+<li>Source: Mastodon</li>
+<li>Engagement score: 10; replies: 1</li>
+<li>Author: ✨ Mia’s Simulacrum 🏳️‍⚧️✨</li>
+<li><a href="https://lgbtqia.space/@m/116744518059138604">Open discussion</a></li>
+</ul>
+<h3>🤖 # AI as a # muse 🎨for # science 🔬? A lecture by # MarioKrenn on # creativity , # phys…</h3>
+<ul>
+<li>Source: Mastodon</li>
+<li>Engagement score: 10; replies: 0</li>
+<li>Author: Philo Sophies</li>
+<li><a href="https://techtoots.com/@philosophies/116743418417018212">Open discussion</a></li>
+</ul>
+<h3>ははっ、英ですか 日英首相が会談へ スターマー政権混乱でも関係性強調 <a href="https://www">https://www</a>. nikkei.com/article/DGXZQOUA12C BC0S6A610C2…</h3>
+<ul>
+<li>Source: Mastodon</li>
+<li>Engagement score: 8; replies: 0</li>
+<li>Author: ハンス</li>
+<li><a href="https://mastodon.crazynewworld.net/@hans/116745260988803950">Open discussion</a></li>
+</ul>
+]]></content:encoded>
+    </item>
     <item>
       <title>少看点 AI 雷达 2026-06-13</title>
       <link>https://ceion6.github.io/seeless-learnmore/#2026-06-13/ai-radar</link>
@@ -2795,442 +3164,6 @@ Agent 执行护栏与回滚审计层 是第一优先，因为 团队真正不敢
 <hr>
 <blockquote>
 <p>本页由每日保底脚本生成，用于保证站点每天都有“能继续做什么”的可读版本；后续可以被更高质量的人工 / Codex 版本覆盖。生成时间: 2026-06-03 11:34 UTC</p>
-</blockquote>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>少看点 AI 雷达 2026-06-01</title>
-      <link>https://ceion6.github.io/seeless-learnmore/#2026-06-01/ai-radar</link>
-      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-06-01/ai-radar</guid>
-      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
-      <description>少看点 AI 雷达 2026-06-01 今天的主线是：一手官方源几乎没有新增，真正有信号的是生态层的两股力在同时变强。一边是 skill / harness / memory / UI 壳层继续飞速生长，另一边是对 LLM 生产落地的怀疑和约束也越来越具体。 覆盖提醒：今天官网面没有新增；ArXiv 和 Product Hunt 抓取失败，所以这页以工程趋势和社区反应为主。 今天必看 这不是“没新闻”，而是 agent 生态在从模型竞争转向工具层竞争 结论：今天最强的一批涨星项目，几乎都不在拼底模，而在拼 skill、记忆、harness、UI 和办公接入：guizang-social-card-skill、ian-xiaohei-illustrations、Duel-Agents、vibecode-pro-max-kit、zerostack、harness-anything。 为什么重要：这说明真实用户已经默认“模型能力差不多够了”，下一轮差异化更像是怎么组织工作流、怎么管理上下文、怎么把 agent 接进实际工具链。 来源：guizang-social-card-skill、ia...</description>
-      <content:encoded><![CDATA[<h1>少看点 AI 雷达 2026-06-01</h1>
-<blockquote>
-<p>今天的主线是：一手官方源几乎没有新增，真正有信号的是生态层的两股力在同时变强。一边是 skill / harness / memory / UI 壳层继续飞速生长，另一边是对 LLM 生产落地的怀疑和约束也越来越具体。</p>
-<p>覆盖提醒：今天官网面没有新增；ArXiv 和 Product Hunt 抓取失败，所以这页以工程趋势和社区反应为主。</p>
-</blockquote>
-<h2>今天必看</h2>
-<h3>这不是“没新闻”，而是 agent 生态在从模型竞争转向工具层竞争</h3>
-<ul>
-<li>结论：今天最强的一批涨星项目，几乎都不在拼底模，而在拼 skill、记忆、harness、UI 和办公接入：<code>guizang-social-card-skill</code>、<code>ian-xiaohei-illustrations</code>、<code>Duel-Agents</code>、<code>vibecode-pro-max-kit</code>、<code>zerostack</code>、<code>harness-anything</code>。</li>
-<li>为什么重要：这说明真实用户已经默认“模型能力差不多够了”，下一轮差异化更像是怎么组织工作流、怎么管理上下文、怎么把 agent 接进实际工具链。</li>
-<li>来源：<a href="https://github.com/op7418/guizang-social-card-skill">guizang-social-card-skill</a>、<a href="https://github.com/helloianneo/ian-xiaohei-illustrations">ian-xiaohei-illustrations</a>、<a href="https://github.com/2aronS/Duel-Agents">Duel-Agents</a>、<a href="https://github.com/withkynam/vibecode-pro-max-kit">vibecode-pro-max-kit</a>、<a href="https://github.com/gi-dellav/zerostack">zerostack</a>、<a href="https://github.com/yb2460/harness-anything">harness-anything</a></li>
-<li>建议：扫一眼</li>
-</ul>
-<h3>社区对“AI 代码上线”的反作用力在继续增强</h3>
-<ul>
-<li>结论：今天最值得看的社区信号，不是某个新模型，而是 <code>Talk Is Cheap: The Operational Impact of LLM Use</code>、<code>Remove all LLM generated commits before people get hurt by this nonsense</code>、<code>With Claude: Less Coding, More Testing</code> 这一组内容。</li>
-<li>为什么重要：这说明大家已经从“会不会写代码”转向“出了错谁背锅、测试怎么补、提交能不能信”。真正卡生产的还是验证和责任边界。</li>
-<li>来源：<a href="https://unessays.substack.com/p/talk-is-cheap">Talk Is Cheap: The Operational Impact of LLM Use</a>、<a href="https://github.com/RsyncProject/rsync/issues/934">Remove all LLM generated commits before people get hurt by this nonsense</a>、<a href="https://henrikwarne.com/2026/05/31/with-claude-less-coding-more-testing/">With Claude: Less Coding, More Testing</a></li>
-<li>建议：看原文</li>
-</ul>
-<h3>今天的强信号其实是“后模型时代”的基础设施在堆起来</h3>
-<ul>
-<li>结论：<code>markitdown</code>、<code>supermemory</code>、<code>compound-engineering-plugin</code>、<code>hermes-webui</code> 这类项目继续上榜，说明越来越多工作在补“文件转译、记忆层、插件接入、手机端和 Web 端壳层”。</li>
-<li>为什么重要：agent 真正落地不是聊天窗里多答一句，而是能不能在一堆异构系统之间稳定接线。</li>
-<li>来源：<a href="https://github.com/microsoft/markitdown">markitdown</a>、<a href="https://github.com/supermemoryai/supermemory">supermemory</a>、<a href="https://github.com/EveryInc/compound-engineering-plugin">compound-engineering-plugin</a>、<a href="https://github.com/nesquena/hermes-webui">hermes-webui</a></li>
-</ul>
-<h2>正在升温</h2>
-<h3>Markdown 正在变成 AI 工具之间的事实接口</h3>
-<ul>
-<li>结论：今天这一面很明显，<code>markitdown</code> 上榜，社区也直接在讨论 <code>Markdown Is Becoming the AI App Interface</code>。</li>
-<li>为什么重要：这意味着很多 AI 工具之间真正稳定的交汇层，不是更复杂的协议，而是可审阅、可版本化、可被模型和人同时消费的中间文本层。</li>
-<li>来源：<a href="https://github.com/microsoft/markitdown">markitdown</a>、<a href="https://dev.to/nimay_04/markdown-is-becoming-the-ai-app-interface-4209">Markdown Is Becoming the AI App Interface</a></li>
-</ul>
-<h3>“可观测性”和“黑盒记录”开始变成 agent 默认配件</h3>
-<ul>
-<li>结论：Dev.to 今天最值得记的文章之一，是 <code>I Added a 71-Line Black Box to My Python Agent, Then Queried the $200 Crash With DuckDB</code>。</li>
-<li>为什么重要：这不是花哨功能，而是现实问题。只要 agent 真的在跑工具、花 token、可能失控，日志、回放、审计和成本追踪就会从可选项变成硬需求。</li>
-<li>来源：<a href="https://dev.to/tahosin/i-added-a-71-line-black-box-to-my-python-agent-then-queried-the-200-crash-with-duckdb-4h18">I Added a 71-Line Black Box to My Python Agent, Then Queried the $200 Crash With DuckDB</a></li>
-</ul>
-<h3>UI 问题开始被单独拿出来讨论</h3>
-<ul>
-<li>结论：今天 HN 里 <code>The UI problem of AI coding agents</code> 和 <code>Show HN: Ouijit</code> 这种讨论值得留意。</li>
-<li>为什么重要：agent 不是只要模型强就够，终端、任务面板、日志、确认流和多任务切换体验，已经开始成为单独的产品面。</li>
-<li>来源：<a href="https://cate.cero-ai.com/blog/ui-problem-ai-coding-agents">The UI problem of AI coding agents</a>、<a href="https://ouijit.com/">Show HN: Ouijit</a></li>
-</ul>
-<h2>新模型 / 新产品</h2>
-<h3>今天没有新的大厂模型官宣</h3>
-<ul>
-<li>结论：Anthropic、OpenAI、DeepMind、Qwen、DeepSeek 今天官网面都没有新增条目。</li>
-<li>为什么重要：这让今天更适合看“生态怎么补配套”，而不是被新发布节奏带着跑。</li>
-<li>来源：<a href="https://github.com/ceion6/seeless-learnmore/blob/main/digests/2026-06-01/raw-data.json">今日原始快照</a></li>
-</ul>
-<h3>开源模型面仍然是小模型、多模态和视觉 grounding 最有存在感</h3>
-<ul>
-<li>结论：今天值得顺手记住的是 <code>LocateAnything-3B</code>、<code>MiniCPM5-1B</code>、<code>LFM2.5-8B-A1B</code>、<code>Lance</code>。</li>
-<li>为什么重要：这几条线分别代表视觉 grounding、端侧长上下文、小型 MoE 和 any-to-any 多模态，都是比“再来一个聊天模型”更有结构意义的方向。</li>
-<li>来源：<a href="https://huggingface.co/nvidia/LocateAnything-3B">LocateAnything-3B</a>、<a href="https://huggingface.co/openbmb/MiniCPM5-1B">MiniCPM5-1B</a>、<a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B">LFM2.5-8B-A1B</a>、<a href="https://huggingface.co/bytedance-research/Lance">Lance</a></li>
-<li>建议：扫一眼</li>
-</ul>
-<h2>论文里可能有用的东西</h2>
-<h3>今天不适合硬写论文趋势</h3>
-<ul>
-<li>结论：ArXiv 今天抓取失败，不要把这页写成完整研究日报。</li>
-<li>为什么重要：样本缺失时继续硬补，只会把猜测写成结论。</li>
-<li>来源：<a href="https://github.com/ceion6/seeless-learnmore/blob/main/digests/2026-06-01/raw-data.json">今日原始快照</a></li>
-</ul>
-<h3>先用模型卡和项目热度代替论文主线</h3>
-<ul>
-<li>结论：今天更有价值的是看模型卡、开源工具和工程反应，而不是假装能从缺失样本里抽出研究趋势。</li>
-<li>为什么重要：这能让这页保持高信号，而不是为了完整性制造噪音。</li>
-<li>来源：<a href="https://github.com/ceion6/seeless-learnmore/blob/main/digests/2026-06-01/raw-data.json">今日原始快照</a></li>
-</ul>
-<h2>可以暂缓</h2>
-<h3>没有新增的官网页，不要硬凑“官方动态”</h3>
-<ul>
-<li>判断：今天一手官方源是空窗日，直接承认就行。</li>
-<li>来源：<a href="https://github.com/ceion6/seeless-learnmore/blob/main/digests/2026-06-01/raw-data.json">今日原始快照</a></li>
-</ul>
-<h3>宏大叙事类的 AI 泡沫讨论先少看</h3>
-<ul>
-<li>判断：<code>Comparing Hypes and Bubbles</code> 这类内容会一直有，但今天更有用的是那些已经落到测试、提交、UI、日志和记忆层的问题。</li>
-<li>来源：<a href="https://www.datagubbe.se/dhabi/">Remembering Dotcom, Pondering LLMs: Comparing Hypes and Bubbles</a></li>
-</ul>
-<h3>没有工程落点的“100% vibe coding”话题先别投入太多注意力</h3>
-<ul>
-<li>判断：今天这类讨论有热度，但实际可执行价值不如“怎么记录崩溃、怎么做测试、怎么管理上下文”。</li>
-<li>来源：<a href="https://dev.to/realvorl/when-is-100-vibe-coding-ok--38p">When Is 100% Vibe Coding OK ?</a></li>
-</ul>
-<h2>原始入口</h2>
-<ul>
-<li><a href="https://github.com/ceion6/seeless-learnmore/blob/main/digests/2026-06-01/raw-data.json">今日原始快照 raw-data.json</a></li>
-<li><a href="https://unessays.substack.com/p/talk-is-cheap">Talk Is Cheap: The Operational Impact of LLM Use</a>、<a href="https://github.com/RsyncProject/rsync/issues/934">Remove all LLM generated commits before people get hurt by this nonsense</a>、<a href="https://henrikwarne.com/2026/05/31/with-claude-less-coding-more-testing/">With Claude: Less Coding, More Testing</a></li>
-<li><a href="https://github.com/op7418/guizang-social-card-skill">guizang-social-card-skill</a>、<a href="https://github.com/helloianneo/ian-xiaohei-illustrations">ian-xiaohei-illustrations</a>、<a href="https://github.com/2aronS/Duel-Agents">Duel-Agents</a>、<a href="https://github.com/withkynam/vibecode-pro-max-kit">vibecode-pro-max-kit</a>、<a href="https://github.com/gi-dellav/zerostack">zerostack</a></li>
-<li><a href="https://github.com/microsoft/markitdown">markitdown</a>、<a href="https://github.com/supermemoryai/supermemory">supermemory</a>、<a href="https://github.com/EveryInc/compound-engineering-plugin">compound-engineering-plugin</a>、<a href="https://github.com/nesquena/hermes-webui">hermes-webui</a></li>
-<li><a href="https://huggingface.co/nvidia/LocateAnything-3B">LocateAnything-3B</a>、<a href="https://huggingface.co/openbmb/MiniCPM5-1B">MiniCPM5-1B</a>、<a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B">LFM2.5-8B-A1B</a>、<a href="https://huggingface.co/bytedance-research/Lance">Lance</a></li>
-</ul>
-<hr>
-<blockquote>
-<p>本页由 Codex 直接基于当天 <code>raw-data.json</code> 整理生成，不依赖仓库内的外部模型 API 配置。</p>
-</blockquote>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>AI 机会雷达 2026-06-01</title>
-      <link>https://ceion6.github.io/seeless-learnmore/#2026-06-01/ai-opportunity</link>
-      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-06-01/ai-opportunity</guid>
-      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
-      <description>AI 机会雷达 2026-06-01 今天更值得下注的，是 Agent 执行护栏与回滚审计层、浏览器/终端工作流模板包、Agent 会话沉淀与团队记忆层 这几类能在真实流程里立刻验证的机会。 先看结论 今天最值得做的机会，不在再做一个通用聊天入口，而在把 agent 接进真实工作流的薄层基础设施。 Agent 执行护栏与回滚审计层 是第一优先，因为 团队真正不敢放开的，通常不是生成能力，而是权限、验证和回滚。 浏览器/终端工作流模板包 也值得看，因为 当 agent 开始碰浏览器和终端，最先有价值的不是开放式智能，而是高频 SOP 模板。 这些方向的共同点是：用户清晰、痛点具体，而且能在 2~6 周内做出第一版去试。 值得做的 3 个方向 Agent 执行护栏与回滚审计层 给谁做：已经让 agent 改代码、跑命令、触发 hook 的工程团队。 痛点：会话挂死、权限边界不清、结果难审计，出了错又很难回滚。 为什么是现在：今天的 GitHub issue、HN 讨论和论文信号都在提醒：agent 真实生产问题已经暴露出来了。 最小可行解：先做执行前检查、操作日志、产物校验和回滚建议，不必...</description>
-      <content:encoded><![CDATA[<h1>AI 机会雷达 2026-06-01</h1>
-<blockquote>
-<p>今天更值得下注的，是 Agent 执行护栏与回滚审计层、浏览器/终端工作流模板包、Agent 会话沉淀与团队记忆层 这几类能在真实流程里立刻验证的机会。</p>
-</blockquote>
-<h2>先看结论</h2>
-<p>今天最值得做的机会，不在再做一个通用聊天入口，而在把 agent 接进真实工作流的薄层基础设施。
-Agent 执行护栏与回滚审计层 是第一优先，因为 团队真正不敢放开的，通常不是生成能力，而是权限、验证和回滚。
-浏览器/终端工作流模板包 也值得看，因为 当 agent 开始碰浏览器和终端，最先有价值的不是开放式智能，而是高频 SOP 模板。
-这些方向的共同点是：用户清晰、痛点具体，而且能在 2~6 周内做出第一版去试。</p>
-<h2>值得做的 3 个方向</h2>
-<h3>Agent 执行护栏与回滚审计层</h3>
-<ul>
-<li>给谁做：已经让 agent 改代码、跑命令、触发 hook 的工程团队。</li>
-<li>痛点：会话挂死、权限边界不清、结果难审计，出了错又很难回滚。</li>
-<li>为什么是现在：今天的 GitHub issue、HN 讨论和论文信号都在提醒：agent 真实生产问题已经暴露出来了。</li>
-<li>最小可行解：先做执行前检查、操作日志、产物校验和回滚建议，不必先做完整沙盒。</li>
-<li>付费可能：这类产品贴近 DevInfra，接入流程后不容易切走，适合团队套餐或按执行量收费。</li>
-<li>证据：<a href="https://github.com/anthropics/claude-code/issues/59584">Claude Code #59584</a>、<a href="https://github.com/openai/codex/issues/21598">OpenAI Codex #21598</a>、<a href="https://github.com/openai/codex/pull/25470">OpenAI Codex #25470</a>、<a href="https://github.com/openai/codex/pull/25383">OpenAI Codex #25383</a>、<a href="https://github.com/openai/codex/pull/25427">OpenAI Codex #25427</a></li>
-<li>下一步：先访谈 5 个已经让 agent 跑命令的团队，确认他们最怕的失败类型。</li>
-</ul>
-<h3>浏览器/终端工作流模板包</h3>
-<ul>
-<li>给谁做：做测试、后台运营、增长实验、数据录入的小团队。</li>
-<li>痛点：大家知道 agent 能碰浏览器和终端，但不知道怎么把它拼成稳定流程。</li>
-<li>为什么是现在：浏览器和命令行能力正逐步进入 agent 工具层，工作流模板开始有现实价值。</li>
-<li>最小可行解：先做网页巡检、表单回归、后台操作复盘这类模板包，而不是通用自动化平台。</li>
-<li>付费可能：只要能持续省掉人工重复操作，就适合按模板包或团队订阅收费。</li>
-<li>证据：<a href="https://github.com/anthropics/claude-code/issues/59585">Claude Code #59585</a>、<a href="https://github.com/anthropics/claude-code/issues/59579">Claude Code #59579</a>、<a href="https://github.com/openai/codex/issues/25471">OpenAI Codex #25471</a>、<a href="https://github.com/openai/codex/issues/25468">OpenAI Codex #25468</a>、<a href="https://github.com/openai/codex/issues/21598">OpenAI Codex #21598</a></li>
-<li>下一步：先挑一个现成 SOP 最明确的场景，让真实用户拿现网流程试一次。</li>
-</ul>
-<h3>Agent 会话沉淀与团队记忆层</h3>
-<ul>
-<li>给谁做：频繁用 agent 做排障、代码阅读、探索式开发的团队。</li>
-<li>痛点：会话关掉就散，后续无法复用决策、命令和上下文。</li>
-<li>为什么是现在：社区已经开始把会话转成 wiki、dashboard、长期知识资产，而不只是一次性聊天记录。</li>
-<li>最小可行解：先做会话提炼和归档，把结论、文件引用和关键步骤整理成团队笔记。</li>
-<li>付费可能：只要能减少重复排查和 onboarding 时间，就有明确的效率价值。</li>
-<li>证据：<a href="https://github.com/anthropics/claude-code/issues/59585">Claude Code #59585</a>、<a href="https://github.com/anthropics/claude-code/issues/59579">Claude Code #59579</a>、<a href="https://github.com/anthropics/claude-code/issues/59584">Claude Code #59584</a>、<a href="https://github.com/openai/codex/issues/25467">OpenAI Codex #25467</a>、<a href="https://github.com/openai/codex/issues/25468">OpenAI Codex #25468</a></li>
-<li>下一步：先验证团队是否真的会回看 agent 会话，再决定要不要扩成完整知识库。</li>
-</ul>
-<h2>次优但可观察</h2>
-<h3>团队级技能包与插件目录</h3>
-<ul>
-<li>现在看到了什么信号：skills、plugins、MCP、hooks 和 workflow 模板正在形成独立分发层。</li>
-<li>为什么先不重注：不要先做开放 marketplace，先验证团队内部有没有值得复用的 skill 配方。</li>
-<li>后续要继续观察什么：先验证目标团队是否已经沉淀出 5 个以上会重复使用的 agent 配方。</li>
-</ul>
-<h3>代码库上下文打底层</h3>
-<ul>
-<li>现在看到了什么信号：代码知识图谱、私有搜索和 repo understanding 还在持续升温。</li>
-<li>为什么先不重注：不要把“能索引代码”直接当成壁垒，关键是能不能接进真实任务前置环节。</li>
-<li>后续要继续观察什么：先找 3 个已经在用 coding agent 的团队，验证他们最常卡住的是“找不到该改哪里”。</li>
-</ul>
-<h3>模型侧机会先保持观察</h3>
-<ul>
-<li>现在看到了什么信号：nvidia/LocateAnything-3B 进入模型热榜，说明模型面仍有活跃样本。</li>
-<li>为什么先不重注：只看模型热度不够支撑产品方向，除非已经找到明确使用场景。 </li>
-<li>后续要继续观察什么：用户到底是更在意部署成本、隐私，还是某个具体能力差异。</li>
-</ul>
-<h2>今天先别做</h2>
-<h3>通用“再做一个 AI 助手”</h3>
-<ul>
-<li>原因：今天的信号更支持做上下文、护栏、复用层，而不是再做一个聊天壳。</li>
-</ul>
-<h3>纯资讯聚合或榜单站</h3>
-<ul>
-<li>原因：用户更缺的是可执行判断，不是再多一条信息流。</li>
-</ul>
-<h3>纯靠新品发布包装的方向</h3>
-<ul>
-<li>原因：今天 Product Hunt 样本不足，没必要用缺失数据硬凑产品热度。</li>
-</ul>
-<h3>先别把 Agent 执行护栏与回滚审计层 做成大平台</h3>
-<ul>
-<li>原因：不要一上来做完整平台，先验证团队最怕的是权限、泄露、卡死还是难追责。</li>
-</ul>
-<h2>开工顺序</h2>
-<ol>
-<li>先验证 Agent 执行护栏与回滚审计层 对目标用户是不是当前最痛的阻塞点，而不是先搭完整平台。</li>
-<li>先找已经在日常流程里用 agent 的团队试 浏览器/终端工作流模板包 或 Agent 执行护栏与回滚审计层，不要先找纯围观用户。</li>
-<li>如果 3 个用户里至少 2 个愿意拿真实仓库或真实流程试用，就继续；如果只有“听起来不错”，就收窄切口。</li>
-</ol>
-<h2>原始入口</h2>
-<ul>
-<li><a href="./#2026-06-01/ai-radar">少看点 AI 雷达</a> — 先看当天的总判断。</li>
-<li><a href="./raw-data.json">今日原始快照 raw-data.json</a> — 看完整原始样本。</li>
-<li><a href="https://github.com/openclaw/openclaw">OpenClaw 活跃仓库</a> — 这是今天判断机会方向的直接证据。</li>
-<li><a href="https://github.com/openai/codex">OpenAI Codex 活跃仓库</a> — 这是今天判断机会方向的直接证据。</li>
-<li><a href="https://github.com/harry0703/MoneyPrinterTurbo">harry0703/MoneyPrinterTurbo</a> — 这是今天判断机会方向的直接证据。</li>
-<li><a href="https://github.com/microsoft/markitdown">microsoft/markitdown</a> — 这是今天判断机会方向的直接证据。</li>
-</ul>
-<hr>
-<blockquote>
-<p>本页由每日保底脚本生成，用于保证站点每天都有“能继续做什么”的可读版本；后续可以被更高质量的人工 / Codex 版本覆盖。生成时间: 2026-06-01 01:05 UTC</p>
-</blockquote>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>少看点 AI 雷达 2026-05-29</title>
-      <link>https://ceion6.github.io/seeless-learnmore/#2026-05-29/ai-radar</link>
-      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-05-29/ai-radar</guid>
-      <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
-      <description>少看点 AI 雷达 2026-05-29 今天的主线是：Anthropic 在同一天把“模型升级、产品扩展、agent 工作流、风险控制、资本背书”几条线一起推了出来，说明大厂竞争已经不只是拼模型分数，而是在拼完整的 agent 操作系统。 覆盖提醒：Product Hunt 今天抓取失败；官网面有少量旧文更新时间变动，这页只把明确新增或能代表方向变化的条目算进去。 今天必看 Anthropic 今天是整包推进，不是单点发版 结论：今天最强信号不是单独的 Claude Opus 4.8，而是 Anthropic 同时放出了 Claude Opus 4.8、Claude Design、Dynamic Workflows in Claude Code、How we contain Claude across products 和新一轮融资消息。 为什么重要：这说明 Anthropic 在把 agent 能力从“更强模型”往“更大任务编排、更丰富工作流、更强安全边界、更明确商业承载”整体推进。竞争重点已经不只是模型本身，而是整套运行面。 来源：Introducing Claude Opus ...</description>
-      <content:encoded><![CDATA[<h1>少看点 AI 雷达 2026-05-29</h1>
-<blockquote>
-<p>今天的主线是：Anthropic 在同一天把“模型升级、产品扩展、agent 工作流、风险控制、资本背书”几条线一起推了出来，说明大厂竞争已经不只是拼模型分数，而是在拼完整的 agent 操作系统。</p>
-<p>覆盖提醒：Product Hunt 今天抓取失败；官网面有少量旧文更新时间变动，这页只把明确新增或能代表方向变化的条目算进去。</p>
-</blockquote>
-<h2>今天必看</h2>
-<h3>Anthropic 今天是整包推进，不是单点发版</h3>
-<ul>
-<li>结论：今天最强信号不是单独的 <code>Claude Opus 4.8</code>，而是 Anthropic 同时放出了 <code>Claude Opus 4.8</code>、<code>Claude Design</code>、<code>Dynamic Workflows in Claude Code</code>、<code>How we contain Claude across products</code> 和新一轮融资消息。</li>
-<li>为什么重要：这说明 Anthropic 在把 agent 能力从“更强模型”往“更大任务编排、更丰富工作流、更强安全边界、更明确商业承载”整体推进。竞争重点已经不只是模型本身，而是整套运行面。</li>
-<li>来源：<a href="https://www.anthropic.com/news/claude-opus-4-8">Introducing Claude Opus 4.8</a>、<a href="https://www.anthropic.com/news/claude-design-anthropic-labs">Introducing Claude Design by Anthropic Labs</a>、<a href="https://claude.com/blog/introducing-dynamic-workflows-in-claude-code">Dynamic Workflows in Claude Code</a>、<a href="https://www.anthropic.com/engineering/how-we-contain-claude">How we contain Claude across products</a>、<a href="https://www.anthropic.com/news/series-h">Anthropic raises $65B in Series H funding at $965B post-money valuation</a></li>
-<li>建议：看原文</li>
-</ul>
-<h3>今天 HN 的主讨论也在验证这条主线</h3>
-<ul>
-<li>结论：HN 今天最高热度的几条 AI 话题，基本都围着 Anthropic 展开：<code>Claude Opus 4.8</code>、融资、<code>Dynamic Workflows</code>，外加一篇 <code>Various LLM Smells</code>。</li>
-<li>为什么重要：这说明社区注意力已经不只是“模型更强了没”，而是在同时盯产品体验、工程味道和规模化部署后的副作用。</li>
-<li>来源：<a href="https://news.ycombinator.com/item?id=48311647">Claude Opus 4.8 on HN</a>、<a href="https://news.ycombinator.com/item?id=48313048">Anthropic Series H on HN</a>、<a href="https://news.ycombinator.com/item?id=48311705">Dynamic Workflows in Claude Code on HN</a>、<a href="https://shvbsle.in/various-llm-smells/">Various LLM Smells</a></li>
-</ul>
-<h3>GitHub 热度还在继续堆向 skill / harness / memory 层</h3>
-<ul>
-<li>结论：今天飞涨最快的仓库仍然集中在技能和上下文治理层：<code>guizang-social-card-skill</code>、<code>vibecode-pro-max-kit</code>、<code>adhd</code>、<code>ECC</code>、<code>superpowers</code>、<code>harness</code>、<code>Arkon</code>。</li>
-<li>为什么重要：这说明真实用户已经默认“模型本体不够用”，开始把更多价值放在技能包、规范、记忆和编排框架上。</li>
-<li>来源：<a href="https://github.com/op7418/guizang-social-card-skill">guizang-social-card-skill</a>、<a href="https://github.com/withkynam/vibecode-pro-max-kit">vibecode-pro-max-kit</a>、<a href="https://github.com/UditAkhourii/adhd">adhd</a>、<a href="https://github.com/affaan-m/ECC">ECC</a>、<a href="https://github.com/obra/superpowers">superpowers</a>、<a href="https://github.com/revfactory/harness">harness</a>、<a href="https://github.com/nduckmink/arkon">Arkon</a></li>
-<li>建议：扫一眼</li>
-</ul>
-<h2>正在升温</h2>
-<h3>“AI 代码要不要信”这件事，反对声在变强</h3>
-<ul>
-<li>结论：社区层面今天很明显在积累一种反作用力：<code>Various LLM Smells</code>、<code>I Spent 10x Longer Debugging AI Code Than Writing It</code>、<code>The Other 20% Is Why We Still Need Seniors</code> 都在指向同一个问题。</li>
-<li>为什么重要：agent 可以做掉大量 80% 的工作，但最后决定能不能上生产的，还是错误成本、调试成本和 senior review 这一层。</li>
-<li>来源：<a href="https://shvbsle.in/various-llm-smells/">Various LLM Smells</a>、<a href="https://dev.to/harsh2644/i-spent-10x-longer-debugging-ai-code-than-writing-it-15h4">I Spent 10x Longer Debugging AI Code Than Writing It</a>、<a href="https://dev.to/mickyarun/ai-agents-are-great-at-80-of-our-code-the-other-20-is-why-we-still-need-seniors-3lh5">AI Agents Are Great at 80% of Our Code. The Other 20% Is Why We Still Need Seniors.</a></li>
-</ul>
-<h3>Embedding 和检索基础设施继续往多模态升级</h3>
-<ul>
-<li>结论：Google DeepMind 今天新增的是 <code>Gemini Embedding 2</code>，卖点不是聊天，而是把文本、图像、视频、音频、文档放进统一 embedding 空间。</li>
-<li>为什么重要：这对 RAG、检索、聚类、推荐和多模态 agent 都是底层能力升级。相比又一个聊天模型，这类基础设施更可能悄悄进入主流程。</li>
-<li>来源：<a href="https://deepmind.google/models/gemini/embedding/">Gemini Embedding 2</a></li>
-</ul>
-<h3>端侧、小模型和高密度推理还在稳步走强</h3>
-<ul>
-<li>结论：<code>MiniCPM5-1B</code>、<code>OpenSquilla</code>、<code>TokenSpeed</code> 今天继续同时有热度。</li>
-<li>为什么重要：这说明一条明确分支已经成型了：不是所有人都要更大的闭源模型，很多真实工作流更在意本地可用、推理效率和单位 token 产出。</li>
-<li>来源：<a href="https://huggingface.co/openbmb/MiniCPM5-1B">MiniCPM5-1B</a>、<a href="https://github.com/opensquilla/opensquilla">OpenSquilla</a>、<a href="https://github.com/lightseekorg/tokenspeed">TokenSpeed</a></li>
-</ul>
-<h2>新模型 / 新产品</h2>
-<h3><code>Claude Opus 4.8</code> 不是孤立升级，而是配套工作流一起上</h3>
-<ul>
-<li>结论：今天最值得记住的新产品，不只是 <code>Opus 4.8</code> 本身，还包括和它一起出现的 <code>Claude Design</code>、<code>Dynamic Workflows</code> 以及更明确的 containment 叙事。</li>
-<li>为什么重要：这意味着 Anthropic 想卖的不是单个模型 API，而是一整套“能做设计、能跑大任务、能控风险”的 agent 套件。</li>
-<li>来源：<a href="https://www.anthropic.com/news/claude-opus-4-8">Introducing Claude Opus 4.8</a>、<a href="https://www.anthropic.com/news/claude-design-anthropic-labs">Introducing Claude Design by Anthropic Labs</a>、<a href="https://claude.com/blog/introducing-dynamic-workflows-in-claude-code">Dynamic Workflows in Claude Code</a></li>
-<li>建议：看原文</li>
-</ul>
-<h3>OpenAI 今天更像是在补治理框架，不是在抢产品节奏</h3>
-<ul>
-<li>结论：OpenAI 今天在官网面新增的是 <code>OpenAI Frontier Governance Framework</code>，不是模型或 agent 工具发版。</li>
-<li>为什么重要：这说明今天官方产品节奏明显偏向 Anthropic，OpenAI 这边更像在补制度和治理层叙事。</li>
-<li>来源：<a href="https://openai.com/index/openai-frontier-governance-framework/">OpenAI Frontier Governance Framework</a></li>
-</ul>
-<h3>今天值得顺手记住的开源模型是这几类</h3>
-<ul>
-<li>结论：<code>Lance</code> 代表 any-to-any 多模态生成，<code>MiniCPM5-1B</code> 代表端侧长上下文小模型，<code>LocateAnything-3B</code> 代表视觉 grounding。</li>
-<li>为什么重要：今天真正有判断价值的，不是“又多了一个模型名”，而是哪条技术路径在变实用。</li>
-<li>来源：<a href="https://huggingface.co/bytedance-research/Lance">Lance</a>、<a href="https://huggingface.co/openbmb/MiniCPM5-1B">MiniCPM5-1B</a>、<a href="https://huggingface.co/nvidia/LocateAnything-3B">LocateAnything-3B</a></li>
-</ul>
-<h2>论文里可能有用的东西</h2>
-<h3><code>Self-Improving Language Models with Bidirectional Evolutionary Search</code> 值得看</h3>
-<ul>
-<li>结论：今天最接近 agent 自改进主线的论文，是 <code>Self-Improving Language Models with Bidirectional Evolutionary Search</code>。</li>
-<li>为什么重要：它试图解决的不是一次答题准不准，而是怎样通过搜索、分解和重组让模型持续生成更好的候选路径。</li>
-<li>来源：<a href="http://arxiv.org/abs/2605.28814v1">Self-Improving Language Models with Bidirectional Evolutionary Search</a></li>
-<li>建议：看原文</li>
-</ul>
-<h3><code>Calibrating Conservatism for Scalable Oversight</code> 也值得留档</h3>
-<ul>
-<li>结论：如果你更关心 agent 安全和人类监督，这篇 <code>Calibrating Conservatism for Scalable Oversight</code> 比很多泛泛对齐论文更实用。</li>
-<li>为什么重要：它直接碰的是“能力越来越强时，人还能怎么维持有效监督”这个核心问题，和今天 Anthropic 的 containment 叙事是同一条线。</li>
-<li>来源：<a href="http://arxiv.org/abs/2605.28807v1">Calibrating Conservatism for Scalable Oversight</a></li>
-</ul>
-<h3>长期记忆开始从文本走向视觉</h3>
-<ul>
-<li>结论：<code>Personal Visual Memory from Explicit and Implicit Evidence</code> 值得记一个点：agent 的长期记忆开始不满足于只存文本。</li>
-<li>为什么重要：如果未来个人 agent 真要长期陪跑，它迟早要记住界面、图片、视觉线索和用户上下文，而不是只会堆对话摘要。</li>
-<li>来源：<a href="http://arxiv.org/abs/2605.28806v1">Personal Visual Memory from Explicit and Implicit Evidence</a></li>
-</ul>
-<h2>可以暂缓</h2>
-<h3>Product Hunt 今天没有样本</h3>
-<ul>
-<li>判断：今天 <code>Product Hunt</code> 抓取失败，不要把这页当成完整新品视图。</li>
-<li>来源：<a href="https://github.com/ceion6/seeless-learnmore/blob/main/digests/2026-05-29/raw-data.json">今日原始快照</a></li>
-</ul>
-<h3>纯概念性的“AI 工程师是什么”讨论先少看</h3>
-<ul>
-<li>判断：这类话题会继续热，但今天更值得看的还是已经落到产品、工作流和风险控制上的具体变化。</li>
-<li>来源：<a href="https://news.ycombinator.com/item?id=48312377">Ask HN: What Is an &quot;AI Engineer&quot;?</a></li>
-</ul>
-<h3>不是每个涨星 skill 仓库都值得立刻装进工作流</h3>
-<ul>
-<li>判断：今天很多 skill / harness 仓库涨得很快，但其中相当一部分更像模式库和演示层。先把它们当发现信号，不要直接当成熟生产方案。</li>
-<li>来源：<a href="https://github.com/ceion6/seeless-learnmore/blob/main/digests/2026-05-29/raw-data.json">今日原始快照</a></li>
-</ul>
-<h2>原始入口</h2>
-<ul>
-<li><a href="https://github.com/ceion6/seeless-learnmore/blob/main/digests/2026-05-29/raw-data.json">今日原始快照 raw-data.json</a></li>
-<li><a href="https://www.anthropic.com/news/claude-opus-4-8">Introducing Claude Opus 4.8</a>、<a href="https://www.anthropic.com/news/claude-design-anthropic-labs">Introducing Claude Design by Anthropic Labs</a>、<a href="https://claude.com/blog/introducing-dynamic-workflows-in-claude-code">Dynamic Workflows in Claude Code</a>、<a href="https://www.anthropic.com/engineering/how-we-contain-claude">How we contain Claude across products</a></li>
-<li><a href="https://www.anthropic.com/news/series-h">Anthropic raises $65B in Series H funding at $965B post-money valuation</a>、<a href="https://deepmind.google/models/gemini/embedding/">Gemini Embedding 2</a>、<a href="https://openai.com/index/openai-frontier-governance-framework/">OpenAI Frontier Governance Framework</a></li>
-<li><a href="https://shvbsle.in/various-llm-smells/">Various LLM Smells</a>、<a href="https://dev.to/harsh2644/i-spent-10x-longer-debugging-ai-code-than-writing-it-15h4">I Spent 10x Longer Debugging AI Code Than Writing It</a>、<a href="https://dev.to/mickyarun/ai-agents-are-great-at-80-of-our-code-the-other-20-is-why-we-still-need-seniors-3lh5">AI Agents Are Great at 80% of Our Code. The Other 20% Is Why We Still Need Seniors.</a></li>
-<li><a href="https://github.com/op7418/guizang-social-card-skill">guizang-social-card-skill</a>、<a href="https://github.com/withkynam/vibecode-pro-max-kit">vibecode-pro-max-kit</a>、<a href="https://github.com/UditAkhourii/adhd">adhd</a>、<a href="https://github.com/affaan-m/ECC">ECC</a>、<a href="https://github.com/nduckmink/arkon">Arkon</a></li>
-<li><a href="http://arxiv.org/abs/2605.28814v1">Self-Improving Language Models with Bidirectional Evolutionary Search</a>、<a href="http://arxiv.org/abs/2605.28807v1">Calibrating Conservatism for Scalable Oversight</a>、<a href="http://arxiv.org/abs/2605.28806v1">Personal Visual Memory from Explicit and Implicit Evidence</a></li>
-</ul>
-<hr>
-<blockquote>
-<p>本页由 Codex 直接基于当天 <code>raw-data.json</code> 整理生成，不依赖仓库内的外部模型 API 配置。</p>
-</blockquote>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>AI 机会雷达 2026-05-29</title>
-      <link>https://ceion6.github.io/seeless-learnmore/#2026-05-29/ai-opportunity</link>
-      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-05-29/ai-opportunity</guid>
-      <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
-      <description>AI 机会雷达 2026-05-29 今天更值得下注的，是 Agent 会话沉淀与团队记忆层、Agent 执行护栏与回滚审计层、浏览器/终端工作流模板包 这几类能在真实流程里立刻验证的机会。 先看结论 今天最值得做的机会，不在再做一个通用聊天入口，而在把 agent 接进真实工作流的薄层基础设施。 Agent 会话沉淀与团队记忆层 是第一优先，因为 当团队开始长期使用 agent，最大的浪费是每次会话都从零开始。 Agent 执行护栏与回滚审计层 也值得看，因为 团队真正不敢放开的，通常不是生成能力，而是权限、验证和回滚。 这些方向的共同点是：用户清晰、痛点具体，而且能在 2~6 周内做出第一版去试。 值得做的 3 个方向 Agent 会话沉淀与团队记忆层 给谁做：频繁用 agent 做排障、代码阅读、探索式开发的团队。 痛点：会话关掉就散，后续无法复用决策、命令和上下文。 为什么是现在：社区已经开始把会话转成 wiki、dashboard、长期知识资产，而不只是一次性聊天记录。 最小可行解：先做会话提炼和归档，把结论、文件引用和关键步骤整理成团队笔记。 付费可能：只要能减少重复排查和...</description>
-      <content:encoded><![CDATA[<h1>AI 机会雷达 2026-05-29</h1>
-<blockquote>
-<p>今天更值得下注的，是 Agent 会话沉淀与团队记忆层、Agent 执行护栏与回滚审计层、浏览器/终端工作流模板包 这几类能在真实流程里立刻验证的机会。</p>
-</blockquote>
-<h2>先看结论</h2>
-<p>今天最值得做的机会，不在再做一个通用聊天入口，而在把 agent 接进真实工作流的薄层基础设施。
-Agent 会话沉淀与团队记忆层 是第一优先，因为 当团队开始长期使用 agent，最大的浪费是每次会话都从零开始。
-Agent 执行护栏与回滚审计层 也值得看，因为 团队真正不敢放开的，通常不是生成能力，而是权限、验证和回滚。
-这些方向的共同点是：用户清晰、痛点具体，而且能在 2~6 周内做出第一版去试。</p>
-<h2>值得做的 3 个方向</h2>
-<h3>Agent 会话沉淀与团队记忆层</h3>
-<ul>
-<li>给谁做：频繁用 agent 做排障、代码阅读、探索式开发的团队。</li>
-<li>痛点：会话关掉就散，后续无法复用决策、命令和上下文。</li>
-<li>为什么是现在：社区已经开始把会话转成 wiki、dashboard、长期知识资产，而不只是一次性聊天记录。</li>
-<li>最小可行解：先做会话提炼和归档，把结论、文件引用和关键步骤整理成团队笔记。</li>
-<li>付费可能：只要能减少重复排查和 onboarding 时间，就有明确的效率价值。</li>
-<li>证据：<a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.154</a>、<a href="https://github.com/anthropics/claude-code/issues/63447">Claude Code #63447</a>、<a href="https://github.com/anthropics/claude-code/issues/63427">Claude Code #63427</a>、<a href="https://github.com/anthropics/claude-code/issues/39270">Claude Code #39270</a>、<a href="https://github.com/anthropics/claude-code/issues/63446">Claude Code #63446</a></li>
-<li>下一步：先验证团队是否真的会回看 agent 会话，再决定要不要扩成完整知识库。</li>
-</ul>
-<h3>Agent 执行护栏与回滚审计层</h3>
-<ul>
-<li>给谁做：已经让 agent 改代码、跑命令、触发 hook 的工程团队。</li>
-<li>痛点：会话挂死、权限边界不清、结果难审计，出了错又很难回滚。</li>
-<li>为什么是现在：今天的 GitHub issue、HN 讨论和论文信号都在提醒：agent 真实生产问题已经暴露出来了。</li>
-<li>最小可行解：先做执行前检查、操作日志、产物校验和回滚建议，不必先做完整沙盒。</li>
-<li>付费可能：这类产品贴近 DevInfra，接入流程后不容易切走，适合团队套餐或按执行量收费。</li>
-<li>证据：<a href="https://github.com/anthropics/claude-code/issues/39270">Claude Code #39270</a>、<a href="https://github.com/anthropics/claude-code/pull/63382">Claude Code #63382</a>、<a href="https://github.com/anthropics/claude-code/pull/63262">Claude Code #63262</a>、<a href="https://github.com/anthropics/claude-code/pull/63252">Claude Code #63252</a>、<a href="https://github.com/anthropics/claude-code/pull/63189">Claude Code #63189</a></li>
-<li>下一步：先访谈 5 个已经让 agent 跑命令的团队，确认他们最怕的失败类型。</li>
-</ul>
-<h3>浏览器/终端工作流模板包</h3>
-<ul>
-<li>给谁做：做测试、后台运营、增长实验、数据录入的小团队。</li>
-<li>痛点：大家知道 agent 能碰浏览器和终端，但不知道怎么把它拼成稳定流程。</li>
-<li>为什么是现在：浏览器和命令行能力正逐步进入 agent 工具层，工作流模板开始有现实价值。</li>
-<li>最小可行解：先做网页巡检、表单回归、后台操作复盘这类模板包，而不是通用自动化平台。</li>
-<li>付费可能：只要能持续省掉人工重复操作，就适合按模板包或团队订阅收费。</li>
-<li>证据：<a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.154</a>、<a href="https://github.com/anthropics/claude-code/issues/63427">Claude Code #63427</a>、<a href="https://github.com/anthropics/claude-code/issues/39270">Claude Code #39270</a>、<a href="https://github.com/anthropics/claude-code/issues/63446">Claude Code #63446</a>、<a href="https://github.com/openai/codex/releases">OpenAI Codex 0.135.0</a></li>
-<li>下一步：先挑一个现成 SOP 最明确的场景，让真实用户拿现网流程试一次。</li>
-</ul>
-<h2>次优但可观察</h2>
-<h3>团队级技能包与插件目录</h3>
-<ul>
-<li>现在看到了什么信号：skills、plugins、MCP、hooks 和 workflow 模板正在形成独立分发层。</li>
-<li>为什么先不重注：不要先做开放 marketplace，先验证团队内部有没有值得复用的 skill 配方。</li>
-<li>后续要继续观察什么：先验证目标团队是否已经沉淀出 5 个以上会重复使用的 agent 配方。</li>
-</ul>
-<h3>代码库上下文打底层</h3>
-<ul>
-<li>现在看到了什么信号：代码知识图谱、私有搜索和 repo understanding 还在持续升温。</li>
-<li>为什么先不重注：不要把“能索引代码”直接当成壁垒，关键是能不能接进真实任务前置环节。</li>
-<li>后续要继续观察什么：先找 3 个已经在用 coding agent 的团队，验证他们最常卡住的是“找不到该改哪里”。</li>
-</ul>
-<h3>模型侧机会先保持观察</h3>
-<ul>
-<li>现在看到了什么信号：openbmb/MiniCPM5-1B 进入模型热榜，说明模型面仍有活跃样本。</li>
-<li>为什么先不重注：只看模型热度不够支撑产品方向，除非已经找到明确使用场景。 </li>
-<li>后续要继续观察什么：用户到底是更在意部署成本、隐私，还是某个具体能力差异。</li>
-</ul>
-<h2>今天先别做</h2>
-<h3>通用“再做一个 AI 助手”</h3>
-<ul>
-<li>原因：今天的信号更支持做上下文、护栏、复用层，而不是再做一个聊天壳。</li>
-</ul>
-<h3>纯资讯聚合或榜单站</h3>
-<ul>
-<li>原因：用户更缺的是可执行判断，不是再多一条信息流。</li>
-</ul>
-<h3>纯靠新品发布包装的方向</h3>
-<ul>
-<li>原因：今天 Product Hunt 样本不足，没必要用缺失数据硬凑产品热度。</li>
-</ul>
-<h3>先别把 Agent 会话沉淀与团队记忆层 做成大平台</h3>
-<ul>
-<li>原因：如果用户从不回看 agent 会话，就不要把它误判成知识平台需求。</li>
-</ul>
-<h2>开工顺序</h2>
-<ol>
-<li>先验证 Agent 会话沉淀与团队记忆层 对目标用户是不是当前最痛的阻塞点，而不是先搭完整平台。</li>
-<li>先找已经在日常流程里用 agent 的团队试 Agent 执行护栏与回滚审计层 或 Agent 会话沉淀与团队记忆层，不要先找纯围观用户。</li>
-<li>如果 3 个用户里至少 2 个愿意拿真实仓库或真实流程试用，就继续；如果只有“听起来不错”，就收窄切口。</li>
-</ol>
-<h2>原始入口</h2>
-<ul>
-<li><a href="./#2026-05-29/ai-radar">少看点 AI 雷达</a> — 先看当天的总判断。</li>
-<li><a href="./raw-data.json">今日原始快照 raw-data.json</a> — 看完整原始样本。</li>
-<li><a href="https://github.com/openclaw/openclaw">OpenClaw 活跃仓库</a> — 这是今天判断机会方向的直接证据。</li>
-<li><a href="https://github.com/google-gemini/gemini-cli">Gemini CLI 活跃仓库</a> — 这是今天判断机会方向的直接证据。</li>
-<li><a href="https://github.com/harry0703/MoneyPrinterTurbo">harry0703/MoneyPrinterTurbo</a> — 这是今天判断机会方向的直接证据。</li>
-<li><a href="https://github.com/affaan-m/ECC">affaan-m/ECC</a> — 这是今天判断机会方向的直接证据。</li>
-</ul>
-<hr>
-<blockquote>
-<p>本页由每日保底脚本生成，用于保证站点每天都有“能继续做什么”的可读版本；后续可以被更高质量的人工 / Codex 版本覆盖。生成时间: 2026-05-29 01:01 UTC</p>
 </blockquote>
 ]]></content:encoded>
     </item>
