@@ -1,89 +1,76 @@
 # AI 机会雷达 2026-06-14
 
-> 今天更值得下注的，是 Agent 执行护栏与回滚审计层、Agent 会话沉淀与团队记忆层、浏览器/终端工作流模板包 这几类能在真实流程里立刻验证的机会。
+> 今天最值得下注的，是 AI 生产供应链里的三个薄弱环节：模型连续性、技能发布质量，以及高风险输出的证据完整性。
 
 ## 先看结论
 
-今天最值得做的机会，不在再做一个通用聊天入口，而在把 agent 接进真实工作流的薄层基础设施。
-Agent 执行护栏与回滚审计层 是第一优先，因为 团队真正不敢放开的，通常不是生成能力，而是权限、验证和回滚。
-Agent 会话沉淀与团队记忆层 也值得看，因为 当团队开始长期使用 agent，最大的浪费是每次会话都从零开始。
-这些方向的共同点是：用户清晰、痛点具体，而且能在 2~6 周内做出第一版去试。
+前几天反复出现的“Agent 记忆层”和“执行护栏”仍然有效，但今天有更具体、更新的切口。
+
+模型可能突然不可用，便宜模型的实际成本可能更高；Skills 正成为团队依赖，却缺少成熟的 CI；AI 输出开始进入证据和破坏性操作场景，却没有清晰来源边界。这三个问题都能用现有模型做出第一版，不需要等待更强模型。
 
 ## 值得做的 3 个方向
 
-### Agent 执行护栏与回滚审计层
-- 给谁做：已经让 agent 改代码、跑命令、触发 hook 的工程团队。
-- 痛点：会话挂死、权限边界不清、结果难审计，出了错又很难回滚。
-- 为什么是现在：今天的 GitHub issue、HN 讨论和论文信号都在提醒：agent 真实生产问题已经暴露出来了。
-- 最小可行解：先做执行前检查、操作日志、产物校验和回滚建议，不必先做完整沙盒。
-- 付费可能：这类产品贴近 DevInfra，接入流程后不容易切走，适合团队套餐或按执行量收费。
-- 证据：[Claude Code #68329](https://github.com/anthropics/claude-code/issues/68329)、[Claude Code #64048](https://github.com/anthropics/claude-code/issues/64048)、[Claude Code #68239](https://github.com/anthropics/claude-code/pull/68239)、[Claude Code #26360](https://github.com/anthropics/claude-code/pull/26360)、[OpenAI Codex #28091](https://github.com/openai/codex/issues/28091)
-- 下一步：先访谈 5 个已经让 agent 跑命令的团队，确认他们最怕的失败类型。
+### AI 模型连续性与真实成本路由器
+- 给谁做：已经在生产中调用多个闭源或开源模型的 AI 产品团队。
+- 痛点：供应商限制、区域可用性、限额和隐藏的 token / 重试成本会突然改变；静态选择一个“便宜模型”并不可靠。
+- 为什么是现在：Anthropic 访问限制事件、GLM 5.2 与 Kimi K2.7 Code 的新样本，以及开发者报告的 8.6 倍成本反差，把问题同时推到了可用性和成本层。
+- 最小可行解：接入 2–3 个模型供应商，按真实任务记录成功率、总 token、延迟、重试和单位成功成本；异常时给出切换建议。
+- 付费可能：它直接降低停服与成本失控风险，适合按调用量或团队套餐收费。
+- 证据：[Anthropic 声明](https://www.anthropic.com/news/fable-mythos-access)、[aisuite](https://github.com/andrewyng/aisuite)、[LMCache](https://github.com/LMCache/LMCache)、[成本案例](https://dev.to/yogesh23012001/i-expected-the-cheaper-model-to-be-cheaper-it-cost-86x-more-5cph)
+- 下一步：拿一个真实工作流在三种模型上回放 100 次，比较“单位成功结果成本”，而不是标价。
 
-### Agent 会话沉淀与团队记忆层
-- 给谁做：频繁用 agent 做排障、代码阅读、探索式开发的团队。
-- 痛点：会话关掉就散，后续无法复用决策、命令和上下文。
-- 为什么是现在：社区已经开始把会话转成 wiki、dashboard、长期知识资产，而不只是一次性聊天记录。
-- 最小可行解：先做会话提炼和归档，把结论、文件引用和关键步骤整理成团队笔记。
-- 付费可能：只要能减少重复排查和 onboarding 时间，就有明确的效率价值。
-- 证据：[Claude Code #24726](https://github.com/anthropics/claude-code/issues/24726)、[Claude Code #68328](https://github.com/anthropics/claude-code/issues/68328)、[Claude Code #64048](https://github.com/anthropics/claude-code/issues/64048)、[Claude Code #68239](https://github.com/anthropics/claude-code/pull/68239)、[OpenAI Codex #28142](https://github.com/openai/codex/issues/28142)
-- 下一步：先验证团队是否真的会回看 agent 会话，再决定要不要扩成完整知识库。
+### Agent Skill CI 与发布门禁
+- 给谁做：已经维护内部 Skills、MCP 工具、Agent 工作流或允许员工安装第三方技能的团队。
+- 痛点：技能更新后是否退化、是否引入危险权限、是否在真实模型上可用，目前大多靠人工感觉。
+- 为什么是现在：`agent-skills`、`superpowers` 和 `SkillSpector` 同日高热，社区也开始做 skill lint 与真实模型 MCP 测试。
+- 最小可行解：为每个技能保存 10–30 个真实任务回放，在 PR 中检查成功率、成本、权限变化和危险模式。
+- 付费可能：它贴近安全和发布流程，团队一旦接入就有持续使用价值。
+- 证据：[agent-skills](https://github.com/addyosmani/agent-skills)、[SkillSpector](https://github.com/NVIDIA/SkillSpector)、[Skill lint 实测](https://dev.to/sayed_ali_alkamel/i-pointed-a-skill-linter-at-a-52k-star-repo-here-is-what-84100-looks-like-28cn)、[MCP 真实模型测试](https://dev.to/rupa_tiwari_dd308948d710f/why-testing-mcp-servers-with-real-ai-models-matters-2026-55e9)
+- 下一步：选择团队最常用的一个技能，建立最小回放集，并故意加入一次危险权限变化测试门禁是否有效。
 
-### 浏览器/终端工作流模板包
-- 给谁做：做测试、后台运营、增长实验、数据录入的小团队。
-- 痛点：大家知道 agent 能碰浏览器和终端，但不知道怎么把它拼成稳定流程。
-- 为什么是现在：浏览器和命令行能力正逐步进入 agent 工具层，工作流模板开始有现实价值。
-- 最小可行解：先做网页巡检、表单回归、后台操作复盘这类模板包，而不是通用自动化平台。
-- 付费可能：只要能持续省掉人工重复操作，就适合按模板包或团队订阅收费。
-- 证据：[Claude Code #24726](https://github.com/anthropics/claude-code/issues/24726)、[Claude Code #68328](https://github.com/anthropics/claude-code/issues/68328)、[OpenAI Codex #28141](https://github.com/openai/codex/issues/28141)、[OpenAI Codex #28118](https://github.com/openai/codex/pull/28118)、[Gemini CLI](https://github.com/google-gemini/gemini-cli)
-- 下一步：先挑一个现成 SOP 最明确的场景，让真实用户拿现网流程试一次。
+### 高风险 AI 输出的证据链
+- 给谁做：让 AI 参与合规审查、调查、运维命令、财务或其他高风险决策的团队。
+- 痛点：模型推断、原始证据和未验证建议混在一起；一旦内容被复制进正式流程，很难追溯它是否有来源。
+- 为什么是现在：今天的警务证据争议、复古计算机破坏性错误建议和提示注入臆造案例都指向同一类事故。
+- 最小可行解：强制每条关键结论绑定来源片段、工具结果和置信状态；无证据结论不能进入最终导出，破坏性操作必须二次确认。
+- 付费可能：对高风险行业，它解决的是审计和事故责任问题，而不是一般效率问题。
+- 证据：[BBC 报道](https://www.bbc.com/news/articles/cy8wppwdxl6o)、[Mastodon 实验](https://chaos.social/@root42/116744687682749112)、[Claude Code issue](https://github.com/anthropics/claude-code/issues/64048)
+- 下一步：找一个已有 AI 草稿流程，统计最终文档中有多少关键判断无法回溯到原始证据。
 
 ## 次优但可观察
 
-### 团队级技能包与插件目录
-- 现在看到了什么信号：skills、plugins、MCP、hooks 和 workflow 模板正在形成独立分发层。
-- 为什么先不重注：不要先做开放 marketplace，先验证团队内部有没有值得复用的 skill 配方。
-- 后续要继续观察什么：先验证目标团队是否已经沉淀出 5 个以上会重复使用的 agent 配方。
+### API 新能力的轻量产品化
+- 现在看到了什么信号：用户因为 ChatGPT 尚未接入 `gpt-realtime-2`，自己做了实时语音文档对话工具。
+- 为什么先不重注：能力落差确实存在，但官方产品随时可能补齐，窗口短、壁垒弱。
+- 后续观察：是否有垂直场景需要特殊文档、权限或工作流，而不仅是语音聊天。
 
-### 代码库上下文打底层
-- 现在看到了什么信号：代码知识图谱、私有搜索和 repo understanding 还在持续升温。
-- 为什么先不重注：不要把“能索引代码”直接当成壁垒，关键是能不能接进真实任务前置环节。
-- 后续要继续观察什么：先找 3 个已经在用 coding agent 的团队，验证他们最常卡住的是“找不到该改哪里”。
-
-### 模型侧机会先保持观察
-- 现在看到了什么信号：google/diffusiongemma-26B-A4B-it 进入模型热榜，说明模型面仍有活跃样本。
-- 为什么先不重注：只看模型热度不够支撑产品方向，除非已经找到明确使用场景。 
-- 后续要继续观察什么：用户到底是更在意部署成本、隐私，还是某个具体能力差异。 
+### Coding Agent 会话分析
+- 现在看到了什么信号：`agentsview` 进入 GitHub 热门样本。
+- 为什么先不重注：分析面板容易做，关键是能否给出可执行的成本、提示词或流程优化建议。
+- 后续观察：团队是否会依据分析结果实际改变 Agent 使用方式。
 
 ## 今天先别做
 
-### 通用“再做一个 AI 助手”
-- 原因：今天的信号更支持做上下文、护栏、复用层，而不是再做一个聊天壳。
+### 只做一个多模型 API 包装层
+- 原因：统一接口已经不稀缺。必须把真实任务成功率、总成本和连续性决策做出来。
 
-### 纯资讯聚合或榜单站
-- 原因：用户更缺的是可执行判断，不是再多一条信息流。
+### 没有任务回放的 Skills 市场
+- 原因：热门技能越来越多，但缺少质量与安全信号的市场只会放大噪音。
 
-### 纯靠新品发布包装的方向
-- 原因：今天 Product Hunt 样本不足，没必要用缺失数据硬凑产品热度。
-
-### 先别把 Agent 执行护栏与回滚审计层 做成大平台
-- 原因：不要一上来做完整平台，先验证团队最怕的是权限、泄露、卡死还是难追责。
+### 通用“事实核查助手”
+- 原因：范围太宽。先进入一个高风险流程，把证据链和导出门禁做扎实。
 
 ## 开工顺序
 
-1. 先验证 Agent 执行护栏与回滚审计层 对目标用户是不是当前最痛的阻塞点，而不是先搭完整平台。
-2. 先找已经在日常流程里用 agent 的团队试 Agent 会话沉淀与团队记忆层 或 Agent 执行护栏与回滚审计层，不要先找纯围观用户。
-3. 如果 3 个用户里至少 2 个愿意拿真实仓库或真实流程试用，就继续；如果只有“听起来不错”，就收窄切口。
+1. 先做 Agent Skill CI：公开样本和测试对象充足，最快能验证团队是否愿意接入。
+2. 同时用一个真实业务流程测三种模型的单位成功成本，验证连续性路由器是否比统一 API 更有价值。
+3. 证据链方向先找一个高风险但流程清晰的垂直场景，不要从通用事实核查开始。
 
 ## 原始入口
 
-- [少看点 AI 雷达](./#2026-06-14/ai-radar) — 先看当天的总判断。
-- [今日原始快照 raw-data.json](./raw-data.json) — 看完整原始样本。
-- [OpenClaw 活跃仓库](https://github.com/openclaw/openclaw) — 这是今天判断机会方向的直接证据。
-- [OpenAI Codex 活跃仓库](https://github.com/openai/codex) — 这是今天判断机会方向的直接证据。
-- [iptv-org/iptv](https://github.com/iptv-org/iptv) — 这是今天判断机会方向的直接证据。
-- [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) — 这是今天判断机会方向的直接证据。
+- [少看点 AI 雷达](./#2026-06-14/ai-radar)
+- [今日社交媒体信号](./#2026-06-14/ai-social)
+- [Anthropic 暂停访问声明](https://www.anthropic.com/news/fable-mythos-access)
+- [NVIDIA SkillSpector](https://github.com/NVIDIA/SkillSpector)
+- [今日原始快照](./raw-data.json)
 
----
-
-> 本页由每日保底脚本生成，用于保证站点每天都有“能继续做什么”的可读版本；后续可以被更高质量的人工 / Codex 版本覆盖。生成时间: 2026-06-14 01:06 UTC

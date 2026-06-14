@@ -1,132 +1,92 @@
 # 少看点 AI 雷达 2026-06-14
 
-> 今天社交讨论的焦点是：I got fed up of waiting for OpenAI to bring their much。
->
-> 覆盖提醒：官网源：今日新增 2 条官网内容。；Product Hunt：该源今天未启用，所以没有 Product Hunt 数据；这不是抓取失败。；ArXiv：抓取请求成功，但按最近 48 小时窗口过滤后没有命中样本；这不是抓取失败。
+> 今天的主线是：AI 能力正在变成一条真正的生产供应链。现在需要同时管理模型能否继续使用、Agent 技能是否可靠，以及输出能否进入高风险流程。
 
 ## 今天必看
 
-### OpenClaw 生态今天更新密度最高
-- 结论：OpenClaw 在 24 小时内累计出现 746 个 issue / PR / release 样本。
-- 为什么重要：仓库更新密度高，通常代表工具链正在快速试错，值得先看真实问题和新增能力。 
-- 来源：[OpenClaw](https://github.com/openclaw/openclaw)
-- 建议：看原文
+### Anthropic 事件把“模型可用性”变成了产品风险
+- 结论：Anthropic 官网同时出现 Fable 5 / Mythos 5 产品页与暂停访问声明；相关 HN 讨论达到 517 分、384 条评论。
+- 为什么重要：模型选择不再只是质量与价格比较。政策、供应商决定和区域限制都可能突然改变可用性，依赖单一模型的产品需要把切换能力当作基础设施。
+- 来源：[Anthropic 产品页](https://www.anthropic.com/news/claude-fable-5-mythos-5)、[Anthropic 声明](https://www.anthropic.com/news/fable-mythos-access)、[HN 讨论](https://news.ycombinator.com/item?id=48519092)
+- 建议：检查自己的核心流程是否能在不改业务逻辑的情况下切换模型。
 
-### GitHub 热门样本里出现 iptv-org/iptv
-- 结论：iptv-org/iptv 进入当天高热样本，说明相关方向正在被开发者集中试用。
-- 为什么重要：开源热度不是质量证明，但很适合拿来判断今天大家到底把注意力投向哪里。 
-- 来源：[iptv-org/iptv](https://github.com/iptv-org/iptv)
-- 建议：扫一眼
+### Agent Skills 从“收集模板”进入质量与安全阶段
+- 结论：`addyosmani/agent-skills` 今日新增约 1514 星，`obra/superpowers` 新增约 924 星，NVIDIA 的 `SkillSpector` 新增约 804 星；社区也开始讨论 skill lint 和用真实模型测试 MCP。
+- 为什么重要：技能数量已经不是主要问题。团队下一步缺的是版本评测、恶意行为扫描、真实任务回归和发布门禁。
+- 来源：[agent-skills](https://github.com/addyosmani/agent-skills)、[superpowers](https://github.com/obra/superpowers)、[SkillSpector](https://github.com/NVIDIA/SkillSpector)、[Skill lint 实测](https://dev.to/sayed_ali_alkamel/i-pointed-a-skill-linter-at-a-52k-star-repo-here-is-what-84100-looks-like-28cn)、[MCP 真实模型测试](https://dev.to/rupa_tiwari_dd308948d710f/why-testing-mcp-servers-with-real-ai-models-matters-2026-55e9)
+- 建议：把热门技能当候选依赖，不要未经回归测试直接进入团队工作流。
 
-### 官网源今天新增了 Claude Fable 5 and Claude Mythos 5
-- 结论：anthropic 官网今天抓到新页面 Claude Fable 5 and Claude Mythos 5。
-- 为什么重要：官网源的新增通常比社区转述更接近一手表述，适合用来确认公司到底在推什么。 
-- 来源：[Claude Fable 5 and Claude Mythos 5](https://www.anthropic.com/news/claude-fable-5-mythos-5)
-- 建议：看原文
-
-### HN 今天在讨论 Amazon CEO's talks with U.S. officials triggered crackdown on Anthropic models
-- 结论：Amazon CEO's talks with U.S. officials triggered crackdown on Anthropic models 进入今天的高讨论样本，社区更关注真实采用边界而不是单条宣传。
-- 为什么重要：HN 的高分讨论适合拿来观察开发者到底在担心什么、争什么。 
-- 来源：[Amazon CEO's talks with U.S. officials triggered crackdown on Anthropic models](https://www.wsj.com/tech/ai/amazon-ceos-talks-with-u-s-officials-triggered-crackdown-on-anthropic-models-dcc90578?st=Yct6gx&reflink=desktopwebshare_permalink)
-- 建议：看原文
-
-### Hugging Face 热榜里有 google/diffusiongemma-26B-A4B-it
-- 结论：google/diffusiongemma-26B-A4B-it 进入今日模型热榜，说明社区对这条模型路线仍有明确兴趣。
-- 为什么重要：模型热榜更适合判断可部署能力和开发者实验面，而不是只看头部闭源叙事。 
-- 来源：[google/diffusiongemma-26B-A4B-it](https://huggingface.co/google/diffusiongemma-26B-A4B-it)
-- 建议：扫一眼
+### 高风险输出需要“证据来源”而不只是答案
+- 结论：今天同时出现警员被指使用 AI “创建证据”、LLM 给复古计算机用户提供可能导致格式化磁盘的错误指令，以及 Claude Code 在读取文件结果返回前臆造提示注入内容的案例。
+- 为什么重要：这些案例的共同问题不是普通幻觉，而是输出可能被当作事实或直接执行。高风险流程必须能区分原始证据、模型推断与未验证建议。
+- 来源：[BBC 报道](https://www.bbc.com/news/articles/cy8wppwdxl6o)、[Mastodon 实验](https://chaos.social/@root42/116744687682749112)、[Claude Code issue](https://github.com/anthropics/claude-code/issues/64048)
 
 ## 社交媒体在聊什么
 
-### I got fed up of waiting for OpenAI to bring their much improved gpt-re…
-- 判断：Bluesky 上出现高互动讨论，互动分 56，回复 4。
-- 为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。
+### API 已经有能力，产品却还没有
+- 判断：Simon Willison 因等不到 ChatGPT 接入 `gpt-realtime-2`，自己升级了 OpenAI WebRTC 工具，并支持围绕粘贴文档进行语音对话。
+- 为什么值得看：真实用户会用 API 绕过产品发布节奏。对小团队而言，这类能力落差是短期产品机会，但窗口可能很短。
 - 来源：[Bluesky](https://bsky.app/profile/simonwillison.net/post/3mo4xhvjp3s2o)
 
-### 20 years from now Stranger things have happened... Haha shameless #llm…
-- 判断：Mastodon 上出现高互动讨论，互动分 17，回复 0。
-- 为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。
-- 来源：[Mastodon](https://proe.whimm.ing/20-years-from-now/)
-
-### A small LLM experiment about niche 8-bit knowledge and accuracy: I ask…
-- 判断：Mastodon 上出现高互动讨论，互动分 10，回复 4。
-- 为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。
+### 小众知识仍是 LLM 的危险盲区
+- 判断：一条复古计算机实验显示，模型在不确定时给出了可能破坏数据的具体命令。
+- 为什么值得看：长尾知识场景不能只做“回答正确率”，还要让模型识别不确定性，并在破坏性操作前明确警告。
 - 来源：[Mastodon](https://chaos.social/@root42/116744687682749112)
 
-### You know why it is fair that CEOs are paid 10000 times more than worke…
-- 判断：Mastodon 上出现高互动讨论，互动分 10，回复 1。
-- 为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。
+### 模型限制事件正在转化为对公司动机的争论
+- 判断：社交讨论开始把模型安全、监管和商业竞争放在一起解释。
+- 为什么值得看：它反映用户信任变化，但不能替代官方声明和事实核验。
 - 来源：[Mastodon](https://lgbtqia.space/@m/116744518059138604)
 
 ## 正在升温
 
-### Agent 执行护栏与回滚审计层
-- 结论：runtime、sandbox、hook、benchmark 可信度这些问题正在反复出现。
-- 来源：[Claude Code #68329](https://github.com/anthropics/claude-code/issues/68329)、[Claude Code #64048](https://github.com/anthropics/claude-code/issues/64048)、[Claude Code #68239](https://github.com/anthropics/claude-code/pull/68239)、[Claude Code #26360](https://github.com/anthropics/claude-code/pull/26360)、[OpenAI Codex #28091](https://github.com/openai/codex/issues/28091)
+### 模型连续性、成本与缓存控制面
+- 结论：模型访问限制、`aisuite`、LMCache，以及“更便宜模型实际贵 8.6 倍”的开发者案例共同说明：生产系统需要按可用性、真实总成本和任务表现动态路由。
+- 来源：[aisuite](https://github.com/andrewyng/aisuite)、[LMCache](https://github.com/LMCache/LMCache)、[成本案例](https://dev.to/yogesh23012001/i-expected-the-cheaper-model-to-be-cheaper-it-cost-86x-more-5cph)
 
-### Agent 会话沉淀与团队记忆层
-- 结论：memory、wiki、session archive、version snapshot 这条线正在慢慢成形。
-- 来源：[Claude Code #24726](https://github.com/anthropics/claude-code/issues/24726)、[Claude Code #68328](https://github.com/anthropics/claude-code/issues/68328)、[Claude Code #64048](https://github.com/anthropics/claude-code/issues/64048)、[Claude Code #68239](https://github.com/anthropics/claude-code/pull/68239)、[OpenAI Codex #28142](https://github.com/openai/codex/issues/28142)
+### Coding Agent 会话开始被当作可观测对象
+- 结论：本地优先的 Agent 会话分析工具 `agentsview` 今日新增约 190 星；这比泛化“记忆层”更具体，目标是看清 Agent 花了多少、做了什么、哪里浪费。
+- 来源：[agentsview](https://github.com/kenn-io/agentsview)
 
-### 浏览器/终端工作流模板包
-- 结论：DevTools、browser、CLI 和 task automation 的结合信号在变强。
-- 来源：[Claude Code #24726](https://github.com/anthropics/claude-code/issues/24726)、[Claude Code #68328](https://github.com/anthropics/claude-code/issues/68328)、[OpenAI Codex #28141](https://github.com/openai/codex/issues/28141)、[OpenAI Codex #28118](https://github.com/openai/codex/pull/28118)、[Gemini CLI](https://github.com/google-gemini/gemini-cli)
-
-### 团队级技能包与插件目录
-- 结论：skills、plugins、MCP、hooks 和 workflow 模板正在形成独立分发层。
-- 来源：[Claude Code #68239](https://github.com/anthropics/claude-code/pull/68239)、[Claude Code #26360](https://github.com/anthropics/claude-code/pull/26360)、[OpenAI Codex #27607](https://github.com/openai/codex/pull/27607)、[OpenAI Codex #27602](https://github.com/openai/codex/pull/27602)、[Gemini CLI #27891](https://github.com/google-gemini/gemini-cli/issues/27891)
+### 技能供应链安全
+- 结论：技能包热度、SkillSpector 和真实模型测试同时出现，说明技能正在获得类似代码依赖的扫描、测试和发布流程。
 
 ## 新模型 / 新产品
 
-### google/diffusiongemma-26B-A4B-it
-- 结论：google/diffusiongemma-26B-A4B-it 进入模型热榜，pipeline=image-text-to-text。
-- 为什么重要：模型热榜可以帮助判断今天社区愿意先试哪些可部署能力。 
-- 来源：[google/diffusiongemma-26B-A4B-it](https://huggingface.co/google/diffusiongemma-26B-A4B-it)
-- 建议：扫一眼
+### GLM 5.2
+- 结论：发布消息进入 HN 高讨论样本，315 分、173 条评论。先观察实际评测与可用区域，不只看发布热度。
+- 来源：[HN 讨论](https://news.ycombinator.com/item?id=48518684)
 
-### moonshotai/Kimi-K2.7-Code
-- 结论：moonshotai/Kimi-K2.7-Code 进入模型热榜，pipeline=image-text-to-text。
-- 为什么重要：模型热榜可以帮助判断今天社区愿意先试哪些可部署能力。 
-- 来源：[moonshotai/Kimi-K2.7-Code](https://huggingface.co/moonshotai/Kimi-K2.7-Code)
-- 建议：扫一眼
+### Kimi K2.7 Code
+- 结论：进入今日 Hugging Face 热榜，定位明显偏代码与工具使用；在模型连续性需求上值得作为候选备用模型测试。
+- 来源：[Hugging Face](https://huggingface.co/moonshotai/Kimi-K2.7-Code)
 
-### nvidia/LocateAnything-3B
-- 结论：nvidia/LocateAnything-3B 进入模型热榜，pipeline=image-text-to-text。
-- 为什么重要：模型热榜可以帮助判断今天社区愿意先试哪些可部署能力。 
-- 来源：[nvidia/LocateAnything-3B](https://huggingface.co/nvidia/LocateAnything-3B)
-- 建议：扫一眼
+### 实时语音文档对话工具
+- 结论：Simon Willison 的 WebRTC playground 展示了一个具体交互：粘贴文档后直接语音讨论。它更像能力验证，不是已经形成壁垒的产品。
+- 来源：[Bluesky](https://bsky.app/profile/simonwillison.net/post/3mo4xhvjp3s2o)
 
 ## 论文里可能有用的东西
 
-### 今天先不要硬写论文判断
-- 结论：ArXiv 最近 48 小时窗口内没有命中样本。
-- 为什么重要：论文样本不完整时，最容易把噪音写成趋势。 
-- 来源：[今日原始快照](./raw-data.json)
-- 建议：等复盘
+### 今天没有可用的新论文样本
+- 结论：ArXiv 抓取成功，但返回结果为空；今天不硬写研究趋势。
+- 建议：把注意力放在产品供应链、技能质量和证据完整性这些已有充分信号的方向。
 
 ## 可以暂缓
 
-### 今天没有 Product Hunt 样本
-- 判断：今天先不要脑补新品发布面，Product Hunt 源当前未启用。 
-- 来源：[今日原始快照](./raw-data.json)
+### 围绕 Anthropic 事件的动机猜测
+- 判断：事件重要，但大量讨论混合了政治立场、竞争叙事和未经证实的推断。先看官方声明和可验证影响。
 
-### 今天先别硬下研究趋势判断
-- 判断：ArXiv 最近 48 小时窗口内没有命中样本，更适合保守处理。 
-- 来源：[今日原始快照](./raw-data.json)
+### 单纯追逐技能仓库星数
+- 判断：高增长说明注意力集中，不证明技能安全、稳定或适合你的工作流。
 
-### 纯热度样本先别当成产品结论
-- 判断：不要一上来做完整平台，先验证团队最怕的是权限、泄露、卡死还是难追责。
-- 来源：[Claude Code #68329](https://github.com/anthropics/claude-code/issues/68329)、[Claude Code #64048](https://github.com/anthropics/claude-code/issues/64048)、[Claude Code #68239](https://github.com/anthropics/claude-code/pull/68239)、[Claude Code #26360](https://github.com/anthropics/claude-code/pull/26360)、[OpenAI Codex #28091](https://github.com/openai/codex/issues/28091)
+### 再重复“Agent 记忆层”泛方向
+- 判断：前几天已经连续出现相似信号。今天更值得追的是具体的会话分析、技能 CI 和供应商连续性。
 
 ## 原始入口
 
-- [今日原始快照 raw-data.json](./raw-data.json) — 看当天完整样本和源数据状态。
-- [Claude Fable 5 and Claude Mythos 5](https://www.anthropic.com/news/claude-fable-5-mythos-5) — 今天官网源里最值得回看的新增页面。
-- [Statement on the US government directive to suspend access to Fable 5 and Mythos 5](https://www.anthropic.com/news/fable-mythos-access) — 今天官网源里最值得回看的新增页面。
-- [OpenClaw](https://github.com/openclaw/openclaw) — 看今天 issue / PR / release 最密集的仓库。
-- [OpenAI Codex](https://github.com/openai/codex) — 看今天 issue / PR / release 最密集的仓库。
-- [Amazon CEO's talks with U.S. officials triggered crackdown on Anthropic models](https://www.wsj.com/tech/ai/amazon-ceos-talks-with-u-s-officials-triggered-crackdown-on-anthropic-models-dcc90578?st=Yct6gx&reflink=desktopwebshare_permalink) — 看国外开发者今天在争什么。
+- [今日社交媒体信号](./#2026-06-14/ai-social)
+- [Anthropic 暂停访问声明](https://www.anthropic.com/news/fable-mythos-access)
+- [Agent Skills](https://github.com/addyosmani/agent-skills)
+- [NVIDIA SkillSpector](https://github.com/NVIDIA/SkillSpector)
+- [今日原始快照](./raw-data.json)
 
----
-
-> 本页由每日保底脚本生成，用于保证站点每日都有可读更新；后续可以被更高质量的人工 / Codex 版本覆盖。生成时间: 2026-06-14 01:06 UTC
