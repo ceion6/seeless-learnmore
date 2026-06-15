@@ -1,132 +1,92 @@
 # 少看点 AI 雷达 2026-06-15
 
-> 团队真正不敢放开的，通常不是生成能力，而是权限、验证和回滚。
->
-> 覆盖提醒：官网源：今日新增 1 条官网内容。；Product Hunt：该源今天未启用，所以没有 Product Hunt 数据；这不是抓取失败。；ArXiv：抓取请求成功，但按最近 48 小时窗口过滤后没有命中样本；这不是抓取失败。
+> 今天的主线是：AI 的问题正在从“能不能做”转向“凭什么相信它”。模型来源、代理行为、记忆质量、政治与法律责任，今天都在围绕可验证性收缩。
 
 ## 今天必看
 
-### OpenClaw 生态今天更新密度最高
-- 结论：OpenClaw 在 24 小时内累计出现 694 个 issue / PR / release 样本。
-- 为什么重要：仓库更新密度高，通常代表工具链正在快速试错，值得先看真实问题和新增能力。 
-- 来源：[OpenClaw](https://github.com/openclaw/openclaw)
-- 建议：看原文
+### “本土 LLM”争议提醒：模型来源需要可审计
+- 结论：HN 今日高讨论样本里，Rio de Janeiro 的“homegrown” LLM 被质疑其实是现有模型合并版本，达到 271 分、146 条评论。
+- 为什么重要：模型包装、微调、merge 和二次发布之间的边界越来越模糊。以后采购模型或做行业解决方案时，只看品牌说法不够，必须能追溯基础模型、训练/合并来源、许可证和评测过程。
+- 来源：[HN 讨论](https://news.ycombinator.com/item?id=48528371)、[相关 issue](https://github.com/nex-agi/Nex-N2/issues/4)
+- 建议：把“模型来源说明”当作供应商尽调项，而不是市场文案。
 
-### GitHub 热门样本里出现 iptv-org/iptv
-- 结论：iptv-org/iptv 进入当天高热样本，说明相关方向正在被开发者集中试用。
-- 为什么重要：开源热度不是质量证明，但很适合拿来判断今天大家到底把注意力投向哪里。 
-- 来源：[iptv-org/iptv](https://github.com/iptv-org/iptv)
-- 建议：扫一眼
+### OpenAI Partner Network 是企业渠道信号，不只是官网新闻
+- 结论：OpenAI 官网今日新增 `Introducing OpenAI Partner Network`。
+- 为什么重要：这说明大模型公司的增长正在进入渠道、咨询、集成商和行业交付网络。对创业者来说，纯 API wrapper 会更难；围绕迁移、评测、内控和行业落地的服务层反而更明确。
+- 来源：[OpenAI Partner Network](https://openai.com/index/introducing-openai-partner-network/)
 
-### 官网源今天新增了 Introducing Openai Partner Network
-- 结论：openai 官网今天抓到新页面 Introducing Openai Partner Network。
-- 为什么重要：官网源的新增通常比社区转述更接近一手表述，适合用来确认公司到底在推什么。 
-- 来源：[Introducing Openai Partner Network](https://openai.com/index/introducing-openai-partner-network/)
-- 建议：看原文
-
-### HN 今天在讨论 Rio de Janeiro's "homegrown" LLM appears to be a merge of an existing model
-- 结论：Rio de Janeiro's "homegrown" LLM appears to be a merge of an existing model 进入今天的高讨论样本，社区更关注真实采用边界而不是单条宣传。
-- 为什么重要：HN 的高分讨论适合拿来观察开发者到底在担心什么、争什么。 
-- 来源：[Rio de Janeiro's "homegrown" LLM appears to be a merge of an existing model](https://github.com/nex-agi/Nex-N2/issues/4)
-- 建议：看原文
-
-### Hugging Face 热榜里有 google/diffusiongemma-26B-A4B-it
-- 结论：google/diffusiongemma-26B-A4B-it 进入今日模型热榜，说明社区对这条模型路线仍有明确兴趣。
-- 为什么重要：模型热榜更适合判断可部署能力和开发者实验面，而不是只看头部闭源叙事。 
-- 来源：[google/diffusiongemma-26B-A4B-it](https://huggingface.co/google/diffusiongemma-26B-A4B-it)
-- 建议：扫一眼
+### Agent 的记忆和权限问题继续暴露真实工程缺口
+- 结论：今天 OpenClaw、Gemini CLI、Codex 等仓库继续出现 memory、session、tool policy、approval、context 和 rate-limit 相关问题。它们不是功能缺口，而是 Agent 长期运行后的可靠性缺口。
+- 为什么重要：前几天我们已经看过“控制”和“技能 CI”。今天更具体的信号是：记忆系统不能只保存内容，还要知道什么有效、什么该忘、哪些工具在当前策略下不能用。
+- 来源：[OpenClaw memory issue](https://github.com/openclaw/openclaw/issues/84242)、[Gemini CLI Auto Memory issue](https://github.com/google-gemini/gemini-cli/issues/26522)、[Codex rate-limit PR](https://github.com/openai/codex/pull/28143)
 
 ## 社交媒体在聊什么
 
-### LLM technological advances We need to educate our elderly that many th…
-- 判断：Mastodon 上出现高互动讨论，互动分 16，回复 1。
-- 为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。
+### 用户开始担心 AI 生成内容对老人和公众判断的影响
+- 判断：Mastodon 今日高互动讨论集中在“AI avatar / walled garden / echo chamber”对老人和普通用户的误导。
+- 为什么值得看：这是低技术门槛的真实风险场景，比抽象的 AGI 争论更接近产品治理、标识和平台责任。
 - 来源：[Mastodon](https://ioc.exchange/@Radio_Azureus/116750481822622617)
 
-### Fantastic, thoroughly explained, well researched/cited post from lawye…
-- 判断：Mastodon 上出现高互动讨论，互动分 15，回复 0。
-- 为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。
-- 来源：[Mastodon](https://mastodon.social/@ameel/116751326364806710)
+### 法律和民主风险讨论进入普通社交流
+- 判断：Matthew Butterick 关于 AI 与民主风险的长文被社交平台转发；同日还有 Bavarian court / Gemini truth 的法律讨论。
+- 为什么值得看：这类信号说明 AI 责任问题正在从技术社区扩散到法律与公共治理语境。
+- 来源：[Mastodon](https://mastodon.social/@ameel/116751326364806710)、[Hackaday 转发](https://web.brid.gy/r/https://hackaday.com/2026/06/14/bavarian-court-tells-gemini-it-cant-be-a-real-boy-until-it-tells-the-truth/)
 
-### “Using machine learning to better include genetic variation when analy…
-- 判断：Mastodon 上出现高互动讨论，互动分 14，回复 3。
-- 为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。
-- 来源：[Mastodon](https://mathstodon.xyz/@gwenbeads/116750450016834927)
-
-### This morning GenSys (My Genetic algorithm autonomous # sysadmin tool) …
-- 判断：Mastodon 上出现高互动讨论，互动分 12，回复 0。
-- 为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。
+### 自主运维工具需要“变更日志”才能被信任
+- 判断：GenSys 自主 sysadmin 工具作者提到新增 `CODE DELTA` 日志后，才真正看见系统每轮改了什么。
+- 为什么值得看：这是 Agent 可观测性的朴素版本。用户不是只要自动修复，而是要知道自动修复改了哪里、为什么改、能否回滚。
 - 来源：[Mastodon](https://infosec.exchange/@n_dimension/116751170579201900)
 
 ## 正在升温
 
-### Agent 执行护栏与回滚审计层
-- 结论：runtime、sandbox、hook、benchmark 可信度这些问题正在反复出现。
-- 来源：[OpenAI Codex #28236](https://github.com/openai/codex/issues/28236)、[OpenAI Codex #27640](https://github.com/openai/codex/pull/27640)、[OpenAI Codex #28143](https://github.com/openai/codex/pull/28143)、[OpenAI Codex #28235](https://github.com/openai/codex/pull/28235)、[OpenAI Codex #28154](https://github.com/openai/codex/pull/28154)
+### 模型溯源与合规尽调
+- 结论：Rio LLM 争议、Anthropic 后续讨论、EU 对限制措施的关注，都说明模型来源和可用性会进入法律、采购和监管流程。
+- 来源：[HN: Rio LLM](https://news.ycombinator.com/item?id=48528371)、[HN: Did Anthropic ask for this?](https://news.ycombinator.com/item?id=48533504)、[Reuters / EU 讨论](https://news.ycombinator.com/item?id=48527574)
 
-### Agent 会话沉淀与团队记忆层
-- 结论：memory、wiki、session archive、version snapshot 这条线正在慢慢成形。
-- 来源：[Claude Code #65585](https://github.com/anthropics/claude-code/issues/65585)、[Claude Code #68500](https://github.com/anthropics/claude-code/issues/68500)、[OpenAI Codex #28212](https://github.com/openai/codex/issues/28212)、[OpenAI Codex #28236](https://github.com/openai/codex/issues/28236)、[OpenAI Codex #27536](https://github.com/openai/codex/issues/27536)
+### Agent 记忆从“保存上下文”转向“保存有效经验”
+- 结论：Dev.to 上出现“Your AI agent remembers what sounds related, not what worked”，Gemini CLI 也有 Auto Memory 重试、红action、质量问题。记忆层的关键不再是容量，而是选择和验证。
+- 来源：[Agent memory 文章](https://dev.to/agentmemory-dev/your-ai-agent-remembers-what-sounds-related-not-what-worked-3392)、[Gemini CLI memory issues](https://github.com/google-gemini/gemini-cli/issues/26516)
 
-### 浏览器/终端工作流模板包
-- 结论：DevTools、browser、CLI 和 task automation 的结合信号在变强。
-- 来源：[Claude Code #68501](https://github.com/anthropics/claude-code/issues/68501)、[Claude Code #65585](https://github.com/anthropics/claude-code/issues/65585)、[Claude Code #68500](https://github.com/anthropics/claude-code/issues/68500)、[Claude Code #68498](https://github.com/anthropics/claude-code/issues/68498)、[OpenAI Codex #28212](https://github.com/openai/codex/issues/28212)
-
-### 团队级技能包与插件目录
-- 结论：skills、plugins、MCP、hooks 和 workflow 模板正在形成独立分发层。
-- 来源：[Claude Code #68498](https://github.com/anthropics/claude-code/issues/68498)、[Claude Code #68423](https://github.com/anthropics/claude-code/pull/68423)、[OpenAI Codex #23725](https://github.com/openai/codex/issues/23725)、[OpenAI Codex #27640](https://github.com/openai/codex/pull/27640)、[Gemini CLI #26525](https://github.com/google-gemini/gemini-cli/issues/26525)
+### MCP 正在从工具协议变成应用暴露层
+- 结论：`django-bolt` 已把 Django app 暴露为 MCP server；同时 MCP prompt-injection detector 的绕过讨论说明协议接入越多，安全边界越重要。
+- 来源：[django-bolt 讨论](https://mastodon.social/@farhanaliraza/116750566283822435)、[MCP prompt-injection 文章](https://dev.to/churik5/i-tried-to-break-my-own-mcp-prompt-injection-detector-one-class-of-attack-walks-straight-through--4534)
 
 ## 新模型 / 新产品
 
-### google/diffusiongemma-26B-A4B-it
-- 结论：google/diffusiongemma-26B-A4B-it 进入模型热榜，pipeline=image-text-to-text。
-- 为什么重要：模型热榜可以帮助判断今天社区愿意先试哪些可部署能力。 
-- 来源：[google/diffusiongemma-26B-A4B-it](https://huggingface.co/google/diffusiongemma-26B-A4B-it)
-- 建议：扫一眼
+### OpenAI Partner Network
+- 结论：这是企业交付网络信号。对 B2B AI 产品来说，未来竞争更像“谁能进交付链”，而不是谁最早包一层 API。
+- 来源：[OpenAI](https://openai.com/index/introducing-openai-partner-network/)
 
-### moonshotai/Kimi-K2.7-Code
-- 结论：moonshotai/Kimi-K2.7-Code 进入模型热榜，pipeline=image-text-to-text。
-- 为什么重要：模型热榜可以帮助判断今天社区愿意先试哪些可部署能力。 
-- 来源：[moonshotai/Kimi-K2.7-Code](https://huggingface.co/moonshotai/Kimi-K2.7-Code)
-- 建议：扫一眼
+### `NVIDIA/SkillSpector`
+- 结论：今天继续进入 GitHub 热门样本，说明 skill 安全扫描仍在吸引注意力。它和昨天的 Skill CI 主题相连，但今天更适合看作“第三方技能尽调”的组成部分。
+- 来源：[GitHub](https://github.com/NVIDIA/SkillSpector)
 
-### MiniMaxAI/MiniMax-M3
-- 结论：MiniMaxAI/MiniMax-M3 进入模型热榜，pipeline=image-text-to-text。
-- 为什么重要：模型热榜可以帮助判断今天社区愿意先试哪些可部署能力。 
-- 来源：[MiniMaxAI/MiniMax-M3](https://huggingface.co/MiniMaxAI/MiniMax-M3)
-- 建议：扫一眼
+### `DietrichGebert/ponytail`
+- 结论：新仓库星速非常高，叙事是让 AI agent 像“懒但靠谱的资深工程师”一样少写代码。热度未必代表质量，但它准确击中了用户对 agent 过度产出的反感。
+- 来源：[GitHub](https://github.com/DietrichGebert/ponytail)
 
 ## 论文里可能有用的东西
 
-### 今天先不要硬写论文判断
-- 结论：ArXiv 最近 48 小时窗口内没有命中样本。
-- 为什么重要：论文样本不完整时，最容易把噪音写成趋势。 
-- 来源：[今日原始快照](./raw-data.json)
-- 建议：等复盘
+### 今天没有可用的新论文样本
+- 结论：ArXiv 抓取成功但返回为空。今天不硬凑论文趋势。
+- 建议：把注意力放在模型溯源、Agent 记忆质量和 MCP 安全这些证据更强的方向。
 
 ## 可以暂缓
 
-### 今天没有 Product Hunt 样本
-- 判断：今天先不要脑补新品发布面，Product Hunt 源当前未启用。 
-- 来源：[今日原始快照](./raw-data.json)
+### 非 AI 的 GitHub Trending 高热仓库
+- 判断：`iptv-org/iptv`、`freeCodeCamp` 等热度很高，但与今天 AI 判断关系弱，不应占用主线。
 
-### 今天先别硬下研究趋势判断
-- 判断：ArXiv 最近 48 小时窗口内没有命中样本，更适合保守处理。 
-- 来源：[今日原始快照](./raw-data.json)
+### 再重复“模型连续性路由器”
+- 判断：昨天已经覆盖。今天新增信息更偏模型来源尽调和企业交付渠道，而不是单纯切换供应商。
 
-### 纯热度样本先别当成产品结论
-- 判断：不要一上来做完整平台，先验证团队最怕的是权限、泄露、卡死还是难追责。
-- 来源：[OpenAI Codex #28236](https://github.com/openai/codex/issues/28236)、[OpenAI Codex #27640](https://github.com/openai/codex/pull/27640)、[OpenAI Codex #28143](https://github.com/openai/codex/pull/28143)、[OpenAI Codex #28235](https://github.com/openai/codex/pull/28235)、[OpenAI Codex #28154](https://github.com/openai/codex/pull/28154)
+### 把社交媒体恐慌当事实结论
+- 判断：老人、民主和法律风险讨论值得看，但需要和法院、监管、平台政策等一手材料交叉验证。
 
 ## 原始入口
 
-- [今日原始快照 raw-data.json](./raw-data.json) — 看当天完整样本和源数据状态。
-- [Introducing Openai Partner Network](https://openai.com/index/introducing-openai-partner-network/) — 今天官网源里最值得回看的新增页面。
-- [OpenClaw](https://github.com/openclaw/openclaw) — 看今天 issue / PR / release 最密集的仓库。
-- [OpenAI Codex](https://github.com/openai/codex) — 看今天 issue / PR / release 最密集的仓库。
-- [Rio de Janeiro's "homegrown" LLM appears to be a merge of an existing model](https://github.com/nex-agi/Nex-N2/issues/4) — 看国外开发者今天在争什么。
-- [Mastodon](https://ioc.exchange/@Radio_Azureus/116750481822622617) — 看社交平台上的真实反馈和争议。
+- [今日社交媒体信号](./#2026-06-15/ai-social)
+- [OpenAI Partner Network](https://openai.com/index/introducing-openai-partner-network/)
+- [Rio LLM HN 讨论](https://news.ycombinator.com/item?id=48528371)
+- [NVIDIA SkillSpector](https://github.com/NVIDIA/SkillSpector)
+- [今日原始快照](./raw-data.json)
 
----
-
-> 本页由每日保底脚本生成，用于保证站点每日都有可读更新；后续可以被更高质量的人工 / Codex 版本覆盖。生成时间: 2026-06-15 01:09 UTC
