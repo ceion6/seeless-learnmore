@@ -1,6 +1,6 @@
 {
   "anthropic": {
-    "lastChecked": "2026-06-15T01:09:23.329Z",
+    "lastChecked": "2026-06-15T03:14:24.665Z",
     "seenUrls": {
       "https://www.anthropic.com/news/responsible-scaling-policy-v3": "2026-02-25T23:57:06.000Z",
       "https://www.anthropic.com/research/deprecation-updates-opus-3": "2026-02-25T20:58:11.000Z",
@@ -388,7 +388,7 @@
     }
   },
   "openai": {
-    "lastChecked": "2026-06-15T01:09:26.397Z",
+    "lastChecked": "2026-06-15T03:14:29.389Z",
     "seenUrls": {
       "https://openai.com/index/arvind-kc-chief-people-officer/": "2026-05-29T00:25:33.242Z",
       "https://openai.com/index/put-ai-to-work-for-your-product-team/": "2026-06-12T04:05:36.713Z",
@@ -714,7 +714,7 @@
       "https://openai.com/index/concrete-ai-safety-problems/": "2026-06-01T19:21:41.996Z",
       "https://openai.com/index/economic-impacts/": "2026-06-10T12:29:28.837Z",
       "https://openai.com/index/semi-supervised-knowledge-transfer-for-deep-learning-from-private-training-data/": "2026-06-01T19:21:37.638Z",
-      "https://openai.com/index/understanding-the-source-of-what-we-see-and-hear-online/": "2026-06-01T19:21:37.783Z",
+      "https://openai.com/index/understanding-the-source-of-what-we-see-and-hear-online/": "2026-06-15T01:49:11.179Z",
       "https://openai.com/index/introducing-chatgpt-and-whisper-apis/": "2026-06-14T06:28:10.331Z",
       "https://openai.com/index/text-and-code-embeddings-by-contrastive-pre-training/": "2026-06-03T04:00:49.819Z",
       "https://openai.com/index/generative-language-modeling-for-automated-theorem-proving/": "2026-06-03T04:00:56.394Z",
@@ -766,7 +766,7 @@
       "https://openai.com/index/our-approach-to-alignment-research/": "2026-06-03T18:57:26.940Z",
       "https://openai.com/index/openai-elon-musk/": "2026-06-12T04:05:38.650Z",
       "https://openai.com/index/openai-safety-update/": "2026-05-31T20:06:19.187Z",
-      "https://openai.com/index/expanding-on-how-voice-engine-works-and-our-safety-research/": "2026-05-31T20:06:48.248Z",
+      "https://openai.com/index/expanding-on-how-voice-engine-works-and-our-safety-research/": "2026-06-15T02:18:11.901Z",
       "https://openai.com/index/update-on-safety-and-security-practices/": "2026-05-31T20:06:17.882Z",
       "https://openai.com/index/upgrading-the-moderation-api-with-our-new-multimodal-moderation-model/": "2026-05-22T19:08:38.874Z",
       "https://openai.com/index/more-enterprise-grade-features-for-api-customers/": "2026-06-12T23:10:08.391Z",
@@ -811,13 +811,13 @@
       "https://openai.com/index/openai-and-future-partner-on-specialist-content/": "2026-05-29T00:25:35.542Z",
       "https://openai.com/index/news-corp-and-openai-sign-landmark-multi-year-global-partnership/": "2026-06-12T03:25:08.592Z",
       "https://openai.com/index/enhancing-news-in-chatgpt-with-the-atlantic/": "2026-06-13T00:18:11.905Z",
-      "https://openai.com/index/a-content-and-product-partnership-with-vox-media/": "2026-05-22T19:16:52.173Z",
+      "https://openai.com/index/a-content-and-product-partnership-with-vox-media/": "2026-06-15T01:20:07.005Z",
       "https://openai.com/index/api-prompt-caching/": "2026-05-22T19:04:04.090Z",
       "https://openai.com/index/gedi/": "2026-05-29T00:25:46.888Z",
       "https://openai.com/index/gpt-4o-fine-tuning/": "2026-06-14T09:51:07.980Z",
       "https://openai.com/index/deliberative-alignment/": "2026-05-31T20:06:15.592Z",
       "https://openai.com/index/global-news-partnerships-le-monde-and-prisa-media/": "2026-06-09T15:37:07.950Z",
-      "https://openai.com/index/api-partnership-with-stack-overflow/": "2026-05-22T19:17:03.832Z",
+      "https://openai.com/index/api-partnership-with-stack-overflow/": "2026-06-15T01:49:17.297Z",
       "https://openai.com/index/content-partnership-with-financial-times/": "2026-06-14T23:56:18.515Z",
       "https://openai.com/index/improvements-to-data-analysis-in-chatgpt/": "2026-06-12T17:43:07.663Z",
       "https://openai.com/index/openai-and-reddit-partnership/": "2026-06-13T15:49:27.753Z",
@@ -866,7 +866,7 @@
       "https://openai.com/index/chatgpt-for-veterans/": "2026-06-12T04:05:03.792Z",
       "https://openai.com/index/openai-certificate-courses/": "2026-01-08T19:50:52.734Z",
       "https://openai.com/index/introducing-chatgpt-pulse/": "2026-06-04T22:11:08.318Z",
-      "https://openai.com/index/aws-and-openai-partnership/": "2026-05-22T19:19:18.149Z",
+      "https://openai.com/index/aws-and-openai-partnership/": "2026-06-15T01:30:17.502Z",
       "https://openai.com/index/1-million-businesses-putting-ai-to-work/": "2026-05-22T19:09:31.499Z",
       "https://openai.com/index/introducing-chatgpt-atlas/": "2026-05-22T19:17:03.720Z",
       "https://openai.com/index/gartner-2025-emerging-leader/": "2026-06-08T07:32:40.882Z",
@@ -1069,7 +1069,7 @@
       "https://openai.com/index/introducing-trusted-contact-in-chatgpt/": "2026-05-22T18:55:28.997Z",
       "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/": "2026-06-09T13:02:28.087Z",
       "https://openai.com/index/running-codex-safely/": "2026-05-22T19:23:21.941Z",
-      "https://openai.com/index/advancing-youth-safety-in-emea/": "2026-06-10T12:33:04.481Z",
+      "https://openai.com/index/advancing-youth-safety-in-emea/": "2026-06-15T02:08:24.760Z",
       "https://openai.com/index/openai-campus-network-student-club-interest-form/": "2026-06-15T00:00:55.800Z",
       "https://openai.com/business/guides-and-resources/how-enterprises-are-scaling-ai/": "2026-06-11T17:36:23.683Z",
       "https://openai.com/index/openai-launches-the-deployment-company/": "2026-05-22T19:20:44.308Z",
@@ -1103,7 +1103,7 @@
     }
   },
   "deepmind": {
-    "lastChecked": "2026-06-15T01:09:23.428Z",
+    "lastChecked": "2026-06-15T03:14:25.164Z",
     "seenUrls": {
       "https://deepmind.google/models/model-cards/gemini-3-1-flash-image/": "2026-05-23",
       "https://deepmind.google/models/model-cards/": "2026-06-10",
@@ -1528,7 +1528,7 @@
     }
   },
   "qwen": {
-    "lastChecked": "2026-06-15T01:09:23.377Z",
+    "lastChecked": "2026-06-15T03:14:24.804Z",
     "seenUrls": {
       "https://qwenlm.github.io/zh/blog/qwen3guard/": "2025-09-23T04:00:00+08:00",
       "https://qwenlm.github.io/zh/blog/": "2025-09-23T04:00:00+08:00",
@@ -1578,7 +1578,7 @@
     }
   },
   "deepseek": {
-    "lastChecked": "2026-06-15T01:09:24.671Z",
+    "lastChecked": "2026-06-15T03:14:25.627Z",
     "seenUrls": {
       "https://api-docs.deepseek.com/news/news0725": "seen",
       "https://api-docs.deepseek.com/news/news0802": "seen",
