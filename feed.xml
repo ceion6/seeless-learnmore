@@ -6,7 +6,455 @@
     <description>中文 AI 趋势筛选面板 · High-signal AI radar in Chinese</description>
     <language>zh-CN</language>
     <atom:link href="https://ceion6.github.io/seeless-learnmore/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Fri, 19 Jun 2026 01:13:02 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jun 2026 01:02:09 +0000</lastBuildDate>
+    <item>
+      <title>少看点 AI 雷达 2026-06-20</title>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-06-20/ai-radar</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-06-20/ai-radar</guid>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <description>少看点 AI 雷达 2026-06-20 今天社交讨论的焦点是：What Are AI Agents and Why Is Everyone Talking About&amp;amp;n。 覆盖提醒：官网源：今日新增 1 条官网内容。；Product Hunt：该源今天未启用，所以没有 Product Hunt 数据；这不是抓取失败。；ArXiv：已抓取到 50 篇论文。 今天必看 OpenClaw 生态今天更新密度最高 结论：OpenClaw 在 24 小时内累计出现 540 个 issue / PR / release 样本。 为什么重要：仓库更新密度高，通常代表工具链正在快速试错，值得先看真实问题和新增能力。 来源：OpenClaw 建议：看原文 GitHub 热门样本里出现 DeusData/codebase-memory-mcp 结论：DeusData/codebase-memory-mcp 进入当天高热样本，说明相关方向正在被开发者集中试用。 为什么重要：开源热度不是质量证明，但很适合拿来判断今天大家到底把注意力投向哪里。 来源：DeusData/codebase-memory-...</description>
+      <content:encoded><![CDATA[<h1>少看点 AI 雷达 2026-06-20</h1>
+<blockquote>
+<p>今天社交讨论的焦点是：What Are AI Agents and Why Is Everyone Talking About&amp;n。</p>
+<p>覆盖提醒：官网源：今日新增 1 条官网内容。；Product Hunt：该源今天未启用，所以没有 Product Hunt 数据；这不是抓取失败。；ArXiv：已抓取到 50 篇论文。</p>
+</blockquote>
+<h2>今天必看</h2>
+<h3>OpenClaw 生态今天更新密度最高</h3>
+<ul>
+<li>结论：OpenClaw 在 24 小时内累计出现 540 个 issue / PR / release 样本。</li>
+<li>为什么重要：仓库更新密度高，通常代表工具链正在快速试错，值得先看真实问题和新增能力。 </li>
+<li>来源：<a href="https://github.com/openclaw/openclaw">OpenClaw</a></li>
+<li>建议：看原文</li>
+</ul>
+<h3>GitHub 热门样本里出现 DeusData/codebase-memory-mcp</h3>
+<ul>
+<li>结论：DeusData/codebase-memory-mcp 进入当天高热样本，说明相关方向正在被开发者集中试用。</li>
+<li>为什么重要：开源热度不是质量证明，但很适合拿来判断今天大家到底把注意力投向哪里。 </li>
+<li>来源：<a href="https://github.com/DeusData/codebase-memory-mcp">DeusData/codebase-memory-mcp</a></li>
+<li>建议：扫一眼</li>
+</ul>
+<h3>官网源今天新增了 Agentic coding and persistent returns to expertise</h3>
+<ul>
+<li>结论：anthropic 官网今天抓到新页面 Agentic coding and persistent returns to expertise。</li>
+<li>为什么重要：官网源的新增通常比社区转述更接近一手表述，适合用来确认公司到底在推什么。 </li>
+<li>来源：<a href="https://www.anthropic.com/research/claude-code-expertise">Agentic coding and persistent returns to expertise</a></li>
+<li>建议：看原文</li>
+</ul>
+<h3>HN 今天在讨论 Bobby Prince, composer for Doom, Wolfenstein 3D, and Duke Nukem 3D, has died</h3>
+<ul>
+<li>结论：Bobby Prince, composer for Doom, Wolfenstein 3D, and Duke Nukem 3D, has died 进入今天的高讨论样本，社区更关注真实采用边界而不是单条宣传。</li>
+<li>为什么重要：HN 的高分讨论适合拿来观察开发者到底在担心什么、争什么。 </li>
+<li>来源：<a href="https://www.legacy.com/legacy/robert-bobby-prince-lll">Bobby Prince, composer for Doom, Wolfenstein 3D, and Duke Nukem 3D, has died</a></li>
+<li>建议：看原文</li>
+</ul>
+<h3>Hugging Face 热榜里有 yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF</h3>
+<ul>
+<li>结论：yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF 进入今日模型热榜，说明社区对这条模型路线仍有明确兴趣。</li>
+<li>为什么重要：模型热榜更适合判断可部署能力和开发者实验面，而不是只看头部闭源叙事。 </li>
+<li>来源：<a href="https://huggingface.co/yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF">yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF</a></li>
+<li>建议：扫一眼</li>
+</ul>
+<h2>社交媒体在聊什么</h2>
+<h3>What Are AI Agents and Why Is Everyone Talking About&nbsp;Them? Artifi…</h3>
+<ul>
+<li>判断：Mastodon 上出现高互动讨论，互动分 58，回复 0。</li>
+<li>为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。</li>
+<li>来源：<a href="https://kierendaystudiosofficial.wordpress.com/2026/06/19/what-are-ai-agents-and-why-is-everyone-talking-about-them/">Mastodon</a></li>
+</ul>
+<h3>What Jobs Are Most Likely to Be Replaced by&nbsp;AI? Artificial intell…</h3>
+<ul>
+<li>判断：Mastodon 上出现高互动讨论，互动分 52，回复 0。</li>
+<li>为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。</li>
+<li>来源：<a href="https://kierendaystudiosofficial.wordpress.com/2026/06/19/what-jobs-are-most-likely-to-be-replaced-by-ai/">Mastodon</a></li>
+</ul>
+<h3><em>sigh</em> I just can&#39;t. Can we go back to a time when plagiarism was seen…</h3>
+<ul>
+<li>判断：Mastodon 上出现高互动讨论，互动分 21，回复 1。</li>
+<li>为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。</li>
+<li>来源：<a href="https://caneandable.social/@WeirdWriter/116779394063723180">Mastodon</a></li>
+</ul>
+<h3>Today my vet asked if she could record our visit to be transcribed. An…</h3>
+<ul>
+<li>判断：Mastodon 上出现高互动讨论，互动分 11，回复 2。</li>
+<li>为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。</li>
+<li>来源：<a href="https://vmst.io/@csara/116778652894046824">Mastodon</a></li>
+</ul>
+<h2>正在升温</h2>
+<h3>Agent 会话沉淀与团队记忆层</h3>
+<ul>
+<li>结论：memory、wiki、session archive、version snapshot 这条线正在慢慢成形。</li>
+<li>来源：<a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.183</a>、<a href="https://github.com/anthropics/claude-code/issues/65125">Claude Code #65125</a>、<a href="https://github.com/anthropics/claude-code/issues/43276">Claude Code #43276</a>、<a href="https://github.com/anthropics/claude-code/issues/65514">Claude Code #65514</a>、<a href="https://github.com/openai/codex/issues/29157">OpenAI Codex #29157</a></li>
+</ul>
+<h3>Agent 执行护栏与回滚审计层</h3>
+<ul>
+<li>结论：runtime、sandbox、hook、benchmark 可信度这些问题正在反复出现。</li>
+<li>来源：<a href="https://github.com/anthropics/claude-code/issues/43276">Claude Code #43276</a>、<a href="https://github.com/openai/codex/issues/29157">OpenAI Codex #29157</a>、<a href="https://github.com/openai/codex/issues/13117">OpenAI Codex #13117</a>、<a href="https://github.com/openai/codex/issues/28893">OpenAI Codex #28893</a>、<a href="https://github.com/openai/codex/issues/29156">OpenAI Codex #29156</a></li>
+</ul>
+<h3>浏览器/终端工作流模板包</h3>
+<ul>
+<li>结论：DevTools、browser、CLI 和 task automation 的结合信号在变强。</li>
+<li>来源：<a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.183</a>、<a href="https://github.com/anthropics/claude-code/issues/65125">Claude Code #65125</a>、<a href="https://github.com/anthropics/claude-code/issues/43276">Claude Code #43276</a>、<a href="https://github.com/anthropics/claude-code/issues/36151">Claude Code #36151</a>、<a href="https://github.com/anthropics/claude-code/issues/65514">Claude Code #65514</a></li>
+</ul>
+<h3>团队级技能包与插件目录</h3>
+<ul>
+<li>结论：skills、plugins、MCP、hooks 和 workflow 模板正在形成独立分发层。</li>
+<li>来源：<a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.183</a>、<a href="https://github.com/openai/codex/issues/29157">OpenAI Codex #29157</a>、<a href="https://github.com/openai/codex/issues/28893">OpenAI Codex #28893</a>、<a href="https://github.com/openai/codex/issues/29156">OpenAI Codex #29156</a>、<a href="https://github.com/openai/codex/pull/29154">OpenAI Codex #29154</a></li>
+</ul>
+<h2>新模型 / 新产品</h2>
+<h3>yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF</h3>
+<ul>
+<li>结论：yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF 进入模型热榜，pipeline=text-generation。</li>
+<li>为什么重要：模型热榜可以帮助判断今天社区愿意先试哪些可部署能力。 </li>
+<li>来源：<a href="https://huggingface.co/yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF">yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF</a></li>
+<li>建议：扫一眼</li>
+</ul>
+<h3>zai-org/GLM-5.2</h3>
+<ul>
+<li>结论：zai-org/GLM-5.2 进入模型热榜，pipeline=text-generation。</li>
+<li>为什么重要：模型热榜可以帮助判断今天社区愿意先试哪些可部署能力。 </li>
+<li>来源：<a href="https://huggingface.co/zai-org/GLM-5.2">zai-org/GLM-5.2</a></li>
+<li>建议：扫一眼</li>
+</ul>
+<h3>MiniMaxAI/MiniMax-M3</h3>
+<ul>
+<li>结论：MiniMaxAI/MiniMax-M3 进入模型热榜，pipeline=image-text-to-text。</li>
+<li>为什么重要：模型热榜可以帮助判断今天社区愿意先试哪些可部署能力。 </li>
+<li>来源：<a href="https://huggingface.co/MiniMaxAI/MiniMax-M3">MiniMaxAI/MiniMax-M3</a></li>
+<li>建议：扫一眼</li>
+</ul>
+<h2>论文里可能有用的东西</h2>
+<h3>How Transparent is DiffusionGemma?</h3>
+<ul>
+<li>结论：这更偏训练、评测或可信度问题。</li>
+<li>为什么重要：先记住题目和方向，再决定要不要追完整原文。 </li>
+<li>来源：<a href="http://arxiv.org/abs/2606.20560v1">How Transparent is DiffusionGemma?</a></li>
+<li>建议：扫一眼</li>
+</ul>
+<h3>UNIEGO: Proxies as Mediators for Unified Egocentric Video Representation Learning</h3>
+<ul>
+<li>结论：这更偏训练、评测或可信度问题。</li>
+<li>为什么重要：先记住题目和方向，再决定要不要追完整原文。 </li>
+<li>来源：<a href="http://arxiv.org/abs/2606.20559v1">UNIEGO: Proxies as Mediators for Unified Egocentric Video Representation Learning</a></li>
+<li>建议：扫一眼</li>
+</ul>
+<h3>Optimal Deterministic Multicalibration and Omniprediction</h3>
+<ul>
+<li>结论：这值得先记住题目，再等更完整样本复盘。</li>
+<li>为什么重要：先记住题目和方向，再决定要不要追完整原文。 </li>
+<li>来源：<a href="http://arxiv.org/abs/2606.20557v1">Optimal Deterministic Multicalibration and Omniprediction</a></li>
+<li>建议：扫一眼</li>
+</ul>
+<h2>可以暂缓</h2>
+<h3>今天没有 Product Hunt 样本</h3>
+<ul>
+<li>判断：今天先不要脑补新品发布面，Product Hunt 源当前未启用。 </li>
+<li>来源：<a href="./raw-data.json">今日原始快照</a></li>
+</ul>
+<h3>纯热度样本先别当成产品结论</h3>
+<ul>
+<li>判断：如果用户从不回看 agent 会话，就不要把它误判成知识平台需求。</li>
+<li>来源：<a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.183</a>、<a href="https://github.com/anthropics/claude-code/issues/65125">Claude Code #65125</a>、<a href="https://github.com/anthropics/claude-code/issues/43276">Claude Code #43276</a>、<a href="https://github.com/anthropics/claude-code/issues/65514">Claude Code #65514</a>、<a href="https://github.com/openai/codex/issues/29157">OpenAI Codex #29157</a></li>
+</ul>
+<h2>原始入口</h2>
+<ul>
+<li><a href="./raw-data.json">今日原始快照 raw-data.json</a> — 看当天完整样本和源数据状态。</li>
+<li><a href="https://www.anthropic.com/research/claude-code-expertise">Agentic coding and persistent returns to expertise</a> — 今天官网源里最值得回看的新增页面。</li>
+<li><a href="https://github.com/openclaw/openclaw">OpenClaw</a> — 看今天 issue / PR / release 最密集的仓库。</li>
+<li><a href="https://github.com/openai/codex">OpenAI Codex</a> — 看今天 issue / PR / release 最密集的仓库。</li>
+<li><a href="https://www.legacy.com/legacy/robert-bobby-prince-lll">Bobby Prince, composer for Doom, Wolfenstein 3D, and Duke Nukem 3D, has died</a> — 看国外开发者今天在争什么。</li>
+<li><a href="https://kierendaystudiosofficial.wordpress.com/2026/06/19/what-are-ai-agents-and-why-is-everyone-talking-about-them/">Mastodon</a> — 看社交平台上的真实反馈和争议。</li>
+</ul>
+<hr>
+<blockquote>
+<p>本页由每日保底脚本生成，用于保证站点每日都有可读更新；后续可以被更高质量的人工 / Codex 版本覆盖。生成时间: 2026-06-20 01:01 UTC</p>
+</blockquote>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>AI 机会雷达 2026-06-20</title>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-06-20/ai-opportunity</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-06-20/ai-opportunity</guid>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <description>AI 机会雷达 2026-06-20 今天更值得下注的，是 Agent 会话沉淀与团队记忆层、Agent 执行护栏与回滚审计层、浏览器/终端工作流模板包 这几类能在真实流程里立刻验证的机会。 先看结论 今天最值得做的机会，不在再做一个通用聊天入口，而在把 agent 接进真实工作流的薄层基础设施。 Agent 会话沉淀与团队记忆层 是第一优先，因为 当团队开始长期使用 agent，最大的浪费是每次会话都从零开始。 Agent 执行护栏与回滚审计层 也值得看，因为 团队真正不敢放开的，通常不是生成能力，而是权限、验证和回滚。 这些方向的共同点是：用户清晰、痛点具体，而且能在 2~6 周内做出第一版去试。 值得做的 3 个方向 Agent 会话沉淀与团队记忆层 给谁做：频繁用 agent 做排障、代码阅读、探索式开发的团队。 痛点：会话关掉就散，后续无法复用决策、命令和上下文。 为什么是现在：社区已经开始把会话转成 wiki、dashboard、长期知识资产，而不只是一次性聊天记录。 最小可行解：先做会话提炼和归档，把结论、文件引用和关键步骤整理成团队笔记。 付费可能：只要能减少重复排查和...</description>
+      <content:encoded><![CDATA[<h1>AI 机会雷达 2026-06-20</h1>
+<blockquote>
+<p>今天更值得下注的，是 Agent 会话沉淀与团队记忆层、Agent 执行护栏与回滚审计层、浏览器/终端工作流模板包 这几类能在真实流程里立刻验证的机会。</p>
+</blockquote>
+<h2>先看结论</h2>
+<p>今天最值得做的机会，不在再做一个通用聊天入口，而在把 agent 接进真实工作流的薄层基础设施。
+Agent 会话沉淀与团队记忆层 是第一优先，因为 当团队开始长期使用 agent，最大的浪费是每次会话都从零开始。
+Agent 执行护栏与回滚审计层 也值得看，因为 团队真正不敢放开的，通常不是生成能力，而是权限、验证和回滚。
+这些方向的共同点是：用户清晰、痛点具体，而且能在 2~6 周内做出第一版去试。</p>
+<h2>值得做的 3 个方向</h2>
+<h3>Agent 会话沉淀与团队记忆层</h3>
+<ul>
+<li>给谁做：频繁用 agent 做排障、代码阅读、探索式开发的团队。</li>
+<li>痛点：会话关掉就散，后续无法复用决策、命令和上下文。</li>
+<li>为什么是现在：社区已经开始把会话转成 wiki、dashboard、长期知识资产，而不只是一次性聊天记录。</li>
+<li>最小可行解：先做会话提炼和归档，把结论、文件引用和关键步骤整理成团队笔记。</li>
+<li>付费可能：只要能减少重复排查和 onboarding 时间，就有明确的效率价值。</li>
+<li>证据：<a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.183</a>、<a href="https://github.com/anthropics/claude-code/issues/65125">Claude Code #65125</a>、<a href="https://github.com/anthropics/claude-code/issues/43276">Claude Code #43276</a>、<a href="https://github.com/anthropics/claude-code/issues/65514">Claude Code #65514</a>、<a href="https://github.com/openai/codex/issues/29157">OpenAI Codex #29157</a></li>
+<li>下一步：先验证团队是否真的会回看 agent 会话，再决定要不要扩成完整知识库。</li>
+</ul>
+<h3>Agent 执行护栏与回滚审计层</h3>
+<ul>
+<li>给谁做：已经让 agent 改代码、跑命令、触发 hook 的工程团队。</li>
+<li>痛点：会话挂死、权限边界不清、结果难审计，出了错又很难回滚。</li>
+<li>为什么是现在：今天的 GitHub issue、HN 讨论和论文信号都在提醒：agent 真实生产问题已经暴露出来了。</li>
+<li>最小可行解：先做执行前检查、操作日志、产物校验和回滚建议，不必先做完整沙盒。</li>
+<li>付费可能：这类产品贴近 DevInfra，接入流程后不容易切走，适合团队套餐或按执行量收费。</li>
+<li>证据：<a href="https://github.com/anthropics/claude-code/issues/43276">Claude Code #43276</a>、<a href="https://github.com/openai/codex/issues/29157">OpenAI Codex #29157</a>、<a href="https://github.com/openai/codex/issues/13117">OpenAI Codex #13117</a>、<a href="https://github.com/openai/codex/issues/28893">OpenAI Codex #28893</a>、<a href="https://github.com/openai/codex/issues/29156">OpenAI Codex #29156</a></li>
+<li>下一步：先访谈 5 个已经让 agent 跑命令的团队，确认他们最怕的失败类型。</li>
+</ul>
+<h3>浏览器/终端工作流模板包</h3>
+<ul>
+<li>给谁做：做测试、后台运营、增长实验、数据录入的小团队。</li>
+<li>痛点：大家知道 agent 能碰浏览器和终端，但不知道怎么把它拼成稳定流程。</li>
+<li>为什么是现在：浏览器和命令行能力正逐步进入 agent 工具层，工作流模板开始有现实价值。</li>
+<li>最小可行解：先做网页巡检、表单回归、后台操作复盘这类模板包，而不是通用自动化平台。</li>
+<li>付费可能：只要能持续省掉人工重复操作，就适合按模板包或团队订阅收费。</li>
+<li>证据：<a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.183</a>、<a href="https://github.com/anthropics/claude-code/issues/65125">Claude Code #65125</a>、<a href="https://github.com/anthropics/claude-code/issues/43276">Claude Code #43276</a>、<a href="https://github.com/anthropics/claude-code/issues/36151">Claude Code #36151</a>、<a href="https://github.com/anthropics/claude-code/issues/65514">Claude Code #65514</a></li>
+<li>下一步：先挑一个现成 SOP 最明确的场景，让真实用户拿现网流程试一次。</li>
+</ul>
+<h2>次优但可观察</h2>
+<h3>团队级技能包与插件目录</h3>
+<ul>
+<li>现在看到了什么信号：skills、plugins、MCP、hooks 和 workflow 模板正在形成独立分发层。</li>
+<li>为什么先不重注：不要先做开放 marketplace，先验证团队内部有没有值得复用的 skill 配方。</li>
+<li>后续要继续观察什么：先验证目标团队是否已经沉淀出 5 个以上会重复使用的 agent 配方。</li>
+</ul>
+<h3>代码库上下文打底层</h3>
+<ul>
+<li>现在看到了什么信号：代码知识图谱、私有搜索和 repo understanding 还在持续升温。</li>
+<li>为什么先不重注：不要把“能索引代码”直接当成壁垒，关键是能不能接进真实任务前置环节。</li>
+<li>后续要继续观察什么：先找 3 个已经在用 coding agent 的团队，验证他们最常卡住的是“找不到该改哪里”。</li>
+</ul>
+<h3>模型侧机会先保持观察</h3>
+<ul>
+<li>现在看到了什么信号：yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF 进入模型热榜，说明模型面仍有活跃样本。</li>
+<li>为什么先不重注：只看模型热度不够支撑产品方向，除非已经找到明确使用场景。 </li>
+<li>后续要继续观察什么：用户到底是更在意部署成本、隐私，还是某个具体能力差异。</li>
+</ul>
+<h2>今天先别做</h2>
+<h3>通用“再做一个 AI 助手”</h3>
+<ul>
+<li>原因：今天的信号更支持做上下文、护栏、复用层，而不是再做一个聊天壳。</li>
+</ul>
+<h3>纯资讯聚合或榜单站</h3>
+<ul>
+<li>原因：用户更缺的是可执行判断，不是再多一条信息流。</li>
+</ul>
+<h3>纯靠新品发布包装的方向</h3>
+<ul>
+<li>原因：今天 Product Hunt 样本不足，没必要用缺失数据硬凑产品热度。</li>
+</ul>
+<h3>先别把 Agent 会话沉淀与团队记忆层 做成大平台</h3>
+<ul>
+<li>原因：如果用户从不回看 agent 会话，就不要把它误判成知识平台需求。</li>
+</ul>
+<h2>开工顺序</h2>
+<ol>
+<li>先验证 Agent 会话沉淀与团队记忆层 对目标用户是不是当前最痛的阻塞点，而不是先搭完整平台。</li>
+<li>先找已经在日常流程里用 agent 的团队试 Agent 执行护栏与回滚审计层 或 Agent 会话沉淀与团队记忆层，不要先找纯围观用户。</li>
+<li>如果 3 个用户里至少 2 个愿意拿真实仓库或真实流程试用，就继续；如果只有“听起来不错”，就收窄切口。</li>
+</ol>
+<h2>原始入口</h2>
+<ul>
+<li><a href="./#2026-06-20/ai-radar">少看点 AI 雷达</a> — 先看当天的总判断。</li>
+<li><a href="./raw-data.json">今日原始快照 raw-data.json</a> — 看完整原始样本。</li>
+<li><a href="https://github.com/openclaw/openclaw">OpenClaw 活跃仓库</a> — 这是今天判断机会方向的直接证据。</li>
+<li><a href="https://github.com/openai/codex">OpenAI Codex 活跃仓库</a> — 这是今天判断机会方向的直接证据。</li>
+<li><a href="https://github.com/DeusData/codebase-memory-mcp">DeusData/codebase-memory-mcp</a> — 这是今天判断机会方向的直接证据。</li>
+<li><a href="https://github.com/google-research/timesfm">google-research/timesfm</a> — 这是今天判断机会方向的直接证据。</li>
+</ul>
+<hr>
+<blockquote>
+<p>本页由每日保底脚本生成，用于保证站点每天都有“能继续做什么”的可读版本；后续可以被更高质量的人工 / Codex 版本覆盖。生成时间: 2026-06-20 01:01 UTC</p>
+</blockquote>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>AI 社交媒体信号 2026-06-20</title>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-06-20/ai-social</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-06-20/ai-social</guid>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <description>AI 社交媒体信号 2026-06-20 Bluesky：正常；Mastodon：正常 | 11 条讨论 | 2026-06-20 01:01 UTC 今日高互动讨论 What Are AI Agents and Why Is Everyone Talking About&amp;nbsp;Them? Artificial intelligence ha… 来源平台：Mastodon 互动分：58；回复：0 作者：Kieren Day 查看讨论 What Jobs Are Most Likely to Be Replaced by&amp;nbsp;AI? Artificial intelligence is advancing … 来源平台：Mastodon 互动分：52；回复：0 作者：Kieren Day 查看讨论 sigh I just can&amp;#39;t. Can we go back to a time when plagiarism was seen as a bad thing? Can… 来源平台：Mastodon 互动分：21；回复：1 作者：Robert Kingett 查看讨论...</description>
+      <content:encoded><![CDATA[<h1>AI 社交媒体信号 2026-06-20</h1>
+<blockquote>
+<p>Bluesky：正常；Mastodon：正常 | 11 条讨论 | 2026-06-20 01:01 UTC</p>
+</blockquote>
+<hr>
+<h2>今日高互动讨论</h2>
+<h3>What Are AI Agents and Why Is Everyone Talking About&nbsp;Them? Artificial intelligence ha…</h3>
+<ul>
+<li>来源平台：Mastodon</li>
+<li>互动分：58；回复：0</li>
+<li>作者：Kieren Day</li>
+<li><a href="https://kierendaystudiosofficial.wordpress.com/2026/06/19/what-are-ai-agents-and-why-is-everyone-talking-about-them/">查看讨论</a></li>
+</ul>
+<h3>What Jobs Are Most Likely to Be Replaced by&nbsp;AI? Artificial intelligence is advancing …</h3>
+<ul>
+<li>来源平台：Mastodon</li>
+<li>互动分：52；回复：0</li>
+<li>作者：Kieren Day</li>
+<li><a href="https://kierendaystudiosofficial.wordpress.com/2026/06/19/what-jobs-are-most-likely-to-be-replaced-by-ai/">查看讨论</a></li>
+</ul>
+<h3><em>sigh</em> I just can&#39;t. Can we go back to a time when plagiarism was seen as a bad thing? Can…</h3>
+<ul>
+<li>来源平台：Mastodon</li>
+<li>互动分：21；回复：1</li>
+<li>作者：Robert Kingett</li>
+<li><a href="https://caneandable.social/@WeirdWriter/116779394063723180">查看讨论</a></li>
+</ul>
+<h3>Today my vet asked if she could record our visit to be transcribed. And I asked if it was …</h3>
+<ul>
+<li>来源平台：Mastodon</li>
+<li>互动分：11；回复：2</li>
+<li>作者：Sara :ruby:</li>
+<li><a href="https://vmst.io/@csara/116778652894046824">查看讨论</a></li>
+</ul>
+<h3>Beautiful people 🌈 Today I am giving a talk about Privacy-Preserving Dementia Screening f…</h3>
+<ul>
+<li>来源平台：Mastodon</li>
+<li>互动分：11；回复：1</li>
+<li>作者：Giulio Gabrieli</li>
+<li><a href="https://fosstodon.org/@gabrock94/116776081687326795">查看讨论</a></li>
+</ul>
+<h3>🤖 # AI as a # muse 🎨for # science 🔬? A lecture by # MarioKrenn on # creativity , # phys…</h3>
+<ul>
+<li>来源平台：Mastodon</li>
+<li>互动分：10；回复：0</li>
+<li>作者：Philo Sophies</li>
+<li><a href="https://troet.cafe/@Philosophies/116777027503963334">查看讨论</a></li>
+</ul>
+<h3>@ dianea @ alice so basically what we all know as OCR , &quot;Big Data&quot; and &quot;Machine Learning&quot; …</h3>
+<ul>
+<li>来源平台：Mastodon</li>
+<li>互动分：10；回复：0</li>
+<li>作者：Netzblockierer</li>
+<li><a href="https://tech.lgbt/@Netzblockierer/116774827877574691">查看讨论</a></li>
+</ul>
+<h3>Where is the pleasure in writing? Here&#39;s Mandy Len Catron&#39;s essay for @ thetyee about AI, …</h3>
+<ul>
+<li>来源平台：Mastodon</li>
+<li>互动分：9；回复：0</li>
+<li>作者：Flipboard Culture Desk</li>
+<li><a href="https://flipboard.social/@CultureDesk/116779462462635845">查看讨论</a></li>
+</ul>
+<h3>フェイさんはNewについてエリィさんとゆっくり話したらいいんですよ Apple Explains Why watchOS 27 Drops Support for So Many …</h3>
+<ul>
+<li>来源平台：Mastodon</li>
+<li>互动分：9；回复：1</li>
+<li>作者：ハンス</li>
+<li><a href="https://mastodon.crazynewworld.net/@hans/116778763917342841">查看讨论</a></li>
+</ul>
+<h3>ビリーさんはプリムさんに15-Inchのことを話すでしょうか Prime Day 2026: Best Early Apple Device and Accessory Deals…</h3>
+<ul>
+<li>来源平台：Mastodon</li>
+<li>互动分：8；回复：0</li>
+<li>作者：ハンス</li>
+<li><a href="https://mastodon.crazynewworld.net/@hans/116779706960569096">查看讨论</a></li>
+</ul>
+<h3>Amazon&#39;s Movie Arm Abandons Film About OpenAI <a href="https://www.nytimes.com/2026/06/19/business/%E2%80%A6">https://www.nytimes.com/2026/06/19/business/…</a></h3>
+<ul>
+<li>来源平台：Mastodon</li>
+<li>互动分：8；回复：0</li>
+<li>作者：NYT &gt; Business</li>
+<li><a href="https://www.nytimes.com/2026/06/19/business/media/amazon-openai-artificial-movie-sam-altman.html">查看讨论</a></li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>AI Social Signals 2026-06-20</title>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-06-20/ai-social-en</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-06-20/ai-social-en</guid>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <description>AI Social Signals 2026-06-20 Bluesky fetch: ok; Mastodon fetch: ok | 11 posts | 2026-06-20 01:01 UTC High-engagement discussions What Are AI Agents and Why Is Everyone Talking About&amp;nbsp;Them? Artificial intelligence ha… Source: Mastodon Engagement score: 58; replies: 0 Author: Kieren Day Open discussion What Jobs Are Most Likely to Be Replaced by&amp;nbsp;AI? Artificial intelligence is advancing … Source: Mastodon Engagement score: 52; replies: 0 Author: Kieren Day Open discussion sigh I just can&amp;#...</description>
+      <content:encoded><![CDATA[<h1>AI Social Signals 2026-06-20</h1>
+<blockquote>
+<p>Bluesky fetch: ok; Mastodon fetch: ok | 11 posts | 2026-06-20 01:01 UTC</p>
+</blockquote>
+<hr>
+<h2>High-engagement discussions</h2>
+<h3>What Are AI Agents and Why Is Everyone Talking About&nbsp;Them? Artificial intelligence ha…</h3>
+<ul>
+<li>Source: Mastodon</li>
+<li>Engagement score: 58; replies: 0</li>
+<li>Author: Kieren Day</li>
+<li><a href="https://kierendaystudiosofficial.wordpress.com/2026/06/19/what-are-ai-agents-and-why-is-everyone-talking-about-them/">Open discussion</a></li>
+</ul>
+<h3>What Jobs Are Most Likely to Be Replaced by&nbsp;AI? Artificial intelligence is advancing …</h3>
+<ul>
+<li>Source: Mastodon</li>
+<li>Engagement score: 52; replies: 0</li>
+<li>Author: Kieren Day</li>
+<li><a href="https://kierendaystudiosofficial.wordpress.com/2026/06/19/what-jobs-are-most-likely-to-be-replaced-by-ai/">Open discussion</a></li>
+</ul>
+<h3><em>sigh</em> I just can&#39;t. Can we go back to a time when plagiarism was seen as a bad thing? Can…</h3>
+<ul>
+<li>Source: Mastodon</li>
+<li>Engagement score: 21; replies: 1</li>
+<li>Author: Robert Kingett</li>
+<li><a href="https://caneandable.social/@WeirdWriter/116779394063723180">Open discussion</a></li>
+</ul>
+<h3>Today my vet asked if she could record our visit to be transcribed. And I asked if it was …</h3>
+<ul>
+<li>Source: Mastodon</li>
+<li>Engagement score: 11; replies: 2</li>
+<li>Author: Sara :ruby:</li>
+<li><a href="https://vmst.io/@csara/116778652894046824">Open discussion</a></li>
+</ul>
+<h3>Beautiful people 🌈 Today I am giving a talk about Privacy-Preserving Dementia Screening f…</h3>
+<ul>
+<li>Source: Mastodon</li>
+<li>Engagement score: 11; replies: 1</li>
+<li>Author: Giulio Gabrieli</li>
+<li><a href="https://fosstodon.org/@gabrock94/116776081687326795">Open discussion</a></li>
+</ul>
+<h3>🤖 # AI as a # muse 🎨for # science 🔬? A lecture by # MarioKrenn on # creativity , # phys…</h3>
+<ul>
+<li>Source: Mastodon</li>
+<li>Engagement score: 10; replies: 0</li>
+<li>Author: Philo Sophies</li>
+<li><a href="https://troet.cafe/@Philosophies/116777027503963334">Open discussion</a></li>
+</ul>
+<h3>@ dianea @ alice so basically what we all know as OCR , &quot;Big Data&quot; and &quot;Machine Learning&quot; …</h3>
+<ul>
+<li>Source: Mastodon</li>
+<li>Engagement score: 10; replies: 0</li>
+<li>Author: Netzblockierer</li>
+<li><a href="https://tech.lgbt/@Netzblockierer/116774827877574691">Open discussion</a></li>
+</ul>
+<h3>Where is the pleasure in writing? Here&#39;s Mandy Len Catron&#39;s essay for @ thetyee about AI, …</h3>
+<ul>
+<li>Source: Mastodon</li>
+<li>Engagement score: 9; replies: 0</li>
+<li>Author: Flipboard Culture Desk</li>
+<li><a href="https://flipboard.social/@CultureDesk/116779462462635845">Open discussion</a></li>
+</ul>
+<h3>フェイさんはNewについてエリィさんとゆっくり話したらいいんですよ Apple Explains Why watchOS 27 Drops Support for So Many …</h3>
+<ul>
+<li>Source: Mastodon</li>
+<li>Engagement score: 9; replies: 1</li>
+<li>Author: ハンス</li>
+<li><a href="https://mastodon.crazynewworld.net/@hans/116778763917342841">Open discussion</a></li>
+</ul>
+<h3>ビリーさんはプリムさんに15-Inchのことを話すでしょうか Prime Day 2026: Best Early Apple Device and Accessory Deals…</h3>
+<ul>
+<li>Source: Mastodon</li>
+<li>Engagement score: 8; replies: 0</li>
+<li>Author: ハンス</li>
+<li><a href="https://mastodon.crazynewworld.net/@hans/116779706960569096">Open discussion</a></li>
+</ul>
+<h3>Amazon&#39;s Movie Arm Abandons Film About OpenAI <a href="https://www.nytimes.com/2026/06/19/business/%E2%80%A6">https://www.nytimes.com/2026/06/19/business/…</a></h3>
+<ul>
+<li>Source: Mastodon</li>
+<li>Engagement score: 8; replies: 0</li>
+<li>Author: NYT &gt; Business</li>
+<li><a href="https://www.nytimes.com/2026/06/19/business/media/amazon-openai-artificial-movie-sam-altman.html">Open discussion</a></li>
+</ul>
+]]></content:encoded>
+    </item>
     <item>
       <title>少看点 AI 雷达 2026-06-19</title>
       <link>https://ceion6.github.io/seeless-learnmore/#2026-06-19/ai-radar</link>
@@ -2376,322 +2824,6 @@ Agent 执行护栏与回滚审计层 也值得看，因为 团队真正不敢放
 <blockquote>
 <p>本页由每日保底脚本生成，用于保证站点每天都有“能继续做什么”的可读版本；后续可以被更高质量的人工 / Codex 版本覆盖。生成时间: 2026-06-13 01:06 UTC</p>
 </blockquote>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>AI 社交媒体信号 2026-06-13</title>
-      <link>https://ceion6.github.io/seeless-learnmore/#2026-06-13/ai-social</link>
-      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-06-13/ai-social</guid>
-      <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
-      <description>AI 社交媒体信号 2026-06-13 Bluesky：正常；Mastodon：正常 | 6 条讨论 | 2026-06-13 01:06 UTC 今日高互动讨论 After two days with Claude Fable 5 the best way I can describe it is &amp;quot;relentlessly proacti… 来源平台：Bluesky 互动分：236；回复：17 作者：Simon Willison 查看讨论 I got fed up of waiting for OpenAI to bring their much improved gpt-realtime-2 voice conve… 来源平台：Bluesky 互动分：23；回复：3 作者：Simon Willison 查看讨论 An Analysis of Bill C-34: Canada’s Online Safety Bill (Part 2) Our analysis series on Bill… 来源平台：Mastodon 互动分：15；回复：0 作者：Freezenet...</description>
-      <content:encoded><![CDATA[<h1>AI 社交媒体信号 2026-06-13</h1>
-<blockquote>
-<p>Bluesky：正常；Mastodon：正常 | 6 条讨论 | 2026-06-13 01:06 UTC</p>
-</blockquote>
-<hr>
-<h2>今日高互动讨论</h2>
-<h3>After two days with Claude Fable 5 the best way I can describe it is &quot;relentlessly proacti…</h3>
-<ul>
-<li>来源平台：Bluesky</li>
-<li>互动分：236；回复：17</li>
-<li>作者：Simon Willison</li>
-<li><a href="https://bsky.app/profile/simonwillison.net/post/3mo2ffgezqs2f">查看讨论</a></li>
-</ul>
-<h3>I got fed up of waiting for OpenAI to bring their much improved gpt-realtime-2 voice conve…</h3>
-<ul>
-<li>来源平台：Bluesky</li>
-<li>互动分：23；回复：3</li>
-<li>作者：Simon Willison</li>
-<li><a href="https://bsky.app/profile/simonwillison.net/post/3mo4xhvjp3s2o">查看讨论</a></li>
-</ul>
-<h3>An Analysis of Bill C-34: Canada’s Online Safety Bill (Part 2) Our analysis series on Bill…</h3>
-<ul>
-<li>来源平台：Mastodon</li>
-<li>互动分：15；回复：0</li>
-<li>作者：Freezenet</li>
-<li><a href="https://noc.social/@freezenet/116739410071454891">查看讨论</a></li>
-</ul>
-<h3>AI-DM (AI Deep Meditation) Cooperative Constitutional Ecology Meditation (CEM v1.1)&nbsp;P…</h3>
-<ul>
-<li>来源平台：Mastodon</li>
-<li>互动分：8；回复：0</li>
-<li>作者：Circle One Fellowship Exeter (COFE)</li>
-<li><a href="https://exeter4christian2church4devon.wordpress.com/2026/06/12/ai-dm-ai-deep-meditation-cooperative-constitutional-ecology-meditation-cem-v1-1-protocol/">查看讨论</a></li>
-</ul>
-<h3>米、冗談でしょう？ AI写真編集機能を強化したApple、写真に対する哲学は変わったのか？ 本社幹部に聞いた https:// news.mynavi.jp/article/202…</h3>
-<ul>
-<li>来源平台：Mastodon</li>
-<li>互动分：8；回复：0</li>
-<li>作者：ハンス</li>
-<li><a href="https://mastodon.crazynewworld.net/@hans/116739835581152934">查看讨论</a></li>
-</ul>
-<h3>Microsoft released SkillOpt, an open-source tool for optimizing AI agent instructions with…</h3>
-<ul>
-<li>来源平台：Mastodon</li>
-<li>互动分：7；回复：1</li>
-<li>作者：Blaze Trends</li>
-<li><a href="https://mastodon.social/@theblazetrends/116732735452241478">查看讨论</a></li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>AI Social Signals 2026-06-13</title>
-      <link>https://ceion6.github.io/seeless-learnmore/#2026-06-13/ai-social-en</link>
-      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-06-13/ai-social-en</guid>
-      <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
-      <description>AI Social Signals 2026-06-13 Bluesky fetch: ok; Mastodon fetch: ok | 6 posts | 2026-06-13 01:06 UTC High-engagement discussions After two days with Claude Fable 5 the best way I can describe it is &amp;quot;relentlessly proacti… Source: Bluesky Engagement score: 236; replies: 17 Author: Simon Willison Open discussion I got fed up of waiting for OpenAI to bring their much improved gpt-realtime-2 voice conve… Source: Bluesky Engagement score: 23; replies: 3 Author: Simon Willison Open discussion An An...</description>
-      <content:encoded><![CDATA[<h1>AI Social Signals 2026-06-13</h1>
-<blockquote>
-<p>Bluesky fetch: ok; Mastodon fetch: ok | 6 posts | 2026-06-13 01:06 UTC</p>
-</blockquote>
-<hr>
-<h2>High-engagement discussions</h2>
-<h3>After two days with Claude Fable 5 the best way I can describe it is &quot;relentlessly proacti…</h3>
-<ul>
-<li>Source: Bluesky</li>
-<li>Engagement score: 236; replies: 17</li>
-<li>Author: Simon Willison</li>
-<li><a href="https://bsky.app/profile/simonwillison.net/post/3mo2ffgezqs2f">Open discussion</a></li>
-</ul>
-<h3>I got fed up of waiting for OpenAI to bring their much improved gpt-realtime-2 voice conve…</h3>
-<ul>
-<li>Source: Bluesky</li>
-<li>Engagement score: 23; replies: 3</li>
-<li>Author: Simon Willison</li>
-<li><a href="https://bsky.app/profile/simonwillison.net/post/3mo4xhvjp3s2o">Open discussion</a></li>
-</ul>
-<h3>An Analysis of Bill C-34: Canada’s Online Safety Bill (Part 2) Our analysis series on Bill…</h3>
-<ul>
-<li>Source: Mastodon</li>
-<li>Engagement score: 15; replies: 0</li>
-<li>Author: Freezenet</li>
-<li><a href="https://noc.social/@freezenet/116739410071454891">Open discussion</a></li>
-</ul>
-<h3>AI-DM (AI Deep Meditation) Cooperative Constitutional Ecology Meditation (CEM v1.1)&nbsp;P…</h3>
-<ul>
-<li>Source: Mastodon</li>
-<li>Engagement score: 8; replies: 0</li>
-<li>Author: Circle One Fellowship Exeter (COFE)</li>
-<li><a href="https://exeter4christian2church4devon.wordpress.com/2026/06/12/ai-dm-ai-deep-meditation-cooperative-constitutional-ecology-meditation-cem-v1-1-protocol/">Open discussion</a></li>
-</ul>
-<h3>米、冗談でしょう？ AI写真編集機能を強化したApple、写真に対する哲学は変わったのか？ 本社幹部に聞いた https:// news.mynavi.jp/article/202…</h3>
-<ul>
-<li>Source: Mastodon</li>
-<li>Engagement score: 8; replies: 0</li>
-<li>Author: ハンス</li>
-<li><a href="https://mastodon.crazynewworld.net/@hans/116739835581152934">Open discussion</a></li>
-</ul>
-<h3>Microsoft released SkillOpt, an open-source tool for optimizing AI agent instructions with…</h3>
-<ul>
-<li>Source: Mastodon</li>
-<li>Engagement score: 7; replies: 1</li>
-<li>Author: Blaze Trends</li>
-<li><a href="https://mastodon.social/@theblazetrends/116732735452241478">Open discussion</a></li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>少看点 AI 雷达 2026-06-12</title>
-      <link>https://ceion6.github.io/seeless-learnmore/#2026-06-12/ai-radar</link>
-      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-06-12/ai-radar</guid>
-      <pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
-      <description>少看点 AI 雷达 2026-06-12 今天的主线是：Agent 开始从“等人下指令”走向主动推进任务，但真正值得看的不是更积极，而是人如何看见、约束和纠正它的主动性。 今天必看 Claude Fable 把“主动性边界”推到了台前 结论：Simon Willison 对 Claude Fable 5 的两日试用反馈同时进入 HN 高讨论和 Bluesky 高互动，核心评价是它“持续主动推进”，而不是单纯回答更好。 为什么重要：这说明 Agent 产品的竞争点正在从生成质量转向任务推进方式。下一批真实问题会集中在：它什么时候该行动、如何解释意图、何时停下来请示。 来源：HN 讨论原文、Bluesky 讨论 建议：看原文，重点观察作者如何描述“有帮助”和“越界”的分界。 agent-skills 的热度说明工作流正在成为可分发资产 结论：addyosmani/agent-skills 进入当天 GitHub 热门样本。 为什么重要：模型能力越来越容易获得后，团队真正愿意保存和复用的是带约束、步骤和验收条件的工作流。技能包正在从提示词附件变成工程资产。 建议：把它当作需求发现入口，不要把...</description>
-      <content:encoded><![CDATA[<h1>少看点 AI 雷达 2026-06-12</h1>
-<blockquote>
-<p>今天的主线是：Agent 开始从“等人下指令”走向主动推进任务，但真正值得看的不是更积极，而是人如何看见、约束和纠正它的主动性。</p>
-</blockquote>
-<h2>今天必看</h2>
-<h3>Claude Fable 把“主动性边界”推到了台前</h3>
-<ul>
-<li>结论：Simon Willison 对 Claude Fable 5 的两日试用反馈同时进入 HN 高讨论和 Bluesky 高互动，核心评价是它“持续主动推进”，而不是单纯回答更好。</li>
-<li>为什么重要：这说明 Agent 产品的竞争点正在从生成质量转向任务推进方式。下一批真实问题会集中在：它什么时候该行动、如何解释意图、何时停下来请示。</li>
-<li>来源：<a href="https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/">HN 讨论原文</a>、<a href="https://bsky.app/profile/simonwillison.net/post/3mo2ffgezqs2f">Bluesky 讨论</a></li>
-<li>建议：看原文，重点观察作者如何描述“有帮助”和“越界”的分界。</li>
-</ul>
-<h3><code>agent-skills</code> 的热度说明工作流正在成为可分发资产</h3>
-<ul>
-<li>结论：<a href="https://github.com/addyosmani/agent-skills">addyosmani/agent-skills</a> 进入当天 GitHub 热门样本。</li>
-<li>为什么重要：模型能力越来越容易获得后，团队真正愿意保存和复用的是带约束、步骤和验收条件的工作流。技能包正在从提示词附件变成工程资产。</li>
-<li>建议：把它当作需求发现入口，不要把星数当作质量证明。</li>
-</ul>
-<h3>多模态模型热榜从“看懂”继续走向“定位和行动”</h3>
-<ul>
-<li>结论：<code>google/diffusiongemma-26B-A4B-it</code>、<code>nvidia/LocateAnything-3B</code> 和 <code>google/gemma-4-12B-it</code> 同时出现在今日 Hugging Face 热榜。</li>
-<li>为什么重要：值得关注的不是又多了三个模型，而是图文生成、视觉定位、任意模态交互都在向可组合能力靠近，后续更容易进入真实 Agent 流程。</li>
-<li>来源：<a href="https://huggingface.co/google/diffusiongemma-26B-A4B-it">DiffusionGemma</a>、<a href="https://huggingface.co/nvidia/LocateAnything-3B">LocateAnything</a>、<a href="https://huggingface.co/google/gemma-4-12B-it">Gemma 4</a></li>
-</ul>
-<h2>社交媒体在聊什么</h2>
-<h3>用户开始评价 Agent 的“性格与行动节奏”</h3>
-<ul>
-<li>判断：Claude Fable 的讨论互动明显高于其他社交样本。用户不只在比较准确率，而是在讨论它是否过度主动、是否让人保持掌控感。</li>
-<li>意义：主动性不是一个简单的开关，需要任务级预算、行动预览和随时可撤销的控制。</li>
-<li>来源：<a href="https://bsky.app/profile/simonwillison.net/post/3mo2ffgezqs2f">Bluesky</a></li>
-</ul>
-<h3>内容站正在更具体地识别和管理 LLM 爬虫</h3>
-<ul>
-<li>判断：Mastodon 上出现整理 LLM Bot User-Agent 的讨论，反映站点所有者开始把 AI 抓取当作独立流量类型管理。</li>
-<li>意义：这不是模型新闻，却是 AI 基础设施真实落地后的成本、授权和治理问题。</li>
-<li>来源：<a href="https://chaos.social/@schenklklopfer/116736851668376777">Mastodon 讨论</a></li>
-</ul>
-<h3>Agent 指令优化开始工具化</h3>
-<ul>
-<li>判断：Microsoft SkillOpt 的讨论样本指向一个变化：技能说明和 Agent 指令不再只靠手工试提示词，而是开始进入可评测、可优化的工程流程。</li>
-<li>来源：<a href="https://mastodon.social/@theblazetrends/116732735452241478">Mastodon 讨论</a></li>
-</ul>
-<h2>正在升温</h2>
-<h3>“主动 Agent”的控制面</h3>
-<ul>
-<li>结论：昨天的重点仍是执行护栏；今天新增的信号更靠近产品交互层：用户需要知道 Agent 准备做什么、为什么做、做错后怎么撤销。</li>
-<li>观察点：是否出现成熟的行动预览、风险分级、可逆执行和任务预算设计。</li>
-</ul>
-<h3>技能包的评测与优化</h3>
-<ul>
-<li>结论：<code>agent-skills</code> 的分发热度与 SkillOpt 的优化讨论放在一起看，说明下一步不只是“写技能”，而是回答哪个版本更有效、在哪些任务上退化。</li>
-<li>观察点：能否用真实任务回放替代静态提示词评分。</li>
-</ul>
-<h3>网站对 AI 抓取流量的治理</h3>
-<ul>
-<li>结论：站点方逐渐需要区分搜索引擎、训练抓取、实时检索和恶意 Bot，并为不同类型设置策略。</li>
-<li>观察点：是否有更多发布平台公开 AI Bot 流量、成本和授权数据。</li>
-</ul>
-<h2>新模型 / 新产品</h2>
-<h3><code>google/diffusiongemma-26B-A4B-it</code></h3>
-<ul>
-<li>结论：进入今日 Hugging Face 热榜，图文生成路线值得扫一眼。</li>
-<li>来源：<a href="https://huggingface.co/google/diffusiongemma-26B-A4B-it">Hugging Face</a></li>
-</ul>
-<h3><code>nvidia/LocateAnything-3B</code></h3>
-<ul>
-<li>结论：视觉定位能力比通用视觉问答更贴近可执行流程，适合关注它在界面操作、质检和机器人任务中的表现。</li>
-<li>来源：<a href="https://huggingface.co/nvidia/LocateAnything-3B">Hugging Face</a></li>
-</ul>
-<h3><code>Datasette 1.0a33</code></h3>
-<ul>
-<li>结论：这不是 AI 产品，但新增的 JSON API 机制对 Agent 访问结构化本地数据很实用。</li>
-<li>来源：<a href="https://bsky.app/profile/simonwillison.net/post/3mnzspi2kxs25">Bluesky 发布说明</a></li>
-</ul>
-<h2>论文里可能有用的东西</h2>
-<h3>EvoArena：动态环境中的 Agent 记忆演化</h3>
-<ul>
-<li>结论：比“有没有记忆”更值得研究的是记忆如何随着环境变化更新、淘汰和避免误导。</li>
-<li>来源：<a href="http://arxiv.org/abs/2606.13681v1">EvoArena</a></li>
-</ul>
-<h3>通过检索增强强化微调学习类比推理</h3>
-<ul>
-<li>结论：检索不只是给答案补材料，也可能成为训练推理策略的一部分。值得观察它是否能稳定迁移到真实任务。</li>
-<li>来源：<a href="http://arxiv.org/abs/2606.13680v1">Learning to Reason by Analogy via Retrieval-Augmented Reinforcement Fine-Tuning</a></li>
-</ul>
-<h3>Mana：关节工具的灵巧操作</h3>
-<ul>
-<li>结论：机器人研究继续把重点放在使用真实工具，而不是只完成孤立抓取动作。</li>
-<li>来源：<a href="http://arxiv.org/abs/2606.13677v1">Mana</a></li>
-</ul>
-<h2>可以暂缓</h2>
-<h3>OpenClaw 的高更新量</h3>
-<ul>
-<li>判断：763 个 issue / PR / release 样本说明生态活跃，但与昨天相似，今天没有足够新证据支持继续把它放在主线。</li>
-</ul>
-<h3>泛化的“Agent 记忆层”和“工作流模板”</h3>
-<ul>
-<li>判断：这些方向仍然成立，但昨天已经覆盖；今天更值得追的是主动性控制和技能评测这两个更具体的新信号。</li>
-</ul>
-<h3>Product Hunt 新品叙事</h3>
-<ul>
-<li>判断：今天 Product Hunt 数据源未启用，不用据此推断新品趋势。</li>
-</ul>
-<h2>原始入口</h2>
-<ul>
-<li><a href="./#2026-06-12/ai-social">今日社交媒体信号</a></li>
-<li><a href="https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/">Claude Fable 试用原文</a></li>
-<li><a href="https://github.com/addyosmani/agent-skills">addyosmani/agent-skills</a></li>
-<li><a href="./raw-data.json">今日原始快照</a></li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>AI 机会雷达 2026-06-12</title>
-      <link>https://ceion6.github.io/seeless-learnmore/#2026-06-12/ai-opportunity</link>
-      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-06-12/ai-opportunity</guid>
-      <pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
-      <description>AI 机会雷达 2026-06-12 今天最值得下注的机会面，是为“会主动行动的 Agent”补上控制、评测和流量治理层。 先看结论 昨天的机会仍集中在 Agent 执行护栏，但今天出现了更具体的新切口：主动 Agent 如何在不打断效率的前提下让用户保持掌控；团队如何判断一份技能说明真的变好了；内容站如何管理越来越复杂的 AI Bot 流量。 这三个方向都不需要训练模型，能在 2–6 周内用真实用户验证，也比再做一个通用 Agent 更容易形成明确付费理由。 值得做的 3 个方向 主动 Agent 的行动控制层 给谁做：已经让 Coding Agent、浏览器 Agent 或运营 Agent 自动推进多步任务的团队。 痛点：Agent 太保守没有价值，太主动又会越界；用户通常只能在“每步确认”和“完全放开”之间二选一。 为什么是现在：Claude Fable 的高互动试用讨论把主动性体验推到台前，说明用户已经开始真实感受到这个问题。 最小可行解：提供行动预览、风险分级、任务预算、敏感步骤确认和一键撤销记录，先接一个现成 Agent。 付费可能：它直接降低误操作和审计成本，适合按团队或...</description>
-      <content:encoded><![CDATA[<h1>AI 机会雷达 2026-06-12</h1>
-<blockquote>
-<p>今天最值得下注的机会面，是为“会主动行动的 Agent”补上控制、评测和流量治理层。</p>
-</blockquote>
-<h2>先看结论</h2>
-<p>昨天的机会仍集中在 Agent 执行护栏，但今天出现了更具体的新切口：主动 Agent 如何在不打断效率的前提下让用户保持掌控；团队如何判断一份技能说明真的变好了；内容站如何管理越来越复杂的 AI Bot 流量。</p>
-<p>这三个方向都不需要训练模型，能在 2–6 周内用真实用户验证，也比再做一个通用 Agent 更容易形成明确付费理由。</p>
-<h2>值得做的 3 个方向</h2>
-<h3>主动 Agent 的行动控制层</h3>
-<ul>
-<li>给谁做：已经让 Coding Agent、浏览器 Agent 或运营 Agent 自动推进多步任务的团队。</li>
-<li>痛点：Agent 太保守没有价值，太主动又会越界；用户通常只能在“每步确认”和“完全放开”之间二选一。</li>
-<li>为什么是现在：Claude Fable 的高互动试用讨论把主动性体验推到台前，说明用户已经开始真实感受到这个问题。</li>
-<li>最小可行解：提供行动预览、风险分级、任务预算、敏感步骤确认和一键撤销记录，先接一个现成 Agent。</li>
-<li>付费可能：它直接降低误操作和审计成本，适合按团队或受控任务量收费。</li>
-<li>证据：<a href="https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/">Claude Fable 试用原文</a>、<a href="https://bsky.app/profile/simonwillison.net/post/3mo2ffgezqs2f">Bluesky 讨论</a></li>
-<li>下一步：找 5 个已经允许 Agent 连续执行多步操作的用户，记录他们最近一次主动性越界或过度打断。</li>
-</ul>
-<h3>Agent 技能回放评测器</h3>
-<ul>
-<li>给谁做：维护内部 Skills、System Prompt、MCP 工作流或 Agent SOP 的团队。</li>
-<li>痛点：技能说明改了一版后，只能靠人工感觉判断是否更好；某类任务提升时，另一类任务可能悄悄退化。</li>
-<li>为什么是现在：<code>agent-skills</code> 的热度说明技能正在成为可分发资产，SkillOpt 相关讨论则说明优化开始工具化。</li>
-<li>最小可行解：保存 20–50 个真实任务回放，对技能版本做结果、成本、耗时和人工介入次数对比。</li>
-<li>付费可能：团队愿意为可重复发布和减少回归事故付费，尤其适合已有大量内部技能的公司。</li>
-<li>证据：<a href="https://github.com/addyosmani/agent-skills">addyosmani/agent-skills</a>、<a href="https://mastodon.social/@theblazetrends/116732735452241478">SkillOpt 讨论</a></li>
-<li>下一步：先用一个团队现有技能做前后版本盲测，确认回放评分与人工偏好是否一致。</li>
-</ul>
-<h3>面向内容站的 AI Bot 流量控制台</h3>
-<ul>
-<li>给谁做：文档站、媒体、独立出版者和拥有大量公开内容的 SaaS。</li>
-<li>痛点：站点方看不清哪些 AI Bot 在抓取、带来多少成本、是否遵守规则，也难以针对不同用途设置策略。</li>
-<li>为什么是现在：社区已经开始整理 LLM Bot User-Agent，说明这个问题从抽象版权争议进入日常运维。</li>
-<li>最小可行解：从 CDN / 反向代理日志识别 AI Bot，给出流量、成本、robots 策略和阻断建议，不先做代理网络。</li>
-<li>付费可能：对有明显抓取成本或内容授权诉求的站点，可按流量或站点订阅收费。</li>
-<li>证据：<a href="https://chaos.social/@schenklklopfer/116736851668376777">LLM Bot User-Agent 讨论</a></li>
-<li>下一步：找 3 个内容站导入一周日志，确认 AI Bot 流量是否足以形成可量化成本。</li>
-</ul>
-<h2>次优但可观察</h2>
-<h3>多模态 Agent 的视觉定位组件</h3>
-<ul>
-<li>现在看到了什么信号：<code>LocateAnything-3B</code> 等视觉模型进入模型热榜。</li>
-<li>为什么先不重注：模型热度不等于可靠性，必须先证明在具体界面或质检任务上优于现有方案。</li>
-<li>后续观察：真实任务成功率、延迟和部署成本，而不是榜单排名。</li>
-</ul>
-<h3>动态 Agent 记忆评测</h3>
-<ul>
-<li>现在看到了什么信号：EvoArena 开始讨论动态环境里的记忆演化。</li>
-<li>为什么先不重注：研究问题明确，但商业用户是否愿意单独购买记忆评测仍需验证。</li>
-<li>后续观察：主流 Agent 平台是否开始公开记忆更新与遗忘机制。</li>
-</ul>
-<h2>今天先别做</h2>
-<h3>再做一个通用 Agent 壳</h3>
-<ul>
-<li>原因：今天的真实信号集中在控制和评测，而不是缺少一个新的对话入口。</li>
-</ul>
-<h3>只靠 GitHub 星数做技能市场</h3>
-<ul>
-<li>原因：分发有需求，但没有回放评测和质量信号的市场会很快被重复与低质量内容淹没。</li>
-</ul>
-<h3>用一条社交帖子直接做大规模 AI Bot 安全平台</h3>
-<ul>
-<li>原因：方向具体但证据仍少，先验证内容站的真实流量和成本，再决定产品边界。</li>
-</ul>
-<h2>开工顺序</h2>
-<ol>
-<li>优先验证“主动 Agent 的行动控制层”：它有最强的用户讨论和最直接的风险价值。</li>
-<li>同时用一个真实技能做回放评测原型，验证团队是否愿意用结果替代主观判断。</li>
-<li>AI Bot 控制台先做日志分析服务；只有当 3 个站点都能量化成本时，再产品化。</li>
-</ol>
-<h2>原始入口</h2>
-<ul>
-<li><a href="./#2026-06-12/ai-radar">少看点 AI 雷达</a></li>
-<li><a href="./#2026-06-12/ai-social">今日社交媒体信号</a></li>
-<li><a href="https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/">Claude Fable 试用原文</a></li>
-<li><a href="https://github.com/addyosmani/agent-skills">addyosmani/agent-skills</a></li>
-<li><a href="./raw-data.json">今日原始快照</a></li>
-</ul>
 ]]></content:encoded>
     </item>
   </channel>
