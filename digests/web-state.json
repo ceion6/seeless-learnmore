@@ -1,6 +1,6 @@
 {
   "anthropic": {
-    "lastChecked": "2026-06-24T00:55:19.777Z",
+    "lastChecked": "2026-06-24T14:57:16.354Z",
     "seenUrls": {
       "https://www.anthropic.com/news/responsible-scaling-policy-v3": "2026-02-25T23:57:06.000Z",
       "https://www.anthropic.com/research/deprecation-updates-opus-3": "2026-02-25T20:58:11.000Z",
@@ -342,7 +342,7 @@
       "https://www.anthropic.com/news/claude-opus-4-7": "2026-05-04T23:23:49.000Z",
       "https://www.anthropic.com/news/claude-design-anthropic-labs": "2026-05-28T19:33:59.000Z",
       "https://www.anthropic.com/news/anthropic-amazon-compute": "2026-04-24T15:50:13.000Z",
-      "https://www.anthropic.com/research/81k-economics": "2026-04-22T17:04:00.000Z",
+      "https://www.anthropic.com/research/81k-economics": "2026-06-24T12:15:51.000Z",
       "https://www.anthropic.com/research/economic-index-survey-announcement": "2026-04-22T17:01:04.000Z",
       "https://www.anthropic.com/engineering/april-23-postmortem": "2026-04-30T21:34:23.000Z",
       "https://www.anthropic.com/news/election-safeguards-update": "2026-04-28T08:59:45.000Z",
@@ -389,7 +389,7 @@
       "https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem": "2026-06-18T03:57:50.000Z",
       "https://www.anthropic.com/research/team/frontier-red-team": "2026-06-17T17:03:48.000Z",
       "https://www.anthropic.com/research/mythos-preview": "2026-06-17T16:59:28.000Z",
-      "https://www.anthropic.com/research/nuclear-safeguards-for-ai": "2026-06-17T16:54:35.000Z",
+      "https://www.anthropic.com/research/nuclear-safeguards-for-ai": "2026-06-24T14:21:03.000Z",
       "https://www.anthropic.com/research/n-days": "2026-06-17T16:51:58.000Z",
       "https://www.anthropic.com/research/attack-navigator": "2026-06-17T16:51:10.000Z",
       "https://www.anthropic.com/research/exploit-evals": "2026-06-17T16:50:51.000Z",
@@ -408,7 +408,7 @@
     }
   },
   "openai": {
-    "lastChecked": "2026-06-24T00:55:18.920Z",
+    "lastChecked": "2026-06-24T14:57:14.216Z",
     "seenUrls": {
       "https://openai.com/index/arvind-kc-chief-people-officer/": "2026-05-29T00:25:33.242Z",
       "https://openai.com/index/put-ai-to-work-for-your-product-team/": "2026-06-12T04:05:36.713Z",
@@ -611,7 +611,7 @@
       "https://openai.com/index/accelerating-biological-research-in-the-wet-lab/": "2026-06-17T17:02:57.430Z",
       "https://openai.com/index/introducing-gpt-5-3-codex-spark/": "2026-06-09T14:31:41.792Z",
       "https://openai.com/index/developers-can-now-submit-apps-to-chatgpt/": "2026-06-12T22:38:11.601Z",
-      "https://openai.com/index/testing-ads-in-chatgpt/": "2026-06-16T01:28:44.708Z",
+      "https://openai.com/index/testing-ads-in-chatgpt/": "2026-06-24T01:10:19.962Z",
       "https://openai.com/index/introducing-gpt-5-3-codex/": "2026-06-10T17:59:40.343Z",
       "https://openai.com/index/our-approach-to-advertising-and-expanding-access/": "2026-06-04T18:57:56.045Z",
       "https://openai.com/index/introducing-chatgpt-health/": "2026-06-14T04:37:40.082Z",
@@ -934,7 +934,7 @@
       "https://openai.com/index/chatgpt-agent-system-card/": "2026-06-09T12:12:34.877Z",
       "https://openai.com/index/gpt-oss-model-card/": "2026-06-11T10:51:48.335Z",
       "https://openai.com/index/estimating-worst-case-frontier-risks-of-open-weight-llms/": "2026-06-14T23:52:01.361Z",
-      "https://openai.com/index/gpt-5-safe-completions/": "2026-06-23T05:15:58.249Z",
+      "https://openai.com/index/gpt-5-safe-completions/": "2026-06-24T04:28:04.118Z",
       "https://openai.com/index/openai-anthropic-safety-evaluation/": "2026-05-22T19:11:00.777Z",
       "https://openai.com/index/introducing-parental-controls/": "2026-06-13T13:07:43.687Z",
       "https://openai.com/index/gpt-5-system-card-addendum-gpt-5-1/": "2026-06-12T04:53:08.238Z",
@@ -1024,7 +1024,7 @@
       "https://openai.com/index/continuing-microsoft-partnership/": "2026-05-29T00:26:02.462Z",
       "https://openai.com/index/amazon-partnership/": "2026-06-08T07:44:52.264Z",
       "https://openai.com/index/scaling-ai-for-everyone/": "2026-06-08T07:45:19.098Z",
-      "https://openai.com/index/introducing-the-stateful-runtime-environment-for-agents-in-amazon-bedrock/": "2026-06-23T15:32:31.871Z",
+      "https://openai.com/index/introducing-the-stateful-runtime-environment-for-agents-in-amazon-bedrock/": "2026-06-24T03:56:12.749Z",
       "https://openai.com/index/our-agreement-with-the-department-of-war/": "2026-03-26T17:53:01.029Z",
       "https://openai.com/index/gpt-5-3-instant/": "2026-06-08T11:05:00.163Z",
       "https://openai.com/index/gpt-5-3-instant-system-card/": "2026-05-22T19:09:55.090Z",
@@ -1055,11 +1055,11 @@
       "https://openai.com/index/introducing-openai-safety-fellowship/": "2026-06-12T04:56:53.422Z",
       "https://openai.com/index/next-phase-of-enterprise-ai/": "2026-05-29T00:25:12.093Z",
       "https://openai.com/index/introducing-child-safety-blueprint/": "2026-06-12T04:50:59.482Z",
-      "https://openai.com/index/scaling-trusted-access-for-cyber-defense/": "2026-06-23T13:20:49.867Z",
+      "https://openai.com/index/scaling-trusted-access-for-cyber-defense/": "2026-06-24T14:45:26.242Z",
       "https://openai.com/index/the-next-evolution-of-the-agents-sdk/": "2026-06-04T12:06:25.716Z",
       "https://openai.com/index/codex-for-almost-everything/": "2026-06-09T03:43:07.300Z",
       "https://openai.com/index/introducing-gpt-rosalind/": "2026-06-04T20:29:29.170Z",
-      "https://openai.com/index/accelerating-cyber-defense-ecosystem/": "2026-06-23T13:18:50.204Z",
+      "https://openai.com/index/accelerating-cyber-defense-ecosystem/": "2026-06-24T14:43:42.800Z",
       "https://openai.com/business/guides-and-resources/staying-ahead-in-the-age-of-ai/": "2026-06-11T17:33:22.251Z",
       "https://openai.com/business/guides-and-resources/the-state-of-enterprise-ai-2025-report/": "2026-06-11T17:42:01.420Z",
       "https://openai.com/business/guides-and-resources/chatgpt-business-smb-guide/": "2026-06-11T17:41:01.571Z",
@@ -1112,7 +1112,7 @@
       "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws/": "2026-06-12T09:31:28.021Z",
       "https://openai.com/index/codex-for-every-role-tool-workflow/": "2026-06-17T20:27:35.935Z",
       "https://openai.com/index/advancing-youth-safety-and-opportunity-through-global-leadership/": "2026-06-05T06:40:18.609Z",
-      "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind/": "2026-06-23T23:54:15.685Z",
+      "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind/": "2026-06-24T04:30:19.740Z",
       "https://openai.com/index/chatgpt-memory-dreaming/": "2026-06-16T23:10:43.853Z",
       "https://openai.com/index/openai-submits-confidential-s-1/": "2026-06-17T22:17:03.568Z",
       "https://openai.com/index/built-to-benefit-everyone-our-plan/": "2026-06-18T04:03:56.965Z",
@@ -1120,16 +1120,17 @@
       "https://openai.com/index/openai-on-oracle-cloud/": "2026-06-19T19:55:28.635Z",
       "https://openai.com/index/openai-to-acquire-ona/": "2026-06-19T05:51:09.079Z",
       "https://openai.com/index/introducing-openai-partner-network/": "2026-06-23T13:22:27.216Z",
-      "https://openai.com/index/deployment-simulation/": "2026-06-23T15:50:26.414Z",
-      "https://openai.com/index/introducing-life-sci-bench/": "2026-06-23T23:54:51.820Z",
+      "https://openai.com/index/deployment-simulation/": "2026-06-24T07:07:30.715Z",
+      "https://openai.com/index/introducing-life-sci-bench/": "2026-06-24T04:30:44.423Z",
       "https://openai.com/index/improving-health-intelligence-in-chatgpt/": "2026-06-24T00:36:27.755Z",
-      "https://openai.com/index/chatgpt-enterprise-spend-controls/": "2026-06-23T19:13:25.249Z",
-      "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment/": "2026-06-23T22:03:23.084Z",
-      "https://openai.com/index/daybreak-securing-the-world/": "2026-06-23T21:46:03.650Z"
+      "https://openai.com/index/chatgpt-enterprise-spend-controls/": "2026-06-24T03:48:26.473Z",
+      "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment/": "2026-06-24T11:47:47.371Z",
+      "https://openai.com/index/daybreak-securing-the-world/": "2026-06-24T05:51:05.348Z",
+      "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/": "2026-06-24T13:01:17.176Z"
     }
   },
   "deepmind": {
-    "lastChecked": "2026-06-24T00:55:16.198Z",
+    "lastChecked": "2026-06-24T14:57:20.956Z",
     "seenUrls": {
       "https://deepmind.google/models/model-cards/gemini-3-1-flash-image/": "2026-05-23",
       "https://deepmind.google/models/model-cards/": "2026-06-10",
@@ -1157,7 +1158,7 @@
       "https://deepmind.google/models/gemini-image/flash/": "2026-05-19",
       "https://deepmind.google/models/gemini-image/prompt-guide/": "2026-05-19",
       "https://deepmind.google/models/gemini-audio/": "2026-06-09",
-      "https://deepmind.google/models/gemini-audio/live-dialogue/": "2026-06-09",
+      "https://deepmind.google/models/gemini-audio/live-dialogue/": "2026-06-24",
       "https://deepmind.google/models/gemini-audio/speech-generation/": "2026-05-19",
       "https://deepmind.google/models/gemini-audio/audio-understanding/": "2026-05-19",
       "https://deepmind.google/models/genie/": "2026-05-19",
@@ -1177,7 +1178,7 @@
       "https://deepmind.google/blog/ai-pointer/": "2026-05-12",
       "https://deepmind.google/models/gemma/": "2026-06-15",
       "https://deepmind.google/models/synthid/": "2026-05-01",
-      "https://deepmind.google/models/gemini-robotics/": "2026-04-30",
+      "https://deepmind.google/models/gemini-robotics/": "2026-06-24",
       "https://deepmind.google/blog/ai-co-clinician/": "2026-04-30",
       "https://deepmind.google/blog/announcing-our-partnership-with-the-republic-of-korea/": "2026-04-28",
       "https://deepmind.google/blog/decoupled-diloco/": "2026-04-24",
@@ -1185,7 +1186,7 @@
       "https://deepmind.google/models/model-cards/gemini-3-1-pro/": "2026-04-23",
       "https://deepmind.google/blog/gemini-robotics-er-1-6/": "2026-04-22",
       "https://deepmind.google/blog/partnering-with-industry-leaders-to-accelerate-ai-transformation/": "2026-04-22",
-      "https://deepmind.google/models/gemma/gemmaverse/": "2026-06-23",
+      "https://deepmind.google/models/gemma/gemmaverse/": "2026-06-24",
       "https://deepmind.google/models/project-astra/": "2026-04-21",
       "https://deepmind.google/models/gemini-robotics/gemini-robotics-er/": "2026-04-21",
       "https://deepmind.google/models/gemini-robotics/responsibly-advancing-ai-and-robotics/": "2026-04-21",
@@ -1553,11 +1554,12 @@
       "https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/": "2026-06-11",
       "https://deepmind.google/blog/unlocking-uk-house-building-with-ai-accelerated-planning/": "2026-06-16",
       "https://deepmind.google/blog/securing-the-future-of-ai-agents/": "2026-06-18",
-      "https://deepmind.google/models/gemma/gemmaverse/navatech/": "2026-06-22"
+      "https://deepmind.google/models/gemma/gemmaverse/navatech/": "2026-06-24",
+      "https://deepmind.google/models/gemma/gemmaverse/syngenta/": "2026-06-24"
     }
   },
   "qwen": {
-    "lastChecked": "2026-06-24T00:55:15.651Z",
+    "lastChecked": "2026-06-24T14:57:10.782Z",
     "seenUrls": {
       "https://qwenlm.github.io/zh/blog/qwen3guard/": "2025-09-23T04:00:00+08:00",
       "https://qwenlm.github.io/zh/blog/": "2025-09-23T04:00:00+08:00",
@@ -1607,7 +1609,7 @@
     }
   },
   "deepseek": {
-    "lastChecked": "2026-06-24T00:55:16.673Z",
+    "lastChecked": "2026-06-24T14:57:12.405Z",
     "seenUrls": {
       "https://api-docs.deepseek.com/news/news0725": "seen",
       "https://api-docs.deepseek.com/news/news0802": "seen",

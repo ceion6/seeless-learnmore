@@ -1,55 +1,25 @@
 # AI Social Signals 2026-06-24
 
-> Bluesky fetch: ok; Mastodon fetch: ok | 8 posts | 2026-06-24 00:55 UTC
+> Bluesky fetch: ok; Mastodon fetch: ok | 3 posts | 2026-06-24 14:57 UTC
 
 ---
 
 ## High-engagement discussions
 
-### My parallel agent side-project today was having Claude Code port the new Moebius image pin…
-- Source: Bluesky
-- Engagement score: 53; replies: 4
-- Author: Simon Willison
-- [Open discussion](https://bsky.app/profile/simonwillison.net/post/3mow3ec7ycc2s)
-
-### Someone created a beautiful tool to poison data, which is fed to large language model (cra…
+### Does anyone know if # KeePassDX allows LLM contributions like KeePassXC does or at all? Th…
 - Source: Mastodon
-- Engagement score: 26; replies: 0
-- Author: Radio_Azureus
-- [Open discussion](https://ioc.exchange/@Radio_Azureus/116801653564515367)
+- Engagement score: 13; replies: 2
+- Author: Robert Kingett
+- [Open discussion](https://caneandable.social/@WeirdWriter/116805292885046823)
 
-### 💁🏻‍♀️ TIL: 🤖🍣 Researchers at the University of # Bergen built Sashimi-Bot, a three-arm…
+### 2/ Heute 16:00 spricht Prof. Alexander Koller. AK ist ein Semantiker, der zusammen mit Emi…
 - Source: Mastodon
-- Engagement score: 12; replies: 2
-- Author: TKSST • seethis.tv 🌈🪐✨
-- [Open discussion](https://fediscience.org/@tksst/116799190290772334)
+- Engagement score: 8; replies: 1
+- Author: Stefan Müller :verified:
+- [Open discussion](https://climatejustice.social/@stefanmuelller/116804928079970948)
 
-### AI-Weekly for Tuesday, June 23, 2026 - Issue 222 | By Aaron Di Blasi, Publisher | Courtesy…
+### Linux powers a huge share of the technology we use every day: desktops, # cloud and server…
 - Source: Mastodon
-- Engagement score: 12; replies: 0
-- Author: Access Information News ♿
-- [Open discussion](https://mastodon.accessinformationnews.com/@news/116798836365743036)
-
-### 🧠🤖 AIM for the # Brain – How # AI and # Neuroscience Come Together For more information:…
-- Source: Mastodon
-- Engagement score: 10; replies: 0
-- Author: Philo Sophies
-- [Open discussion](https://techtoots.com/@philosophies/116799813804631892)
-
-### エッジ、カンナが興味を持ちそうです Apple、開発者やデザイナー向けに改善されたLiquid Glassデザインシステム対応の「macOS 27 Golden Gate」と「iO…
-- Source: Mastodon
-- Engagement score: 8; replies: 0
-- Author: ハンス
-- [Open discussion](https://mastodon.crazynewworld.net/@hans/116802122134490213)
-
-### @ autistics I have this provocative, neurospicy theory about the psychology underpinning t…
-- Source: Mastodon
-- Engagement score: 8; replies: 0
-- Author: Owl Eyes
-- [Open discussion](https://autistics.life/@d1/116802154041148205)
-
-### AI & Expert Systems | @ DrJimCarey | Flipboard AI and Expert Systems news, developments, r…
-- Source: Mastodon
-- Engagement score: 8; replies: 0
-- Author: Jim Carey
-- [Open discussion](https://mastodon.social/@DrJimCarey/116799121610561934)
+- Engagement score: 7; replies: 1
+- Author: Linux Professional Institute
+- [Open discussion](https://fosstodon.org/@LPI/116805550192361190)
