@@ -1,140 +1,124 @@
 # 少看点 AI 雷达 2026-06-24
 
-> 今天社交讨论的焦点是：My parallel agent side-project today was having Claude。
->
-> 覆盖提醒：官网源：今日新增 2 条官网内容。；Product Hunt：该源今天未启用，所以没有 Product Hunt 数据；这不是抓取失败。；ArXiv：已抓取到 50 篇论文。
+> 今天的主线是：AI agent 正在从“写代码助手”变成可分发的工作技能和创作流水线，但越接近真实生产，用户越在意权限、身份、爬虫污染、稳定性和可追责。
 
 ## 今天必看
 
-### OpenClaw 生态今天更新密度最高
-- 结论：OpenClaw 在 24 小时内累计出现 540 个 issue / PR / release 样本。
-- 为什么重要：仓库更新密度高，通常代表工具链正在快速试错，值得先看真实问题和新增能力。 
-- 来源：[OpenClaw](https://github.com/openclaw/openclaw)
-- 建议：看原文
+### Claude Tag 是“身份/出处”问题进入主线的信号
+- 结论：Anthropic 今天发布 [Claude Tag](https://www.anthropic.com/news/introducing-claude-tag)，HN 上也有 227 分、155 条评论的讨论。
+- 为什么重要：这不是普通功能发布，而是在回答一个更大的问题：当 AI 产物进入内容、代码、协作和分发系统后，谁生成的、谁负责、能不能标记和追踪，会变成基础设施问题。
+- 来源：[Claude Tag](https://www.anthropic.com/news/introducing-claude-tag)、[HN 讨论](https://news.ycombinator.com/item?id=48648039)
+- 建议：看原文，但重点看它背后的治理/归因需求，不要只当成品牌功能。
 
-### GitHub 热门样本里出现 calesthio/OpenMontage
-- 结论：calesthio/OpenMontage 进入当天高热样本，说明相关方向正在被开发者集中试用。
-- 为什么重要：开源热度不是质量证明，但很适合拿来判断今天大家到底把注意力投向哪里。 
-- 来源：[calesthio/OpenMontage](https://github.com/calesthio/OpenMontage)
-- 建议：扫一眼
+### Agent 创作流水线今天明显升温
+- 结论：GitHub 热门样本里，[OpenMontage](https://github.com/calesthio/OpenMontage) 一天新增 3592 stars，定位是开源 agentic 视频生产系统；[palmier-pro](https://github.com/palmier-io/palmier-pro) 也把 macOS 视频编辑和 AI 结合起来。
+- 为什么重要：这说明 agent 正在从“帮我改代码”延伸到视频、图文、网站克隆、语音工作室等端到端创作流程。真正值得看的是流水线、工具调用和可复用技能，而不是单点生成效果。
+- 来源：[OpenMontage](https://github.com/calesthio/OpenMontage)、[palmier-pro](https://github.com/palmier-io/palmier-pro)、[html-video](https://github.com/nexu-io/html-video)
+- 建议：如果要试，先看它能不能稳定复现完整流程，不要只看 demo 画面。
 
-### 官网源今天新增了 Introducing Claude Tag
-- 结论：anthropic 官网今天抓到新页面 Introducing Claude Tag。
-- 为什么重要：官网源的新增通常比社区转述更接近一手表述，适合用来确认公司到底在推什么。 
-- 来源：[Introducing Claude Tag](https://www.anthropic.com/news/introducing-claude-tag)
-- 建议：看原文
+### 技能包和插件目录继续从“玩法”变成分发层
+- 结论：[Anthropic-Cybersecurity-Skills](https://github.com/mukul975/Anthropic-Cybersecurity-Skills)、[gstack](https://github.com/garrytan/gstack)、[claude-plugins-official](https://github.com/anthropics/claude-plugins-official)、[revfactory/harness](https://github.com/revfactory/harness) 同时进入样本。
+- 为什么重要：这条线已经不是“大家写 prompt 模板”，而是把工作方法、角色、工具权限和交付标准打包成可安装资产。它会带来两个现实问题：质量如何评估，社区技能的信任边界在哪里。
+- 来源：[Anthropic skills issue #492](https://github.com/anthropics/skills/issues/492)、[skill-quality-analyzer PR](https://github.com/anthropics/skills/pull/83)
+- 建议：把 star spike 当作发现信号，不要把技能包当成默认可信供应链。
 
-### HN 今天在讨论 Show HN: TikZ Editor – WYSIWYG editor for figures in LaTeX
-- 结论：Show HN: TikZ Editor – WYSIWYG editor for figures in LaTeX 进入今天的高讨论样本，社区更关注真实采用边界而不是单条宣传。
-- 为什么重要：HN 的高分讨论适合拿来观察开发者到底在担心什么、争什么。 
-- 来源：[Show HN: TikZ Editor – WYSIWYG editor for figures in LaTeX](https://tikz.dev/editor/)
-- 建议：看原文
-
-### Hugging Face 热榜里有 zai-org/GLM-5.2
-- 结论：zai-org/GLM-5.2 进入今日模型热榜，说明社区对这条模型路线仍有明确兴趣。
-- 为什么重要：模型热榜更适合判断可部署能力和开发者实验面，而不是只看头部闭源叙事。 
-- 来源：[zai-org/GLM-5.2](https://huggingface.co/zai-org/GLM-5.2)
-- 建议：扫一眼
+### OpenAI DayBreak 和 Claude 服务状态把“可靠性”拉回桌面
+- 结论：HN 同时在讨论 [OpenAI DayBreak](https://openai.com/index/daybreak-securing-the-world/) 和 [Claude 多模型错误率升高](https://status.claude.com/incidents/jbhf20wjmzrf)。
+- 为什么重要：安全能力、模型能力和服务可用性正在同一天被开发者放在一起比较。企业用户不会只问“模型强不强”，还会问：出问题时是否可解释、可切换、可审计、可降级。
+- 来源：[OpenAI DayBreak HN](https://news.ycombinator.com/item?id=48639063)、[Claude status HN](https://news.ycombinator.com/item?id=48645386)
+- 建议：关注多模型 fallback、状态页集成、运行证据和成本上限。
 
 ## 社交媒体在聊什么
 
-### My parallel agent side-project today was having Claude Code port the n…
-- 判断：Bluesky 上出现高互动讨论，互动分 53，回复 4。
-- 为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。
+### Simon Willison 的浏览器本地 ONNX 实验
+- 判断：Bluesky 上最高互动讨论来自 Simon Willison，用 Claude Code 把 Moebius 图像定位模型移植到 ONNX，并在浏览器内运行。
+- 为什么值得看：这类帖子比发布稿更能说明实际开发者在追什么：本地运行、浏览器端推理、小模型/专用模型、agent 辅助移植。
 - 来源：[Bluesky](https://bsky.app/profile/simonwillison.net/post/3mow3ec7ycc2s)
 
-### Someone created a beautiful tool to poison data, which is fed to large…
-- 判断：Mastodon 上出现高互动讨论，互动分 26，回复 0。
-- 为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。
+### 反爬虫和数据投毒情绪在升温
+- 判断：Mastodon 上有高互动讨论提到“poison data”工具，用来对抗 LLM crawler 对网站带宽和内容控制权的侵扰。
+- 为什么值得看：这不是事实证明，但它很清楚地暴露了站长和内容生产者的情绪：AI 抓取已经从抽象版权争论变成资源消耗、安全和控制权问题。
 - 来源：[Mastodon](https://ioc.exchange/@Radio_Azureus/116801653564515367)
 
-### 💁🏻‍♀️ TIL: 🤖🍣 Researchers at the University of # Bergen built Sash…
-- 判断：Mastodon 上出现高互动讨论，互动分 12，回复 2。
-- 为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。
-- 来源：[Mastodon](https://fediscience.org/@tksst/116799190290772334)
+### 机器人和具身智能仍在用“具体任务”传播
+- 判断：Sashimi-Bot 这类三臂寿司机器人讨论有一定互动，和 arXiv 的 AutoDex / CoorDex 一起说明具身智能关注点仍是数据采集、灵巧操作和评测。
+- 来源：[Mastodon](https://fediscience.org/@tksst/116799190290772334)、[AutoDex](http://arxiv.org/abs/2606.23689v1)、[CoorDex](http://arxiv.org/abs/2606.23680v1)
 
-### AI-Weekly for Tuesday, June 23, 2026 - Issue 222 | By Aaron Di Blasi, …
-- 判断：Mastodon 上出现高互动讨论，互动分 12，回复 0。
-- 为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。
-- 来源：[Mastodon](https://mastodon.accessinformationnews.com/@news/116798836365743036)
+### 对“AI 万能药”的反感继续存在
+- 判断：Mastodon 上也有用户把 AI gold rush 和心理/社会想象联系起来批评。
+- 为什么值得看：对 AI 的抵触不是噪音，它会影响产品落地时的信任、默认权限和沟通方式。
+- 来源：[Mastodon](https://autistics.life/@d1/116802154041148205)
 
 ## 正在升温
 
-### Agent 执行护栏与回滚审计层
-- 结论：runtime、sandbox、hook、benchmark 可信度这些问题正在反复出现。
-- 来源：[Claude Code v2.1.187](https://github.com/anthropics/claude-code/releases)、[Claude Code #70471](https://github.com/anthropics/claude-code/issues/70471)、[Claude Code #20448](https://github.com/anthropics/claude-code/pull/20448)、[OpenAI Codex #27662](https://github.com/openai/codex/issues/27662)、[OpenAI Codex #29755](https://github.com/openai/codex/issues/29755)
+### Agentic creative studio
+- 结论：视频、图像、网站、语音、社交图文都在被打包成 agent 工作流。
+- 来源：[OpenMontage](https://github.com/calesthio/OpenMontage)、[palmier-pro](https://github.com/palmier-io/palmier-pro)、[voicebox](https://github.com/jamiepine/voicebox)、[ai-website-cloner-template](https://github.com/JCodesMore/ai-website-cloner-template)、[html-video](https://github.com/nexu-io/html-video)
 
-### Agent 会话沉淀与团队记忆层
-- 结论：memory、wiki、session archive、version snapshot 这条线正在慢慢成形。
-- 来源：[Claude Code v2.1.187](https://github.com/anthropics/claude-code/releases)、[Claude Code #70473](https://github.com/anthropics/claude-code/issues/70473)、[Claude Code #70471](https://github.com/anthropics/claude-code/issues/70471)、[Claude Code #70472](https://github.com/anthropics/claude-code/issues/70472)、[Claude Code #67869](https://github.com/anthropics/claude-code/issues/67869)
+### Skills / plugins 供应链
+- 结论：技能包数量增长很快，但质量、触发率、命名空间信任和企业级分享还没稳定。
+- 来源：[Anthropic skills #228](https://github.com/anthropics/skills/issues/228)、[#492](https://github.com/anthropics/skills/issues/492)、[#556](https://github.com/anthropics/skills/issues/556)、[#83](https://github.com/anthropics/skills/pull/83)
 
-### 浏览器/终端工作流模板包
-- 结论：DevTools、browser、CLI 和 task automation 的结合信号在变强。
-- 来源：[Claude Code #70471](https://github.com/anthropics/claude-code/issues/70471)、[Claude Code #70472](https://github.com/anthropics/claude-code/issues/70472)、[OpenAI Codex #29032](https://github.com/openai/codex/issues/29032)、[OpenAI Codex #29755](https://github.com/openai/codex/issues/29755)、[OpenAI Codex #29710](https://github.com/openai/codex/pull/29710)
+### 本地小模型和端侧推理
+- 结论：GLM-5.2、VibeThinker-3B、Unlimited-OCR、FastContext、小型 ASR 继续在 Hugging Face 热榜里出现，社交讨论也在看浏览器内 ONNX。
+- 来源：[GLM-5.2](https://huggingface.co/zai-org/GLM-5.2)、[WeiboAI/VibeThinker-3B](https://huggingface.co/WeiboAI/VibeThinker-3B)、[baidu/Unlimited-OCR](https://huggingface.co/baidu/Unlimited-OCR)、[FastContext-1.0-4B-SFT](https://huggingface.co/microsoft/FastContext-1.0-4B-SFT)
 
-### 团队级技能包与插件目录
-- 结论：skills、plugins、MCP、hooks 和 workflow 模板正在形成独立分发层。
-- 来源：[Claude Code v2.1.187](https://github.com/anthropics/claude-code/releases)、[Claude Code #70473](https://github.com/anthropics/claude-code/issues/70473)、[Claude Code #20448](https://github.com/anthropics/claude-code/pull/20448)、[OpenAI Codex #29032](https://github.com/openai/codex/issues/29032)、[OpenAI Codex #29757](https://github.com/openai/codex/issues/29757)
+### Agent 运行证据和调试
+- 结论：HN 出现本地 agent trace debugger，Dev.to 也在讨论 eval-first、权限被 agent 绕过、上下文压缩可视化。
+- 来源：[halo](https://github.com/context-labs/halo)、[AI feature eval first](https://dev.to/mrviduus/an-ai-feature-has-no-tests-pass-moment-so-i-write-the-eval-first-1f7p)、[agent hacked permissions](https://dev.to/gdg/how-my-ai-agent-hacked-its-own-permissions-and-what-it-taught-me-34bm)、[context compaction visualizer](https://dev.to/nilofer_tweets/context-compaction-visualizer-see-exactly-what-your-ai-agent-forgot-before-it-costs-you-1o8n)
 
 ## 新模型 / 新产品
 
-### zai-org/GLM-5.2
-- 结论：zai-org/GLM-5.2 进入模型热榜，pipeline=text-generation。
-- 为什么重要：模型热榜可以帮助判断今天社区愿意先试哪些可部署能力。 
-- 来源：[zai-org/GLM-5.2](https://huggingface.co/zai-org/GLM-5.2)
-- 建议：扫一眼
+### Gemmaverse
+- 结论：Google DeepMind 官网新增 [Gemmaverse](https://deepmind.google/models/gemma/gemmaverse/)。
+- 为什么重要：Gemma 生态继续被做成社区/模型宇宙，而不只是单个模型下载页。
+- 来源：[Gemmaverse](https://deepmind.google/models/gemma/gemmaverse/)
 
-### yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF
-- 结论：yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF 进入模型热榜，pipeline=text-generation。
-- 为什么重要：模型热榜可以帮助判断今天社区愿意先试哪些可部署能力。 
-- 来源：[yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF](https://huggingface.co/yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF)
-- 建议：扫一眼
+### GLM-5.2 继续在可部署模型热榜靠前
+- 结论：[zai-org/GLM-5.2](https://huggingface.co/zai-org/GLM-5.2) 和 [unsloth/GLM-5.2-GGUF](https://huggingface.co/unsloth/GLM-5.2-GGUF) 同时在 Hugging Face 样本里出现。
+- 为什么重要：这更像开发者在寻找可下载、可量化、可本地试的能力，而不是只围观闭源模型发布。
 
-### WeiboAI/VibeThinker-3B
-- 结论：WeiboAI/VibeThinker-3B 进入模型热榜，pipeline=text-generation。
-- 为什么重要：模型热榜可以帮助判断今天社区愿意先试哪些可部署能力。 
-- 来源：[WeiboAI/VibeThinker-3B](https://huggingface.co/WeiboAI/VibeThinker-3B)
-- 建议：扫一眼
+### Unlimited-OCR 和端侧识别
+- 结论：[baidu/Unlimited-OCR](https://huggingface.co/baidu/Unlimited-OCR) 进入样本。
+- 为什么重要：OCR、图像定位、语音识别这类窄能力如果能端侧部署，会成为很多 agent 工作流的底层工具。
 
 ## 论文里可能有用的东西
 
-### AutoDex: An Automated Real-World System for Dexterous Grasping Data Collection
-- 结论：这更偏训练、评测或可信度问题。
-- 为什么重要：先记住题目和方向，再决定要不要追完整原文。 
-- 来源：[AutoDex: An Automated Real-World System for Dexterous Grasping Data Collection](http://arxiv.org/abs/2606.23689v1)
-- 建议：扫一眼
-
 ### Randomized YaRN Improves Length Generalization for Long-Context Reasoning
-- 结论：这更偏训练、评测或可信度问题。
-- 为什么重要：先记住题目和方向，再决定要不要追完整原文。 
-- 来源：[Randomized YaRN Improves Length Generalization for Long-Context Reasoning](http://arxiv.org/abs/2606.23687v1)
-- 建议：扫一眼
+- 结论：长上下文泛化仍是值得跟踪的问题。
+- 为什么重要：今天的社区讨论已经在关心上下文压缩、agent 忘记内容和长任务可靠性，底层长上下文方法会影响实际工具体验。
+- 来源：[arXiv](http://arxiv.org/abs/2606.23687v1)
 
-### CoorDex: Coordinating Body and Hand Priors for Continuous Dexterous Humanoid Loco-Manipulation
-- 结论：这更偏训练、评测或可信度问题。
-- 为什么重要：先记住题目和方向，再决定要不要追完整原文。 
-- 来源：[CoorDex: Coordinating Body and Hand Priors for Continuous Dexterous Humanoid Loco-Manipulation](http://arxiv.org/abs/2606.23680v1)
-- 建议：扫一眼
+### Can LLMs Reliably Self-Report Adversarial Prefills, and How?
+- 结论：模型能否报告被对抗性输入影响，是安全评测里的细问题。
+- 为什么重要：和今天的权限绕过、数据投毒、身份标记主题相互呼应。
+- 来源：[arXiv](http://arxiv.org/abs/2606.23671v1)
+
+### MAS-PromptBench
+- 结论：多 agent prompt 优化何时真的有效，开始成为可评测问题。
+- 为什么重要：技能包和多 agent harness 热起来后，必须有办法判断“复杂编排”是否真的优于简单流程。
+- 来源：[arXiv](http://arxiv.org/abs/2606.23664v1)
 
 ## 可以暂缓
 
+### 不要把 GitHub 星增直接当质量证明
+- 判断：OpenMontage、gstack、cybersecurity skills 等都值得看，但今天更适合作为发现入口，不适合作为采购或深度采用结论。
+- 来源：[GitHub Trending](./raw-data.json)
+
 ### 今天没有 Product Hunt 样本
-- 判断：今天先不要脑补新品发布面，Product Hunt 源当前未启用。 
+- 判断：Product Hunt 源未启用，所以不要硬写新品发布趋势。
 - 来源：[今日原始快照](./raw-data.json)
 
-### 纯热度样本先别当成产品结论
-- 判断：不要一上来做完整平台，先验证团队最怕的是权限、泄露、卡死还是难追责。
-- 来源：[Claude Code v2.1.187](https://github.com/anthropics/claude-code/releases)、[Claude Code #70471](https://github.com/anthropics/claude-code/issues/70471)、[Claude Code #20448](https://github.com/anthropics/claude-code/pull/20448)、[OpenAI Codex #27662](https://github.com/openai/codex/issues/27662)、[OpenAI Codex #29755](https://github.com/openai/codex/issues/29755)
+### 不要继续泛泛写“agent 护栏”
+- 判断：昨天已经反复出现护栏、记忆、模板包这组保底主题。今天更具体的切口是技能供应链、创作流水线、身份归因和运行证据。
+- 来源：[昨天雷达](./#2026-06-23/ai-radar)
 
 ## 原始入口
 
 - [今日原始快照 raw-data.json](./raw-data.json) — 看当天完整样本和源数据状态。
-- [Introducing Claude Tag](https://www.anthropic.com/news/introducing-claude-tag) — 今天官网源里最值得回看的新增页面。
-- [Gemmaverse — Google DeepMind](https://deepmind.google/models/gemma/gemmaverse/) — 今天官网源里最值得回看的新增页面。
-- [OpenClaw](https://github.com/openclaw/openclaw) — 看今天 issue / PR / release 最密集的仓库。
-- [OpenAI Codex](https://github.com/openai/codex) — 看今天 issue / PR / release 最密集的仓库。
-- [Show HN: TikZ Editor – WYSIWYG editor for figures in LaTeX](https://tikz.dev/editor/) — 看国外开发者今天在争什么。
-
----
-
-> 本页由每日保底脚本生成，用于保证站点每日都有可读更新；后续可以被更高质量的人工 / Codex 版本覆盖。生成时间: 2026-06-24 00:55 UTC
+- [AI 社交媒体信号](./#2026-06-24/ai-social) — 看今天用户情绪和早期反馈。
+- [Claude Tag](https://www.anthropic.com/news/introducing-claude-tag) — 今天最值得看的官网新增。
+- [Gemmaverse](https://deepmind.google/models/gemma/gemmaverse/) — Google DeepMind 今日新增模型生态页。
+- [OpenMontage](https://github.com/calesthio/OpenMontage) — 今天最强的 agentic creative studio 信号。
+- [Anthropic Cybersecurity Skills](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) — 看技能包供应链的机会和风险。
+- [HN: Claude Tag](https://news.ycombinator.com/item?id=48648039) — 看开发者对身份/标记的反应。
