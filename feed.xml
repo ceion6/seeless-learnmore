@@ -6,168 +6,153 @@
     <description>中文 AI 趋势筛选面板 · High-signal AI radar in Chinese</description>
     <language>zh-CN</language>
     <atom:link href="https://ceion6.github.io/seeless-learnmore/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 25 Jun 2026 00:59:43 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jun 2026 02:53:03 +0000</lastBuildDate>
     <item>
       <title>少看点 AI 雷达 2026-06-25</title>
       <link>https://ceion6.github.io/seeless-learnmore/#2026-06-25/ai-radar</link>
       <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-06-25/ai-radar</guid>
       <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
-      <description>少看点 AI 雷达 2026-06-25 今天社交讨论的焦点是：Part of the issue with AI is how it can be used to rew。 覆盖提醒：官网源：今日新增 7 条官网内容。；Product Hunt：该源今天未启用，所以没有 Product Hunt 数据；这不是抓取失败。；ArXiv：已抓取到 50 篇论文。 今天必看 OpenClaw 生态今天更新密度最高 结论：OpenClaw 在 24 小时内累计出现 710 个 issue / PR / release 样本。 为什么重要：仓库更新密度高，通常代表工具链正在快速试错，值得先看真实问题和新增能力。 来源：OpenClaw 建议：看原文 GitHub 热门样本里出现 calesthio/OpenMontage 结论：calesthio/OpenMontage 进入当天高热样本，说明相关方向正在被开发者集中试用。 为什么重要：开源热度不是质量证明，但很适合拿来判断今天大家到底把注意力投向哪里。 来源：calesthio/OpenMontage 建议：扫一眼 官网源今天新增了 Gemin...</description>
+      <description>少看点 AI 雷达 2026-06-25 今天的主线是：AI 竞争正在从“谁的模型更会回答”转向“谁能稳定、便宜、可追责地运行在真实流程里”：推理芯片、Gemini 模型矩阵、agent 生产前验证、AI 搜索可信度同时冒出来。 今天必看 OpenAI / Broadcom 推理芯片是今天最大的基础设施信号 结论：HN 最高讨论是 OpenAI 与 Broadcom 的 LLM 推理芯片，TechCrunch 版本有 495 分、311 条评论，OpenAI 官方页面也进入讨论。 为什么重要：模型能力竞争正在压到推理成本、供应链和专用硬件。之后企业采用 AI 不只看 API 能力，还会看吞吐、延迟、成本上限和供应稳定性。 来源：TechCrunch、OpenAI 官方页、HN 讨论 建议：把它当成“推理经济学”信号，不要只当芯片新闻。 Google DeepMind 今天集中更新 Gemini 模型矩阵 结论：官网源新增 7 个 Gemini/Gemini Audio/Gemini Embedding 页面，包括 Gemini 3.1 Pro、3.5 Flash、Deep Think、...</description>
       <content:encoded><![CDATA[<h1>少看点 AI 雷达 2026-06-25</h1>
 <blockquote>
-<p>今天社交讨论的焦点是：Part of the issue with AI is how it can be used to rew。</p>
-<p>覆盖提醒：官网源：今日新增 7 条官网内容。；Product Hunt：该源今天未启用，所以没有 Product Hunt 数据；这不是抓取失败。；ArXiv：已抓取到 50 篇论文。</p>
+<p>今天的主线是：AI 竞争正在从“谁的模型更会回答”转向“谁能稳定、便宜、可追责地运行在真实流程里”：推理芯片、Gemini 模型矩阵、agent 生产前验证、AI 搜索可信度同时冒出来。</p>
 </blockquote>
 <h2>今天必看</h2>
-<h3>OpenClaw 生态今天更新密度最高</h3>
+<h3>OpenAI / Broadcom 推理芯片是今天最大的基础设施信号</h3>
 <ul>
-<li>结论：OpenClaw 在 24 小时内累计出现 710 个 issue / PR / release 样本。</li>
-<li>为什么重要：仓库更新密度高，通常代表工具链正在快速试错，值得先看真实问题和新增能力。 </li>
-<li>来源：<a href="https://github.com/openclaw/openclaw">OpenClaw</a></li>
-<li>建议：看原文</li>
+<li>结论：HN 最高讨论是 OpenAI 与 Broadcom 的 LLM 推理芯片，TechCrunch 版本有 495 分、311 条评论，OpenAI 官方页面也进入讨论。</li>
+<li>为什么重要：模型能力竞争正在压到推理成本、供应链和专用硬件。之后企业采用 AI 不只看 API 能力，还会看吞吐、延迟、成本上限和供应稳定性。</li>
+<li>来源：<a href="https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/">TechCrunch</a>、<a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/">OpenAI 官方页</a>、<a href="https://news.ycombinator.com/item?id=48663324">HN 讨论</a></li>
+<li>建议：把它当成“推理经济学”信号，不要只当芯片新闻。</li>
 </ul>
-<h3>GitHub 热门样本里出现 calesthio/OpenMontage</h3>
+<h3>Google DeepMind 今天集中更新 Gemini 模型矩阵</h3>
 <ul>
-<li>结论：calesthio/OpenMontage 进入当天高热样本，说明相关方向正在被开发者集中试用。</li>
-<li>为什么重要：开源热度不是质量证明，但很适合拿来判断今天大家到底把注意力投向哪里。 </li>
-<li>来源：<a href="https://github.com/calesthio/OpenMontage">calesthio/OpenMontage</a></li>
-<li>建议：扫一眼</li>
+<li>结论：官网源新增 7 个 Gemini/Gemini Audio/Gemini Embedding 页面，包括 Gemini 3.1 Pro、3.5 Flash、Deep Think、Embedding 2 和音频理解/生成。</li>
+<li>为什么重要：这是模型产品线分层的明确信号：重推理、低延迟、嵌入、音频输入输出被拆成不同能力面。用户未来买的是一组路由选择，而不是一个万能模型。</li>
+<li>来源：<a href="https://deepmind.google/models/gemini/pro/">Gemini Pro</a>、<a href="https://deepmind.google/models/gemini/flash/">Gemini Flash</a>、<a href="https://deepmind.google/models/gemini/deep-think/">Deep Think</a>、<a href="https://deepmind.google/models/gemini-audio/audio-understanding/">Gemini Audio</a></li>
+<li>建议：关注各能力面的成本/延迟/上下文边界，不要只看模型名。</li>
 </ul>
-<h3>官网源今天新增了 Gemini 3.1 Pro — Google DeepMind</h3>
+<h3>社交媒体今天在担心“AI 改写历史”</h3>
 <ul>
-<li>结论：deepmind 官网今天抓到新页面 Gemini 3.1 Pro — Google DeepMind。</li>
-<li>为什么重要：官网源的新增通常比社区转述更接近一手表述，适合用来确认公司到底在推什么。 </li>
-<li>来源：<a href="https://deepmind.google/models/gemini/pro/">Gemini 3.1 Pro — Google DeepMind</a></li>
-<li>建议：看原文</li>
+<li>结论：Mastodon 最高互动帖来自 Jon S. von Tetzchner，讨论 LLM 如何给出不完整版本的历史事实；同一批社交信号里还有“AI 是否替代 Google Search”。</li>
+<li>为什么重要：昨天是身份和出处，今天进一步变成“用户看到的事实是不是被模型重写”。这会影响 AI 搜索、知识库、企业文档和品牌声誉。</li>
+<li>来源：<a href="https://social.vivaldi.net/@jon/116807060269485256">Mastodon</a>、<a href="https://kierendaystudiosofficial.wordpress.com/2026/06/24/will-ai-replace-google-search/">AI search 讨论</a></li>
+<li>建议：把 AI 搜索当成需要审计的分发渠道，而不是单纯流量入口。</li>
 </ul>
-<h3>HN 今天在讨论 OpenAI unveils its first custom chip, built by Broadcom</h3>
+<h3>Agent 真进生产前，验证链正在变成刚需</h3>
 <ul>
-<li>结论：OpenAI unveils its first custom chip, built by Broadcom 进入今天的高讨论样本，社区更关注真实采用边界而不是单条宣传。</li>
-<li>为什么重要：HN 的高分讨论适合拿来观察开发者到底在担心什么、争什么。 </li>
-<li>来源：<a href="https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/">OpenAI unveils its first custom chip, built by Broadcom</a></li>
-<li>建议：看原文</li>
-</ul>
-<h3>Hugging Face 热榜里有 zai-org/GLM-5.2</h3>
-<ul>
-<li>结论：zai-org/GLM-5.2 进入今日模型热榜，说明社区对这条模型路线仍有明确兴趣。</li>
-<li>为什么重要：模型热榜更适合判断可部署能力和开发者实验面，而不是只看头部闭源叙事。 </li>
-<li>来源：<a href="https://huggingface.co/zai-org/GLM-5.2">zai-org/GLM-5.2</a></li>
-<li>建议：扫一眼</li>
+<li>结论：Dev.to 同时出现 AI-SRE 自动验证、agent red teaming、MCP 工具批准后安全、生产访问前 playground；GitHub issue 里也有用户项目被 <code>git reset --hard</code>、权限提示绕过 sandbox、token/quota 异常燃烧。</li>
+<li>为什么重要：这不是“再加一点护栏”的抽象需求，而是上线前必须证明：能不能复现、能不能限权、能不能控成本、出错能不能追责。</li>
+<li>来源：<a href="https://dev.to/metalbear/auto-verifying-your-ai-sres-fixes-part-ii-holmesgpt-end-to-end-on-a-real-cluster-594p">AI-SRE auto verification</a>、<a href="https://dev.to/morganwilliscloud/red-team-your-ai-agents-before-someone-else-does-o4i">agent red teaming</a>、<a href="https://dev.to/focused_dot_io/mcp-security-starts-after-tool-approval-focused-labs-48b3">MCP security</a>、<a href="https://github.com/openai/codex/issues/29933">Codex #29933</a></li>
+<li>建议：今天更该看“上线检查清单”，不是继续追 agent demo。</li>
 </ul>
 <h2>社交媒体在聊什么</h2>
-<h3>Part of the issue with AI is how it can be used to rewrite history or …</h3>
+<h3>AI 作为事实入口的可信度</h3>
 <ul>
-<li>判断：Mastodon 上出现高互动讨论，互动分 68，回复 12。</li>
-<li>为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。</li>
+<li>判断：最高互动讨论集中在“AI 会不会重写历史 / 给出不完整版本的真相”。</li>
+<li>为什么值得看：这是用户层面的信任问题，不能只靠模型 benchmark 回答。</li>
 <li>来源：<a href="https://social.vivaldi.net/@jon/116807060269485256">Mastodon</a></li>
 </ul>
-<h3>Why Are AI Skills Becoming More Important Than Traditional Technical S…</h3>
+<h3>AI skills 还在被大众化解释</h3>
 <ul>
-<li>判断：Mastodon 上出现高互动讨论，互动分 10，回复 0。</li>
-<li>为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。</li>
-<li>来源：<a href="https://kierendaystudiosofficial.wordpress.com/2026/06/24/why-are-ai-skills-becoming-more-important-than-traditional-technical-skills/">Mastodon</a></li>
+<li>判断：社交里仍有“AI skills 比传统技术技能更重要”的传播内容。</li>
+<li>为什么值得看：这说明 skill 不是工程圈内部词了，但也意味着市场会混入大量泛化内容，需要筛选真实工作流价值。</li>
+<li>来源：<a href="https://kierendaystudiosofficial.wordpress.com/2026/06/24/why-are-ai-skills-becoming-more-important-than-traditional-technical-skills/">KDS Foundation</a></li>
 </ul>
-<h3>One more undeniable fact on the long list of negative consequences of …</h3>
+<h3>AI 搜索替代 Google 的叙事继续扩散</h3>
 <ul>
-<li>判断：Mastodon 上出现高互动讨论，互动分 8，回复 0。</li>
-<li>为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。</li>
+<li>判断：这类讨论更像用户行为变化信号，不等于产品已经成熟。</li>
+<li>为什么值得看：如果 AI 变成事实入口，企业需要监控模型如何描述自己、竞争对手和历史事件。</li>
+<li>来源：<a href="https://kierendaystudiosofficial.wordpress.com/2026/06/24/will-ai-replace-google-search/">AI search 讨论</a></li>
+</ul>
+<h3>对企业 AI 裁员/资本叙事的反感仍在</h3>
+<ul>
+<li>判断：社交里出现 Oracle AI layoffs 相关负面情绪。</li>
+<li>为什么值得看：面向普通用户或员工的 AI 产品，沟通方式会影响接受度。</li>
 <li>来源：<a href="https://mstdn.social/@aSweetGentleman/116807582011630361">Mastodon</a></li>
 </ul>
-<h3>Will AI Replace Google Search? Artificial intelligence is changing the…</h3>
-<ul>
-<li>判断：Mastodon 上出现高互动讨论，互动分 8，回复 0。</li>
-<li>为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。</li>
-<li>来源：<a href="https://kierendaystudiosofficial.wordpress.com/2026/06/24/will-ai-replace-google-search/">Mastodon</a></li>
-</ul>
 <h2>正在升温</h2>
-<h3>Agent 执行护栏与回滚审计层</h3>
+<h3>推理成本和模型路由</h3>
 <ul>
-<li>结论：runtime、sandbox、hook、benchmark 可信度这些问题正在反复出现。</li>
-<li>来源：<a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.191</a>、<a href="https://github.com/anthropics/claude-code/issues/70700">Claude Code #70700</a>、<a href="https://github.com/anthropics/claude-code/pull/70582">Claude Code #70582</a>、<a href="https://github.com/openai/codex/issues/22965">OpenAI Codex #22965</a>、<a href="https://github.com/openai/codex/issues/29933">OpenAI Codex #29933</a></li>
+<li>结论：自研推理芯片、Gemini 多型号矩阵、Hugging Face 上 GLM/GGUF/小模型热度一起说明：成本、延迟和任务路由正在变成主战场。</li>
+<li>来源：<a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/">OpenAI/Broadcom</a>、<a href="https://deepmind.google/models/gemini/flash/">Gemini Flash</a>、<a href="https://huggingface.co/zai-org/GLM-5.2">GLM-5.2</a>、<a href="https://huggingface.co/unsloth/GLM-5.2-GGUF">unsloth/GLM-5.2-GGUF</a></li>
 </ul>
-<h3>Agent 会话沉淀与团队记忆层</h3>
+<h3>Agent 生产访问前验证</h3>
 <ul>
-<li>结论：memory、wiki、session archive、version snapshot 这条线正在慢慢成形。</li>
-<li>来源：<a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.191</a>、<a href="https://github.com/anthropics/claude-code/issues/70712">Claude Code #70712</a>、<a href="https://github.com/anthropics/claude-code/issues/70700">Claude Code #70700</a>、<a href="https://github.com/anthropics/claude-code/issues/42249">Claude Code #42249</a>、<a href="https://github.com/anthropics/claude-code/issues/69829">Claude Code #69829</a></li>
+<li>结论：自动验证、red team、MCP 批准后安全、playground、权限提示和成本异常是同一组问题。</li>
+<li>来源：<a href="https://dev.to/metalbear/auto-verifying-your-ai-sres-fixes-part-ii-holmesgpt-end-to-end-on-a-real-cluster-594p">AI-SRE auto verification</a>、<a href="https://dev.to/focused_dot_io/mcp-security-starts-after-tool-approval-focused-labs-48b3">MCP Security Starts After Tool Approval</a>、<a href="https://github.com/anthropics/claude-code/issues/70711">Claude Code #70711</a>、<a href="https://github.com/openai/codex/issues/29933">OpenAI Codex #29933</a></li>
 </ul>
-<h3>浏览器/终端工作流模板包</h3>
+<h3>并行 agent 工作台和容器化运行环境</h3>
 <ul>
-<li>结论：DevTools、browser、CLI 和 task automation 的结合信号在变强。</li>
-<li>来源：<a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.191</a>、<a href="https://github.com/anthropics/claude-code/issues/70712">Claude Code #70712</a>、<a href="https://github.com/anthropics/claude-code/issues/70700">Claude Code #70700</a>、<a href="https://github.com/anthropics/claude-code/issues/42249">Claude Code #42249</a>、<a href="https://github.com/anthropics/claude-code/issues/69829">Claude Code #69829</a></li>
+<li>结论：GitHub 热门里出现 <a href="https://github.com/apple/container">apple/container</a>、<a href="https://github.com/stablyai/orca">stablyai/orca</a>、<a href="https://github.com/calesthio/OpenMontage">OpenMontage</a>，说明 agent 需要更强的隔离、并行和本机执行环境。</li>
+<li>来源：<a href="https://github.com/apple/container">apple/container</a>、<a href="https://github.com/stablyai/orca">stablyai/orca</a></li>
 </ul>
-<h3>团队级技能包与插件目录</h3>
+<h3>AI 搜索与事实审计</h3>
 <ul>
-<li>结论：skills、plugins、MCP、hooks 和 workflow 模板正在形成独立分发层。</li>
-<li>来源：<a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.191</a>、<a href="https://github.com/anthropics/claude-code/issues/42249">Claude Code #42249</a>、<a href="https://github.com/anthropics/claude-code/pull/70582">Claude Code #70582</a>、<a href="https://github.com/openai/codex/issues/29933">OpenAI Codex #29933</a>、<a href="https://github.com/openai/codex/issues/29857">OpenAI Codex #29857</a></li>
+<li>结论：社交讨论在担心 AI 改写历史，HN 又有 Anthropic / Mythos / NSA / Alibaba 相关争议；事实入口的可信度正在变成产品问题。</li>
+<li>来源：<a href="https://social.vivaldi.net/@jon/116807060269485256">Mastodon</a>、<a href="https://news.ycombinator.com/item?id=48658300">HN: NSA lost access to Mythos</a></li>
 </ul>
 <h2>新模型 / 新产品</h2>
-<h3>zai-org/GLM-5.2</h3>
+<h3>Gemini 3.1 / 3.5 / Audio / Embedding</h3>
 <ul>
-<li>结论：zai-org/GLM-5.2 进入模型热榜，pipeline=text-generation。</li>
-<li>为什么重要：模型热榜可以帮助判断今天社区愿意先试哪些可部署能力。 </li>
-<li>来源：<a href="https://huggingface.co/zai-org/GLM-5.2">zai-org/GLM-5.2</a></li>
-<li>建议：扫一眼</li>
+<li>结论：DeepMind 官网新增一组 Gemini 模型页，而不是单个模型页。</li>
+<li>为什么重要：它把能力拆成 Pro、Flash、Flash-Lite、Deep Think、Embedding、Audio understanding、Audio speech generation。</li>
+<li>来源：<a href="https://deepmind.google/models/gemini/pro/">DeepMind Gemini</a></li>
 </ul>
-<h3>baidu/Unlimited-OCR</h3>
+<h3>Qwen AgentWorld</h3>
 <ul>
-<li>结论：baidu/Unlimited-OCR 进入模型热榜，pipeline=image-text-to-text。</li>
-<li>为什么重要：模型热榜可以帮助判断今天社区愿意先试哪些可部署能力。 </li>
-<li>来源：<a href="https://huggingface.co/baidu/Unlimited-OCR">baidu/Unlimited-OCR</a></li>
-<li>建议：扫一眼</li>
+<li>结论：<a href="https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B">Qwen/Qwen-AgentWorld-35B-A3B</a> 进入 Hugging Face 样本。</li>
+<li>为什么重要：agentic 模型方向仍在继续，但要结合真实任务评测看，不能只看名字。</li>
 </ul>
-<h3>yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF</h3>
+<h3>Unlimited-OCR 和 LocateAnything 继续升温</h3>
 <ul>
-<li>结论：yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF 进入模型热榜，pipeline=text-generation。</li>
-<li>为什么重要：模型热榜可以帮助判断今天社区愿意先试哪些可部署能力。 </li>
-<li>来源：<a href="https://huggingface.co/yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF">yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF</a></li>
-<li>建议：扫一眼</li>
+<li>结论：<a href="https://huggingface.co/baidu/Unlimited-OCR">baidu/Unlimited-OCR</a>、<a href="https://huggingface.co/nvidia/LocateAnything-3B">nvidia/LocateAnything-3B</a> 继续在热榜里。</li>
+<li>为什么重要：OCR、定位、ASR 这类“小工具模型”会直接影响 agent 能不能读屏、读文档、处理多模态输入。</li>
 </ul>
 <h2>论文里可能有用的东西</h2>
-<h3>InSight: Self-Guided Skill Acquisition via Steerable VLAs</h3>
+<h3>OpenThoughts-Agent</h3>
 <ul>
-<li>结论：这更偏训练、评测或可信度问题。</li>
-<li>为什么重要：先记住题目和方向，再决定要不要追完整原文。 </li>
-<li>来源：<a href="http://arxiv.org/abs/2606.24884v1">InSight: Self-Guided Skill Acquisition via Steerable VLAs</a></li>
-<li>建议：扫一眼</li>
+<li>结论：论文题目指向 agentic models 的 data recipes。</li>
+<li>为什么重要：如果 agent 模型要稳定进生产，数据配方会比单次 prompt 更关键。</li>
+<li>来源：<a href="http://arxiv.org/abs/2606.24855v1">arXiv</a></li>
 </ul>
-<h3>New Bounds for the Last Iterate of the Stochastic subGradient Method</h3>
+<h3>Grading the Grader</h3>
 <ul>
-<li>结论：这值得先记住题目，再等更完整样本复盘。</li>
-<li>为什么重要：先记住题目和方向，再决定要不要追完整原文。 </li>
-<li>来源：<a href="http://arxiv.org/abs/2606.24879v1">New Bounds for the Last Iterate of the Stochastic subGradient Method</a></li>
-<li>建议：扫一眼</li>
+<li>结论：主题是评估 agentic data analysis system。</li>
+<li>为什么重要：今天社区在谈自动验证和上线前评测，这篇正好落在“评测者本身怎么评”的问题上。</li>
+<li>来源：<a href="http://arxiv.org/abs/2606.24839v1">arXiv</a></li>
 </ul>
-<h3>FLUX3D: High-Fidelity 3D Gaussian Generation with Diffusion-Aligned Sparse Representation</h3>
+<h3>World Models in Pieces</h3>
 <ul>
-<li>结论：这更偏训练、评测或可信度问题。</li>
-<li>为什么重要：先记住题目和方向，再决定要不要追完整原文。 </li>
-<li>来源：<a href="http://arxiv.org/abs/2606.24874v1">FLUX3D: High-Fidelity 3D Gaussian Generation with Diffusion-Aligned Sparse Representation</a></li>
-<li>建议：扫一眼</li>
+<li>结论：结构化认证 general agents。</li>
+<li>为什么重要：和“能不能信任 agent 的世界模型/执行判断”相关，值得后续看全文。</li>
+<li>来源：<a href="http://arxiv.org/abs/2606.24842v1">arXiv</a></li>
 </ul>
 <h2>可以暂缓</h2>
+<h3>昨天已经写过的创作流水线</h3>
+<ul>
+<li>判断：OpenMontage 仍然很热，但今天新增判断不多，先不要重复把它写成主机会。</li>
+<li>来源：<a href="./#2026-06-24/ai-radar">昨天雷达</a></li>
+</ul>
+<h3>纯 Anthropic 政治/争议线</h3>
+<ul>
+<li>判断：HN 有 Mythos、NSA、Alibaba 等多条争议，但它们更适合作为风险背景，不宜抢掉今天的基础设施和验证链主线。</li>
+<li>来源：<a href="./raw-data.json">HN</a></li>
+</ul>
 <h3>今天没有 Product Hunt 样本</h3>
 <ul>
-<li>判断：今天先不要脑补新品发布面，Product Hunt 源当前未启用。 </li>
+<li>判断：Product Hunt 源未启用，不要硬写新品发布趋势。</li>
 <li>来源：<a href="./raw-data.json">今日原始快照</a></li>
-</ul>
-<h3>纯热度样本先别当成产品结论</h3>
-<ul>
-<li>判断：不要一上来做完整平台，先验证团队最怕的是权限、泄露、卡死还是难追责。</li>
-<li>来源：<a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.191</a>、<a href="https://github.com/anthropics/claude-code/issues/70700">Claude Code #70700</a>、<a href="https://github.com/anthropics/claude-code/pull/70582">Claude Code #70582</a>、<a href="https://github.com/openai/codex/issues/22965">OpenAI Codex #22965</a>、<a href="https://github.com/openai/codex/issues/29933">OpenAI Codex #29933</a></li>
 </ul>
 <h2>原始入口</h2>
 <ul>
 <li><a href="./raw-data.json">今日原始快照 raw-data.json</a> — 看当天完整样本和源数据状态。</li>
-<li><a href="https://deepmind.google/models/gemini/pro/">Gemini 3.1 Pro — Google DeepMind</a> — 今天官网源里最值得回看的新增页面。</li>
-<li><a href="https://deepmind.google/models/gemini/flash/">Gemini 3.5 Flash — Google DeepMind</a> — 今天官网源里最值得回看的新增页面。</li>
-<li><a href="https://github.com/openclaw/openclaw">OpenClaw</a> — 看今天 issue / PR / release 最密集的仓库。</li>
-<li><a href="https://github.com/google-gemini/gemini-cli">Gemini CLI</a> — 看今天 issue / PR / release 最密集的仓库。</li>
-<li><a href="https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/">OpenAI unveils its first custom chip, built by Broadcom</a> — 看国外开发者今天在争什么。</li>
+<li><a href="./#2026-06-25/ai-social">AI 社交媒体信号</a> — 看用户情绪和早期反馈。</li>
+<li><a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/">OpenAI / Broadcom inference chip</a> — 今天最重要的基础设施信号。</li>
+<li><a href="https://deepmind.google/models/gemini/pro/">Gemini Pro</a> — Gemini 模型矩阵入口。</li>
+<li><a href="https://dev.to/focused_dot_io/mcp-security-starts-after-tool-approval-focused-labs-48b3">MCP Security Starts After Tool Approval</a> — agent 生产安全切口。</li>
+<li><a href="http://arxiv.org/abs/2606.24855v1">OpenThoughts-Agent</a> — agentic models 数据配方。</li>
 </ul>
-<hr>
-<blockquote>
-<p>本页由每日保底脚本生成，用于保证站点每日都有可读更新；后续可以被更高质量的人工 / Codex 版本覆盖。生成时间: 2026-06-25 00:59 UTC</p>
-</blockquote>
 ]]></content:encoded>
     </item>
     <item>
@@ -175,102 +160,98 @@
       <link>https://ceion6.github.io/seeless-learnmore/#2026-06-25/ai-opportunity</link>
       <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-06-25/ai-opportunity</guid>
       <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
-      <description>AI 机会雷达 2026-06-25 今天更值得下注的，是 Agent 执行护栏与回滚审计层、Agent 会话沉淀与团队记忆层、浏览器/终端工作流模板包 这几类能在真实流程里立刻验证的机会。 先看结论 今天最值得做的机会，不在再做一个通用聊天入口，而在把 agent 接进真实工作流的薄层基础设施。 Agent 执行护栏与回滚审计层 是第一优先，因为 团队真正不敢放开的，通常不是生成能力，而是权限、验证和回滚。 Agent 会话沉淀与团队记忆层 也值得看，因为 当团队开始长期使用 agent，最大的浪费是每次会话都从零开始。 这些方向的共同点是：用户清晰、痛点具体，而且能在 2~6 周内做出第一版去试。 值得做的 3 个方向 Agent 执行护栏与回滚审计层 给谁做：已经让 agent 改代码、跑命令、触发 hook 的工程团队。 痛点：会话挂死、权限边界不清、结果难审计，出了错又很难回滚。 为什么是现在：今天的 GitHub issue、HN 讨论和论文信号都在提醒：agent 真实生产问题已经暴露出来了。 最小可行解：先做执行前检查、操作日志、产物校验和回滚建议，不必先做完整沙盒。 ...</description>
+      <description>AI 机会雷达 2026-06-25 今天最值得下注的机会面，是给 AI 系统加“上线前验证、运行中限额、事实输出审计”这三类保险丝。 先看结论 今天不适合继续追“创作流水线”或“技能包市场”，这些昨天已经覆盖。 新的机会在更底层：推理芯片和 Gemini 模型矩阵说明成本/路由会变复杂；社交讨论说明 AI 正在成为事实入口；工程社区则在暴露 agent 上生产前的验证、权限和成本问题。 最值得先做的不是平台，而是三种很具体的工具：agent 上线前验证门、AI 事实入口监控、模型成本/权限保险丝。 值得做的 3 个方向 Agent 上线前验证门 给谁做：准备让 AI-SRE、coding agent、MCP agent 接触生产环境的工程团队。 痛点：agent 一旦能改配置、跑命令、调用 MCP 工具，失败模式就不只是“回答错了”，而是权限越界、成本燃烧、破坏工作区、误触生产。 为什么是现在：今天样本里有 AI-SRE 自动验证、agent red team、MCP 批准后安全、生产访问前 playground；GitHub issue 也出现用户项目被 git reset --h...</description>
       <content:encoded><![CDATA[<h1>AI 机会雷达 2026-06-25</h1>
 <blockquote>
-<p>今天更值得下注的，是 Agent 执行护栏与回滚审计层、Agent 会话沉淀与团队记忆层、浏览器/终端工作流模板包 这几类能在真实流程里立刻验证的机会。</p>
+<p>今天最值得下注的机会面，是给 AI 系统加“上线前验证、运行中限额、事实输出审计”这三类保险丝。</p>
 </blockquote>
 <h2>先看结论</h2>
-<p>今天最值得做的机会，不在再做一个通用聊天入口，而在把 agent 接进真实工作流的薄层基础设施。
-Agent 执行护栏与回滚审计层 是第一优先，因为 团队真正不敢放开的，通常不是生成能力，而是权限、验证和回滚。
-Agent 会话沉淀与团队记忆层 也值得看，因为 当团队开始长期使用 agent，最大的浪费是每次会话都从零开始。
-这些方向的共同点是：用户清晰、痛点具体，而且能在 2~6 周内做出第一版去试。</p>
+<p>今天不适合继续追“创作流水线”或“技能包市场”，这些昨天已经覆盖。</p>
+<p>新的机会在更底层：推理芯片和 Gemini 模型矩阵说明成本/路由会变复杂；社交讨论说明 AI 正在成为事实入口；工程社区则在暴露 agent 上生产前的验证、权限和成本问题。</p>
+<p>最值得先做的不是平台，而是三种很具体的工具：agent 上线前验证门、AI 事实入口监控、模型成本/权限保险丝。</p>
 <h2>值得做的 3 个方向</h2>
-<h3>Agent 执行护栏与回滚审计层</h3>
+<h3>Agent 上线前验证门</h3>
 <ul>
-<li>给谁做：已经让 agent 改代码、跑命令、触发 hook 的工程团队。</li>
-<li>痛点：会话挂死、权限边界不清、结果难审计，出了错又很难回滚。</li>
-<li>为什么是现在：今天的 GitHub issue、HN 讨论和论文信号都在提醒：agent 真实生产问题已经暴露出来了。</li>
-<li>最小可行解：先做执行前检查、操作日志、产物校验和回滚建议，不必先做完整沙盒。</li>
-<li>付费可能：这类产品贴近 DevInfra，接入流程后不容易切走，适合团队套餐或按执行量收费。</li>
-<li>证据：<a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.191</a>、<a href="https://github.com/anthropics/claude-code/issues/70700">Claude Code #70700</a>、<a href="https://github.com/anthropics/claude-code/pull/70582">Claude Code #70582</a>、<a href="https://github.com/openai/codex/issues/22965">OpenAI Codex #22965</a>、<a href="https://github.com/openai/codex/issues/29933">OpenAI Codex #29933</a></li>
-<li>下一步：先访谈 5 个已经让 agent 跑命令的团队，确认他们最怕的失败类型。</li>
+<li>给谁做：准备让 AI-SRE、coding agent、MCP agent 接触生产环境的工程团队。</li>
+<li>痛点：agent 一旦能改配置、跑命令、调用 MCP 工具，失败模式就不只是“回答错了”，而是权限越界、成本燃烧、破坏工作区、误触生产。</li>
+<li>为什么是现在：今天样本里有 AI-SRE 自动验证、agent red team、MCP 批准后安全、生产访问前 playground；GitHub issue 也出现用户项目被 <code>git reset --hard</code>、权限提示绕过 sandbox。</li>
+<li>最小可行解：做一个上线前 gate：录入 10 个真实任务、权限白名单、禁止命令、成本上限、回滚检查、trace 记录；跑完给出 pass/fail 和风险解释。</li>
+<li>付费可能：这是 DevInfra / 安全预算，不需要教育用户“为什么 AI 有用”，只要证明能降低事故概率。</li>
+<li>证据：<a href="https://dev.to/metalbear/auto-verifying-your-ai-sres-fixes-part-ii-holmesgpt-end-to-end-on-a-real-cluster-594p">AI-SRE auto verification</a>、<a href="https://dev.to/morganwilliscloud/red-team-your-ai-agents-before-someone-else-does-o4i">agent red teaming</a>、<a href="https://dev.to/focused_dot_io/mcp-security-starts-after-tool-approval-focused-labs-48b3">MCP security</a>、<a href="https://github.com/openai/codex/issues/29933">Codex #29933</a></li>
+<li>下一步：选一个真实 agent 工作流，先做 5 个危险用例：删除文件、改配置、越权 MCP、无限重试、超预算模型调用。</li>
 </ul>
-<h3>Agent 会话沉淀与团队记忆层</h3>
+<h3>AI 搜索 / 事实入口监控</h3>
 <ul>
-<li>给谁做：频繁用 agent 做排障、代码阅读、探索式开发的团队。</li>
-<li>痛点：会话关掉就散，后续无法复用决策、命令和上下文。</li>
-<li>为什么是现在：社区已经开始把会话转成 wiki、dashboard、长期知识资产，而不只是一次性聊天记录。</li>
-<li>最小可行解：先做会话提炼和归档，把结论、文件引用和关键步骤整理成团队笔记。</li>
-<li>付费可能：只要能减少重复排查和 onboarding 时间，就有明确的效率价值。</li>
-<li>证据：<a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.191</a>、<a href="https://github.com/anthropics/claude-code/issues/70712">Claude Code #70712</a>、<a href="https://github.com/anthropics/claude-code/issues/70700">Claude Code #70700</a>、<a href="https://github.com/anthropics/claude-code/issues/42249">Claude Code #42249</a>、<a href="https://github.com/anthropics/claude-code/issues/69829">Claude Code #69829</a></li>
-<li>下一步：先验证团队是否真的会回看 agent 会话，再决定要不要扩成完整知识库。</li>
+<li>给谁做：有品牌、公共文档、政策解释、历史叙事或高风险知识库的公司/机构。</li>
+<li>痛点：用户不一定再点进官网，而是问 AI；如果模型把历史、产品、政策或争议讲错，企业很难知道错在哪里、错给了谁。</li>
+<li>为什么是现在：今天社交最高互动在担心 AI 改写历史；同批信号还有 AI 是否替代 Google Search；昨天 Claude Tag 也把身份/出处推到台前。</li>
+<li>最小可行解：定期向主流 LLM / AI 搜索提问，保存回答、引用、遗漏点和事实差异，生成“模型如何描述我们”的监控报告。</li>
+<li>付费可能：品牌、公关、法务、政府事务和高信任行业会为事实监控付费，尤其是医疗、教育、金融、开源项目和公共机构。</li>
+<li>证据：<a href="https://social.vivaldi.net/@jon/116807060269485256">Mastodon 历史改写讨论</a>、<a href="https://kierendaystudiosofficial.wordpress.com/2026/06/24/will-ai-replace-google-search/">AI search 讨论</a>、<a href="https://www.anthropic.com/news/introducing-claude-tag">Claude Tag</a></li>
+<li>下一步：先做 30 个固定问题模板，覆盖品牌简介、争议、价格、隐私、竞品比较、历史事实，跑 5 个模型看差异。</li>
 </ul>
-<h3>浏览器/终端工作流模板包</h3>
+<h3>模型成本 / 权限保险丝</h3>
 <ul>
-<li>给谁做：做测试、后台运营、增长实验、数据录入的小团队。</li>
-<li>痛点：大家知道 agent 能碰浏览器和终端，但不知道怎么把它拼成稳定流程。</li>
-<li>为什么是现在：浏览器和命令行能力正逐步进入 agent 工具层，工作流模板开始有现实价值。</li>
-<li>最小可行解：先做网页巡检、表单回归、后台操作复盘这类模板包，而不是通用自动化平台。</li>
-<li>付费可能：只要能持续省掉人工重复操作，就适合按模板包或团队订阅收费。</li>
-<li>证据：<a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.191</a>、<a href="https://github.com/anthropics/claude-code/issues/70712">Claude Code #70712</a>、<a href="https://github.com/anthropics/claude-code/issues/70700">Claude Code #70700</a>、<a href="https://github.com/anthropics/claude-code/issues/42249">Claude Code #42249</a>、<a href="https://github.com/anthropics/claude-code/issues/69829">Claude Code #69829</a></li>
-<li>下一步：先挑一个现成 SOP 最明确的场景，让真实用户拿现网流程试一次。</li>
+<li>给谁做：已经在团队内使用多个模型、多个 agent、多个供应商的工程团队。</li>
+<li>痛点：模型路由越来越复杂，成本、权限和性能问题混在一起；用户常常只在账单爆掉、quota 突然耗尽、工具调用失控后才发现。</li>
+<li>为什么是现在：OpenAI/Broadcom 推理芯片和 Gemini 模型矩阵说明推理经济学变成主战场；GitHub issue 里有 token/quota 异常燃烧、rate limit、成本倍率、模型自动切换等问题。</li>
+<li>最小可行解：先做轻量代理层或日志分析器：按任务记录模型、token、成本、延迟、工具权限、失败重试；超过阈值自动降级或暂停。</li>
+<li>付费可能：只要能减少一次失控账单或生产事故，就有明确 ROI。</li>
+<li>证据：<a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/">OpenAI/Broadcom inference chip</a>、<a href="https://deepmind.google/models/gemini/flash/">Gemini Flash</a>、<a href="https://github.com/anthropics/claude-code/issues/42249">Claude Code #42249</a>、<a href="https://github.com/openai/codex/issues/28879">OpenAI Codex #28879</a></li>
+<li>下一步：先支持 3 个维度：每日预算、单任务预算、危险工具预算；不要先做完整 FinOps 平台。</li>
 </ul>
 <h2>次优但可观察</h2>
-<h3>团队级技能包与插件目录</h3>
+<h3>Mac 本机 agent 容器环境</h3>
 <ul>
-<li>现在看到了什么信号：skills、plugins、MCP、hooks 和 workflow 模板正在形成独立分发层。</li>
-<li>为什么先不重注：不要先做开放 marketplace，先验证团队内部有没有值得复用的 skill 配方。</li>
-<li>后续要继续观察什么：先验证目标团队是否已经沉淀出 5 个以上会重复使用的 agent 配方。</li>
+<li>现在看到了什么信号：<a href="https://github.com/apple/container">apple/container</a> 进入热门，agent 本地执行需要更好的隔离环境。</li>
+<li>为什么先不重注：容器本身是底层能力，直接做产品要找到 agent 具体工作流。</li>
+<li>后续要继续观察什么：coding agent 是否开始默认使用轻量 VM/容器跑危险命令。</li>
 </ul>
-<h3>代码库上下文打底层</h3>
+<h3>多 agent 工作台</h3>
 <ul>
-<li>现在看到了什么信号：代码知识图谱、私有搜索和 repo understanding 还在持续升温。</li>
-<li>为什么先不重注：不要把“能索引代码”直接当成壁垒，关键是能不能接进真实任务前置环节。</li>
-<li>后续要继续观察什么：先找 3 个已经在用 coding agent 的团队，验证他们最常卡住的是“找不到该改哪里”。</li>
+<li>现在看到了什么信号：<a href="https://github.com/stablyai/orca">stablyai/orca</a>、OpenMontage、Hermes Agent、OpenClaw 都在强化并行 agent。</li>
+<li>为什么先不重注：工作台容易变成泛平台，今天更明确的付费点还是验证、限额和审计。</li>
+<li>后续要继续观察什么：用户是否真的同时管理多个 agent，还是只需要一个稳定队列。</li>
 </ul>
-<h3>模型侧机会先保持观察</h3>
+<h3>本地小模型工具链</h3>
 <ul>
-<li>现在看到了什么信号：zai-org/GLM-5.2 进入模型热榜，说明模型面仍有活跃样本。</li>
-<li>为什么先不重注：只看模型热度不够支撑产品方向，除非已经找到明确使用场景。 </li>
-<li>后续要继续观察什么：用户到底是更在意部署成本、隐私，还是某个具体能力差异。</li>
+<li>现在看到了什么信号：Unlimited-OCR、LocateAnything、ASR、小模型继续在热榜。</li>
+<li>为什么先不重注：昨天已经覆盖“本地小模型工具箱”，今天没有足够新证据改变方向。</li>
+<li>后续要继续观察什么：这些模型能不能形成稳定的 agent tool schema。</li>
 </ul>
 <h2>今天先别做</h2>
-<h3>通用“再做一个 AI 助手”</h3>
+<h3>泛泛的 AI 内容检测器</h3>
 <ul>
-<li>原因：今天的信号更支持做上下文、护栏、复用层，而不是再做一个聊天壳。</li>
+<li>原因：今天的问题不是“这是不是 AI 写的”，而是“AI 给出的事实、权限和成本是否可审计”。</li>
 </ul>
-<h3>纯资讯聚合或榜单站</h3>
+<h3>只做模型榜单</h3>
 <ul>
-<li>原因：用户更缺的是可执行判断，不是再多一条信息流。</li>
+<li>原因：Gemini 和 Hugging Face 信号说明模型选择变多，但用户更需要路由和预算控制，不是更多列表。</li>
 </ul>
-<h3>纯靠新品发布包装的方向</h3>
+<h3>继续追 OpenMontage 同一个热点</h3>
 <ul>
-<li>原因：今天 Product Hunt 样本不足，没必要用缺失数据硬凑产品热度。</li>
+<li>原因：昨天已经作为主机会分析过，今天它仍热但新增判断不足。</li>
 </ul>
-<h3>先别把 Agent 执行护栏与回滚审计层 做成大平台</h3>
+<h3>纯 Anthropic 政治风险简报</h3>
 <ul>
-<li>原因：不要一上来做完整平台，先验证团队最怕的是权限、泄露、卡死还是难追责。</li>
+<li>原因：HN 上争议很多，但产品机会更清晰地落在事实监控和生产验证。</li>
 </ul>
 <h2>开工顺序</h2>
 <ol>
-<li>先验证 Agent 执行护栏与回滚审计层 对目标用户是不是当前最痛的阻塞点，而不是先搭完整平台。</li>
-<li>先找已经在日常流程里用 agent 的团队试 Agent 会话沉淀与团队记忆层 或 Agent 执行护栏与回滚审计层，不要先找纯围观用户。</li>
-<li>如果 3 个用户里至少 2 个愿意拿真实仓库或真实流程试用，就继续；如果只有“听起来不错”，就收窄切口。</li>
+<li>先做 agent 上线前验证门，因为它的痛点最具体，能用真实命令、真实权限、真实预算验证。</li>
+<li>同时用 30 个问题模板做 AI 事实入口监控的样本报告，测试是否有人愿意订阅。</li>
+<li>如果验证门能抓出实际风险，再加模型成本/权限保险丝；如果只能生成空泛报告，就收窄到单一场景，比如 AI-SRE 或 MCP agent。</li>
+<li>暂时不要做大平台，先用报告和 CLI gate 验证付费意愿。</li>
 </ol>
 <h2>原始入口</h2>
 <ul>
-<li><a href="./#2026-06-25/ai-radar">少看点 AI 雷达</a> — 先看当天的总判断。</li>
+<li><a href="./#2026-06-25/ai-radar">少看点 AI 雷达</a> — 先看当天总判断。</li>
 <li><a href="./raw-data.json">今日原始快照 raw-data.json</a> — 看完整原始样本。</li>
-<li><a href="https://github.com/openclaw/openclaw">OpenClaw 活跃仓库</a> — 这是今天判断机会方向的直接证据。</li>
-<li><a href="https://github.com/google-gemini/gemini-cli">Gemini CLI 活跃仓库</a> — 这是今天判断机会方向的直接证据。</li>
-<li><a href="https://github.com/calesthio/OpenMontage">calesthio/OpenMontage</a> — 这是今天判断机会方向的直接证据。</li>
-<li><a href="https://github.com/ZhuLinsen/daily_stock_analysis">ZhuLinsen/daily_stock_analysis</a> — 这是今天判断机会方向的直接证据。</li>
+<li><a href="https://dev.to/metalbear/auto-verifying-your-ai-sres-fixes-part-ii-holmesgpt-end-to-end-on-a-real-cluster-594p">AI-SRE auto verification</a> — agent 上线前验证切口。</li>
+<li><a href="https://dev.to/focused_dot_io/mcp-security-starts-after-tool-approval-focused-labs-48b3">MCP Security Starts After Tool Approval</a> — MCP 权限风险切口。</li>
+<li><a href="https://social.vivaldi.net/@jon/116807060269485256">Mastodon 历史改写讨论</a> — AI 事实入口监控信号。</li>
+<li><a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/">OpenAI/Broadcom inference chip</a> — 推理成本主线。</li>
 </ul>
-<hr>
-<blockquote>
-<p>本页由每日保底脚本生成，用于保证站点每天都有“能继续做什么”的可读版本；后续可以被更高质量的人工 / Codex 版本覆盖。生成时间: 2026-06-25 00:59 UTC</p>
-</blockquote>
 ]]></content:encoded>
     </item>
     <item>
@@ -278,19 +259,33 @@ Agent 会话沉淀与团队记忆层 也值得看，因为 当团队开始长期
       <link>https://ceion6.github.io/seeless-learnmore/#2026-06-25/ai-social</link>
       <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-06-25/ai-social</guid>
       <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
-      <description>AI 社交媒体信号 2026-06-25 Bluesky：正常；Mastodon：正常 | 4 条讨论 | 2026-06-25 00:59 UTC 今日高互动讨论 Part of the issue with AI is how it can be used to rewrite history or get a version of the… 来源平台：Mastodon 互动分：68；回复：12 作者：Jon S. von Tetzchner 查看讨论 Why Are AI Skills Becoming More Important Than Traditional Technical Skills? Artificial in… 来源平台：Mastodon 互动分：10；回复：0 作者：KDS Foundation 查看讨论 One more undeniable fact on the long list of negative consequences of AI in the hands of u… 来源平台：Mastodon 互动分：8；回复：0 作者：The Huma...</description>
+      <description>AI 社交媒体信号 2026-06-25 Bluesky：正常；Mastodon：正常 | 7 条讨论 | 2026-06-25 02:52 UTC 今日高互动讨论 Part of the issue with AI is how it can be used to rewrite history or get a version of the… 来源平台：Mastodon 互动分：83；回复：15 作者：Jon S. von Tetzchner 查看讨论 Having a chronic illness brings a thousand small administrative tasks. One of the most fru… 来源平台：Mastodon 互动分：14；回复：1 作者：thermonuclear small claims 查看讨论 ARTISTIC FAIL: Write your own # Music ? Posted it on # YouTube ?... # WTF ...Congrats, you… 来源平台：Mastodon 互动分：12；回复：...</description>
       <content:encoded><![CDATA[<h1>AI 社交媒体信号 2026-06-25</h1>
 <blockquote>
-<p>Bluesky：正常；Mastodon：正常 | 4 条讨论 | 2026-06-25 00:59 UTC</p>
+<p>Bluesky：正常；Mastodon：正常 | 7 条讨论 | 2026-06-25 02:52 UTC</p>
 </blockquote>
 <hr>
 <h2>今日高互动讨论</h2>
 <h3>Part of the issue with AI is how it can be used to rewrite history or get a version of the…</h3>
 <ul>
 <li>来源平台：Mastodon</li>
-<li>互动分：68；回复：12</li>
+<li>互动分：83；回复：15</li>
 <li>作者：Jon S. von Tetzchner</li>
 <li><a href="https://social.vivaldi.net/@jon/116807060269485256">查看讨论</a></li>
+</ul>
+<h3>Having a chronic illness brings a thousand small administrative tasks. One of the most fru…</h3>
+<ul>
+<li>来源平台：Mastodon</li>
+<li>互动分：14；回复：1</li>
+<li>作者：thermonuclear small claims</li>
+<li><a href="https://aus.social/@fullfathomfive/116808326398699001">查看讨论</a></li>
+</ul>
+<h3>ARTISTIC FAIL: Write your own # Music ? Posted it on # YouTube ?... # WTF ...Congrats, you…</h3>
+<ul>
+<li>来源平台：Mastodon</li>
+<li>互动分：12；回复：2</li>
+<li>作者：Brian Harrod</li>
+<li><a href="https://mastodon.social/@BrianHarrod/116808179342560839">查看讨论</a></li>
 </ul>
 <h3>Why Are AI Skills Becoming More Important Than Traditional Technical Skills? Artificial in…</h3>
 <ul>
@@ -298,6 +293,13 @@ Agent 会话沉淀与团队记忆层 也值得看，因为 当团队开始长期
 <li>互动分：10；回复：0</li>
 <li>作者：KDS Foundation</li>
 <li><a href="https://kierendaystudiosofficial.wordpress.com/2026/06/24/why-are-ai-skills-becoming-more-important-than-traditional-technical-skills/">查看讨论</a></li>
+</ul>
+<h3>Sonosは一見難しそうですが、実は簡単です Prime Day Brings Major Deals on Headphones and Speakers From Popula…</h3>
+<ul>
+<li>来源平台：Mastodon</li>
+<li>互动分：8；回复：0</li>
+<li>作者：ハンス</li>
+<li><a href="https://mastodon.crazynewworld.net/@hans/116808255640749566">查看讨论</a></li>
 </ul>
 <h3>One more undeniable fact on the long list of negative consequences of AI in the hands of u…</h3>
 <ul>
@@ -320,19 +322,33 @@ Agent 会话沉淀与团队记忆层 也值得看，因为 当团队开始长期
       <link>https://ceion6.github.io/seeless-learnmore/#2026-06-25/ai-social-en</link>
       <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-06-25/ai-social-en</guid>
       <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
-      <description>AI Social Signals 2026-06-25 Bluesky fetch: ok; Mastodon fetch: ok | 4 posts | 2026-06-25 00:59 UTC High-engagement discussions Part of the issue with AI is how it can be used to rewrite history or get a version of the… Source: Mastodon Engagement score: 68; replies: 12 Author: Jon S. von Tetzchner Open discussion Why Are AI Skills Becoming More Important Than Traditional Technical Skills? Artificial in… Source: Mastodon Engagement score: 10; replies: 0 Author: KDS Foundation Open discussion One...</description>
+      <description>AI Social Signals 2026-06-25 Bluesky fetch: ok; Mastodon fetch: ok | 7 posts | 2026-06-25 02:52 UTC High-engagement discussions Part of the issue with AI is how it can be used to rewrite history or get a version of the… Source: Mastodon Engagement score: 83; replies: 15 Author: Jon S. von Tetzchner Open discussion Having a chronic illness brings a thousand small administrative tasks. One of the most fru… Source: Mastodon Engagement score: 14; replies: 1 Author: thermonuclear small claims Open di...</description>
       <content:encoded><![CDATA[<h1>AI Social Signals 2026-06-25</h1>
 <blockquote>
-<p>Bluesky fetch: ok; Mastodon fetch: ok | 4 posts | 2026-06-25 00:59 UTC</p>
+<p>Bluesky fetch: ok; Mastodon fetch: ok | 7 posts | 2026-06-25 02:52 UTC</p>
 </blockquote>
 <hr>
 <h2>High-engagement discussions</h2>
 <h3>Part of the issue with AI is how it can be used to rewrite history or get a version of the…</h3>
 <ul>
 <li>Source: Mastodon</li>
-<li>Engagement score: 68; replies: 12</li>
+<li>Engagement score: 83; replies: 15</li>
 <li>Author: Jon S. von Tetzchner</li>
 <li><a href="https://social.vivaldi.net/@jon/116807060269485256">Open discussion</a></li>
+</ul>
+<h3>Having a chronic illness brings a thousand small administrative tasks. One of the most fru…</h3>
+<ul>
+<li>Source: Mastodon</li>
+<li>Engagement score: 14; replies: 1</li>
+<li>Author: thermonuclear small claims</li>
+<li><a href="https://aus.social/@fullfathomfive/116808326398699001">Open discussion</a></li>
+</ul>
+<h3>ARTISTIC FAIL: Write your own # Music ? Posted it on # YouTube ?... # WTF ...Congrats, you…</h3>
+<ul>
+<li>Source: Mastodon</li>
+<li>Engagement score: 12; replies: 2</li>
+<li>Author: Brian Harrod</li>
+<li><a href="https://mastodon.social/@BrianHarrod/116808179342560839">Open discussion</a></li>
 </ul>
 <h3>Why Are AI Skills Becoming More Important Than Traditional Technical Skills? Artificial in…</h3>
 <ul>
@@ -340,6 +356,13 @@ Agent 会话沉淀与团队记忆层 也值得看，因为 当团队开始长期
 <li>Engagement score: 10; replies: 0</li>
 <li>Author: KDS Foundation</li>
 <li><a href="https://kierendaystudiosofficial.wordpress.com/2026/06/24/why-are-ai-skills-becoming-more-important-than-traditional-technical-skills/">Open discussion</a></li>
+</ul>
+<h3>Sonosは一見難しそうですが、実は簡単です Prime Day Brings Major Deals on Headphones and Speakers From Popula…</h3>
+<ul>
+<li>Source: Mastodon</li>
+<li>Engagement score: 8; replies: 0</li>
+<li>Author: ハンス</li>
+<li><a href="https://mastodon.crazynewworld.net/@hans/116808255640749566">Open discussion</a></li>
 </ul>
 <h3>One more undeniable fact on the long list of negative consequences of AI in the hands of u…</h3>
 <ul>
