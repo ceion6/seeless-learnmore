@@ -1,140 +1,124 @@
 # 少看点 AI 雷达 2026-06-25
 
-> 今天社交讨论的焦点是：Part of the issue with AI is how it can be used to rew。
->
-> 覆盖提醒：官网源：今日新增 7 条官网内容。；Product Hunt：该源今天未启用，所以没有 Product Hunt 数据；这不是抓取失败。；ArXiv：已抓取到 50 篇论文。
+> 今天的主线是：AI 竞争正在从“谁的模型更会回答”转向“谁能稳定、便宜、可追责地运行在真实流程里”：推理芯片、Gemini 模型矩阵、agent 生产前验证、AI 搜索可信度同时冒出来。
 
 ## 今天必看
 
-### OpenClaw 生态今天更新密度最高
-- 结论：OpenClaw 在 24 小时内累计出现 710 个 issue / PR / release 样本。
-- 为什么重要：仓库更新密度高，通常代表工具链正在快速试错，值得先看真实问题和新增能力。 
-- 来源：[OpenClaw](https://github.com/openclaw/openclaw)
-- 建议：看原文
+### OpenAI / Broadcom 推理芯片是今天最大的基础设施信号
+- 结论：HN 最高讨论是 OpenAI 与 Broadcom 的 LLM 推理芯片，TechCrunch 版本有 495 分、311 条评论，OpenAI 官方页面也进入讨论。
+- 为什么重要：模型能力竞争正在压到推理成本、供应链和专用硬件。之后企业采用 AI 不只看 API 能力，还会看吞吐、延迟、成本上限和供应稳定性。
+- 来源：[TechCrunch](https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/)、[OpenAI 官方页](https://openai.com/index/openai-broadcom-jalapeno-inference-chip/)、[HN 讨论](https://news.ycombinator.com/item?id=48663324)
+- 建议：把它当成“推理经济学”信号，不要只当芯片新闻。
 
-### GitHub 热门样本里出现 calesthio/OpenMontage
-- 结论：calesthio/OpenMontage 进入当天高热样本，说明相关方向正在被开发者集中试用。
-- 为什么重要：开源热度不是质量证明，但很适合拿来判断今天大家到底把注意力投向哪里。 
-- 来源：[calesthio/OpenMontage](https://github.com/calesthio/OpenMontage)
-- 建议：扫一眼
+### Google DeepMind 今天集中更新 Gemini 模型矩阵
+- 结论：官网源新增 7 个 Gemini/Gemini Audio/Gemini Embedding 页面，包括 Gemini 3.1 Pro、3.5 Flash、Deep Think、Embedding 2 和音频理解/生成。
+- 为什么重要：这是模型产品线分层的明确信号：重推理、低延迟、嵌入、音频输入输出被拆成不同能力面。用户未来买的是一组路由选择，而不是一个万能模型。
+- 来源：[Gemini Pro](https://deepmind.google/models/gemini/pro/)、[Gemini Flash](https://deepmind.google/models/gemini/flash/)、[Deep Think](https://deepmind.google/models/gemini/deep-think/)、[Gemini Audio](https://deepmind.google/models/gemini-audio/audio-understanding/)
+- 建议：关注各能力面的成本/延迟/上下文边界，不要只看模型名。
 
-### 官网源今天新增了 Gemini 3.1 Pro — Google DeepMind
-- 结论：deepmind 官网今天抓到新页面 Gemini 3.1 Pro — Google DeepMind。
-- 为什么重要：官网源的新增通常比社区转述更接近一手表述，适合用来确认公司到底在推什么。 
-- 来源：[Gemini 3.1 Pro — Google DeepMind](https://deepmind.google/models/gemini/pro/)
-- 建议：看原文
+### 社交媒体今天在担心“AI 改写历史”
+- 结论：Mastodon 最高互动帖来自 Jon S. von Tetzchner，讨论 LLM 如何给出不完整版本的历史事实；同一批社交信号里还有“AI 是否替代 Google Search”。
+- 为什么重要：昨天是身份和出处，今天进一步变成“用户看到的事实是不是被模型重写”。这会影响 AI 搜索、知识库、企业文档和品牌声誉。
+- 来源：[Mastodon](https://social.vivaldi.net/@jon/116807060269485256)、[AI search 讨论](https://kierendaystudiosofficial.wordpress.com/2026/06/24/will-ai-replace-google-search/)
+- 建议：把 AI 搜索当成需要审计的分发渠道，而不是单纯流量入口。
 
-### HN 今天在讨论 OpenAI unveils its first custom chip, built by Broadcom
-- 结论：OpenAI unveils its first custom chip, built by Broadcom 进入今天的高讨论样本，社区更关注真实采用边界而不是单条宣传。
-- 为什么重要：HN 的高分讨论适合拿来观察开发者到底在担心什么、争什么。 
-- 来源：[OpenAI unveils its first custom chip, built by Broadcom](https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/)
-- 建议：看原文
-
-### Hugging Face 热榜里有 zai-org/GLM-5.2
-- 结论：zai-org/GLM-5.2 进入今日模型热榜，说明社区对这条模型路线仍有明确兴趣。
-- 为什么重要：模型热榜更适合判断可部署能力和开发者实验面，而不是只看头部闭源叙事。 
-- 来源：[zai-org/GLM-5.2](https://huggingface.co/zai-org/GLM-5.2)
-- 建议：扫一眼
+### Agent 真进生产前，验证链正在变成刚需
+- 结论：Dev.to 同时出现 AI-SRE 自动验证、agent red teaming、MCP 工具批准后安全、生产访问前 playground；GitHub issue 里也有用户项目被 `git reset --hard`、权限提示绕过 sandbox、token/quota 异常燃烧。
+- 为什么重要：这不是“再加一点护栏”的抽象需求，而是上线前必须证明：能不能复现、能不能限权、能不能控成本、出错能不能追责。
+- 来源：[AI-SRE auto verification](https://dev.to/metalbear/auto-verifying-your-ai-sres-fixes-part-ii-holmesgpt-end-to-end-on-a-real-cluster-594p)、[agent red teaming](https://dev.to/morganwilliscloud/red-team-your-ai-agents-before-someone-else-does-o4i)、[MCP security](https://dev.to/focused_dot_io/mcp-security-starts-after-tool-approval-focused-labs-48b3)、[Codex #29933](https://github.com/openai/codex/issues/29933)
+- 建议：今天更该看“上线检查清单”，不是继续追 agent demo。
 
 ## 社交媒体在聊什么
 
-### Part of the issue with AI is how it can be used to rewrite history or …
-- 判断：Mastodon 上出现高互动讨论，互动分 68，回复 12。
-- 为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。
+### AI 作为事实入口的可信度
+- 判断：最高互动讨论集中在“AI 会不会重写历史 / 给出不完整版本的真相”。
+- 为什么值得看：这是用户层面的信任问题，不能只靠模型 benchmark 回答。
 - 来源：[Mastodon](https://social.vivaldi.net/@jon/116807060269485256)
 
-### Why Are AI Skills Becoming More Important Than Traditional Technical S…
-- 判断：Mastodon 上出现高互动讨论，互动分 10，回复 0。
-- 为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。
-- 来源：[Mastodon](https://kierendaystudiosofficial.wordpress.com/2026/06/24/why-are-ai-skills-becoming-more-important-than-traditional-technical-skills/)
+### AI skills 还在被大众化解释
+- 判断：社交里仍有“AI skills 比传统技术技能更重要”的传播内容。
+- 为什么值得看：这说明 skill 不是工程圈内部词了，但也意味着市场会混入大量泛化内容，需要筛选真实工作流价值。
+- 来源：[KDS Foundation](https://kierendaystudiosofficial.wordpress.com/2026/06/24/why-are-ai-skills-becoming-more-important-than-traditional-technical-skills/)
 
-### One more undeniable fact on the long list of negative consequences of …
-- 判断：Mastodon 上出现高互动讨论，互动分 8，回复 0。
-- 为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。
+### AI 搜索替代 Google 的叙事继续扩散
+- 判断：这类讨论更像用户行为变化信号，不等于产品已经成熟。
+- 为什么值得看：如果 AI 变成事实入口，企业需要监控模型如何描述自己、竞争对手和历史事件。
+- 来源：[AI search 讨论](https://kierendaystudiosofficial.wordpress.com/2026/06/24/will-ai-replace-google-search/)
+
+### 对企业 AI 裁员/资本叙事的反感仍在
+- 判断：社交里出现 Oracle AI layoffs 相关负面情绪。
+- 为什么值得看：面向普通用户或员工的 AI 产品，沟通方式会影响接受度。
 - 来源：[Mastodon](https://mstdn.social/@aSweetGentleman/116807582011630361)
-
-### Will AI Replace Google Search? Artificial intelligence is changing the…
-- 判断：Mastodon 上出现高互动讨论，互动分 8，回复 0。
-- 为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。
-- 来源：[Mastodon](https://kierendaystudiosofficial.wordpress.com/2026/06/24/will-ai-replace-google-search/)
 
 ## 正在升温
 
-### Agent 执行护栏与回滚审计层
-- 结论：runtime、sandbox、hook、benchmark 可信度这些问题正在反复出现。
-- 来源：[Claude Code v2.1.191](https://github.com/anthropics/claude-code/releases)、[Claude Code #70700](https://github.com/anthropics/claude-code/issues/70700)、[Claude Code #70582](https://github.com/anthropics/claude-code/pull/70582)、[OpenAI Codex #22965](https://github.com/openai/codex/issues/22965)、[OpenAI Codex #29933](https://github.com/openai/codex/issues/29933)
+### 推理成本和模型路由
+- 结论：自研推理芯片、Gemini 多型号矩阵、Hugging Face 上 GLM/GGUF/小模型热度一起说明：成本、延迟和任务路由正在变成主战场。
+- 来源：[OpenAI/Broadcom](https://openai.com/index/openai-broadcom-jalapeno-inference-chip/)、[Gemini Flash](https://deepmind.google/models/gemini/flash/)、[GLM-5.2](https://huggingface.co/zai-org/GLM-5.2)、[unsloth/GLM-5.2-GGUF](https://huggingface.co/unsloth/GLM-5.2-GGUF)
 
-### Agent 会话沉淀与团队记忆层
-- 结论：memory、wiki、session archive、version snapshot 这条线正在慢慢成形。
-- 来源：[Claude Code v2.1.191](https://github.com/anthropics/claude-code/releases)、[Claude Code #70712](https://github.com/anthropics/claude-code/issues/70712)、[Claude Code #70700](https://github.com/anthropics/claude-code/issues/70700)、[Claude Code #42249](https://github.com/anthropics/claude-code/issues/42249)、[Claude Code #69829](https://github.com/anthropics/claude-code/issues/69829)
+### Agent 生产访问前验证
+- 结论：自动验证、red team、MCP 批准后安全、playground、权限提示和成本异常是同一组问题。
+- 来源：[AI-SRE auto verification](https://dev.to/metalbear/auto-verifying-your-ai-sres-fixes-part-ii-holmesgpt-end-to-end-on-a-real-cluster-594p)、[MCP Security Starts After Tool Approval](https://dev.to/focused_dot_io/mcp-security-starts-after-tool-approval-focused-labs-48b3)、[Claude Code #70711](https://github.com/anthropics/claude-code/issues/70711)、[OpenAI Codex #29933](https://github.com/openai/codex/issues/29933)
 
-### 浏览器/终端工作流模板包
-- 结论：DevTools、browser、CLI 和 task automation 的结合信号在变强。
-- 来源：[Claude Code v2.1.191](https://github.com/anthropics/claude-code/releases)、[Claude Code #70712](https://github.com/anthropics/claude-code/issues/70712)、[Claude Code #70700](https://github.com/anthropics/claude-code/issues/70700)、[Claude Code #42249](https://github.com/anthropics/claude-code/issues/42249)、[Claude Code #69829](https://github.com/anthropics/claude-code/issues/69829)
+### 并行 agent 工作台和容器化运行环境
+- 结论：GitHub 热门里出现 [apple/container](https://github.com/apple/container)、[stablyai/orca](https://github.com/stablyai/orca)、[OpenMontage](https://github.com/calesthio/OpenMontage)，说明 agent 需要更强的隔离、并行和本机执行环境。
+- 来源：[apple/container](https://github.com/apple/container)、[stablyai/orca](https://github.com/stablyai/orca)
 
-### 团队级技能包与插件目录
-- 结论：skills、plugins、MCP、hooks 和 workflow 模板正在形成独立分发层。
-- 来源：[Claude Code v2.1.191](https://github.com/anthropics/claude-code/releases)、[Claude Code #42249](https://github.com/anthropics/claude-code/issues/42249)、[Claude Code #70582](https://github.com/anthropics/claude-code/pull/70582)、[OpenAI Codex #29933](https://github.com/openai/codex/issues/29933)、[OpenAI Codex #29857](https://github.com/openai/codex/issues/29857)
+### AI 搜索与事实审计
+- 结论：社交讨论在担心 AI 改写历史，HN 又有 Anthropic / Mythos / NSA / Alibaba 相关争议；事实入口的可信度正在变成产品问题。
+- 来源：[Mastodon](https://social.vivaldi.net/@jon/116807060269485256)、[HN: NSA lost access to Mythos](https://news.ycombinator.com/item?id=48658300)
 
 ## 新模型 / 新产品
 
-### zai-org/GLM-5.2
-- 结论：zai-org/GLM-5.2 进入模型热榜，pipeline=text-generation。
-- 为什么重要：模型热榜可以帮助判断今天社区愿意先试哪些可部署能力。 
-- 来源：[zai-org/GLM-5.2](https://huggingface.co/zai-org/GLM-5.2)
-- 建议：扫一眼
+### Gemini 3.1 / 3.5 / Audio / Embedding
+- 结论：DeepMind 官网新增一组 Gemini 模型页，而不是单个模型页。
+- 为什么重要：它把能力拆成 Pro、Flash、Flash-Lite、Deep Think、Embedding、Audio understanding、Audio speech generation。
+- 来源：[DeepMind Gemini](https://deepmind.google/models/gemini/pro/)
 
-### baidu/Unlimited-OCR
-- 结论：baidu/Unlimited-OCR 进入模型热榜，pipeline=image-text-to-text。
-- 为什么重要：模型热榜可以帮助判断今天社区愿意先试哪些可部署能力。 
-- 来源：[baidu/Unlimited-OCR](https://huggingface.co/baidu/Unlimited-OCR)
-- 建议：扫一眼
+### Qwen AgentWorld
+- 结论：[Qwen/Qwen-AgentWorld-35B-A3B](https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B) 进入 Hugging Face 样本。
+- 为什么重要：agentic 模型方向仍在继续，但要结合真实任务评测看，不能只看名字。
 
-### yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF
-- 结论：yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF 进入模型热榜，pipeline=text-generation。
-- 为什么重要：模型热榜可以帮助判断今天社区愿意先试哪些可部署能力。 
-- 来源：[yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF](https://huggingface.co/yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF)
-- 建议：扫一眼
+### Unlimited-OCR 和 LocateAnything 继续升温
+- 结论：[baidu/Unlimited-OCR](https://huggingface.co/baidu/Unlimited-OCR)、[nvidia/LocateAnything-3B](https://huggingface.co/nvidia/LocateAnything-3B) 继续在热榜里。
+- 为什么重要：OCR、定位、ASR 这类“小工具模型”会直接影响 agent 能不能读屏、读文档、处理多模态输入。
 
 ## 论文里可能有用的东西
 
-### InSight: Self-Guided Skill Acquisition via Steerable VLAs
-- 结论：这更偏训练、评测或可信度问题。
-- 为什么重要：先记住题目和方向，再决定要不要追完整原文。 
-- 来源：[InSight: Self-Guided Skill Acquisition via Steerable VLAs](http://arxiv.org/abs/2606.24884v1)
-- 建议：扫一眼
+### OpenThoughts-Agent
+- 结论：论文题目指向 agentic models 的 data recipes。
+- 为什么重要：如果 agent 模型要稳定进生产，数据配方会比单次 prompt 更关键。
+- 来源：[arXiv](http://arxiv.org/abs/2606.24855v1)
 
-### New Bounds for the Last Iterate of the Stochastic subGradient Method
-- 结论：这值得先记住题目，再等更完整样本复盘。
-- 为什么重要：先记住题目和方向，再决定要不要追完整原文。 
-- 来源：[New Bounds for the Last Iterate of the Stochastic subGradient Method](http://arxiv.org/abs/2606.24879v1)
-- 建议：扫一眼
+### Grading the Grader
+- 结论：主题是评估 agentic data analysis system。
+- 为什么重要：今天社区在谈自动验证和上线前评测，这篇正好落在“评测者本身怎么评”的问题上。
+- 来源：[arXiv](http://arxiv.org/abs/2606.24839v1)
 
-### FLUX3D: High-Fidelity 3D Gaussian Generation with Diffusion-Aligned Sparse Representation
-- 结论：这更偏训练、评测或可信度问题。
-- 为什么重要：先记住题目和方向，再决定要不要追完整原文。 
-- 来源：[FLUX3D: High-Fidelity 3D Gaussian Generation with Diffusion-Aligned Sparse Representation](http://arxiv.org/abs/2606.24874v1)
-- 建议：扫一眼
+### World Models in Pieces
+- 结论：结构化认证 general agents。
+- 为什么重要：和“能不能信任 agent 的世界模型/执行判断”相关，值得后续看全文。
+- 来源：[arXiv](http://arxiv.org/abs/2606.24842v1)
 
 ## 可以暂缓
 
-### 今天没有 Product Hunt 样本
-- 判断：今天先不要脑补新品发布面，Product Hunt 源当前未启用。 
-- 来源：[今日原始快照](./raw-data.json)
+### 昨天已经写过的创作流水线
+- 判断：OpenMontage 仍然很热，但今天新增判断不多，先不要重复把它写成主机会。
+- 来源：[昨天雷达](./#2026-06-24/ai-radar)
 
-### 纯热度样本先别当成产品结论
-- 判断：不要一上来做完整平台，先验证团队最怕的是权限、泄露、卡死还是难追责。
-- 来源：[Claude Code v2.1.191](https://github.com/anthropics/claude-code/releases)、[Claude Code #70700](https://github.com/anthropics/claude-code/issues/70700)、[Claude Code #70582](https://github.com/anthropics/claude-code/pull/70582)、[OpenAI Codex #22965](https://github.com/openai/codex/issues/22965)、[OpenAI Codex #29933](https://github.com/openai/codex/issues/29933)
+### 纯 Anthropic 政治/争议线
+- 判断：HN 有 Mythos、NSA、Alibaba 等多条争议，但它们更适合作为风险背景，不宜抢掉今天的基础设施和验证链主线。
+- 来源：[HN](./raw-data.json)
+
+### 今天没有 Product Hunt 样本
+- 判断：Product Hunt 源未启用，不要硬写新品发布趋势。
+- 来源：[今日原始快照](./raw-data.json)
 
 ## 原始入口
 
 - [今日原始快照 raw-data.json](./raw-data.json) — 看当天完整样本和源数据状态。
-- [Gemini 3.1 Pro — Google DeepMind](https://deepmind.google/models/gemini/pro/) — 今天官网源里最值得回看的新增页面。
-- [Gemini 3.5 Flash — Google DeepMind](https://deepmind.google/models/gemini/flash/) — 今天官网源里最值得回看的新增页面。
-- [OpenClaw](https://github.com/openclaw/openclaw) — 看今天 issue / PR / release 最密集的仓库。
-- [Gemini CLI](https://github.com/google-gemini/gemini-cli) — 看今天 issue / PR / release 最密集的仓库。
-- [OpenAI unveils its first custom chip, built by Broadcom](https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/) — 看国外开发者今天在争什么。
-
----
-
-> 本页由每日保底脚本生成，用于保证站点每日都有可读更新；后续可以被更高质量的人工 / Codex 版本覆盖。生成时间: 2026-06-25 00:59 UTC
+- [AI 社交媒体信号](./#2026-06-25/ai-social) — 看用户情绪和早期反馈。
+- [OpenAI / Broadcom inference chip](https://openai.com/index/openai-broadcom-jalapeno-inference-chip/) — 今天最重要的基础设施信号。
+- [Gemini Pro](https://deepmind.google/models/gemini/pro/) — Gemini 模型矩阵入口。
+- [MCP Security Starts After Tool Approval](https://dev.to/focused_dot_io/mcp-security-starts-after-tool-approval-focused-labs-48b3) — agent 生产安全切口。
+- [OpenThoughts-Agent](http://arxiv.org/abs/2606.24855v1) — agentic models 数据配方。
