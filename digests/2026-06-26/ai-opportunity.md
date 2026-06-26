@@ -1,89 +1,90 @@
 # AI 机会雷达 2026-06-26
 
-> 今天更值得下注的，是 Agent 执行护栏与回滚审计层、Agent 会话沉淀与团队记忆层、浏览器/终端工作流模板包 这几类能在真实流程里立刻验证的机会。
+> 今天最值得下注的机会面，是帮团队把知识、设计、文档和网页入口整理成 agent 能稳定消费、能被搜索发现、还能控制账单风险的工作层。
 
 ## 先看结论
 
-今天最值得做的机会，不在再做一个通用聊天入口，而在把 agent 接进真实工作流的薄层基础设施。
-Agent 执行护栏与回滚审计层 是第一优先，因为 团队真正不敢放开的，通常不是生成能力，而是权限、验证和回滚。
-Agent 会话沉淀与团队记忆层 也值得看，因为 当团队开始长期使用 agent，最大的浪费是每次会话都从零开始。
-这些方向的共同点是：用户清晰、痛点具体，而且能在 2~6 周内做出第一版去试。
+昨天已经写过 agent 上线前验证、事实监控和成本保险丝。今天的新信号更偏“输入层”和“渠道层”。
+
+第一优先是 agent-ready context pack：设计系统、知识库、PDF、SEO 数据、云工具包都在变成 agent 可消费的格式。
+
+第二优先是 AI 搜索渠道运营：ChatGPT/AI 搜索影响传统搜索，同时 no-AI search 也出现反向需求。
+
+第三优先是模型/账单变更监控：默认模型升级、quota 计算、付费产品广告化这些问题正在影响用户信任。
 
 ## 值得做的 3 个方向
 
-### Agent 执行护栏与回滚审计层
-- 给谁做：已经让 agent 改代码、跑命令、触发 hook 的工程团队。
-- 痛点：会话挂死、权限边界不清、结果难审计，出了错又很难回滚。
-- 为什么是现在：今天的 GitHub issue、HN 讨论和论文信号都在提醒：agent 真实生产问题已经暴露出来了。
-- 最小可行解：先做执行前检查、操作日志、产物校验和回滚建议，不必先做完整沙盒。
-- 付费可能：这类产品贴近 DevInfra，接入流程后不容易切走，适合团队套餐或按执行量收费。
-- 证据：[Claude Code #44180](https://github.com/anthropics/claude-code/issues/44180)、[Claude Code #63686](https://github.com/anthropics/claude-code/pull/63686)、[OpenAI Codex 0.142.2](https://github.com/openai/codex/releases)、[OpenAI Codex #30151](https://github.com/openai/codex/issues/30151)、[OpenAI Codex #30150](https://github.com/openai/codex/issues/30150)
-- 下一步：先访谈 5 个已经让 agent 跑命令的团队，确认他们最怕的失败类型。
+### Agent-ready Context Pack
+- 给谁做：已有大量文档、设计规范、PDF、产品资料、客服知识库的团队。
+- 痛点：资料给人看还可以，但 agent 使用时经常缺结构、缺引用、缺版本、缺边界，导致生成结果不稳定。
+- 为什么是现在：今天 GitHub 热门第一是 [design.md](https://github.com/google-labs-code/design.md)，HN 高讨论是 [OpenKnowledge](https://github.com/inkeep/open-knowledge)，[MinerU](https://github.com/opendatalab/MinerU) 也在把复杂文档转成 LLM-ready Markdown/JSON。
+- 最小可行解：先做一个“资料包转换器”：输入设计系统、产品文档、PDF、FAQ、品牌词表，输出 agent 可读的 Markdown/JSON、引用索引、禁用描述、更新日期和测试问题。
+- 付费可能：设计、客服、销售工程、研发知识库都能用，价值点是减少 agent 胡编和反复解释上下文。
+- 证据：[design.md](https://github.com/google-labs-code/design.md)、[OpenKnowledge](https://github.com/inkeep/open-knowledge)、[MinerU](https://github.com/opendatalab/MinerU)、[AWS Agent Toolkit](https://github.com/aws/agent-toolkit-for-aws)
+- 下一步：选一个真实项目，把 README、设计规范、FAQ、3 个 PDF 转成 agent-ready pack，用 20 个问题测试回答稳定性。
 
-### Agent 会话沉淀与团队记忆层
-- 给谁做：频繁用 agent 做排障、代码阅读、探索式开发的团队。
-- 痛点：会话关掉就散，后续无法复用决策、命令和上下文。
-- 为什么是现在：社区已经开始把会话转成 wiki、dashboard、长期知识资产，而不只是一次性聊天记录。
-- 最小可行解：先做会话提炼和归档，把结论、文件引用和关键步骤整理成团队笔记。
-- 付费可能：只要能减少重复排查和 onboarding 时间，就有明确的效率价值。
-- 证据：[Claude Code v2.1.193](https://github.com/anthropics/claude-code/releases)、[Claude Code #71481](https://github.com/anthropics/claude-code/issues/71481)、[Claude Code #70885](https://github.com/anthropics/claude-code/issues/70885)、[Claude Code #29017](https://github.com/anthropics/claude-code/issues/29017)、[OpenAI Codex #30002](https://github.com/openai/codex/issues/30002)
-- 下一步：先验证团队是否真的会回看 agent 会话，再决定要不要扩成完整知识库。
+### AI Search / No-AI Search 渠道监测
+- 给谁做：依赖搜索流量、品牌口碑、文档入口或内容分发的公司。
+- 痛点：用户可能从 Google 转向 ChatGPT/Bing，也可能主动使用 no-AI search；团队不知道自己的内容在哪些入口被看见、被摘要、被忽略或被错误替代。
+- 为什么是现在：社交信号明确提到 Google search traffic、ChatGPT traffic、Bing、DuckDuckGo no-AI search；GitHub 热门里也出现 [open-seo](https://github.com/every-app/open-seo)。
+- 最小可行解：做一个轻量监测器：同一组关键词同时查传统搜索、AI 搜索、no-AI search，记录排名、摘要、引用来源、缺失页面和错误描述。
+- 付费可能：SEO、内容团队、开发者文档、品牌和公关团队都有预算，尤其在搜索渠道转型期。
+- 证据：[Mastodon search 讨论](https://mastodon.social/@knoppix95/116812081127947931)、[Open SEO](https://github.com/every-app/open-seo)、[OpenKnowledge](https://github.com/inkeep/open-knowledge)
+- 下一步：先用 50 个关键词做周报，不做复杂平台；输出“传统搜索 vs AI 搜索 vs no-AI 搜索”的差异表。
 
-### 浏览器/终端工作流模板包
-- 给谁做：做测试、后台运营、增长实验、数据录入的小团队。
-- 痛点：大家知道 agent 能碰浏览器和终端，但不知道怎么把它拼成稳定流程。
-- 为什么是现在：浏览器和命令行能力正逐步进入 agent 工具层，工作流模板开始有现实价值。
-- 最小可行解：先做网页巡检、表单回归、后台操作复盘这类模板包，而不是通用自动化平台。
-- 付费可能：只要能持续省掉人工重复操作，就适合按模板包或团队订阅收费。
-- 证据：[Claude Code #44180](https://github.com/anthropics/claude-code/issues/44180)、[Claude Code #29017](https://github.com/anthropics/claude-code/issues/29017)、[OpenAI Codex #30150](https://github.com/openai/codex/issues/30150)、[OpenAI Codex #30034](https://github.com/openai/codex/issues/30034)、[Gemini CLI](https://github.com/google-gemini/gemini-cli)
-- 下一步：先挑一个现成 SOP 最明确的场景，让真实用户拿现网流程试一次。
+### 模型/账单变更哨兵
+- 给谁做：使用 Claude Code、Codex、Gemini CLI、Qwen Code 等 AI coding 工具的个人和小团队。
+- 痛点：默认模型升级、quota 计算变化、rate limit、付费产品广告化、隐性重试会让用户在事后才发现成本异常。
+- 为什么是现在：Claude Code issue 里有“默认模型静默升级导致 6 天 506 美元意外费用”，Codex 也有 quota 过度消耗；HN 还在讨论 OpenAI 付费产品里出现广告。
+- 最小可行解：本地 watcher 读取工具配置、账单/usage 输出和模型选择变化，发现默认模型、价格档、quota 消耗速度异常时提醒并生成 diff。
+- 付费可能：个人开发者会为省钱和防事故付费，团队版可以接入 Slack/Feishu 和预算审批。
+- 证据：[Claude Code #71481](https://github.com/anthropics/claude-code/issues/71481)、[Codex #30002](https://github.com/openai/codex/issues/30002)、[Codex #30034](https://github.com/openai/codex/issues/30034)、[HN: OpenAI ads on paid programs](https://news.ycombinator.com/item?id=48673194)
+- 下一步：先支持 3 个工具的本地配置 diff 和每日 usage 趋势，不要先接所有供应商账单 API。
 
 ## 次优但可观察
 
-### 团队级技能包与插件目录
-- 现在看到了什么信号：skills、plugins、MCP、hooks 和 workflow 模板正在形成独立分发层。
-- 为什么先不重注：不要先做开放 marketplace，先验证团队内部有没有值得复用的 skill 配方。
-- 后续要继续观察什么：先验证目标团队是否已经沉淀出 5 个以上会重复使用的 agent 配方。
+### 云厂商 agent toolkit 服务化
+- 现在看到了什么信号：[AWS Agent Toolkit](https://github.com/aws/agent-toolkit-for-aws) 进入热门。
+- 为什么先不重注：云厂商自己会做大量底层工具，独立产品要找跨云或治理层机会。
+- 后续要继续观察什么：企业是否需要统一管理 AWS/GCP/Azure 的 MCP servers、skills、plugins。
 
-### 代码库上下文打底层
-- 现在看到了什么信号：代码知识图谱、私有搜索和 repo understanding 还在持续升温。
-- 为什么先不重注：不要把“能索引代码”直接当成壁垒，关键是能不能接进真实任务前置环节。
-- 后续要继续观察什么：先找 3 个已经在用 coding agent 的团队，验证他们最常卡住的是“找不到该改哪里”。
+### 页面级 GUI agent
+- 现在看到了什么信号：[alibaba/page-agent](https://github.com/alibaba/page-agent) 进入样本。
+- 为什么先不重注：网页自动化价值明确，但容易陷入具体站点兼容问题。
+- 后续要继续观察什么：是否出现稳定的页面动作 schema 和回放/审计格式。
 
-### 模型侧机会先保持观察
-- 现在看到了什么信号：zai-org/GLM-5.2 进入模型热榜，说明模型面仍有活跃样本。
-- 为什么先不重注：只看模型热度不够支撑产品方向，除非已经找到明确使用场景。 
-- 后续要继续观察什么：用户到底是更在意部署成本、隐私，还是某个具体能力差异。 
+### 多模态 prompt guide 管理
+- 现在看到了什么信号：DeepMind 对 Veo、Lyria、Nano Banana、Genie、Gemini Omni 提供 prompt guide。
+- 为什么先不重注：提示指南本身很快商品化，机会更可能在企业模板、合规限制和评测。
+- 后续要继续观察什么：创作团队是否会把 prompt guide 当内部资产管理。
 
 ## 今天先别做
 
-### 通用“再做一个 AI 助手”
-- 原因：今天的信号更支持做上下文、护栏、复用层，而不是再做一个聊天壳。
+### 再做一个 Obsidian/Notion 克隆
+- 原因：今天的机会不是编辑器界面，而是 agent 能不能稳定消费知识。
 
-### 纯资讯聚合或榜单站
-- 原因：用户更缺的是可执行判断，不是再多一条信息流。
+### 泛泛的 AI 搜索问答站
+- 原因：渠道监测和引用差异更具体，单做问答很容易被大模型平台吞掉。
 
-### 纯靠新品发布包装的方向
-- 原因：今天 Product Hunt 样本不足，没必要用缺失数据硬凑产品热度。
+### 纯粹的账单仪表盘
+- 原因：用户痛点不是多看一张图，而是默认模型、价格档、quota 变化时能及时阻断。
 
-### 先别把 Agent 执行护栏与回滚审计层 做成大平台
-- 原因：不要一上来做完整平台，先验证团队最怕的是权限、泄露、卡死还是难追责。
+### 继续追 OpenMontage
+- 原因：它仍热，但今天没有比前两天更强的新证据。
 
 ## 开工顺序
 
-1. 先验证 Agent 执行护栏与回滚审计层 对目标用户是不是当前最痛的阻塞点，而不是先搭完整平台。
-2. 先找已经在日常流程里用 agent 的团队试 Agent 会话沉淀与团队记忆层 或 Agent 执行护栏与回滚审计层，不要先找纯围观用户。
-3. 如果 3 个用户里至少 2 个愿意拿真实仓库或真实流程试用，就继续；如果只有“听起来不错”，就收窄切口。
+1. 先做 Agent-ready Context Pack，因为输入资料质量会直接影响所有 agent 工作流，且可以用一个真实项目快速验证。
+2. 用同一批资料同步测试 AI Search / No-AI Search 渠道监测，看哪些内容被 AI 摘要、哪些还只能靠传统搜索发现。
+3. 模型/账单哨兵先做本地配置 diff 和 usage 异常提醒，作为个人工具验证，不急着企业化。
+4. 如果 context pack 能让 agent 回答质量明显提升，再考虑把它扩成团队知识发布流程。
 
 ## 原始入口
 
-- [少看点 AI 雷达](./#2026-06-26/ai-radar) — 先看当天的总判断。
+- [少看点 AI 雷达](./#2026-06-26/ai-radar) — 先看当天总判断。
 - [今日原始快照 raw-data.json](./raw-data.json) — 看完整原始样本。
-- [OpenClaw 活跃仓库](https://github.com/openclaw/openclaw) — 这是今天判断机会方向的直接证据。
-- [Gemini CLI 活跃仓库](https://github.com/google-gemini/gemini-cli) — 这是今天判断机会方向的直接证据。
-- [google-labs-code/design.md](https://github.com/google-labs-code/design.md) — 这是今天判断机会方向的直接证据。
-- [calesthio/OpenMontage](https://github.com/calesthio/OpenMontage) — 这是今天判断机会方向的直接证据。
-
----
-
-> 本页由每日保底脚本生成，用于保证站点每天都有“能继续做什么”的可读版本；后续可以被更高质量的人工 / Codex 版本覆盖。生成时间: 2026-06-26 01:02 UTC
+- [design.md](https://github.com/google-labs-code/design.md) — agent-ready 设计上下文。
+- [OpenKnowledge](https://github.com/inkeep/open-knowledge) — AI-first 知识库方向。
+- [MinerU](https://github.com/opendatalab/MinerU) — 文档转 LLM-ready 资料。
+- [Open SEO](https://github.com/every-app/open-seo) — 搜索渠道监测入口。
+- [Claude Code #71481](https://github.com/anthropics/claude-code/issues/71481) — 模型/账单变更风险样本。

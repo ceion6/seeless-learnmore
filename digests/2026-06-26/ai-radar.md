@@ -1,140 +1,125 @@
 # 少看点 AI 雷达 2026-06-26
 
-> 今天社交讨论的焦点是：Old Wine, New Bottle? The Truth About AI, Innovation, 。
->
-> 覆盖提醒：官网源：今日新增 21 条官网内容。；Product Hunt：该源今天未启用，所以没有 Product Hunt 数据；这不是抓取失败。；ArXiv：已抓取到 50 篇论文。
+> 今天的主线是：AI 正在把“知识、设计、网页、文档、搜索入口”改造成 agent 可消费的工作材料；与此同时，用户对广告化、身份验证、账单失控和 AI 搜索替代传统搜索的反感也在升温。
 
 ## 今天必看
 
-### OpenClaw 生态今天更新密度最高
-- 结论：OpenClaw 在 24 小时内累计出现 735 个 issue / PR / release 样本。
-- 为什么重要：仓库更新密度高，通常代表工具链正在快速试错，值得先看真实问题和新增能力。 
-- 来源：[OpenClaw](https://github.com/openclaw/openclaw)
-- 建议：看原文
+### OpenAI 明确把 agent 叙事推向工作流程
+- 结论：OpenAI 官网新增 [How Agents Are Transforming Work](https://openai.com/index/how-agents-are-transforming-work/)。
+- 为什么重要：这类官方文章通常不是单个功能，而是在教育市场如何理解 agent：从聊天入口转向可接任务、可协作、可改造流程的工作系统。
+- 来源：[OpenAI](https://openai.com/index/how-agents-are-transforming-work/)
+- 建议：看它如何定义“工作被 agent 改造”，但不要把官方叙事直接当成落地成熟度。
 
-### GitHub 热门样本里出现 google-labs-code/design.md
-- 结论：google-labs-code/design.md 进入当天高热样本，说明相关方向正在被开发者集中试用。
-- 为什么重要：开源热度不是质量证明，但很适合拿来判断今天大家到底把注意力投向哪里。 
-- 来源：[google-labs-code/design.md](https://github.com/google-labs-code/design.md)
-- 建议：扫一眼
+### Google DeepMind 把模型页扩成了完整多模态目录
+- 结论：DeepMind 今天抓到 20 个新增页面，从 Gemini 3.5、Flash、Embedding、Gemini Diffusion、Nano Banana、Gemini Audio、Gemini Omni 到 Veo/Lyria/Genie 的 prompt guide。
+- 为什么重要：昨天是模型矩阵，今天更像“多模态产品目录 + 使用说明书”。模型公司正在把能力拆成可被开发者调用的模块，也把 prompt guide 变成产品的一部分。
+- 来源：[DeepMind Models](https://deepmind.google/models/)、[Gemini Omni](https://deepmind.google/models/gemini-omni/)、[Veo prompt guide](https://deepmind.google/models/veo/prompt-guide/)、[Nano Banana prompt guide](https://deepmind.google/models/gemini-image/prompt-guide/)
+- 建议：重点看提示指南和能力边界，它们会影响真实产品接入成本。
 
-### 官网源今天新增了 How Agents Are Transforming Work
-- 结论：openai 官网今天抓到新页面 How Agents Are Transforming Work。
-- 为什么重要：官网源的新增通常比社区转述更接近一手表述，适合用来确认公司到底在推什么。 
-- 来源：[How Agents Are Transforming Work](https://openai.com/index/how-agents-are-transforming-work/)
-- 建议：看原文
+### Agent-ready 知识和设计资产开始变热
+- 结论：HN 最高 AI 相关样本是 [OpenKnowledge](https://github.com/inkeep/open-knowledge)，GitHub 热门第一是 [google-labs-code/design.md](https://github.com/google-labs-code/design.md)，另有 [MinerU](https://github.com/opendatalab/MinerU) 把复杂文档转成 agentic workflows 可用的 Markdown/JSON。
+- 为什么重要：这不是普通知识库热潮，而是资料格式在适配 agent：设计规范、文档、PDF、SEO 数据、知识库都要变成机器可读、可引用、可执行的上下文。
+- 来源：[OpenKnowledge HN](https://news.ycombinator.com/item?id=48675435)、[design.md](https://github.com/google-labs-code/design.md)、[MinerU](https://github.com/opendatalab/MinerU)、[Open SEO](https://github.com/every-app/open-seo)
+- 建议：如果要搭知识库，先问它能不能被 agent 稳定消费，而不是只看编辑器体验。
 
-### HN 今天在讨论 Show HN: OpenKnowledge – open source AI-first alternative to Obsidian/Notion
-- 结论：Show HN: OpenKnowledge – open source AI-first alternative to Obsidian/Notion 进入今天的高讨论样本，社区更关注真实采用边界而不是单条宣传。
-- 为什么重要：HN 的高分讨论适合拿来观察开发者到底在担心什么、争什么。 
-- 来源：[Show HN: OpenKnowledge – open source AI-first alternative to Obsidian/Notion](https://github.com/inkeep/open-knowledge)
-- 建议：看原文
-
-### Hugging Face 热榜里有 zai-org/GLM-5.2
-- 结论：zai-org/GLM-5.2 进入今日模型热榜，说明社区对这条模型路线仍有明确兴趣。
-- 为什么重要：模型热榜更适合判断可部署能力和开发者实验面，而不是只看头部闭源叙事。 
-- 来源：[zai-org/GLM-5.2](https://huggingface.co/zai-org/GLM-5.2)
-- 建议：扫一眼
+### AI 搜索替代传统搜索的压力更具象了
+- 结论：社交信号提到 Google 搜索负责人面临压力、ChatGPT traffic 上升、Bing 超过 10 亿用户、DuckDuckGo 因 no-AI search 安装增加。
+- 为什么重要：昨天的问题是“AI 会不会改写事实”，今天多了一层渠道变化：用户可能用 AI 搜索，也可能主动选择 no-AI 搜索。企业要同时适应 AI 分发和反 AI 需求。
+- 来源：[Mastodon](https://mastodon.social/@knoppix95/116812081127947931)
+- 建议：把 AI 搜索当新渠道，同时保留清晰、可引用、可爬取的人类网页。
 
 ## 社交媒体在聊什么
 
-### Old Wine, New Bottle? The Truth About AI, Innovation, and the Evolutio…
-- 判断：Mastodon 上出现高互动讨论，互动分 52，回复 0。
-- 为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。
+### “AI 是突破还是旧酒新瓶”
+- 判断：最高互动社交帖在讨论 AI 到底是创新，还是旧研究的商业化包装。
+- 为什么值得看：这是投资和采购层面的怀疑，不是单纯情绪；它会影响组织是否愿意为 AI 项目长期投入。
 - 来源：[Mastodon](https://technologytrends60.wordpress.com/2026/06/25/old-wine-new-bottle-the-truth-about-ai-innovation-and-the-evolution-of-information-technology/)
 
-### Google’s search lead is facing pressure as ChatGPT traffic rises, Bing…
-- 判断：Mastodon 上出现高互动讨论，互动分 12，回复 0。
-- 为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。
+### 搜索入口变化和 no-AI search
+- 判断：社交里把 ChatGPT traffic、Bing 用户增长、Google search 轻微下滑和 DuckDuckGo no-AI search 放在一起讨论。
+- 为什么值得看：用户不是单向迁移到 AI，有一部分人在主动寻找无 AI 的搜索体验。
 - 来源：[Mastodon](https://mastodon.social/@knoppix95/116812081127947931)
 
-### Why Does Everyone Hate AI? Spoiler: it’s the fear, the enshittificatio…
-- 判断：Mastodon 上出现高互动讨论，互动分 12，回复 0。
-- 为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。
+### “为什么大家讨厌 AI”
+- 判断：社交讨论把 fear、enshittification、datacenter hostility、tech broligarchy 放在一起。
+- 为什么值得看：如果产品只强调效率，不处理信任、能源、广告化和平台劣化，会继续遇到阻力。
 - 来源：[Mastodon](https://graphics.social/@metin/116811099658352672)
 
-### わたしがペンギンの亜人ではないように、AppleもAppleではないのかもしれません Some Apple Products Just Go…
-- 判断：Mastodon 上出现高互动讨论，互动分 8，回复 0。
-- 为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。
-- 来源：[Mastodon](https://mastodon.crazynewworld.net/@hans/116813446086314195)
+### Claude 身份验证引发隐私担忧
+- 判断：社交里提到部分 Claude 用户可能需要提交政府 ID 和自拍来申诉账号。
+- 为什么值得看：身份、年龄验证和滥用治理会继续与隐私发生冲突，尤其是面向个人用户和创作者的 AI 产品。
+- 来源：[Mastodon](https://mastodon.social/@knoppix95/116812091469272188)
 
 ## 正在升温
 
-### Agent 执行护栏与回滚审计层
-- 结论：runtime、sandbox、hook、benchmark 可信度这些问题正在反复出现。
-- 来源：[Claude Code #44180](https://github.com/anthropics/claude-code/issues/44180)、[Claude Code #63686](https://github.com/anthropics/claude-code/pull/63686)、[OpenAI Codex 0.142.2](https://github.com/openai/codex/releases)、[OpenAI Codex #30151](https://github.com/openai/codex/issues/30151)、[OpenAI Codex #30150](https://github.com/openai/codex/issues/30150)
+### Agent-ready context formats
+- 结论：design.md、OpenKnowledge、MinerU、Open SEO 都在把原本给人看的资产变成 agent 能消费的上下文。
+- 来源：[design.md](https://github.com/google-labs-code/design.md)、[OpenKnowledge](https://github.com/inkeep/open-knowledge)、[MinerU](https://github.com/opendatalab/MinerU)、[Open SEO](https://github.com/every-app/open-seo)
 
-### Agent 会话沉淀与团队记忆层
-- 结论：memory、wiki、session archive、version snapshot 这条线正在慢慢成形。
-- 来源：[Claude Code v2.1.193](https://github.com/anthropics/claude-code/releases)、[Claude Code #71481](https://github.com/anthropics/claude-code/issues/71481)、[Claude Code #70885](https://github.com/anthropics/claude-code/issues/70885)、[Claude Code #29017](https://github.com/anthropics/claude-code/issues/29017)、[OpenAI Codex #30002](https://github.com/openai/codex/issues/30002)
+### 模型/账单变更可观测性
+- 结论：Claude Code 出现“默认模型静默升级导致 6 天 506 美元意外费用”，Codex 也有 5h quota 过度消耗问题。
+- 来源：[Claude Code #71481](https://github.com/anthropics/claude-code/issues/71481)、[Codex #30002](https://github.com/openai/codex/issues/30002)、[Codex #30034](https://github.com/openai/codex/issues/30034)
 
-### 浏览器/终端工作流模板包
-- 结论：DevTools、browser、CLI 和 task automation 的结合信号在变强。
-- 来源：[Claude Code #44180](https://github.com/anthropics/claude-code/issues/44180)、[Claude Code #29017](https://github.com/anthropics/claude-code/issues/29017)、[OpenAI Codex #30150](https://github.com/openai/codex/issues/30150)、[OpenAI Codex #30034](https://github.com/openai/codex/issues/30034)、[Gemini CLI](https://github.com/google-gemini/gemini-cli)
+### Agent 工具包从社区扩到云厂商
+- 结论：[aws/agent-toolkit-for-aws](https://github.com/aws/agent-toolkit-for-aws) 进入热门，说明云厂商也在把 MCP servers、skills、plugins 打包给 agent 使用。
+- 来源：[AWS Agent Toolkit](https://github.com/aws/agent-toolkit-for-aws)
 
-### 团队级技能包与插件目录
-- 结论：skills、plugins、MCP、hooks 和 workflow 模板正在形成独立分发层。
-- 来源：[Claude Code v2.1.193](https://github.com/anthropics/claude-code/releases)、[Claude Code #44180](https://github.com/anthropics/claude-code/issues/44180)、[Claude Code #63686](https://github.com/anthropics/claude-code/pull/63686)、[OpenAI Codex 0.142.2](https://github.com/openai/codex/releases)、[OpenAI Codex #30148](https://github.com/openai/codex/pull/30148)
+### 页面级 GUI agent 和数据采集
+- 结论：[alibaba/page-agent](https://github.com/alibaba/page-agent)、[MediaCrawler](https://github.com/NanmiCoder/MediaCrawler) 同时出现，网页控制和内容采集仍然是 agent 落地的高频入口。
+- 来源：[page-agent](https://github.com/alibaba/page-agent)、[MediaCrawler](https://github.com/NanmiCoder/MediaCrawler)
 
 ## 新模型 / 新产品
 
-### zai-org/GLM-5.2
-- 结论：zai-org/GLM-5.2 进入模型热榜，pipeline=text-generation。
-- 为什么重要：模型热榜可以帮助判断今天社区愿意先试哪些可部署能力。 
-- 来源：[zai-org/GLM-5.2](https://huggingface.co/zai-org/GLM-5.2)
-- 建议：扫一眼
+### Gemini Omni / Diffusion / Audio / Image prompt guides
+- 结论：DeepMind 把模型、音频、图像和 prompt guide 集中更新。
+- 为什么重要：这说明“如何正确使用模型”正在成为官方产品表面的一部分。
+- 来源：[Gemini Omni](https://deepmind.google/models/gemini-omni/)、[Gemini Diffusion](https://deepmind.google/models/gemini-diffusion/)、[Gemini Audio](https://deepmind.google/models/gemini-audio/)
 
-### baidu/Unlimited-OCR
-- 结论：baidu/Unlimited-OCR 进入模型热榜，pipeline=image-text-to-text。
-- 为什么重要：模型热榜可以帮助判断今天社区愿意先试哪些可部署能力。 
-- 来源：[baidu/Unlimited-OCR](https://huggingface.co/baidu/Unlimited-OCR)
-- 建议：扫一眼
+### Qwen AgentWorld 和 agentic GGUF 模型
+- 结论：[Qwen-AgentWorld-35B-A3B](https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B) 与多个 agentic/coder GGUF 模型继续在 Hugging Face 样本里出现。
+- 为什么重要：agent 模型不只在闭源 API 里演进，可下载模型也在追 agentic 能力。
 
-### yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF
-- 结论：yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF 进入模型热榜，pipeline=text-generation。
-- 为什么重要：模型热榜可以帮助判断今天社区愿意先试哪些可部署能力。 
-- 来源：[yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF](https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF)
-- 建议：扫一眼
+### Krea-2 和视觉生成模型
+- 结论：[krea/Krea-2-Turbo](https://huggingface.co/krea/Krea-2-Turbo)、[krea/Krea-2-Raw](https://huggingface.co/krea/Krea-2-Raw) 进入热榜。
+- 为什么重要：多模态模型产品化的另一面是创作工具继续快速迭代。
 
 ## 论文里可能有用的东西
 
-### Hierarchical Muon: Tiled Newton-Schulz Updates for Efficient Muon Optimization
-- 结论：这值得先记住题目，再等更完整样本复盘。
-- 为什么重要：先记住题目和方向，再决定要不要追完整原文。 
-- 来源：[Hierarchical Muon: Tiled Newton-Schulz Updates for Efficient Muon Optimization](http://arxiv.org/abs/2606.27216v1)
-- 建议：扫一眼
+### Forecasting With LLMs
+- 结论：题目指向用 feature steering 改善 LLM forecast 泛化。
+- 为什么重要：和今天的投资研究、商业预测、agent 工作流结合度较高。
+- 来源：[arXiv](http://arxiv.org/abs/2606.27199v1)
 
-### Graph Neural Networks Applications Across Domains: All Insights You Need
-- 结论：这更偏多模态能力方向。
-- 为什么重要：先记住题目和方向，再决定要不要追完整原文。 
-- 来源：[Graph Neural Networks Applications Across Domains: All Insights You Need](http://arxiv.org/abs/2606.27202v1)
-- 建议：扫一眼
+### Automating Reward Shaping with VLM Guidance
+- 结论：用视觉语言模型指导 reward shaping。
+- 为什么重要：对具身智能和 GUI agent 的自动反馈设计有参考价值。
+- 来源：[arXiv](http://arxiv.org/abs/2606.27180v1)
 
-### Explaining Temporal Graph Neural Networks via Feature-induced Information Flow
-- 结论：这更偏训练、评测或可信度问题。
-- 为什么重要：先记住题目和方向，再决定要不要追完整原文。 
-- 来源：[Explaining Temporal Graph Neural Networks via Feature-induced Information Flow](http://arxiv.org/abs/2606.27201v1)
-- 建议：扫一眼
+### Hierarchical Muon / DMuon
+- 结论：优化器和训练效率仍然有新样本。
+- 为什么重要：推理经济学之外，训练效率仍会影响模型迭代成本。
+- 来源：[Hierarchical Muon](http://arxiv.org/abs/2606.27216v1)、[DMuon](http://arxiv.org/abs/2606.27153v1)
 
 ## 可以暂缓
 
-### 今天没有 Product Hunt 样本
-- 判断：今天先不要脑补新品发布面，Product Hunt 源当前未启用。 
+### 不要继续重复昨天的“上线前验证门”
+- 判断：今天仍有账单和权限问题，但新增更强的信号在 agent-ready 资料层、AI 搜索渠道变化、官方多模态目录。
+- 来源：[昨天机会页](./#2026-06-25/ai-opportunity)
+
+### Product Hunt 仍然没有样本
+- 判断：Product Hunt 源未启用，不要硬写新品发布趋势。
 - 来源：[今日原始快照](./raw-data.json)
 
-### 纯热度样本先别当成产品结论
-- 判断：不要一上来做完整平台，先验证团队最怕的是权限、泄露、卡死还是难追责。
-- 来源：[Claude Code #44180](https://github.com/anthropics/claude-code/issues/44180)、[Claude Code #63686](https://github.com/anthropics/claude-code/pull/63686)、[OpenAI Codex 0.142.2](https://github.com/openai/codex/releases)、[OpenAI Codex #30151](https://github.com/openai/codex/issues/30151)、[OpenAI Codex #30150](https://github.com/openai/codex/issues/30150)
+### OpenMontage 仍热，但不是今天新增主线
+- 判断：它继续在 GitHub 热门里，但昨天和前天已经覆盖过创作流水线。
+- 来源：[OpenMontage](https://github.com/calesthio/OpenMontage)
 
 ## 原始入口
 
 - [今日原始快照 raw-data.json](./raw-data.json) — 看当天完整样本和源数据状态。
-- [How Agents Are Transforming Work](https://openai.com/index/how-agents-are-transforming-work/) — 今天官网源里最值得回看的新增页面。
-- [Models — Google DeepMind](https://deepmind.google/models/) — 今天官网源里最值得回看的新增页面。
-- [OpenClaw](https://github.com/openclaw/openclaw) — 看今天 issue / PR / release 最密集的仓库。
-- [Gemini CLI](https://github.com/google-gemini/gemini-cli) — 看今天 issue / PR / release 最密集的仓库。
-- [Show HN: OpenKnowledge – open source AI-first alternative to Obsidian/Notion](https://github.com/inkeep/open-knowledge) — 看国外开发者今天在争什么。
-
----
-
-> 本页由每日保底脚本生成，用于保证站点每日都有可读更新；后续可以被更高质量的人工 / Codex 版本覆盖。生成时间: 2026-06-26 01:02 UTC
+- [AI 社交媒体信号](./#2026-06-26/ai-social) — 看用户情绪和早期反馈。
+- [OpenAI: How Agents Are Transforming Work](https://openai.com/index/how-agents-are-transforming-work/) — 官方 agent 工作叙事。
+- [DeepMind Models](https://deepmind.google/models/) — 今日多模态模型目录入口。
+- [OpenKnowledge](https://github.com/inkeep/open-knowledge) — AI-first 知识库信号。
+- [design.md](https://github.com/google-labs-code/design.md) — agent-ready 设计上下文信号。
+- [AWS Agent Toolkit](https://github.com/aws/agent-toolkit-for-aws) — 云厂商 agent 工具包信号。
