@@ -1,6 +1,6 @@
 {
   "anthropic": {
-    "lastChecked": "2026-06-30T00:59:21.498Z",
+    "lastChecked": "2026-07-01T01:03:34.141Z",
     "seenUrls": {
       "https://www.anthropic.com/news/responsible-scaling-policy-v3": "2026-02-25T23:57:06.000Z",
       "https://www.anthropic.com/research/deprecation-updates-opus-3": "2026-02-25T20:58:11.000Z",
@@ -387,7 +387,7 @@
       "https://www.anthropic.com/news/anthropic-public-record": "2026-06-12T16:24:44.000Z",
       "https://www.anthropic.com/research/claude-code-expertise": "2026-06-26T12:25:45.000Z",
       "https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem": "2026-06-26T12:27:32.000Z",
-      "https://www.anthropic.com/research/team/frontier-red-team": "2026-06-17T17:03:48.000Z",
+      "https://www.anthropic.com/research/team/frontier-red-team": "2026-06-30T08:57:47.000Z",
       "https://www.anthropic.com/research/mythos-preview": "2026-06-26T12:27:49.000Z",
       "https://www.anthropic.com/research/nuclear-safeguards-for-ai": "2026-06-24T14:21:03.000Z",
       "https://www.anthropic.com/research/n-days": "2026-06-17T16:51:58.000Z",
@@ -405,11 +405,13 @@
       "https://www.anthropic.com/research/biorisk": "2026-06-17T16:47:23.000Z",
       "https://www.anthropic.com/research/project-fetch-phase-two": "2026-06-26T12:28:05.000Z",
       "https://www.anthropic.com/news/introducing-claude-tag": "2026-06-26T12:23:43.000Z",
-      "https://www.anthropic.com/research/economic-index-june-2026-report": "2026-06-26T23:50:17.000Z"
+      "https://www.anthropic.com/research/economic-index-june-2026-report": "2026-06-26T23:50:17.000Z",
+      "https://www.anthropic.com/news/claude-sonnet-5": "2026-06-30T21:20:30.000Z",
+      "https://www.anthropic.com/news/claude-science-ai-workbench": "2026-06-30T18:43:57.000Z"
     }
   },
   "openai": {
-    "lastChecked": "2026-06-30T00:59:21.345Z",
+    "lastChecked": "2026-07-01T01:03:21.633Z",
     "seenUrls": {
       "https://openai.com/index/arvind-kc-chief-people-officer/": "2026-05-29T00:25:33.242Z",
       "https://openai.com/index/put-ai-to-work-for-your-product-team/": "2026-06-12T04:05:36.713Z",
@@ -1127,22 +1129,24 @@
       "https://openai.com/index/chatgpt-enterprise-spend-controls/": "2026-06-29T20:50:32.610Z",
       "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment/": "2026-06-29T15:56:02.566Z",
       "https://openai.com/index/daybreak-securing-the-world/": "2026-06-25T10:12:01.877Z",
-      "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/": "2026-06-28T21:56:30.090Z",
-      "https://openai.com/index/how-agents-are-transforming-work/": "2026-06-29T14:41:28.572Z",
-      "https://openai.com/index/previewing-gpt-5-6-sol/": "2026-06-29T15:35:03.069Z",
-      "https://openai.com/index/hp-frontier-partnership/": "2026-06-29T23:33:16.599Z"
+      "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/": "2026-06-30T21:07:10.453Z",
+      "https://openai.com/index/how-agents-are-transforming-work/": "2026-07-01T00:26:24.676Z",
+      "https://openai.com/index/previewing-gpt-5-6-sol/": "2026-06-30T18:42:04.752Z",
+      "https://openai.com/index/hp-frontier-partnership/": "2026-07-01T01:00:41.831Z",
+      "https://openai.com/index/introducing-genebench-pro/": "2026-06-30T23:04:03.511Z",
+      "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug/": "2026-06-30T22:29:12.784Z"
     }
   },
   "deepmind": {
-    "lastChecked": "2026-06-30T00:59:19.839Z",
+    "lastChecked": "2026-07-01T01:03:22.586Z",
     "seenUrls": {
       "https://deepmind.google/models/model-cards/gemini-3-1-flash-image/": "2026-05-23",
-      "https://deepmind.google/models/model-cards/": "2026-06-10",
+      "https://deepmind.google/models/model-cards/": "2026-06-30",
       "https://deepmind.google/models/gemini/": "2026-06-25",
       "https://deepmind.google/blog/alphaevolve-impact/": "2026-05-26",
       "https://deepmind.google/blog/co-scientist-a-multi-agent-ai-partner-to-accelerate-research/": "2026-06-17",
       "https://deepmind.google/blog/strengthening-singapores-ai-future-a-new-national-partnership/": "2026-05-20",
-      "https://deepmind.google/models/": "2026-06-25",
+      "https://deepmind.google/models/": "2026-06-30",
       "https://deepmind.google/models/gemini/pro/": "2026-06-25",
       "https://deepmind.google/models/gemini/flash/": "2026-06-25",
       "https://deepmind.google/models/gemini/flash-lite/": "2026-06-25",
@@ -1157,7 +1161,7 @@
       "https://deepmind.google/models/model-cards/gemini-3-1-flash-lite/": "2026-05-19",
       "https://deepmind.google/models/model-cards/gemini-omni-flash/": "2026-05-19",
       "https://deepmind.google/models/model-cards/gemini-3-5-flash/": "2026-05-19",
-      "https://deepmind.google/models/gemini-image/": "2026-05-19",
+      "https://deepmind.google/models/gemini-image/": "2026-06-30",
       "https://deepmind.google/models/gemini-image/pro/": "2026-06-29",
       "https://deepmind.google/models/gemini-image/flash/": "2026-06-29",
       "https://deepmind.google/models/gemini-image/prompt-guide/": "2026-06-25",
@@ -1167,7 +1171,7 @@
       "https://deepmind.google/models/gemini-audio/audio-understanding/": "2026-06-25",
       "https://deepmind.google/models/genie/": "2026-05-19",
       "https://deepmind.google/models/genie/prompt-guide/": "2026-06-25",
-      "https://deepmind.google/models/gemini-omni/": "2026-06-25",
+      "https://deepmind.google/models/gemini-omni/": "2026-06-30",
       "https://deepmind.google/models/gemini-omni/prompt-guide/": "2026-06-25",
       "https://deepmind.google/blog/": "2026-05-19",
       "https://deepmind.google/blog/how-weathernext-helped-the-national-hurricane-center-better-predict-hurricane-melissas-historic-landfall-in-jamaica/": "2026-05-19",
@@ -1559,11 +1563,13 @@
       "https://deepmind.google/blog/unlocking-uk-house-building-with-ai-accelerated-planning/": "2026-06-16",
       "https://deepmind.google/blog/securing-the-future-of-ai-agents/": "2026-06-18",
       "https://deepmind.google/models/gemma/gemmaverse/navatech/": "2026-06-24",
-      "https://deepmind.google/models/gemma/gemmaverse/syngenta/": "2026-06-24"
+      "https://deepmind.google/models/gemma/gemmaverse/syngenta/": "2026-06-24",
+      "https://deepmind.google/models/model-cards/gemini-3-1-flash-lite-image/": "2026-06-30",
+      "https://deepmind.google/models/gemini-image/flash-lite/": "2026-06-30"
     }
   },
   "qwen": {
-    "lastChecked": "2026-06-30T00:59:18.782Z",
+    "lastChecked": "2026-07-01T01:03:19.304Z",
     "seenUrls": {
       "https://qwenlm.github.io/zh/blog/qwen3guard/": "2025-09-23T04:00:00+08:00",
       "https://qwenlm.github.io/zh/blog/": "2025-09-23T04:00:00+08:00",
@@ -1613,7 +1619,7 @@
     }
   },
   "deepseek": {
-    "lastChecked": "2026-06-30T00:59:19.854Z",
+    "lastChecked": "2026-07-01T01:03:20.243Z",
     "seenUrls": {
       "https://api-docs.deepseek.com/news/news0725": "seen",
       "https://api-docs.deepseek.com/news/news0802": "seen",
