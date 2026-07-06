@@ -1,6 +1,6 @@
 {
   "anthropic": {
-    "lastChecked": "2026-07-05T03:38:07.360Z",
+    "lastChecked": "2026-07-06T03:45:50.831Z",
     "seenUrls": {
       "https://www.anthropic.com/news/responsible-scaling-policy-v3": "2026-02-25T23:57:06.000Z",
       "https://www.anthropic.com/research/deprecation-updates-opus-3": "2026-02-25T20:58:11.000Z",
@@ -414,7 +414,7 @@
     }
   },
   "openai": {
-    "lastChecked": "2026-07-05T03:38:11.594Z",
+    "lastChecked": "2026-07-06T03:45:50.369Z",
     "seenUrls": {
       "https://openai.com/index/arvind-kc-chief-people-officer/": "2026-05-29T00:25:33.242Z",
       "https://openai.com/index/put-ai-to-work-for-your-product-team/": "2026-06-12T04:05:36.713Z",
@@ -1126,7 +1126,7 @@
       "https://openai.com/index/openai-on-oracle-cloud/": "2026-06-19T19:55:28.635Z",
       "https://openai.com/index/openai-to-acquire-ona/": "2026-06-19T05:51:09.079Z",
       "https://openai.com/index/introducing-openai-partner-network/": "2026-06-23T13:22:27.216Z",
-      "https://openai.com/index/deployment-simulation/": "2026-06-25T15:33:31.672Z",
+      "https://openai.com/index/deployment-simulation/": "2026-07-06T01:55:00.815Z",
       "https://openai.com/index/introducing-life-sci-bench/": "2026-06-24T20:50:25.977Z",
       "https://openai.com/index/improving-health-intelligence-in-chatgpt/": "2026-06-24T00:36:27.755Z",
       "https://openai.com/index/chatgpt-enterprise-spend-controls/": "2026-06-29T20:50:32.610Z",
@@ -1137,11 +1137,11 @@
       "https://openai.com/index/previewing-gpt-5-6-sol/": "2026-07-01T23:15:29.963Z",
       "https://openai.com/index/hp-frontier-partnership/": "2026-07-01T23:23:03.958Z",
       "https://openai.com/index/introducing-genebench-pro/": "2026-07-03T20:54:36.291Z",
-      "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug/": "2026-07-04T04:10:44.389Z"
+      "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug/": "2026-07-05T09:09:26.257Z"
     }
   },
   "deepmind": {
-    "lastChecked": "2026-07-05T03:38:07.198Z",
+    "lastChecked": "2026-07-06T03:45:47.228Z",
     "seenUrls": {
       "https://deepmind.google/models/model-cards/gemini-3-1-flash-image/": "2026-05-23",
       "https://deepmind.google/models/model-cards/": "2026-06-30",
@@ -1572,7 +1572,7 @@
     }
   },
   "qwen": {
-    "lastChecked": "2026-07-05T03:38:07.190Z",
+    "lastChecked": "2026-07-06T03:45:47.144Z",
     "seenUrls": {
       "https://qwenlm.github.io/zh/blog/qwen3guard/": "2025-09-23T04:00:00+08:00",
       "https://qwenlm.github.io/zh/blog/": "2025-09-23T04:00:00+08:00",
@@ -1622,7 +1622,7 @@
     }
   },
   "deepseek": {
-    "lastChecked": "2026-07-05T03:38:07.936Z",
+    "lastChecked": "2026-07-06T03:45:48.044Z",
     "seenUrls": {
       "https://api-docs.deepseek.com/news/news0725": "seen",
       "https://api-docs.deepseek.com/news/news0802": "seen",
