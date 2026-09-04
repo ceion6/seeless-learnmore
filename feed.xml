@@ -6,7 +6,371 @@
     <description>中文 AI 趋势筛选面板 · High-signal AI radar in Chinese</description>
     <language>zh-CN</language>
     <atom:link href="https://ceion6.github.io/seeless-learnmore/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 03 Sep 2026 03:30:36 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 04 Sep 2026 03:30:50 +0000</lastBuildDate>
+    <item>
+      <title>少看点 AI 雷达 2026-09-04</title>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-09-04/ai-radar</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-09-04/ai-radar</guid>
+      <pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>
+      <description>少看点 AI 雷达 2026-09-04 团队真正不敢放开的，通常不是生成能力，而是权限、验证和回滚。 覆盖提醒：官网源：今日新增 10 条官网内容。；Product Hunt：该源今天未启用，所以没有 Product Hunt 数据；这不是抓取失败。；ArXiv：已抓取到 50 篇论文。 今天必看 OpenClaw 生态今天更新密度最高 结论：OpenClaw 在 24 小时内累计出现 636 个 issue / PR / release 样本。 为什么重要：仓库更新密度高，通常代表工具链正在快速试错，值得先看真实问题和新增能力。 来源：OpenClaw 建议：看原文 GitHub 热门样本里出现 fmtlib/fmt 结论：fmtlib/fmt 进入当天高热样本，说明相关方向正在被开发者集中试用。 为什么重要：开源热度不是质量证明，但很适合拿来判断今天大家到底把注意力投向哪里。 来源：fmtlib/fmt 建议：扫一眼 官网源今天新增了 Investigating three real-world incidents in our cybersecurity evaluations...</description>
+      <content:encoded><![CDATA[<h1>少看点 AI 雷达 2026-09-04</h1>
+<blockquote>
+<p>团队真正不敢放开的，通常不是生成能力，而是权限、验证和回滚。</p>
+<p>覆盖提醒：官网源：今日新增 10 条官网内容。；Product Hunt：该源今天未启用，所以没有 Product Hunt 数据；这不是抓取失败。；ArXiv：已抓取到 50 篇论文。</p>
+</blockquote>
+<h2>今天必看</h2>
+<h3>OpenClaw 生态今天更新密度最高</h3>
+<ul>
+<li>结论：OpenClaw 在 24 小时内累计出现 636 个 issue / PR / release 样本。</li>
+<li>为什么重要：仓库更新密度高，通常代表工具链正在快速试错，值得先看真实问题和新增能力。 </li>
+<li>来源：<a href="https://github.com/openclaw/openclaw">OpenClaw</a></li>
+<li>建议：看原文</li>
+</ul>
+<h3>GitHub 热门样本里出现 fmtlib/fmt</h3>
+<ul>
+<li>结论：fmtlib/fmt 进入当天高热样本，说明相关方向正在被开发者集中试用。</li>
+<li>为什么重要：开源热度不是质量证明，但很适合拿来判断今天大家到底把注意力投向哪里。 </li>
+<li>来源：<a href="https://github.com/fmtlib/fmt">fmtlib/fmt</a></li>
+<li>建议：扫一眼</li>
+</ul>
+<h3>官网源今天新增了 Investigating three real-world incidents in our cybersecurity evaluations</h3>
+<ul>
+<li>结论：anthropic 官网今天抓到新页面 Investigating three real-world incidents in our cybersecurity evaluations。</li>
+<li>为什么重要：官网源的新增通常比社区转述更接近一手表述，适合用来确认公司到底在推什么。 </li>
+<li>来源：<a href="https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals">Investigating three real-world incidents in our cybersecurity evaluations</a></li>
+<li>建议：看原文</li>
+</ul>
+<h3>HN 今天在讨论 GPT-6 Astra</h3>
+<ul>
+<li>结论：GPT-6 Astra 进入今天的高讨论样本，社区更关注真实采用边界而不是单条宣传。</li>
+<li>为什么重要：HN 的高分讨论适合拿来观察开发者到底在担心什么、争什么。 </li>
+<li>来源：<a href="https://openai.com/index/gpt-6-astra/">GPT-6 Astra</a></li>
+<li>建议：看原文</li>
+</ul>
+<h3>Hugging Face 热榜里有 zai-org/GLM-5.3</h3>
+<ul>
+<li>结论：zai-org/GLM-5.3 进入今日模型热榜，说明社区对这条模型路线仍有明确兴趣。</li>
+<li>为什么重要：模型热榜更适合判断可部署能力和开发者实验面，而不是只看头部闭源叙事。 </li>
+<li>来源：<a href="https://huggingface.co/zai-org/GLM-5.3">zai-org/GLM-5.3</a></li>
+<li>建议：扫一眼</li>
+</ul>
+<h2>社交媒体在聊什么</h2>
+<h3>AI ethics and the future of safety | Dr. Roman Yampolskiy | TEDxMiami …</h3>
+<ul>
+<li>判断：Mastodon 上出现高互动讨论，互动分 8，回复 0。</li>
+<li>为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。</li>
+<li>来源：<a href="https://social.vivaldi.net/@rogerc2738/117210531150658212">Mastodon</a></li>
+</ul>
+<h3>Harnessing the Power of techtonique.net: A Comprehensive Guide to Mach…</h3>
+<ul>
+<li>判断：Mastodon 上出现高互动讨论，互动分 8，回复 0。</li>
+<li>为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。</li>
+<li>来源：<a href="https://mastodon.social/@teeeeeeeee/117207937018104977">Mastodon</a></li>
+</ul>
+<h3>💻 pandas-ai: 23.7 k ⭐ I have opinions about AI wrappers on DataFrames…</h3>
+<ul>
+<li>判断：Mastodon 上出现高互动讨论，互动分 8，回复 0。</li>
+<li>为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。</li>
+<li>来源：<a href="https://tech.lgbt/@jesper/117206518829647473">Mastodon</a></li>
+</ul>
+<h3>いつの間にか、カンナが僕よりQualcommについて詳しくなってましたです Lenovo「IdeaPad Vibe」発表。MacBook N…</h3>
+<ul>
+<li>判断：Mastodon 上出现高互动讨论，互动分 8，回复 0。</li>
+<li>为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。</li>
+<li>来源：<a href="https://mastodon.crazynewworld.net/@hans/117210278272860306">Mastodon</a></li>
+</ul>
+<h2>正在升温</h2>
+<h3>Agent 执行护栏与回滚审计层</h3>
+<ul>
+<li>结论：runtime、sandbox、hook、benchmark 可信度这些问题正在反复出现。</li>
+<li>来源：<a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.260</a>、<a href="https://github.com/anthropics/claude-code/issues/91972">Claude Code #91972</a>、<a href="https://github.com/anthropics/claude-code/issues/91870">Claude Code #91870</a>、<a href="https://github.com/anthropics/claude-code/pull/89404">Claude Code #89404</a>、<a href="https://github.com/openai/codex/issues/42027">OpenAI Codex #42027</a></li>
+</ul>
+<h3>Agent 会话沉淀与团队记忆层</h3>
+<ul>
+<li>结论：memory、wiki、session archive、version snapshot 这条线正在慢慢成形。</li>
+<li>来源：<a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.260</a>、<a href="https://github.com/anthropics/claude-code/issues/91973">Claude Code #91973</a>、<a href="https://github.com/anthropics/claude-code/issues/91972">Claude Code #91972</a>、<a href="https://github.com/anthropics/claude-code/issues/91971">Claude Code #91971</a>、<a href="https://github.com/anthropics/claude-code/pull/79150">Claude Code #79150</a></li>
+</ul>
+<h3>浏览器/终端工作流模板包</h3>
+<ul>
+<li>结论：DevTools、browser、CLI 和 task automation 的结合信号在变强。</li>
+<li>来源：<a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.260</a>、<a href="https://github.com/anthropics/claude-code/issues/91973">Claude Code #91973</a>、<a href="https://github.com/anthropics/claude-code/issues/91972">Claude Code #91972</a>、<a href="https://github.com/anthropics/claude-code/issues/91971">Claude Code #91971</a>、<a href="https://github.com/anthropics/claude-code/issues/91870">Claude Code #91870</a></li>
+</ul>
+<h3>团队级技能包与插件目录</h3>
+<ul>
+<li>结论：skills、plugins、MCP、hooks 和 workflow 模板正在形成独立分发层。</li>
+<li>来源：<a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.260</a>、<a href="https://github.com/anthropics/claude-code/issues/91972">Claude Code #91972</a>、<a href="https://github.com/anthropics/claude-code/issues/91971">Claude Code #91971</a>、<a href="https://github.com/anthropics/claude-code/issues/91870">Claude Code #91870</a>、<a href="https://github.com/anthropics/claude-code/pull/91894">Claude Code #91894</a></li>
+</ul>
+<h2>新模型 / 新产品</h2>
+<h3>zai-org/GLM-5.3</h3>
+<ul>
+<li>结论：zai-org/GLM-5.3 进入模型热榜，pipeline=text-generation。</li>
+<li>为什么重要：模型热榜可以帮助判断今天社区愿意先试哪些可部署能力。 </li>
+<li>来源：<a href="https://huggingface.co/zai-org/GLM-5.3">zai-org/GLM-5.3</a></li>
+<li>建议：扫一眼</li>
+</ul>
+<h3>Qwen/Qwen3.8-Flash-Next</h3>
+<ul>
+<li>结论：Qwen/Qwen3.8-Flash-Next 进入模型热榜，pipeline=image-text-to-text。</li>
+<li>为什么重要：模型热榜可以帮助判断今天社区愿意先试哪些可部署能力。 </li>
+<li>来源：<a href="https://huggingface.co/Qwen/Qwen3.8-Flash-Next">Qwen/Qwen3.8-Flash-Next</a></li>
+<li>建议：扫一眼</li>
+</ul>
+<h3>zai-org/GLM-5.3-Flash</h3>
+<ul>
+<li>结论：zai-org/GLM-5.3-Flash 进入模型热榜，pipeline=image-text-to-text。</li>
+<li>为什么重要：模型热榜可以帮助判断今天社区愿意先试哪些可部署能力。 </li>
+<li>来源：<a href="https://huggingface.co/zai-org/GLM-5.3-Flash">zai-org/GLM-5.3-Flash</a></li>
+<li>建议：扫一眼</li>
+</ul>
+<h2>论文里可能有用的东西</h2>
+<h3>Compile by Training: Turning Natural-Language Specifications into Local Neural Functions</h3>
+<ul>
+<li>结论：这值得先记住题目，再等更完整样本复盘。</li>
+<li>为什么重要：先记住题目和方向，再决定要不要追完整原文。 </li>
+<li>来源：<a href="http://arxiv.org/abs/2609.04199v1">Compile by Training: Turning Natural-Language Specifications into Local Neural Functions</a></li>
+<li>建议：扫一眼</li>
+</ul>
+<h3>Clean Engineering, Unstable Measurement: A Preregistered Reliability Failure of Black-Box LLM Observers on Shared Endpoints</h3>
+<ul>
+<li>结论：这值得先记住题目，再等更完整样本复盘。</li>
+<li>为什么重要：先记住题目和方向，再决定要不要追完整原文。 </li>
+<li>来源：<a href="http://arxiv.org/abs/2609.04198v1">Clean Engineering, Unstable Measurement: A Preregistered Reliability Failure of Black-Box LLM Observers on Shared Endpoints</a></li>
+<li>建议：扫一眼</li>
+</ul>
+<h3>ESPO: Error-Structured Prompt Optimization via Diagnose, Diversify, and Stabilize</h3>
+<ul>
+<li>结论：这更偏训练、评测或可信度问题。</li>
+<li>为什么重要：先记住题目和方向，再决定要不要追完整原文。 </li>
+<li>来源：<a href="http://arxiv.org/abs/2609.04197v1">ESPO: Error-Structured Prompt Optimization via Diagnose, Diversify, and Stabilize</a></li>
+<li>建议：扫一眼</li>
+</ul>
+<h2>可以暂缓</h2>
+<h3>今天没有 Product Hunt 样本</h3>
+<ul>
+<li>判断：今天先不要脑补新品发布面，Product Hunt 源当前未启用。 </li>
+<li>来源：<a href="./raw-data.json">今日原始快照</a></li>
+</ul>
+<h3>纯热度样本先别当成产品结论</h3>
+<ul>
+<li>判断：不要一上来做完整平台，先验证团队最怕的是权限、泄露、卡死还是难追责。</li>
+<li>来源：<a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.260</a>、<a href="https://github.com/anthropics/claude-code/issues/91972">Claude Code #91972</a>、<a href="https://github.com/anthropics/claude-code/issues/91870">Claude Code #91870</a>、<a href="https://github.com/anthropics/claude-code/pull/89404">Claude Code #89404</a>、<a href="https://github.com/openai/codex/issues/42027">OpenAI Codex #42027</a></li>
+</ul>
+<h2>原始入口</h2>
+<ul>
+<li><a href="./raw-data.json">今日原始快照 raw-data.json</a> — 看当天完整样本和源数据状态。</li>
+<li><a href="https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals">Investigating three real-world incidents in our cybersecurity evaluations</a> — 今天官网源里最值得回看的新增页面。</li>
+<li><a href="https://openai.com/index/gpt-6-astra/">Gpt 6 Astra</a> — 今天官网源里最值得回看的新增页面。</li>
+<li><a href="https://github.com/openclaw/openclaw">OpenClaw</a> — 看今天 issue / PR / release 最密集的仓库。</li>
+<li><a href="https://github.com/openai/codex">OpenAI Codex</a> — 看今天 issue / PR / release 最密集的仓库。</li>
+<li><a href="https://openai.com/index/gpt-6-astra/">GPT-6 Astra</a> — 看国外开发者今天在争什么。</li>
+</ul>
+<hr>
+<blockquote>
+<p>本页由每日保底脚本生成，用于保证站点每日都有可读更新；后续可以被更高质量的人工 / Codex 版本覆盖。生成时间: 2026-09-04 03:30 UTC</p>
+</blockquote>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>AI 机会雷达 2026-09-04</title>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-09-04/ai-opportunity</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-09-04/ai-opportunity</guid>
+      <pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>
+      <description>AI 机会雷达 2026-09-04 今天更值得下注的，是 Agent 执行护栏与回滚审计层、Agent 会话沉淀与团队记忆层、浏览器/终端工作流模板包 这几类能在真实流程里立刻验证的机会。 先看结论 今天最值得做的机会，不在再做一个通用聊天入口，而在把 agent 接进真实工作流的薄层基础设施。 Agent 执行护栏与回滚审计层 是第一优先，因为 团队真正不敢放开的，通常不是生成能力，而是权限、验证和回滚。 Agent 会话沉淀与团队记忆层 也值得看，因为 当团队开始长期使用 agent，最大的浪费是每次会话都从零开始。 这些方向的共同点是：用户清晰、痛点具体，而且能在 2~6 周内做出第一版去试。 值得做的 3 个方向 Agent 执行护栏与回滚审计层 给谁做：已经让 agent 改代码、跑命令、触发 hook 的工程团队。 痛点：会话挂死、权限边界不清、结果难审计，出了错又很难回滚。 为什么是现在：今天的 GitHub issue、HN 讨论和论文信号都在提醒：agent 真实生产问题已经暴露出来了。 最小可行解：先做执行前检查、操作日志、产物校验和回滚建议，不必先做完整沙盒。 ...</description>
+      <content:encoded><![CDATA[<h1>AI 机会雷达 2026-09-04</h1>
+<blockquote>
+<p>今天更值得下注的，是 Agent 执行护栏与回滚审计层、Agent 会话沉淀与团队记忆层、浏览器/终端工作流模板包 这几类能在真实流程里立刻验证的机会。</p>
+</blockquote>
+<h2>先看结论</h2>
+<p>今天最值得做的机会，不在再做一个通用聊天入口，而在把 agent 接进真实工作流的薄层基础设施。
+Agent 执行护栏与回滚审计层 是第一优先，因为 团队真正不敢放开的，通常不是生成能力，而是权限、验证和回滚。
+Agent 会话沉淀与团队记忆层 也值得看，因为 当团队开始长期使用 agent，最大的浪费是每次会话都从零开始。
+这些方向的共同点是：用户清晰、痛点具体，而且能在 2~6 周内做出第一版去试。</p>
+<h2>值得做的 3 个方向</h2>
+<h3>Agent 执行护栏与回滚审计层</h3>
+<ul>
+<li>给谁做：已经让 agent 改代码、跑命令、触发 hook 的工程团队。</li>
+<li>痛点：会话挂死、权限边界不清、结果难审计，出了错又很难回滚。</li>
+<li>为什么是现在：今天的 GitHub issue、HN 讨论和论文信号都在提醒：agent 真实生产问题已经暴露出来了。</li>
+<li>最小可行解：先做执行前检查、操作日志、产物校验和回滚建议，不必先做完整沙盒。</li>
+<li>付费可能：这类产品贴近 DevInfra，接入流程后不容易切走，适合团队套餐或按执行量收费。</li>
+<li>证据：<a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.260</a>、<a href="https://github.com/anthropics/claude-code/issues/91972">Claude Code #91972</a>、<a href="https://github.com/anthropics/claude-code/issues/91870">Claude Code #91870</a>、<a href="https://github.com/anthropics/claude-code/pull/89404">Claude Code #89404</a>、<a href="https://github.com/openai/codex/issues/42027">OpenAI Codex #42027</a></li>
+<li>下一步：先访谈 5 个已经让 agent 跑命令的团队，确认他们最怕的失败类型。</li>
+</ul>
+<h3>Agent 会话沉淀与团队记忆层</h3>
+<ul>
+<li>给谁做：频繁用 agent 做排障、代码阅读、探索式开发的团队。</li>
+<li>痛点：会话关掉就散，后续无法复用决策、命令和上下文。</li>
+<li>为什么是现在：社区已经开始把会话转成 wiki、dashboard、长期知识资产，而不只是一次性聊天记录。</li>
+<li>最小可行解：先做会话提炼和归档，把结论、文件引用和关键步骤整理成团队笔记。</li>
+<li>付费可能：只要能减少重复排查和 onboarding 时间，就有明确的效率价值。</li>
+<li>证据：<a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.260</a>、<a href="https://github.com/anthropics/claude-code/issues/91973">Claude Code #91973</a>、<a href="https://github.com/anthropics/claude-code/issues/91972">Claude Code #91972</a>、<a href="https://github.com/anthropics/claude-code/issues/91971">Claude Code #91971</a>、<a href="https://github.com/anthropics/claude-code/pull/79150">Claude Code #79150</a></li>
+<li>下一步：先验证团队是否真的会回看 agent 会话，再决定要不要扩成完整知识库。</li>
+</ul>
+<h3>浏览器/终端工作流模板包</h3>
+<ul>
+<li>给谁做：做测试、后台运营、增长实验、数据录入的小团队。</li>
+<li>痛点：大家知道 agent 能碰浏览器和终端，但不知道怎么把它拼成稳定流程。</li>
+<li>为什么是现在：浏览器和命令行能力正逐步进入 agent 工具层，工作流模板开始有现实价值。</li>
+<li>最小可行解：先做网页巡检、表单回归、后台操作复盘这类模板包，而不是通用自动化平台。</li>
+<li>付费可能：只要能持续省掉人工重复操作，就适合按模板包或团队订阅收费。</li>
+<li>证据：<a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.260</a>、<a href="https://github.com/anthropics/claude-code/issues/91973">Claude Code #91973</a>、<a href="https://github.com/anthropics/claude-code/issues/91972">Claude Code #91972</a>、<a href="https://github.com/anthropics/claude-code/issues/91971">Claude Code #91971</a>、<a href="https://github.com/anthropics/claude-code/issues/91870">Claude Code #91870</a></li>
+<li>下一步：先挑一个现成 SOP 最明确的场景，让真实用户拿现网流程试一次。</li>
+</ul>
+<h2>次优但可观察</h2>
+<h3>团队级技能包与插件目录</h3>
+<ul>
+<li>现在看到了什么信号：skills、plugins、MCP、hooks 和 workflow 模板正在形成独立分发层。</li>
+<li>为什么先不重注：不要先做开放 marketplace，先验证团队内部有没有值得复用的 skill 配方。</li>
+<li>后续要继续观察什么：先验证目标团队是否已经沉淀出 5 个以上会重复使用的 agent 配方。</li>
+</ul>
+<h3>代码库上下文打底层</h3>
+<ul>
+<li>现在看到了什么信号：代码知识图谱、私有搜索和 repo understanding 还在持续升温。</li>
+<li>为什么先不重注：不要把“能索引代码”直接当成壁垒，关键是能不能接进真实任务前置环节。</li>
+<li>后续要继续观察什么：先找 3 个已经在用 coding agent 的团队，验证他们最常卡住的是“找不到该改哪里”。</li>
+</ul>
+<h3>模型侧机会先保持观察</h3>
+<ul>
+<li>现在看到了什么信号：zai-org/GLM-5.3 进入模型热榜，说明模型面仍有活跃样本。</li>
+<li>为什么先不重注：只看模型热度不够支撑产品方向，除非已经找到明确使用场景。 </li>
+<li>后续要继续观察什么：用户到底是更在意部署成本、隐私，还是某个具体能力差异。</li>
+</ul>
+<h2>今天先别做</h2>
+<h3>通用“再做一个 AI 助手”</h3>
+<ul>
+<li>原因：今天的信号更支持做上下文、护栏、复用层，而不是再做一个聊天壳。</li>
+</ul>
+<h3>纯资讯聚合或榜单站</h3>
+<ul>
+<li>原因：用户更缺的是可执行判断，不是再多一条信息流。</li>
+</ul>
+<h3>纯靠新品发布包装的方向</h3>
+<ul>
+<li>原因：今天 Product Hunt 样本不足，没必要用缺失数据硬凑产品热度。</li>
+</ul>
+<h3>先别把 Agent 执行护栏与回滚审计层 做成大平台</h3>
+<ul>
+<li>原因：不要一上来做完整平台，先验证团队最怕的是权限、泄露、卡死还是难追责。</li>
+</ul>
+<h2>开工顺序</h2>
+<ol>
+<li>先验证 Agent 执行护栏与回滚审计层 对目标用户是不是当前最痛的阻塞点，而不是先搭完整平台。</li>
+<li>先找已经在日常流程里用 agent 的团队试 Agent 会话沉淀与团队记忆层 或 Agent 执行护栏与回滚审计层，不要先找纯围观用户。</li>
+<li>如果 3 个用户里至少 2 个愿意拿真实仓库或真实流程试用，就继续；如果只有“听起来不错”，就收窄切口。</li>
+</ol>
+<h2>原始入口</h2>
+<ul>
+<li><a href="./#2026-09-04/ai-radar">少看点 AI 雷达</a> — 先看当天的总判断。</li>
+<li><a href="./raw-data.json">今日原始快照 raw-data.json</a> — 看完整原始样本。</li>
+<li><a href="https://github.com/openclaw/openclaw">OpenClaw 活跃仓库</a> — 这是今天判断机会方向的直接证据。</li>
+<li><a href="https://github.com/openai/codex">OpenAI Codex 活跃仓库</a> — 这是今天判断机会方向的直接证据。</li>
+<li><a href="https://github.com/fmtlib/fmt">fmtlib/fmt</a> — 这是今天判断机会方向的直接证据。</li>
+<li><a href="https://github.com/mattpocock/skills">mattpocock/skills</a> — 这是今天判断机会方向的直接证据。</li>
+</ul>
+<hr>
+<blockquote>
+<p>本页由每日保底脚本生成，用于保证站点每天都有“能继续做什么”的可读版本；后续可以被更高质量的人工 / Codex 版本覆盖。生成时间: 2026-09-04 03:30 UTC</p>
+</blockquote>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>AI 社交媒体信号 2026-09-04</title>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-09-04/ai-social</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-09-04/ai-social</guid>
+      <pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>
+      <description>AI 社交媒体信号 2026-09-04 Bluesky：正常；Mastodon：正常 | 5 条讨论 | 2026-09-04 03:30 UTC 今日高互动讨论 AI ethics and the future of safety | Dr. Roman Yampolskiy | TEDxMiami # AI # ethics # tech… 来源平台：Mastodon 互动分：8；回复：0 作者：ADHDBard 查看讨论 Harnessing the Power of techtonique.net: A Comprehensive Guide to Machine Learning Classif… 来源平台：Mastodon 互动分：8；回复：0 作者：T@Techtonique 查看讨论 💻 pandas-ai: 23.7 k ⭐ I have opinions about AI wrappers on DataFrames. PandasAI lets you … 来源平台：Mastodon 互动分：8；回复：0 作者：Jesper Dr.amsch :v_enby:...</description>
+      <content:encoded><![CDATA[<h1>AI 社交媒体信号 2026-09-04</h1>
+<blockquote>
+<p>Bluesky：正常；Mastodon：正常 | 5 条讨论 | 2026-09-04 03:30 UTC</p>
+</blockquote>
+<hr>
+<h2>今日高互动讨论</h2>
+<h3>AI ethics and the future of safety | Dr. Roman Yampolskiy | TEDxMiami # AI # ethics # tech…</h3>
+<ul>
+<li>来源平台：Mastodon</li>
+<li>互动分：8；回复：0</li>
+<li>作者：ADHDBard</li>
+<li><a href="https://social.vivaldi.net/@rogerc2738/117210531150658212">查看讨论</a></li>
+</ul>
+<h3>Harnessing the Power of techtonique.net: A Comprehensive Guide to Machine Learning Classif…</h3>
+<ul>
+<li>来源平台：Mastodon</li>
+<li>互动分：8；回复：0</li>
+<li>作者：T@Techtonique</li>
+<li><a href="https://mastodon.social/@teeeeeeeee/117207937018104977">查看讨论</a></li>
+</ul>
+<h3>💻 pandas-ai: 23.7 k ⭐ I have opinions about AI wrappers on DataFrames. PandasAI lets you …</h3>
+<ul>
+<li>来源平台：Mastodon</li>
+<li>互动分：8；回复：0</li>
+<li>作者：Jesper Dr.amsch :v_enby:</li>
+<li><a href="https://tech.lgbt/@jesper/117206518829647473">查看讨论</a></li>
+</ul>
+<h3>いつの間にか、カンナが僕よりQualcommについて詳しくなってましたです Lenovo「IdeaPad Vibe」発表。MacBook Neoに競合しにいく意欲的カスタマイズモデ…</h3>
+<ul>
+<li>来源平台：Mastodon</li>
+<li>互动分：8；回复：0</li>
+<li>作者：ハンス</li>
+<li><a href="https://mastodon.crazynewworld.net/@hans/117210278272860306">查看讨论</a></li>
+</ul>
+<h3>むむ、Lakeですか。副館長としては冷静にならなければ もう1機種出ます。DellからMacBook Neo対抗の低価格ノートPC <a href="https://www">https://www</a>. gizmodo.jp/…</h3>
+<ul>
+<li>来源平台：Mastodon</li>
+<li>互动分：8；回复：0</li>
+<li>作者：ハンス</li>
+<li><a href="https://mastodon.crazynewworld.net/@hans/117210042756953425">查看讨论</a></li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>AI Social Signals 2026-09-04</title>
+      <link>https://ceion6.github.io/seeless-learnmore/#2026-09-04/ai-social-en</link>
+      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-09-04/ai-social-en</guid>
+      <pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>
+      <description>AI Social Signals 2026-09-04 Bluesky fetch: ok; Mastodon fetch: ok | 5 posts | 2026-09-04 03:30 UTC High-engagement discussions AI ethics and the future of safety | Dr. Roman Yampolskiy | TEDxMiami # AI # ethics # tech… Source: Mastodon Engagement score: 8; replies: 0 Author: ADHDBard Open discussion Harnessing the Power of techtonique.net: A Comprehensive Guide to Machine Learning Classif… Source: Mastodon Engagement score: 8; replies: 0 Author: T@Techtonique Open discussion 💻 pandas-ai: 23.7 ...</description>
+      <content:encoded><![CDATA[<h1>AI Social Signals 2026-09-04</h1>
+<blockquote>
+<p>Bluesky fetch: ok; Mastodon fetch: ok | 5 posts | 2026-09-04 03:30 UTC</p>
+</blockquote>
+<hr>
+<h2>High-engagement discussions</h2>
+<h3>AI ethics and the future of safety | Dr. Roman Yampolskiy | TEDxMiami # AI # ethics # tech…</h3>
+<ul>
+<li>Source: Mastodon</li>
+<li>Engagement score: 8; replies: 0</li>
+<li>Author: ADHDBard</li>
+<li><a href="https://social.vivaldi.net/@rogerc2738/117210531150658212">Open discussion</a></li>
+</ul>
+<h3>Harnessing the Power of techtonique.net: A Comprehensive Guide to Machine Learning Classif…</h3>
+<ul>
+<li>Source: Mastodon</li>
+<li>Engagement score: 8; replies: 0</li>
+<li>Author: T@Techtonique</li>
+<li><a href="https://mastodon.social/@teeeeeeeee/117207937018104977">Open discussion</a></li>
+</ul>
+<h3>💻 pandas-ai: 23.7 k ⭐ I have opinions about AI wrappers on DataFrames. PandasAI lets you …</h3>
+<ul>
+<li>Source: Mastodon</li>
+<li>Engagement score: 8; replies: 0</li>
+<li>Author: Jesper Dr.amsch :v_enby:</li>
+<li><a href="https://tech.lgbt/@jesper/117206518829647473">Open discussion</a></li>
+</ul>
+<h3>いつの間にか、カンナが僕よりQualcommについて詳しくなってましたです Lenovo「IdeaPad Vibe」発表。MacBook Neoに競合しにいく意欲的カスタマイズモデ…</h3>
+<ul>
+<li>Source: Mastodon</li>
+<li>Engagement score: 8; replies: 0</li>
+<li>Author: ハンス</li>
+<li><a href="https://mastodon.crazynewworld.net/@hans/117210278272860306">Open discussion</a></li>
+</ul>
+<h3>むむ、Lakeですか。副館長としては冷静にならなければ もう1機種出ます。DellからMacBook Neo対抗の低価格ノートPC <a href="https://www">https://www</a>. gizmodo.jp/…</h3>
+<ul>
+<li>Source: Mastodon</li>
+<li>Engagement score: 8; replies: 0</li>
+<li>Author: ハンス</li>
+<li><a href="https://mastodon.crazynewworld.net/@hans/117210042756953425">Open discussion</a></li>
+</ul>
+]]></content:encoded>
+    </item>
     <item>
       <title>少看点 AI 雷达 2026-09-03</title>
       <link>https://ceion6.github.io/seeless-learnmore/#2026-09-03/ai-radar</link>
@@ -2639,420 +3003,6 @@ Agent 会话沉淀与团队记忆层 也值得看，因为 当团队开始长期
 <hr>
 <blockquote>
 <p>本页由每日保底脚本生成，用于保证站点每天都有“能继续做什么”的可读版本；后续可以被更高质量的人工 / Codex 版本覆盖。生成时间: 2026-08-28 10:10 UTC</p>
-</blockquote>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>AI 社交媒体信号 2026-08-28</title>
-      <link>https://ceion6.github.io/seeless-learnmore/#2026-08-28/ai-social</link>
-      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-08-28/ai-social</guid>
-      <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
-      <description>AI 社交媒体信号 2026-08-28 Bluesky：正常；Mastodon：正常 | 9 条讨论 | 2026-08-28 10:10 UTC 今日高互动讨论 There is something deeply satisfying about true data sovereignty. No rate limits, no third… 来源平台：Mastodon 互动分：51；回复：1 作者：Larvitz :fedora: 查看讨论 My LLM cliché highlighter is up to 38 patterns now tools.simonwillison.net/llm-cliche-h... 来源平台：Bluesky 互动分：21；回复：0 作者：Simon Willison 查看讨论 Did you know? 3/4 of traffic from X are fake (bots). 1 in 10 likes are from a porn bot. Wh… 来源平台：Mastodon 互动分：12；回复：0 作者：Ivan Enderlin ...</description>
-      <content:encoded><![CDATA[<h1>AI 社交媒体信号 2026-08-28</h1>
-<blockquote>
-<p>Bluesky：正常；Mastodon：正常 | 9 条讨论 | 2026-08-28 10:10 UTC</p>
-</blockquote>
-<hr>
-<h2>今日高互动讨论</h2>
-<h3>There is something deeply satisfying about true data sovereignty. No rate limits, no third…</h3>
-<ul>
-<li>来源平台：Mastodon</li>
-<li>互动分：51；回复：1</li>
-<li>作者：Larvitz :fedora:</li>
-<li><a href="https://burningboard.net/@Larvitz/117169109398257110">查看讨论</a></li>
-</ul>
-<h3>My LLM cliché highlighter is up to 38 patterns now tools.simonwillison.net/llm-cliche-h...</h3>
-<ul>
-<li>来源平台：Bluesky</li>
-<li>互动分：21；回复：0</li>
-<li>作者：Simon Willison</li>
-<li><a href="https://bsky.app/profile/simonwillison.net/post/3mu5443unn22s">查看讨论</a></li>
-</ul>
-<h3>Did you know? 3/4 of traffic from X are fake (bots). 1 in 10 likes are from a porn bot. Wh…</h3>
-<ul>
-<li>来源平台：Mastodon</li>
-<li>互动分：12；回复：0</li>
-<li>作者：Ivan Enderlin 🦀</li>
-<li><a href="https://floss.social/@hywan/117172079194488546">查看讨论</a></li>
-</ul>
-<h3>I don&#39;t want to point and shame, but this one is exceptional… I&#39;ve opened a ticket about a…</h3>
-<ul>
-<li>来源平台：Mastodon</li>
-<li>互动分：12；回复：0</li>
-<li>作者：Ivan Enderlin 🦀</li>
-<li><a href="https://floss.social/@hywan/117172029228688850">查看讨论</a></li>
-</ul>
-<h3>Alan Perlis was a font of epigrams about computing, to the point where a collection of ove…</h3>
-<ul>
-<li>来源平台：Mastodon</li>
-<li>互动分：9；回复：1</li>
-<li>作者：Space Hobo</li>
-<li><a href="https://teh.entar.net/@spacehobo/117172266171699159">查看讨论</a></li>
-</ul>
-<h3>Bill Gates rivela le tre principali minacce dell’intelligenza artificiale 📌 Link all&#39;arti…</h3>
-<ul>
-<li>来源平台：Mastodon</li>
-<li>互动分：8；回复：0</li>
-<li>作者：Redhotcyber</li>
-<li><a href="https://mastodon.bida.im/@redhotcyber/117172455865484738">查看讨论</a></li>
-</ul>
-<h3>フェイさんはもうちょっと冷静にiPhoneのことを受け止めた方が…… Amazonスマイルセールで、iPhone AirやAirPods Pro 3のセールに加え、もうすぐ売れなく…</h3>
-<ul>
-<li>来源平台：Mastodon</li>
-<li>互动分：8；回复：0</li>
-<li>作者：ハンス</li>
-<li><a href="https://mastodon.crazynewworld.net/@hans/117171822180922091">查看讨论</a></li>
-</ul>
-<h3>Un modèle de langage ne peut pas écrire à la manière de Georges PEREC. La raison n&#39;est ni …</h3>
-<ul>
-<li>来源平台：Mastodon</li>
-<li>互动分：7；回复：0</li>
-<li>作者：chatpey</li>
-<li><a href="https://piaille.fr/@chatpey/117172164709850935">查看讨论</a></li>
-</ul>
-<h3>「但作为一名可靠性专家，我从这次演讲中最大的收获是，自主的LLM智能体可能会做出人类从未预料到的行为。 ... 在 OpenAI HuggingFace 事件中，问题不在于它们犯了…</h3>
-<ul>
-<li>来源平台：Mastodon</li>
-<li>互动分：7；回复：0</li>
-<li>作者：梅伊娜</li>
-<li><a href="https://mastodon.social/@meina/117171973609692993">查看讨论</a></li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>AI Social Signals 2026-08-28</title>
-      <link>https://ceion6.github.io/seeless-learnmore/#2026-08-28/ai-social-en</link>
-      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-08-28/ai-social-en</guid>
-      <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
-      <description>AI Social Signals 2026-08-28 Bluesky fetch: ok; Mastodon fetch: ok | 9 posts | 2026-08-28 10:10 UTC High-engagement discussions There is something deeply satisfying about true data sovereignty. No rate limits, no third… Source: Mastodon Engagement score: 51; replies: 1 Author: Larvitz :fedora: Open discussion My LLM cliché highlighter is up to 38 patterns now tools.simonwillison.net/llm-cliche-h... Source: Bluesky Engagement score: 21; replies: 0 Author: Simon Willison Open discussion Did you kn...</description>
-      <content:encoded><![CDATA[<h1>AI Social Signals 2026-08-28</h1>
-<blockquote>
-<p>Bluesky fetch: ok; Mastodon fetch: ok | 9 posts | 2026-08-28 10:10 UTC</p>
-</blockquote>
-<hr>
-<h2>High-engagement discussions</h2>
-<h3>There is something deeply satisfying about true data sovereignty. No rate limits, no third…</h3>
-<ul>
-<li>Source: Mastodon</li>
-<li>Engagement score: 51; replies: 1</li>
-<li>Author: Larvitz :fedora:</li>
-<li><a href="https://burningboard.net/@Larvitz/117169109398257110">Open discussion</a></li>
-</ul>
-<h3>My LLM cliché highlighter is up to 38 patterns now tools.simonwillison.net/llm-cliche-h...</h3>
-<ul>
-<li>Source: Bluesky</li>
-<li>Engagement score: 21; replies: 0</li>
-<li>Author: Simon Willison</li>
-<li><a href="https://bsky.app/profile/simonwillison.net/post/3mu5443unn22s">Open discussion</a></li>
-</ul>
-<h3>Did you know? 3/4 of traffic from X are fake (bots). 1 in 10 likes are from a porn bot. Wh…</h3>
-<ul>
-<li>Source: Mastodon</li>
-<li>Engagement score: 12; replies: 0</li>
-<li>Author: Ivan Enderlin 🦀</li>
-<li><a href="https://floss.social/@hywan/117172079194488546">Open discussion</a></li>
-</ul>
-<h3>I don&#39;t want to point and shame, but this one is exceptional… I&#39;ve opened a ticket about a…</h3>
-<ul>
-<li>Source: Mastodon</li>
-<li>Engagement score: 12; replies: 0</li>
-<li>Author: Ivan Enderlin 🦀</li>
-<li><a href="https://floss.social/@hywan/117172029228688850">Open discussion</a></li>
-</ul>
-<h3>Alan Perlis was a font of epigrams about computing, to the point where a collection of ove…</h3>
-<ul>
-<li>Source: Mastodon</li>
-<li>Engagement score: 9; replies: 1</li>
-<li>Author: Space Hobo</li>
-<li><a href="https://teh.entar.net/@spacehobo/117172266171699159">Open discussion</a></li>
-</ul>
-<h3>Bill Gates rivela le tre principali minacce dell’intelligenza artificiale 📌 Link all&#39;arti…</h3>
-<ul>
-<li>Source: Mastodon</li>
-<li>Engagement score: 8; replies: 0</li>
-<li>Author: Redhotcyber</li>
-<li><a href="https://mastodon.bida.im/@redhotcyber/117172455865484738">Open discussion</a></li>
-</ul>
-<h3>フェイさんはもうちょっと冷静にiPhoneのことを受け止めた方が…… Amazonスマイルセールで、iPhone AirやAirPods Pro 3のセールに加え、もうすぐ売れなく…</h3>
-<ul>
-<li>Source: Mastodon</li>
-<li>Engagement score: 8; replies: 0</li>
-<li>Author: ハンス</li>
-<li><a href="https://mastodon.crazynewworld.net/@hans/117171822180922091">Open discussion</a></li>
-</ul>
-<h3>Un modèle de langage ne peut pas écrire à la manière de Georges PEREC. La raison n&#39;est ni …</h3>
-<ul>
-<li>Source: Mastodon</li>
-<li>Engagement score: 7; replies: 0</li>
-<li>Author: chatpey</li>
-<li><a href="https://piaille.fr/@chatpey/117172164709850935">Open discussion</a></li>
-</ul>
-<h3>「但作为一名可靠性专家，我从这次演讲中最大的收获是，自主的LLM智能体可能会做出人类从未预料到的行为。 ... 在 OpenAI HuggingFace 事件中，问题不在于它们犯了…</h3>
-<ul>
-<li>Source: Mastodon</li>
-<li>Engagement score: 7; replies: 0</li>
-<li>Author: 梅伊娜</li>
-<li><a href="https://mastodon.social/@meina/117171973609692993">Open discussion</a></li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>少看点 AI 雷达 2026-08-27</title>
-      <link>https://ceion6.github.io/seeless-learnmore/#2026-08-27/ai-radar</link>
-      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-08-27/ai-radar</guid>
-      <pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
-      <description>少看点 AI 雷达 2026-08-27 团队真正不敢放开的，通常不是生成能力，而是权限、验证和回滚。 覆盖提醒：官网源：今日新增 41 条官网内容。；Product Hunt：该源今天未启用，所以没有 Product Hunt 数据；这不是抓取失败。；ArXiv：已抓取到 50 篇论文。 今天必看 OpenClaw 生态今天更新密度最高 结论：OpenClaw 在 24 小时内累计出现 685 个 issue / PR / release 样本。 为什么重要：仓库更新密度高，通常代表工具链正在快速试错，值得先看真实问题和新增能力。 来源：OpenClaw 建议：看原文 GitHub 热门样本里出现 tt-a1i/archify 结论：tt-a1i/archify 进入当天高热样本，说明相关方向正在被开发者集中试用。 为什么重要：开源热度不是质量证明，但很适合拿来判断今天大家到底把注意力投向哪里。 来源：tt-a1i/archify 建议：扫一眼 官网源今天新增了 Hugging Face Incident And The Road Ahead 结论：openai 官网今天抓到新页面 ...</description>
-      <content:encoded><![CDATA[<h1>少看点 AI 雷达 2026-08-27</h1>
-<blockquote>
-<p>团队真正不敢放开的，通常不是生成能力，而是权限、验证和回滚。</p>
-<p>覆盖提醒：官网源：今日新增 41 条官网内容。；Product Hunt：该源今天未启用，所以没有 Product Hunt 数据；这不是抓取失败。；ArXiv：已抓取到 50 篇论文。</p>
-</blockquote>
-<h2>今天必看</h2>
-<h3>OpenClaw 生态今天更新密度最高</h3>
-<ul>
-<li>结论：OpenClaw 在 24 小时内累计出现 685 个 issue / PR / release 样本。</li>
-<li>为什么重要：仓库更新密度高，通常代表工具链正在快速试错，值得先看真实问题和新增能力。 </li>
-<li>来源：<a href="https://github.com/openclaw/openclaw">OpenClaw</a></li>
-<li>建议：看原文</li>
-</ul>
-<h3>GitHub 热门样本里出现 tt-a1i/archify</h3>
-<ul>
-<li>结论：tt-a1i/archify 进入当天高热样本，说明相关方向正在被开发者集中试用。</li>
-<li>为什么重要：开源热度不是质量证明，但很适合拿来判断今天大家到底把注意力投向哪里。 </li>
-<li>来源：<a href="https://github.com/tt-a1i/archify">tt-a1i/archify</a></li>
-<li>建议：扫一眼</li>
-</ul>
-<h3>官网源今天新增了 Hugging Face Incident And The Road Ahead</h3>
-<ul>
-<li>结论：openai 官网今天抓到新页面 Hugging Face Incident And The Road Ahead。</li>
-<li>为什么重要：官网源的新增通常比社区转述更接近一手表述，适合用来确认公司到底在推什么。 </li>
-<li>来源：<a href="https://openai.com/index/hugging-face-incident-and-the-road-ahead/">Hugging Face Incident And The Road Ahead</a></li>
-<li>建议：看原文</li>
-</ul>
-<h3>HN 今天在讨论 CEO fired developers to make room for AI. Developers create open source AI CEO</h3>
-<ul>
-<li>结论：CEO fired developers to make room for AI. Developers create open source AI CEO 进入今天的高讨论样本，社区更关注真实采用边界而不是单条宣传。</li>
-<li>为什么重要：HN 的高分讨论适合拿来观察开发者到底在担心什么、争什么。 </li>
-<li>来源：<a href="https://github.com/SenteLabsAI/OpenExecutive">CEO fired developers to make room for AI. Developers create open source AI CEO</a></li>
-<li>建议：看原文</li>
-</ul>
-<h3>Hugging Face 热榜里有 Qwen/Qwen3.8-Flash-Next</h3>
-<ul>
-<li>结论：Qwen/Qwen3.8-Flash-Next 进入今日模型热榜，说明社区对这条模型路线仍有明确兴趣。</li>
-<li>为什么重要：模型热榜更适合判断可部署能力和开发者实验面，而不是只看头部闭源叙事。 </li>
-<li>来源：<a href="https://huggingface.co/Qwen/Qwen3.8-Flash-Next">Qwen/Qwen3.8-Flash-Next</a></li>
-<li>建议：扫一眼</li>
-</ul>
-<h2>社交媒体在聊什么</h2>
-<h3>Satellites can now detect major methane leaks. AI can map the plume an…</h3>
-<ul>
-<li>判断：Mastodon 上出现高互动讨论，互动分 14，回复 0。</li>
-<li>为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。</li>
-<li>来源：<a href="https://masto.nu/@MoveTheNeedle/117166289364898399">Mastodon</a></li>
-</ul>
-<h3>Researchers at MIT have developed a framework called CrysVCD (crystal …</h3>
-<ul>
-<li>判断：Mastodon 上出现高互动讨论，互动分 10，回复 0。</li>
-<li>为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。</li>
-<li>来源：<a href="https://mastodon.social/@sflorg/117163573660382896">Mastodon</a></li>
-</ul>
-<h3>&#39;Bayesian&#39; optimization of hyperparameters in a R machine learning mod…</h3>
-<ul>
-<li>判断：Mastodon 上出现高互动讨论，互动分 7，回复 0。</li>
-<li>为什么值得看：社交平台更早暴露用户情绪、真实试用反馈和争议点，但不能单独当作事实结论。</li>
-<li>来源：<a href="https://mastodon.social/@teeeeeeeee/117165244925114886">Mastodon</a></li>
-</ul>
-<h2>正在升温</h2>
-<h3>Agent 执行护栏与回滚审计层</h3>
-<ul>
-<li>结论：runtime、sandbox、hook、benchmark 可信度这些问题正在反复出现。</li>
-<li>来源：<a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.247</a>、<a href="https://github.com/anthropics/claude-code/issues/89687">Claude Code #89687</a>、<a href="https://github.com/openai/codex/issues/39855">OpenAI Codex #39855</a>、<a href="https://github.com/openai/codex/issues/24453">OpenAI Codex #24453</a>、<a href="https://github.com/openai/codex/issues/24736">OpenAI Codex #24736</a></li>
-</ul>
-<h3>Agent 会话沉淀与团队记忆层</h3>
-<ul>
-<li>结论：memory、wiki、session archive、version snapshot 这条线正在慢慢成形。</li>
-<li>来源：<a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.247</a>、<a href="https://github.com/anthropics/claude-code/issues/89687">Claude Code #89687</a>、<a href="https://github.com/anthropics/claude-code/issues/88490">Claude Code #88490</a>、<a href="https://github.com/anthropics/claude-code/issues/90026">Claude Code #90026</a>、<a href="https://github.com/anthropics/claude-code/issues/90015">Claude Code #90015</a></li>
-</ul>
-<h3>浏览器/终端工作流模板包</h3>
-<ul>
-<li>结论：DevTools、browser、CLI 和 task automation 的结合信号在变强。</li>
-<li>来源：<a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.247</a>、<a href="https://github.com/anthropics/claude-code/issues/89687">Claude Code #89687</a>、<a href="https://github.com/anthropics/claude-code/issues/88490">Claude Code #88490</a>、<a href="https://github.com/anthropics/claude-code/issues/90026">Claude Code #90026</a>、<a href="https://github.com/anthropics/claude-code/issues/90015">Claude Code #90015</a></li>
-</ul>
-<h3>团队级技能包与插件目录</h3>
-<ul>
-<li>结论：skills、plugins、MCP、hooks 和 workflow 模板正在形成独立分发层。</li>
-<li>来源：<a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.247</a>、<a href="https://github.com/anthropics/claude-code/pull/13437">Claude Code #13437</a>、<a href="https://github.com/openai/codex/issues/24453">OpenAI Codex #24453</a>、<a href="https://github.com/openai/codex/issues/24736">OpenAI Codex #24736</a>、<a href="https://github.com/openai/codex/pull/41072">OpenAI Codex #41072</a></li>
-</ul>
-<h2>新模型 / 新产品</h2>
-<h3>Qwen/Qwen3.8-Flash-Next</h3>
-<ul>
-<li>结论：Qwen/Qwen3.8-Flash-Next 进入模型热榜，pipeline=image-text-to-text。</li>
-<li>为什么重要：模型热榜可以帮助判断今天社区愿意先试哪些可部署能力。 </li>
-<li>来源：<a href="https://huggingface.co/Qwen/Qwen3.8-Flash-Next">Qwen/Qwen3.8-Flash-Next</a></li>
-<li>建议：扫一眼</li>
-</ul>
-<h3>zai-org/GLM-5.3-Flash</h3>
-<ul>
-<li>结论：zai-org/GLM-5.3-Flash 进入模型热榜，pipeline=text-generation。</li>
-<li>为什么重要：模型热榜可以帮助判断今天社区愿意先试哪些可部署能力。 </li>
-<li>来源：<a href="https://huggingface.co/zai-org/GLM-5.3-Flash">zai-org/GLM-5.3-Flash</a></li>
-<li>建议：扫一眼</li>
-</ul>
-<h3>Qwen/Qwen3.8-27B</h3>
-<ul>
-<li>结论：Qwen/Qwen3.8-27B 进入模型热榜，pipeline=image-text-to-text。</li>
-<li>为什么重要：模型热榜可以帮助判断今天社区愿意先试哪些可部署能力。 </li>
-<li>来源：<a href="https://huggingface.co/Qwen/Qwen3.8-27B">Qwen/Qwen3.8-27B</a></li>
-<li>建议：扫一眼</li>
-</ul>
-<h2>论文里可能有用的东西</h2>
-<h3>VBVR-Pro: A Scalable and Verifiable Suite for Native Visual Reasoning</h3>
-<ul>
-<li>结论：这更偏训练、评测或可信度问题。</li>
-<li>为什么重要：先记住题目和方向，再决定要不要追完整原文。 </li>
-<li>来源：<a href="http://arxiv.org/abs/2608.26105v1">VBVR-Pro: A Scalable and Verifiable Suite for Native Visual Reasoning</a></li>
-<li>建议：扫一眼</li>
-</ul>
-<h3>A Visual Dependence-Aware Framework for Multimodal Unsupervised Continual Post-Training</h3>
-<ul>
-<li>结论：这更偏训练、评测或可信度问题。</li>
-<li>为什么重要：先记住题目和方向，再决定要不要追完整原文。 </li>
-<li>来源：<a href="http://arxiv.org/abs/2608.26095v1">A Visual Dependence-Aware Framework for Multimodal Unsupervised Continual Post-Training</a></li>
-<li>建议：扫一眼</li>
-</ul>
-<h3>MyoMechanix: Biomechanically-Grounded Compositional Skilled Activity Understanding and Coaching</h3>
-<ul>
-<li>结论：这更偏训练、评测或可信度问题。</li>
-<li>为什么重要：先记住题目和方向，再决定要不要追完整原文。 </li>
-<li>来源：<a href="http://arxiv.org/abs/2608.26094v1">MyoMechanix: Biomechanically-Grounded Compositional Skilled Activity Understanding and Coaching</a></li>
-<li>建议：扫一眼</li>
-</ul>
-<h2>可以暂缓</h2>
-<h3>今天没有 Product Hunt 样本</h3>
-<ul>
-<li>判断：今天先不要脑补新品发布面，Product Hunt 源当前未启用。 </li>
-<li>来源：<a href="./raw-data.json">今日原始快照</a></li>
-</ul>
-<h3>纯热度样本先别当成产品结论</h3>
-<ul>
-<li>判断：不要一上来做完整平台，先验证团队最怕的是权限、泄露、卡死还是难追责。</li>
-<li>来源：<a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.247</a>、<a href="https://github.com/anthropics/claude-code/issues/89687">Claude Code #89687</a>、<a href="https://github.com/openai/codex/issues/39855">OpenAI Codex #39855</a>、<a href="https://github.com/openai/codex/issues/24453">OpenAI Codex #24453</a>、<a href="https://github.com/openai/codex/issues/24736">OpenAI Codex #24736</a></li>
-</ul>
-<h2>原始入口</h2>
-<ul>
-<li><a href="./raw-data.json">今日原始快照 raw-data.json</a> — 看当天完整样本和源数据状态。</li>
-<li><a href="https://openai.com/index/hugging-face-incident-and-the-road-ahead/">Hugging Face Incident And The Road Ahead</a> — 今天官网源里最值得回看的新增页面。</li>
-<li><a href="https://openai.com/index/hugging-face-incident-and-the-road-ahead/">Hugging Face Incident And The Road Ahead</a> — 今天官网源里最值得回看的新增页面。</li>
-<li><a href="https://github.com/openclaw/openclaw">OpenClaw</a> — 看今天 issue / PR / release 最密集的仓库。</li>
-<li><a href="https://github.com/openai/codex">OpenAI Codex</a> — 看今天 issue / PR / release 最密集的仓库。</li>
-<li><a href="https://github.com/SenteLabsAI/OpenExecutive">CEO fired developers to make room for AI. Developers create open source AI CEO</a> — 看国外开发者今天在争什么。</li>
-</ul>
-<hr>
-<blockquote>
-<p>本页由每日保底脚本生成，用于保证站点每日都有可读更新；后续可以被更高质量的人工 / Codex 版本覆盖。生成时间: 2026-08-27 08:07 UTC</p>
-</blockquote>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>AI 机会雷达 2026-08-27</title>
-      <link>https://ceion6.github.io/seeless-learnmore/#2026-08-27/ai-opportunity</link>
-      <guid isPermaLink="true">https://ceion6.github.io/seeless-learnmore/#2026-08-27/ai-opportunity</guid>
-      <pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
-      <description>AI 机会雷达 2026-08-27 今天更值得下注的，是 Agent 执行护栏与回滚审计层、Agent 会话沉淀与团队记忆层、浏览器/终端工作流模板包 这几类能在真实流程里立刻验证的机会。 先看结论 今天最值得做的机会，不在再做一个通用聊天入口，而在把 agent 接进真实工作流的薄层基础设施。 Agent 执行护栏与回滚审计层 是第一优先，因为 团队真正不敢放开的，通常不是生成能力，而是权限、验证和回滚。 Agent 会话沉淀与团队记忆层 也值得看，因为 当团队开始长期使用 agent，最大的浪费是每次会话都从零开始。 这些方向的共同点是：用户清晰、痛点具体，而且能在 2~6 周内做出第一版去试。 值得做的 3 个方向 Agent 执行护栏与回滚审计层 给谁做：已经让 agent 改代码、跑命令、触发 hook 的工程团队。 痛点：会话挂死、权限边界不清、结果难审计，出了错又很难回滚。 为什么是现在：今天的 GitHub issue、HN 讨论和论文信号都在提醒：agent 真实生产问题已经暴露出来了。 最小可行解：先做执行前检查、操作日志、产物校验和回滚建议，不必先做完整沙盒。 ...</description>
-      <content:encoded><![CDATA[<h1>AI 机会雷达 2026-08-27</h1>
-<blockquote>
-<p>今天更值得下注的，是 Agent 执行护栏与回滚审计层、Agent 会话沉淀与团队记忆层、浏览器/终端工作流模板包 这几类能在真实流程里立刻验证的机会。</p>
-</blockquote>
-<h2>先看结论</h2>
-<p>今天最值得做的机会，不在再做一个通用聊天入口，而在把 agent 接进真实工作流的薄层基础设施。
-Agent 执行护栏与回滚审计层 是第一优先，因为 团队真正不敢放开的，通常不是生成能力，而是权限、验证和回滚。
-Agent 会话沉淀与团队记忆层 也值得看，因为 当团队开始长期使用 agent，最大的浪费是每次会话都从零开始。
-这些方向的共同点是：用户清晰、痛点具体，而且能在 2~6 周内做出第一版去试。</p>
-<h2>值得做的 3 个方向</h2>
-<h3>Agent 执行护栏与回滚审计层</h3>
-<ul>
-<li>给谁做：已经让 agent 改代码、跑命令、触发 hook 的工程团队。</li>
-<li>痛点：会话挂死、权限边界不清、结果难审计，出了错又很难回滚。</li>
-<li>为什么是现在：今天的 GitHub issue、HN 讨论和论文信号都在提醒：agent 真实生产问题已经暴露出来了。</li>
-<li>最小可行解：先做执行前检查、操作日志、产物校验和回滚建议，不必先做完整沙盒。</li>
-<li>付费可能：这类产品贴近 DevInfra，接入流程后不容易切走，适合团队套餐或按执行量收费。</li>
-<li>证据：<a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.247</a>、<a href="https://github.com/anthropics/claude-code/issues/89687">Claude Code #89687</a>、<a href="https://github.com/openai/codex/issues/39855">OpenAI Codex #39855</a>、<a href="https://github.com/openai/codex/issues/24453">OpenAI Codex #24453</a>、<a href="https://github.com/openai/codex/issues/24736">OpenAI Codex #24736</a></li>
-<li>下一步：先访谈 5 个已经让 agent 跑命令的团队，确认他们最怕的失败类型。</li>
-</ul>
-<h3>Agent 会话沉淀与团队记忆层</h3>
-<ul>
-<li>给谁做：频繁用 agent 做排障、代码阅读、探索式开发的团队。</li>
-<li>痛点：会话关掉就散，后续无法复用决策、命令和上下文。</li>
-<li>为什么是现在：社区已经开始把会话转成 wiki、dashboard、长期知识资产，而不只是一次性聊天记录。</li>
-<li>最小可行解：先做会话提炼和归档，把结论、文件引用和关键步骤整理成团队笔记。</li>
-<li>付费可能：只要能减少重复排查和 onboarding 时间，就有明确的效率价值。</li>
-<li>证据：<a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.247</a>、<a href="https://github.com/anthropics/claude-code/issues/89687">Claude Code #89687</a>、<a href="https://github.com/anthropics/claude-code/issues/88490">Claude Code #88490</a>、<a href="https://github.com/anthropics/claude-code/issues/90026">Claude Code #90026</a>、<a href="https://github.com/anthropics/claude-code/issues/90015">Claude Code #90015</a></li>
-<li>下一步：先验证团队是否真的会回看 agent 会话，再决定要不要扩成完整知识库。</li>
-</ul>
-<h3>浏览器/终端工作流模板包</h3>
-<ul>
-<li>给谁做：做测试、后台运营、增长实验、数据录入的小团队。</li>
-<li>痛点：大家知道 agent 能碰浏览器和终端，但不知道怎么把它拼成稳定流程。</li>
-<li>为什么是现在：浏览器和命令行能力正逐步进入 agent 工具层，工作流模板开始有现实价值。</li>
-<li>最小可行解：先做网页巡检、表单回归、后台操作复盘这类模板包，而不是通用自动化平台。</li>
-<li>付费可能：只要能持续省掉人工重复操作，就适合按模板包或团队订阅收费。</li>
-<li>证据：<a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.247</a>、<a href="https://github.com/anthropics/claude-code/issues/89687">Claude Code #89687</a>、<a href="https://github.com/anthropics/claude-code/issues/88490">Claude Code #88490</a>、<a href="https://github.com/anthropics/claude-code/issues/90026">Claude Code #90026</a>、<a href="https://github.com/anthropics/claude-code/issues/90015">Claude Code #90015</a></li>
-<li>下一步：先挑一个现成 SOP 最明确的场景，让真实用户拿现网流程试一次。</li>
-</ul>
-<h2>次优但可观察</h2>
-<h3>团队级技能包与插件目录</h3>
-<ul>
-<li>现在看到了什么信号：skills、plugins、MCP、hooks 和 workflow 模板正在形成独立分发层。</li>
-<li>为什么先不重注：不要先做开放 marketplace，先验证团队内部有没有值得复用的 skill 配方。</li>
-<li>后续要继续观察什么：先验证目标团队是否已经沉淀出 5 个以上会重复使用的 agent 配方。</li>
-</ul>
-<h3>代码库上下文打底层</h3>
-<ul>
-<li>现在看到了什么信号：代码知识图谱、私有搜索和 repo understanding 还在持续升温。</li>
-<li>为什么先不重注：不要把“能索引代码”直接当成壁垒，关键是能不能接进真实任务前置环节。</li>
-<li>后续要继续观察什么：先找 3 个已经在用 coding agent 的团队，验证他们最常卡住的是“找不到该改哪里”。</li>
-</ul>
-<h3>模型侧机会先保持观察</h3>
-<ul>
-<li>现在看到了什么信号：Qwen/Qwen3.8-Flash-Next 进入模型热榜，说明模型面仍有活跃样本。</li>
-<li>为什么先不重注：只看模型热度不够支撑产品方向，除非已经找到明确使用场景。 </li>
-<li>后续要继续观察什么：用户到底是更在意部署成本、隐私，还是某个具体能力差异。</li>
-</ul>
-<h2>今天先别做</h2>
-<h3>通用“再做一个 AI 助手”</h3>
-<ul>
-<li>原因：今天的信号更支持做上下文、护栏、复用层，而不是再做一个聊天壳。</li>
-</ul>
-<h3>纯资讯聚合或榜单站</h3>
-<ul>
-<li>原因：用户更缺的是可执行判断，不是再多一条信息流。</li>
-</ul>
-<h3>纯靠新品发布包装的方向</h3>
-<ul>
-<li>原因：今天 Product Hunt 样本不足，没必要用缺失数据硬凑产品热度。</li>
-</ul>
-<h3>先别把 Agent 执行护栏与回滚审计层 做成大平台</h3>
-<ul>
-<li>原因：不要一上来做完整平台，先验证团队最怕的是权限、泄露、卡死还是难追责。</li>
-</ul>
-<h2>开工顺序</h2>
-<ol>
-<li>先验证 Agent 执行护栏与回滚审计层 对目标用户是不是当前最痛的阻塞点，而不是先搭完整平台。</li>
-<li>先找已经在日常流程里用 agent 的团队试 Agent 会话沉淀与团队记忆层 或 Agent 执行护栏与回滚审计层，不要先找纯围观用户。</li>
-<li>如果 3 个用户里至少 2 个愿意拿真实仓库或真实流程试用，就继续；如果只有“听起来不错”，就收窄切口。</li>
-</ol>
-<h2>原始入口</h2>
-<ul>
-<li><a href="./#2026-08-27/ai-radar">少看点 AI 雷达</a> — 先看当天的总判断。</li>
-<li><a href="./raw-data.json">今日原始快照 raw-data.json</a> — 看完整原始样本。</li>
-<li><a href="https://github.com/openclaw/openclaw">OpenClaw 活跃仓库</a> — 这是今天判断机会方向的直接证据。</li>
-<li><a href="https://github.com/openai/codex">OpenAI Codex 活跃仓库</a> — 这是今天判断机会方向的直接证据。</li>
-<li><a href="https://github.com/tt-a1i/archify">tt-a1i/archify</a> — 这是今天判断机会方向的直接证据。</li>
-<li><a href="https://github.com/freestylefly/awesome-gpt-image-2">freestylefly/awesome-gpt-image-2</a> — 这是今天判断机会方向的直接证据。</li>
-</ul>
-<hr>
-<blockquote>
-<p>本页由每日保底脚本生成，用于保证站点每天都有“能继续做什么”的可读版本；后续可以被更高质量的人工 / Codex 版本覆盖。生成时间: 2026-08-27 08:07 UTC</p>
 </blockquote>
 ]]></content:encoded>
     </item>
