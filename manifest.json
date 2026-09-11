@@ -1,6 +1,15 @@
 {
-  "generated": "2026-09-10T03:39:11.869Z",
+  "generated": "2026-09-11T03:36:55.410Z",
   "dates": [
+    {
+      "date": "2026-09-11",
+      "reports": [
+        "ai-radar",
+        "ai-opportunity",
+        "ai-social",
+        "ai-social-en"
+      ]
+    },
     {
       "date": "2026-09-10",
       "reports": [
